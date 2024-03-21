@@ -1,0 +1,46 @@
+owner = JAP
+controller = JAP
+capital = "Anau"
+trade_goods = lumber
+culture = kansai
+religion = mahayana
+hre = no
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 2
+}
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 2
+}
+base_tax = 5
+base_production = 1
+base_manpower = 0
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+}
+1336.1.1 = { 
+	add_core = JAP
+	set_province_flag = pocket_province
+	add_permanent_province_modifier = { 
+		name = emperors_palace
+		duration = -1
+	}
+}

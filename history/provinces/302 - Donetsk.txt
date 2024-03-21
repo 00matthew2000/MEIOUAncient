@@ -1,0 +1,52 @@
+owner = WHI
+controller = WHI
+add_core = WHI
+capital = "Cherkassk"
+trade_goods = wool
+culture = crimean
+religion = sunni
+hre = no
+base_tax = 4
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 2
+}
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = muslim
+discovered_by = western
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = ottoman
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 65.000
+	}
+	set_variable = { 
+		which = atc
+		value = 90.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 17
+	}
+	set_province_flag = TN_RiverSea
+	set_variable = { 
+		which = acp
+		value = 2
+	}
+	set_province_flag = mined_goods
+	set_province_flag = iron
+	set_province_flag = salt
+	set_province_flag = no_mines
+	set_province_flag = TN_NorthernSilk
+}
+1356.1.1 = { 
+	add_core = CRI
+}

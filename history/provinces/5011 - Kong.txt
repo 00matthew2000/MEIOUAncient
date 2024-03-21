@@ -1,0 +1,33 @@
+owner = KNG
+controller = KNG
+add_core = KNG
+capital = "Kong"
+trade_goods = millet
+culture = senufo
+religion = west_african_pagan
+hre = no
+base_tax = 4
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 5.000
+	}
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+}
+1356.1.1 = { 
+	add_core = BKE
+}

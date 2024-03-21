@@ -1,0 +1,21 @@
+capital = "Piquiri"
+trade_goods = unknown
+culture = guarani
+religion = south_cone
+hre = no
+base_tax = 13
+base_production = 0
+base_manpower = 0
+native_size = 80
+native_ferocity = 1
+native_hostileness = 2
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 50
+	}
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+}

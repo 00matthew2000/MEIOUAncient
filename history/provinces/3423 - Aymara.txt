@@ -1,0 +1,23 @@
+capital = "Andahuaylas"
+trade_goods = unknown
+culture = chanka
+religion = inti
+hre = no
+base_tax = 9
+base_production = 0
+base_manpower = 0
+native_size = 20
+native_ferocity = 1
+native_hostileness = 8
+discovered_by = south_american
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+	set_province_flag = gold
+}
+1356.1.1 = { 
+	owner = AYA
+	add_core = AYA
+}

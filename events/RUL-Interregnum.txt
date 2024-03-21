@@ -1,0 +1,448 @@
+namespace = flavor_interregnum
+country_event = { 
+	id = flavor_interregnum.1
+	title = "flavor_interregnum.1.n"
+	desc = "flavor_interregnum.1.t"
+	picture = CIVIL_WAR_eventPicture
+	major = yes
+	is_triggered_only = yes
+	immediate = { 
+		if = { 
+			limit = { 
+				stability = 3
+			}
+			hidden_effect = { 
+				if = { 
+					limit = { 
+						NOT = { 
+							stability = -2
+						}
+					}
+					set_variable = { 
+						which = ahf
+						value = 0
+					}
+				}
+				else = { 
+					add_stability = -4
+				}
+			}
+			tooltip = { 
+				add_stability = -4
+			}
+			if = { 
+				limit = { 
+					is_emperor_of_china = yes
+				}
+				add_mandate = -20
+			}
+		}
+		else_if = { 
+			limit = { 
+				stability = 2
+			}
+			hidden_effect = { 
+				if = { 
+					limit = { 
+						NOT = { 
+							stability = -2
+						}
+					}
+					set_variable = { 
+						which = ahf
+						value = 0
+					}
+				}
+				else = { 
+					add_stability = -3
+				}
+			}
+			tooltip = { 
+				add_stability = -3
+			}
+			if = { 
+				limit = { 
+					is_emperor_of_china = yes
+				}
+				add_mandate = -15
+			}
+		}
+		else_if = { 
+			limit = { 
+				stability = 1
+			}
+			hidden_effect = { 
+				if = { 
+					limit = { 
+						NOT = { 
+							stability = -2
+						}
+					}
+					set_variable = { 
+						which = ahf
+						value = 0
+					}
+				}
+				else = { 
+					add_stability = -2
+				}
+			}
+			tooltip = { 
+				add_stability = -2
+			}
+			if = { 
+				limit = { 
+					is_emperor_of_china = yes
+				}
+				add_mandate = -10
+			}
+		}
+		else_if = { 
+			limit = { 
+				stability = 0
+			}
+			random_list = { 
+				30 = { }
+				40 = { 
+					hidden_effect = { 
+						change_variable = { 
+							which = ahf
+							value = -600
+						}
+						if = { 
+							limit = { 
+								AND = { 
+									check_variable = { 
+										which = ahf
+										value = 1200
+									}
+								}
+							}
+							if = { 
+								limit = { 
+									stability = 3
+								}
+								set_variable = { 
+									which = ahf
+									value = 1200
+								}
+							}
+							else = { 
+								subtract_variable = { 
+									which = ahf
+									value = 1200
+								}
+								add_stability = 1
+							}
+						}
+						else_if = { 
+							limit = { 
+								NOT = { 
+									AND = { 
+										check_variable = { 
+											which = ahf
+											value = 0
+										}
+									}
+								}
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										stability = -2
+									}
+								}
+								set_variable = { 
+									which = ahf
+									value = 0
+								}
+							}
+							else = { 
+								change_variable = { 
+									which = ahf
+									value = 1200
+								}
+								add_stability = -1
+							}
+						}
+						set_variable = { 
+							which = ahd
+							which = ahf
+						}
+						divide_variable = { 
+							which = ahd
+							value = 12
+						}
+						multiply_variable = { 
+							which = ahd
+							value = 0.1
+						}
+						multiply_variable = { 
+							which = ahd
+							value = 10
+						}
+						set_variable = { 
+							which = lsc
+							value = 100
+						}
+						subtract_variable = { 
+							which = lsc
+							which = ahd
+						}
+					}
+					custom_tooltip = POP_StabSubtract50
+					if = { 
+						limit = { 
+							is_emperor_of_china = yes
+						}
+						add_mandate = -2.5
+					}
+				}
+				30 = { 
+					hidden_effect = { 
+						if = { 
+							limit = { 
+								NOT = { 
+									stability = -2
+								}
+							}
+							set_variable = { 
+								which = ahf
+								value = 0
+							}
+						}
+						else = { 
+							add_stability = -1
+						}
+					}
+					tooltip = { 
+						add_stability = -1
+					}
+					if = { 
+						limit = { 
+							is_emperor_of_china = yes
+						}
+						add_mandate = -5
+					}
+				}
+			}
+		}
+		random_owned_province = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = pretender_organizing
+				}
+				culture_group = ROOT
+			}
+			add_province_modifier = { 
+				name = "pretender_organizing"
+				duration = 1825
+			}
+			custom_tooltip = pretender_organizing_tt
+			add_unrest = 5
+			hidden_effect = { 
+				change_variable = { 
+					which = asq
+					value = -35
+				}
+				change_variable = { 
+					which = asr
+					value = -35
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+			custom_tooltip = POP_NOLoyProv_-35
+		}
+		random_owned_province = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = pretender_organizing
+				}
+				culture_group = ROOT
+			}
+			add_province_modifier = { 
+				name = "pretender_organizing"
+				duration = 1825
+			}
+			custom_tooltip = pretender_organizing_tt
+			add_unrest = 5
+			hidden_effect = { 
+				change_variable = { 
+					which = asq
+					value = -35
+				}
+				change_variable = { 
+					which = asr
+					value = -35
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+			custom_tooltip = POP_NOLoyProv_-35
+		}
+		random_owned_province = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = pretender_organizing
+				}
+				culture_group = ROOT
+			}
+			add_province_modifier = { 
+				name = "pretender_organizing"
+				duration = 1825
+			}
+			custom_tooltip = pretender_organizing_tt
+			add_unrest = 5
+			hidden_effect = { 
+				change_variable = { 
+					which = asq
+					value = -35
+				}
+				change_variable = { 
+					which = asr
+					value = -35
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+			custom_tooltip = POP_NOLoyProv_-35
+		}
+	}
+	option = { 
+		name = "flavor_interregnum.1.a"
+		log = "FE-Interregnum:[GetYear]:[Root.GetName]:started Interregnum Chaos disaster:flavor_interregnum.1"
+	}
+}
+country_event = { 
+	id = flavor_interregnum.2
+	title = "flavor_interregnum.2.n"
+	desc = "flavor_interregnum.2.t"
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	trigger = { 
+		num_of_cities = 3
+		government = monarchy
+	}
+	option = { 
+		name = "flavor_interregnum.2.a"
+		random_owned_province = { 
+			limit = { 
+				OR = { 
+					is_core = ROOT
+					is_capital = yes
+				}
+			}
+			add_province_modifier = { 
+				name = "pretender_organizing"
+				duration = 1825
+			}
+			custom_tooltip = pretender_organizing_tt
+			add_unrest = 5
+		}
+	}
+}
+country_event = { 
+	id = flavor_interregnum.3
+	title = "flavor_interregnum.3.n"
+	desc = "flavor_interregnum.3.t"
+	picture = CIVIL_WAR_eventPicture
+	major = yes
+	is_triggered_only = yes
+	option = { 
+		name = "flavor_interregnum.3.a"
+		log = "FE-Interregnum:[GetYear]:[Root.GetName]:ended Interregnum Chaos disaster:flavor_interregnum.3"
+		hidden_effect = { 
+			add_ruler_modifier = { 
+				name = "interregnum_happened"
+			}
+		}
+	}
+}

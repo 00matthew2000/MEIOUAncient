@@ -1,0 +1,356 @@
+namespace = hre_event
+namespace = holyromanempire
+country_event = { 
+	id = holyromanempire.9073
+	title = "EVTNAME9073"
+	desc = "EVTDESC9073"
+	picture = HRE_eventPicture
+	major = yes
+	is_triggered_only = yes
+	option = { 
+		name = "EVTOPTA9073"
+	}
+}
+country_event = { 
+	id = holyromanempire.9074
+	title = "EVTNAME9074"
+	desc = "EVTDESC9074"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+	option = { 
+		name = "EVTOPTA9074"
+		ai_chance = { 
+			factor = 10
+			modifier = { 
+				factor = 0
+				NOT = { 
+					has_opinion = { 
+						who = emperor
+						value = 0
+					}
+				}
+			}
+		}
+		emperor = { 
+			create_subject = { 
+				subject_type = decentralized_vassal
+				subject = ROOT
+			}
+			ROOT = { 
+				set_country_flag = "privileged_vassal"
+			}
+		}
+	}
+	option = { 
+		name = "EVTOPTB9074"
+		ai_chance = { 
+			factor = 10
+			modifier = { 
+				factor = 0
+				has_opinion = { 
+					who = emperor
+					value = 0
+				}
+			}
+		}
+		every_owned_province = { 
+			limit = { 
+				is_part_of_hre = yes
+			}
+			add_claim = emperor
+		}
+		set_in_empire = no
+		swap_non_generic_missions = yes
+		if = { 
+			limit = { 
+				hre_reform_passed = gemeinerpfennig
+			}
+			every_owned_province = { 
+				limit = { 
+					has_province_modifier = HRE_Gemeiner_Pfennig
+				}
+				remove_province_modifier = HRE_Gemeiner_Pfennig
+			}
+		}
+		emperor = { 
+			add_opinion = { 
+				who = ROOT
+				modifier = opinion_left_empire
+			}
+		}
+		add_opinion = { 
+			who = emperor
+			modifier = opinion_united_empire
+		}
+		elector = no
+	}
+}
+country_event = { 
+	id = holyromanempire.9075
+	title = "EVTNAME9075"
+	desc = "EVTDESC9075"
+	picture = HRE_eventPicture
+	major = yes
+	is_triggered_only = yes
+	option = { 
+		name = "EVTOPTA9075"
+		trigger = { 
+			NOT = { 
+				calc_true_if = { 
+					all_countries_including_self = { 
+						ai = no
+					}
+					amount = 2
+				}
+			}
+		}
+		log = "FE-HRE:[GetYear]:[Root.GetName]:formed [ERG.GetName]:holyromanempire.9075"
+		change_tag = ERG
+		hidden_effect = { 
+			set_variable = { 
+				which = pzs
+				which = aaa
+			}
+			every_province = { 
+				limit = { 
+					AND = { 
+						OR = { 
+							is_city = yes
+							is_colony = yes
+						}
+						NOT = { 
+							province_id = 5154
+						}
+					}
+				}
+				clr_province_flag = TradePost@PREV
+			}
+			country_event = { 
+				id = POP_StartInit.012
+			}
+			country_event = { 
+				id = SYS_Post.002
+			}
+		}
+		if = { 
+			limit = { 
+				NOT = { 
+					has_country_modifier = title_6
+				}
+			}
+			log = "FE-HRE:[GetYear]:[Root.GetName]:increased title level to 6 (Empire equivalent):holyromanempire.9075"
+			remove_country_modifier = title_1
+			remove_country_modifier = title_2
+			remove_country_modifier = title_3
+			remove_country_modifier = title_4
+			remove_country_modifier = title_5
+			add_country_modifier = { 
+				name = title_6
+				duration = -1
+			}
+			clr_country_flag = title_1
+			clr_country_flag = title_2
+			clr_country_flag = title_3
+			clr_country_flag = title_4
+			clr_country_flag = title_5
+			clr_country_flag = title_6
+		}
+		add_accepted_culture = pommeranian
+		add_accepted_culture = old_saxon
+		add_accepted_culture = eastphalian
+		add_accepted_culture = westphalian
+		add_accepted_culture = low_saxon
+		add_accepted_culture = prussian
+		add_accepted_culture = baltendeutsche
+		add_accepted_culture = hessian
+		add_accepted_culture = high_saxon
+		add_accepted_culture = thuringian
+		add_accepted_culture = ripuarianfranconian
+		add_accepted_culture = eastfranconian
+		add_accepted_culture = bavarian
+		add_accepted_culture = schwabisch
+		add_accepted_culture = rhine_alemanisch
+		add_accepted_culture = suisse
+		add_accepted_culture = austrian
+		add_prestige = 100
+		every_province = { 
+			limit = { 
+				AND = { 
+					OR = { 
+						is_city = yes
+						is_colony = yes
+					}
+					NOT = { 
+						province_id = 5154
+					}
+				}
+				is_part_of_hre = yes
+				OR = { 
+					owned_by = ROOT
+					owner = { 
+						is_neighbor_of = ROOT
+					}
+				}
+				NOT = { 
+					is_core = ROOT
+				}
+			}
+			add_core = emperor
+			remove_province_modifier = HRE_Gemeiner_Pfennig
+		}
+		every_country = { 
+			limit = { 
+				AND = { 
+					num_of_cities = 1
+					NOT = { 
+						tag = AAA
+					}
+				}
+				is_part_of_hre = yes
+				is_emperor = no
+			}
+			country_event = { 
+				id = holyromanempire.9076
+			}
+		}
+		dismantle_hre = yes
+		add_adm_power = 250
+	}
+	option = { 
+		name = "EVTOPTB9075"
+		trigger = { 
+			has_global_flag = multiplayer
+		}
+		custom_tooltip = erg_tagchange_tt
+		set_country_flag = erg_tagchange
+	}
+}
+country_event = { 
+	id = holyromanempire.9076
+	title = "EVTNAME9076"
+	desc = "EVTDESC9076"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+	option = { 
+		name = "EVTOPTA9076"
+		ERG = { 
+			inherit = ROOT
+		}
+	}
+}
+country_event = { 
+	id = holyromanempire.900
+	title = "EVTNAME900"
+	desc = "EVTDESC900_01"
+	picture = KING_SICK_IN_BED_eventPicture
+	is_triggered_only = yes
+	trigger = { 
+		is_emperor = yes
+	}
+	option = { 
+		name = "EVTOPTA900"
+		add_imperial_influence = 10
+	}
+}
+country_event = { 
+	id = holyromanempire.3
+	title = "ai_only"
+	desc = "ai_only"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+	trigger = { 
+		any_elector = { 
+			NOT = { 
+				has_opinion_modifier = { 
+					who = emperor
+					modifier = hre_dynastic_inheritance
+				}
+			}
+		}
+	}
+	option = { 
+		name = "ai_only"
+		every_elector = { 
+			limit = { 
+				hre_reform_passed = son_voting_dynastic_inheritence
+				NOT = { 
+					has_opinion_modifier = { 
+						who = emperor
+						modifier = hre_dynastic_inheritance
+					}
+				}
+			}
+			emperor = { 
+				reverse_add_opinion = { 
+					who = PREV
+					modifier = hre_dynastic_inheritance
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = holyromanempire.2
+	title = "holyromanempire.2.n"
+	desc = "holyromanempire.2.t"
+	picture = HRE_eventPicture
+	major = yes
+	is_triggered_only = yes
+	option = { 
+		name = "OPT.BASTARD"
+		add_prestige = -10
+		elector = no
+	}
+}
+country_event = { 
+	id = holyromanempire.1
+	title = "holyromanempire.1.n"
+	desc = "holyromanempire.1.t"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+	option = { 
+		name = "holyromanempire.1.a"
+		log = "FE-HRE:[GetYear]:[Root.GetName]:decided to leave the HRE:holyromanempire.1"
+		every_country = { 
+			limit = { 
+				is_part_of_hre = yes
+				capital_scope = { 
+					AND = { 
+						superregion = italy_superregion
+						OR = { 
+							region = east_italy_region
+							region = west_italy_region
+							region = central_italy_region
+						}
+					}
+				}
+			}
+			set_in_empire = no
+			swap_non_generic_missions = yes
+			if = { 
+				limit = { 
+					hre_reform_passed = gemeinerpfennig
+				}
+				every_owned_province = { 
+					limit = { 
+						has_province_modifier = HRE_Gemeiner_Pfennig
+					}
+					remove_province_modifier = HRE_Gemeiner_Pfennig
+				}
+			}
+		}
+		emperor = { 
+			add_opinion = { 
+				who = ROOT
+				modifier = opinion_left_empire
+			}
+		}
+	}
+	option = { 
+		name = "holyromanempire.1.b"
+		log = "FE-ITA:[GetYear]:[Root.GetName]:decided to stay in the HRE:holyromanempire.1"
+		trigger = { 
+			ai = no
+		}
+	}
+}

@@ -1,0 +1,49 @@
+owner = YUA
+controller = YUA
+capital = "Hada"
+trade_goods = wheat
+culture = hulun
+religion = mahayana
+hre = no
+base_tax = 23
+base_production = 0
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+200.1.1 = { 
+	set_province_flag = coal
+	set_variable = { 
+		which = atc
+		value = 60.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+}
+1271.12.18 = { 
+	add_core = YUA
+}
+1308.1.1 = { 
+	owner = CSE
+	controller = CSE
+	add_core = CSE
+}
+1345.1.1 = { 
+	owner = YUA
+	controller = YUA
+	add_core = YUA
+	add_core = MXI
+	remove_core = CSE
+}

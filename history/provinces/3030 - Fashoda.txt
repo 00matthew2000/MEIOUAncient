@@ -1,0 +1,30 @@
+owner = SLL
+controller = SLL
+add_core = SLL
+capital = "Fashoda"
+trade_goods = wool
+culture = shilluk
+religion = lotuko_pagan
+hre = no
+base_tax = 8
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = east_african
+discovered_by = soudantech
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 5.000
+	}
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+}

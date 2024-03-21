@@ -1,0 +1,40 @@
+owner = UAG
+controller = UAG
+add_core = UAG
+capital = "Wagadugu"
+trade_goods = millet
+culture = mossi
+religion = west_african_pagan
+hre = no
+base_tax = 12
+base_production = 2
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 2
+}
+set_variable = { 
+	which = gcn
+	value = 2
+}
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 5.000
+	}
+	set_variable = { 
+		which = atc
+		value = 40.000
+	}
+}
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_province_flag = spices
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+}

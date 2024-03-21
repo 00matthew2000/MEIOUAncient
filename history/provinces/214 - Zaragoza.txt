@@ -1,0 +1,156 @@
+owner = ARA
+controller = ARA
+add_core = ARA
+capital = "Zaragoza"
+trade_goods = wheat
+culture = aragonese
+religion = catholic
+hre = no
+base_tax = 3
+base_production = 1
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gcj
+	value = 2
+}
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gci
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = western
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = muslim
+discovered_by = ottoman
+450.1.1 = { 
+	set_province_flag = catholic_archbishopric
+	add_province_modifier = { 
+		name = catholic_archbishopric
+		duration = -1
+	}
+	set_province_flag = TN_Important
+	set_variable = { 
+		which = baf
+		value = 18
+	}
+	set_province_flag = TN_Natural_Minor
+	add_permanent_province_modifier = { 
+		name = urban_goods_leather
+		duration = -1
+	}
+	add_permanent_province_modifier = { 
+		name = Knights_Commandery_Low
+		duration = -1
+	}
+}
+100.1.1 = { 
+	set_variable = { 
+		which = amj
+		value = 45.063
+	}
+	set_variable = { 
+		which = amk
+		value = 15.000
+	}
+	set_variable = { 
+		which = amh
+		value = 38.663
+	}
+	set_variable = { 
+		which = ami
+		value = 17.500
+	}
+	set_variable = { 
+		which = amf
+		value = 24.463
+	}
+	set_variable = { 
+		which = amg
+		value = 20.000
+	}
+	set_variable = { 
+		which = amd
+		value = 27.973
+	}
+	set_variable = { 
+		which = ame
+		value = 20.000
+	}
+	set_variable = { 
+		which = amb
+		value = 30.093
+	}
+	set_variable = { 
+		which = amc
+		value = 21.390
+	}
+	set_variable = { 
+		which = alz
+		value = 36.868
+	}
+	set_variable = { 
+		which = ama
+		value = 23.975
+	}
+	set_variable = { 
+		which = alx
+		value = 43.959
+	}
+	set_variable = { 
+		which = aly
+		value = 26.245
+	}
+	set_variable = { 
+		which = alv
+		value = 52.389
+	}
+	set_variable = { 
+		which = alw
+		value = 23.115
+	}
+	set_variable = { 
+		which = alt
+		value = 80.860
+	}
+	set_variable = { 
+		which = alu
+		value = 19.985
+	}
+	set_variable = { 
+		which = alr
+		value = 95.753
+	}
+	set_variable = { 
+		which = als
+		value = 35.293
+	}
+	set_variable = { 
+		which = alp
+		value = 118.055
+	}
+	set_variable = { 
+		which = alq
+		value = 50.600
+	}
+	set_variable = { 
+		which = aho
+		value = 138.438
+	}
+	set_variable = { 
+		which = ahp
+		value = 74.008
+	}
+}

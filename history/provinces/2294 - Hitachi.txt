@@ -1,0 +1,43 @@
+owner = STK
+controller = STK
+culture = kanto
+religion = mahayana
+capital = "Mito"
+trade_goods = rice
+hre = no
+base_tax = 20
+base_production = 1
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 2
+}
+set_variable = { 
+	which = gci
+	value = 1
+}
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+	set_province_flag = mined_goods
+	set_province_flag = iron
+}
+1356.1.1 = { 
+	add_core = STK
+}

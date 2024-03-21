@@ -1,0 +1,35 @@
+owner = ETH
+controller = ETH
+add_core = ETH
+capital = "Debareq"
+trade_goods = wool
+culture = amhara
+religion = jewish
+base_tax = 3
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 1
+}
+set_variable = { 
+	which = baf
+	value = 132
+}
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = east_african
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 1.500
+	}
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+}

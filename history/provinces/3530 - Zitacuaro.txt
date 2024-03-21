@@ -1,0 +1,21 @@
+owner = ACA
+controller = ACA
+add_core = ACA
+capital = "Zitacuaro"
+trade_goods = maize
+culture = purepechan
+religion = kurikaweri
+hre = no
+base_tax = 16
+base_production = 0
+base_manpower = 1
+is_city = yes
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 6
+	}
+	set_province_flag = mined_goods
+	set_province_flag = obsidian
+}

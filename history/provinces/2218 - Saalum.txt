@@ -1,0 +1,33 @@
+owner = MAL
+controller = MAL
+add_core = MAL
+capital = "Kawon"
+trade_goods = cotton
+culture = serer
+religion = west_african_pagan
+hre = no
+base_tax = 6
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 5.000
+	}
+	set_variable = { 
+		which = atc
+		value = 20.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+}
+1356.1.1 = { 
+	add_core = MNE
+}

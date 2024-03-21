@@ -1,0 +1,50 @@
+owner = QII
+controller = QII
+capital = "Yizhou"
+trade_goods = wheat
+culture = hanyu
+religion = mahayana
+hre = no
+base_tax = 14
+base_production = 1
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 101
+	}
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 8
+	}
+}
+1276.1.1 = { 
+	owner = YUA
+	controller = YUA
+	add_core = YUA
+}
+1351.1.1 = { 
+	owner = QII
+	controller = QII
+	add_core = QII
+}

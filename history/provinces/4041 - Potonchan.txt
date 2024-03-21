@@ -1,0 +1,21 @@
+capital = "Tzintla"
+trade_goods = fish
+culture = nawa
+religion = mayan
+hre = no
+base_tax = 2
+base_production = 0
+base_manpower = 0
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_province_flag = TN_Natural_Minor
+	set_variable = { 
+		which = baf
+		value = 45
+	}
+	set_province_flag = TN_RiverSea
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+}

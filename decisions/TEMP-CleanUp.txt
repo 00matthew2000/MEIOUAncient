@@ -1,0 +1,29 @@
+country_decisions = { 
+	clean_up_missions = { 
+		major = yes
+		potential = { 
+			ai = no
+			has_country_flag = UI_Utility_Decisions_On
+		}
+		allow = { 
+			ai = no
+		}
+		effect = { 
+			every_country = { 
+				limit = { 
+					AND = { 
+						num_of_cities = 1
+						NOT = { 
+							tag = AAA
+						}
+					}
+					religion_group = christian
+				}
+				swap_non_generic_missions = yes
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+}

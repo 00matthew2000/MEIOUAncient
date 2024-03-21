@@ -1,0 +1,66 @@
+dependency = { 
+	subject_type = "personal_union"
+	first = BRU
+	second = LUN
+	start_date = 1356.1.1
+	end_date = 1373.1.1
+}
+dependency = { 
+	subject_type = "personal_union"
+	first = BAZ
+	second = HOL
+	start_date = 1354.1.1
+	end_date = 1425.12.31
+}
+alliance = { 
+	first = BAX
+	second = BAY
+	start_date = 1349.1.1
+	end_date = 1363.1.12
+}
+alliance = { 
+	first = BAX
+	second = BAZ
+	start_date = 1354.1.1
+	end_date = 1425.12.31
+}
+dependency = { 
+	subject_type = "custom_vassal"
+	first = MAI
+	second = ERF
+	start_date = 1356.1.10
+	end_date = 1664.1.1
+}
+dependency = { 
+	subject_type = "personal_union"
+	first = MEI
+	second = THU
+	start_date = 1356.1.10
+	end_date = 1423.6.1
+}
+dependency = { 
+	subject_type = "personal_union"
+	first = BRG
+	second = RAV
+	start_date = 1348.4.4
+	end_date = 1395.1.1
+}
+guarantee = { 
+	first = BRE
+	second = DIT
+	start_date = 1356.1.1
+	end_date = 1559.1.1
+}
+alliance = { 
+	first = DCP
+	second = MLH
+	start_date = 1354.1.1
+	end_date = 1515.1.1
+}
+dependency = { 
+	subject_type = personal_union
+	first = BAY
+	second = TIR
+	start_date = 1342.2.10
+	end_date = 1369.10.3
+}

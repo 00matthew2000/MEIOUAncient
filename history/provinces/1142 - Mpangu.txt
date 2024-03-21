@@ -1,0 +1,31 @@
+owner = NLA
+controller = NLA
+add_core = NLA
+capital = "Kundi"
+trade_goods = millet
+culture = kongolese
+religion = bantu_pagan
+hre = no
+base_tax = 13
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = central_african
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 25
+	}
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+	set_province_flag = mined_goods
+	set_province_flag = iron
+}

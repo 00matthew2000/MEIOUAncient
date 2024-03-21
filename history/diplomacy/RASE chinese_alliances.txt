@@ -1,0 +1,188 @@
+dependency = { 
+	subject_type = "warlord"
+	first = YUA
+	second = LNG
+	start_date = 1274.1.1
+	end_date = 1381.1.1
+}
+dependency = { 
+	subject_type = "warlord"
+	first = YUA
+	second = CNG
+	start_date = 1274.1.1
+	end_date = 1381.1.1
+}
+dependency = { 
+	subject_type = "warlord"
+	first = YUA
+	second = CTA
+	start_date = 1274.1.1
+	end_date = 1381.1.1
+}
+dependency = { 
+	subject_type = "warlord"
+	first = YUA
+	second = QIN
+	start_date = 1274.1.1
+	end_date = 1381.1.1
+}
+dependency = { 
+	subject_type = "warlord"
+	first = YUA
+	second = CYU
+	start_date = 1274.1.1
+	end_date = 1381.1.1
+}
+dependency = { 
+	subject_type = "warlord"
+	first = YUA
+	second = DXI
+	start_date = 1274.1.1
+	end_date = 1381.1.1
+}
+dependency = { 
+	subject_type = "warlord"
+	first = YUA
+	second = ZHN
+	start_date = 1274.1.1
+	end_date = 1381.1.1
+}
+dependency = { 
+	subject_type = "warlord"
+	first = YUA
+	second = CMN
+	start_date = 1274.1.1
+	end_date = 1381.1.1
+}
+dependency = { 
+	subject_type = "warlord"
+	first = YUA
+	second = YUE
+	start_date = 1274.1.1
+	end_date = 1381.1.1
+}
+dependency = { 
+	subject_type = "tributary_state"
+	first = YUA
+	second = MYR
+	start_date = 1274.1.1
+	end_date = 1392.1.1
+}
+dependency = { 
+	subject_type = "tributary_state"
+	first = YUA
+	second = MJZ
+	start_date = 1274.1.1
+	end_date = 1392.1.1
+}
+dependency = { 
+	subject_type = "tributary_state"
+	first = YUA
+	second = MHR
+	start_date = 1274.1.1
+	end_date = 1392.1.1
+}
+dependency = { 
+	subject_type = "tributary_state"
+	first = YUA
+	second = MWK
+	start_date = 1274.1.1
+	end_date = 1392.1.1
+}
+dependency = { 
+	subject_type = "tributary_state"
+	first = YUA
+	second = MUD
+	start_date = 1274.1.1
+	end_date = 1392.1.1
+}
+dependency = { 
+	subject_type = "tributary_state"
+	first = YUA
+	second = MHX
+	start_date = 1274.1.1
+	end_date = 1392.1.1
+}
+dependency = { 
+	subject_type = "tributary_state"
+	first = YUA
+	second = MNA
+	start_date = 1274.1.1
+	end_date = 1392.1.1
+}
+dependency = { 
+	subject_type = "custom_vassal"
+	first = LNG
+	second = DLI
+	start_date = 1274.1.1
+	end_date = 1380.1.1
+}
+dependency = { 
+	subject_type = "warlord"
+	first = TIA
+	second = XIA
+	start_date = 1351.1.1
+	end_date = 1360.1.1
+}
+dependency = { 
+	subject_type = "warlord"
+	first = TIA
+	second = DAA
+	start_date = 1351.1.1
+	end_date = 1360.1.1
+}
+dependency = { 
+	subject_type = "warlord"
+	first = TIA
+	second = WUU
+	start_date = 1351.1.1
+	end_date = 1359.1.1
+}
+alliance = { 
+	first = CMN
+	second = YUE
+	start_date = 1351.1.1
+	end_date = 1365.1.1
+}
+dependency = { 
+	subject_type = "warlord"
+	first = SNG
+	second = MNG
+	start_date = 1356.1.1
+	end_date = 1363.1.1
+}
+dependency = { 
+	subject_type = "warlord"
+	first = SNG
+	second = QII
+	start_date = 1356.1.1
+	end_date = 1368.1.1
+}
+dependency = { 
+	subject_type = "warlord"
+	first = SNG
+	second = SHU
+	start_date = 1356.1.1
+	end_date = 1368.1.1
+}
+dependency = { 
+	subject_type = "warlord"
+	first = SNG
+	second = XNG
+	start_date = 1356.1.1
+	end_date = 1359.1.1
+}
+dependency = { 
+	subject_type = "decentralized_vassal"
+	first = KOR
+	second = TMN
+	start_date = 1356.1.1
+	end_date = 1404.1.1
+}
+dependency = { 
+	subject_type = "nominal_subject"
+	first = YUA
+	second = KOR
+	start_date = 1356.1.1
+	end_date = 1404.1.1
+}

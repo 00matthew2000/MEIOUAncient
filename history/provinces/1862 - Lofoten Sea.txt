@@ -1,0 +1,4 @@
+discovered_by = western
+discovered_by = NOV
+discovered_by = BOS
+discovered_by = PSK

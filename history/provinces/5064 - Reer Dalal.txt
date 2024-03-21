@@ -1,0 +1,30 @@
+capital = "Dalal"
+trade_goods = unknown
+culture = somali
+religion = sunni
+base_tax = 1
+base_production = 0
+base_manpower = 0
+native_size = 50
+native_ferocity = 4.5
+native_hostileness = 9
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = east_african
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 90.000
+	}
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 1
+	}
+}

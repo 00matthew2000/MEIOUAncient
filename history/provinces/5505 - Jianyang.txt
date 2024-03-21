@@ -1,0 +1,54 @@
+owner = YUA
+controller = YUA
+capital = "Yang'an"
+trade_goods = carmine
+culture = bashu
+religion = mahayana
+hre = no
+base_tax = 12
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 3
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 3.000
+	}
+	set_variable = { 
+		which = acp
+		value = 5.5
+	}
+	set_province_flag = salt
+}
+985.1.1 = { 
+	owner = SNG
+	controller = SNG
+	add_core = SNG
+}
+1279.1.1 = { 
+	owner = YUA
+	controller = YUA
+	add_core = YUA
+}
+1320.1.1 = { 
+	remove_core = SNG
+}
+1351.1.1 = { 
+	owner = DXI
+	controller = DXI
+	add_core = DXI
+}

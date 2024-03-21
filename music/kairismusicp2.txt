@@ -1,0 +1,135 @@
+song = { 
+	name = "Eastern_Fronts"
+	chance = { 
+		factor = 1
+		modifier = { 
+			factor = 0
+			NOT = { 
+				religion_group = taoic
+			}
+			NOT = { 
+				any_owned_province = { 
+					continent = asia
+				}
+			}
+		}
+		modifier = { 
+			factor = 2
+			religion_group = taoic
+		}
+		modifier = { 
+			factor = 0
+			NOT = { 
+				has_dlc = "Kairis Soundtrack Part 2"
+			}
+		}
+	}
+}
+song = { 
+	name = "Peace_For_Generations"
+	chance = { 
+		factor = 1
+		modifier = { 
+			factor = 0
+			NOT = { 
+				religion_group = taoic
+			}
+			NOT = { 
+				any_owned_province = { 
+					continent = asia
+				}
+			}
+		}
+		modifier = { 
+			factor = 2
+			religion_group = taoic
+		}
+		modifier = { 
+			factor = 0
+			NOT = { 
+				has_dlc = "Kairis Soundtrack Part 2"
+			}
+		}
+	}
+}
+song = { 
+	name = "Temple_Ambitions"
+	chance = { 
+		factor = 1
+		modifier = { 
+			factor = 0
+			NOT = { 
+				religion_group = taoic
+			}
+			NOT = { 
+				any_owned_province = { 
+					continent = asia
+				}
+			}
+		}
+		modifier = { 
+			factor = 2
+			religion_group = taoic
+		}
+		modifier = { 
+			factor = 0
+			NOT = { 
+				has_dlc = "Kairis Soundtrack Part 2"
+			}
+		}
+	}
+}
+song = { 
+	name = "The_Grasslands_Call"
+	chance = { 
+		factor = 1
+		modifier = { 
+			factor = 0
+			NOT = { 
+				religion_group = taoic
+			}
+			NOT = { 
+				any_owned_province = { 
+					continent = asia
+				}
+			}
+		}
+		modifier = { 
+			factor = 2
+			religion_group = taoic
+		}
+		modifier = { 
+			factor = 0
+			NOT = { 
+				has_dlc = "Kairis Soundtrack Part 2"
+			}
+		}
+	}
+}
+song = { 
+	name = "The_Great_Wall"
+	chance = { 
+		factor = 1
+		modifier = { 
+			factor = 0
+			NOT = { 
+				religion_group = taoic
+			}
+			NOT = { 
+				any_owned_province = { 
+					continent = asia
+				}
+			}
+		}
+		modifier = { 
+			factor = 2
+			religion_group = taoic
+		}
+		modifier = { 
+			factor = 0
+			NOT = { 
+				has_dlc = "Kairis Soundtrack Part 2"
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+owner = HUA
+controller = HUA
+add_core = HUA
+capital = "Chinchaycocha"
+trade_goods = livestock
+culture = huaylas
+religion = inti
+hre = no
+base_tax = 9
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = south_american
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+	set_variable = { 
+		which = ami
+		value = 5.000
+	}
+	set_province_flag = coal
+}

@@ -1,0 +1,24 @@
+owner = CHM
+controller = CHM
+add_core = CHM
+capital = "Huaura"
+trade_goods = maize
+culture = chimu
+religion = inti
+hre = no
+base_tax = 9
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = south_american
+set_variable = { 
+	which = gck
+	value = 6
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+	set_province_flag = cotton
+}

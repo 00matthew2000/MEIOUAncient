@@ -1,0 +1,31 @@
+owner = TEE
+controller = TEE
+add_core = TEE
+capital = "Tamtoc"
+trade_goods = maize
+culture = huastec
+religion = cocijo
+hre = no
+base_tax = 11
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_province_flag = TN_Natural_Minor
+	set_variable = { 
+		which = baf
+		value = 43
+	}
+	set_province_flag = TN_RiverJoint
+	set_province_flag = TN_RiverSea
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+	set_province_flag = cotton
+}

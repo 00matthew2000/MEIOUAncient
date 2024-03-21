@@ -1,0 +1,32 @@
+owner = LVO
+controller = LVO
+add_core = LVO
+add_core = LIV
+capital = "Dyneburg"
+trade_goods = lumber
+culture = lattgalian
+religion = catholic
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 1
+}
+discovered_by = western
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+	set_variable = { 
+		which = baf
+		value = 13
+	}
+}

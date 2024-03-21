@@ -1,0 +1,32 @@
+owner = AYC
+controller = AYC
+add_core = AYC
+capital = "Charca"
+trade_goods = livestock
+culture = aimara
+religion = inti
+hre = no
+base_tax = 17
+base_production = 0
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = south_american
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_province_flag = TN_Lake
+	set_province_flag = TN_Natural_Minor
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+	set_variable = { 
+		which = ami
+		value = 3.500
+	}
+	set_province_flag = silver
+	set_province_flag = coca
+}

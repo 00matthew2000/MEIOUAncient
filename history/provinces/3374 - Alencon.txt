@@ -1,0 +1,128 @@
+owner = NRM
+controller = NRM
+capital = "Alençon"
+trade_goods = livestock
+culture = normand
+religion = catholic
+hre = no
+base_tax = 14
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 1
+}
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = western
+discovered_by = muslim
+450.1.1 = { 
+	add_permanent_province_modifier = { 
+		name = Knights_Commandery_Low
+		duration = -1
+	}
+}
+1343.1.1 = { 
+	add_permanent_claim = NAV
+	add_permanent_claim = FRA
+	add_core = NRM
+}
+100.1.1 = { 
+	set_variable = { 
+		which = amj
+		value = 142.526
+	}
+	set_variable = { 
+		which = amk
+		value = 0.000
+	}
+	set_variable = { 
+		which = amh
+		value = 142.526
+	}
+	set_variable = { 
+		which = ami
+		value = 0.000
+	}
+	set_variable = { 
+		which = amf
+		value = 97.986
+	}
+	set_variable = { 
+		which = amg
+		value = 0.000
+	}
+	set_variable = { 
+		which = amd
+		value = 115.802
+	}
+	set_variable = { 
+		which = ame
+		value = 0.000
+	}
+	set_variable = { 
+		which = amb
+		value = 133.618
+	}
+	set_variable = { 
+		which = amc
+		value = 0.000
+	}
+	set_variable = { 
+		which = alz
+		value = 146.980
+	}
+	set_variable = { 
+		which = ama
+		value = 0.000
+	}
+	set_variable = { 
+		which = alx
+		value = 164.795
+	}
+	set_variable = { 
+		which = aly
+		value = 0.000
+	}
+	set_variable = { 
+		which = alv
+		value = 187.065
+	}
+	set_variable = { 
+		which = alw
+		value = 0.000
+	}
+	set_variable = { 
+		which = alt
+		value = 180.973
+	}
+	set_variable = { 
+		which = alu
+		value = 15.000
+	}
+	set_variable = { 
+		which = alr
+		value = 180.690
+	}
+	set_variable = { 
+		which = als
+		value = 17.000
+	}
+	set_variable = { 
+		which = alp
+		value = 200.422
+	}
+	set_variable = { 
+		which = alq
+		value = 19.000
+	}
+	set_variable = { 
+		which = aho
+		value = 235.318
+	}
+	set_variable = { 
+		which = ahp
+		value = 21.000
+	}
+}

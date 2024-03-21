@@ -1,0 +1,28 @@
+owner = AOW
+controller = AOW
+add_core = AOW
+capital = "Tarkwa"
+trade_goods = pepper
+culture = akaa
+religion = west_african_pagan
+hre = no
+base_tax = 4
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 50.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+	set_province_flag = gold
+	set_province_flag = kola
+}

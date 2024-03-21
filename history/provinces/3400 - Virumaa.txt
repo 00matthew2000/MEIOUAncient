@@ -1,0 +1,43 @@
+owner = DEN
+controller = DEN
+capital = "Narva"
+trade_goods = lumber
+culture = estonian
+religion = catholic
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 1
+}
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gcn
+	value = 1
+}
+discovered_by = western
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+}
+1346.1.1 = { 
+	owner = LVO
+	controller = LVO
+	add_core = LVO
+	add_core = EST
+}
+1356.1.1 = { 
+	set_province_flag = add_local_autonomy_25
+}

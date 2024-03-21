@@ -1,0 +1,70 @@
+owner = MAM
+controller = MAM
+add_core = MAM
+capital = "Al Qahira"
+trade_goods = wheat
+culture = egyptian
+religion = sunni
+hre = no
+base_tax = 13
+base_production = 35
+base_manpower = 3
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 3
+}
+set_variable = { 
+	which = gcn
+	value = 3
+}
+set_variable = { 
+	which = gcl
+	value = 2
+}
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_province_flag = medium_university
+fort_14th = yes
+set_variable = { 
+	which = gck
+	value = 4
+}
+set_variable = { 
+	which = gci
+	value = 2
+}
+discovered_by = east_african
+discovered_by = western
+discovered_by = muslim
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = ottoman
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_variable = { 
+		which = baf
+		value = 21
+	}
+	set_province_flag = TN_Silk
+	set_variable = { 
+		which = acp
+		value = 6.5
+	}
+	add_permanent_province_modifier = { 
+		name = urban_goods_carpet
+		duration = -1
+	}
+	add_permanent_province_modifier = { 
+		name = urban_goods_metalwork
+		duration = -1
+	}
+	add_permanent_province_modifier = { 
+		name = gateway_to_islamic_trade
+		duration = -1
+	}
+	set_province_flag = sugar
+	set_province_flag = TN_Natural_Minor
+}

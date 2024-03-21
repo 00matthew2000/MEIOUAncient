@@ -1,0 +1,122 @@
+owner = BOU
+controller = BOU
+add_core = BOU
+capital = "Moulins"
+trade_goods = wheat
+culture = limousin
+religion = catholic
+hre = no
+base_tax = 15
+base_production = 0
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 2
+}
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = western
+discovered_by = muslim
+1356.1.1 = { 
+	add_permanent_claim = FRA
+	set_province_flag = add_local_autonomy_25
+}
+100.1.1 = { 
+	set_variable = { 
+		which = amj
+		value = 156.997
+	}
+	set_variable = { 
+		which = amk
+		value = 0.000
+	}
+	set_variable = { 
+		which = amh
+		value = 156.997
+	}
+	set_variable = { 
+		which = ami
+		value = 0.000
+	}
+	set_variable = { 
+		which = amf
+		value = 107.936
+	}
+	set_variable = { 
+		which = amg
+		value = 0.000
+	}
+	set_variable = { 
+		which = amd
+		value = 127.560
+	}
+	set_variable = { 
+		which = ame
+		value = 0.000
+	}
+	set_variable = { 
+		which = amb
+		value = 147.185
+	}
+	set_variable = { 
+		which = amc
+		value = 0.000
+	}
+	set_variable = { 
+		which = alz
+		value = 161.903
+	}
+	set_variable = { 
+		which = ama
+		value = 0.000
+	}
+	set_variable = { 
+		which = alx
+		value = 181.528
+	}
+	set_variable = { 
+		which = aly
+		value = 0.000
+	}
+	set_variable = { 
+		which = alv
+		value = 206.059
+	}
+	set_variable = { 
+		which = alw
+		value = 0.000
+	}
+	set_variable = { 
+		which = alt
+		value = 204.871
+	}
+	set_variable = { 
+		which = alu
+		value = 11.000
+	}
+	set_variable = { 
+		which = alr
+		value = 250.560
+	}
+	set_variable = { 
+		which = als
+		value = 11.000
+	}
+	set_variable = { 
+		which = alp
+		value = 325.545
+	}
+	set_variable = { 
+		which = alq
+		value = 22.000
+	}
+	set_variable = { 
+		which = aho
+		value = 383.118
+	}
+	set_variable = { 
+		which = ahp
+		value = 34.000
+	}
+}

@@ -1,0 +1,24 @@
+capital = "Tupi"
+trade_goods = unknown
+culture = tupinamba
+religion = jungle_spiritism
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+native_size = 20
+native_ferocity = 1
+native_hostileness = 6
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 48
+	}
+	set_province_flag = TN_RiverSea
+	set_province_flag = TN_Harbour_Minor
+	set_province_flag = TN_Natural_Important
+	set_variable = { 
+		which = acp
+		value = 1.5
+	}
+}

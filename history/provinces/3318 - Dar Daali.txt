@@ -1,0 +1,27 @@
+owner = DSL
+controller = DSL
+add_core = DSL
+capital = "Al Fashir"
+trade_goods = incense
+culture = foora
+religion = lotuko_pagan
+hre = no
+base_tax = 6
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 1.5
+	}
+	set_province_flag = incense
+}

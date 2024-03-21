@@ -1,0 +1,19 @@
+capital = "Lenca"
+trade_goods = unknown
+culture = xinca
+religion = mayan
+hre = no
+base_tax = 2
+base_production = 0
+base_manpower = 0
+native_size = 20
+native_ferocity = 4
+native_hostileness = 8
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+	set_province_flag = silver
+}

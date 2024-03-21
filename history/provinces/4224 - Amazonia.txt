@@ -1,0 +1,2 @@
+culture = ge
+religion = jungle_spiritism

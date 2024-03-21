@@ -1,0 +1,46 @@
+owner = KBI
+controller = KBI
+add_core = KBI
+capital = "Birnin Kebbi"
+trade_goods = wool
+culture = haussa
+religion = sunni
+hre = no
+base_tax = 10
+base_production = 0
+base_manpower = 0
+is_city = yes
+fort_14th = yes
+set_variable = { 
+	which = gcn
+	value = 2
+}
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 10.000
+	}
+	set_variable = { 
+		which = atc
+		value = 20.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 27
+	}
+	set_province_flag = TN_Important
+	set_variable = { 
+		which = ami
+		value = 6.193
+	}
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+	set_province_flag = TN_RiverJump
+	set_province_flag = TN_RiverJumpB
+}

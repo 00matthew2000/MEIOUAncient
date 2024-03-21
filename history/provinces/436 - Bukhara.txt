@@ -1,0 +1,60 @@
+owner = CHG
+controller = CHG
+add_core = CHG
+capital = "Bukhara"
+trade_goods = cotton
+culture = sart
+religion = sunni
+base_tax = 3
+base_production = 5
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 2
+}
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = indian
+discovered_by = muslim
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = ottoman
+200.1.1 = { 
+	set_province_flag = TN_Major
+	set_province_flag = TN_Natural_Minor
+	set_province_flag = TN_Silk
+	set_variable = { 
+		which = abb
+		value = 10.000
+	}
+	set_variable = { 
+		which = atc
+		value = 40.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+	add_permanent_province_modifier = { 
+		name = urban_goods_silk
+		duration = -1
+	}
+	set_province_flag = silk_road_town
+}

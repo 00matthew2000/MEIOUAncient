@@ -1,0 +1,42 @@
+owner = LVO
+controller = LVO
+add_core = LVO
+capital = "Pernau"
+trade_goods = wheat
+culture = estonian
+religion = catholic
+hre = no
+base_tax = 4
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 1
+}
+set_variable = { 
+	which = gcn
+	value = 1
+}
+discovered_by = western
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 1.500
+	}
+	set_province_flag = TN_Minor
+	set_province_flag = TN_Port
+	set_province_flag = TN_Harbour_Minor
+	set_province_flag = TN_Natural_Minor
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+}
+1356.1.1 = { 
+	add_core = EST
+}

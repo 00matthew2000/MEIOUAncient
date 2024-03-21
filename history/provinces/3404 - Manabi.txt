@@ -1,0 +1,32 @@
+owner = MTN
+controller = MTN
+add_core = MTN
+capital = "Manabi"
+trade_goods = fish
+culture = manteno
+religion = inti
+hre = no
+base_tax = 21
+base_production = 0
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = south_american
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 5.000
+	}
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+	set_province_flag = cacao
+}

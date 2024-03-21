@@ -1,0 +1,1395 @@
+give_Agriculture_10 = { 
+	cost = 10
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			AND = { 
+				check_variable = { 
+					which = ati
+					value = 2.5
+				}
+			}
+			tooltip = Prov_State_Reach_BuildingGive_tt
+		}
+		OR = { 
+			owner = { 
+				ai = no
+			}
+			owner = { 
+				overlord = { 
+					ai = no
+				}
+			}
+		}
+		AND = { 
+			check_variable = { 
+				which = gzg
+				value = 0.001
+			}
+		}
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		hidden_effect = { 
+			remove_building = give_Agriculture_10
+			change_variable = { 
+				which = jxx
+				value = 10
+			}
+			set_variable = { 
+				which = arf
+				value = 100
+			}
+			subtract_variable = { 
+				which = arf
+				which = atm
+			}
+			multiply_variable = { 
+				which = arf
+				which = ati
+			}
+			divide_variable = { 
+				which = arf
+				value = 10000
+			}
+			change_variable = { 
+				which = jyg
+				which = arf
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}
+give_Agriculture_50 = { 
+	cost = 50
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			AND = { 
+				check_variable = { 
+					which = ati
+					value = 2.5
+				}
+			}
+			tooltip = Prov_State_Reach_BuildingGive_tt
+		}
+		OR = { 
+			owner = { 
+				ai = no
+			}
+			owner = { 
+				overlord = { 
+					ai = no
+				}
+			}
+		}
+		AND = { 
+			check_variable = { 
+				which = gzg
+				value = 0.001
+			}
+		}
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		hidden_effect = { 
+			remove_building = give_Agriculture_50
+			change_variable = { 
+				which = jxx
+				value = 50
+			}
+			set_variable = { 
+				which = arf
+				value = 100
+			}
+			subtract_variable = { 
+				which = arf
+				which = atm
+			}
+			multiply_variable = { 
+				which = arf
+				which = ati
+			}
+			divide_variable = { 
+				which = arf
+				value = 2000
+			}
+			change_variable = { 
+				which = jyg
+				which = arf
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}
+give_Agriculture_100 = { 
+	cost = 100
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			AND = { 
+				check_variable = { 
+					which = ati
+					value = 2.5
+				}
+			}
+			tooltip = Prov_State_Reach_BuildingGive_tt
+		}
+		OR = { 
+			owner = { 
+				ai = no
+			}
+			owner = { 
+				overlord = { 
+					ai = no
+				}
+			}
+		}
+		AND = { 
+			check_variable = { 
+				which = gzg
+				value = 0.001
+			}
+		}
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		hidden_effect = { 
+			remove_building = give_Agriculture_100
+			change_variable = { 
+				which = jxx
+				value = 100
+			}
+			set_variable = { 
+				which = arf
+				value = 100
+			}
+			subtract_variable = { 
+				which = arf
+				which = atm
+			}
+			multiply_variable = { 
+				which = arf
+				which = ati
+			}
+			divide_variable = { 
+				which = arf
+				value = 1000
+			}
+			change_variable = { 
+				which = jyg
+				which = arf
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}
+give_Forestry_10 = { 
+	cost = 10
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			AND = { 
+				check_variable = { 
+					which = ati
+					value = 2.5
+				}
+			}
+			tooltip = Prov_State_Reach_BuildingGive_tt
+		}
+		OR = { 
+			owner = { 
+				ai = no
+			}
+			owner = { 
+				overlord = { 
+					ai = no
+				}
+			}
+		}
+		AND = { 
+			check_variable = { 
+				which = gzj
+				value = 0.001
+			}
+		}
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		hidden_effect = { 
+			remove_building = give_Forestry_10
+			change_variable = { 
+				which = jyh
+				value = 10
+			}
+			set_variable = { 
+				which = arf
+				value = 100
+			}
+			subtract_variable = { 
+				which = arf
+				which = atm
+			}
+			multiply_variable = { 
+				which = arf
+				which = ati
+			}
+			divide_variable = { 
+				which = arf
+				value = 10000
+			}
+			change_variable = { 
+				which = jyq
+				which = arf
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}
+give_Forestry_50 = { 
+	cost = 50
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			AND = { 
+				check_variable = { 
+					which = ati
+					value = 2.5
+				}
+			}
+			tooltip = Prov_State_Reach_BuildingGive_tt
+		}
+		OR = { 
+			owner = { 
+				ai = no
+			}
+			owner = { 
+				overlord = { 
+					ai = no
+				}
+			}
+		}
+		AND = { 
+			check_variable = { 
+				which = gzj
+				value = 0.001
+			}
+		}
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		hidden_effect = { 
+			remove_building = give_Forestry_50
+			change_variable = { 
+				which = jyh
+				value = 50
+			}
+			set_variable = { 
+				which = arf
+				value = 100
+			}
+			subtract_variable = { 
+				which = arf
+				which = atm
+			}
+			multiply_variable = { 
+				which = arf
+				which = ati
+			}
+			divide_variable = { 
+				which = arf
+				value = 2000
+			}
+			change_variable = { 
+				which = jyq
+				which = arf
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}
+give_Forestry_100 = { 
+	cost = 100
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			AND = { 
+				check_variable = { 
+					which = ati
+					value = 2.5
+				}
+			}
+			tooltip = Prov_State_Reach_BuildingGive_tt
+		}
+		OR = { 
+			owner = { 
+				ai = no
+			}
+			owner = { 
+				overlord = { 
+					ai = no
+				}
+			}
+		}
+		AND = { 
+			check_variable = { 
+				which = gzj
+				value = 0.001
+			}
+		}
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		hidden_effect = { 
+			remove_building = give_Forestry_100
+			change_variable = { 
+				which = jyh
+				value = 100
+			}
+			set_variable = { 
+				which = arf
+				value = 100
+			}
+			subtract_variable = { 
+				which = arf
+				which = atm
+			}
+			multiply_variable = { 
+				which = arf
+				which = ati
+			}
+			divide_variable = { 
+				which = arf
+				value = 1000
+			}
+			change_variable = { 
+				which = jyq
+				which = arf
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}
+give_Extraction_10 = { 
+	cost = 10
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			AND = { 
+				check_variable = { 
+					which = ati
+					value = 2.5
+				}
+			}
+			tooltip = Prov_State_Reach_BuildingGive_tt
+		}
+		OR = { 
+			owner = { 
+				ai = no
+			}
+			owner = { 
+				overlord = { 
+					ai = no
+				}
+			}
+		}
+		AND = { 
+			check_variable = { 
+				which = gzi
+				value = 0.001
+			}
+		}
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		hidden_effect = { 
+			remove_building = give_Extraction_10
+			change_variable = { 
+				which = jyr
+				value = 10
+			}
+			set_variable = { 
+				which = arf
+				value = 100
+			}
+			subtract_variable = { 
+				which = arf
+				which = atm
+			}
+			multiply_variable = { 
+				which = arf
+				which = ati
+			}
+			divide_variable = { 
+				which = arf
+				value = 10000
+			}
+			change_variable = { 
+				which = jza
+				which = arf
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}
+give_Extraction_50 = { 
+	cost = 50
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			AND = { 
+				check_variable = { 
+					which = ati
+					value = 2.5
+				}
+			}
+			tooltip = Prov_State_Reach_BuildingGive_tt
+		}
+		OR = { 
+			owner = { 
+				ai = no
+			}
+			owner = { 
+				overlord = { 
+					ai = no
+				}
+			}
+		}
+		AND = { 
+			check_variable = { 
+				which = gzi
+				value = 0.001
+			}
+		}
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		hidden_effect = { 
+			remove_building = give_Extraction_50
+			change_variable = { 
+				which = jyr
+				value = 50
+			}
+			set_variable = { 
+				which = arf
+				value = 100
+			}
+			subtract_variable = { 
+				which = arf
+				which = atm
+			}
+			multiply_variable = { 
+				which = arf
+				which = ati
+			}
+			divide_variable = { 
+				which = arf
+				value = 2000
+			}
+			change_variable = { 
+				which = jza
+				which = arf
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}
+give_Extraction_100 = { 
+	cost = 100
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			AND = { 
+				check_variable = { 
+					which = ati
+					value = 2.5
+				}
+			}
+			tooltip = Prov_State_Reach_BuildingGive_tt
+		}
+		OR = { 
+			owner = { 
+				ai = no
+			}
+			owner = { 
+				overlord = { 
+					ai = no
+				}
+			}
+		}
+		AND = { 
+			check_variable = { 
+				which = gzi
+				value = 0.001
+			}
+		}
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		hidden_effect = { 
+			remove_building = give_Extraction_100
+			change_variable = { 
+				which = jyr
+				value = 100
+			}
+			set_variable = { 
+				which = arf
+				value = 100
+			}
+			subtract_variable = { 
+				which = arf
+				which = atm
+			}
+			multiply_variable = { 
+				which = arf
+				which = ati
+			}
+			divide_variable = { 
+				which = arf
+				value = 1000
+			}
+			change_variable = { 
+				which = jza
+				which = arf
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}
+give_Fishery_10 = { 
+	cost = 10
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			AND = { 
+				check_variable = { 
+					which = ati
+					value = 2.5
+				}
+			}
+			tooltip = Prov_State_Reach_BuildingGive_tt
+		}
+		OR = { 
+			owner = { 
+				ai = no
+			}
+			owner = { 
+				overlord = { 
+					ai = no
+				}
+			}
+		}
+		AND = { 
+			check_variable = { 
+				which = gzh
+				value = 0.001
+			}
+		}
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		hidden_effect = { 
+			remove_building = give_Fishery_10
+			change_variable = { 
+				which = jzb
+				value = 10
+			}
+			set_variable = { 
+				which = arf
+				value = 100
+			}
+			subtract_variable = { 
+				which = arf
+				which = atm
+			}
+			multiply_variable = { 
+				which = arf
+				which = ati
+			}
+			divide_variable = { 
+				which = arf
+				value = 10000
+			}
+			change_variable = { 
+				which = jzk
+				which = arf
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}
+give_Fishery_50 = { 
+	cost = 50
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			AND = { 
+				check_variable = { 
+					which = ati
+					value = 2.5
+				}
+			}
+			tooltip = Prov_State_Reach_BuildingGive_tt
+		}
+		OR = { 
+			owner = { 
+				ai = no
+			}
+			owner = { 
+				overlord = { 
+					ai = no
+				}
+			}
+		}
+		AND = { 
+			check_variable = { 
+				which = gzh
+				value = 0.001
+			}
+		}
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		hidden_effect = { 
+			remove_building = give_Fishery_50
+			change_variable = { 
+				which = jzb
+				value = 50
+			}
+			set_variable = { 
+				which = arf
+				value = 100
+			}
+			subtract_variable = { 
+				which = arf
+				which = atm
+			}
+			multiply_variable = { 
+				which = arf
+				which = ati
+			}
+			divide_variable = { 
+				which = arf
+				value = 2000
+			}
+			change_variable = { 
+				which = jzk
+				which = arf
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}
+give_Fishery_100 = { 
+	cost = 100
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			AND = { 
+				check_variable = { 
+					which = ati
+					value = 2.5
+				}
+			}
+			tooltip = Prov_State_Reach_BuildingGive_tt
+		}
+		OR = { 
+			owner = { 
+				ai = no
+			}
+			owner = { 
+				overlord = { 
+					ai = no
+				}
+			}
+		}
+		AND = { 
+			check_variable = { 
+				which = gzh
+				value = 0.001
+			}
+		}
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		hidden_effect = { 
+			remove_building = give_Fishery_100
+			change_variable = { 
+				which = jzb
+				value = 100
+			}
+			set_variable = { 
+				which = arf
+				value = 100
+			}
+			subtract_variable = { 
+				which = arf
+				which = atm
+			}
+			multiply_variable = { 
+				which = arf
+				which = ati
+			}
+			divide_variable = { 
+				which = arf
+				value = 1000
+			}
+			change_variable = { 
+				which = jzk
+				which = arf
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}
+give_Commercial_10 = { 
+	cost = 10
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			AND = { 
+				check_variable = { 
+					which = ati
+					value = 2.5
+				}
+			}
+			tooltip = Prov_State_Reach_BuildingGive_tt
+		}
+		OR = { 
+			owner = { 
+				ai = no
+			}
+			owner = { 
+				overlord = { 
+					ai = no
+				}
+			}
+		}
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		hidden_effect = { 
+			remove_building = give_Commercial_10
+			change_variable = { 
+				which = jzl
+				value = 10
+			}
+			set_variable = { 
+				which = arf
+				value = 100
+			}
+			subtract_variable = { 
+				which = arf
+				which = atm
+			}
+			multiply_variable = { 
+				which = arf
+				which = ati
+			}
+			divide_variable = { 
+				which = arf
+				value = 10000
+			}
+			change_variable = { 
+				which = jzu
+				which = arf
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}
+give_Commercial_50 = { 
+	cost = 50
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			AND = { 
+				check_variable = { 
+					which = ati
+					value = 2.5
+				}
+			}
+			tooltip = Prov_State_Reach_BuildingGive_tt
+		}
+		OR = { 
+			owner = { 
+				ai = no
+			}
+			owner = { 
+				overlord = { 
+					ai = no
+				}
+			}
+		}
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		hidden_effect = { 
+			remove_building = give_Commercial_50
+			change_variable = { 
+				which = jzl
+				value = 50
+			}
+			set_variable = { 
+				which = arf
+				value = 100
+			}
+			subtract_variable = { 
+				which = arf
+				which = atm
+			}
+			multiply_variable = { 
+				which = arf
+				which = ati
+			}
+			divide_variable = { 
+				which = arf
+				value = 2000
+			}
+			change_variable = { 
+				which = jzu
+				which = arf
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}
+give_Commercial_100 = { 
+	cost = 100
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			AND = { 
+				check_variable = { 
+					which = ati
+					value = 2.5
+				}
+			}
+			tooltip = Prov_State_Reach_BuildingGive_tt
+		}
+		OR = { 
+			owner = { 
+				ai = no
+			}
+			owner = { 
+				overlord = { 
+					ai = no
+				}
+			}
+		}
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		hidden_effect = { 
+			remove_building = give_Commercial_100
+			change_variable = { 
+				which = jzl
+				value = 100
+			}
+			set_variable = { 
+				which = arf
+				value = 100
+			}
+			subtract_variable = { 
+				which = arf
+				which = atm
+			}
+			multiply_variable = { 
+				which = arf
+				which = ati
+			}
+			divide_variable = { 
+				which = arf
+				value = 1000
+			}
+			change_variable = { 
+				which = jzu
+				which = arf
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}
+give_Industrial_10 = { 
+	cost = 10
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			AND = { 
+				check_variable = { 
+					which = ati
+					value = 2.5
+				}
+			}
+			tooltip = Prov_State_Reach_BuildingGive_tt
+		}
+		OR = { 
+			owner = { 
+				ai = no
+			}
+			owner = { 
+				overlord = { 
+					ai = no
+				}
+			}
+		}
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		hidden_effect = { 
+			remove_building = give_Industrial_10
+			change_variable = { 
+				which = jzv
+				value = 10
+			}
+			set_variable = { 
+				which = arf
+				value = 100
+			}
+			subtract_variable = { 
+				which = arf
+				which = atm
+			}
+			multiply_variable = { 
+				which = arf
+				which = ati
+			}
+			divide_variable = { 
+				which = arf
+				value = 10000
+			}
+			change_variable = { 
+				which = kae
+				which = arf
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}
+give_Industrial_50 = { 
+	cost = 50
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			AND = { 
+				check_variable = { 
+					which = ati
+					value = 2.5
+				}
+			}
+			tooltip = Prov_State_Reach_BuildingGive_tt
+		}
+		OR = { 
+			owner = { 
+				ai = no
+			}
+			owner = { 
+				overlord = { 
+					ai = no
+				}
+			}
+		}
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		hidden_effect = { 
+			remove_building = give_Industrial_50
+			change_variable = { 
+				which = jzv
+				value = 50
+			}
+			set_variable = { 
+				which = arf
+				value = 100
+			}
+			subtract_variable = { 
+				which = arf
+				which = atm
+			}
+			multiply_variable = { 
+				which = arf
+				which = ati
+			}
+			divide_variable = { 
+				which = arf
+				value = 2000
+			}
+			change_variable = { 
+				which = kae
+				which = arf
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}
+give_Industrial_100 = { 
+	cost = 100
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			AND = { 
+				check_variable = { 
+					which = ati
+					value = 2.5
+				}
+			}
+			tooltip = Prov_State_Reach_BuildingGive_tt
+		}
+		OR = { 
+			owner = { 
+				ai = no
+			}
+			owner = { 
+				overlord = { 
+					ai = no
+				}
+			}
+		}
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		hidden_effect = { 
+			remove_building = give_Industrial_100
+			change_variable = { 
+				which = jzv
+				value = 100
+			}
+			set_variable = { 
+				which = arf
+				value = 100
+			}
+			subtract_variable = { 
+				which = arf
+				which = atm
+			}
+			multiply_variable = { 
+				which = arf
+				which = ati
+			}
+			divide_variable = { 
+				which = arf
+				value = 1000
+			}
+			change_variable = { 
+				which = kae
+				which = arf
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}
+give_Academic_10 = { 
+	cost = 10
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			AND = { 
+				check_variable = { 
+					which = ati
+					value = 2.5
+				}
+			}
+			tooltip = Prov_State_Reach_BuildingGive_tt
+		}
+		OR = { 
+			owner = { 
+				ai = no
+			}
+			owner = { 
+				overlord = { 
+					ai = no
+				}
+			}
+		}
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		hidden_effect = { 
+			remove_building = give_Academic_10
+			change_variable = { 
+				which = kaf
+				value = 10
+			}
+			set_variable = { 
+				which = arf
+				value = 100
+			}
+			subtract_variable = { 
+				which = arf
+				which = atm
+			}
+			multiply_variable = { 
+				which = arf
+				which = ati
+			}
+			divide_variable = { 
+				which = arf
+				value = 10000
+			}
+			change_variable = { 
+				which = kao
+				which = arf
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}
+give_Academic_50 = { 
+	cost = 50
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			AND = { 
+				check_variable = { 
+					which = ati
+					value = 2.5
+				}
+			}
+			tooltip = Prov_State_Reach_BuildingGive_tt
+		}
+		OR = { 
+			owner = { 
+				ai = no
+			}
+			owner = { 
+				overlord = { 
+					ai = no
+				}
+			}
+		}
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		hidden_effect = { 
+			remove_building = give_Academic_50
+			change_variable = { 
+				which = kaf
+				value = 50
+			}
+			set_variable = { 
+				which = arf
+				value = 100
+			}
+			subtract_variable = { 
+				which = arf
+				which = atm
+			}
+			multiply_variable = { 
+				which = arf
+				which = ati
+			}
+			divide_variable = { 
+				which = arf
+				value = 2000
+			}
+			change_variable = { 
+				which = kao
+				which = arf
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}
+give_Academic_100 = { 
+	cost = 100
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			AND = { 
+				check_variable = { 
+					which = ati
+					value = 2.5
+				}
+			}
+			tooltip = Prov_State_Reach_BuildingGive_tt
+		}
+		OR = { 
+			owner = { 
+				ai = no
+			}
+			owner = { 
+				overlord = { 
+					ai = no
+				}
+			}
+		}
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		hidden_effect = { 
+			remove_building = give_Academic_100
+			change_variable = { 
+				which = kaf
+				value = 100
+			}
+			set_variable = { 
+				which = arf
+				value = 100
+			}
+			subtract_variable = { 
+				which = arf
+				which = atm
+			}
+			multiply_variable = { 
+				which = arf
+				which = ati
+			}
+			divide_variable = { 
+				which = arf
+				value = 1000
+			}
+			change_variable = { 
+				which = kao
+				which = arf
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}

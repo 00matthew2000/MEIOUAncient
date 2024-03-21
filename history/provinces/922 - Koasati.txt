@@ -1,0 +1,22 @@
+capital = "Koasati"
+trade_goods = unknown
+culture = chickasaw
+religion = mississippian
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+native_size = 10
+native_ferocity = 1
+native_hostileness = 3
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 56
+	}
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+	set_province_flag = coal
+}

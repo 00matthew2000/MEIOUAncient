@@ -1,0 +1,3 @@
+culture = mapuche
+religion = ngenechen
+discovered_by = south_american

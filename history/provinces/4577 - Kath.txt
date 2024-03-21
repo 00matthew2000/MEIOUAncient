@@ -1,0 +1,40 @@
+owner = CHG
+controller = CHG
+add_core = CHG
+capital = "Darganata"
+trade_goods = cotton
+culture = chaghatai
+religion = sunni
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 1
+}
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = ottoman
+discovered_by = muslim
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 18.000
+	}
+	set_variable = { 
+		which = atc
+		value = 40.000
+	}
+}
+450.1.1 = { 
+	set_province_flag = TN_Silk
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+}
+1356.1.1 = { 
+	add_core = KHI
+}

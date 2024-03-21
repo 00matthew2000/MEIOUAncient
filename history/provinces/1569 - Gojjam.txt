@@ -1,0 +1,27 @@
+owner = ETH
+controller = ETH
+add_core = ETH
+capital = "Debre Marqos"
+trade_goods = lumber
+culture = amhara
+religion = oriental
+base_tax = 4
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = muslim
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = ottoman
+discovered_by = east_african
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+	set_variable = { 
+		which = atc
+		value = 20.000
+	}
+	set_province_flag = coffee
+}

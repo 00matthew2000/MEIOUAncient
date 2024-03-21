@@ -1,0 +1,36 @@
+owner = YUA
+controller = YUA
+add_core = YUA
+capital = "Urga"
+trade_goods = wheat
+culture = mongol
+religion = tengri_pagan
+hre = no
+base_tax = 9
+base_production = 0
+base_manpower = 1
+is_city = yes
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 100.000
+	}
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+	set_province_flag = gold
+	set_province_flag = no_mines
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+}

@@ -1,0 +1,51 @@
+owner = ZOU
+controller = ZOU
+capital = "Xinghua"
+trade_goods = wheat
+culture = jianghuai
+religion = mahayana
+hre = no
+base_tax = 24
+base_production = 0
+base_manpower = 1
+is_city = yes
+fort_14th = yes
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gci
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 3
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 92
+	}
+	set_variable = { 
+		which = acp
+		value = 7
+	}
+	set_province_flag = seasalt
+}
+1276.1.1 = { 
+	owner = YUA
+	controller = YUA
+	add_core = YUA
+}
+1351.1.1 = { 
+	owner = ZOU
+	controller = ZOU
+	add_core = ZOU
+}

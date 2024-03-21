@@ -1,0 +1,34 @@
+capital = "Maqên"
+trade_goods = wool
+culture = amdo
+religion = vajrayana
+hre = no
+base_tax = 1
+base_production = 0
+base_manpower = 1
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 60.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 2.000
+	}
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+	set_province_flag = coal
+	set_province_flag = copper
+	set_province_flag = no_mines
+}

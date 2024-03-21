@@ -1,0 +1,23 @@
+owner = ACA
+controller = ACA
+add_core = ACA
+capital = "Acambaro"
+trade_goods = maize
+culture = purepechan
+religion = kurikaweri
+hre = no
+base_tax = 15
+base_production = 0
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 6
+	}
+}

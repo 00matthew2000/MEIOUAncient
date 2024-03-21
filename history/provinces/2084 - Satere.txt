@@ -1,0 +1,22 @@
+capital = "Sateré"
+trade_goods = unknown
+culture = jivaro
+religion = jungle_spiritism
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+native_size = 20
+native_ferocity = 1
+native_hostileness = 3
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 48
+	}
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+	set_province_flag = gold
+}

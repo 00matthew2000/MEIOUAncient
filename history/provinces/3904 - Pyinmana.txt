@@ -1,0 +1,28 @@
+owner = PIN
+controller = PIN
+add_core = PIN
+capital = "Pyinmana"
+trade_goods = rice
+culture = burmese
+religion = theravada
+hre = no
+base_tax = 10
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = indian
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 80
+	}
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+	set_province_flag = coal
+}

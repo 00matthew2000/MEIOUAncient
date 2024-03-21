@@ -1,0 +1,28 @@
+owner = CBS
+controller = CBS
+add_core = CBS
+capital = "Karaguaje"
+trade_goods = maize
+culture = muisca
+religion = chiminigagua
+hre = no
+base_tax = 30
+base_production = 0
+base_manpower = 2
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = south_american
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+	set_province_flag = coca
+	set_variable = { 
+		which = ami
+		value = 2.000
+	}
+}

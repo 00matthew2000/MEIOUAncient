@@ -1,0 +1,30 @@
+owner = DAM
+controller = DAM
+add_core = DAM
+capital = "Inarya"
+trade_goods = livestock
+culture = sidamo
+religion = oriental
+base_tax = 4
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = muslim
+discovered_by = east_african
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 60.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+	set_province_flag = gold
+}

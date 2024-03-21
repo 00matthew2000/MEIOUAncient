@@ -1,0 +1,152 @@
+owner = MAZ
+controller = MAZ
+add_core = MAZ
+capital = "Rawa"
+trade_goods = wheat
+culture = polish
+religion = catholic
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gci
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = western
+discovered_by = muslim
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = baf
+		value = 8
+	}
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+}
+1355.1.1 = { 
+	add_permanent_province_modifier = { 
+		name = polish_estates
+		duration = -1
+	}
+}
+1356.1.1 = { 
+	add_core = POL
+}
+100.1.1 = { 
+	set_variable = { 
+		which = amj
+		value = 58.314
+	}
+	set_variable = { 
+		which = amk
+		value = 0.000
+	}
+	set_variable = { 
+		which = amh
+		value = 58.314
+	}
+	set_variable = { 
+		which = ami
+		value = 2.000
+	}
+	set_variable = { 
+		which = amf
+		value = 44.044
+	}
+	set_variable = { 
+		which = amg
+		value = 0.000
+	}
+	set_variable = { 
+		which = amd
+		value = 52.260
+	}
+	set_variable = { 
+		which = ame
+		value = 0.000
+	}
+	set_variable = { 
+		which = amb
+		value = 58.902
+	}
+	set_variable = { 
+		which = amc
+		value = 0.000
+	}
+	set_variable = { 
+		which = alz
+		value = 86.879
+	}
+	set_variable = { 
+		which = ama
+		value = 0.000
+	}
+	set_variable = { 
+		which = alx
+		value = 119.437
+	}
+	set_variable = { 
+		which = aly
+		value = 0.000
+	}
+	set_variable = { 
+		which = alv
+		value = 120.755
+	}
+	set_variable = { 
+		which = alw
+		value = 0.000
+	}
+	set_variable = { 
+		which = alt
+		value = 120.140
+	}
+	set_variable = { 
+		which = alu
+		value = 0.000
+	}
+	set_variable = { 
+		which = alr
+		value = 126.640
+	}
+	set_variable = { 
+		which = als
+		value = 0.000
+	}
+	set_variable = { 
+		which = alp
+		value = 145.434
+	}
+	set_variable = { 
+		which = alq
+		value = 0.000
+	}
+	set_variable = { 
+		which = aho
+		value = 184.955
+	}
+	set_variable = { 
+		which = ahp
+		value = 0.000
+	}
+}

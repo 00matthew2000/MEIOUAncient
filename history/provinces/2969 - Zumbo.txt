@@ -1,0 +1,30 @@
+owner = ZIM
+controller = ZIM
+add_core = ZIM
+capital = "Chikova"
+trade_goods = cotton
+culture = shona
+religion = bantu_pagan
+hre = no
+base_tax = 1
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = central_african
+discovered_by = east_african
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 23
+	}
+	set_variable = { 
+		which = acp
+		value = 2
+	}
+}

@@ -1,0 +1,35 @@
+owner = BRT
+controller = BRT
+add_core = BRT
+capital = "Angida"
+trade_goods = wool
+culture = khamnigan
+religion = tengri_pagan
+hre = no
+base_tax = 2
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = steppestech
+discovered_by = YUA
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 90.000
+	}
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 1.5
+	}
+	set_province_flag = copper
+	add_permanent_province_modifier = { 
+		name = fur_low
+		duration = -1
+	}
+}

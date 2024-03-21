@@ -1,0 +1,42 @@
+owner = YUA
+controller = YUA
+add_core = YUA
+capital = "Kurchum"
+trade_goods = livestock
+culture = oirats
+religion = tengri_pagan
+hre = no
+base_tax = 5
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = YEN
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 100.000
+	}
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 1
+	}
+	set_province_flag = TN_Lake
+	set_province_flag = TN_Natural_Minor
+}
+1225.1.1 = { 
+	owner = OIR
+	controller = OIR
+	add_core = OIR
+}

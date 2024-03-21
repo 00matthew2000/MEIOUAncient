@@ -1,0 +1,2 @@
+culture = beothuk
+religion = inuuk_pagan

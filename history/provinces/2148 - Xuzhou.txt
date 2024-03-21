@@ -1,0 +1,57 @@
+owner = YUA
+controller = YUA
+capital = "Xuzhou"
+trade_goods = cotton
+culture = hanyu
+religion = mahayana
+hre = no
+base_tax = 21
+base_production = 4
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 3
+}
+set_variable = { 
+	which = gcj
+	value = 3
+}
+set_variable = { 
+	which = gci
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 3
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_province_flag = TN_Natural_Minor
+	set_variable = { 
+		which = baf
+		value = 98
+	}
+	set_province_flag = TN_RiverJoint
+	set_variable = { 
+		which = acp
+		value = 6
+	}
+	set_province_flag = iron
+	set_province_flag = coal
+	set_province_flag = TN_RiverJump
+}
+1271.12.18 = { 
+	add_core = YUA
+}
+1351.1.1 = { 
+	owner = XNG
+	controller = XNG
+	add_core = XNG
+}

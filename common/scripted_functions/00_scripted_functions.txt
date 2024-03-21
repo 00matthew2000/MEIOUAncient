@@ -1,0 +1,656 @@
+can_join_hre_league = { 
+	condition = { 
+		tooltip = "dg_cannot_join_league"
+		potential = { }
+		allow = { 
+			OR = { 
+				capital_scope = { 
+					is_part_of_hre = yes
+				}
+				has_global_flag = DG_Second_League_War
+				is_emperor = yes
+			}
+			OR = { 
+				religion = catholic
+				religion = protestant
+				religion = reformed
+				religion = hussite
+				religion = waldensian
+				religion = lollard
+				religion = avignonist
+				religion = holyleague
+			}
+			is_at_war = no
+			capital_scope = { 
+				continent = europe
+			}
+			OR = { 
+				is_subject = no
+				is_subject_of_type = tributary_state
+			}
+		}
+	}
+}
+can_leave_hre_league = { }
+can_harsh_treatment = { }
+can_reduce_war_exhaustion = { 
+	condition = { 
+		potential = { 
+			always = yes
+		}
+		allow = { 
+			always = no
+		}
+	}
+}
+can_reduce_inflation = { 
+	condition = { 
+		potential = { 
+			ai = yes
+		}
+		allow = { 
+			inflation = 10
+		}
+	}
+}
+can_declare_bankruptcy = { 
+	condition = { 
+		potential = { 
+			always = yes
+		}
+		allow = { 
+			always = no
+		}
+	}
+}
+can_release_colonial_nation = { 
+	condition = { 
+		tooltip = "CAN_RELEASE_CN_WE_ARE_AT_WAR"
+		potential = { 
+			always = yes
+		}
+		allow = { 
+			is_at_war = no
+		}
+	}
+}
+can_claim_defender_of_faith = { 
+	condition = { 
+		tooltip = "dg_low_piety_message"
+		potential = { 
+			always = no
+		}
+		allow = { 
+			always = no
+		}
+	}
+}
+can_change_national_focus = { }
+can_increase_stability = { 
+	condition = { 
+		tooltip = "stability_button_gone"
+		potential = { 
+			always = yes
+		}
+		allow = { 
+			always = no
+		}
+	}
+}
+can_add_province_to_hre = { 
+	condition = { 
+		tooltip = "APH_NOT_OWNED_CONTROLLED"
+		potential = { }
+		allow = { 
+			owned_by = FROM
+			controlled_by = FROM
+		}
+	}
+	condition = { 
+		tooltip = "POPE_NOT_JOIN_HRE"
+		potential = { }
+		allow = { 
+			FROM = { 
+				NOT = { 
+					tag = PAP
+				}
+				NOT = { 
+					tag = AVI
+				}
+			}
+		}
+	}
+	condition = { 
+		tooltip = "NORTHERN_ITALIANS_NOT_JOIN_HRE"
+		potential = { }
+		allow = { 
+			FROM = { 
+				NOT = { 
+					tag = VEN
+				}
+				NOT = { 
+					tag = GEN
+				}
+			}
+		}
+	}
+	condition = { 
+		tooltip = "ITALY_HRE_NOPE"
+		potential = { 
+			has_global_flag = italy_out_of_HRE
+			capital_scope = { 
+				AND = { 
+					superregion = italy_superregion
+					OR = { 
+						region = east_italy_region
+						region = west_italy_region
+						region = central_italy_region
+					}
+					OR = { 
+						NOT = { 
+							area = corsica_sardinia_area
+						}
+						province_id = 1247
+						province_id = 2851
+					}
+					NOT = { 
+						province_id = 107
+						province_id = 112
+						province_id = 101
+						province_id = 1513
+					}
+				}
+				NOT = { 
+					is_part_of_hre = yes
+				}
+			}
+		}
+		allow = { 
+			always = no
+		}
+	}
+}
+can_remove_province_from_hre = { 
+	condition = { 
+		tooltip = "RPH_AT_WAR"
+		potential = { 
+			always = yes
+		}
+		allow = { 
+			owner = { 
+				is_at_war = no
+			}
+		}
+	}
+	condition = { 
+		tooltip = "RPH_SUBJECT"
+		potential = { 
+			always = yes
+		}
+		allow = { 
+			owner = { 
+				OR = { 
+					is_subject = no
+					is_subject_of_type = tributary_state
+				}
+			}
+		}
+	}
+	condition = { 
+		tooltip = "RPH_TRUCE_EMP"
+		potential = { }
+		allow = { 
+			owner = { 
+				NOT = { 
+					truce_with = emperor
+				}
+			}
+		}
+	}
+}
+can_increase_autonomy = { 
+	condition = { 
+		potential = { 
+			always = yes
+		}
+		allow = { 
+			always = no
+		}
+	}
+}
+can_decrease_autonomy = { 
+	condition = { 
+		potential = { 
+			always = yes
+		}
+		allow = { 
+			always = no
+		}
+	}
+}
+can_make_core = { 
+	condition = { 
+		tooltip = "tt_core_conditions"
+		potential = { 
+			always = yes
+		}
+		allow = { 
+			always = yes
+		}
+	}
+}
+can_make_state = { 
+	condition = { 
+		tooltip = "tt_can_make_state"
+		potential = { 
+			always = yes
+		}
+		allow = { 
+			OR = { 
+				is_overseas = no
+				AND = { 
+					is_overseas = yes
+					NOT = { 
+						OR = { 
+							trade_company_region = colonial_the_carribean
+							trade_company_region = colonial_arabia
+							trade_company_region = trade_company_persia
+							trade_company_region = trade_company_west_africa
+							trade_company_region = trade_company_niger_africa
+							trade_company_region = trade_company_central_africa
+							trade_company_region = trade_company_kongo
+							trade_company_region = trade_company_zimbabwe
+							trade_company_region = trade_company_east_africa
+							trade_company_region = trade_company_ethiopia
+							trade_company_region = trade_company_south_africa
+							trade_company_region = trade_company_indus
+							trade_company_region = trade_company_delhi
+							trade_company_region = trade_company_kutch
+							trade_company_region = trade_company_konkan
+							trade_company_region = trade_company_ceylon
+							trade_company_region = trade_company_orissa
+							trade_company_region = trade_company_bengal
+							trade_company_region = trade_company_irrawady
+							trade_company_region = trade_company_indochina
+							trade_company_region = trade_company_malacca
+							trade_company_region = trade_company_indonesia
+							trade_company_region = trade_company_japan
+							trade_company_region = trade_company_nagasaki
+							trade_company_region = trade_company_manchuria
+							trade_company_region = trade_company_beijing
+							trade_company_region = trade_company_yangtze
+							trade_company_region = trade_company_guangzhou
+							trade_company_region = trade_company_manilla
+							trade_company_region = trade_company_polynesia
+							trade_company_region = trade_company_papua
+						}
+					}
+				}
+			}
+		}
+	}
+}
+can_abandon_state = { }
+can_improve_tax = { 
+	condition = { 
+		potential = { 
+			always = yes
+		}
+		allow = { 
+			FROM = { 
+				ai = no
+			}
+		}
+	}
+}
+can_improve_production = { 
+	condition = { 
+		potential = { 
+			always = yes
+		}
+		allow = { 
+			FROM = { 
+				ai = no
+			}
+		}
+	}
+}
+can_improve_manpower = { 
+	condition = { 
+		potential = { 
+			always = yes
+		}
+		allow = { 
+			FROM = { 
+				ai = no
+			}
+		}
+	}
+}
+can_exploit_tax = { 
+	condition = { 
+		potential = { 
+			always = yes
+		}
+		allow = { 
+			always = no
+		}
+	}
+}
+can_exploit_production = { 
+	condition = { 
+		potential = { 
+			always = yes
+		}
+		allow = { 
+			always = no
+		}
+	}
+}
+can_exploit_manpower = { 
+	condition = { 
+		potential = { 
+			always = yes
+		}
+		allow = { 
+			always = no
+		}
+	}
+}
+can_change_culture = { 
+	condition = { 
+		potential = { 
+			always = yes
+		}
+		allow = { 
+			always = no
+			is_state_core = owner
+			has_owner_culture = no
+			NOT = { 
+				nationalism = 1
+			}
+			OR = { 
+				AND = { 
+					has_owner_accepted_culture = no
+					any_neighbor_province = { 
+						OR = { 
+							has_owner_culture = yes
+							has_owner_accepted_culture = yes
+						}
+					}
+				}
+				AND = { 
+					is_capital = yes
+					any_owned_province = { 
+						has_owner_culture = yes
+					}
+				}
+				OR = { 
+					has_owner_accepted_culture = yes
+					AND = { 
+						owner = { 
+							total_development = 1200
+						}
+						culture_group = owner
+					}
+				}
+				OR = { 
+					has_province_flag = CV_SC_german_ostsiedlung
+					has_province_flag = CV_SC_frankish_settlers
+				}
+			}
+		}
+	}
+}
+can_move_capital = { 
+	condition = { 
+		potential = { 
+			FROM = { 
+				ai = yes
+			}
+		}
+		allow = { 
+			always = no
+		}
+	}
+	condition = { 
+		tooltip = "BAB_CAPT_ENDS"
+		potential = { 
+			FROM = { 
+				tag = PAP
+			}
+		}
+		allow = { 
+			has_global_flag = DG_Babylonian_Captivity_Ends
+		}
+	}
+}
+can_move_trade_port = { }
+can_order_assault = { }
+can_order_force_march = { }
+can_scorch_earth = { }
+can_garrison_sorties = { }
+can_seize_colony = { }
+can_burn_colony = { }
+can_colonize_province = { 
+	condition = { 
+		tooltip = "TRADING_POST_BLOCKED_TT"
+		potential = { 
+			has_province_modifier = trading_post_province
+			NOT = { 
+				has_province_modifier = remote_island
+			}
+		}
+		allow = { 
+			FROM = { 
+				OR = { 
+					dip_tech = 25
+					ai = no
+				}
+			}
+		}
+	}
+	condition = { 
+		potential = { 
+			FROM = { 
+				ai = yes
+			}
+		}
+		allow = { 
+			FROM = { 
+				variable_arithmetic_trigger = { 
+					export_to_variable = { 
+						variable_name = no_colonies
+						value = trigger_value:num_of_colonies
+					}
+					export_to_variable = { 
+						variable_name = no_colonists
+						value = trigger_value:num_of_colonists
+					}
+					NOT = { 
+						check_variable = { 
+							which = no_colonies
+							which = no_colonists
+						}
+					}
+				}
+			}
+		}
+	}
+	condition = { 
+		tooltip = "AFRICA_INLAND_OPEN_TT"
+		potential = { 
+			OR = { 
+				superregion = east_africa_superregion
+				superregion = west_africa_superregion
+				superregion = south_africa_superregion
+			}
+			has_port = no
+		}
+		allow = { 
+			FROM = { 
+				OR = { 
+					dip_tech = 50
+					capital_scope = { 
+						continent = africa
+					}
+				}
+			}
+		}
+	}
+	condition = { 
+		tooltip = "AUSTRALIA_OPEN_TT"
+		potential = { 
+			colonial_region = colonial_oceania
+		}
+		allow = { 
+			FROM = { 
+				OR = { 
+					dip_tech = 48
+					capital_scope = { 
+						colonial_region = colonial_oceania
+					}
+				}
+			}
+		}
+	}
+	condition = { 
+		tooltip = "SOUTHEAST_AMERICA_OPEN_TT"
+		potential = { 
+			region = southeast_america_region
+		}
+		allow = { 
+			FROM = { 
+				OR = { 
+					dip_tech = 35
+					capital_scope = { 
+						continent = north_america
+					}
+				}
+			}
+		}
+	}
+	condition = { 
+		tooltip = "PACIFIC_ISLANDS_OPEN_TT"
+		potential = { 
+			colonial_region = colonial_pacific
+		}
+		allow = { 
+			FROM = { 
+				OR = { 
+					dip_tech = 43
+					capital_scope = { 
+						colonial_region = colonial_pacific
+					}
+				}
+			}
+		}
+	}
+}
+can_colonize_province_siberian_frontier = { 
+	condition = { 
+		tooltip = "COLONIAL_FRONTIER"
+		potential = { 
+			FROM = { 
+				is_colonial_nation = yes
+			}
+		}
+		allow = { 
+			FROM = { 
+				capital_scope = { 
+					colonial_region = ROOT
+				}
+			}
+		}
+	}
+}
+can_add_seat_in_parliament = { }
+can_add_estate = { }
+can_remove_seat_in_parliament = { }
+can_expel_minority_from = { 
+	condition = { 
+		potential = { 
+			always = yes
+		}
+		allow = { 
+			always = no
+		}
+	}
+}
+can_have_colonial_nations = { 
+	condition = { 
+		potential = { 
+			FROM = { 
+				has_country_flag = no_colonial_nations
+			}
+		}
+		allow = { 
+			always = no
+		}
+	}
+}
+is_possible_hre_province = { 
+	condition = { 
+		tooltip = "APH_ONLY_EUROPE"
+		potential = { }
+		allow = { 
+			AND = { 
+				continent = europe
+				OR = { 
+					superregion = germany_superregion
+					superregion = greater_austrian_circle_superregion
+					AND = { 
+						superregion = italy_superregion
+						OR = { 
+							region = west_italy_region
+							region = east_italy_region
+							region = central_italy_region
+						}
+					}
+					AND = { 
+						superregion = france_superregion
+						OR = { 
+							region = low_countries_region
+							region = belgii_region
+							AND = { 
+								region = provence_region
+								OR = { 
+									area = provence_area
+									area = savoy_dauphine_area
+								}
+							}
+							AND = { 
+								region = high_countries_region
+								OR = { 
+									AND = { 
+										area = bourgogne_area
+										OR = { 
+											province_id = 193
+											province_id = 2366
+											province_id = 4228
+										}
+									}
+									area = lorraine_area
+								}
+							}
+							province_id = 88
+							province_id = 2353
+						}
+					}
+				}
+			}
+		}
+	}
+}
+will_demand_annexation = { 
+	condition = { 
+		potential = { 
+			is_elector = yes
+		}
+		allow = { 
+			always = no
+		}
+	}
+}
+can_join_hre = { }
+can_leave_hre = { }

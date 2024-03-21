@@ -1,0 +1,49 @@
+owner = PLB
+controller = PLB
+add_core = PLB
+capital = "Palembang"
+trade_goods = pepper
+culture = malayan
+religion = kejawen_h
+hre = no
+base_tax = 3
+base_production = 4
+base_manpower = 1
+is_city = yes
+fort_14th = yes
+set_variable = { 
+	which = gci
+	value = 2
+}
+set_variable = { 
+	which = gcj
+	value = 3
+}
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = indian
+discovered_by = austranesian
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_province_flag = TN_Port
+	set_province_flag = TN_Harbour_Minor
+	set_province_flag = TN_Natural_Important
+	set_variable = { 
+		which = acp
+		value = 2
+	}
+	set_province_flag = tin
+	set_province_flag = spices
+	set_province_flag = fruits
+}
+1356.1.1 = { }

@@ -1,0 +1,2 @@
+culture = osagee
+religion = mississippian

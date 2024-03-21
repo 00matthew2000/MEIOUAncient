@@ -1,0 +1,58 @@
+owner = ZOU
+controller = ZOU
+capital = "Wujiang"
+trade_goods = cotton
+culture = wuhan
+religion = mahayana
+hre = no
+base_tax = 80
+base_production = 1
+base_manpower = 3
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 2
+}
+set_variable = { 
+	which = gch
+	value = 3
+}
+set_variable = { 
+	which = gcj
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 5
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = baf
+		value = 92
+	}
+	set_province_flag = TN_RiverJoint
+	set_variable = { 
+		which = acp
+		value = 15
+	}
+	set_province_flag = tea
+	set_province_flag = cotton
+}
+1276.1.1 = { 
+	owner = YUA
+	controller = YUA
+	add_core = YUA
+}
+1351.1.1 = { 
+	owner = ZOU
+	controller = ZOU
+	add_core = ZOU
+	add_core = MNG
+}

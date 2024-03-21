@@ -1,0 +1,172 @@
+muslim_site_slots = { 
+	slot = 7
+	generic = no
+	ai = yes
+	potential = { 
+		religion_group = muslim
+	}
+	muslim_holy_makka = { 
+		icon = mission_mosque
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = { 
+			province_id = 385
+			NOT = { 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			385 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = ROOT
+			}
+		}
+		effect = { 
+			add_prestige = 10
+			385 = { 
+				if = { 
+					limit = { 
+						has_province_modifier = mis_prov_growth
+					}
+					extend_province_modifier = { 
+						name = mis_prov_growth
+						duration = 36500
+					}
+				}
+				else = { 
+					add_province_modifier = { 
+						name = mis_prov_growth
+						duration = 36500
+					}
+				}
+			}
+		}
+	}
+	muslim_holy_madina = { 
+		icon = mission_mosque
+		required_missions = { }
+		position = 2
+		provinces_to_highlight = { 
+			province_id = 384
+			NOT = { 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			384 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = ROOT
+			}
+		}
+		effect = { 
+			add_legitimacy = 10
+			384 = { 
+				if = { 
+					limit = { 
+						has_province_modifier = mis_prov_growth
+					}
+					extend_province_modifier = { 
+						name = mis_prov_growth
+						duration = 36500
+					}
+				}
+				else = { 
+					add_province_modifier = { 
+						name = mis_prov_growth
+						duration = 36500
+					}
+				}
+			}
+		}
+	}
+}
+sunni_site_slots = { 
+	slot = 7
+	generic = no
+	ai = yes
+	potential = { 
+		religion = sunni
+	}
+	sunni_holy_jerusalem = { 
+		icon = mission_mosque
+		required_missions = { }
+		position = 3
+		provinces_to_highlight = { 
+			province_id = 379
+			NOT = { 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			379 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = ROOT
+			}
+		}
+		effect = { 
+			add_prestige = 10
+			379 = { 
+				if = { 
+					limit = { 
+						has_province_modifier = mis_prov_growth
+					}
+					extend_province_modifier = { 
+						name = mis_prov_growth
+						duration = 36560
+					}
+				}
+				else = { 
+					add_province_modifier = { 
+						name = mis_prov_growth
+						duration = 36560
+					}
+				}
+			}
+		}
+	}
+}
+shia_site_slots = { 
+	slot = 7
+	generic = no
+	ai = yes
+	potential = { 
+		religion = shiite
+	}
+	shia_holy_najaf = { 
+		icon = mission_mosque
+		required_missions = { }
+		position = 3
+		provinces_to_highlight = { 
+			province_id = 1330
+			NOT = { 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			1330 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = ROOT
+			}
+		}
+		effect = { 
+			add_prestige = 10
+			1330 = { 
+				if = { 
+					limit = { 
+						has_province_modifier = mis_prov_growth
+					}
+					extend_province_modifier = { 
+						name = mis_prov_growth
+						duration = 36560
+					}
+				}
+				else = { 
+					add_province_modifier = { 
+						name = mis_prov_growth
+						duration = 36560
+					}
+				}
+			}
+		}
+	}
+}

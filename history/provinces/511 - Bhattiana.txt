@@ -1,0 +1,43 @@
+owner = MUL
+controller = MUL
+add_core = MUL
+capital = "Hisar"
+trade_goods = wheat
+culture = haryanvi
+religion = hinduism
+hre = no
+base_tax = 30
+base_production = 1
+base_manpower = 4
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gcj
+	value = 1
+}
+discovered_by = indian
+discovered_by = muslim
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = ottoman
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 60.000
+	}
+}
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+}
+1356.1.1 = { 
+	owner = DLH
+	controller = DLH
+	add_core = DLH
+}

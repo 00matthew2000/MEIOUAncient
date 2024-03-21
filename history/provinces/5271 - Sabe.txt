@@ -1,0 +1,35 @@
+owner = SBE
+controller = SBE
+add_core = SBE
+capital = "Sabe"
+trade_goods = slaves
+culture = fon_c
+religion = west_african_pagan
+hre = no
+base_tax = 16
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 90.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+	set_variable = { 
+		which = ami
+		value = 3.000
+	}
+	set_province_flag = kola
+}

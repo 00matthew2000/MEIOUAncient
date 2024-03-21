@@ -1,0 +1,6020 @@
+country_decisions = { 
+	UI_Census = { 
+		major = yes
+		potential = { 
+			ai = no
+		}
+		allow = { 
+			always = yes
+		}
+		effect = { 
+			hidden_effect = { 
+				country_event = { 
+					id = POP_Display.001
+				}
+			}
+		}
+	}
+	UI_Construct = { 
+		major = yes
+		potential = { 
+			ai = no
+		}
+		allow = { 
+			always = yes
+		}
+		effect = { 
+			hidden_effect = { 
+				country_event = { 
+					id = SYS_Construct.001
+				}
+			}
+		}
+	}
+	UI_Slot = { 
+		major = yes
+		potential = { 
+			ai = no
+		}
+		allow = { 
+			always = yes
+		}
+		effect = { 
+			hidden_effect = { 
+				country_event = { 
+					id = POP_Prod.001
+				}
+			}
+		}
+	}
+	UI_ForcedMigration = { 
+		major = yes
+		potential = { 
+			ai = no
+		}
+		allow = { 
+			NOT = { 
+				has_country_modifier = ForcedMigration_Cooldown
+			}
+		}
+		effect = { 
+			hidden_effect = { 
+				country_event = { 
+					id = ForcedMigration.001
+				}
+			}
+		}
+	}
+	POP_AutoTax = { 
+		major = yes
+		potential = { 
+			ai = no
+		}
+		allow = { 
+			always = yes
+		}
+		effect = { 
+			hidden_effect = { 
+				country_event = { 
+					id = POP_Census.893
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	POP_TaxConfig = { 
+		major = yes
+		potential = { 
+			ai = no
+		}
+		allow = { 
+			always = yes
+		}
+		effect = { 
+			hidden_effect = { 
+				set_variable = { 
+					which = iio
+					value = 0
+				}
+				set_variable = { 
+					which = doh
+					value = 0
+				}
+				set_variable = { 
+					which = gse
+					value = 0
+				}
+				set_variable = { 
+					which = gsf
+					value = 0
+				}
+				set_variable = { 
+					which = dny
+					value = 0
+				}
+				set_variable = { 
+					which = dnz
+					value = 0
+				}
+				set_variable = { 
+					which = doa
+					value = 0
+				}
+				set_variable = { 
+					which = doe
+					value = 0
+				}
+				set_variable = { 
+					which = gsj
+					value = 0
+				}
+				set_variable = { 
+					which = gsi
+					value = 0
+				}
+				set_variable = { 
+					which = dob
+					value = 0
+				}
+				set_variable = { 
+					which = gsg
+					value = 0
+				}
+				set_variable = { 
+					which = gsh
+					value = 0
+				}
+				set_variable = { 
+					which = nnd
+					value = 0
+				}
+				set_variable = { 
+					which = nog
+					value = 0
+				}
+				set_variable = { 
+					which = qfo
+					value = 0
+				}
+				set_variable = { 
+					which = qfp
+					value = 0
+				}
+				set_variable = { 
+					which = qfq
+					value = 0
+				}
+				set_variable = { 
+					which = qfr
+					value = 0
+				}
+				set_variable = { 
+					which = qfs
+					value = 0
+				}
+				set_variable = { 
+					which = qft
+					value = 0
+				}
+				if = { 
+					limit = { 
+						ai = no
+					}
+					set_variable = { 
+						which = dmc
+						value = 0
+					}
+					set_variable = { 
+						which = qfc
+						value = 0
+					}
+					set_variable = { 
+						which = dns
+						value = 0
+					}
+					set_variable = { 
+						which = hsh
+						value = 0
+					}
+					set_variable = { 
+						which = dmd
+						value = 0
+					}
+					set_variable = { 
+						which = gtk
+						value = 0
+					}
+					set_variable = { 
+						which = gtp
+						value = 0
+					}
+					set_variable = { 
+						which = gtu
+						value = 0
+					}
+					set_variable = { 
+						which = gtz
+						value = 0
+					}
+					set_variable = { 
+						which = dme
+						value = 0
+					}
+					set_variable = { 
+						which = dmf
+						value = 0
+					}
+					set_variable = { 
+						which = dmg
+						value = 0
+					}
+					set_variable = { 
+						which = dmh
+						value = 0
+					}
+					set_variable = { 
+						which = dmi
+						value = 0
+					}
+					set_variable = { 
+						which = hsl
+						value = 0
+					}
+					set_variable = { 
+						which = dmj
+						value = 0
+					}
+					set_variable = { 
+						which = qfe
+						value = 0
+					}
+					set_variable = { 
+						which = dnt
+						value = 0
+					}
+					set_variable = { 
+						which = hsi
+						value = 0
+					}
+					set_variable = { 
+						which = dmk
+						value = 0
+					}
+					set_variable = { 
+						which = gtl
+						value = 0
+					}
+					set_variable = { 
+						which = gtq
+						value = 0
+					}
+					set_variable = { 
+						which = gtv
+						value = 0
+					}
+					set_variable = { 
+						which = gua
+						value = 0
+					}
+					set_variable = { 
+						which = dml
+						value = 0
+					}
+					set_variable = { 
+						which = dmm
+						value = 0
+					}
+					set_variable = { 
+						which = dmn
+						value = 0
+					}
+					set_variable = { 
+						which = dmo
+						value = 0
+					}
+					set_variable = { 
+						which = dmp
+						value = 0
+					}
+					set_variable = { 
+						which = dmq
+						value = 0
+					}
+					set_variable = { 
+						which = qfi
+						value = 0
+					}
+					set_variable = { 
+						which = dnu
+						value = 0
+					}
+					set_variable = { 
+						which = hsj
+						value = 0
+					}
+					set_variable = { 
+						which = nxg
+						value = 0
+					}
+					set_variable = { 
+						which = dms
+						value = 0
+					}
+					set_variable = { 
+						which = dmu
+						value = 0
+					}
+					set_variable = { 
+						which = gtm
+						value = 0
+					}
+					set_variable = { 
+						which = gtr
+						value = 0
+					}
+					set_variable = { 
+						which = gtw
+						value = 0
+					}
+					set_variable = { 
+						which = gub
+						value = 0
+					}
+					set_variable = { 
+						which = dmt
+						value = 0
+					}
+					set_variable = { 
+						which = dmv
+						value = 0
+					}
+					set_variable = { 
+						which = dmw
+						value = 0
+					}
+					set_variable = { 
+						which = dmx
+						value = 0
+					}
+					set_variable = { 
+						which = dmy
+						value = 0
+					}
+					set_variable = { 
+						which = qfk
+						value = 0
+					}
+					set_variable = { 
+						which = dnb
+						value = 0
+					}
+					set_variable = { 
+						which = hsg
+						value = 0
+					}
+					set_variable = { 
+						which = nxh
+						value = 0
+					}
+					set_variable = { 
+						which = dna
+						value = 0
+					}
+					set_variable = { 
+						which = dnd
+						value = 0
+					}
+					set_variable = { 
+						which = gtn
+						value = 0
+					}
+					set_variable = { 
+						which = gts
+						value = 0
+					}
+					set_variable = { 
+						which = gtx
+						value = 0
+					}
+					set_variable = { 
+						which = guc
+						value = 0
+					}
+					set_variable = { 
+						which = dnc
+						value = 0
+					}
+					set_variable = { 
+						which = dne
+						value = 0
+					}
+					set_variable = { 
+						which = dnf
+						value = 0
+					}
+					set_variable = { 
+						which = dng
+						value = 0
+					}
+					set_variable = { 
+						which = dnh
+						value = 0
+					}
+					set_variable = { 
+						which = qfm
+						value = 0
+					}
+					set_variable = { 
+						which = dnv
+						value = 0
+					}
+					set_variable = { 
+						which = hsk
+						value = 0
+					}
+					set_variable = { 
+						which = nxi
+						value = 0
+					}
+					set_variable = { 
+						which = dnj
+						value = 0
+					}
+					set_variable = { 
+						which = dnl
+						value = 0
+					}
+					set_variable = { 
+						which = gto
+						value = 0
+					}
+					set_variable = { 
+						which = gtt
+						value = 0
+					}
+					set_variable = { 
+						which = gty
+						value = 0
+					}
+					set_variable = { 
+						which = gud
+						value = 0
+					}
+					set_variable = { 
+						which = dnk
+						value = 0
+					}
+					set_variable = { 
+						which = dnm
+						value = 0
+					}
+					set_variable = { 
+						which = dnn
+						value = 0
+					}
+					set_variable = { 
+						which = dno
+						value = 0
+					}
+					set_variable = { 
+						which = dnp
+						value = 0
+					}
+					set_variable = { 
+						which = qgo
+						value = 0
+					}
+					set_variable = { 
+						which = qab
+						value = 0
+					}
+					set_variable = { 
+						which = dnq
+						value = 0
+					}
+					set_variable = { 
+						which = dnr
+						value = 0
+					}
+					set_variable = { 
+						which = gue
+						value = 0
+					}
+					set_variable = { 
+						which = hsf
+						value = 0
+					}
+					set_variable = { 
+						which = gva
+						value = 0
+					}
+					set_variable = { 
+						which = guf
+						value = 0
+					}
+					set_variable = { 
+						which = gug
+						value = 0
+					}
+					set_variable = { 
+						which = gul
+						value = 0
+					}
+					set_variable = { 
+						which = gum
+						value = 0
+					}
+					set_variable = { 
+						which = gun
+						value = 0
+					}
+					set_variable = { 
+						which = guo
+						value = 0
+					}
+					set_variable = { 
+						which = gup
+						value = 0
+					}
+					set_variable = { 
+						which = guh
+						value = 0
+					}
+					set_variable = { 
+						which = gui
+						value = 0
+					}
+					set_variable = { 
+						which = guj
+						value = 0
+					}
+					set_variable = { 
+						which = guk
+						value = 0
+					}
+					set_variable = { 
+						which = dnx
+						value = 0
+					}
+					set_variable = { 
+						which = ijf
+						value = 0
+					}
+					set_variable = { 
+						which = ijh
+						value = 0
+					}
+					set_variable = { 
+						which = ijg
+						value = 0
+					}
+					set_variable = { 
+						which = dnw
+						value = 0
+					}
+					set_variable = { 
+						which = nwn
+						value = 0
+					}
+					set_variable = { 
+						which = nwi
+						value = 0
+					}
+					set_variable = { 
+						which = ftk
+						value = 0
+					}
+					set_variable = { 
+						which = ftm
+						value = 0
+					}
+					set_variable = { 
+						which = ftl
+						value = 0
+					}
+					set_variable = { 
+						which = ftq
+						value = 0
+					}
+					set_variable = { 
+						which = fto
+						value = 0
+					}
+					set_variable = { 
+						which = ftp
+						value = 0
+					}
+					set_variable = { 
+						which = ftn
+						value = 0
+					}
+					set_variable = { 
+						which = ftr
+						value = 0
+					}
+					set_variable = { 
+						which = ftt
+						value = 0
+					}
+					set_variable = { 
+						which = fts
+						value = 0
+					}
+					set_variable = { 
+						which = ftx
+						value = 0
+					}
+					set_variable = { 
+						which = ftv
+						value = 0
+					}
+					set_variable = { 
+						which = ftw
+						value = 0
+					}
+					set_variable = { 
+						which = ftu
+						value = 0
+					}
+					set_variable = { 
+						which = fty
+						value = 0
+					}
+					set_variable = { 
+						which = fua
+						value = 0
+					}
+					set_variable = { 
+						which = ftz
+						value = 0
+					}
+					set_variable = { 
+						which = fue
+						value = 0
+					}
+					set_variable = { 
+						which = fuc
+						value = 0
+					}
+					set_variable = { 
+						which = fud
+						value = 0
+					}
+					set_variable = { 
+						which = fub
+						value = 0
+					}
+					set_variable = { 
+						which = fuf
+						value = 0
+					}
+					set_variable = { 
+						which = fuh
+						value = 0
+					}
+					set_variable = { 
+						which = fug
+						value = 0
+					}
+					set_variable = { 
+						which = ful
+						value = 0
+					}
+					set_variable = { 
+						which = fuj
+						value = 0
+					}
+					set_variable = { 
+						which = fuk
+						value = 0
+					}
+					set_variable = { 
+						which = fui
+						value = 0
+					}
+					set_variable = { 
+						which = lvl
+						value = 0
+					}
+					set_variable = { 
+						which = lvm
+						value = 0
+					}
+					set_variable = { 
+						which = lvn
+						value = 0
+					}
+					set_variable = { 
+						which = lvo
+						value = 0
+					}
+					set_variable = { 
+						which = lvp
+						value = 0
+					}
+					set_variable = { 
+						which = lvq
+						value = 0
+					}
+					set_variable = { 
+						which = lvr
+						value = 0
+					}
+					set_variable = { 
+						which = krh
+						value = 0
+					}
+					set_variable = { 
+						which = krp
+						value = 0
+					}
+					set_variable = { 
+						which = kri
+						value = 0
+					}
+					set_variable = { 
+						which = krq
+						value = 0
+					}
+					set_variable = { 
+						which = krj
+						value = 0
+					}
+					set_variable = { 
+						which = krr
+						value = 0
+					}
+					set_variable = { 
+						which = krk
+						value = 0
+					}
+					set_variable = { 
+						which = krs
+						value = 0
+					}
+					set_variable = { 
+						which = krl
+						value = 0
+					}
+					set_variable = { 
+						which = krt
+						value = 0
+					}
+					set_variable = { 
+						which = krm
+						value = 0
+					}
+					set_variable = { 
+						which = kru
+						value = 0
+					}
+					set_variable = { 
+						which = krn
+						value = 0
+					}
+					set_variable = { 
+						which = krv
+						value = 0
+					}
+					set_variable = { 
+						which = krc
+						value = 0
+					}
+					set_variable = { 
+						which = krd
+						value = 0
+					}
+					set_variable = { 
+						which = kre
+						value = 0
+					}
+					set_variable = { 
+						which = krf
+						value = 0
+					}
+					set_variable = { 
+						which = kwz
+						value = 0
+					}
+					set_variable = { 
+						which = kxa
+						value = 0
+					}
+					set_variable = { 
+						which = kxb
+						value = 0
+					}
+					set_variable = { 
+						which = htu
+						value = 0
+					}
+					set_variable = { 
+						which = htv
+						value = 0
+					}
+					set_variable = { 
+						which = qfv
+						value = 0
+					}
+					set_variable = { 
+						which = qfw
+						value = 0
+					}
+					set_variable = { 
+						which = qfx
+						value = 0
+					}
+					set_variable = { 
+						which = ksp
+						value = 0
+					}
+					set_variable = { 
+						which = kst
+						value = 0
+					}
+					set_variable = { 
+						which = ksu
+						value = 0
+					}
+					set_variable = { 
+						which = ksh
+						value = 0
+					}
+					set_variable = { 
+						which = ksl
+						value = 0
+					}
+					set_variable = { 
+						which = ksm
+						value = 0
+					}
+					set_variable = { 
+						which = qcz
+						value = 0
+					}
+					set_variable = { 
+						which = kxc
+						value = 0
+					}
+					set_variable = { 
+						which = kxd
+						value = 0
+					}
+					set_variable = { 
+						which = kxe
+						value = 0
+					}
+					set_variable = { 
+						which = htw
+						value = 0
+					}
+					set_variable = { 
+						which = qfy
+						value = 0
+					}
+					set_variable = { 
+						which = qfz
+						value = 0
+					}
+					set_variable = { 
+						which = qga
+						value = 0
+					}
+					set_variable = { 
+						which = ktf
+						value = 0
+					}
+					set_variable = { 
+						which = ktj
+						value = 0
+					}
+					set_variable = { 
+						which = ktk
+						value = 0
+					}
+					set_variable = { 
+						which = ksx
+						value = 0
+					}
+					set_variable = { 
+						which = ktb
+						value = 0
+					}
+					set_variable = { 
+						which = ktc
+						value = 0
+					}
+					set_variable = { 
+						which = qda
+						value = 0
+					}
+					set_variable = { 
+						which = kxf
+						value = 0
+					}
+					set_variable = { 
+						which = kxg
+						value = 0
+					}
+					set_variable = { 
+						which = kxh
+						value = 0
+					}
+					set_variable = { 
+						which = htx
+						value = 0
+					}
+					set_variable = { 
+						which = qgb
+						value = 0
+					}
+					set_variable = { 
+						which = qgc
+						value = 0
+					}
+					set_variable = { 
+						which = qgd
+						value = 0
+					}
+					set_variable = { 
+						which = kul
+						value = 0
+					}
+					set_variable = { 
+						which = kup
+						value = 0
+					}
+					set_variable = { 
+						which = kuq
+						value = 0
+					}
+					set_variable = { 
+						which = kut
+						value = 0
+					}
+					set_variable = { 
+						which = kux
+						value = 0
+					}
+					set_variable = { 
+						which = kuy
+						value = 0
+					}
+					set_variable = { 
+						which = kvb
+						value = 0
+					}
+					set_variable = { 
+						which = kvf
+						value = 0
+					}
+					set_variable = { 
+						which = kvg
+						value = 0
+					}
+					set_variable = { 
+						which = ktn
+						value = 0
+					}
+					set_variable = { 
+						which = ktr
+						value = 0
+					}
+					set_variable = { 
+						which = kts
+						value = 0
+					}
+					set_variable = { 
+						which = ktv
+						value = 0
+					}
+					set_variable = { 
+						which = ktz
+						value = 0
+					}
+					set_variable = { 
+						which = kua
+						value = 0
+					}
+					set_variable = { 
+						which = kud
+						value = 0
+					}
+					set_variable = { 
+						which = kuh
+						value = 0
+					}
+					set_variable = { 
+						which = kui
+						value = 0
+					}
+					set_variable = { 
+						which = qdb
+						value = 0
+					}
+					set_variable = { 
+						which = kxi
+						value = 0
+					}
+					set_variable = { 
+						which = kxj
+						value = 0
+					}
+					set_variable = { 
+						which = kxk
+						value = 0
+					}
+					set_variable = { 
+						which = hts
+						value = 0
+					}
+					set_variable = { 
+						which = qge
+						value = 0
+					}
+					set_variable = { 
+						which = qgf
+						value = 0
+					}
+					set_variable = { 
+						which = qgg
+						value = 0
+					}
+					set_variable = { 
+						which = kwh
+						value = 0
+					}
+					set_variable = { 
+						which = kwl
+						value = 0
+					}
+					set_variable = { 
+						which = kwm
+						value = 0
+					}
+					set_variable = { 
+						which = kwp
+						value = 0
+					}
+					set_variable = { 
+						which = kwt
+						value = 0
+					}
+					set_variable = { 
+						which = kvj
+						value = 0
+					}
+					set_variable = { 
+						which = kvn
+						value = 0
+					}
+					set_variable = { 
+						which = kvo
+						value = 0
+					}
+					set_variable = { 
+						which = kvr
+						value = 0
+					}
+					set_variable = { 
+						which = kvv
+						value = 0
+					}
+					set_variable = { 
+						which = kvw
+						value = 0
+					}
+					set_variable = { 
+						which = kvz
+						value = 0
+					}
+					set_variable = { 
+						which = kwd
+						value = 0
+					}
+					set_variable = { 
+						which = kwe
+						value = 0
+					}
+					set_variable = { 
+						which = qdc
+						value = 0
+					}
+					set_variable = { 
+						which = oak
+						value = 0
+					}
+					set_variable = { 
+						which = oah
+						value = 0
+					}
+					set_variable = { 
+						which = oae
+						value = 0
+					}
+					set_variable = { 
+						which = oan
+						value = 0
+					}
+					set_variable = { 
+						which = oaq
+						value = 0
+					}
+					set_variable = { 
+						which = oat
+						value = 0
+					}
+					set_variable = { 
+						which = nyp
+						value = 0
+					}
+					set_variable = { 
+						which = nyq
+						value = 0
+					}
+					set_variable = { 
+						which = nyr
+						value = 0
+					}
+					set_variable = { 
+						which = nys
+						value = 0
+					}
+					set_variable = { 
+						which = nyt
+						value = 0
+					}
+					set_variable = { 
+						which = nyu
+						value = 0
+					}
+					set_variable = { 
+						which = nyw
+						value = 0
+					}
+					set_variable = { 
+						which = nyx
+						value = 0
+					}
+					set_variable = { 
+						which = nyy
+						value = 0
+					}
+					set_variable = { 
+						which = nyz
+						value = 0
+					}
+					set_variable = { 
+						which = nza
+						value = 0
+					}
+					set_variable = { 
+						which = nzb
+						value = 0
+					}
+					set_variable = { 
+						which = nzc
+						value = 0
+					}
+					set_variable = { 
+						which = nzd
+						value = 0
+					}
+					set_variable = { 
+						which = nze
+						value = 0
+					}
+					set_variable = { 
+						which = nzf
+						value = 0
+					}
+					set_variable = { 
+						which = nxz
+						value = 0
+					}
+					set_variable = { 
+						which = nya
+						value = 0
+					}
+					set_variable = { 
+						which = nyb
+						value = 0
+					}
+					set_variable = { 
+						which = nyc
+						value = 0
+					}
+					set_variable = { 
+						which = nyd
+						value = 0
+					}
+					set_variable = { 
+						which = nye
+						value = 0
+					}
+					set_variable = { 
+						which = nyg
+						value = 0
+					}
+					set_variable = { 
+						which = nyh
+						value = 0
+					}
+					set_variable = { 
+						which = nyi
+						value = 0
+					}
+					set_variable = { 
+						which = nyj
+						value = 0
+					}
+					set_variable = { 
+						which = nyk
+						value = 0
+					}
+					set_variable = { 
+						which = nyl
+						value = 0
+					}
+					set_variable = { 
+						which = nym
+						value = 0
+					}
+					set_variable = { 
+						which = nyn
+						value = 0
+					}
+					set_variable = { 
+						which = nyo
+						value = 0
+					}
+					set_variable = { 
+						which = nzg
+						value = 0
+					}
+					set_variable = { 
+						which = nxj
+						value = 0
+					}
+					set_variable = { 
+						which = nxk
+						value = 0
+					}
+					set_variable = { 
+						which = nxl
+						value = 0
+					}
+					set_variable = { 
+						which = nxm
+						value = 0
+					}
+					set_variable = { 
+						which = nxn
+						value = 0
+					}
+					set_variable = { 
+						which = nxo
+						value = 0
+					}
+					set_variable = { 
+						which = nxq
+						value = 0
+					}
+					set_variable = { 
+						which = nxr
+						value = 0
+					}
+					set_variable = { 
+						which = nxs
+						value = 0
+					}
+					set_variable = { 
+						which = nxt
+						value = 0
+					}
+					set_variable = { 
+						which = nxu
+						value = 0
+					}
+					set_variable = { 
+						which = nxv
+						value = 0
+					}
+					set_variable = { 
+						which = nxw
+						value = 0
+					}
+					set_variable = { 
+						which = nxx
+						value = 0
+					}
+					set_variable = { 
+						which = nxy
+						value = 0
+					}
+					set_variable = { 
+						which = nzh
+						value = 0
+					}
+					set_variable = { 
+						which = qbj
+						value = 0
+					}
+					set_variable = { 
+						which = qbn
+						value = 0
+					}
+					set_variable = { 
+						which = qbo
+						value = 0
+					}
+					set_variable = { 
+						which = qbb
+						value = 0
+					}
+					set_variable = { 
+						which = qbf
+						value = 0
+					}
+					set_variable = { 
+						which = qbg
+						value = 0
+					}
+					set_variable = { 
+						which = qal
+						value = 0
+					}
+					set_variable = { 
+						which = qap
+						value = 0
+					}
+					set_variable = { 
+						which = qaq
+						value = 0
+					}
+					set_variable = { 
+						which = qat
+						value = 0
+					}
+					set_variable = { 
+						which = qax
+						value = 0
+					}
+					set_variable = { 
+						which = qay
+						value = 0
+					}
+					set_variable = { 
+						which = nva
+						value = 0
+					}
+					set_variable = { 
+						which = nvb
+						value = 0
+					}
+					set_variable = { 
+						which = nvc
+						value = 0
+					}
+					set_variable = { 
+						which = nve
+						value = 0
+					}
+					set_variable = { 
+						which = nvq
+						value = 0
+					}
+					set_variable = { 
+						which = iiy
+						value = 0
+					}
+					set_variable = { 
+						which = aix
+						value = 0
+					}
+					set_variable = { 
+						which = afp
+						value = 0
+					}
+					set_variable = { 
+						which = ddl
+						value = 0
+					}
+					set_variable = { 
+						which = ijl
+						value = 0
+					}
+					set_variable = { 
+						which = iji
+						value = 0
+					}
+					set_variable = { 
+						which = axz
+						value = 0
+					}
+					set_variable = { 
+						which = aim
+						value = 0
+					}
+					set_variable = { 
+						which = dde
+						value = 0
+					}
+					set_variable = { 
+						which = ain
+						value = 0
+					}
+					set_variable = { 
+						which = gdf
+						value = 0
+					}
+					set_variable = { 
+						which = qfi
+						value = 0
+					}
+					set_variable = { 
+						which = qfj
+						value = 0
+					}
+					set_variable = { 
+						which = nvs
+						value = 0
+					}
+					set_variable = { 
+						which = nvn
+						value = 0
+					}
+					set_variable = { 
+						which = nvr
+						value = 0
+					}
+					set_variable = { 
+						which = iiz
+						value = 0
+					}
+					set_variable = { 
+						which = aiy
+						value = 0
+					}
+					set_variable = { 
+						which = afr
+						value = 0
+					}
+					set_variable = { 
+						which = ddm
+						value = 0
+					}
+					set_variable = { 
+						which = ijm
+						value = 0
+					}
+					set_variable = { 
+						which = ijj
+						value = 0
+					}
+					set_variable = { 
+						which = aya
+						value = 0
+					}
+					set_variable = { 
+						which = aip
+						value = 0
+					}
+					set_variable = { 
+						which = ddf
+						value = 0
+					}
+					set_variable = { 
+						which = aiq
+						value = 0
+					}
+					set_variable = { 
+						which = gdg
+						value = 0
+					}
+					set_variable = { 
+						which = qfk
+						value = 0
+					}
+					set_variable = { 
+						which = qfl
+						value = 0
+					}
+					set_variable = { 
+						which = nwa
+						value = 0
+					}
+					set_variable = { 
+						which = nvv
+						value = 0
+					}
+					set_variable = { 
+						which = ija
+						value = 0
+					}
+					set_variable = { 
+						which = aiz
+						value = 0
+					}
+					set_variable = { 
+						which = aft
+						value = 0
+					}
+					set_variable = { 
+						which = ddn
+						value = 0
+					}
+					set_variable = { 
+						which = ijn
+						value = 0
+					}
+					set_variable = { 
+						which = ijk
+						value = 0
+					}
+					set_variable = { 
+						which = ayb
+						value = 0
+					}
+					set_variable = { 
+						which = ais
+						value = 0
+					}
+					set_variable = { 
+						which = ddg
+						value = 0
+					}
+					set_variable = { 
+						which = ait
+						value = 0
+					}
+					set_variable = { 
+						which = gdh
+						value = 0
+					}
+					set_variable = { 
+						which = qfm
+						value = 0
+					}
+					set_variable = { 
+						which = qfn
+						value = 0
+					}
+				}
+				set_variable = { 
+					which = dmb
+					value = 0
+				}
+				set_variable = { 
+					which = dnw
+					value = 0
+				}
+				set_variable = { 
+					which = dnr
+					value = 0
+				}
+				set_variable = { 
+					which = loc
+					value = 0
+				}
+				set_variable = { 
+					which = dob
+					value = 0
+				}
+				set_variable = { 
+					which = ged
+					value = 0
+				}
+				set_variable = { 
+					which = lvk
+					value = 0
+				}
+				set_variable = { 
+					which = bco
+					value = 0
+				}
+				set_variable = { 
+					which = bcp
+					value = 0
+				}
+				set_variable = { 
+					which = bcq
+					value = 0
+				}
+				set_variable = { 
+					which = bcr
+					value = 0
+				}
+				set_variable = { 
+					which = bcs
+					value = 0
+				}
+				set_variable = { 
+					which = bct
+					value = 0
+				}
+				set_variable = { 
+					which = bcu
+					value = 0
+				}
+				every_owned_province = { 
+					set_variable = { 
+						which = arg
+						value = 0
+					}
+					set_variable = { 
+						which = arg
+						which = doh
+					}
+					multiply_variable = { 
+						which = arg
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = arg
+							value = 0.1
+						}
+					}
+					PREV = { 
+						set_variable = { 
+							which = arg
+							which = PREV
+						}
+						change_variable = { 
+							which = doh
+							which = arg
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+					}
+					set_variable = { 
+						which = arg
+						value = 0
+					}
+					set_variable = { 
+						which = arg
+						which = gse
+					}
+					multiply_variable = { 
+						which = arg
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = arg
+							value = 0.1
+						}
+					}
+					PREV = { 
+						set_variable = { 
+							which = arg
+							which = PREV
+						}
+						change_variable = { 
+							which = gse
+							which = arg
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+					}
+					set_variable = { 
+						which = arg
+						value = 0
+					}
+					set_variable = { 
+						which = arg
+						which = gsf
+					}
+					multiply_variable = { 
+						which = arg
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = arg
+							value = 0.1
+						}
+					}
+					PREV = { 
+						set_variable = { 
+							which = arg
+							which = PREV
+						}
+						change_variable = { 
+							which = gsf
+							which = arg
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+					}
+					set_variable = { 
+						which = arg
+						value = 0
+					}
+					PREV = { 
+						change_variable = { 
+							which = nnd
+							which = PREV
+						}
+						change_variable = { 
+							which = dny
+							which = PREV
+						}
+						change_variable = { 
+							which = dnz
+							which = PREV
+						}
+						change_variable = { 
+							which = doa
+							which = PREV
+						}
+						change_variable = { 
+							which = doe
+							which = PREV
+						}
+						change_variable = { 
+							which = gsj
+							which = PREV
+						}
+						change_variable = { 
+							which = gsi
+							which = PREV
+						}
+						change_variable = { 
+							which = dob
+							which = PREV
+						}
+						change_variable = { 
+							which = gsg
+							which = PREV
+						}
+						change_variable = { 
+							which = gsh
+							which = PREV
+						}
+						change_variable = { 
+							which = dnr
+							which = PREV
+						}
+						change_variable = { 
+							which = loc
+							which = PREV
+						}
+						change_variable = { 
+							which = dob
+							which = PREV
+						}
+						change_variable = { 
+							which = ged
+							which = PREV
+						}
+						change_variable = { 
+							which = lvk
+							which = PREV
+						}
+						change_variable = { 
+							which = dmb
+							which = PREV
+						}
+						change_variable = { 
+							which = qfo
+							which = PREV
+						}
+						change_variable = { 
+							which = qfp
+							which = PREV
+						}
+						change_variable = { 
+							which = qfq
+							which = PREV
+						}
+						change_variable = { 
+							which = qfr
+							which = PREV
+						}
+						change_variable = { 
+							which = qfs
+							which = PREV
+						}
+						change_variable = { 
+							which = qft
+							which = PREV
+						}
+						if = { 
+							limit = { 
+								ai = no
+							}
+							change_variable = { 
+								which = dmc
+								which = PREV
+							}
+							change_variable = { 
+								which = qfc
+								which = PREV
+							}
+							change_variable = { 
+								which = dns
+								which = PREV
+							}
+							change_variable = { 
+								which = hsh
+								which = PREV
+							}
+							change_variable = { 
+								which = dmd
+								which = PREV
+							}
+							change_variable = { 
+								which = gtk
+								which = PREV
+							}
+							change_variable = { 
+								which = gtp
+								which = PREV
+							}
+							change_variable = { 
+								which = gtu
+								which = PREV
+							}
+							change_variable = { 
+								which = gtz
+								which = PREV
+							}
+							change_variable = { 
+								which = dme
+								which = PREV
+							}
+							change_variable = { 
+								which = dmf
+								which = PREV
+							}
+							change_variable = { 
+								which = dmg
+								which = PREV
+							}
+							change_variable = { 
+								which = dmh
+								which = PREV
+							}
+							change_variable = { 
+								which = dmi
+								which = PREV
+							}
+							change_variable = { 
+								which = hsl
+								which = PREV
+							}
+							change_variable = { 
+								which = dmj
+								which = PREV
+							}
+							change_variable = { 
+								which = qfe
+								which = PREV
+							}
+							change_variable = { 
+								which = dnt
+								which = PREV
+							}
+							change_variable = { 
+								which = hsi
+								which = PREV
+							}
+							change_variable = { 
+								which = dmk
+								which = PREV
+							}
+							change_variable = { 
+								which = gtl
+								which = PREV
+							}
+							change_variable = { 
+								which = gtq
+								which = PREV
+							}
+							change_variable = { 
+								which = gtv
+								which = PREV
+							}
+							change_variable = { 
+								which = gua
+								which = PREV
+							}
+							change_variable = { 
+								which = dml
+								which = PREV
+							}
+							change_variable = { 
+								which = dmm
+								which = PREV
+							}
+							change_variable = { 
+								which = dmn
+								which = PREV
+							}
+							change_variable = { 
+								which = dmo
+								which = PREV
+							}
+							change_variable = { 
+								which = dmp
+								which = PREV
+							}
+							change_variable = { 
+								which = dmq
+								which = PREV
+							}
+							change_variable = { 
+								which = qfi
+								which = PREV
+							}
+							change_variable = { 
+								which = dnu
+								which = PREV
+							}
+							change_variable = { 
+								which = hsj
+								which = PREV
+							}
+							change_variable = { 
+								which = nxg
+								which = PREV
+							}
+							change_variable = { 
+								which = dms
+								which = PREV
+							}
+							change_variable = { 
+								which = dmu
+								which = PREV
+							}
+							change_variable = { 
+								which = gtm
+								which = PREV
+							}
+							change_variable = { 
+								which = gtr
+								which = PREV
+							}
+							change_variable = { 
+								which = gtw
+								which = PREV
+							}
+							change_variable = { 
+								which = gub
+								which = PREV
+							}
+							change_variable = { 
+								which = dmt
+								which = PREV
+							}
+							change_variable = { 
+								which = dmv
+								which = PREV
+							}
+							change_variable = { 
+								which = dmw
+								which = PREV
+							}
+							change_variable = { 
+								which = dmx
+								which = PREV
+							}
+							change_variable = { 
+								which = dmy
+								which = PREV
+							}
+							change_variable = { 
+								which = qfk
+								which = PREV
+							}
+							change_variable = { 
+								which = dnb
+								which = PREV
+							}
+							change_variable = { 
+								which = hsg
+								which = PREV
+							}
+							change_variable = { 
+								which = nxh
+								which = PREV
+							}
+							change_variable = { 
+								which = dna
+								which = PREV
+							}
+							change_variable = { 
+								which = dnd
+								which = PREV
+							}
+							change_variable = { 
+								which = gtn
+								which = PREV
+							}
+							change_variable = { 
+								which = gts
+								which = PREV
+							}
+							change_variable = { 
+								which = gtx
+								which = PREV
+							}
+							change_variable = { 
+								which = guc
+								which = PREV
+							}
+							change_variable = { 
+								which = dnc
+								which = PREV
+							}
+							change_variable = { 
+								which = dne
+								which = PREV
+							}
+							change_variable = { 
+								which = dnf
+								which = PREV
+							}
+							change_variable = { 
+								which = dng
+								which = PREV
+							}
+							change_variable = { 
+								which = dnh
+								which = PREV
+							}
+							change_variable = { 
+								which = qfm
+								which = PREV
+							}
+							change_variable = { 
+								which = dnv
+								which = PREV
+							}
+							change_variable = { 
+								which = hsk
+								which = PREV
+							}
+							change_variable = { 
+								which = nxi
+								which = PREV
+							}
+							change_variable = { 
+								which = dnj
+								which = PREV
+							}
+							change_variable = { 
+								which = dnl
+								which = PREV
+							}
+							change_variable = { 
+								which = gto
+								which = PREV
+							}
+							change_variable = { 
+								which = gtt
+								which = PREV
+							}
+							change_variable = { 
+								which = gty
+								which = PREV
+							}
+							change_variable = { 
+								which = gud
+								which = PREV
+							}
+							change_variable = { 
+								which = dnk
+								which = PREV
+							}
+							change_variable = { 
+								which = dnm
+								which = PREV
+							}
+							change_variable = { 
+								which = dnn
+								which = PREV
+							}
+							change_variable = { 
+								which = dno
+								which = PREV
+							}
+							change_variable = { 
+								which = dnp
+								which = PREV
+							}
+							change_variable = { 
+								which = qgo
+								which = PREV
+							}
+							change_variable = { 
+								which = dnq
+								which = PREV
+							}
+							change_variable = { 
+								which = gue
+								which = PREV
+							}
+							change_variable = { 
+								which = hsf
+								which = PREV
+							}
+							change_variable = { 
+								which = gva
+								which = PREV
+							}
+							change_variable = { 
+								which = guf
+								which = PREV
+							}
+							change_variable = { 
+								which = gug
+								which = PREV
+							}
+							change_variable = { 
+								which = gul
+								which = PREV
+							}
+							change_variable = { 
+								which = gum
+								which = PREV
+							}
+							change_variable = { 
+								which = gun
+								which = PREV
+							}
+							change_variable = { 
+								which = guo
+								which = PREV
+							}
+							change_variable = { 
+								which = gup
+								which = PREV
+							}
+							change_variable = { 
+								which = guh
+								which = PREV
+							}
+							change_variable = { 
+								which = gui
+								which = PREV
+							}
+							change_variable = { 
+								which = guj
+								which = PREV
+							}
+							change_variable = { 
+								which = guk
+								which = PREV
+							}
+							change_variable = { 
+								which = dnx
+								which = PREV
+							}
+							change_variable = { 
+								which = ijf
+								which = PREV
+							}
+							change_variable = { 
+								which = ijh
+								which = PREV
+							}
+							change_variable = { 
+								which = ijg
+								which = PREV
+							}
+							change_variable = { 
+								which = dnw
+								which = PREV
+							}
+							change_variable = { 
+								which = nwn
+								which = PREV
+							}
+							change_variable = { 
+								which = nwi
+								which = PREV
+							}
+							change_variable = { 
+								which = krh
+								which = PREV
+							}
+							change_variable = { 
+								which = krp
+								which = PREV
+							}
+							change_variable = { 
+								which = kri
+								which = PREV
+							}
+							change_variable = { 
+								which = krq
+								which = PREV
+							}
+							change_variable = { 
+								which = krj
+								which = PREV
+							}
+							change_variable = { 
+								which = krr
+								which = PREV
+							}
+							change_variable = { 
+								which = krk
+								which = PREV
+							}
+							change_variable = { 
+								which = krs
+								which = PREV
+							}
+							change_variable = { 
+								which = krl
+								which = PREV
+							}
+							change_variable = { 
+								which = krt
+								which = PREV
+							}
+							change_variable = { 
+								which = krm
+								which = PREV
+							}
+							change_variable = { 
+								which = kru
+								which = PREV
+							}
+							change_variable = { 
+								which = krn
+								which = PREV
+							}
+							change_variable = { 
+								which = krv
+								which = PREV
+							}
+							change_variable = { 
+								which = krc
+								which = PREV
+							}
+							change_variable = { 
+								which = krd
+								which = PREV
+							}
+							change_variable = { 
+								which = kre
+								which = PREV
+							}
+							change_variable = { 
+								which = krf
+								which = PREV
+							}
+							change_variable = { 
+								which = kwz
+								which = PREV
+							}
+							change_variable = { 
+								which = kxa
+								which = PREV
+							}
+							change_variable = { 
+								which = kxb
+								which = PREV
+							}
+							change_variable = { 
+								which = htu
+								which = PREV
+							}
+							change_variable = { 
+								which = htv
+								which = PREV
+							}
+							change_variable = { 
+								which = ksp
+								which = PREV
+							}
+							change_variable = { 
+								which = kst
+								which = PREV
+							}
+							change_variable = { 
+								which = ksu
+								which = PREV
+							}
+							change_variable = { 
+								which = ksh
+								which = PREV
+							}
+							change_variable = { 
+								which = ksl
+								which = PREV
+							}
+							change_variable = { 
+								which = ksm
+								which = PREV
+							}
+							change_variable = { 
+								which = qcz
+								which = PREV
+							}
+							change_variable = { 
+								which = qfv
+								which = PREV
+							}
+							change_variable = { 
+								which = qfw
+								which = PREV
+							}
+							change_variable = { 
+								which = qfx
+								which = PREV
+							}
+							change_variable = { 
+								which = kxc
+								which = PREV
+							}
+							change_variable = { 
+								which = kxd
+								which = PREV
+							}
+							change_variable = { 
+								which = kxe
+								which = PREV
+							}
+							change_variable = { 
+								which = htw
+								which = PREV
+							}
+							change_variable = { 
+								which = ktf
+								which = PREV
+							}
+							change_variable = { 
+								which = ktj
+								which = PREV
+							}
+							change_variable = { 
+								which = ktk
+								which = PREV
+							}
+							change_variable = { 
+								which = ksx
+								which = PREV
+							}
+							change_variable = { 
+								which = ktb
+								which = PREV
+							}
+							change_variable = { 
+								which = ktc
+								which = PREV
+							}
+							change_variable = { 
+								which = qda
+								which = PREV
+							}
+							change_variable = { 
+								which = qfy
+								which = PREV
+							}
+							change_variable = { 
+								which = qfz
+								which = PREV
+							}
+							change_variable = { 
+								which = qga
+								which = PREV
+							}
+							change_variable = { 
+								which = kxf
+								which = PREV
+							}
+							change_variable = { 
+								which = kxg
+								which = PREV
+							}
+							change_variable = { 
+								which = kxh
+								which = PREV
+							}
+							change_variable = { 
+								which = htx
+								which = PREV
+							}
+							change_variable = { 
+								which = kul
+								which = PREV
+							}
+							change_variable = { 
+								which = kup
+								which = PREV
+							}
+							change_variable = { 
+								which = kuq
+								which = PREV
+							}
+							change_variable = { 
+								which = kut
+								which = PREV
+							}
+							change_variable = { 
+								which = kux
+								which = PREV
+							}
+							change_variable = { 
+								which = kuy
+								which = PREV
+							}
+							change_variable = { 
+								which = kvb
+								which = PREV
+							}
+							change_variable = { 
+								which = kvf
+								which = PREV
+							}
+							change_variable = { 
+								which = kvg
+								which = PREV
+							}
+							change_variable = { 
+								which = ktn
+								which = PREV
+							}
+							change_variable = { 
+								which = ktr
+								which = PREV
+							}
+							change_variable = { 
+								which = kts
+								which = PREV
+							}
+							change_variable = { 
+								which = ktv
+								which = PREV
+							}
+							change_variable = { 
+								which = ktz
+								which = PREV
+							}
+							change_variable = { 
+								which = kua
+								which = PREV
+							}
+							change_variable = { 
+								which = kud
+								which = PREV
+							}
+							change_variable = { 
+								which = kuh
+								which = PREV
+							}
+							change_variable = { 
+								which = kui
+								which = PREV
+							}
+							change_variable = { 
+								which = qdb
+								which = PREV
+							}
+							change_variable = { 
+								which = qgb
+								which = PREV
+							}
+							change_variable = { 
+								which = qgc
+								which = PREV
+							}
+							change_variable = { 
+								which = qgd
+								which = PREV
+							}
+							change_variable = { 
+								which = kxi
+								which = PREV
+							}
+							change_variable = { 
+								which = kxj
+								which = PREV
+							}
+							change_variable = { 
+								which = kxk
+								which = PREV
+							}
+							change_variable = { 
+								which = hts
+								which = PREV
+							}
+							change_variable = { 
+								which = kwh
+								which = PREV
+							}
+							change_variable = { 
+								which = kwl
+								which = PREV
+							}
+							change_variable = { 
+								which = kwm
+								which = PREV
+							}
+							change_variable = { 
+								which = kwp
+								which = PREV
+							}
+							change_variable = { 
+								which = kwt
+								which = PREV
+							}
+							change_variable = { 
+								which = kvj
+								which = PREV
+							}
+							change_variable = { 
+								which = kvn
+								which = PREV
+							}
+							change_variable = { 
+								which = kvo
+								which = PREV
+							}
+							change_variable = { 
+								which = kvr
+								which = PREV
+							}
+							change_variable = { 
+								which = kvv
+								which = PREV
+							}
+							change_variable = { 
+								which = kvw
+								which = PREV
+							}
+							change_variable = { 
+								which = kvz
+								which = PREV
+							}
+							change_variable = { 
+								which = kwd
+								which = PREV
+							}
+							change_variable = { 
+								which = kwe
+								which = PREV
+							}
+							change_variable = { 
+								which = qdc
+								which = PREV
+							}
+							change_variable = { 
+								which = qge
+								which = PREV
+							}
+							change_variable = { 
+								which = qgf
+								which = PREV
+							}
+							change_variable = { 
+								which = qgg
+								which = PREV
+							}
+							change_variable = { 
+								which = oak
+								which = PREV
+							}
+							change_variable = { 
+								which = oah
+								which = PREV
+							}
+							change_variable = { 
+								which = oae
+								which = PREV
+							}
+							change_variable = { 
+								which = oan
+								which = PREV
+							}
+							change_variable = { 
+								which = oaq
+								which = PREV
+							}
+							change_variable = { 
+								which = oat
+								which = PREV
+							}
+							change_variable = { 
+								which = nyp
+								which = PREV
+							}
+							change_variable = { 
+								which = nyq
+								which = PREV
+							}
+							change_variable = { 
+								which = nyr
+								which = PREV
+							}
+							change_variable = { 
+								which = nys
+								which = PREV
+							}
+							change_variable = { 
+								which = nyt
+								which = PREV
+							}
+							change_variable = { 
+								which = nyu
+								which = PREV
+							}
+							change_variable = { 
+								which = nyv
+								which = PREV
+							}
+							change_variable = { 
+								which = nyw
+								which = PREV
+							}
+							change_variable = { 
+								which = nyx
+								which = PREV
+							}
+							change_variable = { 
+								which = nyy
+								which = PREV
+							}
+							change_variable = { 
+								which = nyz
+								which = PREV
+							}
+							change_variable = { 
+								which = nza
+								which = PREV
+							}
+							change_variable = { 
+								which = nzb
+								which = PREV
+							}
+							change_variable = { 
+								which = nzc
+								which = PREV
+							}
+							change_variable = { 
+								which = nzd
+								which = PREV
+							}
+							change_variable = { 
+								which = nze
+								which = PREV
+							}
+							change_variable = { 
+								which = nzf
+								which = PREV
+							}
+							change_variable = { 
+								which = nxz
+								which = PREV
+							}
+							change_variable = { 
+								which = nya
+								which = PREV
+							}
+							change_variable = { 
+								which = nyb
+								which = PREV
+							}
+							change_variable = { 
+								which = nyc
+								which = PREV
+							}
+							change_variable = { 
+								which = nyd
+								which = PREV
+							}
+							change_variable = { 
+								which = nye
+								which = PREV
+							}
+							change_variable = { 
+								which = nyf
+								which = PREV
+							}
+							change_variable = { 
+								which = nyg
+								which = PREV
+							}
+							change_variable = { 
+								which = nyh
+								which = PREV
+							}
+							change_variable = { 
+								which = nyi
+								which = PREV
+							}
+							change_variable = { 
+								which = nyj
+								which = PREV
+							}
+							change_variable = { 
+								which = nyk
+								which = PREV
+							}
+							change_variable = { 
+								which = nyl
+								which = PREV
+							}
+							change_variable = { 
+								which = nym
+								which = PREV
+							}
+							change_variable = { 
+								which = nyn
+								which = PREV
+							}
+							change_variable = { 
+								which = nyo
+								which = PREV
+							}
+							change_variable = { 
+								which = nzg
+								which = PREV
+							}
+							change_variable = { 
+								which = nxj
+								which = PREV
+							}
+							change_variable = { 
+								which = nxk
+								which = PREV
+							}
+							change_variable = { 
+								which = nxl
+								which = PREV
+							}
+							change_variable = { 
+								which = nxm
+								which = PREV
+							}
+							change_variable = { 
+								which = nxn
+								which = PREV
+							}
+							change_variable = { 
+								which = nxo
+								which = PREV
+							}
+							change_variable = { 
+								which = nxp
+								which = PREV
+							}
+							change_variable = { 
+								which = nxq
+								which = PREV
+							}
+							change_variable = { 
+								which = nxr
+								which = PREV
+							}
+							change_variable = { 
+								which = nxs
+								which = PREV
+							}
+							change_variable = { 
+								which = nxt
+								which = PREV
+							}
+							change_variable = { 
+								which = nxu
+								which = PREV
+							}
+							change_variable = { 
+								which = nxv
+								which = PREV
+							}
+							change_variable = { 
+								which = nxw
+								which = PREV
+							}
+							change_variable = { 
+								which = nxx
+								which = PREV
+							}
+							change_variable = { 
+								which = nxy
+								which = PREV
+							}
+							change_variable = { 
+								which = nzh
+								which = PREV
+							}
+							change_variable = { 
+								which = qbj
+								which = PREV
+							}
+							change_variable = { 
+								which = qbn
+								which = PREV
+							}
+							change_variable = { 
+								which = qbo
+								which = PREV
+							}
+							change_variable = { 
+								which = qbb
+								which = PREV
+							}
+							change_variable = { 
+								which = qbf
+								which = PREV
+							}
+							change_variable = { 
+								which = qbg
+								which = PREV
+							}
+							change_variable = { 
+								which = qal
+								which = PREV
+							}
+							change_variable = { 
+								which = qap
+								which = PREV
+							}
+							change_variable = { 
+								which = qaq
+								which = PREV
+							}
+							change_variable = { 
+								which = qat
+								which = PREV
+							}
+							change_variable = { 
+								which = qax
+								which = PREV
+							}
+							change_variable = { 
+								which = qay
+								which = PREV
+							}
+							change_variable = { 
+								which = nva
+								which = PREV
+							}
+							change_variable = { 
+								which = nvb
+								which = PREV
+							}
+							change_variable = { 
+								which = nvc
+								which = PREV
+							}
+							change_variable = { 
+								which = nve
+								which = PREV
+							}
+							change_variable = { 
+								which = nvq
+								which = PREV
+							}
+							change_variable = { 
+								which = iiy
+								which = PREV
+							}
+							change_variable = { 
+								which = aix
+								which = PREV
+							}
+							change_variable = { 
+								which = afp
+								which = PREV
+							}
+							change_variable = { 
+								which = ddl
+								which = PREV
+							}
+							change_variable = { 
+								which = ijl
+								which = PREV
+							}
+							change_variable = { 
+								which = iji
+								which = PREV
+							}
+							change_variable = { 
+								which = axz
+								which = PREV
+							}
+							change_variable = { 
+								which = aim
+								which = PREV
+							}
+							change_variable = { 
+								which = dde
+								which = PREV
+							}
+							change_variable = { 
+								which = ain
+								which = PREV
+							}
+							change_variable = { 
+								which = gdf
+								which = PREV
+							}
+							change_variable = { 
+								which = qfj
+								which = PREV
+							}
+							change_variable = { 
+								which = nvs
+								which = PREV
+							}
+							change_variable = { 
+								which = nvn
+								which = PREV
+							}
+							change_variable = { 
+								which = nvr
+								which = PREV
+							}
+							change_variable = { 
+								which = iiz
+								which = PREV
+							}
+							change_variable = { 
+								which = aiy
+								which = PREV
+							}
+							change_variable = { 
+								which = afr
+								which = PREV
+							}
+							change_variable = { 
+								which = ddm
+								which = PREV
+							}
+							change_variable = { 
+								which = ijm
+								which = PREV
+							}
+							change_variable = { 
+								which = ijj
+								which = PREV
+							}
+							change_variable = { 
+								which = aya
+								which = PREV
+							}
+							change_variable = { 
+								which = aip
+								which = PREV
+							}
+							change_variable = { 
+								which = ddf
+								which = PREV
+							}
+							change_variable = { 
+								which = aiq
+								which = PREV
+							}
+							change_variable = { 
+								which = gdg
+								which = PREV
+							}
+							change_variable = { 
+								which = qfl
+								which = PREV
+							}
+							change_variable = { 
+								which = nwa
+								which = PREV
+							}
+							change_variable = { 
+								which = nvv
+								which = PREV
+							}
+							change_variable = { 
+								which = ija
+								which = PREV
+							}
+							change_variable = { 
+								which = aiz
+								which = PREV
+							}
+							change_variable = { 
+								which = aft
+								which = PREV
+							}
+							change_variable = { 
+								which = ddn
+								which = PREV
+							}
+							change_variable = { 
+								which = ijn
+								which = PREV
+							}
+							change_variable = { 
+								which = ijk
+								which = PREV
+							}
+							change_variable = { 
+								which = ayb
+								which = PREV
+							}
+							change_variable = { 
+								which = ais
+								which = PREV
+							}
+							change_variable = { 
+								which = ddg
+								which = PREV
+							}
+							change_variable = { 
+								which = ait
+								which = PREV
+							}
+							change_variable = { 
+								which = gdh
+								which = PREV
+							}
+							change_variable = { 
+								which = qfn
+								which = PREV
+							}
+						}
+					}
+					set_variable = { 
+						which = arg
+						which = nog
+					}
+					multiply_variable = { 
+						which = arg
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = arg
+							value = 0.1
+						}
+					}
+					PREV = { 
+						set_variable = { 
+							which = arg
+							which = PREV
+						}
+						change_variable = { 
+							which = nog
+							which = arg
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+					}
+					set_variable = { 
+						which = arg
+						value = 0
+					}
+					if = { 
+						limit = { 
+							PREV = { 
+								ai = no
+							}
+						}
+						set_variable = { 
+							which = arg
+							which = ftk
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = ftk
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = ftm
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = ftm
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = ftl
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = ftl
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = ftq
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = ftq
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = fto
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = fto
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = ftp
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = ftp
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = ftn
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = ftn
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = ftr
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = ftr
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = ftt
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = ftt
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = fts
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = fts
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = ftx
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = ftx
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = ftv
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = ftv
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = ftw
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = ftw
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = ftu
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = ftu
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = fty
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = fty
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = fua
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = fua
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = ftz
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = ftz
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = fue
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = fue
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = fuc
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = fuc
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = fud
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = fud
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = fub
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = fub
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = fuf
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = fuf
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = fuh
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = fuh
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = fug
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = fug
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = ful
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = ful
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = fuj
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = fuj
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = fuk
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = fuk
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = fui
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = fui
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = lvl
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = lvl
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = lvm
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = lvm
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = lvn
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = lvn
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = lvo
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = lvo
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = lvq
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = no
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = lvq
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = lvp
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = no
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = lvp
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+						set_variable = { 
+							which = arg
+							which = lvr
+						}
+						multiply_variable = { 
+							which = arg
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = no
+							}
+							multiply_variable = { 
+								which = arg
+								value = 0.1
+							}
+						}
+						PREV = { 
+							set_variable = { 
+								which = arg
+								which = PREV
+							}
+							change_variable = { 
+								which = lvr
+								which = arg
+							}
+							set_variable = { 
+								which = arg
+								value = 0
+							}
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+					}
+					set_variable = { 
+						which = arg
+						which = bco
+					}
+					multiply_variable = { 
+						which = arg
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = arg
+							value = 0.1
+						}
+					}
+					PREV = { 
+						set_variable = { 
+							which = arg
+							which = PREV
+						}
+						change_variable = { 
+							which = bco
+							which = arg
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+					}
+					set_variable = { 
+						which = arg
+						value = 0
+					}
+					set_variable = { 
+						which = arg
+						which = bcp
+					}
+					multiply_variable = { 
+						which = arg
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = arg
+							value = 0.1
+						}
+					}
+					PREV = { 
+						set_variable = { 
+							which = arg
+							which = PREV
+						}
+						change_variable = { 
+							which = bcp
+							which = arg
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+					}
+					set_variable = { 
+						which = arg
+						value = 0
+					}
+					set_variable = { 
+						which = arg
+						which = bcq
+					}
+					multiply_variable = { 
+						which = arg
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = arg
+							value = 0.1
+						}
+					}
+					PREV = { 
+						set_variable = { 
+							which = arg
+							which = PREV
+						}
+						change_variable = { 
+							which = bcq
+							which = arg
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+					}
+					set_variable = { 
+						which = arg
+						value = 0
+					}
+					set_variable = { 
+						which = arg
+						which = bcr
+					}
+					multiply_variable = { 
+						which = arg
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = arg
+							value = 0.1
+						}
+					}
+					PREV = { 
+						set_variable = { 
+							which = arg
+							which = PREV
+						}
+						change_variable = { 
+							which = bcr
+							which = arg
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+					}
+					set_variable = { 
+						which = arg
+						value = 0
+					}
+					set_variable = { 
+						which = arg
+						which = bcs
+					}
+					multiply_variable = { 
+						which = arg
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = arg
+							value = 0.1
+						}
+					}
+					PREV = { 
+						set_variable = { 
+							which = arg
+							which = PREV
+						}
+						change_variable = { 
+							which = bcs
+							which = arg
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+					}
+					set_variable = { 
+						which = arg
+						value = 0
+					}
+					set_variable = { 
+						which = arg
+						which = bct
+					}
+					multiply_variable = { 
+						which = arg
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = arg
+							value = 0.1
+						}
+					}
+					PREV = { 
+						set_variable = { 
+							which = arg
+							which = PREV
+						}
+						change_variable = { 
+							which = bct
+							which = arg
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+					}
+					set_variable = { 
+						which = arg
+						value = 0
+					}
+					set_variable = { 
+						which = arg
+						which = bcu
+					}
+					multiply_variable = { 
+						which = arg
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = arg
+							value = 0.1
+						}
+					}
+					PREV = { 
+						set_variable = { 
+							which = arg
+							which = PREV
+						}
+						change_variable = { 
+							which = bcu
+							which = arg
+						}
+						set_variable = { 
+							which = arg
+							value = 0
+						}
+					}
+					set_variable = { 
+						which = arg
+						value = 0
+					}
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = ani
+								value = 0.001
+							}
+						}
+					}
+					divide_variable = { 
+						which = doh
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = doh
+							value = 10
+						}
+					}
+					else = { 
+						multiply_variable = { 
+							which = doh
+							value = 100
+						}
+					}
+					divide_variable = { 
+						which = gse
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = gse
+							value = 10
+						}
+					}
+					else = { 
+						multiply_variable = { 
+							which = gse
+							value = 100
+						}
+					}
+					divide_variable = { 
+						which = gsf
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = gsf
+							value = 10
+						}
+					}
+					else = { 
+						multiply_variable = { 
+							which = gsf
+							value = 100
+						}
+					}
+					divide_variable = { 
+						which = bco
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = bco
+							value = 10
+						}
+					}
+					else = { 
+						multiply_variable = { 
+							which = bco
+							value = 100
+						}
+					}
+					divide_variable = { 
+						which = bcp
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = bcp
+							value = 10
+						}
+					}
+					else = { 
+						multiply_variable = { 
+							which = bcp
+							value = 100
+						}
+					}
+					divide_variable = { 
+						which = bcq
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = bcq
+							value = 10
+						}
+					}
+					else = { 
+						multiply_variable = { 
+							which = bcq
+							value = 100
+						}
+					}
+					divide_variable = { 
+						which = bcr
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = bcr
+							value = 10
+						}
+					}
+					else = { 
+						multiply_variable = { 
+							which = bcr
+							value = 100
+						}
+					}
+					divide_variable = { 
+						which = bcs
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = bcs
+							value = 10
+						}
+					}
+					else = { 
+						multiply_variable = { 
+							which = bcs
+							value = 100
+						}
+					}
+					divide_variable = { 
+						which = bct
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = bct
+							value = 10
+						}
+					}
+					else = { 
+						multiply_variable = { 
+							which = bct
+							value = 100
+						}
+					}
+					divide_variable = { 
+						which = bcu
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = bcu
+							value = 10
+						}
+					}
+					else = { 
+						multiply_variable = { 
+							which = bcu
+							value = 100
+						}
+					}
+					divide_variable = { 
+						which = nog
+						which = ani
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						multiply_variable = { 
+							which = nog
+							value = 10
+						}
+					}
+					else = { 
+						multiply_variable = { 
+							which = nog
+							value = 100
+						}
+					}
+					if = { 
+						limit = { 
+							ai = no
+						}
+						divide_variable = { 
+							which = ftk
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = ftk
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = ftk
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = ftm
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = ftm
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = ftm
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = ftl
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = ftl
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = ftl
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = ftq
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = ftq
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = ftq
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = fto
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = fto
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = fto
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = ftp
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = ftp
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = ftp
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = ftn
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = ftn
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = ftn
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = ftr
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = ftr
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = ftr
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = ftt
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = ftt
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = ftt
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = fts
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = fts
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = fts
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = ftx
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = ftx
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = ftx
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = ftv
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = ftv
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = ftv
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = ftw
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = ftw
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = ftw
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = ftu
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = ftu
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = ftu
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = fty
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = fty
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = fty
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = fua
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = fua
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = fua
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = ftz
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = ftz
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = ftz
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = fue
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = fue
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = fue
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = fuc
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = fuc
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = fuc
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = fud
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = fud
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = fud
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = fub
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = fub
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = fub
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = fuf
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = fuf
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = fuf
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = fuh
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = fuh
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = fuh
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = fug
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = fug
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = fug
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = ful
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = ful
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = ful
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = fuj
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = fuj
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = fuj
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = fuk
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = fuk
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = fuk
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = fui
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = fui
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = fui
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = lvl
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = lvl
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = lvl
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = lvm
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = lvm
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = lvm
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = lvn
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = lvn
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = lvn
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = lvo
+							which = ani
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							multiply_variable = { 
+								which = lvo
+								value = 10
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = lvo
+								value = 100
+							}
+						}
+						divide_variable = { 
+							which = lvp
+							which = ani
+						}
+						divide_variable = { 
+							which = lvq
+							which = ani
+						}
+						divide_variable = { 
+							which = lvr
+							which = ani
+						}
+					}
+				}
+				else = { 
+					set_variable = { 
+						which = doh
+						value = 0
+					}
+					set_variable = { 
+						which = gse
+						value = 0
+					}
+					set_variable = { 
+						which = gsf
+						value = 0
+					}
+					set_variable = { 
+						which = bco
+						value = 0
+					}
+					set_variable = { 
+						which = bcp
+						value = 0
+					}
+					set_variable = { 
+						which = bcq
+						value = 0
+					}
+					set_variable = { 
+						which = bcr
+						value = 0
+					}
+					set_variable = { 
+						which = bcs
+						value = 0
+					}
+					set_variable = { 
+						which = bct
+						value = 0
+					}
+					set_variable = { 
+						which = bcu
+						value = 0
+					}
+					set_variable = { 
+						which = nog
+						value = 0
+					}
+					if = { 
+						limit = { 
+							ai = no
+						}
+						set_variable = { 
+							which = ftk
+							value = 0
+						}
+						set_variable = { 
+							which = ftm
+							value = 0
+						}
+						set_variable = { 
+							which = ftl
+							value = 0
+						}
+						set_variable = { 
+							which = ftq
+							value = 0
+						}
+						set_variable = { 
+							which = fto
+							value = 0
+						}
+						set_variable = { 
+							which = ftp
+							value = 0
+						}
+						set_variable = { 
+							which = ftn
+							value = 0
+						}
+						set_variable = { 
+							which = ftr
+							value = 0
+						}
+						set_variable = { 
+							which = ftt
+							value = 0
+						}
+						set_variable = { 
+							which = fts
+							value = 0
+						}
+						set_variable = { 
+							which = ftx
+							value = 0
+						}
+						set_variable = { 
+							which = ftv
+							value = 0
+						}
+						set_variable = { 
+							which = ftw
+							value = 0
+						}
+						set_variable = { 
+							which = ftu
+							value = 0
+						}
+						set_variable = { 
+							which = fty
+							value = 0
+						}
+						set_variable = { 
+							which = fua
+							value = 0
+						}
+						set_variable = { 
+							which = ftz
+							value = 0
+						}
+						set_variable = { 
+							which = fue
+							value = 0
+						}
+						set_variable = { 
+							which = fuc
+							value = 0
+						}
+						set_variable = { 
+							which = fud
+							value = 0
+						}
+						set_variable = { 
+							which = fub
+							value = 0
+						}
+						set_variable = { 
+							which = fuf
+							value = 0
+						}
+						set_variable = { 
+							which = fuh
+							value = 0
+						}
+						set_variable = { 
+							which = fug
+							value = 0
+						}
+						set_variable = { 
+							which = ful
+							value = 0
+						}
+						set_variable = { 
+							which = fuj
+							value = 0
+						}
+						set_variable = { 
+							which = fuk
+							value = 0
+						}
+						set_variable = { 
+							which = fui
+							value = 0
+						}
+						set_variable = { 
+							which = lvl
+							value = 0
+						}
+						set_variable = { 
+							which = lvm
+							value = 0
+						}
+						set_variable = { 
+							which = lvn
+							value = 0
+						}
+						set_variable = { 
+							which = lvo
+							value = 0
+						}
+						set_variable = { 
+							which = lvp
+							value = 0
+						}
+						set_variable = { 
+							which = lvq
+							value = 0
+						}
+						set_variable = { 
+							which = lvr
+							value = 0
+						}
+					}
+				}
+				set_variable = { 
+					which = arg
+					value = 0
+				}
+				change_variable = { 
+					which = dnw
+					which = pzy
+				}
+				change_variable = { 
+					which = dnw
+					which = qaa
+				}
+				change_variable = { 
+					which = dnw
+					which = pzz
+				}
+				change_variable = { 
+					which = dnw
+					which = lsa
+				}
+				change_variable = { 
+					which = dmb
+					which = pzy
+				}
+				change_variable = { 
+					which = dmb
+					which = qaa
+				}
+				change_variable = { 
+					which = dmb
+					which = pzz
+				}
+				change_variable = { 
+					which = dmb
+					which = lsa
+				}
+			}
+			hidden_effect = { 
+				country_event = { 
+					id = POP_Census.895
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	UI_Show_utility_decisions = { 
+		major = yes
+		potential = { 
+			ai = no
+			NOT = { 
+				has_country_flag = UI_Utility_Decisions_On
+			}
+		}
+		allow = { 
+			always = yes
+		}
+		effect = { 
+			set_country_flag = UI_Utility_Decisions_On
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	UI_Hide_utility_decisions = { 
+		major = yes
+		potential = { 
+			ai = no
+			has_country_flag = UI_Utility_Decisions_On
+		}
+		allow = { 
+			always = yes
+		}
+		effect = { 
+			clr_country_flag = UI_Utility_Decisions_On
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	UI_Tooltip_Set_On = { 
+		major = yes
+		potential = { 
+			ai = no
+			NOT = { 
+				has_country_flag = UI_Tooltip_On
+			}
+			has_country_flag = UI_Utility_Decisions_On
+		}
+		allow = { 
+			always = yes
+		}
+		effect = { 
+			hidden_effect = { 
+				set_country_flag = UI_Tooltip_On
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	UI_Tooltip_Set_Off = { 
+		major = yes
+		potential = { 
+			ai = no
+			has_country_flag = UI_Tooltip_On
+			has_country_flag = UI_Utility_Decisions_On
+		}
+		allow = { 
+			always = yes
+		}
+		effect = { 
+			hidden_effect = { 
+				clr_country_flag = UI_Tooltip_On
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	POP_Loot = { 
+		major = yes
+		potential = { 
+			ai = no
+			is_at_war = yes
+			NOT = { 
+				AND = { 
+					is_variable_equal = { 
+						which = alc
+						value = 0
+					}
+				}
+			}
+		}
+		allow = { 
+			is_at_war = yes
+		}
+		effect = { }
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	POP_AutInvest_1 = { 
+		major = yes
+		potential = { 
+			ai = no
+			has_country_flag = Automatic_Invest
+			has_country_flag = UI_Utility_Decisions_On
+		}
+		allow = { 
+			has_country_flag = Automatic_Invest
+		}
+		effect = { 
+			clr_country_flag = Automatic_Invest
+			every_owned_province = { 
+				limit = { 
+					has_province_flag = Invest
+				}
+				clr_province_flag = Invest
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	POP_AutInvest_2 = { 
+		major = yes
+		potential = { 
+			ai = no
+			has_country_flag = UI_Utility_Decisions_On
+			NOT = { 
+				has_country_flag = Automatic_Invest
+			}
+		}
+		allow = { 
+			NOT = { 
+				has_country_flag = Automatic_Invest
+			}
+		}
+		effect = { 
+			set_country_flag = Automatic_Invest
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	POP_AutInvest_3 = { 
+		major = yes
+		potential = { 
+			ai = no
+			has_country_flag = UI_Utility_Decisions_On
+			has_country_flag = Automatic_Invest
+		}
+		allow = { 
+			ai = no
+			has_country_flag = Automatic_Invest
+		}
+		effect = { 
+			every_owned_province = { 
+				limit = { 
+					has_province_flag = Invest
+				}
+				clr_province_flag = Invest
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	POP_AutInvest_4 = { 
+		major = yes
+		potential = { 
+			ai = no
+			has_country_flag = UI_Utility_Decisions_On
+			has_country_flag = Automatic_Invest
+		}
+		allow = { 
+			ai = no
+			has_country_flag = Automatic_Invest
+		}
+		effect = { 
+			every_owned_province = { 
+				limit = { 
+					has_province_flag = UI_Select
+				}
+				set_province_flag = Invest
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	POP_AutInvest_5 = { 
+		major = yes
+		potential = { 
+			ai = no
+			has_country_flag = UI_Utility_Decisions_On
+			has_country_flag = Automatic_Invest
+		}
+		allow = { 
+			ai = no
+			has_country_flag = Automatic_Invest
+		}
+		effect = { 
+			country_event = { 
+				id = AI_Invest.5
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	POP_AutMaint = { 
+		major = yes
+		potential = { 
+			ai = no
+			has_country_flag = Automatic_Maint
+			has_country_flag = UI_Utility_Decisions_On
+		}
+		allow = { 
+			has_country_flag = Automatic_Maint
+		}
+		effect = { 
+			clr_country_flag = Automatic_Maint
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	POP_AutMaint_2 = { 
+		major = yes
+		potential = { 
+			ai = no
+			NOT = { 
+				has_country_flag = Automatic_Maint
+			}
+			has_country_flag = UI_Utility_Decisions_On
+		}
+		allow = { 
+			NOT = { 
+				has_country_flag = Automatic_Maint
+			}
+		}
+		effect = { 
+			set_country_flag = Automatic_Maint
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	POP_AutMaint_3 = { 
+		major = yes
+		potential = { 
+			ai = no
+			has_country_flag = UI_Utility_Decisions_On
+		}
+		allow = { 
+			has_country_flag = Automatic_Maint
+		}
+		effect = { 
+			hidden_effect = { 
+				every_owned_province = { 
+					remove_building = maint_Agriculture_high
+					remove_building = maint_Agriculture_med
+					remove_building = maint_Agriculture_low
+					add_building = maint_Agriculture_no
+					remove_building = maint_Fishery_high
+					remove_building = maint_Fishery_med
+					remove_building = maint_Fishery_low
+					add_building = maint_Fishery_no
+					remove_building = maint_Extraction_high
+					remove_building = maint_Extraction_med
+					remove_building = maint_Extraction_low
+					add_building = maint_Extraction_no
+					remove_building = maint_Forestry_high
+					remove_building = maint_Forestry_med
+					remove_building = maint_Forestry_low
+					add_building = maint_Forestry_no
+					remove_building = maint_Industrial_high
+					remove_building = maint_Industrial_med
+					remove_building = maint_Industrial_low
+					add_building = maint_Industrial_no
+					remove_building = maint_Commercial_high
+					remove_building = maint_Commercial_med
+					remove_building = maint_Commercial_low
+					add_building = maint_Commercial_no
+					remove_building = maint_Academic_high
+					remove_building = maint_Academic_med
+					remove_building = maint_Academic_low
+					add_building = maint_Academic_no
+					clr_province_flag = Dont_Maint
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	POP_AutMaint_4 = { 
+		major = yes
+		potential = { 
+			ai = no
+			has_country_flag = UI_Utility_Decisions_On
+		}
+		allow = { }
+		effect = { 
+			every_owned_province = { 
+				limit = { 
+					has_province_flag = UI_Select
+				}
+				set_province_flag = Dont_Maint
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	Inactive_Trade_Display = { 
+		major = yes
+		potential = { 
+			ai = no
+			has_country_flag = UI_Utility_Decisions_On
+			NOT = { 
+				has_global_flag = DisplayTradeForAll
+			}
+		}
+		allow = { }
+		effect = { 
+			hidden_effect = { 
+				set_global_flag = DisplayTradeForAll
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	Active_Trade_Display = { 
+		major = yes
+		potential = { 
+			ai = no
+			has_country_flag = UI_Utility_Decisions_On
+			has_global_flag = DisplayTradeForAll
+		}
+		allow = { }
+		effect = { 
+			hidden_effect = { 
+				clr_global_flag = DisplayTradeForAll
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+	POP_Timur = { 
+		major = yes
+		potential = { 
+			ai = no
+			AND = { 
+				has_country_flag = Horde_Timur
+				NOT = { 
+					has_country_flag = Timur_Dead
+				}
+			}
+		}
+		allow = { 
+			always = yes
+		}
+		effect = { }
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+}

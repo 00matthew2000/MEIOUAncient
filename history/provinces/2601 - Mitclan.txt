@@ -1,0 +1,29 @@
+owner = ZAP
+controller = ZAP
+add_core = ZAP
+capital = "Mictlan"
+trade_goods = carmine
+culture = zapotec
+religion = cocijo
+hre = no
+base_tax = 27
+base_production = 1
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+	set_province_flag = furs
+}

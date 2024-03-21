@@ -1,0 +1,25 @@
+capital = "Tobago"
+trade_goods = unknown
+culture = carib
+religion = iocauna
+hre = no
+base_tax = 1
+base_production = 0
+base_manpower = 0
+native_size = 20
+native_ferocity = 2
+native_hostileness = 9
+450.1.1 = { 
+	set_province_flag = TN_Island
+	set_province_flag = TN_Natural_Minor
+	set_variable = { 
+		which = acp
+		value = 1.5
+	}
+}
+1356.1.1 = { 
+	add_permanent_province_modifier = { 
+		name = trading_post_province
+		duration = -1
+	}
+}

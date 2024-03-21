@@ -1,0 +1,61 @@
+owner = MOG
+controller = MOG
+add_core = MOG
+capital = "Muqdisho"
+trade_goods = livestock
+culture = sab
+religion = sunni
+hre = no
+base_tax = 5
+base_production = 1
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gci
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = muslim
+discovered_by = east_african
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 40.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 15.000
+	}
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+	add_permanent_province_modifier = { 
+		name = urban_goods_cloth
+		duration = -1
+	}
+	add_permanent_province_modifier = { 
+		name = urban_goods_naval_supplies
+		duration = -1
+	}
+	add_permanent_province_modifier = { 
+		name = urban_goods_metalwork
+		duration = -1
+	}
+	set_province_flag = salt
+}
+450.1.1 = { 
+	set_province_flag = TN_Major
+	set_province_flag = TN_Port
+	set_province_flag = TN_Harbour_Minor
+	set_province_flag = TN_Natural_Important
+}

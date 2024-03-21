@@ -1,0 +1,132 @@
+owner = TCK
+controller = TCK
+add_core = TCK
+capital = "Tiäkenbuorch"
+trade_goods = lumber
+culture = westphalian
+religion = catholic
+hre = yes
+base_tax = 3
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 1
+}
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = western
+discovered_by = muslim
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+	set_variable = { 
+		which = baf
+		value = 142
+	}
+	set_province_flag = pocket_province
+}
+1356.1.1 = { 
+	add_core = BNT
+}
+100.1.1 = { 
+	set_variable = { 
+		which = amj
+		value = 12.406
+	}
+	set_variable = { 
+		which = amk
+		value = 0.000
+	}
+	set_variable = { 
+		which = amh
+		value = 12.406
+	}
+	set_variable = { 
+		which = ami
+		value = 0.000
+	}
+	set_variable = { 
+		which = amf
+		value = 8.960
+	}
+	set_variable = { 
+		which = amg
+		value = 0.000
+	}
+	set_variable = { 
+		which = amd
+		value = 10.683
+	}
+	set_variable = { 
+		which = ame
+		value = 0.000
+	}
+	set_variable = { 
+		which = amb
+		value = 12.406
+	}
+	set_variable = { 
+		which = amc
+		value = 0.000
+	}
+	set_variable = { 
+		which = alz
+		value = 14.474
+	}
+	set_variable = { 
+		which = ama
+		value = 0.000
+	}
+	set_variable = { 
+		which = alx
+		value = 16.542
+	}
+	set_variable = { 
+		which = aly
+		value = 0.000
+	}
+	set_variable = { 
+		which = alv
+		value = 18.529
+	}
+	set_variable = { 
+		which = alw
+		value = 0.000
+	}
+	set_variable = { 
+		which = alt
+		value = 21.897
+	}
+	set_variable = { 
+		which = alu
+		value = 0.000
+	}
+	set_variable = { 
+		which = alr
+		value = 25.266
+	}
+	set_variable = { 
+		which = als
+		value = 0.000
+	}
+	set_variable = { 
+		which = alp
+		value = 30.319
+	}
+	set_variable = { 
+		which = alq
+		value = 0.000
+	}
+	set_variable = { 
+		which = aho
+		value = 45.479
+	}
+	set_variable = { 
+		which = ahp
+		value = 0.000
+	}
+}

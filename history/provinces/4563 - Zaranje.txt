@@ -1,0 +1,52 @@
+owner = MIH
+controller = MIH
+add_core = MIH
+capital = "Zaranje"
+trade_goods = wheat
+culture = tajihk
+religion = sunni
+hre = no
+base_tax = 8
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gcn
+	value = 1
+}
+discovered_by = muslim
+discovered_by = indian
+discovered_by = ottoman
+discovered_by = steppestech
+discovered_by = YUA
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 50.000
+	}
+	set_variable = { 
+		which = atc
+		value = 60.000
+	}
+}
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_variable = { 
+		which = ami
+		value = 5.000
+	}
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+	set_province_flag = TN_Silk
+	set_province_flag = TN_Natural_Minor
+	set_province_flag = smallsalt
+}
+1300.1.1 = { 
+	set_province_flag = mined_goods
+}

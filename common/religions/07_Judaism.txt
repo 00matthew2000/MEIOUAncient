@@ -1,0 +1,56 @@
+jewish_group = { 
+	flags_with_emblem_percentage = 33
+	flag_emblem_index_range = { 108 109}
+	jewish = { 
+		color = { 204 25 127}
+		icon = 26
+		province = { }
+		country = { 
+			tolerance_of_heretics_capacity = 1
+			advisor_pool = 1
+			interest = -2
+			merchants = 1
+			trade_efficiency = 0.10
+			diplomatic_reputation = -1
+		}
+		country_as_secondary = { 
+			advisor_pool = 1
+			interest = -2
+			merchants = 1
+			trade_efficiency = 0.10
+			diplomatic_reputation = -1
+			tolerance_own = -1
+			global_missionary_strength = -0.01
+		}
+		uses_piety = yes
+		has_patriarchs = yes
+		heretic = { Fundamentalist Sectarian Populist Reactionary Millenarian Apocalyptic Ultraorthodox Humanistic Syncretic Messianic}
+	}
+	samaritan = { 
+		color = { 0.8 0.1 0.5}
+		icon = 26
+		province = { }
+		country = { 
+			tolerance_of_heretics_capacity = 1
+			advisor_pool = 1
+			interest = -2
+			merchants = 1
+			trade_efficiency = 0.10
+			diplomatic_reputation = -1
+		}
+		country_as_secondary = { 
+			advisor_pool = 1
+			interest = -2
+			merchants = 1
+			trade_efficiency = 0.10
+			diplomatic_reputation = -1
+			tolerance_own = -1
+			global_missionary_strength = -0.01
+		}
+		uses_piety = yes
+		has_patriarchs = yes
+		date = 2000.1.1
+		heretic = { Fundamentalist Sectarian Populist Reactionary Millenarian Apocalyptic Ultraorthodox Humanistic Syncretic Messianic}
+	}
+	crusade_name = MILKHEMET_MITZVAH
+}

@@ -1,0 +1,51 @@
+owner = MYA
+controller = MYA
+add_core = MYA
+capital = "Baoshan"
+trade_goods = wool
+culture = lisu
+religion = bimoism
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 2
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = indian
+discovered_by = steppestech
+discovered_by = YUA
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 90.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 1.500
+	}
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+	set_province_flag = spices
+}
+1276.1.1 = { 
+	owner = YUA
+	controller = YUA
+	add_core = YUA
+}
+1351.1.1 = { 
+	owner = MYA
+	controller = MYA
+	add_core = MYA
+}

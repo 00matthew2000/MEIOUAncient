@@ -1,0 +1,16 @@
+salic_law_reform = { 
+	icon = "house_of_capet"
+	allow_normal_conversion = no
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	potential = { 
+		tag = FRA
+		government = monarchy
+	}
+	modifiers = { 
+		heir_chance = 0.1
+	}
+	ai = { 
+		factor = 100
+	}
+}

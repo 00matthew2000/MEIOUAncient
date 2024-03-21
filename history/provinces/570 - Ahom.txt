@@ -1,0 +1,38 @@
+owner = KAC
+controller = KAC
+capital = "Dimapur"
+trade_goods = rice
+culture = naga
+religion = adi_dharam
+base_tax = 3
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 2
+}
+discovered_by = indian
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+	add_permanent_province_modifier = { 
+		name = "hill_tribes"
+		duration = -1
+	}
+}
+1356.1.1 = { 
+	add_core = MLB
+}

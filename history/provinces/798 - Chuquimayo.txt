@@ -1,0 +1,25 @@
+capital = "Chinchipe"
+trade_goods = unknown
+culture = kanari
+religion = inti
+hre = no
+base_tax = 20
+base_production = 1
+base_manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 2
+discovered_by = south_american
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+	set_province_flag = coca
+}
+1356.1.1 = { 
+	set_variable = { 
+		which = gcj
+		value = 1
+	}
+}

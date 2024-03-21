@@ -1,0 +1,22 @@
+owner = MAP
+controller = MAP
+add_core = MAP
+capital = "Llanquihue"
+trade_goods = unknown
+culture = mapuche
+religion = ngenechen
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+native_size = 10
+native_ferocity = 1
+native_hostileness = 5
+is_city = yes
+discovered_by = south_american
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 1.5
+	}
+}

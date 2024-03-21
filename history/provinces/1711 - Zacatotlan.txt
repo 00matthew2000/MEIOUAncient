@@ -1,0 +1,28 @@
+owner = CLM
+controller = CLM
+add_core = CLM
+capital = "Coalcoman"
+trade_goods = fish
+culture = tecos
+religion = nahuatl
+hre = no
+base_tax = 10
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+	set_province_flag = TN_Natural_Minor
+}

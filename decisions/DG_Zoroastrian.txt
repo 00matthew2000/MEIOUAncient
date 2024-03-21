@@ -1,0 +1,25 @@
+country_decisions = { 
+	restore_the_avestas = { 
+		potential = { 
+			religion = zoroastrian
+			has_country_modifier = fragmented_scriptures
+		}
+		allow = { 
+			is_at_war = no
+			NOT = { 
+				has_country_modifier = religious_controversy
+			}
+			adm_power = 20
+		}
+		effect = { 
+			add_adm_power = -20
+			country_event = { 
+				id = DG_Zoroastrian.064
+				days = 0
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

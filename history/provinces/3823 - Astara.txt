@@ -1,0 +1,34 @@
+owner = MZA
+controller = MZA
+add_core = MZA
+capital = "Astara"
+trade_goods = tea
+culture = talysh
+religion = shiite
+hre = no
+base_tax = 8
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 1
+}
+discovered_by = western
+discovered_by = muslim
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = ottoman
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 109
+	}
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+	set_province_flag = TN_NorthernSilk
+}

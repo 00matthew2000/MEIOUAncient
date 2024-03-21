@@ -1,0 +1,1195 @@
+defined_text = { 
+	name = Construct_Build
+	random = no
+	text = { 
+		localisation_key = SYS_Construct.001.aNOPE
+		trigger = { 
+			all_owned_province = { 
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = ggy
+							value = 0.001
+						}
+					}
+				}
+			}
+			all_subject_country = { 
+				AND = { 
+					is_subject = yes
+					NOT = { 
+						is_subject_of_type = tributary_state
+					}
+					NOT = { 
+						is_subject_of_type = close_tributary_state
+					}
+				}
+				all_owned_province = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ggy
+								value = 0.001
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = SYS_Construct.001.aYEP
+		trigger = { 
+			OR = { 
+				any_owned_province = { 
+					AND = { 
+						check_variable = { 
+							which = ggy
+							value = 0.001
+						}
+					}
+				}
+				any_subject_country = { 
+					AND = { 
+						is_subject = yes
+						NOT = { 
+							is_subject_of_type = tributary_state
+						}
+						NOT = { 
+							is_subject_of_type = close_tributary_state
+						}
+					}
+					any_owned_province = { 
+						AND = { 
+							check_variable = { 
+								which = ggy
+								value = 0.001
+							}
+						}
+					}
+				}
+			}
+			AND = { 
+				check_variable = { 
+					which = gho
+					which = ghn
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = SYS_Construct.001.aNOPE
+		trigger = { 
+			OR = { 
+				any_owned_province = { 
+					AND = { 
+						check_variable = { 
+							which = ggy
+							value = 0.001
+						}
+					}
+				}
+				any_subject_country = { 
+					AND = { 
+						is_subject = yes
+						NOT = { 
+							is_subject_of_type = tributary_state
+						}
+						NOT = { 
+							is_subject_of_type = close_tributary_state
+						}
+					}
+					any_owned_province = { 
+						AND = { 
+							check_variable = { 
+								which = ggy
+								value = 0.001
+							}
+						}
+					}
+				}
+			}
+			NOT = { 
+				AND = { 
+					check_variable = { 
+						which = gho
+						which = ghn
+					}
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_Type
+	random = no
+	text = { 
+		localisation_key = Construct_None
+		trigger = { 
+			NOT = { 
+				AND = { 
+					check_variable = { 
+						which = ggw
+						value = 1
+					}
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Type1
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 1
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Type2
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 2
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Type3
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 3
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_Building
+	random = no
+	text = { 
+		localisation_key = Construct_None
+		trigger = { 
+			OR = { 
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = ggw
+							value = 1
+						}
+					}
+				}
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = ggx
+							value = 1
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Building11
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 1
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggx
+					value = 1
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Building12
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 1
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggx
+					value = 2
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Building13
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 1
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggx
+					value = 3
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Building14
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 1
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggx
+					value = 4
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Building21
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 2
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggx
+					value = 1
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Building22
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 2
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggx
+					value = 2
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Building23
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 2
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggx
+					value = 3
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Building31
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 3
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggx
+					value = 1
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Building32
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 3
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggx
+					value = 2
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Building33
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 3
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggx
+					value = 3
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Building34
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 3
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggx
+					value = 4
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Building35
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 3
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggx
+					value = 5
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Building36
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 3
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggx
+					value = 6
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Building37
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 3
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggx
+					value = 7
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_Amount
+	random = no
+	text = { 
+		localisation_key = Construct_None
+		trigger = { 
+			OR = { 
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = ggy
+							value = 0.001
+						}
+					}
+				}
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = ggw
+							value = 1
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Amount_Build1
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = ggy
+					value = 0.001
+				}
+			}
+			OR = { 
+				AND = { 
+					is_variable_equal = { 
+						which = ggw
+						value = 1
+					}
+				}
+				AND = { 
+					is_variable_equal = { 
+						which = ggw
+						value = 2
+					}
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggz
+					value = 0
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Amount_Build2
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = ggy
+					value = 0.001
+				}
+			}
+			OR = { 
+				AND = { 
+					is_variable_equal = { 
+						which = ggw
+						value = 1
+					}
+				}
+				AND = { 
+					is_variable_equal = { 
+						which = ggw
+						value = 2
+					}
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggz
+					value = 1
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Amount_Infra1
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = ggy
+					value = 0.001
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 3
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggz
+					value = 0
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Amount_Infra2
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = ggy
+					value = 0.001
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 3
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggz
+					value = 1
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_Agriculture
+	random = no
+	text = { 
+		localisation_key = Construct_Agriculture
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = gio
+					value = 1
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_Forestry
+	random = no
+	text = { 
+		localisation_key = Construct_Forestry
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = gip
+					value = 1
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_Extraction
+	random = no
+	text = { 
+		localisation_key = Construct_Extraction
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = giq
+					value = 1
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_Fishery
+	random = no
+	text = { 
+		localisation_key = Construct_Fishery
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = gir
+					value = 1
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_Industrial
+	random = no
+	text = { 
+		localisation_key = Construct_Industrial
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = git
+					value = 1
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_Commercial
+	random = no
+	text = { 
+		localisation_key = Construct_Commercial
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = gis
+					value = 1
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_Academic
+	random = no
+	text = { 
+		localisation_key = Construct_Academic
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = giu
+					value = 1
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_Pathing
+	random = no
+	text = { 
+		localisation_key = Construct_Pathing
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = giv
+					value = 1
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_Harbourage
+	random = no
+	text = { 
+		localisation_key = Construct_Harbourage
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = giw
+					value = 1
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_Amenities
+	random = no
+	text = { 
+		localisation_key = Construct_Amenities
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = gix
+					value = 1
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_Irrigation
+	random = no
+	text = { 
+		localisation_key = Construct_Irrigation
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = giy
+					value = 1
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_Capitol
+	random = no
+	text = { 
+		localisation_key = Construct_Capitol
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = giz
+					value = 1
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_Courthouse
+	random = no
+	text = { 
+		localisation_key = Construct_Courthouse
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = gja
+					value = 1
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_Garrison
+	random = no
+	text = { 
+		localisation_key = Construct_Garrison
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = gjb
+					value = 1
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_Resources
+	random = no
+	text = { 
+		localisation_key = Construct_Resources
+		trigger = { 
+			OR = { 
+				AND = { 
+					check_variable = { 
+						which = gio
+						value = 1
+					}
+				}
+				AND = { 
+					check_variable = { 
+						which = gip
+						value = 1
+					}
+				}
+				AND = { 
+					check_variable = { 
+						which = giq
+						value = 1
+					}
+				}
+				AND = { 
+					check_variable = { 
+						which = gir
+						value = 1
+					}
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_Districts
+	random = no
+	text = { 
+		localisation_key = Construct_Districts
+		trigger = { 
+			OR = { 
+				AND = { 
+					check_variable = { 
+						which = git
+						value = 1
+					}
+				}
+				AND = { 
+					check_variable = { 
+						which = gis
+						value = 1
+					}
+				}
+				AND = { 
+					check_variable = { 
+						which = giu
+						value = 1
+					}
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_DistrictsSpace
+	random = no
+	text = { 
+		localisation_key = Construct_Space
+		trigger = { 
+			OR = { 
+				AND = { 
+					check_variable = { 
+						which = gio
+						value = 1
+					}
+				}
+				AND = { 
+					check_variable = { 
+						which = gip
+						value = 1
+					}
+				}
+				AND = { 
+					check_variable = { 
+						which = giq
+						value = 1
+					}
+				}
+				AND = { 
+					check_variable = { 
+						which = gir
+						value = 1
+					}
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_Infra
+	random = no
+	text = { 
+		localisation_key = Construct_Infra
+		trigger = { 
+			OR = { 
+				AND = { 
+					check_variable = { 
+						which = giv
+						value = 1
+					}
+				}
+				AND = { 
+					check_variable = { 
+						which = giw
+						value = 1
+					}
+				}
+				AND = { 
+					check_variable = { 
+						which = gix
+						value = 1
+					}
+				}
+				AND = { 
+					check_variable = { 
+						which = giy
+						value = 1
+					}
+				}
+				AND = { 
+					check_variable = { 
+						which = giz
+						value = 1
+					}
+				}
+				AND = { 
+					check_variable = { 
+						which = gja
+						value = 1
+					}
+				}
+				AND = { 
+					check_variable = { 
+						which = gjb
+						value = 1
+					}
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_InfraSpace
+	random = no
+	text = { 
+		localisation_key = Construct_Space
+		trigger = { 
+			OR = { 
+				AND = { 
+					check_variable = { 
+						which = gio
+						value = 1
+					}
+				}
+				AND = { 
+					check_variable = { 
+						which = gip
+						value = 1
+					}
+				}
+				AND = { 
+					check_variable = { 
+						which = giq
+						value = 1
+					}
+				}
+				AND = { 
+					check_variable = { 
+						which = gir
+						value = 1
+					}
+				}
+				AND = { 
+					check_variable = { 
+						which = git
+						value = 1
+					}
+				}
+				AND = { 
+					check_variable = { 
+						which = gis
+						value = 1
+					}
+				}
+				AND = { 
+					check_variable = { 
+						which = giu
+						value = 1
+					}
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_RawCost
+	random = no
+	text = { 
+		localisation_key = Construct_RawCost
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = gin
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_MilitaryCost
+	random = no
+	text = { 
+		localisation_key = Construct_MilitaryCost
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = gdj
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_NavalCost
+	random = no
+	text = { 
+		localisation_key = Construct_NavalCost
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = gdk
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_IndustrialCost
+	random = no
+	text = { 
+		localisation_key = Construct_IndustrialCost
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = gdl
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_KnowledgeCost
+	random = no
+	text = { 
+		localisation_key = Construct_KnowledgeCost
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = gdm
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Construct_LaborDisplay
+	random = no
+	text = { 
+		localisation_key = Construct_Building31Labor
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 3
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggx
+					value = 1
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Building32Labor
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 3
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggx
+					value = 2
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Building33Labor
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 3
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggx
+					value = 3
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Building34Labor
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 3
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggx
+					value = 4
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Building35Labor
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 3
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggx
+					value = 5
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Building36Labor
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 3
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggx
+					value = 6
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Construct_Building37Labor
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ggw
+					value = 3
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ggx
+					value = 7
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = GetParallelism
+	random = no
+	text = { 
+		localisation_key = ParallelismDisplay
+		trigger = { 
+			always = yes
+		}
+	}
+}

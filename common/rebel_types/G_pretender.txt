@@ -1,0 +1,450 @@
+pretender_rebels = { 
+	color = { 179 51 51}
+	area = nation
+	government = monarchy
+	defection = none
+	independence = none
+	unit_transfer = yes
+	gfx_type = culture_province
+	resilient = yes
+	reinforcing = yes
+	general = yes
+	smart = yes
+	disband_on_leader_death = no
+	will_relocate = yes
+	dynasty = yes
+	artillery = 0.1
+	infantry = 0.5
+	cavalry = 0.4
+	morale = 1.1
+	handle_action_negotiate = no
+	handle_action_stability = no
+	handle_action_build_core = yes
+	handle_action_send_missionary = yes
+	spawn_chance = { 
+		factor = 1
+		modifier = { 
+			factor = 0
+			owner = { 
+				has_reform = Pol_Mediumship4
+			}
+		}
+		modifier = { 
+			factor = 0.1
+			has_owner_religion = no
+		}
+		modifier = { 
+			factor = 0
+			owner = { 
+				is_colonial_nation = yes
+			}
+		}
+		modifier = { 
+			factor = 0
+			owner = { 
+				NOT = { 
+					num_of_cities = 3
+				}
+			}
+		}
+		modifier = { 
+			factor = 0
+			is_overseas = yes
+		}
+		modifier = { 
+			factor = 0.05
+			owner = { 
+				OR = { 
+					has_country_modifier = the_mandate_of_heaven_lost
+					has_country_modifier = lost_mandate_of_heaven
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.1
+			owner = { 
+				government = republic
+				has_reform = Pol_Mandate4
+				NOT = { 
+					has_reform = Pol_Stylings2
+				}
+			}
+		}
+		modifier = { 
+			factor = 2
+			owner = { 
+				has_reform = Pol_Mandate4
+			}
+		}
+		modifier = { 
+			factor = 2
+			owner = { 
+				has_reform = Pol_Succession2
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				has_reform = Pol_Succession3
+			}
+		}
+		modifier = { 
+			factor = 5.0
+			owner = { 
+				government = republic
+				NOT = { 
+					legitimacy_equivalent = 40
+				}
+			}
+		}
+		modifier = { 
+			factor = 30
+			owner = { 
+				AND = { 
+					OR = { 
+						government = monarchy
+						AND = { 
+							is_tribal = yes
+							has_reform = Pol_Leadership1
+						}
+					}
+				}
+				has_regency = yes
+				has_heir = no
+			}
+		}
+		modifier = { 
+			factor = 5
+			owner = { 
+				AND = { 
+					OR = { 
+						government = monarchy
+						AND = { 
+							is_tribal = yes
+							has_reform = Pol_Leadership1
+						}
+					}
+				}
+				has_regency = yes
+				has_heir = yes
+				NOT = { 
+					heir_claim = 33
+				}
+			}
+		}
+		modifier = { 
+			factor = 5
+			owner = { 
+				AND = { 
+					OR = { 
+						government = monarchy
+						AND = { 
+							is_tribal = yes
+							has_reform = Pol_Leadership1
+						}
+					}
+				}
+				has_regency = yes
+				has_heir = yes
+				NOT = { 
+					heir_claim = 66
+				}
+			}
+		}
+		modifier = { 
+			factor = 2
+			owner = { 
+				AND = { 
+					OR = { 
+						government = monarchy
+						AND = { 
+							is_tribal = yes
+							has_reform = Pol_Leadership1
+						}
+					}
+				}
+				has_regency = yes
+				has_heir = yes
+				NOT = { 
+					heir_claim = 85
+				}
+			}
+		}
+		modifier = { 
+			factor = 4.5
+			owner = { 
+				is_lesser_in_union = yes
+			}
+		}
+		modifier = { 
+			factor = 3
+			owner = { 
+				is_lesser_in_union = yes
+				NOT = { 
+					legitimacy_equivalent = 75
+				}
+			}
+		}
+		modifier = { 
+			factor = 3
+			owner = { 
+				is_lesser_in_union = yes
+				NOT = { 
+					legitimacy_equivalent = 50
+				}
+			}
+		}
+		modifier = { 
+			factor = 3
+			owner = { 
+				is_lesser_in_union = yes
+				NOT = { 
+					legitimacy_equivalent = 25
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				OR = { 
+					is_tribal = yes
+					has_reform = Horde_MonarchyS
+				}
+			}
+			NOT = { 
+				AND = { 
+					check_variable = { 
+						which = atf
+						value = 30
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				OR = { 
+					is_tribal = yes
+					has_reform = Horde_MonarchyS
+				}
+			}
+			NOT = { 
+				AND = { 
+					check_variable = { 
+						which = atf
+						value = 10
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				OR = { 
+					is_tribal = yes
+					has_reform = Horde_MonarchyS
+				}
+			}
+			AND = { 
+				check_variable = { 
+					which = atc
+					value = 40
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				OR = { 
+					is_tribal = yes
+					has_reform = Horde_MonarchyS
+				}
+			}
+			AND = { 
+				check_variable = { 
+					which = atc
+					value = 60
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				OR = { 
+					is_tribal = yes
+					has_reform = Horde_MonarchyS
+				}
+			}
+			AND = { 
+				check_variable = { 
+					which = atc
+					value = 80
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.25
+			owner = { 
+				NOT = { 
+					primary_culture = ROOT
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.5
+			NOT = { 
+				is_core = ROOT
+			}
+			any_core_country = { 
+				primary_culture = ROOT
+			}
+		}
+		modifier = { 
+			factor = 0.2
+			NOT = { 
+				is_core = ROOT
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			owner = { 
+				legitimacy_equivalent = 66
+			}
+		}
+		modifier = { 
+			factor = 0.5
+			owner = { 
+				legitimacy_equivalent = 75
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				government = tribal
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				OR = { 
+					has_reform = Pol_Leadership1
+				}
+			}
+		}
+		modifier = { 
+			factor = 2
+			owner = { 
+				OR = { 
+					has_reform = Pol_Tradition4
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				has_disaster = Horde_Collapse
+			}
+		}
+	}
+	movement_evaluation = { 
+		factor = 1
+		modifier = { 
+			factor = 0.1
+			units_in_province = 1
+		}
+		modifier = { 
+			factor = 0.001
+			controlled_by = REB
+		}
+		modifier = { 
+			factor = 4.0
+			is_capital = yes
+		}
+		modifier = { 
+			factor = 1.5
+			unrest = 2
+		}
+		modifier = { 
+			factor = 1.5
+			unrest = 4
+		}
+		modifier = { 
+			factor = 1.5
+			unrest = 6
+		}
+		modifier = { 
+			factor = 0
+			is_colony = yes
+		}
+		modifier = { 
+			factor = 0
+			is_empty = yes
+		}
+	}
+	siege_won_trigger = { }
+	siege_won_effect = { }
+	can_negotiate_trigger = { 
+		always = no
+	}
+	can_enforce_trigger = { 
+		always = yes
+	}
+	demands_description = "pretender_rebels_demand"
+	demands_enforced_effect = { 
+		if = { 
+			limit = { 
+				NOT = { 
+					AND = { 
+						OR = { 
+							government = monarchy
+							AND = { 
+								is_tribal = yes
+								has_reform = Pol_Leadership1
+							}
+						}
+					}
+				}
+				is_tribal = no
+				NOT = { 
+					has_reform = Horde_MonarchyS
+				}
+			}
+			change_government = REB
+			add_government_reform = Pol_Succession1
+			add_government_reform = Pol_Assembly1
+		}
+		if = { 
+			limit = { 
+				tag = OTT
+				has_country_flag = Halil_Stronk
+				NOT = { 
+					is_year = 1370
+				}
+			}
+			if = { 
+				limit = { 
+					has_heir = yes
+				}
+				kill_heir = { 
+					allow_new_heir = no
+				}
+			}
+			country_event = { 
+				id = Ottomans.014
+			}
+		}
+		else = { 
+			define_ruler = { 
+				rebel = yes
+			}
+			if = { 
+				limit = { 
+					has_heir = yes
+				}
+				kill_heir = { 
+					allow_new_heir = no
+				}
+			}
+		}
+	}
+}

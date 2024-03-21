@@ -1,0 +1,51 @@
+owner = YUA
+controller = YUA
+capital = "Xintian"
+trade_goods = rice
+culture = miao
+religion = bimoism
+hre = no
+base_tax = 14
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+200.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 4.000
+	}
+	set_variable = { 
+		which = atc
+		value = 40.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+}
+1276.1.1 = { 
+	owner = YUA
+	controller = YUA
+	add_core = YUA
+}
+1351.1.1 = { 
+	owner = JCH
+	controller = JCH
+	add_core = JCH
+}

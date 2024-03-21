@@ -1,0 +1,32 @@
+owner = TXL
+controller = TXL
+add_core = TXL
+capital = "Huexotzinco"
+trade_goods = maize
+culture = otomi
+religion = cocijo
+hre = no
+base_tax = 14
+base_production = 1
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 7
+	}
+}

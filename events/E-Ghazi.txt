@@ -1,0 +1,1803 @@
+namespace = ghazi
+country_event = { 
+	id = ghazi.1
+	title = ghazi.1.t
+	desc = ghazi.1.d
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	immediate = { 
+		hidden_effect = { 
+			clr_country_flag = ghazi_fired
+		}
+	}
+	option = { 
+		name = ghazi.1.1
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					NOT = { 
+						is_core = PREV
+					}
+					religion_group = christian
+					NOT = { 
+						has_province_modifier = faster_integration
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							is_claim = PREV
+						}
+						NOT = { 
+							is_permanent_claim = PREV
+						}
+					}
+					add_claim = PREV
+				}
+				add_province_modifier = { 
+					name = faster_integration
+					duration = 3650
+				}
+			}
+			if = { 
+				limit = { 
+					has_country_modifier = GhaziGain
+				}
+				remove_country_modifier = GhaziGain
+			}
+		}
+		add_country_modifier = { 
+			name = GhaziGain
+			duration = 2735
+		}
+		log = "FE-Ghazi:[GetYear]:[Root.GetName]:replenished their forces"
+	}
+}
+country_event = { 
+	id = ghazi.2
+	title = ghazi.2.t
+	desc = { 
+		trigger = { 
+			culture_group = oghuz
+		}
+		desc = ghazi.2.d
+	}
+	desc = { 
+		trigger = { 
+			primary_culture = greek
+		}
+		desc = ghazi.2.db
+	}
+	desc = { 
+		trigger = { 
+			NOT = { 
+				primary_culture = greek
+			}
+			NOT = { 
+				culture_group = oghuz
+			}
+		}
+		desc = ghazi.2.dc
+	}
+	picture = CIVIL_WAR_eventPicture
+	is_triggered_only = yes
+	option = { 
+		name = ghazi.2.a
+		trigger = { 
+			culture_group = oghuz
+		}
+	}
+	option = { 
+		name = ghazi.2.b
+		trigger = { 
+			primary_culture = greek
+		}
+	}
+	option = { 
+		name = ghazi.2.c
+		trigger = { 
+			NOT = { 
+				primary_culture = greek
+			}
+			NOT = { 
+				culture_group = oghuz
+			}
+		}
+	}
+}
+country_event = { 
+	id = ghazi.3
+	title = ghazi.3.t
+	desc = ghazi.3.d
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	trigger = { 
+		AND = { 
+			exists = yes
+			OR = { 
+				primary_culture = turkish
+				primary_culture = osmanli
+				primary_culture = yorouk
+				primary_culture = turkoman
+			}
+			check_variable = { 
+				which = "Demesne_in_Anatolia"
+				value = 1
+			}
+		}
+		AAA = { 
+			has_country_flag = Anatolian_PowerActive
+		}
+	}
+	option = { 
+		name = ghazi.3.a
+		hidden_effect = { 
+			set_ruler_flag = BeylikHostile
+		}
+		custom_tooltip = BeylikHostile_t
+		if = { 
+			limit = { 
+				OR = { 
+					tag = OTT
+					tag = TUR
+				}
+			}
+			log = "FE-Ghazi:[GetYear]:[Root.GetName]:decided to focus on Anatolia:ghazi.3"
+		}
+		ai_chance = { 
+			factor = 0.5
+			modifier = { 
+				factor = 2
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = lns
+							value = 5
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 2
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = lns
+							value = 10
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 0
+				tag = OTT
+				NOT = { 
+					is_year = 1387
+				}
+				NOT = { 
+					has_country_flag = Halil_Victory
+				}
+			}
+		}
+	}
+	option = { 
+		name = ghazi.3.b
+		hidden_effect = { 
+			set_ruler_flag = BeylikFriendly
+		}
+		custom_tooltip = BeylikFriendly_t
+		if = { 
+			limit = { 
+				OR = { 
+					tag = OTT
+					tag = TUR
+				}
+			}
+			log = "FE-Ghazi:[GetYear]:[Root.GetName]:decided to focus on the efforts abroad:ghazi.3"
+		}
+		ai_chance = { 
+			factor = 0.5
+			modifier = { 
+				factor = 0.5
+				AND = { 
+					check_variable = { 
+						which = lns
+						value = 50
+					}
+				}
+			}
+			modifier = { 
+				factor = 0.5
+				AND = { 
+					check_variable = { 
+						which = lns
+						value = 60
+					}
+				}
+			}
+			modifier = { 
+				factor = 0.5
+				AND = { 
+					check_variable = { 
+						which = lns
+						value = 70
+					}
+				}
+			}
+			modifier = { 
+				factor = 0
+				AND = { 
+					check_variable = { 
+						which = lns
+						value = 80
+					}
+				}
+			}
+			modifier = { 
+				factor = 0.15
+				NOT = { 
+					is_year = 1400
+				}
+			}
+			modifier = { 
+				factor = 0
+				tag = TUR
+			}
+		}
+	}
+}
+country_event = { 
+	id = ghazi.4
+	title = no_localisation
+	desc = no_localisation
+	picture = MEIOU_AND_TAXES_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	trigger = { 
+		has_country_flag = Anatolian_PowerActive
+	}
+	immediate = { 
+		set_variable = { 
+			which = lns
+			value = 0
+		}
+		set_variable = { 
+			which = lnt
+			value = 0
+		}
+		set_variable = { 
+			which = lnw
+			value = 0
+		}
+		set_variable = { 
+			which = lnx
+			value = 0
+		}
+		set_variable = { 
+			which = loa
+			value = 0
+		}
+		clr_country_flag = Anatolian_Powers
+		every_country = { 
+			limit = { 
+				AND = { 
+					exists = yes
+					OR = { 
+						primary_culture = turkish
+						primary_culture = osmanli
+						primary_culture = yorouk
+						primary_culture = turkoman
+						AND = { 
+							NOT = { 
+								tag = MAM
+							}
+							check_variable = { 
+								which = "Demesne_in_Anatolia"
+								value = 6
+							}
+						}
+						AND = { 
+							tag = MAM
+							check_variable = { 
+								which = "Demesne_in_Anatolia"
+								value = 10
+							}
+						}
+					}
+					check_variable = { 
+						which = "Demesne_in_Anatolia"
+						value = 1
+					}
+				}
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						exists = yes
+						OR = { 
+							primary_culture = turkish
+							primary_culture = osmanli
+							primary_culture = yorouk
+							primary_culture = turkoman
+							AND = { 
+								NOT = { 
+									tag = MAM
+								}
+								check_variable = { 
+									which = "Demesne_in_Anatolia"
+									value = 6
+								}
+							}
+							AND = { 
+								tag = MAM
+								check_variable = { 
+									which = "Demesne_in_Anatolia"
+									value = 10
+								}
+							}
+						}
+						check_variable = { 
+							which = "Demesne_in_Anatolia"
+							value = 1
+						}
+					}
+				}
+				PREV = { 
+					change_variable = { 
+						which = loa
+						value = 1
+					}
+				}
+			}
+			set_variable = { 
+				which = lny
+				which = lnt
+			}
+			set_variable = { 
+				which = lnt
+				value = 5
+			}
+			set_variable = { 
+				which = lns
+				value = 5
+			}
+			every_owned_province = { 
+				set_variable = { 
+					which = lns
+					which = ani
+				}
+				PREV = { 
+					change_variable = { 
+						which = lns
+						which = PREV
+					}
+				}
+				set_variable = { 
+					which = lns
+					value = 0
+				}
+				if = { 
+					limit = { 
+						OR = { 
+							region = west_anatolia_region
+							region = north_anatolia_region
+							region = south_anatolia_region
+						}
+					}
+					set_variable = { 
+						which = lnt
+						which = ani
+					}
+					PREV = { 
+						change_variable = { 
+							which = lnt
+							which = PREV
+						}
+					}
+					set_variable = { 
+						which = lnt
+						value = 0
+					}
+				}
+			}
+			PREV = { 
+				change_variable = { 
+					which = lns
+					which = PREV
+				}
+				change_variable = { 
+					which = lnt
+					which = PREV
+				}
+			}
+			set_variable = { 
+				which = lnw
+				which = PREV
+			}
+			set_variable = { 
+				which = lnx
+				which = PREV
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = lns
+							which = lnw
+						}
+					}
+					NOT = { 
+						AND = { 
+							is_variable_equal = { 
+								which = lns
+								which = lnw
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = lnx
+					which = lnw
+				}
+				set_variable = { 
+					which = lnw
+					which = lns
+				}
+				PREV = { 
+					set_variable = { 
+						which = lnw
+						which = PREV
+					}
+				}
+				PREV = { 
+					set_variable = { 
+						which = lnx
+						which = PREV
+					}
+				}
+				set_variable = { 
+					which = lnx
+					value = 0
+				}
+			}
+			else_if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = lns
+							which = lnx
+						}
+					}
+					NOT = { 
+						AND = { 
+							is_variable_equal = { 
+								which = lns
+								which = lnx
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = lnx
+					which = lns
+				}
+				PREV = { 
+					set_variable = { 
+						which = lnx
+						which = PREV
+					}
+				}
+			}
+		}
+		set_variable = { 
+			which = lnu
+			which = lns
+		}
+		set_variable = { 
+			which = lnv
+			which = lnt
+		}
+		if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = loa
+						value = 2
+					}
+				}
+			}
+			every_country = { 
+				limit = { 
+					AND = { 
+						exists = yes
+						OR = { 
+							primary_culture = turkish
+							primary_culture = osmanli
+							primary_culture = yorouk
+							primary_culture = turkoman
+							AND = { 
+								NOT = { 
+									tag = MAM
+								}
+								check_variable = { 
+									which = "Demesne_in_Anatolia"
+									value = 6
+								}
+							}
+							AND = { 
+								tag = MAM
+								check_variable = { 
+									which = "Demesne_in_Anatolia"
+									value = 10
+								}
+							}
+						}
+						check_variable = { 
+							which = "Demesne_in_Anatolia"
+							value = 1
+						}
+					}
+				}
+				set_variable = { 
+					which = lnu
+					which = PREV
+				}
+				set_variable = { 
+					which = lnv
+					which = PREV
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = lns
+								value = 0.001
+							}
+						}
+					}
+					divide_variable = { 
+						which = lns
+						which = lnu
+					}
+					multiply_variable = { 
+						which = lns
+						value = 100
+					}
+				}
+				else = { 
+					set_variable = { 
+						which = lns
+						value = 0
+					}
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = lnt
+								value = 0.001
+							}
+						}
+					}
+					divide_variable = { 
+						which = lnt
+						which = lnv
+					}
+					multiply_variable = { 
+						which = lnt
+						value = 100
+					}
+				}
+				else = { 
+					set_variable = { 
+						which = lnt
+						value = 0
+					}
+				}
+				set_variable = { 
+					which = lnz
+					value = 0
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							has_ruler_flag = BeylikFriendly
+						}
+						has_country_flag = BeylikAE
+						is_year = 1357
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = lnt
+									which = lny
+								}
+							}
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = lnt
+										which = lny
+									}
+								}
+							}
+						}
+						if = { 
+							limit = { 
+								AND = { 
+									check_variable = { 
+										which = lny
+										value = 0.001
+									}
+								}
+							}
+							set_variable = { 
+								which = lnz
+								which = lnt
+							}
+							divide_variable = { 
+								which = lnz
+								which = lny
+							}
+							subtract_variable = { 
+								which = lnz
+								value = 1
+							}
+						}
+						else = { 
+							set_variable = { 
+								which = lnz
+								which = lnt
+							}
+						}
+						multiply_variable = { 
+							which = lnz
+							value = 30
+						}
+						if = { 
+							limit = { 
+								AND = { 
+									check_variable = { 
+										which = lnz
+										value = 0.001
+									}
+								}
+							}
+							set_variable = { 
+								which = loa
+								which = lnz
+							}
+							every_known_country = { 
+								limit = { 
+									AND = { 
+										exists = yes
+										OR = { 
+											primary_culture = turkish
+											primary_culture = osmanli
+											primary_culture = yorouk
+											primary_culture = turkoman
+											AND = { 
+												NOT = { 
+													tag = MAM
+												}
+												check_variable = { 
+													which = "Demesne_in_Anatolia"
+													value = 6
+												}
+											}
+											AND = { 
+												tag = MAM
+												check_variable = { 
+													which = "Demesne_in_Anatolia"
+													value = 10
+												}
+											}
+										}
+										check_variable = { 
+											which = "Demesne_in_Anatolia"
+											value = 1
+										}
+									}
+								}
+								set_variable = { 
+									which = loa
+									which = PREV
+								}
+								if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = loa
+												value = 64
+											}
+										}
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									subtract_variable = { 
+										which = loa
+										value = 64
+									}
+								}
+								if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = loa
+												value = 32
+											}
+										}
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									subtract_variable = { 
+										which = loa
+										value = 32
+									}
+								}
+								if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = loa
+												value = 16
+											}
+										}
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									subtract_variable = { 
+										which = loa
+										value = 16
+									}
+								}
+								if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = loa
+												value = 8
+											}
+										}
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									subtract_variable = { 
+										which = loa
+										value = 8
+									}
+								}
+								if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = loa
+												value = 4
+											}
+										}
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									subtract_variable = { 
+										which = loa
+										value = 4
+									}
+								}
+								if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = loa
+												value = 2
+											}
+										}
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									subtract_variable = { 
+										which = loa
+										value = 2
+									}
+								}
+								if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = loa
+												value = 1
+											}
+										}
+									}
+									add_opinion = { 
+										who = PREV
+										modifier = aggressive_expansion
+									}
+									subtract_variable = { 
+										which = loa
+										value = 1
+									}
+								}
+								set_variable = { 
+									which = loa
+									value = 0
+								}
+							}
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						OR = { 
+							AND = { 
+								is_variable_equal = { 
+									which = lnw
+									which = PREV
+								}
+							}
+							AND = { 
+								is_variable_equal = { 
+									which = lnx
+									which = PREV
+								}
+							}
+						}
+					}
+					set_country_flag = BeylikNotable
+				}
+				else = { 
+					clr_country_flag = BeylikNotable
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							has_country_flag = BeylikAE
+						}
+					}
+					set_country_flag = BeylikAE
+					add_country_modifier = { 
+						name = ghazi_system
+						duration = -1
+					}
+				}
+			}
+		}
+		else = { 
+			every_country = { 
+				limit = { 
+					AND = { 
+						exists = yes
+						OR = { 
+							primary_culture = turkish
+							primary_culture = osmanli
+							primary_culture = yorouk
+							primary_culture = turkoman
+							AND = { 
+								NOT = { 
+									tag = MAM
+								}
+								check_variable = { 
+									which = "Demesne_in_Anatolia"
+									value = 6
+								}
+							}
+							AND = { 
+								tag = MAM
+								check_variable = { 
+									which = "Demesne_in_Anatolia"
+									value = 10
+								}
+							}
+						}
+						check_variable = { 
+							which = "Demesne_in_Anatolia"
+							value = 1
+						}
+					}
+				}
+				remove_country_modifier = ghazi_system
+				clr_country_flag = BeylikNotable
+				clr_ruler_flag = BeylikHostile
+				clr_ruler_flag = BeylikFriendly
+				set_variable = { 
+					which = lns
+					value = 0
+				}
+				set_variable = { 
+					which = lnt
+					value = 0
+				}
+				set_variable = { 
+					which = lnu
+					value = 0
+				}
+				set_variable = { 
+					which = lnv
+					value = 0
+				}
+				set_variable = { 
+					which = lnz
+					value = 0
+				}
+				country_event = { 
+					id = ghazi.7
+				}
+			}
+			clr_country_flag = Anatolian_PowerActive
+		}
+		set_variable = { 
+			which = loa
+			value = 0
+		}
+		set_variable = { 
+			which = lns
+			value = 0
+		}
+		set_variable = { 
+			which = lnt
+			value = 0
+		}
+	}
+	option = { 
+		name = no_localisation
+	}
+}
+country_event = { 
+	id = ghazi.5
+	title = ghazi.5.t
+	desc = ghazi.5.d
+	picture = DIPLOMACY_eventPicture
+	trigger = { 
+		AAA = { 
+			has_country_flag = Anatolian_PowerActive
+		}
+		AND = { 
+			exists = yes
+			OR = { 
+				primary_culture = turkish
+				primary_culture = osmanli
+				primary_culture = yorouk
+				primary_culture = turkoman
+			}
+			check_variable = { 
+				which = "Demesne_in_Anatolia"
+				value = 1
+			}
+		}
+		NOT = { 
+			tag = ERE
+		}
+		OR = { 
+			is_subject = no
+			overlord = { 
+				AND = { 
+					exists = yes
+					OR = { 
+						primary_culture = turkish
+						primary_culture = osmanli
+						primary_culture = yorouk
+						primary_culture = turkoman
+					}
+					check_variable = { 
+						which = "Demesne_in_Anatolia"
+						value = 1
+					}
+				}
+				NOT = { 
+					has_country_flag = ongoing_civil_war
+				}
+				OR = { 
+					AND = { 
+						has_country_flag = BeylikNotable
+						AND = { 
+							check_variable = { 
+								which = lns
+								value = 50
+							}
+						}
+					}
+					tag = TUR
+				}
+			}
+		}
+		any_known_country = { 
+			AND = { 
+				exists = yes
+				OR = { 
+					primary_culture = turkish
+					primary_culture = osmanli
+					primary_culture = yorouk
+					primary_culture = turkoman
+				}
+				check_variable = { 
+					which = "Demesne_in_Anatolia"
+					value = 1
+				}
+			}
+			NOT = { 
+				has_country_flag = ongoing_civil_war
+			}
+			OR = { 
+				AND = { 
+					has_country_flag = BeylikNotable
+					AND = { 
+						check_variable = { 
+							which = lns
+							value = 50
+						}
+					}
+				}
+				tag = TUR
+			}
+		}
+		NOT = { 
+			has_country_flag = BeylikInheritanceDecisionMade
+		}
+	}
+	mean_time_to_happen = { 
+		years = 8
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				AND = { 
+					check_variable = { 
+						which = lns
+						value = 10
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				AND = { 
+					check_variable = { 
+						which = lns
+						value = 20
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				AND = { 
+					check_variable = { 
+						which = lns
+						value = 30
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { 
+				AND = { 
+					check_variable = { 
+						which = lns
+						value = 40
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.9
+			stability = -2
+		}
+		modifier = { 
+			factor = 0.9
+			stability = -3
+		}
+	}
+	immediate = { 
+		hidden_effect = { 
+			random_country = { 
+				limit = { 
+					OR = { 
+						AND = { 
+							has_country_flag = BeylikNotable
+							AND = { 
+								check_variable = { 
+									which = lns
+									value = 50
+								}
+							}
+						}
+						tag = TUR
+					}
+				}
+				save_event_target_as = LeadingBeylik
+			}
+			set_country_flag = BeylikInheritanceDecisionMade
+		}
+	}
+	option = { 
+		name = ghazi.5.a
+		trigger = { 
+			OR = { 
+				is_subject = no
+				is_subject_of = event_target:LeadingBeylik
+			}
+		}
+		ai_chance = { 
+			factor = 0.9
+			modifier = { 
+				factor = 0.5
+				NOT = { 
+					has_opinion = { 
+						value = 0
+						who = event_target:LeadingBeylik
+					}
+				}
+			}
+			modifier = { 
+				factor = 0.5
+				NOT = { 
+					has_opinion = { 
+						value = -75
+						who = event_target:LeadingBeylik
+					}
+				}
+			}
+		}
+		event_target:LeadingBeylik = { 
+			country_event = { 
+				id = ghazi.6
+			}
+		}
+	}
+	option = { 
+		name = ghazi.5.b
+		log = "FE-Ghazi:[GetYear]:[Root.GetName]:refused integration into [event_target:LeadingBeylik.GetName]:ghazi.5"
+		log = "FE-Ghazi:[GetYear]:[Root.GetName]:set historical rivalry with [event_target:LeadingBeylik.GetName]:ghazi.5"
+		add_historical_rival = event_target:LeadingBeylik
+		event_target:LeadingBeylik = { 
+			add_historical_rival = ROOT
+		}
+		ai_chance = { 
+			factor = 0.1
+		}
+	}
+}
+country_event = { 
+	id = ghazi.6
+	title = ghazi.6.t
+	desc = ghazi.6.d
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	option = { 
+		name = ghazi.6.a
+		trigger = { 
+			FROM = { 
+				ai = yes
+			}
+		}
+		if = { 
+			limit = { 
+				FROM = { 
+					exists = yes
+				}
+			}
+			inherit = FROM
+		}
+		log = "FE-Ghazi:[GetYear]:[Root.GetName]:as a leading beylik, integrated [From.GetName]:ghazi.6"
+		ai_chance = { 
+			factor = 100
+		}
+	}
+	option = { 
+		name = ghazi.6.b
+		if = { 
+			limit = { 
+				FROM = { 
+					exists = yes
+				}
+			}
+			create_subject = { 
+				subject_type = decentralized_vassal
+				who = FROM
+			}
+			log = "FE-Ghazi:[GetYear]:[Root.GetName]:as a leading beylik, vassalized [From.GetName]:ghazi.6"
+		}
+		ai_chance = { 
+			factor = 0
+		}
+	}
+}
+country_event = { 
+	id = ghazi.7
+	title = ghazi.7.t
+	desc = { 
+		trigger = { 
+			culture_group = oghuz
+		}
+		desc = ghazi.7.d
+	}
+	desc = { 
+		trigger = { 
+			primary_culture = greek
+		}
+		desc = ghazi.7.db
+	}
+	desc = { 
+		trigger = { 
+			NOT = { 
+				primary_culture = greek
+			}
+			NOT = { 
+				culture_group = oghuz
+			}
+		}
+		desc = ghazi.7.dc
+	}
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	immediate = { 
+		AAA = { 
+			clr_country_flag = Anatolian_PowerActive
+		}
+		log = "FE-Ghazi:[GetYear]:[Root.GetName]:struggle for Anatolia ended:ghazi.7"
+	}
+	option = { 
+		name = ghazi.7.a
+		trigger = { 
+			culture_group = oghuz
+		}
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					stability = 3
+				}
+				set_variable = { 
+					which = ahf
+					value = 1200
+				}
+			}
+			else = { 
+				add_stability = 1
+			}
+		}
+		tooltip = { 
+			add_stability = 1
+		}
+		if = { 
+			limit = { 
+				is_emperor_of_china = yes
+			}
+			add_mandate = 5
+		}
+		add_prestige = 25
+	}
+	option = { 
+		name = ghazi.7.b
+		trigger = { 
+			primary_culture = greek
+		}
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					stability = 3
+				}
+				set_variable = { 
+					which = ahf
+					value = 1200
+				}
+			}
+			else = { 
+				add_stability = 1
+			}
+		}
+		tooltip = { 
+			add_stability = 1
+		}
+		if = { 
+			limit = { 
+				is_emperor_of_china = yes
+			}
+			add_mandate = 5
+		}
+	}
+	option = { 
+		name = ghazi.7.c
+		trigger = { 
+			NOT = { 
+				primary_culture = greek
+			}
+			NOT = { 
+				culture_group = oghuz
+			}
+		}
+	}
+}

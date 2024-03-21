@@ -1,0 +1,43 @@
+capital = "Chamdo"
+trade_goods = wool
+culture = kham
+religion = vajrayana
+hre = no
+base_tax = 1
+base_production = 0
+base_manpower = 1
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = indian
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 40.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 6.000
+	}
+	set_province_flag = TN_Important
+	set_province_flag = TN_Tea
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+	set_province_flag = copper
+	set_province_flag = coal
+}

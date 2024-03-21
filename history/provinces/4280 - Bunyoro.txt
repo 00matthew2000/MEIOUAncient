@@ -1,0 +1,29 @@
+owner = BSG
+controller = BSG
+add_core = BSG
+capital = "Bukaleeba"
+trade_goods = livestock
+culture = masaba
+religion = bantu_pagan
+hre = no
+base_tax = 10
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = central_african
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+	set_variable = { 
+		which = baf
+		value = 133
+	}
+}

@@ -1,0 +1,42 @@
+owner = TEU
+controller = TEU
+add_core = TEU
+capital = "Königsberg"
+trade_goods = wheat
+culture = old_prussian
+religion = catholic
+hre = no
+base_tax = 10
+base_production = 1
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 2
+}
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gcn
+	value = 2
+}
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = western
+discovered_by = muslim
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_province_flag = TN_Port
+	set_province_flag = TN_Harbour_Minor
+	set_province_flag = TN_Natural_Minor
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+	set_province_flag = mined_goods
+	set_province_flag = gems
+}

@@ -1,0 +1,73 @@
+﻿l_english:
+ open_religion_cheats_title:0 "§GCheats:§! Religion"
+ open_religion_cheats_desc:0 ""
+ 
+ cheatmenu.300.title:0 "Religion"
+ cheatmenu.300.desc:0 ""
+ cheatmenu.300.a:0 "Convert State Religion..."
+ cheatmenu.300.b:0 "Increase Religious Mana"
+ cheatmenu.300.c:0 "Decrease Religious Mana"
+ cheatmenu.300.d:0 "Edit Reform Desire..."
+ cheatmenu.300.e:0 "Disable Papacy"
+ cheatmenu.300.e2:0 "Enable Papacy"
+ cheatmenu.300.f:0 "Increase MIssionary Strength"
+ cheatmenu.300.f2:0 "Increase Missionary Strength §RX§!"
+ cheatmenu.300.g:0 "More Missionaries"
+ cheatmenu.300.g2:0 "More Missionaries §RX§!"
+ 
+ cheatmenu_religion.1.title:0 "State Religion"
+ cheatmenu_religion.1.desc:0 "Which group of religion do you want to have?"
+ cheatmenu_religion.1.a:0 "Christianity..."
+ cheatmenu_religion.1.b:0 "Islam..."
+ cheatmenu_religion.1.c:0 "Eastern religions..."
+ cheatmenu_religion.1.d:0 "Pagan..."
+ cheatmenu_religion.1.e:0 "Others..."
+ 
+ cheatmenu_religion.2.title:0 "Christian Confessions"
+ cheatmenu_religion.2.desc:0 "Our new state religion is..."
+ cheatmenu_religion.2.a:0 "Catholic"
+ cheatmenu_religion.2.b:0 "Protestant"
+ cheatmenu_religion.2.c:0 "Reformed"
+ cheatmenu_religion.2.d:0 "Anglican"
+ cheatmenu_religion.2.e:0 "Orthodox"
+ cheatmenu_religion.2.f:0 "Coptic"
+ cheatmenu_religion.2.g:0 "Hussite"
+ 
+ cheatmenu_religion.3.title:0 "Muslim Religions"
+ cheatmenu_religion.3.a:0 "Sunni"
+ cheatmenu_religion.3.b:0 "Shia"
+ cheatmenu_religion.3.c:0 "Ibadi"
+ 
+ cheatmenu_religion.4.title:0 "Eastern Religions"
+ cheatmenu_religion.4.a:0 "Theravada"
+ cheatmenu_religion.4.b:0 "Vajrayana"
+ cheatmenu_religion.4.c:0 "Mahayana"
+ cheatmenu_religion.4.d:0 "Confucian"
+ cheatmenu_religion.4.e:0 "Shinto"
+ 
+ cheatmenu_religion.5.title:0 "Pagan Religions"
+ cheatmenu_religion.5.a:0 "Animist"
+ cheatmenu_religion.5.b:0 "Fetishist"
+ cheatmenu_religion.5.c:0 "Totemist"
+ cheatmenu_religion.5.d:0 "inti"
+ cheatmenu_religion.5.e:0 "Nahuatl"
+ cheatmenu_religion.5.f:0 "Mesoamerican"
+ cheatmenu_religion.5.g:0 "Reformed pagan"
+ cheatmenu_religion.5.h:0 "Reformed tengri"
+ 
+ cheatmenu_religion.6.title:0 "Other Religions"
+ cheatmenu_religion.6.a:0 "Hindu"
+ cheatmenu_religion.6.b:0 "Sikh"
+ cheatmenu_religion.6.c:0 "Zoroastrian"
+ cheatmenu_religion.6.d:0 "Jewish"
+ 
+ cheatmenu.301.title:0 "Reform Desire"
+ cheatmenu.301.desc:0 ""
+ cheatmenu.301.a:0 "+20% Reform Desire"
+ cheatmenu.301.b:0 "-20% Reform Desire"
+ 
+ 
+       
+ # Modifiers
+ mod_more_missionary_strength:0 "Cheat: Increase Missionary Strength"
+ mod_more_missionaries:0 "Cheat: Add 10 Missionaries"

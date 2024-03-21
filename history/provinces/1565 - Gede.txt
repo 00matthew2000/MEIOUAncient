@@ -1,0 +1,33 @@
+owner = VMK
+controller = VMK
+add_core = VMK
+capital = "Tanga"
+trade_goods = slaves
+culture = kiunguja
+religion = sunni
+hre = no
+base_tax = 5
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 1
+}
+discovered_by = east_african
+discovered_by = central_african
+discovered_by = muslim
+discovered_by = indian
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 60.000
+	}
+}
+450.1.1 = { 
+	set_province_flag = TN_Natural_Minor
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+}

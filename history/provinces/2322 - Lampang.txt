@@ -1,0 +1,31 @@
+owner = LNA
+controller = LNA
+add_core = LNA
+capital = "Lampang"
+trade_goods = lumber
+culture = lanna
+religion = theravada
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+is_city = yes
+fort_14th = yes
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = indian
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 3.500
+	}
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+	set_province_flag = mined_goods
+	set_province_flag = tin
+	set_province_flag = coal
+}

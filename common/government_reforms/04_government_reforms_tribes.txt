@@ -1,0 +1,379 @@
+tribe_mechanic = { 
+	tribal = yes
+	basic_reform = yes
+	valid_for_nation_designer = no
+	royal_marriage = no
+}
+Pol_Identity1 = { 
+	icon = "retain_tribal_hierarchy"
+	allow_normal_conversion = yes
+	legacy_equivalent = Tribal_Sedentary
+	potential = { 
+		always = yes
+	}
+	trigger = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pol_CapitalSedentary
+			OR = { 
+				has_reform = Pol_Identity1
+				AND = { 
+					capital_scope = { 
+						NOT = { 
+							province_group = steppes_group
+						}
+						NOT = { 
+							province_group = arabian_steppes_group
+						}
+						NOT = { 
+							province_group = saharan_steppes_group
+						}
+					}
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = atc
+								value = 65
+							}
+						}
+					}
+				}
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = atc
+							value = 50
+						}
+					}
+				}
+			}
+			capital_scope = { 
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = abb
+							value = 20
+						}
+					}
+				}
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = { 
+		manpower_recovery_speed = 0.15
+	}
+	effect = { 
+		hidden_effect = { 
+			set_variable = { 
+				which = grs
+				value = 0
+			}
+		}
+		if = { 
+			limit = { 
+				is_nomad = yes
+				has_reform = Pol_Identity3
+			}
+			add_country_modifier = { 
+				name = Centralism_NotReady
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = { 
+			limit = { 
+				has_country_modifier = Centralism_NotReady
+			}
+			remove_country_modifier = Centralism_NotReady
+		}
+	}
+}
+Pol_Identity2 = { 
+	icon = "tribal_civil_society"
+	allow_normal_conversion = yes
+	legacy_equivalent = Tribal_Migratory
+	potential = { 
+		always = yes
+	}
+	trigger = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pol_CapitalSemiSedentary
+			OR = { 
+				has_reform = Pol_Identity2
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = atc
+							value = 80
+						}
+					}
+				}
+			}
+			capital_scope = { 
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = abb
+							value = 50
+						}
+					}
+				}
+			}
+		}
+		NOT = { 
+			culture_group = altaic
+		}
+		NOT = { 
+			culture_group = tartar_group
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nomad = yes
+	modifiers = { 
+		cav_to_inf_ratio = 0.25
+		manpower_recovery_speed = 0.30
+	}
+	effect = { 
+		hidden_effect = { 
+			set_variable = { 
+				which = grs
+				value = 1
+			}
+		}
+		if = { 
+			limit = { 
+				is_nomad = yes
+				has_reform = Pol_Identity3
+			}
+			add_country_modifier = { 
+				name = Centralism_NotReady
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = { 
+			limit = { 
+				has_country_modifier = Centralism_NotReady
+			}
+			remove_country_modifier = Centralism_NotReady
+		}
+	}
+}
+Pol_Identity3 = { 
+	icon = "horde_riding"
+	allow_normal_conversion = yes
+	legacy_equivalent = Tribal_Nomadic
+	potential = { 
+		always = yes
+	}
+	trigger = { 
+		always = yes
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nomad = yes
+	modifiers = { 
+		cav_to_inf_ratio = 0.60
+		manpower_recovery_speed = 0.50
+	}
+	effect = { 
+		hidden_effect = { 
+			set_variable = { 
+				which = grs
+				value = 2
+			}
+		}
+	}
+}
+Pol_Identity4 = { 
+	icon = "map_2"
+	allow_normal_conversion = yes
+	legacy_equivalent = Tribal_Amalgamation
+	potential = { 
+		has_reform = Pol_Identity4
+	}
+	valid_for_nation_designer = no
+	modifiers = { }
+	effect = { 
+		hidden_effect = { 
+			set_variable = { 
+				which = grs
+				value = 3
+			}
+		}
+	}
+}
+Pol_Leadership1 = { 
+	icon = "peacock_throne"
+	allow_normal_conversion = yes
+	potential = { 
+		always = yes
+	}
+	trigger = { 
+		always = yes
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	monarchy = yes
+	heir = yes
+	modifiers = { }
+	effect = { 
+		hidden_effect = { 
+			set_variable = { 
+				which = grt
+				value = 0
+			}
+		}
+	}
+}
+Pol_Leadership2 = { 
+	icon = "tribal_council"
+	allow_normal_conversion = yes
+	potential = { 
+		always = yes
+	}
+	trigger = { 
+		always = yes
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	republic = yes
+	republican_name = yes
+	modifiers = { }
+	effect = { 
+		hidden_effect = { 
+			set_variable = { 
+				which = grt
+				value = 1
+			}
+		}
+		add_government_reform = Pol_Tradition2
+	}
+}
+Pol_Leadership3 = { 
+	icon = "shaman"
+	allow_normal_conversion = yes
+	potential = { 
+		always = yes
+	}
+	trigger = { 
+		always = yes
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	religion = yes
+	has_devotion = yes
+	different_religion_acceptance = -10
+	different_religion_group_acceptance = -25
+	modifiers = { }
+	effect = { 
+		hidden_effect = { 
+			set_variable = { 
+				which = grt
+				value = 2
+			}
+		}
+		add_government_reform = Pol_Tradition3
+	}
+}
+Pol_Tradition1 = { 
+	icon = "chieftain"
+	allow_normal_conversion = yes
+	potential = { 
+		always = yes
+	}
+	trigger = { 
+		always = yes
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	queen = yes
+	royal_marriage = yes
+	modifiers = { 
+		horde_unity = 0.25
+	}
+	effect = { 
+		hidden_effect = { 
+			set_variable = { 
+				which = hqx
+				value = 0
+			}
+		}
+	}
+}
+Pol_Tradition2 = { 
+	icon = "articles_of_agreement"
+	allow_normal_conversion = yes
+	potential = { 
+		always = yes
+	}
+	trigger = { 
+		always = yes
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = { 
+		horde_unity = 0.50
+		republican_tradition = 0.10
+	}
+	effect = { 
+		hidden_effect = { 
+			set_variable = { 
+				which = hqx
+				value = 1
+			}
+		}
+	}
+}
+Pol_Tradition3 = { 
+	icon = "tribal_religious_society"
+	allow_normal_conversion = yes
+	potential = { 
+		always = yes
+	}
+	trigger = { 
+		always = yes
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	different_religion_acceptance = -10
+	different_religion_group_acceptance = -25
+	modifiers = { 
+		horde_unity = 0.25
+		legitimacy = 0.10
+	}
+	effect = { 
+		hidden_effect = { 
+			set_variable = { 
+				which = hqx
+				value = 2
+			}
+		}
+	}
+}
+Pol_Tradition4 = { 
+	icon = "tribal_martial_society"
+	allow_normal_conversion = yes
+	potential = { 
+		always = yes
+	}
+	trigger = { 
+		always = yes
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	queen = yes
+	modifiers = { 
+		monarch_military_power = 1
+	}
+	effect = { 
+		hidden_effect = { 
+			set_variable = { 
+				which = hqx
+				value = 3
+			}
+		}
+	}
+}

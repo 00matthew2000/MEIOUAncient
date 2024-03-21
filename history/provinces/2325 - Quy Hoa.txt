@@ -1,0 +1,48 @@
+owner = DAI
+controller = DAI
+add_core = DAI
+capital = "Quy Hoa"
+trade_goods = tea
+culture = tay_nung
+religion = bimoism
+hre = no
+base_tax = 2
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gch
+	value = 1
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = indian
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 60.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 6.000
+	}
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = baf
+		value = 85
+	}
+	set_variable = { 
+		which = acp
+		value = 2
+	}
+	set_province_flag = tea
+	set_province_flag = spices
+}

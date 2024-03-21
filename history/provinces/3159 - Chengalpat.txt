@@ -1,0 +1,31 @@
+owner = GNG
+controller = GNG
+add_core = GNG
+capital = "Chenkalpattu"
+trade_goods = pepper
+culture = tamil
+religion = hinduism
+hre = no
+base_tax = 53
+base_production = 0
+base_manpower = 4
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = indian
+discovered_by = muslim
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 8
+	}
+	set_province_flag = sugar
+}
+1356.1.1 = { 
+	owner = MAD
+	controller = MAD
+	add_territorial_core = MAD
+	set_province_flag = add_local_autonomy_75
+}

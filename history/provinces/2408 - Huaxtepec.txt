@@ -1,0 +1,24 @@
+owner = HTP
+controller = HTP
+add_core = HTP
+capital = "Oaxtepec"
+trade_goods = maize
+culture = tlahuica
+religion = nahuatl
+hre = no
+base_tax = 17
+base_production = 1
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 7
+	}
+}

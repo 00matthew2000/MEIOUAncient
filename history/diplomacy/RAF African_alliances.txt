@@ -1,0 +1,28 @@
+dependency = { 
+	subject_type = "close_tributary_state"
+	first = KIL
+	second = QLM
+	start_date = 1356.1.1
+	end_date = 1529.1.1
+}
+dependency = { 
+	subject_type = "close_tributary_state"
+	first = KIL
+	second = SOF
+	start_date = 1356.1.1
+	end_date = 1730.1.1
+}
+dependency = { 
+	subject_type = "decentralized_vassal"
+	first = KIL
+	second = MSB
+	start_date = 1356.1.1
+	end_date = 1529.1.1
+}
+dependency = { 
+	subject_type = "decentralized_vassal"
+	first = AJU
+	second = MOG
+	start_date = 1356.1.10
+	end_date = 1415.1.1
+}

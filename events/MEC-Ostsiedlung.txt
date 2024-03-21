@@ -1,0 +1,1016 @@
+namespace = ostsiedlung
+country_event = { 
+	id = ostsiedlung.1001
+	title = "ostsiedlung.1001.name"
+	desc = "ostsiedlung.1001.desc"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+	trigger = { 
+		is_year = 1450
+		any_owned_province = { 
+			has_province_flag = CV_SC_german_ostsiedlung
+		}
+		OR = { 
+			culture_group = low_germanic
+			culture_group = high_germanic
+			culture_group = west_slavic
+		}
+		NOT = { 
+			has_global_flag = MEC_Ostsiedlung_ended
+		}
+	}
+	immediate = { 
+		hidden_effect = { 
+			every_owned_province = { 
+				set_variable = { 
+					which = azn
+					value = 0
+				}
+				trigger_switch = { 
+					on_trigger = has_province_flag
+					CV_SC_german_ostsiedlung = { 
+						clr_province_flag = CV_SC_german_ostsiedlung
+					}
+					CV_SC_frankish_settlers = { 
+						clr_province_flag = CV_SC_frankish_settlers
+					}
+				}
+			}
+			set_global_flag = MEC_Ostsiedlung_ended
+		}
+	}
+	option = { 
+		name = "ostsiedlung.1001.a"
+		trigger = { 
+			OR = { 
+				culture_group = low_germanic
+				culture_group = high_germanic
+			}
+		}
+		remove_country_modifier = ostsiedlung_promoted_western
+		remove_country_modifier = ostsiedlung_promoted_eastern
+	}
+	option = { 
+		name = "ostsiedlung.1001.b"
+		trigger = { 
+			culture_group = west_slavic
+		}
+		remove_country_modifier = ostsiedlung_promoted_western
+		remove_country_modifier = ostsiedlung_promoted_eastern
+	}
+}
+country_event = { 
+	id = ostsiedlung.1002
+	title = "ostsiedlung.1002.name"
+	desc = "ostsiedlung.1002.desc"
+	picture = HRE_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	option = { 
+		name = "ostsiedlung.1002.opta"
+		40 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Memelland"
+				rename_capital = "Memel"
+				set_province_flag = german_name
+			}
+		}
+		41 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Ostpreussen"
+				rename_capital = "Königsberg"
+				set_province_flag = german_name
+			}
+		}
+		2845 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Lauenburg-Bütow"
+				rename_capital = "Lauenburg"
+				set_province_flag = german_name
+			}
+		}
+		42 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Masuren"
+				rename_capital = "Osterode"
+				set_province_flag = german_name
+			}
+		}
+		4024 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Galindien"
+				rename_capital = "Ortelsburg"
+				set_province_flag = german_name
+			}
+		}
+		43 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Pommerellen"
+				rename_capital = "Dirschau"
+				set_province_flag = german_name
+			}
+		}
+		1844 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Elbing"
+				rename_capital = "Marienburg"
+				set_province_flag = german_name
+			}
+		}
+		2355 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Danzig"
+				rename_capital = "Danzig"
+				set_province_flag = german_name
+			}
+		}
+		1391 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Ermland"
+				rename_capital = "Allenstein"
+				set_province_flag = german_name
+			}
+		}
+		2398 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Kulm"
+				rename_capital = "Kulm"
+				set_province_flag = german_name
+			}
+		}
+		4025 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Tuchel"
+				rename_capital = "Tuchel"
+				set_province_flag = german_name
+			}
+		}
+		4003 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Glogau"
+				rename_capital = "Glogau"
+				set_province_flag = german_name
+			}
+		}
+		4002 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Jauer"
+				rename_capital = "Jauer"
+				set_province_flag = german_name
+			}
+		}
+		2561 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Liegnitz"
+				rename_capital = "Liegnitz"
+				set_province_flag = german_name
+			}
+		}
+		4001 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Oels"
+				rename_capital = "Oels"
+				set_province_flag = german_name
+			}
+		}
+		1359 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Breslau"
+				rename_capital = "Breslau"
+				set_province_flag = german_name
+			}
+		}
+		2633 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Schweidnitz"
+				rename_capital = "Schweidnitz"
+				set_province_flag = german_name
+			}
+		}
+		2619 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Vogtland"
+				rename_capital = "Plauen"
+				set_province_flag = german_name
+			}
+		}
+		1278 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Oppeln"
+				rename_capital = "Oppeln"
+				set_province_flag = german_name
+			}
+		}
+		4000 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Troppau"
+				rename_capital = "Troppau"
+				set_province_flag = german_name
+			}
+		}
+		3999 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Ratibor"
+				rename_capital = "Ratibor"
+				set_province_flag = german_name
+			}
+		}
+		269 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Teschen"
+				rename_capital = "Teschen"
+				set_province_flag = german_name
+			}
+		}
+		60 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Oberlausitz"
+				rename_capital = "Görlitz"
+				set_province_flag = german_name
+			}
+		}
+		3742 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Cottbus"
+				rename_capital = "Cottbus"
+				set_province_flag = german_name
+			}
+		}
+		2620 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Niederlausitz"
+				rename_capital = "Alten Dober"
+				set_province_flag = german_name
+			}
+		}
+		2620 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Leitmeritz"
+				rename_capital = "Leitmeritz"
+				set_province_flag = german_name
+			}
+		}
+		3748 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Egerland"
+				rename_capital = "Karlsbad"
+				set_province_flag = german_name
+			}
+		}
+		1277 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Pilsen"
+				rename_capital = "Pilsen"
+				set_province_flag = german_name
+			}
+		}
+		84 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Olmütz"
+				rename_capital = "Olmütz"
+				set_province_flag = german_name
+			}
+		}
+		39 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Kurland"
+				rename_capital = "Goldingen"
+				set_province_flag = german_name
+			}
+		}
+		1264 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Semgallen"
+				rename_capital = "Mittau"
+				set_province_flag = german_name
+			}
+		}
+		1342 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Pilten"
+				rename_capital = "Pilten"
+				set_province_flag = german_name
+			}
+		}
+		36 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Rewal"
+				rename_capital = "Rewal"
+				set_province_flag = german_name
+			}
+		}
+		1263 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Dorpat"
+				rename_capital = "Dorpat"
+				set_province_flag = german_name
+			}
+		}
+		1265 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Samogitien"
+				rename_capital = "Mednick"
+				set_province_flag = german_name
+			}
+		}
+		1280 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Suwalken"
+				rename_capital = "Seinai"
+				set_province_flag = german_name
+			}
+		}
+		3397 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Aukschtaitien"
+				rename_capital = "Kaunas"
+				set_province_flag = german_name
+			}
+		}
+		272 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Wilna"
+				rename_capital = "Wilna"
+				set_province_flag = german_name
+			}
+		}
+		3764 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Garten"
+				rename_capital = "Garten"
+				set_province_flag = german_name
+			}
+		}
+		296 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Traken"
+				rename_capital = "Traken"
+				set_province_flag = german_name
+			}
+		}
+		3398 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Litauen"
+				rename_capital = "Braslau"
+				set_province_flag = german_name
+			}
+		}
+		254 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Naklas"
+				rename_capital = "Naklas"
+				set_province_flag = german_name
+			}
+		}
+		2401 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Posen"
+				rename_capital = "Posen"
+				set_province_flag = german_name
+			}
+		}
+		2814 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Jungbreslau"
+				rename_capital = "Jungbreslau"
+				set_province_flag = german_name
+			}
+		}
+		2834 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Deutsch Krone"
+				rename_capital = "Deutsch Krone"
+				set_province_flag = german_name
+			}
+		}
+		3756 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Gnesen"
+				rename_capital = "Gnesen"
+				set_province_flag = german_name
+			}
+		}
+		2815 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Dobrin"
+				rename_capital = "Dobrin"
+				set_province_flag = german_name
+			}
+		}
+		257 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Plock"
+				rename_capital = "Plock"
+				set_province_flag = german_name
+			}
+		}
+		4026 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Zichenau"
+				rename_capital = "Zichenau"
+				set_province_flag = german_name
+			}
+		}
+		2506 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Wizna"
+				rename_capital = "Wizna"
+				set_province_flag = german_name
+			}
+		}
+		3763 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Bielsk"
+				rename_capital = "Bielsk"
+				set_province_flag = german_name
+			}
+		}
+		128 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Kärnten"
+				rename_capital = "Klagenfurt"
+				set_province_flag = german_name
+			}
+		}
+		2384 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Untersteiermark"
+				rename_capital = "Marburg"
+				set_province_flag = german_name
+			}
+		}
+		267 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Budweis"
+				rename_capital = "Budweis"
+				set_province_flag = german_name
+			}
+		}
+		3751 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Iglau"
+				rename_capital = "Iglau"
+				set_province_flag = german_name
+			}
+		}
+		38 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Riga"
+				rename_capital = "Riga"
+				set_province_flag = german_name
+			}
+		}
+		2835 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Lebus"
+				rename_capital = "Landsbergan der Warthe"
+				set_province_flag = german_name
+			}
+		}
+		264 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Neumark"
+				rename_capital = "Dramburg"
+				set_province_flag = german_name
+			}
+		}
+		2831 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_flag = german_name
+					}
+					OR = { 
+						culture_group = high_germanic
+						culture_group = low_germanic
+					}
+				}
+				change_province_name = "Glatz"
+				rename_capital = "Glatz"
+				set_province_flag = german_name
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+owner = KTS
+controller = KTS
+add_core = KTS
+capital = "Maradi"
+trade_goods = livestock
+culture = tuareg
+religion = sunni
+hre = no
+base_tax = 8
+base_production = 0
+base_manpower = 1
+is_city = yes
+discovered_by = muslim
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+	set_province_flag = dates
+}

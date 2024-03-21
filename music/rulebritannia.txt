@@ -1,0 +1,99 @@
+song = { 
+	name = "Alba"
+	chance = { 
+		factor = 1
+		modifier = { 
+			factor = 0
+			NOT = { 
+				capital_scope = { 
+					continent = europe
+				}
+			}
+			NOT = { 
+				culture_group = british
+			}
+			NOT = { 
+				culture_group = gaelic
+			}
+		}
+		modifier = { 
+			factor = 2
+			OR = { 
+				culture_group = british
+				culture_group = gaelic
+			}
+		}
+		modifier = { 
+			factor = 0
+			NOT = { 
+				has_dlc = "Rule Britannia Music Pack"
+			}
+		}
+	}
+}
+song = { 
+	name = "A_Battle_in_the_Highlands"
+	chance = { 
+		factor = 1
+		modifier = { 
+			factor = 0
+			NOT = { 
+				capital_scope = { 
+					continent = europe
+				}
+			}
+			NOT = { 
+				culture_group = british
+			}
+			NOT = { 
+				culture_group = gaelic
+			}
+		}
+		modifier = { 
+			factor = 2
+			OR = { 
+				culture_group = british
+				culture_group = gaelic
+			}
+		}
+		modifier = { 
+			factor = 0
+			NOT = { 
+				has_dlc = "Rule Britannia Music Pack"
+			}
+		}
+	}
+}
+song = { 
+	name = "Piper_Lead_Your_Clansmen"
+	chance = { 
+		factor = 1
+		modifier = { 
+			factor = 0
+			NOT = { 
+				capital_scope = { 
+					continent = europe
+				}
+			}
+			NOT = { 
+				culture_group = british
+			}
+			NOT = { 
+				culture_group = gaelic
+			}
+		}
+		modifier = { 
+			factor = 2
+			OR = { 
+				culture_group = british
+				culture_group = gaelic
+			}
+		}
+		modifier = { 
+			factor = 0
+			NOT = { 
+				has_dlc = "Rule Britannia Music Pack"
+			}
+		}
+	}
+}

@@ -1,0 +1,59 @@
+owner = KOR
+controller = KOR
+add_core = KOR
+capital = "Yeoju"
+trade_goods = rice
+culture = korean
+religion = mahayana
+hre = no
+base_tax = 22
+base_production = 0
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 2
+}
+set_variable = { 
+	which = gci
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 3
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 117
+	}
+	set_variable = { 
+		which = ami
+		value = 5.000
+	}
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+}
+500.1.1 = { 
+	set_province_flag = TN_Minor
+	add_permanent_province_modifier = { 
+		name = urban_goods_chinaware
+		duration = -1
+	}
+}

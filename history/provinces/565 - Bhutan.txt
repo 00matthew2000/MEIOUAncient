@@ -1,0 +1,30 @@
+owner = BHU
+controller = BHU
+capital = "Thimphu"
+trade_goods = wool
+culture = bhutanese
+religion = vajrayana
+base_tax = 17
+base_production = 0
+base_manpower = 1
+is_city = yes
+discovered_by = indian
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 60.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+}
+1356.1.1 = { 
+	add_core = BHU
+}

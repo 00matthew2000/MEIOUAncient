@@ -1,0 +1,17 @@
+capital = "Gunua-Kena"
+trade_goods = unknown
+culture = chon
+religion = ngenechen
+hre = no
+base_tax = 1
+base_production = 0
+base_manpower = 0
+native_size = 5
+native_ferocity = 2
+native_hostileness = 9
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 0.5
+	}
+}

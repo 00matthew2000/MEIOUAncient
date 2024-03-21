@@ -1,0 +1,34 @@
+owner = HAF
+controller = HAF
+add_core = HAF
+capital = "Nabeul"
+trade_goods = olive
+culture = tunisian
+religion = sunni
+hre = no
+base_tax = 13
+base_production = 0
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = western
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = soudantech
+discovered_by = MAL
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+	set_province_flag = wine
+}

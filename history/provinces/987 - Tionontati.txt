@@ -1,0 +1,21 @@
+capital = "Tionontati"
+trade_goods = unknown
+culture = neutral
+religion = midewiwin
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+native_size = 20
+native_ferocity = 1
+native_hostileness = 6
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 61
+	}
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+}

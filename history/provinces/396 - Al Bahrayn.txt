@@ -1,0 +1,39 @@
+owner = ORM
+controller = ORM
+add_core = ORM
+capital = "Manama"
+trade_goods = fish
+culture = bahrani
+religion = shiite
+hre = no
+base_tax = 2
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 1
+}
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 4.000
+	}
+	set_province_flag = TN_Minor
+	set_province_flag = TN_Port
+	set_province_flag = TN_Harbour_Minor
+	set_province_flag = TN_Natural_Important
+	set_variable = { 
+		which = acp
+		value = 5.5
+	}
+	add_permanent_province_modifier = { 
+		name = "pearls_medium"
+		duration = -1
+	}
+	set_province_flag = dates
+	set_province_flag = TN_Island
+}

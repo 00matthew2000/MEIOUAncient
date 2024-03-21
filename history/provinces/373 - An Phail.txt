@@ -1,0 +1,249 @@
+owner = ENG
+controller = ENG
+add_core = ENG
+capital = "Dublin"
+trade_goods = fish
+culture = irish
+religion = catholic
+hre = no
+base_tax = 5
+base_production = 1
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gci
+	value = 2
+}
+set_province_flag = small_university
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = western
+discovered_by = muslim
+discovered_by = eastern
+discovered_by = byzantine
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 20.000
+	}
+}
+450.1.1 = { 
+	set_province_flag = catholic_archbishopric
+	add_province_modifier = { 
+		name = catholic_archbishopric
+		duration = -1
+	}
+	set_province_flag = TN_Important
+	set_province_flag = TN_Port
+	set_province_flag = TN_Harbour_Minor
+	set_province_flag = TN_Natural_Important
+}
+500.1.1 = { 
+	add_permanent_province_modifier = { 
+		name = urban_goods_linen
+		duration = -1
+	}
+}
+700.1.1 = { }
+100.1.1 = { 
+	set_variable = { 
+		which = amj
+		value = 55.743
+	}
+	set_variable = { 
+		which = amk
+		value = 14.000
+	}
+	set_variable = { 
+		which = amh
+		value = 53.243
+	}
+	set_variable = { 
+		which = ami
+		value = 16.500
+	}
+	set_variable = { 
+		which = amf
+		value = 33.307
+	}
+	set_variable = { 
+		which = amg
+		value = 19.000
+	}
+	set_variable = { 
+		which = amd
+		value = 46.525
+	}
+	set_variable = { 
+		which = ame
+		value = 14.500
+	}
+	set_variable = { 
+		which = amb
+		value = 59.743
+	}
+	set_variable = { 
+		which = amc
+		value = 10.000
+	}
+	set_variable = { 
+		which = alz
+		value = 79.178
+	}
+	set_variable = { 
+		which = ama
+		value = 8.000
+	}
+	set_variable = { 
+		which = alx
+		value = 102.973
+	}
+	set_variable = { 
+		which = aly
+		value = 6.000
+	}
+	set_variable = { 
+		which = alv
+		value = 132.562
+	}
+	set_variable = { 
+		which = alw
+		value = 20.000
+	}
+	set_variable = { 
+		which = alt
+		value = 157.811
+	}
+	set_variable = { 
+		which = alu
+		value = 68.000
+	}
+	set_variable = { 
+		which = alr
+		value = 143.131
+	}
+	set_variable = { 
+		which = als
+		value = 142.000
+	}
+	set_variable = { 
+		which = alp
+		value = 284.561
+	}
+	set_variable = { 
+		which = alq
+		value = 233.000
+	}
+	set_variable = { 
+		which = aho
+		value = 362.447
+	}
+	set_variable = { 
+		which = ahp
+		value = 291.000
+	}
+}
+100.1.1 = { 
+	set_variable = { 
+		which = amj
+		value = 55.743
+	}
+	set_variable = { 
+		which = amk
+		value = 14.000
+	}
+	set_variable = { 
+		which = amh
+		value = 53.243
+	}
+	set_variable = { 
+		which = ami
+		value = 16.500
+	}
+	set_variable = { 
+		which = amf
+		value = 33.307
+	}
+	set_variable = { 
+		which = amg
+		value = 19.000
+	}
+	set_variable = { 
+		which = amd
+		value = 46.525
+	}
+	set_variable = { 
+		which = ame
+		value = 14.500
+	}
+	set_variable = { 
+		which = amb
+		value = 59.743
+	}
+	set_variable = { 
+		which = amc
+		value = 10.000
+	}
+	set_variable = { 
+		which = alz
+		value = 79.178
+	}
+	set_variable = { 
+		which = ama
+		value = 8.000
+	}
+	set_variable = { 
+		which = alx
+		value = 102.973
+	}
+	set_variable = { 
+		which = aly
+		value = 6.000
+	}
+	set_variable = { 
+		which = alv
+		value = 132.562
+	}
+	set_variable = { 
+		which = alw
+		value = 20.000
+	}
+	set_variable = { 
+		which = alt
+		value = 157.811
+	}
+	set_variable = { 
+		which = alu
+		value = 68.000
+	}
+	set_variable = { 
+		which = alr
+		value = 143.131
+	}
+	set_variable = { 
+		which = als
+		value = 142.000
+	}
+	set_variable = { 
+		which = alp
+		value = 284.561
+	}
+	set_variable = { 
+		which = alq
+		value = 233.000
+	}
+	set_variable = { 
+		which = aho
+		value = 362.447
+	}
+	set_variable = { 
+		which = ahp
+		value = 291.000
+	}
+}

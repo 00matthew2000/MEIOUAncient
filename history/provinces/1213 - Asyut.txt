@@ -1,0 +1,50 @@
+owner = MAM
+controller = MAM
+add_core = MAM
+capital = "Asyut"
+trade_goods = cotton
+culture = saidi
+religion = sunni
+hre = no
+base_tax = 14
+base_production = 3
+base_manpower = 2
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 3
+}
+set_variable = { 
+	which = gcn
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 4
+}
+set_variable = { 
+	which = gci
+	value = 1
+}
+discovered_by = east_african
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = byzantine
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_variable = { 
+		which = baf
+		value = 21
+	}
+	set_variable = { 
+		which = acp
+		value = 6.5
+	}
+	set_province_flag = sugar
+	add_permanent_province_modifier = { 
+		name = urban_goods_linen
+		duration = -1
+	}
+}

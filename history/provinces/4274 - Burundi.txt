@@ -1,0 +1,29 @@
+owner = BUU
+controller = BUU
+add_core = BUU
+capital = "Nkoma"
+trade_goods = fish
+culture = rwandan
+religion = bantu_pagan
+hre = no
+base_tax = 19
+base_production = 0
+base_manpower = 1
+is_city = yes
+discovered_by = central_african
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+	set_variable = { 
+		which = baf
+		value = 134
+	}
+}

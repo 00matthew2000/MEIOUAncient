@@ -1,0 +1,35 @@
+owner = SRG
+controller = SRG
+capital = "Saraguja"
+trade_goods = cotton
+culture = chhattisgarhi
+religion = adi_dharam
+hre = no
+base_tax = 28
+base_production = 0
+base_manpower = 2
+is_city = yes
+discovered_by = indian
+discovered_by = muslim
+discovered_by = steppestech
+discovered_by = YUA
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 90.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 2.500
+	}
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+	set_province_flag = coal
+}
+1356.1.1 = { 
+	add_core = SRG
+}

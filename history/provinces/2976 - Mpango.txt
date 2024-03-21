@@ -1,0 +1,41 @@
+owner = KON
+controller = KON
+add_core = KON
+capital = "Mbanza Kongo"
+trade_goods = millet
+culture = kongolese
+religion = bantu_pagan
+hre = no
+base_tax = 28
+base_production = 3
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 2
+}
+discovered_by = central_african
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 90.000
+	}
+}
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_province_flag = TN_Natural_Minor
+	set_variable = { 
+		which = baf
+		value = 25
+	}
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+}
+1350.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 32.125
+	}
+}

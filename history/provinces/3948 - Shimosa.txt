@@ -1,0 +1,54 @@
+owner = CHB
+controller = CHB
+add_core = CHB
+capital = "Tiba"
+trade_goods = rice
+culture = kanto
+religion = mahayana
+hre = no
+base_tax = 21
+base_production = 0
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 3
+}
+set_variable = { 
+	which = gci
+	value = 1
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 107
+	}
+	set_province_flag = TN_RiverSea
+	set_province_flag = TN_Harbour_Minor
+	set_province_flag = TN_Natural_Minor
+	set_variable = { 
+		which = ami
+		value = 2.500
+	}
+	set_variable = { 
+		which = acp
+		value = 6
+	}
+	set_province_flag = tea
+	add_permanent_province_modifier = { 
+		name = urban_goods_metalwork
+		duration = -1
+	}
+	set_province_flag = TN_Estuary
+}
+1356.1.1 = { 
+	add_core = YUK
+}

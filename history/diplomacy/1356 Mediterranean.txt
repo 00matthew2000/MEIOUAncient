@@ -1,0 +1,41 @@
+alliance = { 
+	first = SRN
+	second = AYD
+	start_date = 1346.1.1
+	end_date = 1362.1.1
+}
+dependency = { 
+	subject_type = "decentralized_vassal"
+	first = MAM
+	second = DUL
+	start_date = 1353.1.1
+	end_date = 1378.1.1
+}
+dependency = { 
+	subject_type = "decentralized_vassal"
+	first = MAM
+	second = SYR
+	start_date = 1353.1.1
+	end_date = 1516.1.1
+}
+dependency = { 
+	subject_type = "decentralized_vassal"
+	first = SYR
+	second = BHA
+	start_date = 1353.1.1
+	end_date = 1516.1.1
+}
+dependency = { 
+	subject_type = "muscovite_tributary_state"
+	first = MAM
+	second = FAD
+	start_date = 1299.1.1
+	end_date = 1516.1.1
+}
+dependency = { 
+	subject_type = "decentralized_vassal"
+	first = MAM
+	second = HEJ
+	start_date = 1353.1.1
+	end_date = 1516.1.1
+}

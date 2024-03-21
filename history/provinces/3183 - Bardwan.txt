@@ -1,0 +1,41 @@
+owner = BNG
+controller = BNG
+add_core = BNG
+capital = "Bardhamana"
+trade_goods = livestock
+culture = bengali
+religion = hinduism
+hre = no
+base_tax = 40
+base_production = 0
+base_manpower = 3
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = indian
+discovered_by = muslim
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 7
+	}
+}
+1338.1.1 = { 
+	add_core = DLH
+}

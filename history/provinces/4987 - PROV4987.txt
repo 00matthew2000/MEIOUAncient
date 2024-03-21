@@ -1,0 +1,40 @@
+owner = NRI
+controller = NRI
+add_core = NRI
+capital = "Ikigwe"
+trade_goods = palm
+culture = igbo
+religion = odinala
+hre = no
+base_tax = 16
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 50.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 27
+	}
+	set_variable = { 
+		which = acp
+		value = 6
+	}
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = ami
+		value = 3.500
+	}
+	set_province_flag = kola
+}

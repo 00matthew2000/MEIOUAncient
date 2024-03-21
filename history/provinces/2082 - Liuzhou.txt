@@ -1,0 +1,57 @@
+owner = YUA
+controller = YUA
+capital = "Maping"
+trade_goods = cinnamon
+culture = zhuang
+religion = bimoism
+hre = no
+base_tax = 21
+base_production = 0
+base_manpower = 2
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 50.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+	set_province_flag = sugar
+}
+985.1.1 = { 
+	owner = SNG
+	controller = SNG
+	add_core = SNG
+}
+1276.1.1 = { 
+	owner = LNG
+	controller = LNG
+	add_core = LNG
+	add_core = YUA
+}
+1320.1.1 = { 
+	remove_core = SNG
+}
+1351.1.1 = { 
+	owner = ZHN
+	controller = ZHN
+	add_core = ZHN
+}

@@ -1,0 +1,33 @@
+owner = BAH
+controller = BAH
+add_core = BAH
+capital = "Satara"
+trade_goods = cotton
+culture = marathi
+religion = hinduism
+hre = no
+base_tax = 18
+base_production = 0
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = indian
+discovered_by = muslim
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 6
+	}
+	set_province_flag = sugar
+	set_province_flag = salt
+}
+1356.1.1 = { 
+	add_core = BIJ
+}

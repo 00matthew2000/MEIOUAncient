@@ -1,0 +1,45 @@
+owner = PIN
+controller = PIN
+capital = "Pagan"
+trade_goods = rice
+culture = burmese
+religion = theravada
+hre = no
+base_tax = 17
+base_production = 2
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 2
+}
+fort_14th = yes
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = indian
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 10.000
+	}
+	set_province_flag = coal
+}
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 78
+	}
+	set_province_flag = TN_RiverJoint
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+}
+1313.2.7 = { 
+	owner = PIN
+	controller = PIN
+	add_core = PIN
+}

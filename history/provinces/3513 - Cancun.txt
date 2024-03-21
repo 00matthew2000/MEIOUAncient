@@ -1,0 +1,33 @@
+owner = CIZ
+controller = CIZ
+add_core = CIZ
+capital = "Ti'tsimín"
+trade_goods = cotton
+culture = yucatecan
+religion = mayan
+hre = no
+base_tax = 14
+base_production = 0
+base_manpower = 0
+set_variable = { 
+	which = gch
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+is_city = yes
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_province_flag = saltmarsh
+	set_variable = { 
+		which = amh
+		value = 20.000
+	}
+	set_variable = { 
+		which = ami
+		value = 3.000
+	}
+}

@@ -1,0 +1,777 @@
+monarch_power = ADM
+ahead_of_time = { 
+	global_trade_goods_size_modifier = 0.01
+	production_efficiency = 0.01
+	yearly_corruption = -0.05
+}
+technology = { 
+	year = 1200
+	levy_draft_no = yes
+	levy_draft_low = yes
+	levy_draft_med = yes
+	levy_draft_high = yes
+	levy_volunt_no = yes
+	levy_volunt_low = yes
+	levy_volunt_med = yes
+	levy_volunt_high = yes
+	levy_feudal_no = yes
+	levy_feudal_low = yes
+	levy_feudal_med = yes
+	levy_feudal_high = yes
+	levy_noble_no = yes
+	levy_noble_low = yes
+	levy_noble_med = yes
+	levy_noble_high = yes
+	levy_urban_no = yes
+	levy_urban_low = yes
+	levy_urban_med = yes
+	levy_urban_high = yes
+	levy_horde_no = yes
+	levy_horde_low = yes
+	levy_horde_med = yes
+	levy_horde_high = yes
+	obli_feudal_no = yes
+	obli_feudal_low = yes
+	obli_feudal_med = yes
+	obli_feudal_high = yes
+	obli_noble_no = yes
+	obli_noble_low = yes
+	obli_noble_med = yes
+	obli_noble_high = yes
+	obli_charter_no = yes
+	obli_charter_low = yes
+	obli_charter_med = yes
+	obli_charter_high = yes
+	obli_tribute_no = yes
+	obli_tribute_low = yes
+	obli_tribute_med = yes
+	obli_tribute_high = yes
+	tax_land_no = yes
+	tax_land_low = yes
+	tax_land_med = yes
+	tax_land_high = yes
+	tax_prop_no = yes
+	tax_prop_low = yes
+	tax_prop_med = yes
+	tax_prop_high = yes
+	tax_poll_no = yes
+	tax_poll_low = yes
+	tax_poll_med = yes
+	tax_poll_high = yes
+	tax_toll_no = yes
+	tax_toll_low = yes
+	tax_toll_med = yes
+	tax_toll_high = yes
+	tax_chattels_no = yes
+	tax_chattels_low = yes
+	tax_chattels_med = yes
+	tax_chattels_high = yes
+	tax_inherit_no = yes
+	tax_inherit_low = yes
+	tax_inherit_med = yes
+	tax_inherit_high = yes
+	tax_salt_no = yes
+	tax_salt_low = yes
+	tax_salt_med = yes
+	tax_salt_high = yes
+	tax_alcohol_no = yes
+	tax_alcohol_low = yes
+	tax_alcohol_med = yes
+	tax_alcohol_high = yes
+	tax_timber_no = yes
+	tax_timber_low = yes
+	tax_timber_med = yes
+	tax_timber_high = yes
+	tax_subst_no = yes
+	tax_subst_low = yes
+	tax_subst_med = yes
+	tax_subst_high = yes
+	give_Agriculture_10 = yes
+	give_Agriculture_100 = yes
+	give_Agriculture_50 = yes
+	give_Forestry_10 = yes
+	give_Forestry_100 = yes
+	give_Forestry_50 = yes
+	give_Extraction_10 = yes
+	give_Extraction_100 = yes
+	give_Extraction_50 = yes
+	give_Fishery_10 = yes
+	give_Fishery_100 = yes
+	give_Fishery_50 = yes
+	give_Commercial_10 = yes
+	give_Commercial_100 = yes
+	give_Commercial_50 = yes
+	give_Academic_10 = yes
+	give_Academic_100 = yes
+	give_Academic_50 = yes
+	give_Industrial_10 = yes
+	give_Industrial_100 = yes
+	give_Industrial_50 = yes
+	maint_Agriculture_no = yes
+	maint_Agriculture_low = yes
+	maint_Agriculture_med = yes
+	maint_Agriculture_high = yes
+	maint_Forestry_no = yes
+	maint_Forestry_low = yes
+	maint_Forestry_med = yes
+	maint_Forestry_high = yes
+	maint_Extraction_no = yes
+	maint_Extraction_low = yes
+	maint_Extraction_med = yes
+	maint_Extraction_high = yes
+	maint_Fishery_no = yes
+	maint_Fishery_low = yes
+	maint_Fishery_med = yes
+	maint_Fishery_high = yes
+	maint_Commercial_no = yes
+	maint_Commercial_low = yes
+	maint_Commercial_med = yes
+	maint_Commercial_high = yes
+	maint_Industrial_no = yes
+	maint_Industrial_low = yes
+	maint_Industrial_med = yes
+	maint_Industrial_high = yes
+	maint_Academic_no = yes
+	maint_Academic_low = yes
+	maint_Academic_med = yes
+	maint_Academic_high = yes
+	select_building = yes
+	fastbuilder_1 = yes
+	fastbuilder_2 = yes
+	fastbuilder_3 = yes
+	fastbuilder_4 = yes
+	fastbuilder_5 = yes
+	fastbuilder_6 = yes
+	fastbuilder_7 = yes
+}
+technology = { 
+	year = 1210
+}
+technology = { 
+	year = 1220
+}
+technology = { 
+	year = 1230
+}
+technology = { 
+	year = 1240
+	allowed_idea_groups = 1
+}
+technology = { 
+	year = 1250
+}
+technology = { 
+	year = 1260
+	allowed_idea_groups = 2
+}
+technology = { 
+	year = 1270
+}
+technology = { 
+	year = 1280
+}
+technology = { 
+	year = 1290
+	production_efficiency = 0.005
+}
+technology = { 
+	year = 1300
+}
+technology = { 
+	year = 1310
+}
+technology = { 
+	year = 1320
+	production_efficiency = 0.005
+}
+technology = { 
+	year = 1330
+}
+technology = { 
+	year = 1340
+}
+technology = { 
+	year = 1350
+}
+technology = { 
+	year = 1360
+	expects_institution = { 
+		Banking = 0.05
+	}
+	administrative_efficiency = 0.05
+}
+technology = { 
+	year = 1370
+	expects_institution = { 
+		Banking = 0.10
+	}
+}
+technology = { 
+	year = 1380
+	expects_institution = { 
+		Banking = 0.15
+	}
+	allowed_idea_groups = 3
+}
+technology = { 
+	year = 1390
+	expects_institution = { 
+		Banking = 0.20
+	}
+	administrative_efficiency = 0.025
+}
+technology = { 
+	year = 1400
+	expects_institution = { 
+		Banking = 0.25
+	}
+	production_efficiency = 0.01
+	development_cost_modifier = 0.025
+}
+technology = { 
+	year = 1410
+	expects_institution = { 
+		Banking = 0.275
+	}
+	administrative_efficiency = 0.05
+}
+technology = { 
+	year = 1420
+	expects_institution = { 
+		Banking = 0.3
+	}
+	allowed_idea_groups = 4
+}
+technology = { 
+	year = 1430
+	expects_institution = { 
+		Banking = 0.3
+	}
+}
+technology = { 
+	year = 1440
+	expects_institution = { 
+		Banking = 0.3
+	}
+	production_efficiency = 0.02
+}
+technology = { 
+	year = 1450
+	expects_institution = { 
+		Banking = 0.3
+	}
+	development_cost_modifier = 0.025
+}
+technology = { 
+	year = 1460
+	expects_institution = { 
+		Banking = 0.3
+	}
+	allowed_idea_groups = 5
+}
+technology = { 
+	year = 1470
+	expects_institution = { 
+		Banking = 0.3
+	}
+	may_support_rebels = yes
+}
+technology = { 
+	year = 1480
+	expects_institution = { 
+		Banking = 0.3
+	}
+}
+technology = { 
+	year = 1490
+	expects_institution = { 
+		Banking = 0.3
+	}
+	may_force_march = yes
+}
+technology = { 
+	year = 1500
+	expects_institution = { 
+		Banking = 0.3
+	}
+	allowed_idea_groups = 6
+	development_cost_modifier = 0.025
+}
+technology = { 
+	year = 1510
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.025
+	}
+}
+technology = { 
+	year = 1520
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.05
+	}
+	administrative_efficiency = 0.025
+}
+technology = { 
+	year = 1530
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.075
+	}
+}
+technology = { 
+	year = 1540
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.10
+	}
+	allowed_idea_groups = 7
+}
+technology = { 
+	year = 1550
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.125
+		Columbian_Exchange = 0.05
+	}
+	development_cost_modifier = 0.025
+}
+technology = { 
+	year = 1560
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.15
+		Columbian_Exchange = 0.1
+	}
+}
+technology = { 
+	year = 1570
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.3
+		Columbian_Exchange = 0.125
+	}
+}
+technology = { 
+	year = 1580
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.175
+		Columbian_Exchange = 0.15
+	}
+	allowed_idea_groups = 8
+}
+technology = { 
+	year = 1590
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.20
+		Columbian_Exchange = 0.175
+	}
+	production_efficiency = 0.01
+}
+technology = { 
+	year = 1600
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.225
+		Columbian_Exchange = 0.2
+		Scientific_Method = 0.05
+	}
+	administrative_efficiency = 0.05
+	development_cost_modifier = 0.025
+}
+technology = { 
+	year = 1610
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.25
+		Columbian_Exchange = 0.275
+		Scientific_Method = 0.1
+		Global_Trade = 0.05
+	}
+}
+technology = { 
+	year = 1620
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.275
+		Columbian_Exchange = 0.3
+		Scientific_Method = 0.15
+		Global_Trade = 0.1
+	}
+	allowed_idea_groups = 9
+}
+technology = { 
+	year = 1630
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.30
+		Columbian_Exchange = 0.325
+		Scientific_Method = 0.2
+		Global_Trade = 0.15
+	}
+}
+technology = { 
+	year = 1640
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.325
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.25
+		Global_Trade = 0.2
+	}
+	production_efficiency = 0.01
+}
+technology = { 
+	year = 1650
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.35
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.3
+		Global_Trade = 0.25
+	}
+	development_cost_modifier = 0.025
+}
+technology = { 
+	year = 1660
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.375
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.35
+		Global_Trade = 0.3
+		Academia = 0.05
+	}
+	allowed_idea_groups = 10
+	development_cost_modifier = 0.05
+}
+technology = { 
+	year = 1670
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.4
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.4
+		Global_Trade = 0.35
+		Academia = 0.1
+	}
+}
+technology = { 
+	year = 1680
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.425
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.45
+		Global_Trade = 0.4
+		Academia = 0.15
+	}
+}
+technology = { 
+	year = 1690
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.45
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.5
+		Global_Trade = 0.45
+		Academia = 0.2
+	}
+	administrative_efficiency = 0.025
+}
+technology = { 
+	year = 1700
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.475
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.55
+		Global_Trade = 0.5
+		Academia = 0.25
+		Nationalism = 0.05
+	}
+	allowed_idea_groups = 11
+	development_cost_modifier = 0.025
+}
+technology = { 
+	year = 1710
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.6
+		Global_Trade = 0.5
+		Academia = 0.3
+		Nationalism = 0.1
+		Industrialisation = 0.1
+	}
+	production_efficiency = 0.02
+}
+technology = { 
+	year = 1720
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.65
+		Global_Trade = 0.5
+		Academia = 0.35
+		Nationalism = 0.2
+		Industrialisation = 0.2
+	}
+	administrative_efficiency = 0.05
+}
+technology = { 
+	year = 1730
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.7
+		Global_Trade = 0.5
+		Academia = 0.4
+		Nationalism = 0.3
+		Industrialisation = 0.3
+	}
+}
+technology = { 
+	year = 1740
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 0.45
+		Nationalism = 0.4
+		Industrialisation = 0.4
+	}
+	allowed_idea_groups = 12
+}
+technology = { 
+	year = 1750
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 0.5
+		Nationalism = 0.5
+		Industrialisation = 0.5
+	}
+	administrative_efficiency = 0.025
+	development_cost_modifier = 0.025
+}
+technology = { 
+	year = 1760
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 0.6
+		Nationalism = 0.6
+		Industrialisation = 0.6
+	}
+}
+technology = { 
+	year = 1770
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 0.7
+		Nationalism = 0.7
+		Industrialisation = 0.7
+	}
+	production_efficiency = 0.01
+}
+technology = { 
+	year = 1780
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 0.8
+		Nationalism = 0.75
+		Industrialisation = 0.8
+	}
+	allowed_idea_groups = 13
+}
+technology = { 
+	year = 1790
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 0.9
+		Nationalism = 0.75
+		Industrialisation = 0.9
+	}
+	administrative_efficiency = 0.025
+}
+technology = { 
+	year = 1800
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+	development_cost_modifier = 0.025
+}
+technology = { 
+	year = 1810
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+	administrative_efficiency = 0.05
+}
+technology = { 
+	year = 1820
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+	production_efficiency = 0.05
+}
+technology = { 
+	year = 1830
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+}
+technology = { 
+	year = 1840
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+}
+technology = { 
+	year = 1850
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+	administrative_efficiency = 0.05
+	development_cost_modifier = 0.025
+}
+technology = { 
+	year = 1860
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+	allowed_idea_groups = 14
+}
+technology = { 
+	year = 1870
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+	administrative_efficiency = 0.05
+}
+technology = { 
+	year = 1880
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+}
+technology = { 
+	year = 1890
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+	administrative_efficiency = 0.05
+	development_cost_modifier = 0.025
+}
+technology = { 
+	year = 1900
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+	production_efficiency = 0.01
+}

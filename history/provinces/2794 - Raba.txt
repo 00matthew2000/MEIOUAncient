@@ -1,0 +1,43 @@
+owner = NUP
+controller = NUP
+add_core = NUP
+capital = "Raba"
+trade_goods = millet
+culture = nupe
+religion = odinala
+hre = no
+base_tax = 4
+base_production = 2
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gci
+	value = 1
+}
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 60.000
+	}
+}
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = baf
+		value = 27
+	}
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+}

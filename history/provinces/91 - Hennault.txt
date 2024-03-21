@@ -1,0 +1,142 @@
+owner = HAI
+controller = HAI
+add_core = HAI
+capital = "Mon"
+trade_goods = wheat
+culture = wallonian
+religion = catholic
+hre = yes
+base_tax = 12
+base_production = 6
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 3
+}
+set_variable = { 
+	which = gci
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = western
+discovered_by = muslim
+500.1.1 = { 
+	set_province_flag = TN_Important
+	set_variable = { 
+		which = baf
+		value = 33
+	}
+	add_permanent_province_modifier = { 
+		name = urban_goods_glassware
+		duration = -1
+	}
+	set_province_flag = mined_goods
+	set_province_flag = coal
+}
+1356.1.1 = { 
+	add_core = HOL
+}
+100.1.1 = { 
+	set_variable = { 
+		which = amj
+		value = 142.174
+	}
+	set_variable = { 
+		which = amk
+		value = 51.000
+	}
+	set_variable = { 
+		which = amh
+		value = 131.674
+	}
+	set_variable = { 
+		which = ami
+		value = 61.500
+	}
+	set_variable = { 
+		which = amf
+		value = 44.185
+	}
+	set_variable = { 
+		which = amg
+		value = 82.000
+	}
+	set_variable = { 
+		which = amd
+		value = 73.961
+	}
+	set_variable = { 
+		which = ame
+		value = 81.250
+	}
+	set_variable = { 
+		which = amb
+		value = 109.314
+	}
+	set_variable = { 
+		which = amc
+		value = 80.500
+	}
+	set_variable = { 
+		which = alz
+		value = 138.587
+	}
+	set_variable = { 
+		which = ama
+		value = 77.750
+	}
+	set_variable = { 
+		which = alx
+		value = 158.644
+	}
+	set_variable = { 
+		which = aly
+		value = 81.000
+	}
+	set_variable = { 
+		which = alv
+		value = 180.638
+	}
+	set_variable = { 
+		which = alw
+		value = 72.500
+	}
+	set_variable = { 
+		which = alt
+		value = 213.870
+	}
+	set_variable = { 
+		which = alu
+		value = 79.000
+	}
+	set_variable = { 
+		which = alr
+		value = 360.725
+	}
+	set_variable = { 
+		which = als
+		value = 83.500
+	}
+	set_variable = { 
+		which = alp
+		value = 574.968
+	}
+	set_variable = { 
+		which = alq
+		value = 100.000
+	}
+	set_variable = { 
+		which = aho
+		value = 971.124
+	}
+	set_variable = { 
+		which = ahp
+		value = 145.000
+	}
+}

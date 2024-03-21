@@ -1,0 +1,15 @@
+capital = "Huancapampa"
+trade_goods = wool
+culture = kanari
+religion = inti
+hre = no
+base_tax = 5
+base_production = 0
+base_manpower = 0
+discovered_by = south_american
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+}

@@ -1,0 +1,32 @@
+owner = SIJ
+controller = SIJ
+add_core = SIJ
+capital = "Pakanbaru"
+trade_goods = lumber
+culture = minang
+religion = kejawen_h
+hre = no
+base_tax = 1
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = indian
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = austranesian
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 60.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 2
+	}
+	set_province_flag = mined_goods
+	set_province_flag = gold
+}

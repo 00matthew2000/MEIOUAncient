@@ -1,0 +1,9435 @@
+namespace = flavor_rus
+country_event = { 
+	id = flavor_rus.3401
+	title = "flavor_rus.EVTNAME3401"
+	desc = "flavor_rus.EVTDESC3401"
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		is_year = 1450
+		NOT = { 
+			is_year = 1550
+		}
+		OR = { 
+			AND = { 
+				tag = MOS
+				NOT = { 
+					exists = RUS
+				}
+			}
+			tag = RUS
+		}
+		309 = { 
+			owned_by = ROOT
+		}
+	}
+	mean_time_to_happen = { 
+		years = 10
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTA3401"
+		ai_chance = { 
+			factor = 95
+		}
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asn
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = asq
+					value = -10
+				}
+				change_variable = { 
+					which = asr
+					value = -10
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_NOLoyProv_-10
+		add_mil_power = 50
+		add_country_modifier = { 
+			name = pomjestija_reform
+			duration = 18250
+		}
+		random_owned_province = { 
+			limit = { 
+				is_capital = no
+			}
+			spawn_rebels = { 
+				type = warlord_rebels
+				size = 2
+			}
+		}
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTB3401"
+		ai_chance = { 
+			factor = 5
+		}
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ass
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = asv
+					value = 10
+				}
+				change_variable = { 
+					which = asw
+					value = 10
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asv
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asv
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asv
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asv
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_BGLoyProv_10
+		add_dip_power = 50
+		add_country_modifier = { 
+			name = novgorodian_reform
+			duration = 18250
+		}
+	}
+}
+country_event = { 
+	id = flavor_rus.3202
+	title = "flavor_rus.EVTNAME3202"
+	desc = "flavor_rus.EVTDESC3202"
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		is_year = 1560
+		NOT = { 
+			is_year = 1573
+		}
+		OR = { 
+			AND = { 
+				tag = MOS
+				NOT = { 
+					exists = RUS
+				}
+			}
+			tag = RUS
+		}
+		owns = 295
+	}
+	mean_time_to_happen = { 
+		months = 38
+	}
+	option = { 
+		name = "EXCELLENTCMNISTER"
+		add_adm_power = 25
+		add_dip_power = 25
+		add_mil_power = 25
+		if = { 
+			limit = { 
+				NOT = { 
+					advisor_exists = 1026
+				}
+			}
+			define_advisor = { 
+				type = spymaster_NO
+				name = "Malyuta Skuratov"
+				discount = yes
+				location = 295
+				skill = 3
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_rus.3404
+	title = "flavor_rus.EVTNAME3404"
+	desc = "flavor_rus.EVTDESC3404"
+	picture = MILITARY_CAMP_eventPicture
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			AND = { 
+				tag = MOS
+				NOT = { 
+					exists = RUS
+				}
+				is_year = 1550
+			}
+			tag = RUS
+		}
+	}
+	mean_time_to_happen = { 
+		years = 3
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTA3404"
+		ai_chance = { 
+			factor = 100
+		}
+		hidden_effect = { 
+			change_variable = { 
+				which = ahf
+				value = 600
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ahf
+							value = 1200
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						stability = 3
+					}
+					set_variable = { 
+						which = ahf
+						value = 1200
+					}
+				}
+				else = { 
+					subtract_variable = { 
+						which = ahf
+						value = 1200
+					}
+					add_stability = 1
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ahf
+								value = 0
+							}
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							stability = -2
+						}
+					}
+					set_variable = { 
+						which = ahf
+						value = 0
+					}
+				}
+				else = { 
+					change_variable = { 
+						which = ahf
+						value = 1200
+					}
+					add_stability = -1
+				}
+			}
+			set_variable = { 
+				which = ahd
+				which = ahf
+			}
+			divide_variable = { 
+				which = ahd
+				value = 12
+			}
+			multiply_variable = { 
+				which = ahd
+				value = 0.1
+			}
+			multiply_variable = { 
+				which = ahd
+				value = 10
+			}
+			set_variable = { 
+				which = lsc
+				value = 100
+			}
+			subtract_variable = { 
+				which = lsc
+				which = ahd
+			}
+		}
+		custom_tooltip = POP_StabAdd50
+		if = { 
+			limit = { 
+				is_emperor_of_china = yes
+			}
+			add_mandate = 2.5
+		}
+		add_prestige = 5
+		steppes_region = { 
+			limit = { 
+				is_city = yes
+				NOT = { 
+					area = nogai_area
+				}
+				NOT = { 
+					owned_by = ROOT
+				}
+				NOT = { 
+					is_core = ROOT
+				}
+				NOT = { 
+					is_permanent_claim = ROOT
+				}
+				NOT = { 
+					is_claim = ROOT
+				}
+			}
+			add_claim = ROOT
+		}
+		add_country_modifier = { 
+			name = just_causes
+			duration = 3650
+		}
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTB3404"
+		ai_chance = { 
+			factor = 0
+		}
+		add_prestige = -5
+		random_list = { 
+			30 = { }
+			40 = { 
+				hidden_effect = { 
+					change_variable = { 
+						which = ahf
+						value = -600
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = ahf
+									value = 1200
+								}
+							}
+						}
+						if = { 
+							limit = { 
+								stability = 3
+							}
+							set_variable = { 
+								which = ahf
+								value = 1200
+							}
+						}
+						else = { 
+							subtract_variable = { 
+								which = ahf
+								value = 1200
+							}
+							add_stability = 1
+						}
+					}
+					else_if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = ahf
+										value = 0
+									}
+								}
+							}
+						}
+						if = { 
+							limit = { 
+								NOT = { 
+									stability = -2
+								}
+							}
+							set_variable = { 
+								which = ahf
+								value = 0
+							}
+						}
+						else = { 
+							change_variable = { 
+								which = ahf
+								value = 1200
+							}
+							add_stability = -1
+						}
+					}
+					set_variable = { 
+						which = ahd
+						which = ahf
+					}
+					divide_variable = { 
+						which = ahd
+						value = 12
+					}
+					multiply_variable = { 
+						which = ahd
+						value = 0.1
+					}
+					multiply_variable = { 
+						which = ahd
+						value = 10
+					}
+					set_variable = { 
+						which = lsc
+						value = 100
+					}
+					subtract_variable = { 
+						which = lsc
+						which = ahd
+					}
+				}
+				custom_tooltip = POP_StabSubtract50
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -2.5
+				}
+			}
+			30 = { 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						add_stability = -1
+					}
+				}
+				tooltip = { 
+					add_stability = -1
+				}
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -5
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_rus.3405
+	title = "flavor_rus.EVTNAME3405"
+	desc = "flavor_rus.EVTDESC3405"
+	picture = MILITARY_CAMP_eventPicture
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			AND = { 
+				tag = MOS
+				NOT = { 
+					exists = RUS
+				}
+				is_year = 1550
+			}
+			tag = RUS
+		}
+		white_ruthenia_area = { 
+			OR = { 
+				owned_by = POL
+				owned_by = LIT
+				owned_by = PLC
+			}
+		}
+		russia_region = { 
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+	}
+	mean_time_to_happen = { 
+		years = 3
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTA3405"
+		ai_chance = { 
+			factor = 100
+		}
+		hidden_effect = { 
+			change_variable = { 
+				which = ahf
+				value = 600
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ahf
+							value = 1200
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						stability = 3
+					}
+					set_variable = { 
+						which = ahf
+						value = 1200
+					}
+				}
+				else = { 
+					subtract_variable = { 
+						which = ahf
+						value = 1200
+					}
+					add_stability = 1
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ahf
+								value = 0
+							}
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							stability = -2
+						}
+					}
+					set_variable = { 
+						which = ahf
+						value = 0
+					}
+				}
+				else = { 
+					change_variable = { 
+						which = ahf
+						value = 1200
+					}
+					add_stability = -1
+				}
+			}
+			set_variable = { 
+				which = ahd
+				which = ahf
+			}
+			divide_variable = { 
+				which = ahd
+				value = 12
+			}
+			multiply_variable = { 
+				which = ahd
+				value = 0.1
+			}
+			multiply_variable = { 
+				which = ahd
+				value = 10
+			}
+			set_variable = { 
+				which = lsc
+				value = 100
+			}
+			subtract_variable = { 
+				which = lsc
+				which = ahd
+			}
+		}
+		custom_tooltip = POP_StabAdd50
+		if = { 
+			limit = { 
+				is_emperor_of_china = yes
+			}
+			add_mandate = 2.5
+		}
+		add_prestige = 5
+		white_ruthenia_area = { 
+			limit = { 
+				OR = { 
+					owned_by = POL
+					owned_by = LIT
+					owned_by = PLC
+				}
+				NOT = { 
+					owned_by = ROOT
+				}
+				NOT = { 
+					is_core = ROOT
+				}
+				NOT = { 
+					is_permanent_claim = ROOT
+				}
+				NOT = { 
+					is_claim = ROOT
+				}
+			}
+			add_claim = ROOT
+		}
+		add_country_modifier = { 
+			name = just_causes
+			duration = 3650
+		}
+		if = { 
+			limit = { 
+				white_ruthenia_area = { 
+					owned_by = POL
+				}
+			}
+			POL = { 
+				add_opinion = { 
+					who = ROOT
+					modifier = rus_claimed_land
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				white_ruthenia_area = { 
+					owned_by = PLC
+				}
+			}
+			PLC = { 
+				add_opinion = { 
+					who = ROOT
+					modifier = rus_claimed_land
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				white_ruthenia_area = { 
+					owned_by = LIT
+				}
+			}
+			LIT = { 
+				add_opinion = { 
+					who = ROOT
+					modifier = rus_claimed_land
+				}
+			}
+		}
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTB3405"
+		ai_chance = { 
+			factor = 0
+		}
+		add_prestige = -5
+		random_list = { 
+			30 = { }
+			40 = { 
+				hidden_effect = { 
+					change_variable = { 
+						which = ahf
+						value = -600
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = ahf
+									value = 1200
+								}
+							}
+						}
+						if = { 
+							limit = { 
+								stability = 3
+							}
+							set_variable = { 
+								which = ahf
+								value = 1200
+							}
+						}
+						else = { 
+							subtract_variable = { 
+								which = ahf
+								value = 1200
+							}
+							add_stability = 1
+						}
+					}
+					else_if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = ahf
+										value = 0
+									}
+								}
+							}
+						}
+						if = { 
+							limit = { 
+								NOT = { 
+									stability = -2
+								}
+							}
+							set_variable = { 
+								which = ahf
+								value = 0
+							}
+						}
+						else = { 
+							change_variable = { 
+								which = ahf
+								value = 1200
+							}
+							add_stability = -1
+						}
+					}
+					set_variable = { 
+						which = ahd
+						which = ahf
+					}
+					divide_variable = { 
+						which = ahd
+						value = 12
+					}
+					multiply_variable = { 
+						which = ahd
+						value = 0.1
+					}
+					multiply_variable = { 
+						which = ahd
+						value = 10
+					}
+					set_variable = { 
+						which = lsc
+						value = 100
+					}
+					subtract_variable = { 
+						which = lsc
+						which = ahd
+					}
+				}
+				custom_tooltip = POP_StabSubtract50
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -2.5
+				}
+			}
+			30 = { 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						add_stability = -1
+					}
+				}
+				tooltip = { 
+					add_stability = -1
+				}
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -5
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_rus.3406
+	title = "flavor_rus.EVTNAME3406"
+	desc = "flavor_rus.EVTDESC3406"
+	picture = MILITARY_CAMP_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		OR = { 
+			AND = { 
+				tag = MOS
+				NOT = { 
+					exists = RUS
+				}
+				is_year = 1550
+			}
+			tag = RUS
+		}
+		steppes_region = { 
+			type = all
+			OR = { 
+				area = nogai_area
+				AND = { 
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		years = 3
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTA3406"
+		ai_chance = { 
+			factor = 100
+		}
+		hidden_effect = { 
+			change_variable = { 
+				which = ahf
+				value = 600
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ahf
+							value = 1200
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						stability = 3
+					}
+					set_variable = { 
+						which = ahf
+						value = 1200
+					}
+				}
+				else = { 
+					subtract_variable = { 
+						which = ahf
+						value = 1200
+					}
+					add_stability = 1
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ahf
+								value = 0
+							}
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							stability = -2
+						}
+					}
+					set_variable = { 
+						which = ahf
+						value = 0
+					}
+				}
+				else = { 
+					change_variable = { 
+						which = ahf
+						value = 1200
+					}
+					add_stability = -1
+				}
+			}
+			set_variable = { 
+				which = ahd
+				which = ahf
+			}
+			divide_variable = { 
+				which = ahd
+				value = 12
+			}
+			multiply_variable = { 
+				which = ahd
+				value = 0.1
+			}
+			multiply_variable = { 
+				which = ahd
+				value = 10
+			}
+			set_variable = { 
+				which = lsc
+				value = 100
+			}
+			subtract_variable = { 
+				which = lsc
+				which = ahd
+			}
+		}
+		custom_tooltip = POP_StabAdd50
+		if = { 
+			limit = { 
+				is_emperor_of_china = yes
+			}
+			add_mandate = 2.5
+		}
+		add_prestige = 5
+		west_siberia_region = { 
+			limit = { 
+				is_city = yes
+				NOT = { 
+					owned_by = ROOT
+				}
+				NOT = { 
+					is_core = ROOT
+				}
+				NOT = { 
+					is_permanent_claim = ROOT
+				}
+				NOT = { 
+					is_claim = ROOT
+				}
+			}
+			add_claim = ROOT
+		}
+		crimea_region = { 
+			limit = { 
+				is_city = yes
+				NOT = { 
+					owned_by = ROOT
+				}
+				NOT = { 
+					is_core = ROOT
+				}
+				NOT = { 
+					is_permanent_claim = ROOT
+				}
+				NOT = { 
+					is_claim = ROOT
+				}
+			}
+			add_claim = ROOT
+		}
+		nogai_area = { 
+			limit = { 
+				is_city = yes
+				NOT = { 
+					owned_by = ROOT
+				}
+				NOT = { 
+					is_core = ROOT
+				}
+				NOT = { 
+					is_permanent_claim = ROOT
+				}
+				NOT = { 
+					is_claim = ROOT
+				}
+			}
+			add_claim = ROOT
+		}
+		add_country_modifier = { 
+			name = just_causes
+			duration = 3650
+		}
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTB3406"
+		ai_chance = { 
+			factor = 0
+		}
+		add_prestige = -5
+		random_list = { 
+			30 = { }
+			40 = { 
+				hidden_effect = { 
+					change_variable = { 
+						which = ahf
+						value = -600
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = ahf
+									value = 1200
+								}
+							}
+						}
+						if = { 
+							limit = { 
+								stability = 3
+							}
+							set_variable = { 
+								which = ahf
+								value = 1200
+							}
+						}
+						else = { 
+							subtract_variable = { 
+								which = ahf
+								value = 1200
+							}
+							add_stability = 1
+						}
+					}
+					else_if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = ahf
+										value = 0
+									}
+								}
+							}
+						}
+						if = { 
+							limit = { 
+								NOT = { 
+									stability = -2
+								}
+							}
+							set_variable = { 
+								which = ahf
+								value = 0
+							}
+						}
+						else = { 
+							change_variable = { 
+								which = ahf
+								value = 1200
+							}
+							add_stability = -1
+						}
+					}
+					set_variable = { 
+						which = ahd
+						which = ahf
+					}
+					divide_variable = { 
+						which = ahd
+						value = 12
+					}
+					multiply_variable = { 
+						which = ahd
+						value = 0.1
+					}
+					multiply_variable = { 
+						which = ahd
+						value = 10
+					}
+					set_variable = { 
+						which = lsc
+						value = 100
+					}
+					subtract_variable = { 
+						which = lsc
+						which = ahd
+					}
+				}
+				custom_tooltip = POP_StabSubtract50
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -2.5
+				}
+			}
+			30 = { 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						add_stability = -1
+					}
+				}
+				tooltip = { 
+					add_stability = -1
+				}
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -5
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_rus.3410
+	title = "flavor_rus.EVTNAME3410"
+	desc = "flavor_rus.EVTDESC3410"
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		is_year = 1540
+		NOT = { 
+			is_year = 1560
+		}
+		OR = { 
+			AND = { 
+				tag = MOS
+				NOT = { 
+					exists = RUS
+				}
+			}
+			tag = RUS
+		}
+		owns = 295
+	}
+	mean_time_to_happen = { 
+		years = 25
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTA3410"
+		add_adm_power = 25
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asn
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = asq
+					value = 5
+				}
+				change_variable = { 
+					which = asr
+					value = 5
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_NOLoyProv_5
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asx
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = ata
+					value = 5
+				}
+				change_variable = { 
+					which = atb
+					value = 5
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = ata
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = ata
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = ata
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_CLLoyProv_5
+		define_advisor = { 
+			type = statesman_NO
+			name = "Alexi Adashev"
+			discount = yes
+			location = 295
+			skill = 3
+		}
+		define_advisor = { 
+			type = statesman_CL
+			name = "Sylvestr"
+			discount = yes
+			location = 295
+			skill = 3
+		}
+	}
+}
+country_event = { 
+	id = flavor_rus.7
+	title = "flavor_rus.EVTNAME3411"
+	desc = "flavor_rus.EVTDESC3411"
+	picture = REVOLUTION_eventPicture
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		tag = RUS
+		capital_scope = { 
+			NOT = { 
+				controlled_by = ROOT
+			}
+			province_id = 295
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTA3411"
+		ai_chance = { 
+			factor = 50
+		}
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asn
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = asq
+					value = 10
+				}
+				change_variable = { 
+					which = asr
+					value = 10
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_NOLoyProv_10
+		add_army_tradition = 10
+		add_mil_power = 50
+		capital_scope = { 
+			controller = { 
+				ROOT = { 
+					add_opinion = { 
+						who = PREV
+						modifier = rus_sacked_moscow
+					}
+				}
+			}
+		}
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTB3411"
+		ai_chance = { 
+			factor = 50
+		}
+		if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = asn
+						value = 65
+					}
+				}
+			}
+			add_country_modifier = { 
+				name = NO_DemoteLords_L
+				duration = 3650
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = asn
+						value = 35
+					}
+				}
+			}
+			add_country_modifier = { 
+				name = NO_DemoteLords_M
+				duration = 3650
+			}
+		}
+		else = { 
+			add_country_modifier = { 
+				name = NO_DemoteLords_S
+				duration = 3650
+			}
+		}
+		if = { 
+			limit = { 
+				faction_influence = { 
+					faction = FC_NO
+					influence = 80
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				hidden_effect = { 
+					change_variable = { 
+						which = bdq
+						value = -30
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = bdq
+										value = -100
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = bdq
+							value = -100
+						}
+					}
+					else_if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = bdq
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = bdq
+							value = 100
+						}
+					}
+					multiply_variable = { 
+						which = bdq
+						value = 0.001
+					}
+					multiply_variable = { 
+						which = bdq
+						value = 1000
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					custom_tooltip = NO_RelationState_-30
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				faction_influence = { 
+					faction = FC_NO
+					influence = 70
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				hidden_effect = { 
+					change_variable = { 
+						which = bdq
+						value = -25
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = bdq
+										value = -100
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = bdq
+							value = -100
+						}
+					}
+					else_if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = bdq
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = bdq
+							value = 100
+						}
+					}
+					multiply_variable = { 
+						which = bdq
+						value = 0.001
+					}
+					multiply_variable = { 
+						which = bdq
+						value = 1000
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					custom_tooltip = NO_RelationState_-25
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				faction_influence = { 
+					faction = FC_NO
+					influence = 65
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				hidden_effect = { 
+					change_variable = { 
+						which = bdq
+						value = -20
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = bdq
+										value = -100
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = bdq
+							value = -100
+						}
+					}
+					else_if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = bdq
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = bdq
+							value = 100
+						}
+					}
+					multiply_variable = { 
+						which = bdq
+						value = 0.001
+					}
+					multiply_variable = { 
+						which = bdq
+						value = 1000
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					custom_tooltip = NO_RelationState_-20
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				faction_influence = { 
+					faction = FC_NO
+					influence = 60
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				hidden_effect = { 
+					change_variable = { 
+						which = bdq
+						value = -15
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = bdq
+										value = -100
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = bdq
+							value = -100
+						}
+					}
+					else_if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = bdq
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = bdq
+							value = 100
+						}
+					}
+					multiply_variable = { 
+						which = bdq
+						value = 0.001
+					}
+					multiply_variable = { 
+						which = bdq
+						value = 1000
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					custom_tooltip = NO_RelationState_-15
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				faction_influence = { 
+					faction = FC_NO
+					influence = 50
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				hidden_effect = { 
+					change_variable = { 
+						which = bdq
+						value = -15
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = bdq
+										value = -100
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = bdq
+							value = -100
+						}
+					}
+					else_if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = bdq
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = bdq
+							value = 100
+						}
+					}
+					multiply_variable = { 
+						which = bdq
+						value = 0.001
+					}
+					multiply_variable = { 
+						which = bdq
+						value = 1000
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					custom_tooltip = NO_RelationState_-15
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				faction_influence = { 
+					faction = FC_NO
+					influence = 40
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				hidden_effect = { 
+					change_variable = { 
+						which = bdq
+						value = -10
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = bdq
+										value = -100
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = bdq
+							value = -100
+						}
+					}
+					else_if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = bdq
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = bdq
+							value = 100
+						}
+					}
+					multiply_variable = { 
+						which = bdq
+						value = 0.001
+					}
+					multiply_variable = { 
+						which = bdq
+						value = 1000
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					custom_tooltip = NO_RelationState_-10
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				faction_influence = { 
+					faction = FC_NO
+					influence = 30
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				hidden_effect = { 
+					change_variable = { 
+						which = bdq
+						value = -10
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = bdq
+										value = -100
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = bdq
+							value = -100
+						}
+					}
+					else_if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = bdq
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = bdq
+							value = 100
+						}
+					}
+					multiply_variable = { 
+						which = bdq
+						value = 0.001
+					}
+					multiply_variable = { 
+						which = bdq
+						value = 1000
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					custom_tooltip = NO_RelationState_-10
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				faction_influence = { 
+					faction = FC_NO
+					influence = 20
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				hidden_effect = { 
+					change_variable = { 
+						which = bdq
+						value = -8
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = bdq
+										value = -100
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = bdq
+							value = -100
+						}
+					}
+					else_if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = bdq
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = bdq
+							value = 100
+						}
+					}
+					multiply_variable = { 
+						which = bdq
+						value = 0.001
+					}
+					multiply_variable = { 
+						which = bdq
+						value = 1000
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					custom_tooltip = NO_RelationState_-8
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				faction_influence = { 
+					faction = FC_NO
+					influence = 10
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				hidden_effect = { 
+					change_variable = { 
+						which = bdq
+						value = -5
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = bdq
+										value = -100
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = bdq
+							value = -100
+						}
+					}
+					else_if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = bdq
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = bdq
+							value = 100
+						}
+					}
+					multiply_variable = { 
+						which = bdq
+						value = 0.001
+					}
+					multiply_variable = { 
+						which = bdq
+						value = 1000
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					custom_tooltip = NO_RelationState_-5
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = asn
+						value = 50
+					}
+				}
+			}
+			hidden_effect = { 
+				change_variable = { 
+					which = ahf
+					value = -600
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = ahf
+								value = 1200
+							}
+						}
+					}
+					if = { 
+						limit = { 
+							stability = 3
+						}
+						set_variable = { 
+							which = ahf
+							value = 1200
+						}
+					}
+					else = { 
+						subtract_variable = { 
+							which = ahf
+							value = 1200
+						}
+						add_stability = 1
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = ahf
+									value = 0
+								}
+							}
+						}
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						change_variable = { 
+							which = ahf
+							value = 1200
+						}
+						add_stability = -1
+					}
+				}
+				set_variable = { 
+					which = ahd
+					which = ahf
+				}
+				divide_variable = { 
+					which = ahd
+					value = 12
+				}
+				multiply_variable = { 
+					which = ahd
+					value = 0.1
+				}
+				multiply_variable = { 
+					which = ahd
+					value = 10
+				}
+				set_variable = { 
+					which = lsc
+					value = 100
+				}
+				subtract_variable = { 
+					which = lsc
+					which = ahd
+				}
+			}
+			custom_tooltip = POP_StabSubtract50
+			if = { 
+				limit = { 
+					is_emperor_of_china = yes
+				}
+				add_mandate = -2.5
+			}
+		}
+		else = { 
+			hidden_effect = { 
+				change_variable = { 
+					which = ahf
+					value = -300
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = ahf
+								value = 1200
+							}
+						}
+					}
+					if = { 
+						limit = { 
+							stability = 3
+						}
+						set_variable = { 
+							which = ahf
+							value = 1200
+						}
+					}
+					else = { 
+						subtract_variable = { 
+							which = ahf
+							value = 1200
+						}
+						add_stability = 1
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = ahf
+									value = 0
+								}
+							}
+						}
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						change_variable = { 
+							which = ahf
+							value = 1200
+						}
+						add_stability = -1
+					}
+				}
+				set_variable = { 
+					which = ahd
+					which = ahf
+				}
+				divide_variable = { 
+					which = ahd
+					value = 12
+				}
+				multiply_variable = { 
+					which = ahd
+					value = 0.1
+				}
+				multiply_variable = { 
+					which = ahd
+					value = 10
+				}
+				set_variable = { 
+					which = lsc
+					value = 100
+				}
+				subtract_variable = { 
+					which = lsc
+					which = ahd
+				}
+			}
+			custom_tooltip = POP_StabSubtract25
+			if = { 
+				limit = { 
+					is_emperor_of_china = yes
+				}
+				add_mandate = -1
+			}
+		}
+		custom_tooltip = Rights_LB
+		custom_tooltip = Rights_EveryProvince
+		custom_tooltip = NO_DemoteLords_effect
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asn
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = asq
+					value = -10
+				}
+				change_variable = { 
+					which = asr
+					value = -10
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_NOLoyProv_-10
+		custom_tooltip = NO_DemoteLords_expl
+		random_owned_province = { 
+			limit = { 
+				is_capital = no
+			}
+			spawn_rebels = { 
+				type = warlord_rebels
+				size = 2
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_rus.3413
+	title = "flavor_rus.EVTNAME3413"
+	desc = "flavor_rus.EVTDESC3413"
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		adm_tech = 35
+		OR = { 
+			AND = { 
+				tag = MOS
+				NOT = { 
+					exists = RUS
+				}
+			}
+			tag = RUS
+		}
+	}
+	mean_time_to_happen = { 
+		years = 25
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTA3413"
+		ai_chance = { 
+			factor = 50
+		}
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asn
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = asq
+					value = -10
+				}
+				change_variable = { 
+					which = asr
+					value = -10
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_NOLoyProv_-10
+		random_list = { 
+			40 = { 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						add_stability = -2
+					}
+				}
+				tooltip = { 
+					add_stability = -2
+				}
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -10
+				}
+			}
+			30 = { 
+				hidden_effect = { 
+					change_variable = { 
+						which = ahf
+						value = -600
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = ahf
+									value = 1200
+								}
+							}
+						}
+						if = { 
+							limit = { 
+								stability = 3
+							}
+							set_variable = { 
+								which = ahf
+								value = 1200
+							}
+						}
+						else = { 
+							subtract_variable = { 
+								which = ahf
+								value = 1200
+							}
+							add_stability = 1
+						}
+					}
+					else_if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = ahf
+										value = 0
+									}
+								}
+							}
+						}
+						if = { 
+							limit = { 
+								NOT = { 
+									stability = -2
+								}
+							}
+							set_variable = { 
+								which = ahf
+								value = 0
+							}
+						}
+						else = { 
+							change_variable = { 
+								which = ahf
+								value = 1200
+							}
+							add_stability = -1
+						}
+					}
+					set_variable = { 
+						which = ahd
+						which = ahf
+					}
+					divide_variable = { 
+						which = ahd
+						value = 12
+					}
+					multiply_variable = { 
+						which = ahd
+						value = 0.1
+					}
+					multiply_variable = { 
+						which = ahd
+						value = 10
+					}
+					set_variable = { 
+						which = lsc
+						value = 100
+					}
+					subtract_variable = { 
+						which = lsc
+						which = ahd
+					}
+				}
+				custom_tooltip = POP_StabSubtract50
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -2.5
+				}
+			}
+			30 = { 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						add_stability = -1
+					}
+				}
+				tooltip = { 
+					add_stability = -1
+				}
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -5
+				}
+			}
+		}
+		add_years_of_income = 1.5
+		add_adm_power = 100
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTB3413"
+		ai_chance = { 
+			factor = 25
+		}
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asn
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = asq
+					value = -5
+				}
+				change_variable = { 
+					which = asr
+					value = -5
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_NOLoyProv_-5
+		random_list = { 
+			30 = { }
+			40 = { 
+				hidden_effect = { 
+					change_variable = { 
+						which = ahf
+						value = -600
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = ahf
+									value = 1200
+								}
+							}
+						}
+						if = { 
+							limit = { 
+								stability = 3
+							}
+							set_variable = { 
+								which = ahf
+								value = 1200
+							}
+						}
+						else = { 
+							subtract_variable = { 
+								which = ahf
+								value = 1200
+							}
+							add_stability = 1
+						}
+					}
+					else_if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = ahf
+										value = 0
+									}
+								}
+							}
+						}
+						if = { 
+							limit = { 
+								NOT = { 
+									stability = -2
+								}
+							}
+							set_variable = { 
+								which = ahf
+								value = 0
+							}
+						}
+						else = { 
+							change_variable = { 
+								which = ahf
+								value = 1200
+							}
+							add_stability = -1
+						}
+					}
+					set_variable = { 
+						which = ahd
+						which = ahf
+					}
+					divide_variable = { 
+						which = ahd
+						value = 12
+					}
+					multiply_variable = { 
+						which = ahd
+						value = 0.1
+					}
+					multiply_variable = { 
+						which = ahd
+						value = 10
+					}
+					set_variable = { 
+						which = lsc
+						value = 100
+					}
+					subtract_variable = { 
+						which = lsc
+						which = ahd
+					}
+				}
+				custom_tooltip = POP_StabSubtract50
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -2.5
+				}
+			}
+			30 = { 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						add_stability = -1
+					}
+				}
+				tooltip = { 
+					add_stability = -1
+				}
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -5
+				}
+			}
+		}
+		add_years_of_income = 0.75
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTC3413"
+		ai_chance = { 
+			factor = 25
+		}
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asn
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = asq
+					value = -5
+				}
+				change_variable = { 
+					which = asr
+					value = -5
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_NOLoyProv_-5
+		random_list = { 
+			30 = { }
+			40 = { 
+				hidden_effect = { 
+					change_variable = { 
+						which = ahf
+						value = -600
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = ahf
+									value = 1200
+								}
+							}
+						}
+						if = { 
+							limit = { 
+								stability = 3
+							}
+							set_variable = { 
+								which = ahf
+								value = 1200
+							}
+						}
+						else = { 
+							subtract_variable = { 
+								which = ahf
+								value = 1200
+							}
+							add_stability = 1
+						}
+					}
+					else_if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = ahf
+										value = 0
+									}
+								}
+							}
+						}
+						if = { 
+							limit = { 
+								NOT = { 
+									stability = -2
+								}
+							}
+							set_variable = { 
+								which = ahf
+								value = 0
+							}
+						}
+						else = { 
+							change_variable = { 
+								which = ahf
+								value = 1200
+							}
+							add_stability = -1
+						}
+					}
+					set_variable = { 
+						which = ahd
+						which = ahf
+					}
+					divide_variable = { 
+						which = ahd
+						value = 12
+					}
+					multiply_variable = { 
+						which = ahd
+						value = 0.1
+					}
+					multiply_variable = { 
+						which = ahd
+						value = 10
+					}
+					set_variable = { 
+						which = lsc
+						value = 100
+					}
+					subtract_variable = { 
+						which = lsc
+						which = ahd
+					}
+				}
+				custom_tooltip = POP_StabSubtract50
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -2.5
+				}
+			}
+			30 = { 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						add_stability = -1
+					}
+				}
+				tooltip = { 
+					add_stability = -1
+				}
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -5
+				}
+			}
+		}
+		add_adm_power = 50
+	}
+}
+country_event = { 
+	id = flavor_rus.3415
+	title = "flavor_rus.EVTNAME3415"
+	desc = "flavor_rus.EVTDESC3415"
+	picture = ORTHODOX_eventPicture
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			AND = { 
+				tag = MOS
+				NOT = { 
+					exists = RUS
+				}
+			}
+			tag = RUS
+		}
+		religion = orthodox
+		NOT = { 
+			exists = BYZ
+		}
+	}
+	mean_time_to_happen = { 
+		years = 10
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTA3415"
+		ai_chance = { 
+			factor = 99
+		}
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asx
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = ata
+					value = 10
+				}
+				change_variable = { 
+					which = atb
+					value = 10
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = ata
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = ata
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = ata
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_CLLoyProv_10
+		hidden_effect = { 
+			change_variable = { 
+				which = ahf
+				value = 600
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ahf
+							value = 1200
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						stability = 3
+					}
+					set_variable = { 
+						which = ahf
+						value = 1200
+					}
+				}
+				else = { 
+					subtract_variable = { 
+						which = ahf
+						value = 1200
+					}
+					add_stability = 1
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ahf
+								value = 0
+							}
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							stability = -2
+						}
+					}
+					set_variable = { 
+						which = ahf
+						value = 0
+					}
+				}
+				else = { 
+					change_variable = { 
+						which = ahf
+						value = 1200
+					}
+					add_stability = -1
+				}
+			}
+			set_variable = { 
+				which = ahd
+				which = ahf
+			}
+			divide_variable = { 
+				which = ahd
+				value = 12
+			}
+			multiply_variable = { 
+				which = ahd
+				value = 0.1
+			}
+			multiply_variable = { 
+				which = ahd
+				value = 10
+			}
+			set_variable = { 
+				which = lsc
+				value = 100
+			}
+			subtract_variable = { 
+				which = lsc
+				which = ahd
+			}
+		}
+		custom_tooltip = POP_StabAdd50
+		if = { 
+			limit = { 
+				is_emperor_of_china = yes
+			}
+			add_mandate = 2.5
+		}
+		every_known_country = { 
+			limit = { 
+				religion = orthodox
+			}
+			add_opinion = { 
+				who = ROOT
+				modifier = rus_orthodoxy_led_from_moscow
+			}
+		}
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTB3415"
+		ai_chance = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				NOT = { 
+					stability = 2
+				}
+			}
+		}
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						stability = -2
+					}
+				}
+				set_variable = { 
+					which = ahf
+					value = 0
+				}
+			}
+			else = { 
+				add_stability = -3
+			}
+		}
+		tooltip = { 
+			add_stability = -3
+		}
+		if = { 
+			limit = { 
+				is_emperor_of_china = yes
+			}
+			add_mandate = -15
+		}
+		add_accepted_culture = greek
+		every_province = { 
+			limit = { 
+				is_city = yes
+				OR = { 
+					is_core = BYZ
+					is_core = GRE
+				}
+			}
+			add_claim = ROOT
+		}
+	}
+}
+country_event = { 
+	id = flavor_rus.3203
+	title = "flavor_rus.EVTNAME3203"
+	desc = "flavor_rus.EVTDESC3203"
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		is_year = 1620
+		NOT = { 
+			is_year = 1661
+		}
+		OR = { 
+			AND = { 
+				tag = MOS
+				NOT = { 
+					exists = RUS
+				}
+			}
+			tag = RUS
+		}
+		owns = 295
+	}
+	mean_time_to_happen = { 
+		years = 25
+	}
+	option = { 
+		name = "EXCELLENTCMNISTER"
+		add_adm_power = 25
+		define_advisor = { 
+			type = statesman_NO
+			name = "Boris Morozov"
+			discount = yes
+			location = 295
+			skill = 3
+		}
+	}
+}
+country_event = { 
+	id = flavor_rus.3418
+	title = "flavor_rus.EVTNAME3418"
+	desc = "flavor_rus.EVTDESC3418"
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		is_year = 1625
+		NOT = { 
+			is_year = 1700
+		}
+		OR = { 
+			AND = { 
+				tag = MOS
+				NOT = { 
+					exists = RUS
+				}
+			}
+			tag = RUS
+		}
+		OR = { 
+			advisor = cardinal_CL
+			advisor = philosopher_CL
+			advisor = theologian_CL
+			advisor = inquisitor_CL
+		}
+	}
+	mean_time_to_happen = { 
+		years = 5
+	}
+	immediate = { 
+		set_country_flag = RUS_raskol_flag
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTA3418"
+		ai_chance = { 
+			factor = 75
+		}
+		random_list = { 
+			30 = { }
+			40 = { 
+				hidden_effect = { 
+					change_variable = { 
+						which = ahf
+						value = -600
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = ahf
+									value = 1200
+								}
+							}
+						}
+						if = { 
+							limit = { 
+								stability = 3
+							}
+							set_variable = { 
+								which = ahf
+								value = 1200
+							}
+						}
+						else = { 
+							subtract_variable = { 
+								which = ahf
+								value = 1200
+							}
+							add_stability = 1
+						}
+					}
+					else_if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = ahf
+										value = 0
+									}
+								}
+							}
+						}
+						if = { 
+							limit = { 
+								NOT = { 
+									stability = -2
+								}
+							}
+							set_variable = { 
+								which = ahf
+								value = 0
+							}
+						}
+						else = { 
+							change_variable = { 
+								which = ahf
+								value = 1200
+							}
+							add_stability = -1
+						}
+					}
+					set_variable = { 
+						which = ahd
+						which = ahf
+					}
+					divide_variable = { 
+						which = ahd
+						value = 12
+					}
+					multiply_variable = { 
+						which = ahd
+						value = 0.1
+					}
+					multiply_variable = { 
+						which = ahd
+						value = 10
+					}
+					set_variable = { 
+						which = lsc
+						value = 100
+					}
+					subtract_variable = { 
+						which = lsc
+						which = ahd
+					}
+				}
+				custom_tooltip = POP_StabSubtract50
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -2.5
+				}
+			}
+			30 = { 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						add_stability = -1
+					}
+				}
+				tooltip = { 
+					add_stability = -1
+				}
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -5
+				}
+			}
+		}
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asx
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = ata
+					value = 10
+				}
+				change_variable = { 
+					which = atb
+					value = 10
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = ata
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = ata
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = ata
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_CLLoyProv_10
+		set_country_flag = nikon_supported
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTB3418"
+		ai_chance = { 
+			factor = 25
+		}
+		hidden_effect = { 
+			change_variable = { 
+				which = ahf
+				value = 600
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ahf
+							value = 1200
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						stability = 3
+					}
+					set_variable = { 
+						which = ahf
+						value = 1200
+					}
+				}
+				else = { 
+					subtract_variable = { 
+						which = ahf
+						value = 1200
+					}
+					add_stability = 1
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ahf
+								value = 0
+							}
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							stability = -2
+						}
+					}
+					set_variable = { 
+						which = ahf
+						value = 0
+					}
+				}
+				else = { 
+					change_variable = { 
+						which = ahf
+						value = 1200
+					}
+					add_stability = -1
+				}
+			}
+			set_variable = { 
+				which = ahd
+				which = ahf
+			}
+			divide_variable = { 
+				which = ahd
+				value = 12
+			}
+			multiply_variable = { 
+				which = ahd
+				value = 0.1
+			}
+			multiply_variable = { 
+				which = ahd
+				value = 10
+			}
+			set_variable = { 
+				which = lsc
+				value = 100
+			}
+			subtract_variable = { 
+				which = lsc
+				which = ahd
+			}
+		}
+		custom_tooltip = POP_StabAdd50
+		if = { 
+			limit = { 
+				is_emperor_of_china = yes
+			}
+			add_mandate = 2.5
+		}
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asx
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = ata
+					value = -10
+				}
+				change_variable = { 
+					which = atb
+					value = -10
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = ata
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = ata
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = ata
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_CLLoyProv_-10
+	}
+}
+country_event = { 
+	id = flavor_rus.1006
+	title = "flavor_rus.EVTNAME1006"
+	desc = "flavor_rus.EVTDESC1006"
+	picture = ORTHODOX_eventPicture
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			AND = { 
+				tag = MOS
+				NOT = { 
+					exists = RUS
+				}
+			}
+			tag = RUS
+		}
+		has_country_flag = nikon_supported
+	}
+	mean_time_to_happen = { 
+		years = 3
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTA1006"
+		ai_chance = { 
+			factor = 75
+		}
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asx
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = ata
+					value = 20
+				}
+				change_variable = { 
+					which = atb
+					value = 20
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = ata
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = ata
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = ata
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_CLLoyProv_20
+		if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = asx
+						value = 65
+					}
+				}
+			}
+			add_country_modifier = { 
+				name = CL_PopularReform_L
+				duration = 3650
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = asx
+						value = 35
+					}
+				}
+			}
+			add_country_modifier = { 
+				name = CL_PopularReform_M
+				duration = 3650
+			}
+		}
+		else = { 
+			add_country_modifier = { 
+				name = CL_PopularReform_S
+				duration = 3650
+			}
+		}
+		if = { 
+			limit = { 
+				faction_influence = { 
+					faction = FC_CL
+					influence = 50
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				hidden_effect = { 
+					change_variable = { 
+						which = bds
+						value = 9
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = bds
+										value = -100
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = -100
+						}
+					}
+					else_if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = bds
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = 100
+						}
+					}
+					multiply_variable = { 
+						which = bds
+						value = 0.001
+					}
+					multiply_variable = { 
+						which = bds
+						value = 1000
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					custom_tooltip = CL_RelationState_9
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				faction_influence = { 
+					faction = FC_CL
+					influence = 10
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				hidden_effect = { 
+					change_variable = { 
+						which = bds
+						value = 12
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = bds
+										value = -100
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = -100
+						}
+					}
+					else_if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = bds
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = 100
+						}
+					}
+					multiply_variable = { 
+						which = bds
+						value = 0.001
+					}
+					multiply_variable = { 
+						which = bds
+						value = 1000
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					custom_tooltip = CL_RelationState_12
+				}
+			}
+		}
+		else = { 
+			if = { 
+				limit = { 
+					always = yes
+				}
+				hidden_effect = { 
+					change_variable = { 
+						which = bds
+						value = 15
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = bds
+										value = -100
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = -100
+						}
+					}
+					else_if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = bds
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = 100
+						}
+					}
+					multiply_variable = { 
+						which = bds
+						value = 0.001
+					}
+					multiply_variable = { 
+						which = bds
+						value = 1000
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					custom_tooltip = CL_RelationState_15
+				}
+			}
+		}
+		custom_tooltip = Rights_LB
+		custom_tooltip = Rights_EveryProvince
+		custom_tooltip = CL_PopularReform_expl
+		random_core_province = { 
+			spawn_rebels = { 
+				type = mob_rebels
+				size = 1
+			}
+		}
+		random_core_province = { 
+			spawn_rebels = { 
+				type = mob_rebels
+				size = 1
+			}
+		}
+		random_core_province = { 
+			spawn_rebels = { 
+				type = mob_rebels
+				size = 1
+			}
+		}
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTB1006"
+		ai_chance = { 
+			factor = 25
+		}
+		hidden_effect = { 
+			change_variable = { 
+				which = ahf
+				value = 600
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ahf
+							value = 1200
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						stability = 3
+					}
+					set_variable = { 
+						which = ahf
+						value = 1200
+					}
+				}
+				else = { 
+					subtract_variable = { 
+						which = ahf
+						value = 1200
+					}
+					add_stability = 1
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ahf
+								value = 0
+							}
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							stability = -2
+						}
+					}
+					set_variable = { 
+						which = ahf
+						value = 0
+					}
+				}
+				else = { 
+					change_variable = { 
+						which = ahf
+						value = 1200
+					}
+					add_stability = -1
+				}
+			}
+			set_variable = { 
+				which = ahd
+				which = ahf
+			}
+			divide_variable = { 
+				which = ahd
+				value = 12
+			}
+			multiply_variable = { 
+				which = ahd
+				value = 0.1
+			}
+			multiply_variable = { 
+				which = ahd
+				value = 10
+			}
+			set_variable = { 
+				which = lsc
+				value = 100
+			}
+			subtract_variable = { 
+				which = lsc
+				which = ahd
+			}
+		}
+		custom_tooltip = POP_StabAdd50
+		if = { 
+			limit = { 
+				is_emperor_of_china = yes
+			}
+			add_mandate = 2.5
+		}
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asx
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = ata
+					value = -20
+				}
+				change_variable = { 
+					which = atb
+					value = -20
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = ata
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = ata
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = ata
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_CLLoyProv_-20
+	}
+}
+country_event = { 
+	id = flavor_rus.3419
+	title = "flavor_rus.EVTNAME3419"
+	desc = "flavor_rus.EVTDESC3419"
+	picture = DIPLOMACY_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		OR = { 
+			AND = { 
+				tag = MOS
+				NOT = { 
+					exists = RUS
+				}
+			}
+			tag = RUS
+		}
+		any_known_country = { 
+			is_neighbor_of = ROOT
+			is_emperor_of_china = yes
+		}
+	}
+	mean_time_to_happen = { 
+		years = 20
+	}
+	immediate = { 
+		set_country_flag = contact_with_china
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTA3419"
+		ai_chance = { 
+			factor = 75
+		}
+		add_prestige = 10
+		random_known_country = { 
+			limit = { 
+				is_emperor_of_china = yes
+			}
+			add_opinion = { 
+				who = ROOT
+				modifier = rus_ignored_vassal_demands
+			}
+		}
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTB3419"
+		ai_chance = { 
+			factor = 20
+		}
+		random_list = { 
+			30 = { }
+			40 = { 
+				hidden_effect = { 
+					change_variable = { 
+						which = ahf
+						value = -600
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = ahf
+									value = 1200
+								}
+							}
+						}
+						if = { 
+							limit = { 
+								stability = 3
+							}
+							set_variable = { 
+								which = ahf
+								value = 1200
+							}
+						}
+						else = { 
+							subtract_variable = { 
+								which = ahf
+								value = 1200
+							}
+							add_stability = 1
+						}
+					}
+					else_if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = ahf
+										value = 0
+									}
+								}
+							}
+						}
+						if = { 
+							limit = { 
+								NOT = { 
+									stability = -2
+								}
+							}
+							set_variable = { 
+								which = ahf
+								value = 0
+							}
+						}
+						else = { 
+							change_variable = { 
+								which = ahf
+								value = 1200
+							}
+							add_stability = -1
+						}
+					}
+					set_variable = { 
+						which = ahd
+						which = ahf
+					}
+					divide_variable = { 
+						which = ahd
+						value = 12
+					}
+					multiply_variable = { 
+						which = ahd
+						value = 0.1
+					}
+					multiply_variable = { 
+						which = ahd
+						value = 10
+					}
+					set_variable = { 
+						which = lsc
+						value = 100
+					}
+					subtract_variable = { 
+						which = lsc
+						which = ahd
+					}
+				}
+				custom_tooltip = POP_StabSubtract50
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -2.5
+				}
+			}
+			30 = { 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						add_stability = -1
+					}
+				}
+				tooltip = { 
+					add_stability = -1
+				}
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -5
+				}
+			}
+		}
+		random_known_country = { 
+			limit = { 
+				is_emperor_of_china = yes
+			}
+			add_opinion = { 
+				who = ROOT
+				modifier = rus_paid_vassal_respect
+			}
+		}
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTC3419"
+		ai_chance = { 
+			factor = 5
+			modifier = { 
+				factor = 0
+				NOT = { 
+					stability = 1
+				}
+			}
+		}
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						stability = -2
+					}
+				}
+				set_variable = { 
+					which = ahf
+					value = 0
+				}
+			}
+			else = { 
+				add_stability = -2
+			}
+		}
+		tooltip = { 
+			add_stability = -2
+		}
+		if = { 
+			limit = { 
+				is_emperor_of_china = yes
+			}
+			add_mandate = -10
+		}
+		add_years_of_income = -0.25
+		random_known_country = { 
+			limit = { 
+				is_emperor_of_china = yes
+			}
+			add_opinion = { 
+				who = ROOT
+				modifier = rus_paid_vassal_tribute
+			}
+			hidden_effect = { 
+				add_years_of_income = 0.25
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_rus.3421
+	title = "flavor_rus.EVTNAME3421"
+	desc = "flavor_rus.EVTDESC3421"
+	picture = DIPLOMACY_eventPicture
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			AND = { 
+				tag = MOS
+				NOT = { 
+					exists = RUS
+				}
+			}
+			tag = RUS
+		}
+		adm_tech = 45
+		has_country_flag = contact_with_china
+		any_owned_province = { 
+			OR = { 
+				region = west_siberia_region
+				region = east_siberia_region
+				region = outer_mongolia_region
+			}
+		}
+		any_known_country = { 
+			is_emperor_of_china = yes
+			NOT = { 
+				war_with = ROOT
+			}
+			any_owned_province = { 
+				any_neighbor_province = { 
+					OR = { 
+						region = east_manchuria_region
+						region = west_manchuria_region
+					}
+					owned_by = ROOT
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		years = 20
+	}
+	immediate = { 
+		hidden_effect = { 
+			every_known_country = { 
+				limit = { 
+					is_emperor_of_china = yes
+				}
+				set_country_flag = nerchiinsk_treaty
+			}
+		}
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTA3421"
+		ai_chance = { 
+			factor = 65
+		}
+		random_list = { 
+			30 = { }
+			40 = { 
+				hidden_effect = { 
+					change_variable = { 
+						which = ahf
+						value = -600
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = ahf
+									value = 1200
+								}
+							}
+						}
+						if = { 
+							limit = { 
+								stability = 3
+							}
+							set_variable = { 
+								which = ahf
+								value = 1200
+							}
+						}
+						else = { 
+							subtract_variable = { 
+								which = ahf
+								value = 1200
+							}
+							add_stability = 1
+						}
+					}
+					else_if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = ahf
+										value = 0
+									}
+								}
+							}
+						}
+						if = { 
+							limit = { 
+								NOT = { 
+									stability = -2
+								}
+							}
+							set_variable = { 
+								which = ahf
+								value = 0
+							}
+						}
+						else = { 
+							change_variable = { 
+								which = ahf
+								value = 1200
+							}
+							add_stability = -1
+						}
+					}
+					set_variable = { 
+						which = ahd
+						which = ahf
+					}
+					divide_variable = { 
+						which = ahd
+						value = 12
+					}
+					multiply_variable = { 
+						which = ahd
+						value = 0.1
+					}
+					multiply_variable = { 
+						which = ahd
+						value = 10
+					}
+					set_variable = { 
+						which = lsc
+						value = 100
+					}
+					subtract_variable = { 
+						which = lsc
+						which = ahd
+					}
+				}
+				custom_tooltip = POP_StabSubtract50
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -2.5
+				}
+			}
+			30 = { 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						add_stability = -1
+					}
+				}
+				tooltip = { 
+					add_stability = -1
+				}
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -5
+				}
+			}
+		}
+		random_country = { 
+			limit = { 
+				has_country_flag = nerchiinsk_treaty
+			}
+			add_opinion = { 
+				who = ROOT
+				modifier = rus_treaty_of_nerchiinsk
+			}
+			east_manchuria_region = { 
+				limit = { 
+					is_city = yes
+					owned_by = ROOT
+				}
+				cede_province = PREV
+			}
+			west_manchuria_region = { 
+				limit = { 
+					is_city = yes
+					owned_by = ROOT
+				}
+				cede_province = PREV
+			}
+			clr_country_flag = nerchiinsk_treaty
+		}
+		west_siberia_region = { 
+			limit = { 
+				NOT = { 
+					owned_by = ROOT
+				}
+				NOT = { 
+					is_core = ROOT
+				}
+				NOT = { 
+					is_permanent_claim = ROOT
+				}
+				NOT = { 
+					is_claim = ROOT
+				}
+			}
+			add_claim = ROOT
+		}
+		east_siberia_region = { 
+			limit = { 
+				NOT = { 
+					owned_by = ROOT
+				}
+				NOT = { 
+					is_core = ROOT
+				}
+				NOT = { 
+					is_permanent_claim = ROOT
+				}
+				NOT = { 
+					is_claim = ROOT
+				}
+			}
+			add_claim = ROOT
+		}
+		outer_mongolia_region = { 
+			limit = { 
+				NOT = { 
+					owned_by = ROOT
+				}
+				NOT = { 
+					is_core = ROOT
+				}
+				NOT = { 
+					is_permanent_claim = ROOT
+				}
+				NOT = { 
+					is_claim = ROOT
+				}
+			}
+			add_claim = ROOT
+		}
+		every_country = { 
+			limit = { 
+				any_owned_province = { 
+					OR = { 
+						region = west_siberia_region
+						region = east_siberia_region
+						region = outer_mongolia_region
+					}
+				}
+			}
+			add_opinion = { 
+				who = ROOT
+				modifier = rus_claimed_western_siberia
+			}
+		}
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTB3421"
+		ai_chance = { 
+			factor = 25
+		}
+		random_country = { 
+			limit = { 
+				has_country_flag = nerchiinsk_treaty
+			}
+			add_opinion = { 
+				who = ROOT
+				modifier = rus_refused_treaty_of_nerchiinsk
+			}
+			clr_country_flag = nerchiinsk_treaty
+		}
+		west_siberia_region = { 
+			limit = { 
+				NOT = { 
+					owned_by = ROOT
+				}
+				NOT = { 
+					is_core = ROOT
+				}
+				NOT = { 
+					is_permanent_claim = ROOT
+				}
+				NOT = { 
+					is_claim = ROOT
+				}
+			}
+			add_claim = ROOT
+		}
+		east_siberia_region = { 
+			limit = { 
+				NOT = { 
+					owned_by = ROOT
+				}
+				NOT = { 
+					is_core = ROOT
+				}
+				NOT = { 
+					is_permanent_claim = ROOT
+				}
+				NOT = { 
+					is_claim = ROOT
+				}
+			}
+			add_claim = ROOT
+		}
+		outer_mongolia_region = { 
+			limit = { 
+				NOT = { 
+					owned_by = ROOT
+				}
+				NOT = { 
+					is_core = ROOT
+				}
+				NOT = { 
+					is_permanent_claim = ROOT
+				}
+				NOT = { 
+					is_claim = ROOT
+				}
+			}
+			add_claim = ROOT
+		}
+		every_country = { 
+			limit = { 
+				any_owned_province = { 
+					OR = { 
+						region = west_siberia_region
+						region = east_siberia_region
+						region = outer_mongolia_region
+					}
+				}
+			}
+			add_opinion = { 
+				who = ROOT
+				modifier = rus_claimed_western_siberia
+			}
+		}
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTC3421"
+		ai_chance = { 
+			factor = 10
+		}
+		random_list = { 
+			30 = { 
+				hidden_effect = { 
+					change_variable = { 
+						which = ahf
+						value = -600
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = ahf
+									value = 1200
+								}
+							}
+						}
+						if = { 
+							limit = { 
+								stability = 3
+							}
+							set_variable = { 
+								which = ahf
+								value = 1200
+							}
+						}
+						else = { 
+							subtract_variable = { 
+								which = ahf
+								value = 1200
+							}
+							add_stability = 1
+						}
+					}
+					else_if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = ahf
+										value = 0
+									}
+								}
+							}
+						}
+						if = { 
+							limit = { 
+								NOT = { 
+									stability = -2
+								}
+							}
+							set_variable = { 
+								which = ahf
+								value = 0
+							}
+						}
+						else = { 
+							change_variable = { 
+								which = ahf
+								value = 1200
+							}
+							add_stability = -1
+						}
+					}
+					set_variable = { 
+						which = ahd
+						which = ahf
+					}
+					divide_variable = { 
+						which = ahd
+						value = 12
+					}
+					multiply_variable = { 
+						which = ahd
+						value = 0.1
+					}
+					multiply_variable = { 
+						which = ahd
+						value = 10
+					}
+					set_variable = { 
+						which = lsc
+						value = 100
+					}
+					subtract_variable = { 
+						which = lsc
+						which = ahd
+					}
+				}
+				custom_tooltip = POP_StabSubtract50
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -2.5
+				}
+			}
+			40 = { 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						add_stability = -1
+					}
+				}
+				tooltip = { 
+					add_stability = -1
+				}
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -5
+				}
+			}
+			30 = { 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						add_stability = -2
+					}
+				}
+				tooltip = { 
+					add_stability = -2
+				}
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -10
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_rus.3427
+	title = "flavor_rus.EVTNAME3427"
+	desc = "flavor_rus.EVTDESC3427"
+	picture = ORTHODOX_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		OR = { 
+			AND = { 
+				tag = MOS
+				NOT = { 
+					exists = RUS
+				}
+			}
+			tag = RUS
+		}
+		adm_tech = 52
+	}
+	mean_time_to_happen = { 
+		years = 5
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTA3427"
+		ai_chance = { 
+			factor = 75
+			modifier = { 
+				factor = 0
+				NOT = { 
+					stability = 1
+				}
+			}
+		}
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						stability = -2
+					}
+				}
+				set_variable = { 
+					which = ahf
+					value = 0
+				}
+			}
+			else = { 
+				add_stability = -1
+			}
+		}
+		tooltip = { 
+			add_stability = -1
+		}
+		if = { 
+			limit = { 
+				is_emperor_of_china = yes
+			}
+			add_mandate = -5
+		}
+		if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = asx
+						value = 65
+					}
+				}
+			}
+			add_country_modifier = { 
+				name = CL_Secularise_L
+				duration = 3650
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = asx
+						value = 35
+					}
+				}
+			}
+			add_country_modifier = { 
+				name = CL_Secularise_M
+				duration = 3650
+			}
+		}
+		else = { 
+			add_country_modifier = { 
+				name = CL_Secularise_S
+				duration = 3650
+			}
+		}
+		if = { 
+			limit = { 
+				faction_influence = { 
+					faction = FC_CL
+					influence = 80
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				hidden_effect = { 
+					change_variable = { 
+						which = bds
+						value = -30
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = bds
+										value = -100
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = -100
+						}
+					}
+					else_if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = bds
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = 100
+						}
+					}
+					multiply_variable = { 
+						which = bds
+						value = 0.001
+					}
+					multiply_variable = { 
+						which = bds
+						value = 1000
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					custom_tooltip = CL_RelationState_-30
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				faction_influence = { 
+					faction = FC_CL
+					influence = 70
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				hidden_effect = { 
+					change_variable = { 
+						which = bds
+						value = -25
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = bds
+										value = -100
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = -100
+						}
+					}
+					else_if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = bds
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = 100
+						}
+					}
+					multiply_variable = { 
+						which = bds
+						value = 0.001
+					}
+					multiply_variable = { 
+						which = bds
+						value = 1000
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					custom_tooltip = CL_RelationState_-25
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				faction_influence = { 
+					faction = FC_CL
+					influence = 65
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				hidden_effect = { 
+					change_variable = { 
+						which = bds
+						value = -20
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = bds
+										value = -100
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = -100
+						}
+					}
+					else_if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = bds
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = 100
+						}
+					}
+					multiply_variable = { 
+						which = bds
+						value = 0.001
+					}
+					multiply_variable = { 
+						which = bds
+						value = 1000
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					custom_tooltip = CL_RelationState_-20
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				faction_influence = { 
+					faction = FC_CL
+					influence = 60
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				hidden_effect = { 
+					change_variable = { 
+						which = bds
+						value = -15
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = bds
+										value = -100
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = -100
+						}
+					}
+					else_if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = bds
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = 100
+						}
+					}
+					multiply_variable = { 
+						which = bds
+						value = 0.001
+					}
+					multiply_variable = { 
+						which = bds
+						value = 1000
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					custom_tooltip = CL_RelationState_-15
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				faction_influence = { 
+					faction = FC_CL
+					influence = 50
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				hidden_effect = { 
+					change_variable = { 
+						which = bds
+						value = -15
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = bds
+										value = -100
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = -100
+						}
+					}
+					else_if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = bds
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = 100
+						}
+					}
+					multiply_variable = { 
+						which = bds
+						value = 0.001
+					}
+					multiply_variable = { 
+						which = bds
+						value = 1000
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					custom_tooltip = CL_RelationState_-15
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				faction_influence = { 
+					faction = FC_CL
+					influence = 40
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				hidden_effect = { 
+					change_variable = { 
+						which = bds
+						value = -10
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = bds
+										value = -100
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = -100
+						}
+					}
+					else_if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = bds
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = 100
+						}
+					}
+					multiply_variable = { 
+						which = bds
+						value = 0.001
+					}
+					multiply_variable = { 
+						which = bds
+						value = 1000
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					custom_tooltip = CL_RelationState_-10
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				faction_influence = { 
+					faction = FC_CL
+					influence = 30
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				hidden_effect = { 
+					change_variable = { 
+						which = bds
+						value = -10
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = bds
+										value = -100
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = -100
+						}
+					}
+					else_if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = bds
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = 100
+						}
+					}
+					multiply_variable = { 
+						which = bds
+						value = 0.001
+					}
+					multiply_variable = { 
+						which = bds
+						value = 1000
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					custom_tooltip = CL_RelationState_-10
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				faction_influence = { 
+					faction = FC_CL
+					influence = 20
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				hidden_effect = { 
+					change_variable = { 
+						which = bds
+						value = -8
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = bds
+										value = -100
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = -100
+						}
+					}
+					else_if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = bds
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = 100
+						}
+					}
+					multiply_variable = { 
+						which = bds
+						value = 0.001
+					}
+					multiply_variable = { 
+						which = bds
+						value = 1000
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					custom_tooltip = CL_RelationState_-8
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				faction_influence = { 
+					faction = FC_CL
+					influence = 10
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				hidden_effect = { 
+					change_variable = { 
+						which = bds
+						value = -5
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = bds
+										value = -100
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = -100
+						}
+					}
+					else_if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = bds
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = bds
+							value = 100
+						}
+					}
+					multiply_variable = { 
+						which = bds
+						value = 0.001
+					}
+					multiply_variable = { 
+						which = bds
+						value = 1000
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					custom_tooltip = CL_RelationState_-5
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = asx
+						value = 50
+					}
+				}
+			}
+			hidden_effect = { 
+				change_variable = { 
+					which = ahf
+					value = -600
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = ahf
+								value = 1200
+							}
+						}
+					}
+					if = { 
+						limit = { 
+							stability = 3
+						}
+						set_variable = { 
+							which = ahf
+							value = 1200
+						}
+					}
+					else = { 
+						subtract_variable = { 
+							which = ahf
+							value = 1200
+						}
+						add_stability = 1
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = ahf
+									value = 0
+								}
+							}
+						}
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						change_variable = { 
+							which = ahf
+							value = 1200
+						}
+						add_stability = -1
+					}
+				}
+				set_variable = { 
+					which = ahd
+					which = ahf
+				}
+				divide_variable = { 
+					which = ahd
+					value = 12
+				}
+				multiply_variable = { 
+					which = ahd
+					value = 0.1
+				}
+				multiply_variable = { 
+					which = ahd
+					value = 10
+				}
+				set_variable = { 
+					which = lsc
+					value = 100
+				}
+				subtract_variable = { 
+					which = lsc
+					which = ahd
+				}
+			}
+			custom_tooltip = POP_StabSubtract50
+			if = { 
+				limit = { 
+					is_emperor_of_china = yes
+				}
+				add_mandate = -2.5
+			}
+		}
+		else = { 
+			hidden_effect = { 
+				change_variable = { 
+					which = ahf
+					value = -300
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = ahf
+								value = 1200
+							}
+						}
+					}
+					if = { 
+						limit = { 
+							stability = 3
+						}
+						set_variable = { 
+							which = ahf
+							value = 1200
+						}
+					}
+					else = { 
+						subtract_variable = { 
+							which = ahf
+							value = 1200
+						}
+						add_stability = 1
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = ahf
+									value = 0
+								}
+							}
+						}
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						change_variable = { 
+							which = ahf
+							value = 1200
+						}
+						add_stability = -1
+					}
+				}
+				set_variable = { 
+					which = ahd
+					which = ahf
+				}
+				divide_variable = { 
+					which = ahd
+					value = 12
+				}
+				multiply_variable = { 
+					which = ahd
+					value = 0.1
+				}
+				multiply_variable = { 
+					which = ahd
+					value = 10
+				}
+				set_variable = { 
+					which = lsc
+					value = 100
+				}
+				subtract_variable = { 
+					which = lsc
+					which = ahd
+				}
+			}
+			custom_tooltip = POP_StabSubtract25
+			if = { 
+				limit = { 
+					is_emperor_of_china = yes
+				}
+				add_mandate = -1
+			}
+		}
+		custom_tooltip = Rights_LB
+		custom_tooltip = Rights_EveryProvince
+		custom_tooltip = CL_Secularise_effect
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asx
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = ata
+					value = -10
+				}
+				change_variable = { 
+					which = atb
+					value = -10
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = ata
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = ata
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = ata
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_CLLoyProv_-10
+		custom_tooltip = CL_Secularise_expl
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTB3427"
+		ai_chance = { 
+			factor = 25
+		}
+		hidden_effect = { 
+			change_variable = { 
+				which = ahf
+				value = 600
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ahf
+							value = 1200
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						stability = 3
+					}
+					set_variable = { 
+						which = ahf
+						value = 1200
+					}
+				}
+				else = { 
+					subtract_variable = { 
+						which = ahf
+						value = 1200
+					}
+					add_stability = 1
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ahf
+								value = 0
+							}
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							stability = -2
+						}
+					}
+					set_variable = { 
+						which = ahf
+						value = 0
+					}
+				}
+				else = { 
+					change_variable = { 
+						which = ahf
+						value = 1200
+					}
+					add_stability = -1
+				}
+			}
+			set_variable = { 
+				which = ahd
+				which = ahf
+			}
+			divide_variable = { 
+				which = ahd
+				value = 12
+			}
+			multiply_variable = { 
+				which = ahd
+				value = 0.1
+			}
+			multiply_variable = { 
+				which = ahd
+				value = 10
+			}
+			set_variable = { 
+				which = lsc
+				value = 100
+			}
+			subtract_variable = { 
+				which = lsc
+				which = ahd
+			}
+		}
+		custom_tooltip = POP_StabAdd50
+		if = { 
+			limit = { 
+				is_emperor_of_china = yes
+			}
+			add_mandate = 2.5
+		}
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asx
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = ata
+					value = 10
+				}
+				change_variable = { 
+					which = atb
+					value = 10
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = ata
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = ata
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = ata
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_CLLoyProv_10
+	}
+}
+country_event = { 
+	id = flavor_rus.3439
+	title = "flavor_rus.EVTNAME3439"
+	desc = "flavor_rus.EVTDESC3439"
+	picture = DIPLOMACY_eventPicture
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			AND = { 
+				tag = MOS
+				NOT = { 
+					exists = RUS
+				}
+			}
+			tag = RUS
+		}
+		war_with = SWE
+		adm_tech = 45
+		NOT = { 
+			exists = FIN
+		}
+		SWE = { 
+			any_owned_province = { 
+				culture = finnish
+			}
+		}
+		OR = { 
+			advisor = spymaster_NO
+			advisor = spymaster_BG
+			advisor = spymaster_BU
+		}
+	}
+	mean_time_to_happen = { 
+		years = 1
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTA3439"
+		ai_chance = { 
+			factor = 90
+		}
+		add_years_of_income = -0.25
+		SWE = { 
+			random_owned_province = { 
+				limit = { 
+					culture = finnish
+				}
+				spawn_rebels = { 
+					type = nationalist_rebels
+					size = 3
+					friend = ROOT
+				}
+			}
+		}
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTB3439"
+		ai_chance = { 
+			factor = 10
+		}
+		SWE = { 
+			add_opinion = { 
+				who = ROOT
+				modifier = rus_rejected_anjala_league
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_rus.1000
+	title = "flavor_rus.EVTNAME1000"
+	desc = "flavor_rus.EVTDESC1000"
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		is_year = 1763
+		NOT = { 
+			is_year = 1790
+		}
+		OR = { 
+			AND = { 
+				tag = MOS
+				NOT = { 
+					exists = RUS
+				}
+			}
+			tag = RUS
+		}
+	}
+	mean_time_to_happen = { 
+		years = 25
+	}
+	option = { 
+		name = "EXCELLENT"
+		add_adm_power = 10
+		add_prestige = 5
+		define_advisor = { 
+			type = philosopher_NO
+			name = "Mikhailo Shcherbatov"
+			discount = yes
+			location = 295
+			skill = 3`
+		}
+	}
+}
+country_event = { 
+	id = flavor_rus.1001
+	title = "flavor_rus.EVTNAME1001"
+	desc = "flavor_rus.EVTDESC1001"
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		is_year = 1716
+		NOT = { 
+			is_year = 1750
+		}
+		OR = { 
+			AND = { 
+				tag = MOS
+				NOT = { 
+					exists = RUS
+				}
+			}
+			tag = RUS
+		}
+	}
+	mean_time_to_happen = { 
+		years = 25
+	}
+	option = { 
+		name = "EXCELLENT"
+		add_dip_power = 10
+		add_prestige = 5
+		define_advisor = { 
+			type = statesman_BU
+			name = "Vasily Tatishchev"
+			discount = yes
+			location = 295
+			skill = 3
+		}
+	}
+}
+country_event = { 
+	id = flavor_rus.1002
+	title = "flavor_rus.EVTNAME1002"
+	desc = "flavor_rus.EVTDESC1002"
+	picture = INVENTION_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		is_year = 1741
+		NOT = { 
+			is_year = 1765
+		}
+		OR = { 
+			AND = { 
+				tag = MOS
+				NOT = { 
+					exists = RUS
+				}
+			}
+			tag = RUS
+		}
+	}
+	mean_time_to_happen = { 
+		years = 25
+	}
+	option = { 
+		name = "EXCELLENT"
+		add_adm_power = 10
+		add_prestige = 5
+		define_advisor = { 
+			type = natural_scientist_BU
+			name = "Mikhail Lomonosov"
+			discount = yes
+			location = 295
+			skill = 3
+		}
+	}
+}
+country_event = { 
+	id = flavor_rus.1112
+	title = "flavor_rus.EVTNAME1112"
+	desc = "flavor_rus.EVTDESC1112"
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		owns_core_province = 301
+		OR = { 
+			AND = { 
+				culture_group = east_slavic
+				NOT = { 
+					exists = RUS
+				}
+			}
+			tag = RUS
+		}
+		NOT = { 
+			has_country_flag = qasim_abolished
+		}
+		NOT = { 
+			num_of_owned_provinces_with = { 
+				has_province_modifier = qasim_khanate
+				value = 1
+			}
+		}
+		any_neighbor_country = { 
+			government = tribal
+		}
+		num_of_cities = 10
+		stability = 1
+		is_at_war = no
+		NOT = { 
+			num_of_revolts = 1
+		}
+	}
+	mean_time_to_happen = { 
+		years = 100
+		modifier = { 
+			factor = 0.95
+			stability = 1
+		}
+		modifier = { 
+			factor = 0.95
+			stability = 2
+		}
+		modifier = { 
+			factor = 0.95
+			stability = 3
+		}
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTA1112"
+		add_adm_power = -25
+		add_country_modifier = { 
+			name = qasim_khanate_levies
+			duration = -1
+		}
+		301 = { 
+			add_province_modifier = { 
+				name = qasim_khanate
+				duration = -1
+			}
+		}
+		custom_tooltip = qasim_khanate_tt
+		cavalry = 301
+		cavalry = 301
+		cavalry = 301
+		cavalry = 301
+		cavalry = 301
+		define_general = { 
+			name = "Qasim Genghisid"
+			fire = 0
+			shock = 3
+			manuever = 2
+			siege = 0
+		}
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTB1112"
+		add_adm_power = 50
+		add_prestige = 20
+		301 = { 
+			spawn_rebels = { 
+				type = warlord_rebels
+				size = 1
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_rus.1113
+	title = "flavor_rus.EVTNAME1113"
+	desc = "flavor_rus.EVTDESC1113"
+	picture = CITY_DEVELOPMENT_eventPicture
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = "flavor_rus.EVTOPTA1113"
+		3401 = { 
+			change_province_name = "Sankt-Peterburg"
+			rename_capital = "Sankt-Peterburg"
+			change_culture = owner
+		}
+		hidden_effect = { 
+			clr_country_flag = changed_capital_by_event
+			set_country_flag = changed_capital_by_event
+		}
+		set_capital = 3401
+		ai_chance = { 
+			factor = 100
+		}
+	}
+	option = { 
+		name = "flavor_rus.EVTOPTB1113"
+		3401 = { 
+			change_province_name = "Sankt-Peterburg"
+			rename_capital = "Sankt-Peterburg"
+			change_culture = owner
+		}
+		ai_chance = { 
+			factor = 0
+		}
+	}
+	after = { 
+		if = { 
+			limit = { 
+				ai = yes
+			}
+		}
+		country_event = { 
+			id = flavor_rus.2003
+		}
+	}
+}
+country_event = { 
+	id = flavor_rus.2001
+	title = "flavor_rus.2001.name"
+	desc = "flavor_rus.2001.desc"
+	picture = CITY_DEVELOPMENT_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		tag = RUS
+		government = monarchy
+		dynasty = "Romanov"
+	}
+	mean_time_to_happen = { 
+		years = 100
+		modifier = { 
+			factor = 0.95
+			stability = 1
+		}
+		modifier = { 
+			factor = 0.95
+			stability = 2
+		}
+		modifier = { 
+			factor = 0.95
+			stability = 3
+		}
+		modifier = { 
+			factor = 0.50
+			has_heir = no
+		}
+	}
+	option = { 
+		name = "flavor_rus.2001.opta"
+		if = { 
+			limit = { 
+				has_heir = yes
+			}
+			kill_heir = { }
+		}
+		define_heir = { 
+			name = "Piotr"
+			dynasty = "Romanov"
+			ADM = 5
+			DIP = 5
+			MIL = 5
+		}
+	}
+}
+country_event = { 
+	id = flavor_rus.2002
+	title = "EVT_AI"
+	desc = "EVT_AI"
+	picture = COLONIZATION_eventPicture
+	trigger = { 
+		ai = yes
+		any_owned_province = { 
+			OR = { 
+				province_id = 2153
+				province_id = 2446
+				province_id = 1066
+				province_id = 2155
+				province_id = 2157
+				province_id = 1062
+			}
+			NOT = { 
+				has_building = fort_15th
+			}
+			NOT = { 
+				is_colony = yes
+			}
+		}
+		num_of_colonists = 1
+		treasury = 300
+		current_income_balance = 2
+		mil_tech = 25
+	}
+	mean_time_to_happen = { 
+		years = 1
+	}
+	option = { 
+		name = "EVT_AI"
+		random_owned_province = { 
+			limit = { 
+				OR = { 
+					province_id = 2153
+					province_id = 2446
+					province_id = 1066
+					province_id = 2155
+					province_id = 2157
+					province_id = 1062
+				}
+				NOT = { 
+					has_building = fort_15th
+				}
+				NOT = { 
+					has_building = fort_16th
+				}
+				NOT = { 
+					has_building = fort_17th
+				}
+				NOT = { 
+					has_building = fort_18th
+				}
+			}
+			add_building = fort_15th
+			log = "FE-RUS:[GetYear]:[This.Owner.GetName]:[This.GetName] was fortified as a bottleneck province:flavor_rus.2002"
+		}
+		add_treasury = -150
+	}
+}
+country_event = { 
+	id = flavor_rus.2003
+	title = "flavor_rus.2003.name"
+	desc = "flavor_rus.2003.desc"
+	picture = COLONIZATION_eventPicture
+	is_triggered_only = yes
+	trigger = { 
+		capital = 3401
+		NOT = { 
+			AND = { 
+				check_variable = { 
+					which = bbe
+					value = 1
+				}
+			}
+		}
+		mil_power = 200
+		treasury = 400
+	}
+	option = { 
+		name = "flavor_rus.2003.opta"
+		trigger = { 
+			OR = { 
+				ai = no
+				AND = { 
+					mil_power = 200
+					treasury = 400
+				}
+			}
+		}
+		set_country_flag = ForcedMigration_ScopesSetup
+		set_country_flag = ForcedMigration_InpSetup
+		set_country_flag = ForcedMigration_FromClassSF
+		set_country_flag = ForcedMigration_ToClassRE
+		set_country_flag = ForcedMigration_Abs
+		3401 = { 
+			set_province_flag = ForcedMigration_To
+		}
+		every_owned_province = { 
+			limit = { 
+				AND = { 
+					OR = { 
+						is_city = yes
+						is_colony = yes
+					}
+					NOT = { 
+						province_id = 5154
+					}
+				}
+				NOT = { 
+					has_province_flag = ForcedMigration_To
+				}
+				is_core = ROOT
+				culture_group = ROOT
+				NOT = { 
+					culture = ruthenian
+				}
+				superregion = greater_russia_superregion
+			}
+			set_province_flag = ForcedMigration_From
+		}
+		change_variable = { 
+			which = psg
+			value = 0.25
+		}
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					has_country_flag = ForcedMigration_ScopesSetup
+					has_country_flag = ForcedMigration_InpSetup
+					OR = { 
+						has_country_flag = ForcedMigration_FromClassSF
+						has_country_flag = ForcedMigration_FromClassNM
+						has_country_flag = ForcedMigration_FromClassRE
+					}
+				}
+				set_variable = { 
+					which = psi
+					value = 0
+				}
+				set_variable = { 
+					which = psj
+					value = 0
+				}
+				if = { 
+					limit = { 
+						has_country_flag = ForcedMigration_Abs
+					}
+					every_province = { 
+						limit = { 
+							has_province_flag = ForcedMigration_From
+						}
+						if = { 
+							limit = { 
+								has_owner_culture = yes
+							}
+							ROOT = { 
+								change_variable = { 
+									which = psi
+									which = psg
+								}
+								change_variable = { 
+									which = psj
+									which = psg
+								}
+							}
+						}
+						else = { 
+							ROOT = { 
+								change_variable = { 
+									which = psi
+									which = psg
+								}
+								subtract_variable = { 
+									which = psj
+									which = psg
+								}
+							}
+						}
+					}
+				}
+				else_if = { 
+					limit = { 
+						has_country_flag = ForcedMigration_Prop
+					}
+					every_province = { 
+						limit = { 
+							has_province_flag = ForcedMigration_From
+						}
+						set_variable = { 
+							which = psg
+							which = ROOT
+						}
+						if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassSF
+								}
+							}
+							set_variable = { 
+								which = psi
+								which = aap
+							}
+						}
+						else_if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassNM
+								}
+							}
+							set_variable = { 
+								which = psi
+								which = aaq
+							}
+						}
+						else_if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassRE
+								}
+							}
+							set_variable = { 
+								which = psi
+								which = aar
+							}
+						}
+						multiply_variable = { 
+							which = psi
+							which = psg
+						}
+						set_variable = { 
+							which = psj
+							which = psi
+						}
+						if = { 
+							limit = { 
+								has_owner_culture = yes
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = psj
+								value = -1
+							}
+						}
+						ROOT = { 
+							change_variable = { 
+								which = psi
+								which = PREV
+							}
+							change_variable = { 
+								which = psj
+								which = PREV
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = hxx
+					which = psj
+				}
+				set_variable = { 
+					which = psj
+					which = psi
+				}
+				set_variable = { 
+					which = psk
+					which = psi
+				}
+				set_variable = { 
+					which = psm
+					value = 0
+				}
+				set_variable = { 
+					which = psn
+					value = 0
+				}
+				set_variable = { 
+					which = pso
+					value = 0
+				}
+				set_variable = { 
+					which = psp
+					value = 0
+				}
+				every_province = { 
+					limit = { 
+						has_province_flag = ForcedMigration_From
+					}
+					every_province = { 
+						limit = { 
+							has_province_flag = ForcedMigration_To
+						}
+						PREV = { 
+							set_variable = { 
+								which = arf
+								which = arv
+							}
+							set_variable = { 
+								which = arg
+								which = arw
+							}
+						}
+						set_variable = { 
+							which = arf
+							which = PREV
+						}
+						set_variable = { 
+							which = arg
+							which = PREV
+						}
+						set_variable = { 
+							which = arh
+							which = arv
+						}
+						set_variable = { 
+							which = ari
+							which = arw
+						}
+						set_variable = { 
+							which = dpo
+							which = arh
+						}
+						set_variable = { 
+							which = dpp
+							which = ari
+						}
+						subtract_variable = { 
+							which = dpo
+							which = arf
+						}
+						subtract_variable = { 
+							which = dpp
+							which = arg
+						}
+						if = { 
+							limit = { 
+								NOT = { 
+									AND = { 
+										check_variable = { 
+											which = dpo
+											value = 0
+										}
+									}
+								}
+							}
+							multiply_variable = { 
+								which = dpo
+								value = -1
+							}
+						}
+						if = { 
+							limit = { 
+								NOT = { 
+									AND = { 
+										check_variable = { 
+											which = dpp
+											value = 0
+										}
+									}
+								}
+							}
+							multiply_variable = { 
+								which = dpp
+								value = -1
+							}
+						}
+						set_variable = { 
+							which = psm
+							which = dpo
+						}
+						change_variable = { 
+							which = psm
+							which = dpp
+						}
+						set_variable = { 
+							which = dpr
+							which = dpo
+						}
+						multiply_variable = { 
+							which = dpr
+							which = dpp
+						}
+						multiply_variable = { 
+							which = dpr
+							value = 1.135
+						}
+						if = { 
+							limit = { 
+								AND = { 
+									is_variable_equal = { 
+										which = psm
+										value = 0
+									}
+								}
+							}
+							set_variable = { 
+								which = psm
+								value = 0.001
+							}
+						}
+						divide_variable = { 
+							which = dpr
+							which = psm
+						}
+						subtract_variable = { 
+							which = psm
+							which = dpr
+						}
+						set_variable = { 
+							which = dpr
+							value = 0
+						}
+						set_variable = { 
+							which = dpo
+							value = 0
+						}
+						set_variable = { 
+							which = dpp
+							value = 0
+						}
+						ROOT = { 
+							change_variable = { 
+								which = psm
+								which = PREV
+							}
+							change_variable = { 
+								which = psn
+								value = 1
+							}
+						}
+					}
+					ROOT = { 
+						divide_variable = { 
+							which = psm
+							which = psn
+						}
+						change_variable = { 
+							which = pso
+							which = psm
+						}
+						change_variable = { 
+							which = psp
+							value = 1
+						}
+					}
+				}
+				divide_variable = { 
+					which = pso
+					which = psp
+				}
+				divide_variable = { 
+					which = pso
+					value = 150
+				}
+				set_variable = { 
+					which = psl
+					value = 1
+				}
+				change_variable = { 
+					which = psl
+					which = pso
+				}
+				set_variable = { 
+					which = psn
+					value = 0
+				}
+				set_variable = { 
+					which = pso
+					value = 0
+				}
+				every_province = { 
+					limit = { 
+						has_province_flag = ForcedMigration_From
+					}
+					set_variable = { 
+						which = psn
+						which = bau
+					}
+					ROOT = { 
+						change_variable = { 
+							which = psn
+							which = PREV
+						}
+						change_variable = { 
+							which = pso
+							value = 1
+						}
+					}
+				}
+				divide_variable = { 
+					which = psn
+					which = pso
+				}
+				set_variable = { 
+					which = pso
+					which = psn
+				}
+				multiply_variable = { 
+					which = pso
+					value = 3.5
+				}
+				change_variable = { 
+					which = psn
+					value = 120
+				}
+				divide_variable = { 
+					which = pso
+					which = psn
+				}
+				set_variable = { 
+					which = psm
+					which = pso
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = psm
+								value = 2
+							}
+						}
+					}
+					set_variable = { 
+						which = psm
+						value = 2
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = psm
+									value = 0.85
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = psm
+						value = 0.85
+					}
+				}
+				set_variable = { 
+					which = psn
+					value = 0
+				}
+				set_variable = { 
+					which = psp
+					value = 0
+				}
+				every_province = { 
+					limit = { 
+						OR = { 
+							has_province_flag = ForcedMigration_From
+							has_province_flag = ForcedMigration_To
+						}
+					}
+					export_to_variable = { 
+						which = export
+						value = local_autonomy
+					}
+					set_variable = { 
+						which = psn
+						which = export
+					}
+					set_variable = { 
+						which = pso
+						which = psn
+					}
+					change_variable = { 
+						which = pso
+						value = 150
+					}
+					if = { 
+						limit = { 
+							has_province_flag = ForcedMigration_From
+						}
+						multiply_variable = { 
+							which = psn
+							value = 4.5
+						}
+					}
+					else = { 
+						multiply_variable = { 
+							which = psn
+							value = 3.5
+						}
+					}
+					divide_variable = { 
+						which = psn
+						which = pso
+					}
+					ROOT = { 
+						change_variable = { 
+							which = psn
+							which = PREV
+						}
+						change_variable = { 
+							which = psp
+							value = 1
+						}
+					}
+				}
+				divide_variable = { 
+					which = psn
+					which = psp
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = psn
+								value = 1.5
+							}
+						}
+					}
+					set_variable = { 
+						which = psn
+						value = 1.5
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = psn
+									value = 0.75
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = psn
+						value = 0.75
+					}
+				}
+				set_variable = { 
+					which = pso
+					value = 0
+				}
+				set_variable = { 
+					which = psp
+					value = 0
+				}
+				every_province = { 
+					limit = { 
+						OR = { 
+							has_province_flag = ForcedMigration_From
+							has_province_flag = ForcedMigration_To
+						}
+					}
+					set_variable = { 
+						which = pso
+						which = ati
+					}
+					set_variable = { 
+						which = psp
+						which = ati
+					}
+					change_variable = { 
+						which = pso
+						value = 30
+					}
+					multiply_variable = { 
+						which = psp
+						value = 1.5
+					}
+					divide_variable = { 
+						which = pso
+						which = psp
+					}
+					ROOT = { 
+						change_variable = { 
+							which = pso
+							which = PREV
+						}
+						change_variable = { 
+							which = psp
+							value = 1
+						}
+					}
+				}
+				divide_variable = { 
+					which = pso
+					which = psp
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = pso
+								value = 1.5
+							}
+						}
+					}
+					set_variable = { 
+						which = pso
+						value = 1.5
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = psn
+									value = 0.75
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = pso
+						value = 0.75
+					}
+				}
+				set_variable = { 
+					which = psp
+					value = 0
+				}
+				set_variable = { 
+					which = psq
+					value = 0
+				}
+				set_variable = { 
+					which = psr
+					value = 0
+				}
+				every_province = { 
+					limit = { 
+						OR = { 
+							has_province_flag = ForcedMigration_From
+							has_province_flag = ForcedMigration_To
+						}
+					}
+					if = { 
+						limit = { 
+							has_owner_culture = yes
+						}
+						set_variable = { 
+							which = psp
+							value = 1.0
+						}
+					}
+					else_if = { 
+						limit = { 
+							has_owner_accepted_culture = yes
+						}
+						set_variable = { 
+							which = psp
+							value = 1.25
+						}
+					}
+					else = { 
+						set_variable = { 
+							which = psp
+							value = 2.0
+						}
+					}
+					if = { 
+						limit = { 
+							has_owner_religion = yes
+						}
+						set_variable = { 
+							which = psq
+							value = 1.0
+						}
+					}
+					else = { 
+						set_variable = { 
+							which = psq
+							value = 1.5
+						}
+					}
+					ROOT = { 
+						change_variable = { 
+							which = psp
+							which = PREV
+						}
+						change_variable = { 
+							which = psq
+							which = PREV
+						}
+						change_variable = { 
+							which = psr
+							value = 1
+						}
+					}
+				}
+				divide_variable = { 
+					which = psp
+					which = psr
+				}
+				divide_variable = { 
+					which = psq
+					which = psr
+				}
+				set_variable = { 
+					which = ptf
+					value = 0
+				}
+				set_variable = { 
+					which = ptg
+					value = 0
+				}
+				set_variable = { 
+					which = pth
+					value = 0
+				}
+				if = { 
+					limit = { 
+						has_country_flag = ForcedMigration_Abs
+					}
+					every_province = { 
+						limit = { 
+							has_province_flag = ForcedMigration_From
+						}
+						set_variable = { 
+							which = psg
+							which = ROOT
+						}
+						set_variable = { 
+							which = ptf
+							which = psg
+						}
+						if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassSF
+								}
+							}
+							set_variable = { 
+								which = ptg
+								which = aap
+							}
+						}
+						else_if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassNM
+								}
+							}
+							set_variable = { 
+								which = ptg
+								which = aaq
+							}
+						}
+						else_if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassRE
+								}
+							}
+							set_variable = { 
+								which = ptg
+								which = aar
+							}
+						}
+						divide_variable = { 
+							which = ptf
+							which = ptg
+						}
+						set_variable = { 
+							which = ptg
+							which = psg
+						}
+						ROOT = { 
+							change_variable = { 
+								which = ptf
+								which = PREV
+							}
+							change_variable = { 
+								which = ptg
+								which = PREV
+							}
+							change_variable = { 
+								which = pth
+								value = 1
+							}
+						}
+					}
+				}
+				else_if = { 
+					limit = { 
+						has_country_flag = ForcedMigration_Prop
+					}
+					every_province = { 
+						limit = { 
+							has_province_flag = ForcedMigration_From
+						}
+						set_variable = { 
+							which = psg
+							which = ROOT
+						}
+						if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassSF
+								}
+							}
+							set_variable = { 
+								which = ptg
+								which = aap
+							}
+							set_variable = { 
+								which = ptf
+								which = aap
+							}
+						}
+						else_if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassNM
+								}
+							}
+							set_variable = { 
+								which = ptg
+								which = aaq
+							}
+							set_variable = { 
+								which = ptf
+								which = aaq
+							}
+						}
+						else_if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassRE
+								}
+							}
+							set_variable = { 
+								which = ptg
+								which = aar
+							}
+							set_variable = { 
+								which = ptf
+								which = aar
+							}
+						}
+						multiply_variable = { 
+							which = ptf
+							which = psg
+						}
+						divide_variable = { 
+							which = ptf
+							which = ptg
+						}
+						ROOT = { 
+							change_variable = { 
+								which = ptf
+								which = PREV
+							}
+							change_variable = { 
+								which = ptg
+								which = PREV
+							}
+							change_variable = { 
+								which = pth
+								value = 1
+							}
+						}
+					}
+				}
+				divide_variable = { 
+					which = ptf
+					which = pth
+				}
+				divide_variable = { 
+					which = ptf
+					value = 0.15
+				}
+				change_variable = { 
+					which = ptf
+					value = 0.95
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = ptf
+								value = 5
+							}
+						}
+					}
+					set_variable = { 
+						which = ptf
+						value = 5
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = ptf
+									value = 0.975
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = ptf
+						value = 0.975
+					}
+				}
+				if = { 
+					limit = { 
+						has_country_flag = ForcedMigration_FromClassSF
+					}
+					multiply_variable = { 
+						which = psj
+						value = 3
+					}
+					multiply_variable = { 
+						which = psk
+						value = 0.8
+					}
+				}
+				else_if = { 
+					limit = { 
+						has_country_flag = ForcedMigration_FromClassNM
+					}
+					multiply_variable = { 
+						which = psj
+						value = 4
+					}
+					multiply_variable = { 
+						which = psk
+						value = 1.3
+					}
+				}
+				else_if = { 
+					limit = { 
+						has_country_flag = ForcedMigration_FromClassRE
+					}
+					multiply_variable = { 
+						which = psj
+						value = 5
+					}
+					multiply_variable = { 
+						which = psk
+						value = 1.8
+					}
+				}
+				multiply_variable = { 
+					which = psj
+					which = psl
+				}
+				multiply_variable = { 
+					which = psj
+					which = psm
+				}
+				multiply_variable = { 
+					which = psj
+					which = psn
+				}
+				multiply_variable = { 
+					which = psj
+					which = pso
+				}
+				multiply_variable = { 
+					which = psj
+					which = psp
+				}
+				multiply_variable = { 
+					which = psj
+					which = psq
+				}
+				multiply_variable = { 
+					which = psj
+					which = ptf
+				}
+				multiply_variable = { 
+					which = psk
+					which = psl
+				}
+				multiply_variable = { 
+					which = psk
+					which = psm
+				}
+				multiply_variable = { 
+					which = psk
+					which = psn
+				}
+				multiply_variable = { 
+					which = psk
+					which = pso
+				}
+				multiply_variable = { 
+					which = psk
+					which = psp
+				}
+				multiply_variable = { 
+					which = psk
+					which = psq
+				}
+				multiply_variable = { 
+					which = psk
+					which = ptf
+				}
+				set_variable = { 
+					which = psr
+					which = hxx
+				}
+				export_to_variable = { 
+					which = export
+					value = treasury
+				}
+				set_variable = { 
+					which = hxx
+					which = export
+				}
+				export_to_variable = { 
+					which = export
+					value = trigger_value:mil_power
+				}
+				set_variable = { 
+					which = amn
+					which = export
+				}
+			}
+		}
+	}
+	option = { 
+		name = "flavor_rus.2003.optb"
+		trigger = { 
+			OR = { 
+				ai = no
+				AND = { 
+					mil_power = 400
+					treasury = 800
+				}
+			}
+		}
+		set_country_flag = ForcedMigration_ScopesSetup
+		set_country_flag = ForcedMigration_InpSetup
+		set_country_flag = ForcedMigration_FromClassSF
+		set_country_flag = ForcedMigration_ToClassRE
+		set_country_flag = ForcedMigration_Abs
+		3401 = { 
+			set_province_flag = ForcedMigration_To
+		}
+		every_owned_province = { 
+			limit = { 
+				AND = { 
+					OR = { 
+						is_city = yes
+						is_colony = yes
+					}
+					NOT = { 
+						province_id = 5154
+					}
+				}
+				NOT = { 
+					has_province_flag = ForcedMigration_To
+				}
+				is_core = ROOT
+				culture_group = ROOT
+				NOT = { 
+					culture = ruthenian
+				}
+				superregion = greater_russia_superregion
+			}
+			set_province_flag = ForcedMigration_From
+		}
+		change_variable = { 
+			which = psg
+			value = 0.5
+		}
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					has_country_flag = ForcedMigration_ScopesSetup
+					has_country_flag = ForcedMigration_InpSetup
+					OR = { 
+						has_country_flag = ForcedMigration_FromClassSF
+						has_country_flag = ForcedMigration_FromClassNM
+						has_country_flag = ForcedMigration_FromClassRE
+					}
+				}
+				set_variable = { 
+					which = psi
+					value = 0
+				}
+				set_variable = { 
+					which = psj
+					value = 0
+				}
+				if = { 
+					limit = { 
+						has_country_flag = ForcedMigration_Abs
+					}
+					every_province = { 
+						limit = { 
+							has_province_flag = ForcedMigration_From
+						}
+						if = { 
+							limit = { 
+								has_owner_culture = yes
+							}
+							ROOT = { 
+								change_variable = { 
+									which = psi
+									which = psg
+								}
+								change_variable = { 
+									which = psj
+									which = psg
+								}
+							}
+						}
+						else = { 
+							ROOT = { 
+								change_variable = { 
+									which = psi
+									which = psg
+								}
+								subtract_variable = { 
+									which = psj
+									which = psg
+								}
+							}
+						}
+					}
+				}
+				else_if = { 
+					limit = { 
+						has_country_flag = ForcedMigration_Prop
+					}
+					every_province = { 
+						limit = { 
+							has_province_flag = ForcedMigration_From
+						}
+						set_variable = { 
+							which = psg
+							which = ROOT
+						}
+						if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassSF
+								}
+							}
+							set_variable = { 
+								which = psi
+								which = aap
+							}
+						}
+						else_if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassNM
+								}
+							}
+							set_variable = { 
+								which = psi
+								which = aaq
+							}
+						}
+						else_if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassRE
+								}
+							}
+							set_variable = { 
+								which = psi
+								which = aar
+							}
+						}
+						multiply_variable = { 
+							which = psi
+							which = psg
+						}
+						set_variable = { 
+							which = psj
+							which = psi
+						}
+						if = { 
+							limit = { 
+								has_owner_culture = yes
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = psj
+								value = -1
+							}
+						}
+						ROOT = { 
+							change_variable = { 
+								which = psi
+								which = PREV
+							}
+							change_variable = { 
+								which = psj
+								which = PREV
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = hxx
+					which = psj
+				}
+				set_variable = { 
+					which = psj
+					which = psi
+				}
+				set_variable = { 
+					which = psk
+					which = psi
+				}
+				set_variable = { 
+					which = psm
+					value = 0
+				}
+				set_variable = { 
+					which = psn
+					value = 0
+				}
+				set_variable = { 
+					which = pso
+					value = 0
+				}
+				set_variable = { 
+					which = psp
+					value = 0
+				}
+				every_province = { 
+					limit = { 
+						has_province_flag = ForcedMigration_From
+					}
+					every_province = { 
+						limit = { 
+							has_province_flag = ForcedMigration_To
+						}
+						PREV = { 
+							set_variable = { 
+								which = arf
+								which = arv
+							}
+							set_variable = { 
+								which = arg
+								which = arw
+							}
+						}
+						set_variable = { 
+							which = arf
+							which = PREV
+						}
+						set_variable = { 
+							which = arg
+							which = PREV
+						}
+						set_variable = { 
+							which = arh
+							which = arv
+						}
+						set_variable = { 
+							which = ari
+							which = arw
+						}
+						set_variable = { 
+							which = dpo
+							which = arh
+						}
+						set_variable = { 
+							which = dpp
+							which = ari
+						}
+						subtract_variable = { 
+							which = dpo
+							which = arf
+						}
+						subtract_variable = { 
+							which = dpp
+							which = arg
+						}
+						if = { 
+							limit = { 
+								NOT = { 
+									AND = { 
+										check_variable = { 
+											which = dpo
+											value = 0
+										}
+									}
+								}
+							}
+							multiply_variable = { 
+								which = dpo
+								value = -1
+							}
+						}
+						if = { 
+							limit = { 
+								NOT = { 
+									AND = { 
+										check_variable = { 
+											which = dpp
+											value = 0
+										}
+									}
+								}
+							}
+							multiply_variable = { 
+								which = dpp
+								value = -1
+							}
+						}
+						set_variable = { 
+							which = psm
+							which = dpo
+						}
+						change_variable = { 
+							which = psm
+							which = dpp
+						}
+						set_variable = { 
+							which = dpr
+							which = dpo
+						}
+						multiply_variable = { 
+							which = dpr
+							which = dpp
+						}
+						multiply_variable = { 
+							which = dpr
+							value = 1.135
+						}
+						if = { 
+							limit = { 
+								AND = { 
+									is_variable_equal = { 
+										which = psm
+										value = 0
+									}
+								}
+							}
+							set_variable = { 
+								which = psm
+								value = 0.001
+							}
+						}
+						divide_variable = { 
+							which = dpr
+							which = psm
+						}
+						subtract_variable = { 
+							which = psm
+							which = dpr
+						}
+						set_variable = { 
+							which = dpr
+							value = 0
+						}
+						set_variable = { 
+							which = dpo
+							value = 0
+						}
+						set_variable = { 
+							which = dpp
+							value = 0
+						}
+						ROOT = { 
+							change_variable = { 
+								which = psm
+								which = PREV
+							}
+							change_variable = { 
+								which = psn
+								value = 1
+							}
+						}
+					}
+					ROOT = { 
+						divide_variable = { 
+							which = psm
+							which = psn
+						}
+						change_variable = { 
+							which = pso
+							which = psm
+						}
+						change_variable = { 
+							which = psp
+							value = 1
+						}
+					}
+				}
+				divide_variable = { 
+					which = pso
+					which = psp
+				}
+				divide_variable = { 
+					which = pso
+					value = 150
+				}
+				set_variable = { 
+					which = psl
+					value = 1
+				}
+				change_variable = { 
+					which = psl
+					which = pso
+				}
+				set_variable = { 
+					which = psn
+					value = 0
+				}
+				set_variable = { 
+					which = pso
+					value = 0
+				}
+				every_province = { 
+					limit = { 
+						has_province_flag = ForcedMigration_From
+					}
+					set_variable = { 
+						which = psn
+						which = bau
+					}
+					ROOT = { 
+						change_variable = { 
+							which = psn
+							which = PREV
+						}
+						change_variable = { 
+							which = pso
+							value = 1
+						}
+					}
+				}
+				divide_variable = { 
+					which = psn
+					which = pso
+				}
+				set_variable = { 
+					which = pso
+					which = psn
+				}
+				multiply_variable = { 
+					which = pso
+					value = 3.5
+				}
+				change_variable = { 
+					which = psn
+					value = 120
+				}
+				divide_variable = { 
+					which = pso
+					which = psn
+				}
+				set_variable = { 
+					which = psm
+					which = pso
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = psm
+								value = 2
+							}
+						}
+					}
+					set_variable = { 
+						which = psm
+						value = 2
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = psm
+									value = 0.85
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = psm
+						value = 0.85
+					}
+				}
+				set_variable = { 
+					which = psn
+					value = 0
+				}
+				set_variable = { 
+					which = psp
+					value = 0
+				}
+				every_province = { 
+					limit = { 
+						OR = { 
+							has_province_flag = ForcedMigration_From
+							has_province_flag = ForcedMigration_To
+						}
+					}
+					export_to_variable = { 
+						which = export
+						value = local_autonomy
+					}
+					set_variable = { 
+						which = psn
+						which = export
+					}
+					set_variable = { 
+						which = pso
+						which = psn
+					}
+					change_variable = { 
+						which = pso
+						value = 150
+					}
+					if = { 
+						limit = { 
+							has_province_flag = ForcedMigration_From
+						}
+						multiply_variable = { 
+							which = psn
+							value = 4.5
+						}
+					}
+					else = { 
+						multiply_variable = { 
+							which = psn
+							value = 3.5
+						}
+					}
+					divide_variable = { 
+						which = psn
+						which = pso
+					}
+					ROOT = { 
+						change_variable = { 
+							which = psn
+							which = PREV
+						}
+						change_variable = { 
+							which = psp
+							value = 1
+						}
+					}
+				}
+				divide_variable = { 
+					which = psn
+					which = psp
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = psn
+								value = 1.5
+							}
+						}
+					}
+					set_variable = { 
+						which = psn
+						value = 1.5
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = psn
+									value = 0.75
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = psn
+						value = 0.75
+					}
+				}
+				set_variable = { 
+					which = pso
+					value = 0
+				}
+				set_variable = { 
+					which = psp
+					value = 0
+				}
+				every_province = { 
+					limit = { 
+						OR = { 
+							has_province_flag = ForcedMigration_From
+							has_province_flag = ForcedMigration_To
+						}
+					}
+					set_variable = { 
+						which = pso
+						which = ati
+					}
+					set_variable = { 
+						which = psp
+						which = ati
+					}
+					change_variable = { 
+						which = pso
+						value = 30
+					}
+					multiply_variable = { 
+						which = psp
+						value = 1.5
+					}
+					divide_variable = { 
+						which = pso
+						which = psp
+					}
+					ROOT = { 
+						change_variable = { 
+							which = pso
+							which = PREV
+						}
+						change_variable = { 
+							which = psp
+							value = 1
+						}
+					}
+				}
+				divide_variable = { 
+					which = pso
+					which = psp
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = pso
+								value = 1.5
+							}
+						}
+					}
+					set_variable = { 
+						which = pso
+						value = 1.5
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = psn
+									value = 0.75
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = pso
+						value = 0.75
+					}
+				}
+				set_variable = { 
+					which = psp
+					value = 0
+				}
+				set_variable = { 
+					which = psq
+					value = 0
+				}
+				set_variable = { 
+					which = psr
+					value = 0
+				}
+				every_province = { 
+					limit = { 
+						OR = { 
+							has_province_flag = ForcedMigration_From
+							has_province_flag = ForcedMigration_To
+						}
+					}
+					if = { 
+						limit = { 
+							has_owner_culture = yes
+						}
+						set_variable = { 
+							which = psp
+							value = 1.0
+						}
+					}
+					else_if = { 
+						limit = { 
+							has_owner_accepted_culture = yes
+						}
+						set_variable = { 
+							which = psp
+							value = 1.25
+						}
+					}
+					else = { 
+						set_variable = { 
+							which = psp
+							value = 2.0
+						}
+					}
+					if = { 
+						limit = { 
+							has_owner_religion = yes
+						}
+						set_variable = { 
+							which = psq
+							value = 1.0
+						}
+					}
+					else = { 
+						set_variable = { 
+							which = psq
+							value = 1.5
+						}
+					}
+					ROOT = { 
+						change_variable = { 
+							which = psp
+							which = PREV
+						}
+						change_variable = { 
+							which = psq
+							which = PREV
+						}
+						change_variable = { 
+							which = psr
+							value = 1
+						}
+					}
+				}
+				divide_variable = { 
+					which = psp
+					which = psr
+				}
+				divide_variable = { 
+					which = psq
+					which = psr
+				}
+				set_variable = { 
+					which = ptf
+					value = 0
+				}
+				set_variable = { 
+					which = ptg
+					value = 0
+				}
+				set_variable = { 
+					which = pth
+					value = 0
+				}
+				if = { 
+					limit = { 
+						has_country_flag = ForcedMigration_Abs
+					}
+					every_province = { 
+						limit = { 
+							has_province_flag = ForcedMigration_From
+						}
+						set_variable = { 
+							which = psg
+							which = ROOT
+						}
+						set_variable = { 
+							which = ptf
+							which = psg
+						}
+						if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassSF
+								}
+							}
+							set_variable = { 
+								which = ptg
+								which = aap
+							}
+						}
+						else_if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassNM
+								}
+							}
+							set_variable = { 
+								which = ptg
+								which = aaq
+							}
+						}
+						else_if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassRE
+								}
+							}
+							set_variable = { 
+								which = ptg
+								which = aar
+							}
+						}
+						divide_variable = { 
+							which = ptf
+							which = ptg
+						}
+						set_variable = { 
+							which = ptg
+							which = psg
+						}
+						ROOT = { 
+							change_variable = { 
+								which = ptf
+								which = PREV
+							}
+							change_variable = { 
+								which = ptg
+								which = PREV
+							}
+							change_variable = { 
+								which = pth
+								value = 1
+							}
+						}
+					}
+				}
+				else_if = { 
+					limit = { 
+						has_country_flag = ForcedMigration_Prop
+					}
+					every_province = { 
+						limit = { 
+							has_province_flag = ForcedMigration_From
+						}
+						set_variable = { 
+							which = psg
+							which = ROOT
+						}
+						if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassSF
+								}
+							}
+							set_variable = { 
+								which = ptg
+								which = aap
+							}
+							set_variable = { 
+								which = ptf
+								which = aap
+							}
+						}
+						else_if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassNM
+								}
+							}
+							set_variable = { 
+								which = ptg
+								which = aaq
+							}
+							set_variable = { 
+								which = ptf
+								which = aaq
+							}
+						}
+						else_if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassRE
+								}
+							}
+							set_variable = { 
+								which = ptg
+								which = aar
+							}
+							set_variable = { 
+								which = ptf
+								which = aar
+							}
+						}
+						multiply_variable = { 
+							which = ptf
+							which = psg
+						}
+						divide_variable = { 
+							which = ptf
+							which = ptg
+						}
+						ROOT = { 
+							change_variable = { 
+								which = ptf
+								which = PREV
+							}
+							change_variable = { 
+								which = ptg
+								which = PREV
+							}
+							change_variable = { 
+								which = pth
+								value = 1
+							}
+						}
+					}
+				}
+				divide_variable = { 
+					which = ptf
+					which = pth
+				}
+				divide_variable = { 
+					which = ptf
+					value = 0.15
+				}
+				change_variable = { 
+					which = ptf
+					value = 0.95
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = ptf
+								value = 5
+							}
+						}
+					}
+					set_variable = { 
+						which = ptf
+						value = 5
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = ptf
+									value = 0.975
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = ptf
+						value = 0.975
+					}
+				}
+				if = { 
+					limit = { 
+						has_country_flag = ForcedMigration_FromClassSF
+					}
+					multiply_variable = { 
+						which = psj
+						value = 3
+					}
+					multiply_variable = { 
+						which = psk
+						value = 0.8
+					}
+				}
+				else_if = { 
+					limit = { 
+						has_country_flag = ForcedMigration_FromClassNM
+					}
+					multiply_variable = { 
+						which = psj
+						value = 4
+					}
+					multiply_variable = { 
+						which = psk
+						value = 1.3
+					}
+				}
+				else_if = { 
+					limit = { 
+						has_country_flag = ForcedMigration_FromClassRE
+					}
+					multiply_variable = { 
+						which = psj
+						value = 5
+					}
+					multiply_variable = { 
+						which = psk
+						value = 1.8
+					}
+				}
+				multiply_variable = { 
+					which = psj
+					which = psl
+				}
+				multiply_variable = { 
+					which = psj
+					which = psm
+				}
+				multiply_variable = { 
+					which = psj
+					which = psn
+				}
+				multiply_variable = { 
+					which = psj
+					which = pso
+				}
+				multiply_variable = { 
+					which = psj
+					which = psp
+				}
+				multiply_variable = { 
+					which = psj
+					which = psq
+				}
+				multiply_variable = { 
+					which = psj
+					which = ptf
+				}
+				multiply_variable = { 
+					which = psk
+					which = psl
+				}
+				multiply_variable = { 
+					which = psk
+					which = psm
+				}
+				multiply_variable = { 
+					which = psk
+					which = psn
+				}
+				multiply_variable = { 
+					which = psk
+					which = pso
+				}
+				multiply_variable = { 
+					which = psk
+					which = psp
+				}
+				multiply_variable = { 
+					which = psk
+					which = psq
+				}
+				multiply_variable = { 
+					which = psk
+					which = ptf
+				}
+				set_variable = { 
+					which = psr
+					which = hxx
+				}
+				export_to_variable = { 
+					which = export
+					value = treasury
+				}
+				set_variable = { 
+					which = hxx
+					which = export
+				}
+				export_to_variable = { 
+					which = export
+					value = trigger_value:mil_power
+				}
+				set_variable = { 
+					which = amn
+					which = export
+				}
+			}
+		}
+	}
+	option = { 
+		name = "flavor_rus.2003.optc"
+		trigger = { 
+			OR = { 
+				ai = no
+				AND = { 
+					mil_power = 800
+					treasury = 1600
+				}
+			}
+		}
+		set_country_flag = ForcedMigration_ScopesSetup
+		set_country_flag = ForcedMigration_InpSetup
+		set_country_flag = ForcedMigration_FromClassSF
+		set_country_flag = ForcedMigration_ToClassRE
+		set_country_flag = ForcedMigration_Abs
+		3401 = { 
+			set_province_flag = ForcedMigration_To
+		}
+		every_owned_province = { 
+			limit = { 
+				AND = { 
+					OR = { 
+						is_city = yes
+						is_colony = yes
+					}
+					NOT = { 
+						province_id = 5154
+					}
+				}
+				NOT = { 
+					has_province_flag = ForcedMigration_To
+				}
+				is_core = ROOT
+				culture_group = ROOT
+				NOT = { 
+					culture = ruthenian
+				}
+				superregion = greater_russia_superregion
+			}
+			set_province_flag = ForcedMigration_From
+		}
+		change_variable = { 
+			which = psg
+			value = 1
+		}
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					has_country_flag = ForcedMigration_ScopesSetup
+					has_country_flag = ForcedMigration_InpSetup
+					OR = { 
+						has_country_flag = ForcedMigration_FromClassSF
+						has_country_flag = ForcedMigration_FromClassNM
+						has_country_flag = ForcedMigration_FromClassRE
+					}
+				}
+				set_variable = { 
+					which = psi
+					value = 0
+				}
+				set_variable = { 
+					which = psj
+					value = 0
+				}
+				if = { 
+					limit = { 
+						has_country_flag = ForcedMigration_Abs
+					}
+					every_province = { 
+						limit = { 
+							has_province_flag = ForcedMigration_From
+						}
+						if = { 
+							limit = { 
+								has_owner_culture = yes
+							}
+							ROOT = { 
+								change_variable = { 
+									which = psi
+									which = psg
+								}
+								change_variable = { 
+									which = psj
+									which = psg
+								}
+							}
+						}
+						else = { 
+							ROOT = { 
+								change_variable = { 
+									which = psi
+									which = psg
+								}
+								subtract_variable = { 
+									which = psj
+									which = psg
+								}
+							}
+						}
+					}
+				}
+				else_if = { 
+					limit = { 
+						has_country_flag = ForcedMigration_Prop
+					}
+					every_province = { 
+						limit = { 
+							has_province_flag = ForcedMigration_From
+						}
+						set_variable = { 
+							which = psg
+							which = ROOT
+						}
+						if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassSF
+								}
+							}
+							set_variable = { 
+								which = psi
+								which = aap
+							}
+						}
+						else_if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassNM
+								}
+							}
+							set_variable = { 
+								which = psi
+								which = aaq
+							}
+						}
+						else_if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassRE
+								}
+							}
+							set_variable = { 
+								which = psi
+								which = aar
+							}
+						}
+						multiply_variable = { 
+							which = psi
+							which = psg
+						}
+						set_variable = { 
+							which = psj
+							which = psi
+						}
+						if = { 
+							limit = { 
+								has_owner_culture = yes
+							}
+						}
+						else = { 
+							multiply_variable = { 
+								which = psj
+								value = -1
+							}
+						}
+						ROOT = { 
+							change_variable = { 
+								which = psi
+								which = PREV
+							}
+							change_variable = { 
+								which = psj
+								which = PREV
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = hxx
+					which = psj
+				}
+				set_variable = { 
+					which = psj
+					which = psi
+				}
+				set_variable = { 
+					which = psk
+					which = psi
+				}
+				set_variable = { 
+					which = psm
+					value = 0
+				}
+				set_variable = { 
+					which = psn
+					value = 0
+				}
+				set_variable = { 
+					which = pso
+					value = 0
+				}
+				set_variable = { 
+					which = psp
+					value = 0
+				}
+				every_province = { 
+					limit = { 
+						has_province_flag = ForcedMigration_From
+					}
+					every_province = { 
+						limit = { 
+							has_province_flag = ForcedMigration_To
+						}
+						PREV = { 
+							set_variable = { 
+								which = arf
+								which = arv
+							}
+							set_variable = { 
+								which = arg
+								which = arw
+							}
+						}
+						set_variable = { 
+							which = arf
+							which = PREV
+						}
+						set_variable = { 
+							which = arg
+							which = PREV
+						}
+						set_variable = { 
+							which = arh
+							which = arv
+						}
+						set_variable = { 
+							which = ari
+							which = arw
+						}
+						set_variable = { 
+							which = dpo
+							which = arh
+						}
+						set_variable = { 
+							which = dpp
+							which = ari
+						}
+						subtract_variable = { 
+							which = dpo
+							which = arf
+						}
+						subtract_variable = { 
+							which = dpp
+							which = arg
+						}
+						if = { 
+							limit = { 
+								NOT = { 
+									AND = { 
+										check_variable = { 
+											which = dpo
+											value = 0
+										}
+									}
+								}
+							}
+							multiply_variable = { 
+								which = dpo
+								value = -1
+							}
+						}
+						if = { 
+							limit = { 
+								NOT = { 
+									AND = { 
+										check_variable = { 
+											which = dpp
+											value = 0
+										}
+									}
+								}
+							}
+							multiply_variable = { 
+								which = dpp
+								value = -1
+							}
+						}
+						set_variable = { 
+							which = psm
+							which = dpo
+						}
+						change_variable = { 
+							which = psm
+							which = dpp
+						}
+						set_variable = { 
+							which = dpr
+							which = dpo
+						}
+						multiply_variable = { 
+							which = dpr
+							which = dpp
+						}
+						multiply_variable = { 
+							which = dpr
+							value = 1.135
+						}
+						if = { 
+							limit = { 
+								AND = { 
+									is_variable_equal = { 
+										which = psm
+										value = 0
+									}
+								}
+							}
+							set_variable = { 
+								which = psm
+								value = 0.001
+							}
+						}
+						divide_variable = { 
+							which = dpr
+							which = psm
+						}
+						subtract_variable = { 
+							which = psm
+							which = dpr
+						}
+						set_variable = { 
+							which = dpr
+							value = 0
+						}
+						set_variable = { 
+							which = dpo
+							value = 0
+						}
+						set_variable = { 
+							which = dpp
+							value = 0
+						}
+						ROOT = { 
+							change_variable = { 
+								which = psm
+								which = PREV
+							}
+							change_variable = { 
+								which = psn
+								value = 1
+							}
+						}
+					}
+					ROOT = { 
+						divide_variable = { 
+							which = psm
+							which = psn
+						}
+						change_variable = { 
+							which = pso
+							which = psm
+						}
+						change_variable = { 
+							which = psp
+							value = 1
+						}
+					}
+				}
+				divide_variable = { 
+					which = pso
+					which = psp
+				}
+				divide_variable = { 
+					which = pso
+					value = 150
+				}
+				set_variable = { 
+					which = psl
+					value = 1
+				}
+				change_variable = { 
+					which = psl
+					which = pso
+				}
+				set_variable = { 
+					which = psn
+					value = 0
+				}
+				set_variable = { 
+					which = pso
+					value = 0
+				}
+				every_province = { 
+					limit = { 
+						has_province_flag = ForcedMigration_From
+					}
+					set_variable = { 
+						which = psn
+						which = bau
+					}
+					ROOT = { 
+						change_variable = { 
+							which = psn
+							which = PREV
+						}
+						change_variable = { 
+							which = pso
+							value = 1
+						}
+					}
+				}
+				divide_variable = { 
+					which = psn
+					which = pso
+				}
+				set_variable = { 
+					which = pso
+					which = psn
+				}
+				multiply_variable = { 
+					which = pso
+					value = 3.5
+				}
+				change_variable = { 
+					which = psn
+					value = 120
+				}
+				divide_variable = { 
+					which = pso
+					which = psn
+				}
+				set_variable = { 
+					which = psm
+					which = pso
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = psm
+								value = 2
+							}
+						}
+					}
+					set_variable = { 
+						which = psm
+						value = 2
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = psm
+									value = 0.85
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = psm
+						value = 0.85
+					}
+				}
+				set_variable = { 
+					which = psn
+					value = 0
+				}
+				set_variable = { 
+					which = psp
+					value = 0
+				}
+				every_province = { 
+					limit = { 
+						OR = { 
+							has_province_flag = ForcedMigration_From
+							has_province_flag = ForcedMigration_To
+						}
+					}
+					export_to_variable = { 
+						which = export
+						value = local_autonomy
+					}
+					set_variable = { 
+						which = psn
+						which = export
+					}
+					set_variable = { 
+						which = pso
+						which = psn
+					}
+					change_variable = { 
+						which = pso
+						value = 150
+					}
+					if = { 
+						limit = { 
+							has_province_flag = ForcedMigration_From
+						}
+						multiply_variable = { 
+							which = psn
+							value = 4.5
+						}
+					}
+					else = { 
+						multiply_variable = { 
+							which = psn
+							value = 3.5
+						}
+					}
+					divide_variable = { 
+						which = psn
+						which = pso
+					}
+					ROOT = { 
+						change_variable = { 
+							which = psn
+							which = PREV
+						}
+						change_variable = { 
+							which = psp
+							value = 1
+						}
+					}
+				}
+				divide_variable = { 
+					which = psn
+					which = psp
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = psn
+								value = 1.5
+							}
+						}
+					}
+					set_variable = { 
+						which = psn
+						value = 1.5
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = psn
+									value = 0.75
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = psn
+						value = 0.75
+					}
+				}
+				set_variable = { 
+					which = pso
+					value = 0
+				}
+				set_variable = { 
+					which = psp
+					value = 0
+				}
+				every_province = { 
+					limit = { 
+						OR = { 
+							has_province_flag = ForcedMigration_From
+							has_province_flag = ForcedMigration_To
+						}
+					}
+					set_variable = { 
+						which = pso
+						which = ati
+					}
+					set_variable = { 
+						which = psp
+						which = ati
+					}
+					change_variable = { 
+						which = pso
+						value = 30
+					}
+					multiply_variable = { 
+						which = psp
+						value = 1.5
+					}
+					divide_variable = { 
+						which = pso
+						which = psp
+					}
+					ROOT = { 
+						change_variable = { 
+							which = pso
+							which = PREV
+						}
+						change_variable = { 
+							which = psp
+							value = 1
+						}
+					}
+				}
+				divide_variable = { 
+					which = pso
+					which = psp
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = pso
+								value = 1.5
+							}
+						}
+					}
+					set_variable = { 
+						which = pso
+						value = 1.5
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = psn
+									value = 0.75
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = pso
+						value = 0.75
+					}
+				}
+				set_variable = { 
+					which = psp
+					value = 0
+				}
+				set_variable = { 
+					which = psq
+					value = 0
+				}
+				set_variable = { 
+					which = psr
+					value = 0
+				}
+				every_province = { 
+					limit = { 
+						OR = { 
+							has_province_flag = ForcedMigration_From
+							has_province_flag = ForcedMigration_To
+						}
+					}
+					if = { 
+						limit = { 
+							has_owner_culture = yes
+						}
+						set_variable = { 
+							which = psp
+							value = 1.0
+						}
+					}
+					else_if = { 
+						limit = { 
+							has_owner_accepted_culture = yes
+						}
+						set_variable = { 
+							which = psp
+							value = 1.25
+						}
+					}
+					else = { 
+						set_variable = { 
+							which = psp
+							value = 2.0
+						}
+					}
+					if = { 
+						limit = { 
+							has_owner_religion = yes
+						}
+						set_variable = { 
+							which = psq
+							value = 1.0
+						}
+					}
+					else = { 
+						set_variable = { 
+							which = psq
+							value = 1.5
+						}
+					}
+					ROOT = { 
+						change_variable = { 
+							which = psp
+							which = PREV
+						}
+						change_variable = { 
+							which = psq
+							which = PREV
+						}
+						change_variable = { 
+							which = psr
+							value = 1
+						}
+					}
+				}
+				divide_variable = { 
+					which = psp
+					which = psr
+				}
+				divide_variable = { 
+					which = psq
+					which = psr
+				}
+				set_variable = { 
+					which = ptf
+					value = 0
+				}
+				set_variable = { 
+					which = ptg
+					value = 0
+				}
+				set_variable = { 
+					which = pth
+					value = 0
+				}
+				if = { 
+					limit = { 
+						has_country_flag = ForcedMigration_Abs
+					}
+					every_province = { 
+						limit = { 
+							has_province_flag = ForcedMigration_From
+						}
+						set_variable = { 
+							which = psg
+							which = ROOT
+						}
+						set_variable = { 
+							which = ptf
+							which = psg
+						}
+						if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassSF
+								}
+							}
+							set_variable = { 
+								which = ptg
+								which = aap
+							}
+						}
+						else_if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassNM
+								}
+							}
+							set_variable = { 
+								which = ptg
+								which = aaq
+							}
+						}
+						else_if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassRE
+								}
+							}
+							set_variable = { 
+								which = ptg
+								which = aar
+							}
+						}
+						divide_variable = { 
+							which = ptf
+							which = ptg
+						}
+						set_variable = { 
+							which = ptg
+							which = psg
+						}
+						ROOT = { 
+							change_variable = { 
+								which = ptf
+								which = PREV
+							}
+							change_variable = { 
+								which = ptg
+								which = PREV
+							}
+							change_variable = { 
+								which = pth
+								value = 1
+							}
+						}
+					}
+				}
+				else_if = { 
+					limit = { 
+						has_country_flag = ForcedMigration_Prop
+					}
+					every_province = { 
+						limit = { 
+							has_province_flag = ForcedMigration_From
+						}
+						set_variable = { 
+							which = psg
+							which = ROOT
+						}
+						if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassSF
+								}
+							}
+							set_variable = { 
+								which = ptg
+								which = aap
+							}
+							set_variable = { 
+								which = ptf
+								which = aap
+							}
+						}
+						else_if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassNM
+								}
+							}
+							set_variable = { 
+								which = ptg
+								which = aaq
+							}
+							set_variable = { 
+								which = ptf
+								which = aaq
+							}
+						}
+						else_if = { 
+							limit = { 
+								owner = { 
+									has_country_flag = ForcedMigration_FromClassRE
+								}
+							}
+							set_variable = { 
+								which = ptg
+								which = aar
+							}
+							set_variable = { 
+								which = ptf
+								which = aar
+							}
+						}
+						multiply_variable = { 
+							which = ptf
+							which = psg
+						}
+						divide_variable = { 
+							which = ptf
+							which = ptg
+						}
+						ROOT = { 
+							change_variable = { 
+								which = ptf
+								which = PREV
+							}
+							change_variable = { 
+								which = ptg
+								which = PREV
+							}
+							change_variable = { 
+								which = pth
+								value = 1
+							}
+						}
+					}
+				}
+				divide_variable = { 
+					which = ptf
+					which = pth
+				}
+				divide_variable = { 
+					which = ptf
+					value = 0.15
+				}
+				change_variable = { 
+					which = ptf
+					value = 0.95
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = ptf
+								value = 5
+							}
+						}
+					}
+					set_variable = { 
+						which = ptf
+						value = 5
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = ptf
+									value = 0.975
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = ptf
+						value = 0.975
+					}
+				}
+				if = { 
+					limit = { 
+						has_country_flag = ForcedMigration_FromClassSF
+					}
+					multiply_variable = { 
+						which = psj
+						value = 3
+					}
+					multiply_variable = { 
+						which = psk
+						value = 0.8
+					}
+				}
+				else_if = { 
+					limit = { 
+						has_country_flag = ForcedMigration_FromClassNM
+					}
+					multiply_variable = { 
+						which = psj
+						value = 4
+					}
+					multiply_variable = { 
+						which = psk
+						value = 1.3
+					}
+				}
+				else_if = { 
+					limit = { 
+						has_country_flag = ForcedMigration_FromClassRE
+					}
+					multiply_variable = { 
+						which = psj
+						value = 5
+					}
+					multiply_variable = { 
+						which = psk
+						value = 1.8
+					}
+				}
+				multiply_variable = { 
+					which = psj
+					which = psl
+				}
+				multiply_variable = { 
+					which = psj
+					which = psm
+				}
+				multiply_variable = { 
+					which = psj
+					which = psn
+				}
+				multiply_variable = { 
+					which = psj
+					which = pso
+				}
+				multiply_variable = { 
+					which = psj
+					which = psp
+				}
+				multiply_variable = { 
+					which = psj
+					which = psq
+				}
+				multiply_variable = { 
+					which = psj
+					which = ptf
+				}
+				multiply_variable = { 
+					which = psk
+					which = psl
+				}
+				multiply_variable = { 
+					which = psk
+					which = psm
+				}
+				multiply_variable = { 
+					which = psk
+					which = psn
+				}
+				multiply_variable = { 
+					which = psk
+					which = pso
+				}
+				multiply_variable = { 
+					which = psk
+					which = psp
+				}
+				multiply_variable = { 
+					which = psk
+					which = psq
+				}
+				multiply_variable = { 
+					which = psk
+					which = ptf
+				}
+				set_variable = { 
+					which = psr
+					which = hxx
+				}
+				export_to_variable = { 
+					which = export
+					value = treasury
+				}
+				set_variable = { 
+					which = hxx
+					which = export
+				}
+				export_to_variable = { 
+					which = export
+					value = trigger_value:mil_power
+				}
+				set_variable = { 
+					which = amn
+					which = export
+				}
+			}
+		}
+	}
+	after = { 
+		country_event = { 
+			id = ForcedMigration.001
+		}
+	}
+}
+country_event = { 
+	id = flavor_rus.2004
+	title = "flavor_rus.2004.name"
+	desc = "flavor_rus.2004.desc"
+	picture = IMPALED_SOLDIERS_eventPicture
+	major = yes
+	trigger = { 
+		OR = { 
+			AND = { 
+				tag = MOS
+				NOT = { 
+					exists = RUS
+				}
+			}
+			tag = RUS
+		}
+		309 = { 
+			owned_by = ROOT
+		}
+		ai = yes
+		NOV = { 
+			exists = yes
+			truce_with = ROOT
+			NOT = { 
+				num_of_cities = 14
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		days = 1
+	}
+	option = { 
+		name = "EXCELLENT"
+		every_province = { 
+			limit = { 
+				owned_by = NOV
+			}
+			cede_province = ROOT
+		}
+	}
+}
+country_event = { 
+	id = flavor_rus.2005
+	title = "flavor_rus.2005.name"
+	desc = "flavor_rus.2005.desc"
+	picture = IMPALED_SOLDIERS_eventPicture
+	is_triggered_only = yes
+	immediate = { 
+		FROM = { 
+			clr_country_flag = sent_envoys_to_tatars
+		}
+	}
+	option = { 
+		name = "OPT.ACCEPT1"
+		ai_chance = { 
+			factor = 100
+		}
+		add_prestige = 10
+		create_subject = { 
+			subject_type = tributary_state
+			subject = FROM
+		}
+	}
+}

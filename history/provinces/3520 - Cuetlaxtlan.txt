@@ -1,0 +1,30 @@
+owner = TOT
+controller = TOT
+add_core = TOT
+capital = "Cuetlaxtlan"
+trade_goods = maize
+culture = totonac
+religion = cocijo
+hre = no
+base_tax = 7
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 2
+}
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 6.000
+	}
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+	set_province_flag = gold
+	set_province_flag = cacao
+	set_province_flag = cotton
+}

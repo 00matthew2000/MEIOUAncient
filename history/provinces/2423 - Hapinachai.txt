@@ -1,0 +1,29 @@
+owner = LNA
+controller = LNA
+capital = "Hapinachai"
+trade_goods = rice
+culture = lanna
+religion = ban_phi
+hre = no
+base_tax = 1
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = indian
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+	set_variable = { 
+		which = ami
+		value = 4.000
+	}
+}
+1292.1.1 = { 
+	add_core = LNA
+}

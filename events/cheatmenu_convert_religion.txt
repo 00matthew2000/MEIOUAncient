@@ -1,0 +1,250 @@
+namespace = cheatmenu_religion
+#################################
+
+country_event = {	# Wich kind of rel?
+	id = cheatmenu_religion.1
+	title = "cheatmenu_religion.1.title"
+	desc = "cheatmenu_religion.1.desc"
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	is_triggered_only = yes
+	trigger = { ai = no }
+
+	option = {		# christian
+		name = "cheatmenu_religion.1.a"
+		country_event = { id = cheatmenu_religion.2 }
+	}
+	
+	option = {		# muslim
+		name = "cheatmenu_religion.1.b"
+		country_event = { id = cheatmenu_religion.3 }
+	}
+	
+	option = {		# eastern
+		name = "cheatmenu_religion.1.c"
+		country_event = { id = cheatmenu_religion.4 }
+	}
+	
+	option = {		# pagan
+		name = "cheatmenu_religion.1.d"
+		country_event = { id = cheatmenu_religion.5 }
+	}
+	
+	option = {		# others
+		name = "cheatmenu_religion.1.e"
+		country_event = { id = cheatmenu_religion.6 }
+	}
+	
+	option = {	# back
+		name = "cheatmenu.back"
+		country_event = { id = cheatmenu.300 }
+	}
+	
+	option = {	# close
+		name = "cheatmenu.close"
+	}
+}
+
+country_event = {	# christian
+	id = cheatmenu_religion.2
+	title = "cheatmenu_religion.2.title"
+	desc = "cheatmenu_religion.2.desc"
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	is_triggered_only = yes
+	trigger = { ai = no }
+
+	option = {		# catholic
+		name = "cheatmenu_religion.2.a"
+		change_religion = catholic
+	}
+	
+	option = {		# protestant
+		name = "cheatmenu_religion.2.b"
+		change_religion = protestant
+	}
+	
+	option = {		# reformed
+		name = "cheatmenu_religion.2.c"
+		change_religion = reformed
+	}
+	
+	option = {		# anglican
+		name = "cheatmenu_religion.2.d"
+		change_religion = anglican
+	}
+	
+	option = {		# orthodox
+		name = "cheatmenu_religion.2.e"
+		change_religion = orthodox
+	}
+	
+	option = {		# coptic
+		name = "cheatmenu_religion.2.f"
+		change_religion = coptic
+	}
+
+	option = {		# hussite
+		name = "cheatmenu_religion.2.g"
+		change_religion = hussite
+	}
+	
+	option = {	# back
+		name = "cheatmenu.back"
+		country_event = { id = cheatmenu_religion.1 }
+	}
+}
+
+country_event = {	# muslim
+	id = cheatmenu_religion.3
+	title = "cheatmenu_religion.3.title"
+	desc = "cheatmenu_religion.2.desc"
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	is_triggered_only = yes
+	trigger = { ai = no }
+
+	option = {		# sunni
+		name = "cheatmenu_religion.3.a"
+		change_religion = sunni
+	}
+	
+	option = {		# shiite
+		name = "cheatmenu_religion.3.b"
+		change_religion = shiite
+	}
+	
+	option = {		# ibadi
+		name = "cheatmenu_religion.3.c"
+		change_religion = ibadi
+	}
+	
+	option = {	# back
+		name = "cheatmenu.back"
+		country_event = { id = cheatmenu_religion.1 }
+	}
+}
+
+country_event = {	# eastern
+	id = cheatmenu_religion.4
+	title = "cheatmenu_religion.4.title"
+	desc = "cheatmenu_religion.2.desc"
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	is_triggered_only = yes
+	trigger = { ai = no }
+
+	option = {		# buddhism / THERAVADA
+		name = "cheatmenu_religion.4.a"
+		change_religion = buddhism
+	}
+	
+	option = {		# vajrayana
+		name = "cheatmenu_religion.4.b"
+		change_religion = vajrayana
+	}
+	
+	option = {		# mahayana
+		name = "cheatmenu_religion.4.c"
+		change_religion = mahayana
+	}
+	
+	option = {		# confucianism
+		name = "cheatmenu_religion.4.d"
+		change_religion = confucianism
+	}
+	
+	option = {		# shinto
+		name = "cheatmenu_religion.4.e"
+		change_religion = shinto
+	}
+	
+	option = {	# back
+		name = "cheatmenu.back"
+		country_event = { id = cheatmenu_religion.1 }
+	}
+}
+
+country_event = {	# pagan
+	id = cheatmenu_religion.5
+	title = "cheatmenu_religion.5.title"
+	desc = "cheatmenu_religion.2.desc"
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	is_triggered_only = yes
+	trigger = { ai = no }
+
+	option = {		# animism
+		name = "cheatmenu_religion.5.a"
+		change_religion = animism
+	}
+	
+	option = {		# shamanism / FETISHISM
+		name = "cheatmenu_religion.5.b"
+		change_religion = shamanism
+	}
+	
+	option = {		# totemism
+		name = "cheatmenu_religion.5.c"
+		change_religion = totemism
+	}
+	
+	option = {		# inti
+		name = "cheatmenu_religion.5.d"
+		change_religion = inti
+	}
+	
+	option = {		# nahuatl
+		name = "cheatmenu_religion.5.e"
+		change_religion = nahuatl
+	}
+	
+	option = {		# mesoamerican_religion
+		name = "cheatmenu_religion.5.f"
+		change_religion = mesoamerican_religion
+	}
+	
+	option = {		# norse_pagan_reformed
+		name = "cheatmenu_religion.5.g"
+		change_religion = norse_pagan_reformed
+	}
+	
+	option = {		# tengri_pagan_reformed
+		name = "cheatmenu_religion.5.h"
+		change_religion = tengri_pagan_reformed
+	}
+	
+	option = {	# back
+		name = "cheatmenu.back"
+		country_event = { id = cheatmenu_religion.1 }
+	}
+}
+
+country_event = {	# others
+	id = cheatmenu_religion.6
+	title = "cheatmenu_religion.6.title"
+	desc = "cheatmenu_religion.2.desc"
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	is_triggered_only = yes
+	trigger = { ai = no }
+
+	option = {		# hinduism
+		name = "cheatmenu_religion.6.a"
+		change_religion = hinduism
+	}
+	
+	option = {		# sikhism
+		name = "cheatmenu_religion.6.b"
+		change_religion = sikhism
+	}
+	
+	option = {		# zoroastrian
+		name = "cheatmenu_religion.6.c"
+		change_religion = zoroastrian
+	}
+	
+	option = {		# jewish
+		name = "cheatmenu_religion.6.d"
+		change_religion = jewish
+	}
+	
+	option = {	# back
+		name = "cheatmenu.back"
+		country_event = { id = cheatmenu_religion.1 }
+	}
+}

@@ -1,0 +1,17 @@
+owner = PAM
+controller = PAM
+add_core = PAM
+capital = "Xallpan"
+trade_goods = unknown
+culture = chichimecha
+religion = cocijo
+hre = no
+base_tax = 3
+is_city = yes
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+}

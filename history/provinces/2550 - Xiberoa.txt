@@ -1,0 +1,128 @@
+owner = NAV
+controller = NAV
+add_core = NAV
+capital = "Maule"
+trade_goods = wool
+culture = basque
+religion = catholic
+hre = no
+base_tax = 0
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 1
+}
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = western
+discovered_by = muslim
+450.1.1 = { 
+	add_permanent_province_modifier = { 
+		name = Knights_Commandery_Low
+		duration = -1
+	}
+}
+1356.1.1 = { 
+	add_core = FRA
+	set_province_flag = freeholders_control_province
+}
+100.1.1 = { 
+	set_variable = { 
+		which = amj
+		value = 9.780
+	}
+	set_variable = { 
+		which = amk
+		value = 0.000
+	}
+	set_variable = { 
+		which = amh
+		value = 9.780
+	}
+	set_variable = { 
+		which = ami
+		value = 0.000
+	}
+	set_variable = { 
+		which = amf
+		value = 6.724
+	}
+	set_variable = { 
+		which = amg
+		value = 0.000
+	}
+	set_variable = { 
+		which = amd
+		value = 7.946
+	}
+	set_variable = { 
+		which = ame
+		value = 0.000
+	}
+	set_variable = { 
+		which = amb
+		value = 9.169
+	}
+	set_variable = { 
+		which = amc
+		value = 0.000
+	}
+	set_variable = { 
+		which = alz
+		value = 10.085
+	}
+	set_variable = { 
+		which = ama
+		value = 0.000
+	}
+	set_variable = { 
+		which = alx
+		value = 11.308
+	}
+	set_variable = { 
+		which = aly
+		value = 0.000
+	}
+	set_variable = { 
+		which = alv
+		value = 12.836
+	}
+	set_variable = { 
+		which = alw
+		value = 0.000
+	}
+	set_variable = { 
+		which = alt
+		value = 13.447
+	}
+	set_variable = { 
+		which = alu
+		value = 0.000
+	}
+	set_variable = { 
+		which = alr
+		value = 14.598
+	}
+	set_variable = { 
+		which = als
+		value = 0.000
+	}
+	set_variable = { 
+		which = alp
+		value = 17.553
+	}
+	set_variable = { 
+		which = alq
+		value = 0.000
+	}
+	set_variable = { 
+		which = aho
+		value = 22.072
+	}
+	set_variable = { 
+		which = ahp
+		value = 0.000
+	}
+}

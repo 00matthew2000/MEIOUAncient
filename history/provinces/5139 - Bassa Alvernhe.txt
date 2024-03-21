@@ -1,0 +1,127 @@
+owner = AUV
+controller = AUV
+add_core = AUV
+capital = "Orlhac"
+trade_goods = livestock
+culture = limousin
+religion = catholic
+hre = no
+base_tax = 20
+base_production = 0
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 2
+}
+set_variable = { 
+	which = gch
+	value = 2
+}
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = western
+discovered_by = muslim
+1356.1.1 = { 
+	add_permanent_claim = FRA
+	add_permanent_claim = BUR
+	set_province_flag = add_local_autonomy_50
+}
+100.1.1 = { 
+	set_variable = { 
+		which = amj
+		value = 266.450
+	}
+	set_variable = { 
+		which = amk
+		value = 6.000
+	}
+	set_variable = { 
+		which = amh
+		value = 267.350
+	}
+	set_variable = { 
+		which = ami
+		value = 5.100
+	}
+	set_variable = { 
+		which = amf
+		value = 183.110
+	}
+	set_variable = { 
+		which = amg
+		value = 4.200
+	}
+	set_variable = { 
+		which = amd
+		value = 217.316
+	}
+	set_variable = { 
+		which = ame
+		value = 4.050
+	}
+	set_variable = { 
+		which = amb
+		value = 251.522
+	}
+	set_variable = { 
+		which = amc
+		value = 3.900
+	}
+	set_variable = { 
+		which = alz
+		value = 275.715
+	}
+	set_variable = { 
+		which = ama
+		value = 5.250
+	}
+	set_variable = { 
+		which = alx
+		value = 303.621
+	}
+	set_variable = { 
+		which = aly
+		value = 5.250
+	}
+	set_variable = { 
+		which = alv
+		value = 344.542
+	}
+	set_variable = { 
+		which = alw
+		value = 13.050
+	}
+	set_variable = { 
+		which = alt
+		value = 359.920
+	}
+	set_variable = { 
+		which = alu
+		value = 14.700
+	}
+	set_variable = { 
+		which = alr
+		value = 362.108
+	}
+	set_variable = { 
+		which = als
+		value = 25.050
+	}
+	set_variable = { 
+		which = alp
+		value = 395.615
+	}
+	set_variable = { 
+		which = alq
+		value = 46.200
+	}
+	set_variable = { 
+		which = aho
+		value = 490.108
+	}
+	set_variable = { 
+		which = ahp
+		value = 58.800
+	}
+}

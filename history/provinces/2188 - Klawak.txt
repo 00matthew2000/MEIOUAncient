@@ -1,0 +1,17 @@
+capital = "Klawak"
+trade_goods = unknown
+culture = tlingit
+religion = sun_dance
+hre = no
+base_tax = 1
+base_production = 0
+base_manpower = 0
+native_size = 5
+native_ferocity = 3
+native_hostileness = 4
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 1.5
+	}
+}

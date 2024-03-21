@@ -1,0 +1,46 @@
+owner = MAL
+controller = MAL
+add_core = MAL
+capital = "Niafunke"
+trade_goods = rice
+culture = bozo
+religion = sunni
+hre = no
+base_tax = 6
+base_production = 0
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = muslim
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 15.000
+	}
+	set_variable = { 
+		which = atc
+		value = 20.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 26
+	}
+	set_variable = { 
+		which = ami
+		value = 3.000
+	}
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+}
+1356.1.1 = { 
+	add_core = JNN
+}

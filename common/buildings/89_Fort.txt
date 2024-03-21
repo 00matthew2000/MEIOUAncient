@@ -1,0 +1,221 @@
+fort_no = { 
+	cost = 0
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		always = no
+	}
+	keep_trigger = { 
+		has_building = fort_no
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_destroyed = { 
+		if = { 
+			limit = { 
+				NOT = { 
+					has_building = fort_14th
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+			add_building = fort_no
+		}
+	}
+	on_built = { }
+	on_obsolete = { }
+}
+fort_14th = { 
+	cost = 100
+	time = 60
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		NOT = { 
+			has_building = fort_15th
+			has_building = fort_16th
+			has_building = fort_17th
+			has_building = fort_18th
+		}
+	}
+	modifier = { 
+		fort_level = 1
+		supply_limit = 1
+	}
+	onmap = yes
+	influencing_fort = yes
+	ai_will_do = { 
+		factor = 1
+	}
+	on_built = { 
+		remove_building = fort_no
+	}
+	on_destroyed = { 
+		if = { 
+			limit = { 
+				NOT = { 
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+			add_building = fort_no
+		}
+	}
+	on_obsolete = { }
+}
+fort_15th = { 
+	cost = 200
+	time = 60
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		NOT = { 
+			has_building = fort_16th
+			has_building = fort_17th
+			has_building = fort_18th
+		}
+	}
+	modifier = { 
+		fort_level = 2
+		supply_limit = 2
+	}
+	onmap = yes
+	influencing_fort = yes
+	ai_will_do = { 
+		factor = 1
+	}
+	on_built = { 
+		remove_building = fort_no
+		remove_building = fort_14th
+	}
+	on_destroyed = { 
+		if = { 
+			limit = { 
+				NOT = { 
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+			add_building = fort_14th
+		}
+	}
+	on_obsolete = { }
+}
+fort_16th = { 
+	cost = 400
+	time = 60
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		NOT = { 
+			has_building = fort_17th
+			has_building = fort_18th
+		}
+	}
+	modifier = { 
+		fort_level = 4
+		supply_limit = 3
+	}
+	onmap = yes
+	influencing_fort = yes
+	ai_will_do = { 
+		factor = 1
+	}
+	on_built = { 
+		remove_building = fort_no
+		remove_building = fort_14th
+		remove_building = fort_15th
+	}
+	on_destroyed = { 
+		if = { 
+			limit = { 
+				NOT = { 
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+			add_building = fort_15th
+		}
+	}
+	on_obsolete = { }
+}
+fort_17th = { 
+	cost = 600
+	time = 60
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		NOT = { 
+			has_building = fort_18th
+		}
+	}
+	modifier = { 
+		fort_level = 6
+		supply_limit = 4
+	}
+	onmap = yes
+	influencing_fort = yes
+	ai_will_do = { 
+		factor = 1
+	}
+	on_built = { 
+		remove_building = fort_no
+		remove_building = fort_14th
+		remove_building = fort_15th
+		remove_building = fort_16th
+	}
+	on_destroyed = { 
+		if = { 
+			limit = { 
+				NOT = { 
+					has_building = fort_18th
+				}
+			}
+			add_building = fort_16th
+		}
+	}
+	on_obsolete = { }
+}
+fort_18th = { 
+	cost = 800
+	time = 60
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		always = yes
+	}
+	modifier = { 
+		fort_level = 8
+		supply_limit = 5
+	}
+	onmap = yes
+	influencing_fort = yes
+	ai_will_do = { 
+		factor = 1
+	}
+	on_built = { 
+		remove_building = fort_no
+		remove_building = fort_14th
+		remove_building = fort_15th
+		remove_building = fort_16th
+		remove_building = fort_17th
+	}
+	on_destroyed = { 
+		add_building = fort_17th
+	}
+	on_obsolete = { }
+}

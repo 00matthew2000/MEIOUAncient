@@ -1,0 +1,17 @@
+capital = "Kamemtxa"
+trade_goods = unknown
+culture = guajiro
+religion = jungle_spiritism
+hre = no
+base_tax = 7
+base_production = 0
+base_manpower = 0
+native_size = 65
+native_ferocity = 1
+native_hostileness = 1
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 1
+	}
+}

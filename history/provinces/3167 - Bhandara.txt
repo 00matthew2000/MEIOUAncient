@@ -1,0 +1,42 @@
+owner = GDW
+controller = GDW
+add_core = GDW
+capital = "Bhandaara"
+trade_goods = cotton
+culture = gondi
+religion = hinduism
+hre = no
+base_tax = 18
+base_production = 0
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = indian
+discovered_by = muslim
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = ottoman
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 80.000
+	}
+}
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = ami
+		value = 5.500
+	}
+	set_variable = { 
+		which = acp
+		value = 6
+	}
+}
+1356.1.1 = { 
+	add_core = DGA
+	add_core = CHD
+}

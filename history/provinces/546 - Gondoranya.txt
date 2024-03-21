@@ -1,0 +1,49 @@
+owner = TLG
+controller = TLG
+capital = "Orugallu"
+trade_goods = rice
+culture = telegu
+religion = hinduism
+hre = no
+base_tax = 35
+base_production = 3
+base_manpower = 3
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 3
+}
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = indian
+discovered_by = muslim
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 30.000
+	}
+}
+450.1.1 = { 
+	set_province_flag = TN_Major
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+	add_permanent_province_modifier = { 
+		name = urban_goods_carpet
+		duration = -1
+	}
+	set_province_flag = coal
+}
+1249.1.1 = { 
+	set_province_flag = Prod_StartUpMetal
+}
+1356.1.1 = { 
+	add_core = TLG
+}

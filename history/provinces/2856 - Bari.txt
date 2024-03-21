@@ -1,0 +1,151 @@
+owner = KNP
+controller = KNP
+add_core = KNP
+capital = "Bari"
+trade_goods = olive
+culture = neapolitan
+religion = catholic
+hre = no
+base_tax = 7
+base_production = 8
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gcj
+	value = 3
+}
+set_variable = { 
+	which = gci
+	value = 2
+}
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = western
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = muslim
+discovered_by = ottoman
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_province_flag = TN_Port
+	add_permanent_province_modifier = { 
+		name = "principality_of_taranto"
+		duration = -1
+	}
+	add_permanent_province_modifier = { 
+		name = Teuton_Commandery_High
+		duration = -1
+	}
+	set_province_flag = olive
+}
+1356.1.1 = { 
+	add_permanent_claim = ANJ
+}
+100.1.1 = { 
+	set_variable = { 
+		which = amj
+		value = 49.140
+	}
+	set_variable = { 
+		which = amk
+		value = 104.000
+	}
+	set_variable = { 
+		which = amh
+		value = 73.526
+	}
+	set_variable = { 
+		which = ami
+		value = 81.500
+	}
+	set_variable = { 
+		which = amf
+		value = 46.776
+	}
+	set_variable = { 
+		which = amg
+		value = 63.000
+	}
+	set_variable = { 
+		which = amd
+		value = 70.697
+	}
+	set_variable = { 
+		which = ame
+		value = 64.250
+	}
+	set_variable = { 
+		which = amb
+		value = 81.685
+	}
+	set_variable = { 
+		which = amc
+		value = 79.000
+	}
+	set_variable = { 
+		which = alz
+		value = 75.208
+	}
+	set_variable = { 
+		which = ama
+		value = 103.750
+	}
+	set_variable = { 
+		which = alx
+		value = 85.464
+	}
+	set_variable = { 
+		which = aly
+		value = 150.000
+	}
+	set_variable = { 
+		which = alv
+		value = 67.165
+	}
+	set_variable = { 
+		which = alw
+		value = 149.205
+	}
+	set_variable = { 
+		which = alt
+		value = 37.297
+	}
+	set_variable = { 
+		which = alu
+		value = 150.500
+	}
+	set_variable = { 
+		which = alr
+		value = 79.456
+	}
+	set_variable = { 
+		which = als
+		value = 170.750
+	}
+	set_variable = { 
+		which = alp
+		value = 167.320
+	}
+	set_variable = { 
+		which = alq
+		value = 223.000
+	}
+	set_variable = { 
+		which = aho
+		value = 117.948
+	}
+	set_variable = { 
+		which = ahp
+		value = 424.000
+	}
+}

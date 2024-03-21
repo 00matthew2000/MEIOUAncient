@@ -1,0 +1,43 @@
+owner = WHI
+controller = WHI
+add_core = WHI
+capital = "Pënza"
+trade_goods = lumber
+culture = tartar
+religion = sunni
+hre = no
+base_tax = 7
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = muslim
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = ottoman
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 50.000
+	}
+	set_variable = { 
+		which = atc
+		value = 80.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 16
+	}
+	set_variable = { 
+		which = acp
+		value = 1.5
+	}
+	set_province_flag = trade_good_set
+}
+1356.1.1 = { 
+	add_core = NOG
+}

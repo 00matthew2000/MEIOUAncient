@@ -1,0 +1,30 @@
+owner = SHI
+controller = SHI
+add_core = SHI
+capital = "Quba"
+trade_goods = wool
+culture = tat
+religion = sunni
+hre = no
+base_tax = 1
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = western
+discovered_by = muslim
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = ottoman
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 109
+	}
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+	set_province_flag = TN_NorthernSilk
+}

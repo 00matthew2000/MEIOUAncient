@@ -1,0 +1,39 @@
+owner = AHM
+controller = AHM
+add_core = AHM
+capital = "Gorakhapur"
+trade_goods = rice
+culture = bhojpuri
+religion = hinduism
+hre = no
+base_tax = 57
+base_production = 0
+base_manpower = 5
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = indian
+discovered_by = muslim
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = ottoman
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 73
+	}
+	set_variable = { 
+		which = acp
+		value = 8
+	}
+}
+1356.1.1 = { 
+	owner = DLH
+	controller = DLH
+	add_core = DLH
+}
+1356.1.1 = { 
+	add_core = TRT
+}

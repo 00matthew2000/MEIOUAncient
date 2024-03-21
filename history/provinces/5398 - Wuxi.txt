@@ -1,0 +1,63 @@
+owner = ZOU
+controller = ZOU
+capital = "Wuxi"
+trade_goods = rice
+culture = wuhan
+religion = mahayana
+hre = no
+base_tax = 41
+base_production = 10
+base_manpower = 2
+is_city = yes
+set_province_flag = small_university
+set_variable = { 
+	which = gci
+	value = 2
+}
+set_variable = { 
+	which = gch
+	value = 3
+}
+set_variable = { 
+	which = gcj
+	value = 3
+}
+set_variable = { 
+	which = gck
+	value = 4
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = baf
+		value = 92
+	}
+	set_variable = { 
+		which = acp
+		value = 9
+	}
+	set_province_flag = mined_goods
+	set_province_flag = tin
+	set_province_flag = tea
+	add_permanent_province_modifier = { 
+		name = urban_goods_naval_supplies
+		duration = -1
+	}
+}
+1276.1.1 = { 
+	owner = YUA
+	controller = YUA
+	add_core = YUA
+}
+1351.1.1 = { 
+	owner = ZOU
+	controller = ZOU
+	add_core = ZOU
+	add_core = MNG
+}

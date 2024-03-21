@@ -1,0 +1,40 @@
+owner = EGB
+controller = EGB
+add_core = EGB
+capital = "Ake"
+trade_goods = slaves
+culture = yorumba
+religion = odinala
+hre = no
+base_tax = 9
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 30.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 5.5
+	}
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = ami
+		value = 5.000
+	}
+	set_province_flag = kola
+}

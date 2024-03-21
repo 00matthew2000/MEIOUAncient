@@ -1,0 +1,45 @@
+owner = DLI
+controller = DLI
+capital = "Yongshan"
+trade_goods = rice
+culture = yizu
+religion = bimoism
+hre = no
+base_tax = 9
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 2
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 70.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+	set_province_flag = mined_goods
+	set_province_flag = silver
+}
+1276.1.1 = { 
+	owner = YUA
+	controller = YUA
+	add_core = YUA
+}
+1351.1.1 = { 
+	owner = LNG
+	controller = LNG
+	add_core = LNG
+}

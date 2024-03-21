@@ -1,0 +1,29 @@
+owner = UBH
+controller = UBH
+add_core = UBH
+capital = "Ruguru"
+trade_goods = slaves
+culture = rwandan
+religion = bantu_pagan
+hre = no
+base_tax = 6
+base_production = 0
+base_manpower = 0
+discovered_by = central_african
+is_city = yes
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+	set_variable = { 
+		which = baf
+		value = 134
+	}
+}

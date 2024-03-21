@@ -1,0 +1,35 @@
+owner = NPL
+controller = NPL
+add_core = NPL
+capital = "Dangarhi"
+trade_goods = ebony
+culture = nepali
+religion = hinduism
+hre = no
+base_tax = 18
+base_production = 0
+base_manpower = 1
+is_city = yes
+discovered_by = indian
+discovered_by = muslim
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 25.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+}
+1356.1.1 = { 
+	set_province_flag = add_local_autonomy_25
+}

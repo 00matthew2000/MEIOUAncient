@@ -1,0 +1,185 @@
+defined_text = { 
+	name = Courthouse_Build
+	random = no
+	text = { 
+		localisation_key = SYS_Courthouse.001.aNOPE
+		trigger = { 
+			all_owned_province = { 
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = nts
+							value = 0.001
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = SYS_Courthouse.001.aYEP
+		trigger = { 
+			any_owned_province = { 
+				AND = { 
+					check_variable = { 
+						which = nts
+						value = 0.001
+					}
+				}
+			}
+			AND = { 
+				check_variable = { 
+					which = nuc
+					which = nub
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = SYS_Courthouse.001.aNOPE
+		trigger = { 
+			any_owned_province = { 
+				AND = { 
+					check_variable = { 
+						which = nts
+						value = 0.001
+					}
+				}
+			}
+			NOT = { 
+				AND = { 
+					check_variable = { 
+						which = nuc
+						which = nub
+					}
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Courthouse_Amount
+	random = no
+	text = { 
+		localisation_key = Construct_None
+		trigger = { 
+			NOT = { 
+				AND = { 
+					check_variable = { 
+						which = nts
+						value = 0.001
+					}
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Courthouse_Amount_Infra1
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = nts
+					value = 0.001
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ntt
+					value = 0
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Courthouse_Amount_Infra2
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = nts
+					value = 0.001
+				}
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = ntt
+					value = 1
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Courthouse_RawCost
+	random = no
+	text = { 
+		localisation_key = Courthouse_RawCost
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = gin
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Courthouse_MilitaryCost
+	random = no
+	text = { 
+		localisation_key = Courthouse_MilitaryCost
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = gdj
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Courthouse_NavalCost
+	random = no
+	text = { 
+		localisation_key = Courthouse_NavalCost
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = gdk
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Courthouse_IndustrialCost
+	random = no
+	text = { 
+		localisation_key = Courthouse_IndustrialCost
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = gdl
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Courthouse_KnowledgeCost
+	random = no
+	text = { 
+		localisation_key = Courthouse_KnowledgeCost
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = gdm
+					value = 0.001
+				}
+			}
+		}
+	}
+}

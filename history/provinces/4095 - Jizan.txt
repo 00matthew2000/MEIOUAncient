@@ -1,0 +1,39 @@
+owner = YRA
+controller = YRA
+add_core = YRA
+add_core = YEM
+add_core = HEJ
+capital = "Jizan"
+trade_goods = olive
+culture = yemeni
+religion = shiite
+hre = no
+base_tax = 6
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = east_african
+discovered_by = western
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 15.000
+	}
+	set_variable = { 
+		which = atc
+		value = 60.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+	set_province_flag = seasalt
+	set_province_flag = olive
+}

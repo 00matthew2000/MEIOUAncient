@@ -1,0 +1,44 @@
+capital = "Cherdyn"
+trade_goods = lumber
+culture = uralic
+religion = shamanism
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+native_size = 50
+native_ferocity = 2
+native_hostileness = 5
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = muslim
+discovered_by = PLM
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 20.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+	set_province_flag = mined_goods
+	set_province_flag = salt
+	add_permanent_province_modifier = { 
+		name = "fur_large"
+		duration = -1
+	}
+	set_variable = { 
+		which = baf
+		value = 114
+	}
+	set_province_flag = TN_Natural_Minor
+	set_variable = { 
+		which = ami
+		value = 4.000
+	}
+}

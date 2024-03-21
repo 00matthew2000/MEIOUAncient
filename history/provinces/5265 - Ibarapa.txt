@@ -1,0 +1,36 @@
+owner = EGB
+controller = EGB
+add_core = EGB
+capital = "Ibarapa"
+trade_goods = lumber
+culture = yorumba
+religion = odinala
+hre = no
+base_tax = 4
+base_production = 0
+base_manpower = 2
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 30.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = ami
+		value = 4.500
+	}
+	set_province_flag = kola
+}

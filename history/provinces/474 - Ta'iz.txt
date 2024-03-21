@@ -1,0 +1,44 @@
+owner = YEM
+controller = YEM
+add_core = YEM
+add_core = YRA
+capital = "Zabid"
+trade_goods = indigo
+culture = yemeni
+religion = shiite
+hre = no
+base_tax = 22
+base_production = 0
+base_manpower = 1
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+discovered_by = east_african
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 60.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 1.500
+	}
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+	set_province_flag = coffee
+	set_province_flag = seasalt
+}
+1356.1.1 = { 
+	discovered_by = ADA
+	discovered_by = KIL
+	discovered_by = MKU
+}

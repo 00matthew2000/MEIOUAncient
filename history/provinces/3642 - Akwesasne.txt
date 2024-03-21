@@ -1,0 +1,25 @@
+capital = "Akwesasne"
+trade_goods = unknown
+culture = huron
+religion = midewiwin
+hre = no
+base_tax = 2
+base_production = 0
+base_manpower = 0
+native_size = 55
+native_ferocity = 1
+native_hostileness = 6
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 60
+	}
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+	add_permanent_province_modifier = { 
+		name = fur_medium
+		duration = -1
+	}
+}

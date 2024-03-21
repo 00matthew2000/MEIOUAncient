@@ -1,0 +1,17 @@
+capital = "Essequibo"
+trade_goods = unknown
+culture = guajiro
+religion = iocauna
+hre = no
+base_tax = 5
+base_production = 0
+base_manpower = 0
+native_size = 55
+native_ferocity = 2
+native_hostileness = 6
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 1.5
+	}
+}

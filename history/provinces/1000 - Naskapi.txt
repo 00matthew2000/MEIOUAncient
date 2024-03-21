@@ -1,0 +1,2 @@
+culture = innu
+religion = midewiwin

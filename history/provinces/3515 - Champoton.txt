@@ -1,0 +1,44 @@
+owner = CKP
+controller = CKP
+add_core = CKP
+capital = "Chakán Putum"
+trade_goods = cotton
+culture = cholan
+religion = mayan
+hre = no
+base_tax = 13
+base_production = 1
+base_manpower = 1
+set_variable = { 
+	which = gch
+	value = 1
+}
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gci
+	value = 1
+}
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_province_flag = TN_Port
+	add_permanent_province_modifier = { 
+		name = urban_goods_naval_supplies
+		duration = -1
+	}
+	set_province_flag = cacao
+	set_province_flag = cotton
+	set_province_flag = saltmarsh
+	set_variable = { 
+		which = amh
+		value = 30.000
+	}
+	set_variable = { 
+		which = ami
+		value = 20.000
+	}
+}

@@ -1,0 +1,40 @@
+owner = OMA
+controller = OMA
+add_core = OMA
+capital = "Sur"
+trade_goods = fish
+culture = omani
+religion = ibadi
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 1
+}
+discovered_by = muslim
+discovered_by = indian
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 30.000
+	}
+	set_variable = { 
+		which = atc
+		value = 90.000
+	}
+}
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+	add_permanent_province_modifier = { 
+		name = "pearls_low"
+		duration = -1
+	}
+	set_province_flag = incense
+}

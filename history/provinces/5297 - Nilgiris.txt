@@ -1,0 +1,16 @@
+capital = "Udagamandalam"
+trade_goods = lumber
+culture = tamil
+religion = hinduism
+hre = no
+base_tax = 12
+base_production = 0
+base_manpower = 0
+discovered_by = indian
+discovered_by = muslim
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 6.5
+	}
+}

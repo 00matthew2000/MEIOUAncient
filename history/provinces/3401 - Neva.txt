@@ -1,0 +1,31 @@
+capital = "Oreshek"
+trade_goods = hemp
+culture = ingrian
+religion = finnish_pagan
+hre = no
+base_tax = 1
+base_production = 0
+base_manpower = 0
+native_size = 5
+native_ferocity = 2
+native_hostileness = 1
+set_variable = { 
+	which = gcn
+	value = 1
+}
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 15
+	}
+	set_province_flag = TN_RiverSea
+	set_province_flag = TN_Harbour_Major
+	set_province_flag = TN_Natural_Major
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+	set_province_flag = hemp
+	set_province_flag = TN_Estuary
+	set_province_flag = TN_RiverJoint
+}

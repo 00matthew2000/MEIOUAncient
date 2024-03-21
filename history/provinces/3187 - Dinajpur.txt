@@ -1,0 +1,42 @@
+owner = BNG
+controller = BNG
+add_core = BNG
+capital = "Dinajapur"
+trade_goods = tea
+culture = rajbanshi
+religion = hinduism
+hre = no
+base_tax = 44
+base_production = 1
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_province_flag = small_university
+set_variable = { 
+	which = gcj
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = indian
+discovered_by = muslim
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_variable = { 
+		which = acp
+		value = 6.5
+	}
+	set_province_flag = coal
+	set_province_flag = add_local_autonomy_25
+}

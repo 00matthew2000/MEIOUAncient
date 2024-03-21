@@ -1,0 +1,55 @@
+owner = TLE
+controller = TLE
+add_core = TLE
+capital = "Oran"
+trade_goods = wheat
+culture = algerian
+religion = sunni
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 2
+}
+set_variable = { 
+	which = gcj
+	value = 2
+}
+set_variable = { 
+	which = gcn
+	value = 1
+}
+discovered_by = western
+discovered_by = muslim
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = ottoman
+discovered_by = soudantech
+discovered_by = MAL
+450.1.1 = { 
+	set_province_flag = TN_Major
+	set_province_flag = TN_Port
+	set_province_flag = TN_Harbour_Minor
+	set_province_flag = TN_Natural_Minor
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+	set_province_flag = olive
+	add_permanent_province_modifier = { 
+		name = urban_goods_naval_supplies
+		duration = -1
+	}
+}
+1337.1.1 = { 
+	owner = FEZ
+	controller = FEZ
+	add_core = FEZ
+	add_core = ALG
+}
+1356.1.1 = { 
+	add_nationalism = 30
+}

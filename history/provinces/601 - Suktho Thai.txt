@@ -1,0 +1,32 @@
+owner = SUK
+controller = SUK
+add_core = SUK
+capital = "Sukhothai"
+trade_goods = rice
+culture = thai
+religion = theravada
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = indian
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+}

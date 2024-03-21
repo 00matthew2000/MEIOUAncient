@@ -1,0 +1,146 @@
+owner = FRA
+controller = FRA
+add_core = FRA
+capital = "Cahors"
+trade_goods = wine
+culture = occitain
+religion = catholic
+hre = no
+base_tax = 36
+base_production = 1
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gci
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = western
+discovered_by = muslim
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 36
+	}
+	add_permanent_province_modifier = { 
+		name = Knights_Commandery_Med
+		duration = -1
+	}
+	set_province_flag = wine
+	set_province_flag = TN_Minor
+}
+1356.1.1 = { 
+	add_core = GUY
+	add_core = DAL
+}
+100.1.1 = { 
+	set_variable = { 
+		which = amj
+		value = 367.025
+	}
+	set_variable = { 
+		which = amk
+		value = 13.000
+	}
+	set_variable = { 
+		which = amh
+		value = 365.775
+	}
+	set_variable = { 
+		which = ami
+		value = 14.250
+	}
+	set_variable = { 
+		which = amf
+		value = 245.767
+	}
+	set_variable = { 
+		which = amg
+		value = 15.500
+	}
+	set_variable = { 
+		which = amd
+		value = 292.020
+	}
+	set_variable = { 
+		which = ame
+		value = 16.750
+	}
+	set_variable = { 
+		which = amb
+		value = 338.273
+	}
+	set_variable = { 
+		which = amc
+		value = 18.000
+	}
+	set_variable = { 
+		which = alz
+		value = 372.401
+	}
+	set_variable = { 
+		which = ama
+		value = 19.500
+	}
+	set_variable = { 
+		which = alx
+		value = 418.404
+	}
+	set_variable = { 
+		which = aly
+		value = 21.000
+	}
+	set_variable = { 
+		which = alv
+		value = 475.783
+	}
+	set_variable = { 
+		which = alw
+		value = 23.000
+	}
+	set_variable = { 
+		which = alt
+		value = 497.534
+	}
+	set_variable = { 
+		which = alu
+		value = 25.000
+	}
+	set_variable = { 
+		which = alr
+		value = 405.244
+	}
+	set_variable = { 
+		which = als
+		value = 31.000
+	}
+	set_variable = { 
+		which = alp
+		value = 319.461
+	}
+	set_variable = { 
+		which = alq
+		value = 46.000
+	}
+	set_variable = { 
+		which = aho
+		value = 518.237
+	}
+	set_variable = { 
+		which = ahp
+		value = 52.000
+	}
+}

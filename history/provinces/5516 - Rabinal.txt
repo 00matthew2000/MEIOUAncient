@@ -1,0 +1,34 @@
+owner = QUM
+controller = QUM
+add_core = QUM
+capital = "Q'umarkaj"
+trade_goods = maize
+culture = quichean
+religion = mayan
+hre = no
+base_tax = 11
+base_production = 0
+base_manpower = 0
+set_variable = { 
+	which = gch
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+is_city = yes
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 3.500
+	}
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+	set_province_flag = mined_goods
+	set_province_flag = obsidian
+	set_province_flag = cacao
+}

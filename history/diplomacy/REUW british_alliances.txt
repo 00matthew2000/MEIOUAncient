@@ -1,0 +1,45 @@
+guarantee = { 
+	first = FRA
+	second = SCO
+	start_date = 1295.1.1
+	end_date = 1390.1.1
+}
+dependency = { 
+	subject_type = "overseas_fief"
+	first = ENG
+	second = GUY
+	start_date = 1356.1.1
+	end_date = 1453.7.18
+}
+dependency = { 
+	subject_type = "decentralized_vassal"
+	first = ENG
+	second = WLS
+	start_date = 1282.1.1
+	end_date = 1485.7.18
+}
+royal_marriage = { 
+	first = SCO
+	second = ENG
+	start_date = 1329.6.7
+	end_date = 1362.9.7
+}
+alliance = { 
+	first = ENG
+	second = NAV
+	start_date = 1356.1.1
+	end_date = 1357.1.1
+}
+dependency = { 
+	subject_type = "daimyo_vassal"
+	first = ENG
+	second = DAL
+	start_date = 1356.1.1
+	end_date = 1368.6.30
+}
+alliance = { 
+	first = ENG
+	second = MNF
+	start_date = 1356.1.1
+	end_date = 1365.4.12
+}

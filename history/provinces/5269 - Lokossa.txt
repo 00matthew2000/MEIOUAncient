@@ -1,0 +1,27 @@
+owner = DAH
+controller = DAH
+add_core = DAH
+capital = "Lokossa"
+trade_goods = millet
+culture = fon_c
+religion = west_african_pagan
+hre = no
+base_tax = 6
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 50.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+	set_province_flag = kola
+}

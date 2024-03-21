@@ -1,0 +1,31 @@
+owner = AKU
+controller = AKU
+add_core = AKU
+capital = "Abene"
+trade_goods = palm
+culture = akaa
+religion = west_african_pagan
+hre = no
+base_tax = 6
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 35.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+	set_province_flag = kola
+}

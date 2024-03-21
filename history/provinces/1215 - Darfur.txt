@@ -1,0 +1,28 @@
+owner = DSL
+controller = DSL
+add_core = DSL
+capital = "Kobbe"
+trade_goods = wool
+culture = foora
+religion = lotuko_pagan
+hre = no
+base_tax = 8
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = soudantech
+discovered_by = east_african
+discovered_by = sub_saharan
+discovered_by = muslim
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 1.5
+	}
+}

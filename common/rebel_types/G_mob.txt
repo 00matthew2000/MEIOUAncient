@@ -1,0 +1,104 @@
+mob_rebels = { 
+	color = { 40 140 210}
+	area = nation
+	government = anti
+	defection = none
+	independence = none
+	gfx_type = culture_province
+	resilient = no
+	reinforcing = no
+	general = no
+	smart = no
+	unit_transfer = no
+	will_relocate = no
+	artillery = 0.0
+	infantry = 1
+	cavalry = 0.0
+	morale = 1
+	handle_action_negotiate = yes
+	handle_action_stability = no
+	handle_action_build_core = no
+	handle_action_send_missionary = yes
+	spawn_chance = { 
+		factor = 1
+		modifier = { 
+			factor = 0.1
+			nationalism = 1
+		}
+		modifier = { 
+			factor = 0.1
+			has_owner_religion = no
+		}
+		modifier = { 
+			factor = 100
+			owner = { 
+				has_country_modifier = China_PeasantUprising
+			}
+		}
+	}
+	movement_evaluation = { 
+		factor = 1
+		modifier = { 
+			factor = 0.1
+			units_in_province = 1
+		}
+		modifier = { 
+			factor = 0.001
+			controlled_by = REB
+		}
+		modifier = { 
+			factor = 0.001
+			NOT = { 
+				controlled_by = REB
+			}
+			has_influencing_fort = yes
+		}
+		modifier = { 
+			factor = 10
+			NOT = { 
+				controlled_by = REB
+			}
+		}
+		modifier = { 
+			factor = 0
+			is_colony = yes
+		}
+		modifier = { 
+			factor = 0
+			is_empty = yes
+		}
+	}
+	siege_won_trigger = { }
+	siege_won_effect = { 
+		add_local_autonomy = 40
+	}
+	can_negotiate_trigger = { 
+		always = yes
+	}
+	can_enforce_trigger = { 
+		always = yes
+	}
+	demands_description = "mob_rebels_demand"
+	demands_enforced_effect = { 
+		every_owned_province = { 
+			limit = { 
+				has_rebel_faction = REB
+			}
+			add_local_autonomy = 50
+		}
+		remove_country_modifier = Reform_CD
+		add_country_modifier = { 
+			name = Reform_CD
+			duration = 3625
+		}
+		kill_advisor = random
+		add_prestige = -50
+		kill_advisor = random
+		if = { 
+			limit = { 
+				ai = yes
+			}
+			set_country_flag = AITax_Yearly
+		}
+	}
+}

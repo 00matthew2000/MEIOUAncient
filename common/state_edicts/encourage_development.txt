@@ -1,0 +1,15 @@
+edict_encourage_development = { 
+	potential = { 
+		always = no
+	}
+	allow = { 
+		always = no
+	}
+	modifier = { 
+		local_development_cost = -0.1
+	}
+	color = { 244 184 12}
+	ai_will_do = { 
+		factor = 0
+	}
+}

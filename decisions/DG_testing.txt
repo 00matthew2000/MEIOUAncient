@@ -1,0 +1,981 @@
+country_decisions = { 
+	dg_testing = { 
+		potential = { 
+			always = no
+			ai = no
+		}
+		allow = { }
+		effect = { 
+			capital_scope = { 
+				if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								is_variable_equal = { 
+									which = adv
+									value = 7
+								}
+							}
+							AND = { 
+								is_variable_equal = { 
+									which = adx
+									value = 7
+								}
+							}
+							AND = { 
+								is_variable_equal = { 
+									which = adz
+									value = 7
+								}
+							}
+							AND = { 
+								is_variable_equal = { 
+									which = aeb
+									value = 7
+								}
+							}
+							AND = { 
+								is_variable_equal = { 
+									which = aed
+									value = 7
+								}
+							}
+							AND = { 
+								is_variable_equal = { 
+									which = aef
+									value = 7
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = qae
+						value = 7
+					}
+					province_event = { 
+						id = DG_Convert.903
+					}
+					set_variable = { 
+						which = qae
+						value = 0
+					}
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							is_variable_equal = { 
+								which = adv
+								value = 7
+							}
+						}
+					}
+					change_variable = { 
+						which = awq
+						value = 0.075
+					}
+					change_variable = { 
+						which = ayl
+						value = 0.075
+					}
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							is_variable_equal = { 
+								which = adx
+								value = 7
+							}
+						}
+					}
+					change_variable = { 
+						which = awt
+						value = 0.075
+					}
+					change_variable = { 
+						which = aym
+						value = 0.075
+					}
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							is_variable_equal = { 
+								which = adz
+								value = 7
+							}
+						}
+					}
+					change_variable = { 
+						which = aww
+						value = 0.075
+					}
+					change_variable = { 
+						which = ayn
+						value = 0.075
+					}
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							is_variable_equal = { 
+								which = aeb
+								value = 7
+							}
+						}
+					}
+					change_variable = { 
+						which = awz
+						value = 0.075
+					}
+					change_variable = { 
+						which = ayo
+						value = 0.075
+					}
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							is_variable_equal = { 
+								which = aed
+								value = 7
+							}
+						}
+					}
+					change_variable = { 
+						which = axc
+						value = 0.075
+					}
+					change_variable = { 
+						which = ayp
+						value = 0.075
+					}
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							is_variable_equal = { 
+								which = aef
+								value = 7
+							}
+						}
+					}
+					change_variable = { 
+						which = axf
+						value = 0.075
+					}
+					change_variable = { 
+						which = ayq
+						value = 0.075
+					}
+				}
+				set_variable = { 
+					which = kdt
+					which = awp
+				}
+				change_variable = { 
+					which = kdt
+					which = aws
+				}
+				change_variable = { 
+					which = kdt
+					which = awv
+				}
+				change_variable = { 
+					which = kdt
+					which = awy
+				}
+				change_variable = { 
+					which = kdt
+					which = axb
+				}
+				change_variable = { 
+					which = kdt
+					which = axe
+				}
+				set_variable = { 
+					which = kdu
+					which = awq
+				}
+				change_variable = { 
+					which = kdu
+					which = awt
+				}
+				change_variable = { 
+					which = kdu
+					which = aww
+				}
+				change_variable = { 
+					which = kdu
+					which = awz
+				}
+				change_variable = { 
+					which = kdu
+					which = axc
+				}
+				change_variable = { 
+					which = kdu
+					which = axf
+				}
+				set_variable = { 
+					which = kdv
+					which = awr
+				}
+				change_variable = { 
+					which = kdv
+					which = awu
+				}
+				change_variable = { 
+					which = kdv
+					which = awx
+				}
+				change_variable = { 
+					which = kdv
+					which = axa
+				}
+				change_variable = { 
+					which = kdv
+					which = axd
+				}
+				change_variable = { 
+					which = kdv
+					which = axg
+				}
+				set_variable = { 
+					which = kdx
+					which = ayl
+				}
+				change_variable = { 
+					which = kdx
+					which = aym
+				}
+				change_variable = { 
+					which = kdx
+					which = ayn
+				}
+				change_variable = { 
+					which = kdx
+					which = ayo
+				}
+				change_variable = { 
+					which = kdx
+					which = ayp
+				}
+				change_variable = { 
+					which = kdx
+					which = ayq
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = adv
+								value = 1
+							}
+						}
+					}
+					set_variable = { 
+						which = aeh
+						which = awp
+					}
+					set_variable = { 
+						which = aei
+						which = awq
+					}
+					set_variable = { 
+						which = adw
+						which = awr
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdt
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = aeh
+							which = kdt
+						}
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdu
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = aei
+							which = kdu
+						}
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdv
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = adw
+							which = kdv
+						}
+					}
+					set_variable = { 
+						which = axh
+						which = aeh
+					}
+					set_variable = { 
+						which = axi
+						which = aei
+					}
+					set_variable = { 
+						which = axj
+						which = adw
+					}
+					multiply_variable = { 
+						which = axh
+						value = 100
+					}
+					multiply_variable = { 
+						which = axi
+						value = 100
+					}
+					multiply_variable = { 
+						which = axj
+						value = 100
+					}
+					set_variable = { 
+						which = ayr
+						which = ayl
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdx
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = ayr
+							which = kdx
+						}
+					}
+					multiply_variable = { 
+						which = ayr
+						value = 100
+					}
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = adx
+								value = 1
+							}
+						}
+					}
+					set_variable = { 
+						which = aej
+						which = aws
+					}
+					set_variable = { 
+						which = aek
+						which = awt
+					}
+					set_variable = { 
+						which = ady
+						which = awu
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdt
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = aej
+							which = kdt
+						}
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdu
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = aek
+							which = kdu
+						}
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdv
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = ady
+							which = kdv
+						}
+					}
+					set_variable = { 
+						which = axk
+						which = aej
+					}
+					set_variable = { 
+						which = axl
+						which = aek
+					}
+					set_variable = { 
+						which = axm
+						which = ady
+					}
+					multiply_variable = { 
+						which = axk
+						value = 100
+					}
+					multiply_variable = { 
+						which = axl
+						value = 100
+					}
+					multiply_variable = { 
+						which = axm
+						value = 100
+					}
+					set_variable = { 
+						which = ays
+						which = aym
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdx
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = ays
+							which = kdx
+						}
+					}
+					multiply_variable = { 
+						which = ays
+						value = 100
+					}
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = adz
+								value = 1
+							}
+						}
+					}
+					set_variable = { 
+						which = ael
+						which = awv
+					}
+					set_variable = { 
+						which = aem
+						which = aww
+					}
+					set_variable = { 
+						which = aea
+						which = awx
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdt
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = ael
+							which = kdt
+						}
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdu
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = aem
+							which = kdu
+						}
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdv
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = aea
+							which = kdv
+						}
+					}
+					set_variable = { 
+						which = axn
+						which = ael
+					}
+					set_variable = { 
+						which = axo
+						which = aem
+					}
+					set_variable = { 
+						which = axp
+						which = aea
+					}
+					multiply_variable = { 
+						which = axn
+						value = 100
+					}
+					multiply_variable = { 
+						which = axo
+						value = 100
+					}
+					multiply_variable = { 
+						which = axp
+						value = 100
+					}
+					set_variable = { 
+						which = ayt
+						which = ayn
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdx
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = ayt
+							which = kdx
+						}
+					}
+					multiply_variable = { 
+						which = ayt
+						value = 100
+					}
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = aeb
+								value = 1
+							}
+						}
+					}
+					set_variable = { 
+						which = aen
+						which = awy
+					}
+					set_variable = { 
+						which = aeo
+						which = awz
+					}
+					set_variable = { 
+						which = aec
+						which = axa
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdt
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = aen
+							which = kdt
+						}
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdu
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = aeo
+							which = kdu
+						}
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdv
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = aec
+							which = kdv
+						}
+					}
+					set_variable = { 
+						which = axq
+						which = aen
+					}
+					set_variable = { 
+						which = axr
+						which = aeo
+					}
+					set_variable = { 
+						which = axs
+						which = aec
+					}
+					multiply_variable = { 
+						which = axq
+						value = 100
+					}
+					multiply_variable = { 
+						which = axr
+						value = 100
+					}
+					multiply_variable = { 
+						which = axs
+						value = 100
+					}
+					set_variable = { 
+						which = ayu
+						which = ayo
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdx
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = ayu
+							which = kdx
+						}
+					}
+					multiply_variable = { 
+						which = ayu
+						value = 100
+					}
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = aed
+								value = 1
+							}
+						}
+					}
+					set_variable = { 
+						which = aep
+						which = axb
+					}
+					set_variable = { 
+						which = aeq
+						which = axc
+					}
+					set_variable = { 
+						which = aee
+						which = axd
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdt
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = aep
+							which = kdt
+						}
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdu
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = aeq
+							which = kdu
+						}
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdv
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = aee
+							which = kdv
+						}
+					}
+					set_variable = { 
+						which = axt
+						which = aep
+					}
+					set_variable = { 
+						which = axu
+						which = aeq
+					}
+					set_variable = { 
+						which = axv
+						which = aee
+					}
+					multiply_variable = { 
+						which = axt
+						value = 100
+					}
+					multiply_variable = { 
+						which = axu
+						value = 100
+					}
+					multiply_variable = { 
+						which = axv
+						value = 100
+					}
+					set_variable = { 
+						which = ayv
+						which = ayp
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdx
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = ayv
+							which = kdx
+						}
+					}
+					multiply_variable = { 
+						which = ayv
+						value = 100
+					}
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = aef
+								value = 1
+							}
+						}
+					}
+					set_variable = { 
+						which = aer
+						which = axe
+					}
+					set_variable = { 
+						which = aes
+						which = axf
+					}
+					set_variable = { 
+						which = aeg
+						which = axg
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdt
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = aer
+							which = kdt
+						}
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdu
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = aes
+							which = kdu
+						}
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdv
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = aeg
+							which = kdv
+						}
+					}
+					set_variable = { 
+						which = axw
+						which = aer
+					}
+					set_variable = { 
+						which = axx
+						which = aes
+					}
+					set_variable = { 
+						which = axy
+						which = aeg
+					}
+					multiply_variable = { 
+						which = axw
+						value = 100
+					}
+					multiply_variable = { 
+						which = axx
+						value = 100
+					}
+					multiply_variable = { 
+						which = axy
+						value = 100
+					}
+					set_variable = { 
+						which = ayw
+						which = ayq
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									is_variable_equal = { 
+										which = kdx
+										value = 0
+									}
+								}
+							}
+						}
+						divide_variable = { 
+							which = ayw
+							which = kdx
+						}
+					}
+					multiply_variable = { 
+						which = ayw
+						value = 100
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+}

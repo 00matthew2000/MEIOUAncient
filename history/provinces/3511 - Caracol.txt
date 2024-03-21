@@ -1,0 +1,19 @@
+capital = "Caracol"
+trade_goods = cacao
+culture = itza
+religion = mayan
+base_tax = 16
+base_production = 0
+base_manpower = 1
+native_size = 75
+native_ferocity = 1
+native_hostileness = 2
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_province_flag = cacao
+	set_province_flag = seasalt
+	set_variable = { 
+		which = amh
+		value = 10.000
+	}
+}

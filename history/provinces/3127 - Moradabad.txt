@@ -1,0 +1,46 @@
+owner = AHM
+controller = AHM
+add_core = AHM
+capital = "Sambhal"
+trade_goods = cotton
+culture = hindustani
+religion = sunni
+hre = no
+base_tax = 43
+base_production = 1
+base_manpower = 3
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gci
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = indian
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_variable = { 
+		which = baf
+		value = 70
+	}
+	set_variable = { 
+		which = acp
+		value = 8
+	}
+	set_province_flag = sugar
+}
+1356.1.1 = { 
+	owner = DLH
+	controller = DLH
+	add_core = DLH
+}

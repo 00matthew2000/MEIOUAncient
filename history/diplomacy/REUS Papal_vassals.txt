@@ -1,0 +1,7 @@
+dependency = { 
+	subject_type = "custom_vassal"
+	first = PAP
+	second = RIM
+	start_date = 1239.1.1
+	end_date = 1503.9.1
+}

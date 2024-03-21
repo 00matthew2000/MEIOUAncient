@@ -1,0 +1,37 @@
+owner = KIE
+controller = KIE
+add_core = KIE
+capital = "Nizhyn"
+trade_goods = wheat
+culture = ruthenian
+religion = orthodox
+hre = no
+base_tax = 14
+base_production = 0
+base_manpower = 2
+is_city = yes
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = western
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = ottoman
+discovered_by = muslim
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = ami
+		value = 4.500
+	}
+	set_variable = { 
+		which = baf
+		value = 12
+	}
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+}
+1356.1.1 = { 
+	add_permanent_claim = LIT
+}

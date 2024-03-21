@@ -1,0 +1,27 @@
+owner = FUN
+controller = FUN
+add_core = FUN
+capital = "Asosa"
+trade_goods = incense
+culture = gumuz
+religion = lotuko_pagan
+hre = no
+base_tax = 5
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = east_african
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 80.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+	set_province_flag = incense
+	set_province_flag = salt
+}

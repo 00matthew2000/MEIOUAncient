@@ -1,0 +1,41 @@
+owner = MUZ
+controller = MUZ
+add_core = MUZ
+capital = "Bardsir"
+trade_goods = wool
+culture = persian
+religion = zoroastrian
+base_tax = 3
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gch
+	value = 1
+}
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = indian
+discovered_by = ottoman
+discovered_by = muslim
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 3.000
+	}
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 2
+	}
+	set_province_flag = copper
+	set_province_flag = TN_Silk
+	set_province_flag = qanat
+}
+1356.1.1 = { 
+	add_core = ISF
+}

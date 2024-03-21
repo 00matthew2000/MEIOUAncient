@@ -1,0 +1,802 @@
+monarch_power = DIP
+ahead_of_time = { 
+	global_trade_power = 0.20
+}
+technology = { 
+	year = 1200
+	range = 800
+	global_colonial_growth = 10
+	trade_range = 150
+	naval_morale = 0.2
+	no_road_network = yes
+	primitive_road_network = yes
+	road_network = yes
+	paved_road_network = yes
+	harbour_infrastructure_0 = yes
+	harbour_infrastructure_1 = yes
+	harbour_infrastructure_2 = yes
+	harbour_infrastructure_3 = yes
+	harbour_infrastructure_4 = yes
+	harbour_infrastructure_5 = yes
+	harbour_infrastructure_6 = yes
+}
+technology = { 
+	year = 1210
+	may_fabricate_claims = yes
+	merchants = yes
+}
+technology = { 
+	year = 1220
+}
+technology = { 
+	year = 1230
+	naval_morale = 0.05
+	enable = ship_transport_T1_mesoamerican_chontal_longship
+}
+technology = { 
+	year = 1240
+	trade_efficiency = 0.0025
+}
+technology = { 
+	year = 1250
+	naval_morale = 0.10
+}
+technology = { 
+	year = 1260
+	naval_engagement_width = 5
+}
+technology = { 
+	year = 1270
+	trade_range = 10
+}
+technology = { 
+	year = 1280
+	naval_morale = 0.10
+	naval_engagement_width = 3
+}
+technology = { 
+	year = 1290
+	trade_efficiency = 0.0025
+}
+technology = { 
+	year = 1300
+	may_build_flagships = yes
+}
+technology = { 
+	year = 1310
+	naval_morale = 0.10
+	enable = ship_transport_T1_south_american_totora
+	enable = ship_galley_T1_western_galley
+	enable = ship_galley_T1_muslim_galley
+	enable = ship_galley_T1_indian_galley
+}
+technology = { 
+	year = 1320
+	trade_efficiency = 0.0025
+	trade_range = 10
+	naval_engagement_width = 3
+}
+technology = { 
+	year = 1330
+	trade_range = 20
+	naval_morale = 0.15
+}
+technology = { 
+	year = 1340
+	global_colonial_growth = 3
+	trade_range = 10
+	enable = ship_transport_T4_western_cog
+	enable = ship_transport_T4_eastern_morskiye_koch
+	enable = ship_transport_T4_muslim_baghlah
+	enable = ship_transport_T4_chinese_merchant_junk
+}
+technology = { 
+	year = 1350
+	trade_range = 20
+	trade_efficiency = 0.0025
+	enable = ship_light_T5_western_war_cog
+}
+technology = { 
+	year = 1360
+	expects_institution = { 
+		Banking = 0.05
+	}
+	trade_efficiency = 0.01
+	trade_range = 30
+}
+technology = { 
+	year = 1370
+	expects_institution = { 
+		Banking = 0.10
+	}
+	naval_morale = 0.20
+	enable = ship_light_T7_western_crayer
+	enable = ship_light_T7_muslim_dhow_raider
+	enable = ship_light_T7_chinese_fuchuan_warship
+	enable = ship_light_T7_korean_gwaseon
+}
+technology = { 
+	year = 1380
+	expects_institution = { 
+		Banking = 0.15
+	}
+	naval_morale = 0.20
+	enable = ship_heavy_T8_chinese_treasure_junk
+}
+technology = { 
+	year = 1390
+	expects_institution = { 
+		Banking = 0.20
+	}
+	naval_morale = 0.10
+	naval_engagement_width = 10
+}
+technology = { 
+	year = 1400
+	expects_institution = { 
+		Banking = 0.25
+	}
+	trade_range = 50
+	enable = ship_transport_T10_western_holk
+	enable = ship_transport_T10_muslim_dhow
+	enable = ship_transport_T10_chinese_junk
+	enable = ship_light_T10_western_early_caravel
+	enable = ship_light_T10_ENG_ballinger
+	enable = ship_light_T10_muslim_sambuk
+	enable = ship_light_T10_indian_batella
+	enable = ship_light_T10_chinese_trading_junk
+}
+technology = { 
+	year = 1410
+	expects_institution = { 
+		Banking = 0.275
+	}
+	naval_morale = 0.25
+}
+technology = { 
+	year = 1420
+	expects_institution = { 
+		Banking = 0.3
+	}
+	trade_range = 50
+	num_accepted_cultures = 1
+}
+technology = { 
+	year = 1430
+	expects_institution = { 
+		Banking = 0.3
+	}
+}
+technology = { 
+	year = 1440
+	expects_institution = { 
+		Banking = 0.3
+	}
+	naval_morale = 0.25
+}
+technology = { 
+	year = 1450
+	expects_institution = { 
+		Banking = 0.3
+	}
+	trade_range = 50
+	enable = ship_light_T15_western_caravela_redonda
+	enable = ship_light_T15_POR_caravela_de_armada
+	enable = ship_light_T15_NED_fluyt
+	enable = ship_light_T15_muslim_ganja
+	enable = ship_light_T15_indian_kotiya
+	enable = ship_light_T15_chinese_zaw
+	enable = ship_light_T15_KOR_panokseon
+	enable = ship_galley_T15_western_war_galley
+	enable = ship_galley_T15_muslim_war_galley
+	enable = ship_galley_T15_indian_war_galley
+}
+technology = { 
+	year = 1460
+	expects_institution = { 
+		Banking = 0.3
+	}
+	trade_range = 50
+}
+technology = { 
+	year = 1470
+	expects_institution = { 
+		Banking = 0.3
+	}
+	naval_morale = 0.25
+	may_steal_maps = yes
+}
+technology = { 
+	year = 1480
+	expects_institution = { 
+		Banking = 0.3
+	}
+	naval_morale = 0.25
+	enable = ship_heavy_T18_western_carrack
+	enable = ship_heavy_T18_muslim_carrack
+	enable = ship_heavy_T18_indian_carrack
+	enable = ship_heavy_T18_POR_nau
+	naval_engagement_width = 15
+}
+technology = { 
+	year = 1490
+	expects_institution = { 
+		Banking = 0.3
+	}
+}
+technology = { 
+	year = 1500
+	expects_institution = { 
+		Banking = 0.3
+	}
+	trade_efficiency = 0.005
+	trade_range = 60
+	enable = ship_transport_T20_western_barque
+	enable = ship_transport_T20_indian_pattamar
+	enable = ship_transport_T20_muslim_trankey
+	enable = ship_transport_T20_chinese_shachuan_junk
+}
+technology = { 
+	year = 1510
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.025
+	}
+	trade_range = 60
+	num_accepted_cultures = 1
+	may_study_technology = yes
+}
+technology = { 
+	year = 1520
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.05
+	}
+	trade_range = 60
+	highway_network = yes
+}
+technology = { 
+	year = 1530
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.075
+	}
+	trade_range = 30
+	enable = ship_heavy_T23_western_galleon
+	enable = ship_heavy_T23_muslim_galleon
+	enable = ship_heavy_T23_indian_galleon
+	enable = ship_heavy_T23_ENG_mary_rose
+}
+technology = { 
+	year = 1540
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.10
+	}
+	naval_morale = 0.20
+	naval_engagement_width = 10
+}
+technology = { 
+	year = 1550
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.125
+		Columbian_Exchange = 0.05
+	}
+	naval_morale = 0.30
+}
+technology = { 
+	year = 1560
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.150
+		Columbian_Exchange = 0.1
+	}
+	trade_range = 50
+	range = 20
+	naval_morale = 0.10
+	may_slander_merchants = yes
+}
+technology = { 
+	year = 1570
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.175
+		Columbian_Exchange = 0.125
+	}
+	naval_morale = 0.10
+	trade_efficiency = 0.005
+	enable = ship_galley_T27_western_galleass
+	enable = ship_galley_T27_muslim_galliot
+	enable = ship_galley_T27_indian_gallivat
+	enable = ship_heavy_T27_western_heavy_galleon
+	enable = ship_heavy_T27_muslim_heavy_galleon
+	enable = ship_heavy_T27_indian_heavy_galleon
+	enable = ship_heavy_T27_SPA_manila_galleon
+}
+technology = { 
+	year = 1580
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.200
+		Columbian_Exchange = 0.15
+	}
+	naval_morale = 0.10
+	num_accepted_cultures = 1
+	may_sabotage_recruitment = yes
+}
+technology = { 
+	year = 1590
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.225
+		Columbian_Exchange = 0.175
+	}
+	trade_range = 50
+	range = 20
+	naval_morale = 0.10
+	naval_engagement_width = 5
+}
+technology = { 
+	year = 1600
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.250
+		Columbian_Exchange = 0.2
+		Scientific_Method = 0.05
+	}
+	naval_morale = 0.10
+	trade_range = 60
+	global_colonial_growth = 2
+	trade_efficiency = 0.01
+	enable = ship_light_T30_western_brigantine
+	enable = ship_light_T30_muslim_brigantine
+	enable = ship_light_T30_indian_brigantine
+	enable = ship_light_T30_chinese_lorcha
+	enable = ship_light_T30_KOR_turtle_ship
+}
+technology = { 
+	year = 1610
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.275
+		Columbian_Exchange = 0.275
+		Scientific_Method = 0.1
+		Global_Trade = 0.05
+	}
+	range = 20
+	trade_range = 100
+	naval_engagement_width = 10
+}
+technology = { 
+	year = 1620
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.300
+		Columbian_Exchange = 0.3
+		Scientific_Method = 0.15
+		Global_Trade = 0.1
+	}
+	naval_morale = 0.50
+}
+technology = { 
+	year = 1630
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.325
+		Columbian_Exchange = 0.325
+		Scientific_Method = 0.2
+		Global_Trade = 0.15
+	}
+	range = 50
+	trade_range = 100
+	may_sow_discontent = yes
+}
+technology = { 
+	year = 1640
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.350
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.25
+		Global_Trade = 0.2
+	}
+	trade_efficiency = 0.01
+	global_colonial_growth = 2
+	num_accepted_cultures = 1
+	enable = ship_heavy_T34_western_two_decker
+}
+technology = { 
+	year = 1650
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.375
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.3
+		Global_Trade = 0.25
+	}
+	trade_efficiency = 0.02
+	enable = ship_light_T35_western_early_frigate
+	enable = ship_light_T35_FRA_corvette
+	enable = ship_light_T35_chinese_red_seal
+	enable = ship_light_T35_indian_ghurab
+	enable = ship_light_T35_muslim_war_dhow
+	allow_client_states = yes
+}
+technology = { 
+	year = 1660
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.400
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.35
+		Global_Trade = 0.3
+		Academia = 0.05
+	}
+	naval_morale = 0.50
+	trade_range = 80
+	enable = ship_galley_T36_western_polacca
+	enable = ship_galley_T36_muslim_two_masted_xebec
+	enable = ship_galley_T36_indian_qatira
+}
+technology = { 
+	year = 1670
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.425
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.4
+		Global_Trade = 0.35
+		Academia = 0.1
+	}
+	trade_efficiency = 0.02
+	may_sabotage_reputation = yes
+}
+technology = { 
+	year = 1680
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.450
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.45
+		Global_Trade = 0.4
+		Academia = 0.15
+	}
+	range = 100
+	trade_efficiency = 0.02
+}
+technology = { 
+	year = 1690
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.5
+		Global_Trade = 0.45
+		Academia = 0.2
+	}
+	global_colonial_growth = 4
+}
+technology = { 
+	year = 1700
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.55
+		Global_Trade = 0.5
+		Academia = 0.25
+		Nationalism = 0.05
+	}
+	trade_range = 130
+	reduced_naval_attrition = yes
+	enable = ship_light_T40_western_frigate
+	enable = ship_light_T40_indian_pal
+	enable = ship_transport_T40_western_east_indiaman
+	enable = ship_transport_T40_VEN_argosy
+	enable = ship_transport_T40_muslim_armed_merchant_dhow
+}
+technology = { 
+	year = 1710
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.6
+		Global_Trade = 0.5
+		Academia = 0.3
+		Nationalism = 0.1
+		Industrialisation = 0.1
+	}
+	naval_morale = 0.25
+	range = 200
+	trade_range = 100
+	may_corrupt_officials = yes
+}
+technology = { 
+	year = 1720
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.65
+		Global_Trade = 0.5
+		Academia = 0.35
+		Nationalism = 0.2
+		Industrialisation = 0.2
+	}
+	trade_efficiency = 0.05
+	global_colonial_growth = 2
+	num_accepted_cultures = 1
+}
+technology = { 
+	year = 1730
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.7
+		Global_Trade = 0.5
+		Academia = 0.4
+		Nationalism = 0.3
+		Industrialisation = 0.3
+	}
+	trade_range = 120
+}
+technology = { 
+	year = 1740
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 0.45
+		Nationalism = 0.4
+		Industrialisation = 0.4
+	}
+	naval_morale = 0.25
+	enable = ship_heavy_T44_western_three_decker
+	enable = ship_heavy_T44_GBR_victory_class
+}
+technology = { 
+	year = 1750
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 0.5
+		Nationalism = 0.5
+		Industrialisation = 0.5
+	}
+	trade_range = 80
+	road_and_rail_network = yes
+	enable = ship_galley_T45_western_archipelago_frigate
+	enable = ship_galley_T45_muslim_three_masted_xebec
+	enable = ship_galley_T45_USA_mosquito_schooner
+}
+technology = { 
+	year = 1760
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 0.6
+		Nationalism = 0.6
+		Industrialisation = 0.6
+	}
+	range = 200
+	may_agitate_for_liberty = yes
+}
+technology = { 
+	year = 1770
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 0.7
+		Nationalism = 0.7
+		Industrialisation = 0.7
+	}
+	trade_range = 160
+	trade_efficiency = 0.01
+}
+technology = { 
+	year = 1780
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 0.8
+		Nationalism = 0.75
+		Industrialisation = 0.8
+	}
+	enable = ship_light_T48_western_heavy_frigate
+	trade_range = 100
+	global_colonial_growth = 2
+}
+technology = { 
+	year = 1790
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 0.9
+		Nationalism = 0.75
+		Industrialisation = 0.9
+	}
+	naval_morale = 0.50
+}
+technology = { 
+	year = 1800
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+}
+technology = { 
+	year = 1810
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+	global_colonial_growth = 4
+	num_accepted_cultures = 1
+	may_infiltrate_administration = yes
+}
+technology = { 
+	year = 1820
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+	trade_efficiency = 0.02
+}
+technology = { 
+	year = 1830
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+	trade_range = 300
+	enable = ship_light_T53_western_steam_frigate
+}
+technology = { 
+	year = 1840
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+	global_colonial_growth = 3
+	enable = ship_transport_T54_western_clipper
+}
+technology = { 
+	year = 1850
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+	naval_morale = 0.50
+	enable = ship_heavy_T55_western_steam_battleship
+	extensive_rail_network = yes
+}
+technology = { 
+	year = 1860
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+	trade_range = 150
+	trade_efficiency = 0.01
+}
+technology = { 
+	year = 1870
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+	naval_morale = 0.50
+	enable = ship_light_T57_western_armored_frigate
+}
+technology = { 
+	year = 1880
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+	global_colonial_growth = 5
+}
+technology = { 
+	year = 1890
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+	trade_range = 160
+}
+technology = { 
+	year = 1900
+	expects_institution = { 
+		Banking = 0.3
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Casual_Literacy = 0.5
+		Columbian_Exchange = 0.35
+		Scientific_Method = 0.75
+		Global_Trade = 0.5
+		Academia = 1.0
+		Nationalism = 0.75
+		Industrialisation = 1.0
+	}
+	enable = ship_heavy_T60_western_dreadnaught
+}

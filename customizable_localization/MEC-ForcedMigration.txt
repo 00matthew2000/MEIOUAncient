@@ -1,0 +1,137 @@
+defined_text = { 
+	name = ForcedMigration_ScopesSetup
+	random = no
+	text = { 
+		localisation_key = ForcedMigration_ScopesSetup_Y
+		trigger = { 
+			has_country_flag = ForcedMigration_ScopesSetup
+		}
+	}
+	text = { 
+		localisation_key = ForcedMigration_ScopesSetup_N
+		trigger = { 
+			NOT = { 
+				has_country_flag = ForcedMigration_ScopesSetup
+			}
+		}
+	}
+}
+defined_text = { 
+	name = ForcedMigration_Inp
+	random = no
+	text = { 
+		localisation_key = ForcedMigration_Prop_Inp
+		trigger = { 
+			has_country_flag = ForcedMigration_Prop
+			AND = { 
+				check_variable = { 
+					which = psg
+					value = 0.001
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = ForcedMigration_Abs_Inp
+		trigger = { 
+			has_country_flag = ForcedMigration_Abs
+			AND = { 
+				check_variable = { 
+					which = psg
+					value = 0.001
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = ForcedMigration_NoInp
+		trigger = { 
+			NOT = { 
+				has_country_flag = ForcedMigration_Abs
+				has_country_flag = ForcedMigration_Prop
+			}
+			AND = { 
+				is_variable_equal = { 
+					which = psg
+					value = 0
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = ForcedMigration_ClassSetup
+	random = no
+	text = { 
+		localisation_key = ForcedMigration_ClassSetup_SF
+		trigger = { 
+			has_country_flag = ForcedMigration_FromClassSF
+		}
+	}
+	text = { 
+		localisation_key = ForcedMigration_ClassSetup_RE
+		trigger = { 
+			has_country_flag = ForcedMigration_FromClassRE
+		}
+	}
+	text = { 
+		localisation_key = ForcedMigration_ClassSetup_NM
+		trigger = { 
+			has_country_flag = ForcedMigration_FromClassNM
+		}
+	}
+	text = { 
+		localisation_key = ForcedMigration_ClassSetup_N
+		trigger = { 
+			NOT = { 
+				has_country_flag = ForcedMigration_FromClassSF
+				has_country_flag = ForcedMigration_FromClassNM
+				has_country_flag = ForcedMigration_FromClassRE
+			}
+		}
+	}
+}
+defined_text = { 
+	name = ForcedMigration_ExecutionTitle
+	random = no
+	text = { 
+		localisation_key = ForcedMigration_ExecutionTitle_Y
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = hxx
+					which = psj
+				}
+			}
+			AND = { 
+				check_variable = { 
+					which = amn
+					which = psk
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = ForcedMigration_ExecutionTitle_N
+		trigger = { 
+			OR = { 
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = hxx
+							which = psj
+						}
+					}
+				}
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = amn
+							which = psk
+						}
+					}
+				}
+			}
+		}
+	}
+}

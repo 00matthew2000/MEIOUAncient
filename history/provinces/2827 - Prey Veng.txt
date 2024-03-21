@@ -1,0 +1,38 @@
+owner = KHM
+controller = KHM
+add_core = KHM
+capital = "Vyadhapura"
+trade_goods = rice
+culture = khmer
+religion = theravada
+hre = no
+base_tax = 22
+base_production = 0
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = indian
+discovered_by = muslim
+discovered_by = austranesian
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 3.000
+	}
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = baf
+		value = 82
+	}
+	set_variable = { 
+		which = acp
+		value = 5.5
+	}
+}

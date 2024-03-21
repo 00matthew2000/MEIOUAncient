@@ -1,0 +1,356 @@
+select_building = { 
+	cost = 0
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		always = yes
+	}
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		remove_building = select_building
+		if = { 
+			limit = { 
+				has_province_flag = UI_Select
+			}
+			set_province_flag = Pin_Hide
+			clr_province_flag = UI_Select
+			if = { 
+				limit = { 
+					owner = { 
+						AND = { 
+							is_variable_equal = { 
+								which = fqq
+								value = 1
+							}
+						}
+					}
+				}
+				custom_tooltip = UI_SelectScopeRemove1
+				hidden_effect = { 
+					every_neighbor_province = { 
+						limit = { 
+							owned_by = PREV
+							has_province_flag = UI_Select
+						}
+						set_province_flag = Pin_Hide
+						clr_province_flag = UI_Select
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					owner = { 
+						AND = { 
+							is_variable_equal = { 
+								which = fqq
+								value = 2
+							}
+						}
+					}
+				}
+				custom_tooltip = UI_SelectScopeRemove2
+				hidden_effect = { 
+					area = { 
+						limit = { 
+							owned_by = PREV
+							has_province_flag = UI_Select
+						}
+						set_province_flag = Pin_Hide
+						clr_province_flag = UI_Select
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					owner = { 
+						AND = { 
+							is_variable_equal = { 
+								which = fqq
+								value = 3
+							}
+						}
+					}
+				}
+				custom_tooltip = UI_SelectScopeRemove3
+				hidden_effect = { 
+					region = { 
+						limit = { 
+							owned_by = PREV
+							has_province_flag = UI_Select
+						}
+						set_province_flag = Pin_Hide
+						clr_province_flag = UI_Select
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					owner = { 
+						AND = { 
+							is_variable_equal = { 
+								which = fqq
+								value = 4
+							}
+						}
+					}
+				}
+				custom_tooltip = UI_SelectScopeRemove4
+				hidden_effect = { 
+					owner = { 
+						every_owned_province = { 
+							limit = { 
+								has_province_flag = UI_Select
+							}
+							set_province_flag = Pin_Hide
+							clr_province_flag = UI_Select
+						}
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					owner = { 
+						AND = { 
+							is_variable_equal = { 
+								which = fqq
+								value = 5
+							}
+						}
+					}
+				}
+				custom_tooltip = UI_SelectScopeRemove5
+				hidden_effect = { 
+					owner = { 
+						every_owned_province = { 
+							limit = { 
+								has_province_flag = UI_Select
+							}
+							set_province_flag = Pin_Hide
+							clr_province_flag = UI_Select
+						}
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					owner = { 
+						AND = { 
+							is_variable_equal = { 
+								which = fqq
+								value = 6
+							}
+						}
+					}
+				}
+				custom_tooltip = UI_SelectScopeRemove6
+				hidden_effect = { 
+					every_trade_node_member_province = { 
+						if = { 
+							limit = { 
+								AND = { 
+									OR = { 
+										is_city = yes
+										is_colony = yes
+									}
+									NOT = { 
+										province_id = 5154
+									}
+								}
+								has_province_flag = UI_Select
+								owned_by = PREV
+							}
+							set_province_flag = Pin_Hide
+							clr_province_flag = UI_Select
+						}
+					}
+				}
+			}
+			hidden_effect = { 
+				province_event = { 
+					id = SYS_Pin.005
+				}
+			}
+		}
+		else = { 
+			set_province_flag = Pin_Show
+			set_province_flag = UI_Select
+			set_global_flag = UI_Select
+			if = { 
+				limit = { 
+					owner = { 
+						AND = { 
+							is_variable_equal = { 
+								which = fqq
+								value = 1
+							}
+						}
+					}
+				}
+				custom_tooltip = UI_SelectScopeSet1
+				hidden_effect = { 
+					every_neighbor_province = { 
+						limit = { 
+							owned_by = PREV
+							NOT = { 
+								has_province_flag = UI_Select
+							}
+						}
+						set_province_flag = UI_Select
+						set_province_flag = Pin_Show
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					owner = { 
+						AND = { 
+							is_variable_equal = { 
+								which = fqq
+								value = 2
+							}
+						}
+					}
+				}
+				custom_tooltip = UI_SelectScopeSet2
+				hidden_effect = { 
+					area = { 
+						limit = { 
+							owned_by = PREV
+							NOT = { 
+								has_province_flag = UI_Select
+							}
+						}
+						set_province_flag = UI_Select
+						set_province_flag = Pin_Show
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					owner = { 
+						AND = { 
+							is_variable_equal = { 
+								which = fqq
+								value = 3
+							}
+						}
+					}
+				}
+				custom_tooltip = UI_SelectScopeSet3
+				hidden_effect = { 
+					region = { 
+						limit = { 
+							owned_by = PREV
+							NOT = { 
+								has_province_flag = UI_Select
+							}
+						}
+						set_province_flag = UI_Select
+						set_province_flag = Pin_Show
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					owner = { 
+						AND = { 
+							is_variable_equal = { 
+								which = fqq
+								value = 4
+							}
+						}
+					}
+				}
+				custom_tooltip = UI_SelectScopeSet4
+				hidden_effect = { 
+					owner = { 
+						every_owned_province = { 
+							limit = { 
+								NOT = { 
+									has_province_flag = UI_Select
+								}
+								is_state = yes
+								is_state_core = owner
+							}
+							set_province_flag = UI_Select
+							set_province_flag = Pin_Show
+						}
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					owner = { 
+						AND = { 
+							is_variable_equal = { 
+								which = fqq
+								value = 5
+							}
+						}
+					}
+				}
+				custom_tooltip = UI_SelectScopeSet5
+				hidden_effect = { 
+					owner = { 
+						every_owned_province = { 
+							limit = { 
+								NOT = { 
+									has_province_flag = UI_Select
+								}
+							}
+							set_province_flag = UI_Select
+							set_province_flag = Pin_Show
+						}
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					owner = { 
+						AND = { 
+							is_variable_equal = { 
+								which = fqq
+								value = 6
+							}
+						}
+					}
+				}
+				custom_tooltip = UI_SelectScopeSet6
+				hidden_effect = { 
+					every_trade_node_member_province = { 
+						if = { 
+							limit = { 
+								AND = { 
+									OR = { 
+										is_city = yes
+										is_colony = yes
+									}
+									NOT = { 
+										province_id = 5154
+									}
+								}
+								NOT = { 
+									has_province_flag = UI_Select
+								}
+								owned_by = PREV
+							}
+							set_province_flag = UI_Select
+							set_province_flag = Pin_Show
+						}
+					}
+				}
+			}
+			hidden_effect = { 
+				province_event = { 
+					id = SYS_Pin.006
+				}
+			}
+		}
+	}
+	on_obsolete = { }
+	on_destroyed = { }
+}

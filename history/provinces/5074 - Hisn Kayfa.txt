@@ -1,0 +1,59 @@
+owner = HSN
+controller = HSN
+add_core = HSN
+add_core = ATQ
+add_claim = AKK
+add_claim = QAR
+capital = "Hisn Kayfa"
+trade_goods = wax
+culture = kurdish
+religion = sunni
+hre = no
+base_tax = 7
+base_production = 1
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gch
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = western
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = steppestech
+discovered_by = YUA
+200.1.1 = { 
+	set_province_flag = TN_Important
+	set_province_flag = TN_Silk
+	set_variable = { 
+		which = abb
+		value = 15.000
+	}
+	set_variable = { 
+		which = atc
+		value = 35.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+	set_province_flag = mined_goods
+	set_province_flag = iron
+	set_province_flag = honey
+}

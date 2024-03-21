@@ -1,0 +1,34 @@
+owner = VIE
+controller = VIE
+add_core = VIE
+capital = "Nong Bua Lamphu"
+trade_goods = rice
+culture = laotian
+religion = ban_phi
+hre = no
+base_tax = 1
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = indian
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 0.5
+	}
+	set_province_flag = salt
+}
+1355.1.1 = { 
+	add_core = KHM
+}
+1356.1.1 = { 
+	add_core = LXA
+}

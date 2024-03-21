@@ -1,0 +1,2 @@
+culture = jivaro
+religion = jungle_spiritism

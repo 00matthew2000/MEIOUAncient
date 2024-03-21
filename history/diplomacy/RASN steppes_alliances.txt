@@ -1,0 +1,42 @@
+dependency = { 
+	subject_type = "decentralized_vassal"
+	first = WHI
+	second = BLU
+	start_date = 1350.1.1
+	end_date = 1361.1.1
+}
+dependency = { 
+	subject_type = "daimyo_vassal"
+	first = WHI
+	second = KHO
+	start_date = 1350.1.1
+	end_date = 1361.1.1
+}
+dependency = { 
+	subject_type = "daimyo_vassal"
+	first = WHI
+	second = KHI
+	start_date = 1350.1.1
+	end_date = 1361.1.1
+}
+dependency = { 
+	subject_type = "decentralized_vassal"
+	first = MGH
+	second = KAS
+	start_date = 1350.1.1
+	end_date = 1383.1.1
+}
+dependency = { 
+	subject_type = "personal_union"
+	first = WHI
+	second = CHU
+	start_date = 1356.12.1
+	end_date = 1357.1.1
+}
+dependency = { 
+	subject_type = "custom_vassal"
+	first = WHI
+	second = GAZ
+	start_date = 1336.1.1
+	end_date = 1382.1.1
+}

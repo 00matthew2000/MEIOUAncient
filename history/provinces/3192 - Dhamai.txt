@@ -1,0 +1,42 @@
+owner = BNG
+controller = BNG
+add_core = BNG
+capital = "Dhamai"
+trade_goods = rice
+culture = arakanese
+religion = theravada
+hre = no
+base_tax = 52
+base_production = 0
+base_manpower = 2
+is_city = yes
+discovered_by = indian
+discovered_by = muslim
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 40.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 77
+	}
+	set_variable = { 
+		which = acp
+		value = 5.5
+	}
+}
+1356.1.1 = { 
+	add_core = ARK
+	add_core = TPR
+	set_province_flag = add_local_autonomy_25
+	set_province_flag = fruits
+}

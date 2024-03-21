@@ -1,0 +1,142 @@
+owner = POL
+controller = POL
+add_core = POL
+capital = "Inowroclaw"
+trade_goods = lumber
+culture = polish
+religion = catholic
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = western
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 8
+	}
+	set_province_flag = TN_RiverJoint
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+}
+1355.1.1 = { 
+	add_permanent_province_modifier = { 
+		name = polish_estates
+		duration = -1
+	}
+}
+100.1.1 = { 
+	set_variable = { 
+		which = amj
+		value = 31.400
+	}
+	set_variable = { 
+		which = amk
+		value = 2.000
+	}
+	set_variable = { 
+		which = amh
+		value = 31.400
+	}
+	set_variable = { 
+		which = ami
+		value = 2.000
+	}
+	set_variable = { 
+		which = amf
+		value = 25.118
+	}
+	set_variable = { 
+		which = amg
+		value = 0.000
+	}
+	set_variable = { 
+		which = amd
+		value = 29.664
+	}
+	set_variable = { 
+		which = ame
+		value = 0.000
+	}
+	set_variable = { 
+		which = amb
+		value = 33.262
+	}
+	set_variable = { 
+		which = amc
+		value = 0.000
+	}
+	set_variable = { 
+		which = alz
+		value = 38.511
+	}
+	set_variable = { 
+		which = ama
+		value = 0.000
+	}
+	set_variable = { 
+		which = alx
+		value = 39.003
+	}
+	set_variable = { 
+		which = aly
+		value = 5.000
+	}
+	set_variable = { 
+		which = alv
+		value = 56.257
+	}
+	set_variable = { 
+		which = alw
+		value = 4.750
+	}
+	set_variable = { 
+		which = alt
+		value = 75.803
+	}
+	set_variable = { 
+		which = alu
+		value = 4.500
+	}
+	set_variable = { 
+		which = alr
+		value = 105.477
+	}
+	set_variable = { 
+		which = als
+		value = 4.250
+	}
+	set_variable = { 
+		which = alp
+		value = 157.702
+	}
+	set_variable = { 
+		which = alq
+		value = 4.000
+	}
+	set_variable = { 
+		which = aho
+		value = 250.360
+	}
+	set_variable = { 
+		which = ahp
+		value = 13.000
+	}
+}

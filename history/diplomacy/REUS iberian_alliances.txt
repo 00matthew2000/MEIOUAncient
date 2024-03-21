@@ -1,0 +1,44 @@
+alliance = { 
+	first = CAS
+	second = GEN
+	start_date = 1356.1.1
+	end_date = 1369.3.23
+}
+alliance = { 
+	first = ARA
+	second = ENR
+	start_date = 1356.1.1
+	end_date = 1369.3.23
+}
+royal_marriage = { 
+	first = POR
+	second = CAS
+	start_date = 1356.1.1
+	end_date = 1369.3.23
+}
+royal_marriage = { 
+	first = ARA
+	second = SIC
+	start_date = 1356.1.1
+	end_date = 1375.1.1
+}
+dependency = { 
+	subject_type = "decentralized_vassal"
+	first = SIC
+	second = ATH
+	start_date = 1356.1.1
+	end_date = 1375.5.2
+}
+royal_marriage = { 
+	first = POR
+	second = ENG
+	start_date = 1356.1.1
+	end_date = 1415.7.19
+}
+dependency = { 
+	subject_type = "appanage_subject"
+	first = ARA
+	second = SIC
+	start_date = 1356.1.1
+	end_date = 1401.5.26
+}

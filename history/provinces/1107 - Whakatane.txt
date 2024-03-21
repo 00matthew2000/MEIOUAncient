@@ -1,0 +1,27 @@
+capital = "Taranaki"
+trade_goods = unknown
+culture = polynesian
+religion = polynesian_pagan
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+native_size = 10
+native_ferocity = 5
+native_hostileness = 9
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 40.000
+	}
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 1.5
+	}
+}

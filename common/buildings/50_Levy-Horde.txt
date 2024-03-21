@@ -1,0 +1,323 @@
+levy_horde_no = { 
+	cost = 0
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		always = no
+	}
+	keep_trigger = { 
+		has_building = levy_horde_no
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_destroyed = { 
+		if = { 
+			limit = { 
+				NOT = { 
+					has_building = levy_horde_low
+					has_building = levy_horde_med
+					has_building = levy_horde_high
+				}
+			}
+			add_building = levy_horde_no
+		}
+	}
+	on_built = { }
+	on_obsolete = { }
+}
+levy_horde_low = { 
+	cost = 0
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		is_core = ROOT
+		owner = { 
+			AND = { 
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bbg
+							value = 2
+						}
+					}
+				}
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bba
+							value = 2
+						}
+					}
+				}
+				PREV = { 
+					AND = { 
+						check_variable = { 
+							which = atc
+							value = 5
+						}
+					}
+				}
+				PREV = { 
+					NOT = { 
+						is_owned_by_trade_company = yes
+					}
+				}
+			}
+		}
+		NOT = { 
+			has_building = levy_horde_med
+			has_building = levy_horde_high
+		}
+	}
+	keep_trigger = { 
+		is_core = ROOT
+		owner = { 
+			AND = { 
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bbg
+							value = 2
+						}
+					}
+				}
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bba
+							value = 2
+						}
+					}
+				}
+				PREV = { 
+					AND = { 
+						check_variable = { 
+							which = atc
+							value = 5
+						}
+					}
+				}
+				PREV = { 
+					NOT = { 
+						is_owned_by_trade_company = yes
+					}
+				}
+			}
+		}
+	}
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		remove_building = levy_horde_no
+	}
+	on_destroyed = { 
+		if = { 
+			limit = { 
+				NOT = { 
+					has_building = levy_horde_med
+					has_building = levy_horde_high
+				}
+			}
+			add_building = levy_horde_no
+		}
+	}
+	on_obsolete = { }
+}
+levy_horde_med = { 
+	cost = 0
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		is_core = ROOT
+		owner = { 
+			AND = { 
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bbg
+							value = 2
+						}
+					}
+				}
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bba
+							value = 2
+						}
+					}
+				}
+				PREV = { 
+					AND = { 
+						check_variable = { 
+							which = atc
+							value = 5
+						}
+					}
+				}
+				PREV = { 
+					NOT = { 
+						is_owned_by_trade_company = yes
+					}
+				}
+			}
+		}
+		NOT = { 
+			has_building = levy_horde_high
+		}
+	}
+	keep_trigger = { 
+		is_core = ROOT
+		owner = { 
+			AND = { 
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bbg
+							value = 2
+						}
+					}
+				}
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bba
+							value = 2
+						}
+					}
+				}
+				PREV = { 
+					AND = { 
+						check_variable = { 
+							which = atc
+							value = 5
+						}
+					}
+				}
+				PREV = { 
+					NOT = { 
+						is_owned_by_trade_company = yes
+					}
+				}
+			}
+		}
+	}
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		remove_building = levy_horde_no
+		remove_building = levy_horde_low
+	}
+	on_destroyed = { 
+		if = { 
+			limit = { 
+				NOT = { 
+					has_building = levy_horde_high
+				}
+			}
+			add_building = levy_horde_low
+		}
+	}
+	on_obsolete = { }
+}
+levy_horde_high = { 
+	cost = 0
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		is_core = ROOT
+		owner = { 
+			AND = { 
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bbg
+							value = 2
+						}
+					}
+				}
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bba
+							value = 2
+						}
+					}
+				}
+				PREV = { 
+					AND = { 
+						check_variable = { 
+							which = atc
+							value = 5
+						}
+					}
+				}
+				PREV = { 
+					NOT = { 
+						is_owned_by_trade_company = yes
+					}
+				}
+			}
+		}
+	}
+	keep_trigger = { 
+		is_core = ROOT
+		owner = { 
+			AND = { 
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bbg
+							value = 2
+						}
+					}
+				}
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bba
+							value = 2
+						}
+					}
+				}
+				PREV = { 
+					AND = { 
+						check_variable = { 
+							which = atc
+							value = 5
+						}
+					}
+				}
+				PREV = { 
+					NOT = { 
+						is_owned_by_trade_company = yes
+					}
+				}
+			}
+		}
+	}
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		remove_building = levy_horde_no
+		remove_building = levy_horde_low
+		remove_building = levy_horde_med
+	}
+	on_destroyed = { 
+		add_building = levy_horde_med
+	}
+	on_obsolete = { }
+}

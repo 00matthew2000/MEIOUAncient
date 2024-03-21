@@ -1,0 +1,49 @@
+owner = ZZB
+controller = ZZB
+add_core = ZZB
+capital = "Ndagoni"
+trade_goods = slaves
+culture = kiunguja
+religion = sunni
+hre = no
+base_tax = 4
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 1
+}
+fort_14th = yes
+discovered_by = east_african
+discovered_by = central_african
+discovered_by = muslim
+discovered_by = indian
+discovered_by = malagasy_tech
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 60.000
+	}
+}
+450.1.1 = { 
+	set_province_flag = TN_Island
+	set_province_flag = TN_Natural_Minor
+	set_variable = { 
+		which = ami
+		value = 1.500
+	}
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 5.5
+	}
+	add_permanent_province_modifier = { 
+		name = ivory_low
+		duration = -1
+	}
+	add_permanent_province_modifier = { 
+		name = urban_goods_naval_supplies
+		duration = -1
+	}
+}

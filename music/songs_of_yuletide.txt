@@ -1,0 +1,22 @@
+song = { 
+	name = "pdxmascarol"
+	chance = { 
+		factor = 1
+		modifier = { 
+			factor = 0
+			NOT = { 
+				real_month_of_year = 11
+			}
+		}
+		modifier = { 
+			factor = 2
+			real_month_of_year = 11
+		}
+		modifier = { 
+			factor = 0
+			NOT = { 
+				has_dlc = "Songs of Yuletide"
+			}
+		}
+	}
+}

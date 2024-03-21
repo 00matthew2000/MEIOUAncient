@@ -1,0 +1,44 @@
+owner = SUN
+controller = SUN
+add_core = SUN
+capital = "Banten"
+trade_goods = pepper
+culture = sundanese
+religion = hinduism
+hre = no
+base_tax = 6
+base_production = 3
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 2
+}
+set_variable = { 
+	which = gci
+	value = 2
+}
+fort_14th = yes
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = indian
+discovered_by = austranesian
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_province_flag = TN_Port
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+	set_province_flag = spices
+	add_permanent_province_modifier = { 
+		name = urban_goods_naval_supplies
+		duration = -1
+	}
+}

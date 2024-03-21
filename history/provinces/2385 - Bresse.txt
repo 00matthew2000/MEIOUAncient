@@ -1,0 +1,129 @@
+owner = SAV
+controller = SAV
+add_core = SAV
+capital = "Bourc"
+trade_goods = livestock
+culture = arpitan
+religion = catholic
+hre = no
+base_tax = 15
+base_production = 0
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gch
+	value = 1
+}
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = western
+discovered_by = muslim
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 4
+	}
+	set_province_flag = copper
+}
+100.1.1 = { 
+	set_variable = { 
+		which = amj
+		value = 156.854
+	}
+	set_variable = { 
+		which = amk
+		value = 0.000
+	}
+	set_variable = { 
+		which = amh
+		value = 156.854
+	}
+	set_variable = { 
+		which = ami
+		value = 0.000
+	}
+	set_variable = { 
+		which = amf
+		value = 107.837
+	}
+	set_variable = { 
+		which = amg
+		value = 0.000
+	}
+	set_variable = { 
+		which = amd
+		value = 127.444
+	}
+	set_variable = { 
+		which = ame
+		value = 0.000
+	}
+	set_variable = { 
+		which = amb
+		value = 142.050
+	}
+	set_variable = { 
+		which = amc
+		value = 5.000
+	}
+	set_variable = { 
+		which = alz
+		value = 156.755
+	}
+	set_variable = { 
+		which = ama
+		value = 5.000
+	}
+	set_variable = { 
+		which = alx
+		value = 176.362
+	}
+	set_variable = { 
+		which = aly
+		value = 5.000
+	}
+	set_variable = { 
+		which = alv
+		value = 200.371
+	}
+	set_variable = { 
+		which = alw
+		value = 5.500
+	}
+	set_variable = { 
+		which = alt
+		value = 209.674
+	}
+	set_variable = { 
+		which = alu
+		value = 6.000
+	}
+	set_variable = { 
+		which = alr
+		value = 232.017
+	}
+	set_variable = { 
+		which = als
+		value = 6.000
+	}
+	set_variable = { 
+		which = alp
+		value = 283.911
+	}
+	set_variable = { 
+		which = alq
+		value = 7.000
+	}
+	set_variable = { 
+		which = aho
+		value = 349.356
+	}
+	set_variable = { 
+		which = ahp
+		value = 12.000
+	}
+}

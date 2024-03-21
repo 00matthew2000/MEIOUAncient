@@ -1,0 +1,30 @@
+owner = MED
+controller = MED
+add_core = MED
+capital = "Agordat"
+trade_goods = wool
+culture = beja_c
+religion = oriental
+base_tax = 2
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = east_african
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 90.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 1.5
+	}
+	set_province_flag = copper
+	set_province_flag = no_mines
+}

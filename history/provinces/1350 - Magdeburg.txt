@@ -1,0 +1,161 @@
+owner = MAG
+controller = MAG
+add_core = MAG
+capital = "Magdeburg"
+trade_goods = wheat
+culture = low_saxon
+religion = catholic
+hre = yes
+base_tax = 17
+base_production = 3
+base_manpower = 2
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gcj
+	value = 2
+}
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gci
+	value = 1
+}
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = western
+discovered_by = muslim
+450.1.1 = { 
+	set_province_flag = catholic_archbishopric
+	add_province_modifier = { 
+		name = catholic_archbishopric
+		duration = -1
+	}
+	set_province_flag = TN_Important
+	set_variable = { 
+		which = baf
+		value = 6
+	}
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+	set_province_flag = coal
+	set_province_flag = salt
+	add_permanent_province_modifier = { 
+		name = urban_goods_metalwork
+		duration = -1
+	}
+	add_permanent_province_modifier = { 
+		name = Teuton_Commandery_Med
+		duration = -1
+	}
+	add_permanent_province_modifier = { 
+		name = Knights_Commandery_Low
+		duration = -1
+	}
+	set_province_flag = TN_RiverJumpB
+}
+100.1.1 = { 
+	set_variable = { 
+		which = amj
+		value = 250.854
+	}
+	set_variable = { 
+		which = amk
+		value = 28.000
+	}
+	set_variable = { 
+		which = amh
+		value = 172.098
+	}
+	set_variable = { 
+		which = ami
+		value = 33.000
+	}
+	set_variable = { 
+		which = amf
+		value = 163.395
+	}
+	set_variable = { 
+		which = amg
+		value = 38.000
+	}
+	set_variable = { 
+		which = amd
+		value = 200.624
+	}
+	set_variable = { 
+		which = ame
+		value = 39.500
+	}
+	set_variable = { 
+		which = amb
+		value = 237.854
+	}
+	set_variable = { 
+		which = amc
+		value = 41.000
+	}
+	set_variable = { 
+		which = alz
+		value = 259.830
+	}
+	set_variable = { 
+		which = ama
+		value = 65.500
+	}
+	set_variable = { 
+		which = alx
+		value = 303.805
+	}
+	set_variable = { 
+		which = aly
+		value = 68.000
+	}
+	set_variable = { 
+		which = alv
+		value = 297.213
+	}
+	set_variable = { 
+		which = alw
+		value = 30.000
+	}
+	set_variable = { 
+		which = alt
+		value = 354.456
+	}
+	set_variable = { 
+		which = alu
+		value = 32.250
+	}
+	set_variable = { 
+		which = alr
+		value = 391.199
+	}
+	set_variable = { 
+		which = als
+		value = 55.000
+	}
+	set_variable = { 
+		which = alp
+		value = 449.439
+	}
+	set_variable = { 
+		which = alq
+		value = 86.000
+	}
+	set_variable = { 
+		which = aho
+		value = 648.158
+	}
+	set_variable = { 
+		which = ahp
+		value = 155.000
+	}
+}

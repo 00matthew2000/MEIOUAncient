@@ -1,0 +1,2 @@
+culture = mapuche
+religion = ngenechen

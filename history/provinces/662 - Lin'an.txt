@@ -1,0 +1,75 @@
+owner = DLI
+controller = DLI
+add_core = DLI
+capital = "Jianshui"
+trade_goods = livestock
+culture = hani
+religion = bimoism
+hre = no
+base_tax = 11
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 1
+}
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+200.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 85
+	}
+	set_province_flag = TN_Tea
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = ami
+		value = 5.000
+	}
+	set_variable = { 
+		which = atc
+		value = 60.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+	set_province_flag = mined_goods
+	set_province_flag = tin
+	set_province_flag = tea
+	set_province_flag = spices
+}
+1253.1.1 = { 
+	owner = YUA
+	controller = YUA
+	add_core = YUA
+}
+1274.1.1 = { 
+	owner = LNG
+	controller = LNG
+	add_core = LNG
+	remove_core = DLI
+}
+1356.1.1 = { 
+	set_province_flag = mined_goods
+	set_province_flag = salt
+}

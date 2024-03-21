@@ -1,0 +1,29 @@
+owner = WSL
+controller = WSL
+add_core = WSL
+capital = "Wassoulou"
+trade_goods = cotton
+culture = bambara
+religion = sunni
+hre = no
+base_tax = 7
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 20.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+}
+1356.1.1 = { 
+	add_core = SEG
+}

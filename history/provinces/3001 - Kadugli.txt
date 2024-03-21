@@ -1,0 +1,25 @@
+owner = ALW
+controller = ALW
+add_core = ALW
+capital = "Kadugli"
+trade_goods = livestock
+culture = shilluk
+religion = lotuko_pagan
+hre = no
+base_tax = 8
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = east_african
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+}

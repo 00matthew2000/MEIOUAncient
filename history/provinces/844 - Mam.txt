@@ -1,0 +1,31 @@
+owner = MAA
+controller = MAA
+add_core = MAA
+capital = "Tak'alik A'baj'"
+trade_goods = cotton
+culture = mamean
+religion = mayan
+hre = no
+base_tax = 13
+base_production = 2
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 2
+}
+set_variable = { 
+	which = gci
+	value = 2
+}
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_province_flag = TN_Port
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+	set_province_flag = cacao
+	set_province_flag = coal
+}

@@ -1,0 +1,45 @@
+owner = DRA
+controller = DRA
+add_core = DRA
+capital = "Daura"
+trade_goods = cotton
+culture = haussa
+religion = sunni
+hre = no
+base_tax = 12
+base_production = 1
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+fort_14th = yes
+set_variable = { 
+	which = gcn
+	value = 1
+}
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 15.000
+	}
+	set_variable = { 
+		which = atc
+		value = 20.000
+	}
+}
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = ami
+		value = 11.195
+	}
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+	set_province_flag = dates
+}

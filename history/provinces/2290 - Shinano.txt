@@ -1,0 +1,48 @@
+owner = OGA
+controller = OGA
+capital = "Matumoto"
+trade_goods = hemp
+culture = chubu
+religion = mahayana
+hre = no
+base_tax = 18
+base_production = 0
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 5.000
+	}
+	set_province_flag = TN_Important
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+	set_province_flag = mined_goods
+	set_province_flag = gold
+	set_province_flag = hemp
+}
+1342.1.1 = { 
+	add_core = OGA
+}
+1351.1.1 = { 
+	remove_core = OGA
+	add_core = SUW
+	owner = SUW
+	controller = SUW
+}
+1352.1.1 = { 
+	remove_core = SUW
+	add_core = OGA
+	owner = OGA
+	controller = OGA
+}

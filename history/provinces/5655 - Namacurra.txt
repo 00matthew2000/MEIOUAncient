@@ -1,0 +1,32 @@
+owner = QLM
+controller = QLM
+add_core = QLM
+capital = "Namacurra"
+trade_goods = slaves
+culture = kimwani
+religion = sunni
+hre = no
+base_tax = 4
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 1
+}
+discovered_by = central_african
+discovered_by = east_african
+discovered_by = malagasy_tech
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 40.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+	set_province_flag = seasalt
+}

@@ -1,0 +1,55 @@
+owner = QII
+controller = YUA
+capital = "Dongping"
+trade_goods = cotton
+culture = hanyu
+religion = mahayana
+hre = no
+base_tax = 30
+base_production = 1
+base_manpower = 2
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 3
+}
+set_variable = { 
+	which = gcj
+	value = 2
+}
+set_variable = { 
+	which = gci
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 3
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = baf
+		value = 103
+	}
+	set_province_flag = TN_RiverJoint
+	set_variable = { 
+		which = acp
+		value = 6.5
+	}
+}
+1276.1.1 = { 
+	owner = YUA
+	controller = YUA
+	add_core = YUA
+}
+1351.1.1 = { 
+	owner = QII
+	controller = CYU
+	add_core = QII
+}

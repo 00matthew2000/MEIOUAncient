@@ -1,0 +1,21 @@
+owner = CTM
+controller = CTM
+add_core = CTM
+capital = "Bakhalal"
+trade_goods = cacao
+culture = yucatecan
+religion = mayan
+hre = no
+base_tax = 17
+base_production = 0
+base_manpower = 1
+is_city = yes
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_province_flag = cacao
+	set_province_flag = seasalt
+	set_variable = { 
+		which = amh
+		value = 20.000
+	}
+}

@@ -1,0 +1,6 @@
+alliance = { 
+	first = KMT
+	second = ASS
+	start_date = 1320.1.1
+	end_date = 1490.1.1
+}

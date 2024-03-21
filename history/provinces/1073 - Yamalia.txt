@@ -1,0 +1,33 @@
+owner = BLU
+controller = BLU
+add_core = BLU
+capital = "Mughaljar"
+trade_goods = wool
+culture = tartar
+religion = sunni
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = ottoman
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = muslim
+200.1.1 = { 
+	set_province_flag = iron
+	set_variable = { 
+		which = abb
+		value = 100.000
+	}
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 1
+	}
+}

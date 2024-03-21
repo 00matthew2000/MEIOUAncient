@@ -1,0 +1,4190 @@
+country_event = { 
+	id = flavor_hun.1
+	title = flavor_hun.1.t
+	desc = flavor_hun.1.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = { 
+		tag = HUN
+		has_regency = yes
+		is_lesser_in_union = no
+		OR = { 
+			has_female_heir = yes
+			has_heir = no
+			NOT = { 
+				heir_claim = 50
+			}
+		}
+		is_year = 1420
+		NOT = { 
+			is_year = 1500
+		}
+	}
+	mean_time_to_happen = { 
+		months = 6
+	}
+	option = { 
+		ai_chance = { 
+			factor = 90
+		}
+		name = flavor_hun.1.a
+		log = "FE-HUN:[GetYear]:[Root.GetName]:elected Janos Hunyadi as regent:flavor_hun.1"
+		hidden_effect = { 
+			set_country_flag = rule_of_hunyadi
+		}
+		define_ruler = { 
+			name = "János Hunyadi"
+			DIP = 5
+			ADM = 4
+			MIL = 5
+			regency = yes
+			attach_leader = "János Hunyadi"
+		}
+		define_heir = { 
+			name = "Ladislaus Postumus"
+			dynasty = "von Habsburg"
+			culture = austrian
+			adm = 1
+			dip = 2
+			mil = 1
+			age = 7
+		}
+		every_country = { 
+			limit = { 
+				NOT = { 
+					tag = ROOT
+				}
+				dynasty = "von Habsburg"
+			}
+			add_opinion = { 
+				who = root
+				modifier = hun_habsburgs_spurned
+			}
+		}
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asn
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = asq
+					value = 10
+				}
+				change_variable = { 
+					which = asr
+					value = 10
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_NOLoyProv_10
+	}
+	option = { 
+		name = flavor_hun.1.b
+		ai_chance = { 
+			factor = 10
+		}
+		log = "FE-HUN:[GetYear]:[Root.GetName]:rejected Janos Hunyadi as regent, kept current regency council:flavor_hun.1"
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					stability = 3
+				}
+				set_variable = { 
+					which = ahf
+					value = 1200
+				}
+			}
+			else = { 
+				add_stability = 1
+			}
+		}
+		tooltip = { 
+			add_stability = 1
+		}
+		if = { 
+			limit = { 
+				is_emperor_of_china = yes
+			}
+			add_mandate = 5
+		}
+		define_heir = { 
+			name = "Ladislaus Postumus"
+			dynasty = "von Habsburg"
+			culture = austrian
+			adm = 3
+			dip = 3
+			mil = 2
+			age = 7
+		}
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asn
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = asq
+					value = -10
+				}
+				change_variable = { 
+					which = asr
+					value = -10
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_NOLoyProv_-10
+	}
+}
+country_event = { 
+	id = flavor_hun.2
+	title = flavor_hun.2.t
+	desc = flavor_hun.2.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = { 
+		tag = HUN
+		has_country_flag = rule_of_hunyadi
+		has_regency = no
+		is_lesser_in_union = no
+		dynasty = "von Habsburg"
+		any_country = { 
+			dynasty = "von Habsburg"
+			is_subject = no
+			government = monarchy
+			has_regency = no
+			num_of_cities = 8
+		}
+	}
+	mean_time_to_happen = { 
+		years = 5
+	}
+	option = { 
+		ai_chance = { 
+			factor = 75
+		}
+		name = flavor_hun.2.a
+		log = "FE-HUN:[GetYear]:[Root.GetName]:elected Matyas Hunyadi as king:flavor_hun.2"
+		define_heir = { 
+			name = "Mátyás"
+			culture = hungarian
+			dynasty = "Hunyadi"
+			adm = 4
+			dip = 5
+			mil = 5
+			claim = 25
+			age = 17
+		}
+		if = { 
+			limit = { 
+				has_dlc = "Rights of Man"
+			}
+			hidden_effect = { 
+				add_heir_personality = just_personality
+			}
+		}
+		kill_ruler = yes
+		every_country = { 
+			limit = { 
+				NOT = { 
+					tag = ROOT
+				}
+				is_subject = no
+				dynasty = "von Habsburg"
+			}
+			tooltip = { 
+				add_casus_belli = { 
+					target = HUN
+					type = cb_restore_personal_union
+					months = 60
+				}
+			}
+			hidden_effect = { 
+				country_event = { 
+					id = flavor_hun.10
+					days = 1
+				}
+			}
+		}
+	}
+	option = { 
+		name = flavor_hun.2.b
+		log = "FE-HUN:[GetYear]:[Root.GetName]:rejected Matyas Hunyadi as king, went into union with [HAB.GetName]:flavor_hun.2"
+		ai_chance = { 
+			factor = 25
+		}
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					stability = 3
+				}
+				set_variable = { 
+					which = ahf
+					value = 1200
+				}
+			}
+			else = { 
+				add_stability = 1
+			}
+		}
+		tooltip = { 
+			add_stability = 1
+		}
+		if = { 
+			limit = { 
+				is_emperor_of_china = yes
+			}
+			add_mandate = 5
+		}
+		random_country = { 
+			limit = { 
+				dynasty = "von Habsburg"
+				num_of_cities = 8
+			}
+			create_union = HUN
+			hidden_effect = { 
+				country_event = { 
+					id = flavor_hun.3
+					days = 1
+				}
+			}
+		}
+	}
+	option = { 
+		name = flavor_hun.2.c
+		trigger = { 
+			has_heir = yes
+			NOT = { 
+				has_heir = "Ladislaus Postumus"
+			}
+			NOT = { 
+				dynasty = HAB
+			}
+		}
+		log = "FE-HUN:[GetYear]:[Root.GetName]:rejected Matyas Hunyadi as king, chose current heir [Root.Heir.GetName] [Root.Heir.Dynasty.GetName] instead:flavor_hun.2"
+		ai_chance = { 
+			factor = 25
+			modifier = { 
+				factor = 10
+				OR = { 
+					heir_adm = 5
+					heir_mil = 5
+					heir_dip = 5
+				}
+			}
+		}
+		kill_ruler = yes
+		every_country = { 
+			limit = { 
+				NOT = { 
+					tag = ROOT
+				}
+				is_subject = no
+				dynasty = "von Habsburg"
+			}
+			if = { 
+				limit = { 
+					historical_friend_with = HUN
+				}
+				remove_historical_friend = HUN
+				HUN = { 
+					remove_historical_friend = PREV
+				}
+				log = "FE-HUN:[GetYear]:[Root.GetName]:ended historical friendship with [Prev.GetName]:flavor_hun.2"
+			}
+			tooltip = { 
+				add_casus_belli = { 
+					target = HUN
+					type = cb_restore_personal_union
+					months = 60
+				}
+			}
+			hidden_effect = { 
+				country_event = { 
+					id = flavor_hun.10
+					days = 1
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.3
+	title = flavor_hun.3.t
+	desc = flavor_hun.3.d
+	picture = DIPLOMACY_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = flavor_hun.3.a
+		add_legitimacy = 5
+		add_prestige = 5
+	}
+}
+country_event = { 
+	id = flavor_hun.10
+	title = flavor_hun.10.t
+	desc = flavor_hun.10.d
+	picture = DIPLOMACY_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = flavor_hun.10.a
+		add_casus_belli = { 
+			target = FROM
+			type = cb_restore_personal_union
+			months = 60
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.4
+	title = flavor_hun.4.t
+	desc = flavor_hun.4.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		tag = HUN
+		adm_tech = 27
+		mil_tech = 27
+		has_regency = no
+		dynasty = "Hunyadi"
+	}
+	mean_time_to_happen = { 
+		months = 18
+	}
+	option = { 
+		ai_chance = { 
+			factor = 50
+		}
+		name = flavor_hun.4.a
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asn
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = asq
+					value = -5
+				}
+				change_variable = { 
+					which = asr
+					value = -5
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_NOLoyProv_-5
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ass
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = asv
+					value = 5
+				}
+				change_variable = { 
+					which = asw
+					value = 5
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asv
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asv
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asv
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asv
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_BGLoyProv_5
+		add_adm_power = 100
+		random_owned_province = { 
+			limit = { 
+				AND = { 
+					OR = { 
+						is_city = yes
+						is_colony = yes
+					}
+					NOT = { 
+						province_id = 5154
+					}
+				}
+				development = 7
+			}
+			if = { 
+				limit = { 
+					has_province_modifier = rural_development_efforts
+				}
+				extend_province_modifier = { 
+					name = rural_development_efforts
+					duration = 3650
+				}
+			}
+			else = { 
+				add_province_modifier = { 
+					name = rural_development_efforts
+					duration = 3650
+				}
+			}
+			custom_tooltip = rural_development_efforts_tt
+			if = { 
+				limit = { 
+					has_province_modifier = urban_development_efforts
+				}
+				extend_province_modifier = { 
+					name = urban_development_efforts
+					duration = 3650
+				}
+			}
+			else = { 
+				add_province_modifier = { 
+					name = urban_development_efforts
+					duration = 3650
+				}
+			}
+			custom_tooltip = urban_development_efforts_tt
+		}
+		random_owned_province = { 
+			limit = { 
+				AND = { 
+					OR = { 
+						is_city = yes
+						is_colony = yes
+					}
+					NOT = { 
+						province_id = 5154
+					}
+				}
+				development = 7
+			}
+			if = { 
+				limit = { 
+					has_province_modifier = rural_development_efforts
+				}
+				extend_province_modifier = { 
+					name = rural_development_efforts
+					duration = 3650
+				}
+			}
+			else = { 
+				add_province_modifier = { 
+					name = rural_development_efforts
+					duration = 3650
+				}
+			}
+			custom_tooltip = rural_development_efforts_tt
+			if = { 
+				limit = { 
+					has_province_modifier = urban_development_efforts
+				}
+				extend_province_modifier = { 
+					name = urban_development_efforts
+					duration = 3650
+				}
+			}
+			else = { 
+				add_province_modifier = { 
+					name = urban_development_efforts
+					duration = 3650
+				}
+			}
+			custom_tooltip = urban_development_efforts_tt
+		}
+	}
+	option = { 
+		ai_chance = { 
+			factor = 50
+		}
+		name = flavor_hun.4.b
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asn
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = asq
+					value = 5
+				}
+				change_variable = { 
+					which = asr
+					value = 5
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_NOLoyProv_5
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ass
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = asv
+					value = -5
+				}
+				change_variable = { 
+					which = asw
+					value = -5
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asv
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asv
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asv
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asv
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_BGLoyProv_-5
+		add_mil_power = 100
+		random_owned_province = { 
+			limit = { 
+				AND = { 
+					OR = { 
+						is_city = yes
+						is_colony = yes
+					}
+					NOT = { 
+						province_id = 5154
+					}
+				}
+				development = 7
+			}
+			if = { 
+				limit = { 
+					has_province_modifier = military_development_efforts
+				}
+				extend_province_modifier = { 
+					name = military_development_efforts
+					duration = 3650
+				}
+			}
+			else = { 
+				add_province_modifier = { 
+					name = military_development_efforts
+					duration = 3650
+				}
+			}
+		}
+		random_owned_province = { 
+			limit = { 
+				AND = { 
+					OR = { 
+						is_city = yes
+						is_colony = yes
+					}
+					NOT = { 
+						province_id = 5154
+					}
+				}
+				development = 7
+			}
+			if = { 
+				limit = { 
+					has_province_modifier = military_development_efforts
+				}
+				extend_province_modifier = { 
+					name = military_development_efforts
+					duration = 3650
+				}
+			}
+			else = { 
+				add_province_modifier = { 
+					name = military_development_efforts
+					duration = 3650
+				}
+			}
+		}
+		random_owned_province = { 
+			limit = { 
+				AND = { 
+					OR = { 
+						is_city = yes
+						is_colony = yes
+					}
+					NOT = { 
+						province_id = 5154
+					}
+				}
+				development = 7
+			}
+			if = { 
+				limit = { 
+					has_province_modifier = military_development_efforts
+				}
+				extend_province_modifier = { 
+					name = military_development_efforts
+					duration = 3650
+				}
+			}
+			else = { 
+				add_province_modifier = { 
+					name = military_development_efforts
+					duration = 3650
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.5
+	title = flavor_hun.5.t
+	desc = flavor_hun.5.d
+	picture = UNIVERSITY_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		tag = HUN
+		adm_tech = 26
+		has_regency = no
+		owns = 1274
+		dynasty = "Hunyadi"
+		religion = catholic
+	}
+	mean_time_to_happen = { 
+		months = 12
+	}
+	option = { 
+		name = flavor_hun.5.a
+		add_prestige = 10
+		add_papal_influence = 10
+		1274 = { 
+			if = { 
+				limit = { 
+					has_province_modifier = urban_development_efforts
+				}
+				extend_province_modifier = { 
+					name = urban_development_efforts
+					duration = 3650
+				}
+			}
+			else = { 
+				add_province_modifier = { 
+					name = urban_development_efforts
+					duration = 3650
+				}
+			}
+			custom_tooltip = urban_development_efforts_tt
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.6
+	title = flavor_hun.6.t
+	desc = flavor_hun.6.d
+	picture = INVENTION_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		tag = HUN
+		adm_tech = 24
+		NOT = { 
+			is_year = 1500
+		}
+	}
+	mean_time_to_happen = { 
+		years = 1
+	}
+	option = { 
+		name = flavor_hun.6.a
+		custom_tooltip = CL_FactionBoost_-10
+		hidden_effect = { 
+			set_variable = { 
+				which = oqa
+				value = -10
+			}
+			country_event = { 
+				id = PTM_Politics.001
+			}
+		}
+		if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = asx
+						value = 65
+					}
+				}
+			}
+			add_country_modifier = { 
+				name = FC_CL_Crackdown_L
+				duration = 1825
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = asx
+						value = 35
+					}
+				}
+			}
+			add_country_modifier = { 
+				name = FC_CL_Crackdown_M
+				duration = 1825
+			}
+		}
+		else = { 
+			add_country_modifier = { 
+				name = FC_CL_Crackdown_S
+				duration = 1825
+			}
+		}
+		add_country_modifier = { 
+			name = free_freethinkers
+			duration = 3650
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.7
+	title = flavor_hun.7.t
+	desc = flavor_hun.7.d
+	picture = COURT_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		tag = HUN
+		is_year = 1490
+		NOT = { 
+			is_year = 1530
+		}
+		OR = { 
+			has_regency = no
+			has_consort_regency = yes
+		}
+		NOT = { 
+			AND = { 
+				check_variable = { 
+					which = bbe
+					value = 0
+				}
+			}
+		}
+		NOT = { 
+			ADM = 5
+		}
+		NOT = { 
+			ruler_age = 50
+		}
+	}
+	mean_time_to_happen = { 
+		years = 1
+	}
+	option = { 
+		name = flavor_hun.7.a
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asn
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = asq
+					value = 10
+				}
+				change_variable = { 
+					which = asr
+					value = 10
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_NOLoyProv_10
+		custom_tooltip = NO_FactionBoost_20
+		hidden_effect = { 
+			set_variable = { 
+				which = opz
+				value = 20
+			}
+			country_event = { 
+				id = PTM_Politics.001
+			}
+		}
+		if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = asn
+						value = 65
+					}
+				}
+			}
+			add_country_modifier = { 
+				name = FC_NO_Boost_L
+				duration = 1825
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = asn
+						value = 35
+					}
+				}
+			}
+			add_country_modifier = { 
+				name = FC_NO_Boost_M
+				duration = 1825
+			}
+		}
+		else = { 
+			add_country_modifier = { 
+				name = FC_NO_Boost_S
+				duration = 1825
+			}
+		}
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					always = yes
+				}
+				if = { 
+					limit = { 
+						faction_influence = { 
+							faction = FC_BG
+							influence = 50
+						}
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						hidden_effect = { 
+							change_variable = { 
+								which = bdr
+								value = -25
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										AND = { 
+											check_variable = { 
+												which = bdr
+												value = -100
+											}
+										}
+									}
+								}
+								set_variable = { 
+									which = bdr
+									value = -100
+								}
+							}
+							else_if = { 
+								limit = { 
+									AND = { 
+										check_variable = { 
+											which = bdr
+											value = 100.001
+										}
+									}
+								}
+								set_variable = { 
+									which = bdr
+									value = 100
+								}
+							}
+							multiply_variable = { 
+								which = bdr
+								value = 0.001
+							}
+							multiply_variable = { 
+								which = bdr
+								value = 1000
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							custom_tooltip = BG_RelationState_-25
+						}
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						hidden_effect = { 
+							change_variable = { 
+								which = hxj
+								value = -1
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										AND = { 
+											check_variable = { 
+												which = hxj
+												value = -5
+											}
+										}
+									}
+								}
+								set_variable = { 
+									which = hxj
+									value = -5
+								}
+							}
+							else_if = { 
+								limit = { 
+									AND = { 
+										check_variable = { 
+											which = hxj
+											value = 5.001
+										}
+									}
+								}
+								set_variable = { 
+									which = hxj
+									value = 5
+								}
+							}
+							multiply_variable = { 
+								which = hxj
+								value = 0.001
+							}
+							multiply_variable = { 
+								which = hxj
+								value = 1000
+							}
+						}
+					}
+				}
+				else_if = { 
+					limit = { 
+						faction_influence = { 
+							faction = FC_BG
+							influence = 30
+						}
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						hidden_effect = { 
+							change_variable = { 
+								which = bdr
+								value = -15
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										AND = { 
+											check_variable = { 
+												which = bdr
+												value = -100
+											}
+										}
+									}
+								}
+								set_variable = { 
+									which = bdr
+									value = -100
+								}
+							}
+							else_if = { 
+								limit = { 
+									AND = { 
+										check_variable = { 
+											which = bdr
+											value = 100.001
+										}
+									}
+								}
+								set_variable = { 
+									which = bdr
+									value = 100
+								}
+							}
+							multiply_variable = { 
+								which = bdr
+								value = 0.001
+							}
+							multiply_variable = { 
+								which = bdr
+								value = 1000
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							custom_tooltip = BG_RelationState_-15
+						}
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						hidden_effect = { 
+							change_variable = { 
+								which = hxj
+								value = -1
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										AND = { 
+											check_variable = { 
+												which = hxj
+												value = -5
+											}
+										}
+									}
+								}
+								set_variable = { 
+									which = hxj
+									value = -5
+								}
+							}
+							else_if = { 
+								limit = { 
+									AND = { 
+										check_variable = { 
+											which = hxj
+											value = 5.001
+										}
+									}
+								}
+								set_variable = { 
+									which = hxj
+									value = 5
+								}
+							}
+							multiply_variable = { 
+								which = hxj
+								value = 0.001
+							}
+							multiply_variable = { 
+								which = hxj
+								value = 1000
+							}
+						}
+					}
+				}
+				else = { 
+					if = { 
+						limit = { 
+							always = yes
+						}
+						hidden_effect = { 
+							change_variable = { 
+								which = bdr
+								value = -5
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										AND = { 
+											check_variable = { 
+												which = bdr
+												value = -100
+											}
+										}
+									}
+								}
+								set_variable = { 
+									which = bdr
+									value = -100
+								}
+							}
+							else_if = { 
+								limit = { 
+									AND = { 
+										check_variable = { 
+											which = bdr
+											value = 100.001
+										}
+									}
+								}
+								set_variable = { 
+									which = bdr
+									value = 100
+								}
+							}
+							multiply_variable = { 
+								which = bdr
+								value = 0.001
+							}
+							multiply_variable = { 
+								which = bdr
+								value = 1000
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							custom_tooltip = BG_RelationState_-5
+						}
+					}
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				if = { 
+					limit = { 
+						faction_influence = { 
+							faction = FC_CL
+							influence = 50
+						}
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						hidden_effect = { 
+							change_variable = { 
+								which = bds
+								value = -25
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										AND = { 
+											check_variable = { 
+												which = bds
+												value = -100
+											}
+										}
+									}
+								}
+								set_variable = { 
+									which = bds
+									value = -100
+								}
+							}
+							else_if = { 
+								limit = { 
+									AND = { 
+										check_variable = { 
+											which = bds
+											value = 100.001
+										}
+									}
+								}
+								set_variable = { 
+									which = bds
+									value = 100
+								}
+							}
+							multiply_variable = { 
+								which = bds
+								value = 0.001
+							}
+							multiply_variable = { 
+								which = bds
+								value = 1000
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							custom_tooltip = CL_RelationState_-25
+						}
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						hidden_effect = { 
+							change_variable = { 
+								which = hxk
+								value = -1
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										AND = { 
+											check_variable = { 
+												which = hxk
+												value = -5
+											}
+										}
+									}
+								}
+								set_variable = { 
+									which = hxk
+									value = -5
+								}
+							}
+							else_if = { 
+								limit = { 
+									AND = { 
+										check_variable = { 
+											which = hxk
+											value = 5.001
+										}
+									}
+								}
+								set_variable = { 
+									which = hxk
+									value = 5
+								}
+							}
+							multiply_variable = { 
+								which = hxk
+								value = 0.001
+							}
+							multiply_variable = { 
+								which = hxk
+								value = 1000
+							}
+						}
+					}
+				}
+				else_if = { 
+					limit = { 
+						faction_influence = { 
+							faction = FC_CL
+							influence = 30
+						}
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						hidden_effect = { 
+							change_variable = { 
+								which = bds
+								value = -15
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										AND = { 
+											check_variable = { 
+												which = bds
+												value = -100
+											}
+										}
+									}
+								}
+								set_variable = { 
+									which = bds
+									value = -100
+								}
+							}
+							else_if = { 
+								limit = { 
+									AND = { 
+										check_variable = { 
+											which = bds
+											value = 100.001
+										}
+									}
+								}
+								set_variable = { 
+									which = bds
+									value = 100
+								}
+							}
+							multiply_variable = { 
+								which = bds
+								value = 0.001
+							}
+							multiply_variable = { 
+								which = bds
+								value = 1000
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							custom_tooltip = CL_RelationState_-15
+						}
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						hidden_effect = { 
+							change_variable = { 
+								which = hxk
+								value = -1
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										AND = { 
+											check_variable = { 
+												which = hxk
+												value = -5
+											}
+										}
+									}
+								}
+								set_variable = { 
+									which = hxk
+									value = -5
+								}
+							}
+							else_if = { 
+								limit = { 
+									AND = { 
+										check_variable = { 
+											which = hxk
+											value = 5.001
+										}
+									}
+								}
+								set_variable = { 
+									which = hxk
+									value = 5
+								}
+							}
+							multiply_variable = { 
+								which = hxk
+								value = 0.001
+							}
+							multiply_variable = { 
+								which = hxk
+								value = 1000
+							}
+						}
+					}
+				}
+				else = { 
+					if = { 
+						limit = { 
+							always = yes
+						}
+						hidden_effect = { 
+							change_variable = { 
+								which = bds
+								value = -5
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										AND = { 
+											check_variable = { 
+												which = bds
+												value = -100
+											}
+										}
+									}
+								}
+								set_variable = { 
+									which = bds
+									value = -100
+								}
+							}
+							else_if = { 
+								limit = { 
+									AND = { 
+										check_variable = { 
+											which = bds
+											value = 100.001
+										}
+									}
+								}
+								set_variable = { 
+									which = bds
+									value = 100
+								}
+							}
+							multiply_variable = { 
+								which = bds
+								value = 0.001
+							}
+							multiply_variable = { 
+								which = bds
+								value = 1000
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							custom_tooltip = CL_RelationState_-5
+						}
+					}
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				if = { 
+					limit = { 
+						faction_influence = { 
+							faction = FC_TR
+							influence = 50
+						}
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						hidden_effect = { 
+							change_variable = { 
+								which = bdt
+								value = -25
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										AND = { 
+											check_variable = { 
+												which = bdt
+												value = -100
+											}
+										}
+									}
+								}
+								set_variable = { 
+									which = bdt
+									value = -100
+								}
+							}
+							else_if = { 
+								limit = { 
+									AND = { 
+										check_variable = { 
+											which = bdt
+											value = 100.001
+										}
+									}
+								}
+								set_variable = { 
+									which = bdt
+									value = 100
+								}
+							}
+							multiply_variable = { 
+								which = bdt
+								value = 0.001
+							}
+							multiply_variable = { 
+								which = bdt
+								value = 1000
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							custom_tooltip = TR_RelationState_-25
+						}
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						hidden_effect = { 
+							change_variable = { 
+								which = hxl
+								value = -1
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										AND = { 
+											check_variable = { 
+												which = hxl
+												value = -5
+											}
+										}
+									}
+								}
+								set_variable = { 
+									which = hxl
+									value = -5
+								}
+							}
+							else_if = { 
+								limit = { 
+									AND = { 
+										check_variable = { 
+											which = hxl
+											value = 5.001
+										}
+									}
+								}
+								set_variable = { 
+									which = hxl
+									value = 5
+								}
+							}
+							multiply_variable = { 
+								which = hxl
+								value = 0.001
+							}
+							multiply_variable = { 
+								which = hxl
+								value = 1000
+							}
+						}
+					}
+				}
+				else_if = { 
+					limit = { 
+						faction_influence = { 
+							faction = FC_TR
+							influence = 30
+						}
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						hidden_effect = { 
+							change_variable = { 
+								which = bdt
+								value = -15
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										AND = { 
+											check_variable = { 
+												which = bdt
+												value = -100
+											}
+										}
+									}
+								}
+								set_variable = { 
+									which = bdt
+									value = -100
+								}
+							}
+							else_if = { 
+								limit = { 
+									AND = { 
+										check_variable = { 
+											which = bdt
+											value = 100.001
+										}
+									}
+								}
+								set_variable = { 
+									which = bdt
+									value = 100
+								}
+							}
+							multiply_variable = { 
+								which = bdt
+								value = 0.001
+							}
+							multiply_variable = { 
+								which = bdt
+								value = 1000
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							custom_tooltip = TR_RelationState_-15
+						}
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						hidden_effect = { 
+							change_variable = { 
+								which = hxl
+								value = -1
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										AND = { 
+											check_variable = { 
+												which = hxl
+												value = -5
+											}
+										}
+									}
+								}
+								set_variable = { 
+									which = hxl
+									value = -5
+								}
+							}
+							else_if = { 
+								limit = { 
+									AND = { 
+										check_variable = { 
+											which = hxl
+											value = 5.001
+										}
+									}
+								}
+								set_variable = { 
+									which = hxl
+									value = 5
+								}
+							}
+							multiply_variable = { 
+								which = hxl
+								value = 0.001
+							}
+							multiply_variable = { 
+								which = hxl
+								value = 1000
+							}
+						}
+					}
+				}
+				else = { 
+					if = { 
+						limit = { 
+							always = yes
+						}
+						hidden_effect = { 
+							change_variable = { 
+								which = bdt
+								value = -5
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										AND = { 
+											check_variable = { 
+												which = bdt
+												value = -100
+											}
+										}
+									}
+								}
+								set_variable = { 
+									which = bdt
+									value = -100
+								}
+							}
+							else_if = { 
+								limit = { 
+									AND = { 
+										check_variable = { 
+											which = bdt
+											value = 100.001
+										}
+									}
+								}
+								set_variable = { 
+									which = bdt
+									value = 100
+								}
+							}
+							multiply_variable = { 
+								which = bdt
+								value = 0.001
+							}
+							multiply_variable = { 
+								which = bdt
+								value = 1000
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							custom_tooltip = TR_RelationState_-5
+						}
+					}
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				if = { 
+					limit = { 
+						faction_influence = { 
+							faction = FC_BU
+							influence = 50
+						}
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						hidden_effect = { 
+							change_variable = { 
+								which = bdu
+								value = -25
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										AND = { 
+											check_variable = { 
+												which = bdu
+												value = -100
+											}
+										}
+									}
+								}
+								set_variable = { 
+									which = bdu
+									value = -100
+								}
+							}
+							else_if = { 
+								limit = { 
+									AND = { 
+										check_variable = { 
+											which = bdu
+											value = 100.001
+										}
+									}
+								}
+								set_variable = { 
+									which = bdu
+									value = 100
+								}
+							}
+							multiply_variable = { 
+								which = bdu
+								value = 0.001
+							}
+							multiply_variable = { 
+								which = bdu
+								value = 1000
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							custom_tooltip = BU_RelationState_-25
+						}
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						hidden_effect = { 
+							change_variable = { 
+								which = hxm
+								value = -1
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										AND = { 
+											check_variable = { 
+												which = hxm
+												value = -5
+											}
+										}
+									}
+								}
+								set_variable = { 
+									which = hxm
+									value = -5
+								}
+							}
+							else_if = { 
+								limit = { 
+									AND = { 
+										check_variable = { 
+											which = hxm
+											value = 5.001
+										}
+									}
+								}
+								set_variable = { 
+									which = hxm
+									value = 5
+								}
+							}
+							multiply_variable = { 
+								which = hxm
+								value = 0.001
+							}
+							multiply_variable = { 
+								which = hxm
+								value = 1000
+							}
+						}
+					}
+				}
+				else_if = { 
+					limit = { 
+						faction_influence = { 
+							faction = FC_BU
+							influence = 30
+						}
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						hidden_effect = { 
+							change_variable = { 
+								which = bdu
+								value = -15
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										AND = { 
+											check_variable = { 
+												which = bdu
+												value = -100
+											}
+										}
+									}
+								}
+								set_variable = { 
+									which = bdu
+									value = -100
+								}
+							}
+							else_if = { 
+								limit = { 
+									AND = { 
+										check_variable = { 
+											which = bdu
+											value = 100.001
+										}
+									}
+								}
+								set_variable = { 
+									which = bdu
+									value = 100
+								}
+							}
+							multiply_variable = { 
+								which = bdu
+								value = 0.001
+							}
+							multiply_variable = { 
+								which = bdu
+								value = 1000
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							custom_tooltip = BU_RelationState_-15
+						}
+					}
+					if = { 
+						limit = { 
+							always = yes
+						}
+						hidden_effect = { 
+							change_variable = { 
+								which = hxm
+								value = -1
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										AND = { 
+											check_variable = { 
+												which = hxm
+												value = -5
+											}
+										}
+									}
+								}
+								set_variable = { 
+									which = hxm
+									value = -5
+								}
+							}
+							else_if = { 
+								limit = { 
+									AND = { 
+										check_variable = { 
+											which = hxm
+											value = 5.001
+										}
+									}
+								}
+								set_variable = { 
+									which = hxm
+									value = 5
+								}
+							}
+							multiply_variable = { 
+								which = hxm
+								value = 0.001
+							}
+							multiply_variable = { 
+								which = hxm
+								value = 1000
+							}
+						}
+					}
+				}
+				else = { 
+					if = { 
+						limit = { 
+							always = yes
+						}
+						hidden_effect = { 
+							change_variable = { 
+								which = bdu
+								value = -5
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										AND = { 
+											check_variable = { 
+												which = bdu
+												value = -100
+											}
+										}
+									}
+								}
+								set_variable = { 
+									which = bdu
+									value = -100
+								}
+							}
+							else_if = { 
+								limit = { 
+									AND = { 
+										check_variable = { 
+											which = bdu
+											value = 100.001
+										}
+									}
+								}
+								set_variable = { 
+									which = bdu
+									value = 100
+								}
+							}
+							multiply_variable = { 
+								which = bdu
+								value = 0.001
+							}
+							multiply_variable = { 
+								which = bdu
+								value = 1000
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							custom_tooltip = BU_RelationState_-5
+						}
+					}
+				}
+			}
+		}
+		add_ruler_modifier = { 
+			name = obstacle_magnates
+		}
+	}
+	option = { 
+		name = flavor_hun.7.b
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asn
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = asq
+					value = -20
+				}
+				change_variable = { 
+					which = asr
+					value = -20
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_NOLoyProv_-20
+		custom_tooltip = NO_FactionBoost_-10
+		hidden_effect = { 
+			set_variable = { 
+				which = opz
+				value = -10
+			}
+			country_event = { 
+				id = PTM_Politics.001
+			}
+		}
+		if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = asn
+						value = 65
+					}
+				}
+			}
+			add_country_modifier = { 
+				name = FC_NO_Crackdown_L
+				duration = 1825
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = asn
+						value = 35
+					}
+				}
+			}
+			add_country_modifier = { 
+				name = FC_NO_Crackdown_M
+				duration = 1825
+			}
+		}
+		else = { 
+			add_country_modifier = { 
+				name = FC_NO_Crackdown_S
+				duration = 1825
+			}
+		}
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						stability = -2
+					}
+				}
+				set_variable = { 
+					which = ahf
+					value = 0
+				}
+			}
+			else = { 
+				add_stability = -2
+			}
+		}
+		tooltip = { 
+			add_stability = -2
+		}
+		if = { 
+			limit = { 
+				is_emperor_of_china = yes
+			}
+			add_mandate = -10
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.8
+	title = flavor_hun.8.t
+	desc = flavor_hun.8.d
+	picture = ANGRY_MOB_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		tag = HUN
+		is_year = 1614
+		NOT = { 
+			is_year = 1620
+		}
+		government = monarchy
+		owns = 3753
+	}
+	mean_time_to_happen = { 
+		years = 1
+	}
+	option = { 
+		name = flavor_hun.8.a
+		3753 = { 
+			hidden_effect = { 
+				every_owned_province = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asn
+								value = 0.001
+							}
+						}
+					}
+					change_variable = { 
+						which = asq
+						value = -25
+					}
+					change_variable = { 
+						which = asr
+						value = -25
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = asq
+							value = 100
+						}
+					}
+					else_if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = asq
+										value = 0
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = asq
+							value = 0
+						}
+					}
+					set_province_flag = Unrest_Update
+				}
+			}
+			custom_tooltip = POP_NOLoyProv_-25
+		}
+		if = { 
+			limit = { 
+				is_lesser_in_union = yes
+			}
+			add_prestige = -5
+		}
+		if = { 
+			limit = { 
+				is_lesser_in_union = no
+			}
+			add_legitimacy = -5
+		}
+	}
+	option = { 
+		name = flavor_hun.8.b
+		3753 = { 
+			hidden_effect = { 
+				every_owned_province = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asn
+								value = 0.001
+							}
+						}
+					}
+					change_variable = { 
+						which = asq
+						value = 10
+					}
+					change_variable = { 
+						which = asr
+						value = 10
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = asq
+							value = 100
+						}
+					}
+					else_if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = asq
+										value = 0
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = asq
+							value = 0
+						}
+					}
+					set_province_flag = Unrest_Update
+				}
+			}
+			custom_tooltip = POP_NOLoyProv_10
+		}
+		random_list = { 
+			60 = { }
+			20 = { 
+				3753 = { 
+					spawn_rebels = { 
+						type = mob_rebels
+						size = 1
+					}
+				}
+			}
+			20 = { 
+				3753 = { 
+					spawn_rebels = { 
+						type = mob_rebels
+						size = 2
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.9
+	title = flavor_hun.9.t
+	desc = flavor_hun.9.d
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		tag = HUN
+		NOT = { 
+			is_at_war = yes
+		}
+		exists = HAB
+		HAB = { 
+			num_of_cities = 10
+		}
+		OR = { 
+			TUR = { 
+				any_owned_province = { 
+					region = magyar_plains_region
+					previous_owner = HUN
+				}
+			}
+			OTT = { 
+				any_owned_province = { 
+					region = magyar_plains_region
+					previous_owner = HUN
+				}
+			}
+		}
+		NOT = { 
+			dip_tech = 50
+		}
+	}
+	mean_time_to_happen = { 
+		months = 6
+	}
+	option = { 
+		name = flavor_hun.9.a
+		log = "FE-HUN:[GetYear]:[Root.GetName]:claims on the country made by [TRA.GetName] and [HAB.GetName]:flavor_hun.9"
+		every_owned_province = { 
+			limit = { 
+				NOT = { 
+					is_core = TRA
+				}
+				OR = { 
+					area = transylvania_area
+					area = muntenia_area
+					area = oltenia_area
+					area = moldavia_area
+					area = north_bulgaria_area
+					area = south_bulgaria_area
+					area = dobrogea_area
+					region = ruthenia_region
+					region = crimea_region
+				}
+			}
+			add_core = TRA
+		}
+		every_owned_province = { 
+			limit = { 
+				NOT = { 
+					is_core = TRA
+				}
+			}
+			add_permanent_claim = HAB
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.12
+	title = "flavor_hun.12.t"
+	desc = "flavor_hun.12.desc"
+	picture = COURT_eventPicture
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		tag = HUN
+		government = monarchy
+		NOT = { 
+			has_ruler = "Louis the Great"
+		}
+		dynasty = "d'Anjou"
+		OR = { 
+			is_female = yes
+			AND = { 
+				has_regency = yes
+				has_female_heir = yes
+			}
+		}
+		is_lesser_in_union = no
+	}
+	immediate = { 
+		log = "FE-HUN:[GetYear]:[Root.GetName]:before proposing union was ruled by [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName]:flavor_hun.12"
+	}
+	option = { 
+		name = "flavor_hun.12.a"
+		trigger = { 
+			exists = BOH
+			BOH = { 
+				is_lesser_in_union = no
+				is_female = no
+			}
+		}
+		ai_chance = { 
+			factor = 60
+			modifier = { 
+				factor = 0.2
+				is_rival = BOH
+			}
+		}
+		set_country_flag = looking_for_heir
+		BOH = { 
+			country_event = { 
+				id = flavor_hun.11
+				days = 30
+			}
+		}
+	}
+	option = { 
+		name = "flavor_hun.12.b"
+		trigger = { 
+			exists = HAB
+			HAB = { 
+				is_lesser_in_union = no
+				is_female = no
+			}
+		}
+		ai_chance = { 
+			factor = 40
+			modifier = { 
+				factor = 0.2
+				is_rival = HAB
+			}
+		}
+		set_country_flag = looking_for_heir
+		HAB = { 
+			country_event = { 
+				id = flavor_hun.11
+				days = 30
+			}
+		}
+	}
+	option = { 
+		name = "flavor_hun.12.d"
+		trigger = { 
+			exists = POL
+			POL = { 
+				is_lesser_in_union = no
+				is_female = no
+			}
+		}
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				factor = 0.2
+				is_rival = POL
+			}
+		}
+		set_country_flag = looking_for_heir
+		POL = { 
+			country_event = { 
+				id = flavor_hun.11
+				days = 30
+			}
+		}
+	}
+	option = { 
+		name = "flavor_hun.12.c"
+		trigger = { 
+			exists = KNP
+			KNP = { 
+				is_lesser_in_union = no
+				is_female = no
+				dynasty = "d'Anjou"
+			}
+		}
+		set_country_flag = looking_for_heir
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				factor = 0.2
+				is_rival = KNP
+			}
+		}
+		KNP = { 
+			country_event = { 
+				id = flavor_hun.11
+				days = 30
+			}
+		}
+	}
+	option = { 
+		name = "flavor_hun.12.f"
+		ai_chance = { 
+			factor = 0
+		}
+		random_core_province = { 
+			spawn_rebels = { 
+				type = pretender_rebels
+				size = 2
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.11
+	title = "flavor_hun.11.t"
+	desc = "flavor_hun.11.d"
+	picture = COURT_eventPicture
+	major = yes
+	is_triggered_only = yes
+	immediate = { 
+		clr_country_flag = looking_for_heir
+	}
+	option = { 
+		name = "OPT.EXCELLENT"
+		log = "FE-HUN:[GetYear]:[Root.GetName]:accepted offer of creating union with [HUN.GetName]:flavor_hun.11"
+		ai_chance = { 
+			factor = 90
+			modifier = { 
+				factor = 0.5
+				is_rival = HUN
+			}
+		}
+		create_subject = { 
+			subject_type = temporary_union
+			subject = HUN
+		}
+		add_opinion = { 
+			who = HUN
+			modifier = hun_inheritance
+		}
+		HUN = { 
+			hidden_effect = { 
+				every_owned_province = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asn
+								value = 0.001
+							}
+						}
+					}
+					change_variable = { 
+						which = asq
+						value = -30
+					}
+					change_variable = { 
+						which = asr
+						value = -30
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = asq
+							value = 100
+						}
+					}
+					else_if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = asq
+										value = 0
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = asq
+							value = 0
+						}
+					}
+					set_province_flag = Unrest_Update
+				}
+			}
+			custom_tooltip = POP_NOLoyProv_-30
+			add_opinion = { 
+				who = ROOT
+				modifier = hun_inheritance
+			}
+			random_owned_province = { 
+				limit = { 
+					is_capital = no
+				}
+				spawn_rebels = { 
+					type = warlord_rebels
+					size = 2
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					is_capital = no
+				}
+				spawn_rebels = { 
+					type = warlord_rebels
+					size = 1
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					is_capital = no
+				}
+				spawn_rebels = { 
+					type = warlord_rebels
+					size = 1
+				}
+			}
+		}
+	}
+	option = { 
+		name = "OPT.SENDAWAY"
+		log = "FE-HUN:[GetYear]:[Root.GetName]:rejected offer of creating union with [HUN.GetName]:flavor_hun.11"
+		ai_chance = { 
+			factor = 10
+		}
+		add_prestige = 5
+	}
+	after = { 
+		log = "FE-HUN:[GetYear]:[Root.GetName]:after union decision was made, [HUN.GetName] was ruled by [HUN.Monarch.GetName] [Root.Monarch.Dynasty.GetName]:flavor_hun.11"
+	}
+}
+country_event = { 
+	id = flavor_hun.13
+	title = "flavor_hun.13.title"
+	desc = "flavor_hun.13.desc"
+	picture = COURT_eventPicture
+	major = yes
+	trigger = { 
+		tag = HUN
+		government = monarchy
+		dynasty = "d'Anjou"
+		has_heir = no
+		has_ruler = "Louis the Great"
+	}
+	mean_time_to_happen = { 
+		years = 15
+		modifier = { 
+			factor = 0.5
+			has_consort = yes
+		}
+		modifier = { 
+			factor = 0.8
+			num_of_royal_marriages = 1
+		}
+		modifier = { 
+			factor = 0.8
+			num_of_royal_marriages = 2
+		}
+		modifier = { 
+			factor = 0.8
+			num_of_royal_marriages = 3
+		}
+		modifier = { 
+			factor = 0.8
+			num_of_royal_marriages = 4
+		}
+	}
+	immediate = { 
+		hidden_effect = { 
+			remove_country_modifier = no_worthy_heir
+		}
+	}
+	option = { 
+		name = "flavor_hun.13.option"
+		random_list = { 
+			90 = { 
+				define_heir = { 
+					name = "Catherine"
+					claim = 80
+					dynasty = ROOT
+					female = yes
+				}
+				set_heir_flag = hun_catherine_heir
+			}
+			10 = { 
+				define_heir = { 
+					claim = 80
+					dynasty = ROOT
+					male = yes
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.16
+	title = "flavor_hun.16.title"
+	desc = "flavor_hun.16.desc"
+	picture = COURT_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		tag = HUN
+		government = monarchy
+		dynasty = "d'Anjou"
+		has_female_heir = yes
+		has_heir_flag = hun_catherine_heir
+		has_ruler = "Louis the Great"
+	}
+	mean_time_to_happen = { 
+		months = 6
+	}
+	option = { 
+		name = "flavor_hun.16.a"
+		random_list = { 
+			75 = { 
+				kill_heir = { }
+				define_heir = { 
+					name = "Maria"
+					claim = 80
+					dynasty = ROOT
+					female = yes
+				}
+				set_heir_flag = hun_catherine_dead
+			}
+			25 = { 
+				custom_tooltip = flavor_hun.16.catherine_lives
+				add_legitimacy = 10
+				clr_heir_flag = hun_catherine_heir
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.110
+	title = flavor_hun.110.t
+	desc = flavor_hun.110.d
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		tag = HUN
+		NOT = { 
+			stability = 3
+		}
+		has_ruler_modifier = obstacle_magnates
+		OR = { 
+			is_rival = TUR
+			is_rival = OTT
+		}
+		NOT = { 
+			AND = { 
+				check_variable = { 
+					which = bbg
+					value = 1
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		years = 5
+	}
+	immediate = { 
+		hidden_effect = { 
+			random_owned_province = { 
+				limit = { 
+					is_capital = no
+					culture = hungarian
+				}
+				set_province_flag = hun_peasant_revolt
+				random_neighbor_province = { 
+					limit = { 
+						is_capital = no
+					}
+					set_province_flag = hun_peasant_revolt2
+				}
+				random_neighbor_province = { 
+					limit = { 
+						is_capital = no
+						NOT = { 
+							has_province_flag = hun_peasant_revolt
+						}
+					}
+					set_province_flag = hun_peasant_revolt2
+				}
+			}
+		}
+	}
+	option = { 
+		name = "OPT.BASTARD"
+		random_owned_province = { 
+			limit = { 
+				has_province_flag = hun_peasant_revolt
+			}
+			spawn_rebels = { 
+				type = mob_rebels
+				size = 2
+				leader = "György Dózsa"
+			}
+			clr_province_flag = hun_peasant_revolt
+		}
+		every_owned_province = { 
+			limit = { 
+				has_province_flag = hun_peasant_revolt2
+			}
+			spawn_rebels = { 
+				type = mob_rebels
+				size = 1
+			}
+			clr_province_flag = hun_peasant_revolt2
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.120
+	title = flavor_hun.120.t
+	desc = flavor_hun.120.d
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		tag = HUN
+		religion = catholic
+		adm_tech = 29
+	}
+	mean_time_to_happen = { 
+		months = 90
+	}
+	option = { 
+		name = "EXCELLENTCMNISTER"
+		ai_chance = { 
+			factor = 90
+		}
+		define_advisor = { 
+			type = cardinal_CL
+			name = "Tamás Bakócz"
+			culture = hungarian
+			discount = yes
+			skill = 3
+		}
+		if = { 
+			limit = { 
+				exists = HAB
+			}
+			reverse_add_opinion = { 
+				who = HAB
+				modifier = hun_bakocz_foreign_policy
+			}
+		}
+	}
+	option = { 
+		name = "OPT.GOTOHELL"
+		ai_chance = { 
+			factor = 10
+		}
+		custom_tooltip = CL_FactionBoost_-10
+		hidden_effect = { 
+			set_variable = { 
+				which = oqa
+				value = -10
+			}
+			country_event = { 
+				id = PTM_Politics.001
+			}
+		}
+		if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = asx
+						value = 65
+					}
+				}
+			}
+			add_country_modifier = { 
+				name = FC_CL_Crackdown_L
+				duration = 1825
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = asx
+						value = 35
+					}
+				}
+			}
+			add_country_modifier = { 
+				name = FC_CL_Crackdown_M
+				duration = 1825
+			}
+		}
+		else = { 
+			add_country_modifier = { 
+				name = FC_CL_Crackdown_S
+				duration = 1825
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.15
+	title = flavor_hun.15.t
+	desc = flavor_hun.15.d
+	picture = BAD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		tag = HUN
+		any_neighbor_country = { 
+			religion = hussite
+		}
+		is_at_war = no
+		west_slovakia_area = { 
+			owned_by = ROOT
+		}
+	}
+	mean_time_to_happen = { 
+		years = 3
+	}
+	option = { 
+		name = flavor_hun.15.a
+		west_slovakia_area = { 
+			limit = { 
+				owned_by = ROOT
+			}
+			add_province_modifier = { 
+				name = "hun_curtailing_banditry_in_upper_hungary"
+				duration = 3650
+			}
+		}
+		random_owned_province = { 
+			limit = { 
+				area = west_slovakia_area
+				has_building = fort_no
+			}
+			spawn_rebels = { 
+				type = mob_rebels
+				size = 1
+				leader = "Jan Jiskra z Brandýsa"
+			}
+		}
+	}
+	option = { 
+		name = flavor_hun.15.b
+		west_slovakia_area = { 
+			limit = { 
+				owned_by = ROOT
+			}
+			add_province_modifier = { 
+				name = "hun_banditry_in_upper_hungary"
+				duration = 3650
+			}
+			add_devastation = 20
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.20
+	title = flavor_hun.20.t
+	desc = flavor_hun.20.d
+	picture = MILITARY_CAMP_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		tag = HUN
+		owns = 2612
+		mil_tech = 25
+		any_rival_country = { 
+			is_neighbor_of = ROOT
+			num_of_cities = ROOT
+			capital_scope = { 
+				OR = { 
+					region = west_balkan_region
+					region = central_balkan_region
+					region = east_balkan_region
+					region = greece_region
+				}
+			}
+		}
+	}
+	immediate = { 
+		hidden_effect = { 
+			random_rival_country = { 
+				limit = { 
+					is_neighbor_of = ROOT
+					num_of_cities = ROOT
+					capital_scope = { 
+						OR = { 
+							region = west_balkan_region
+							region = central_balkan_region
+							region = east_balkan_region
+							region = greece_region
+						}
+					}
+				}
+				save_event_target_as = threat_to_hungary
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 150
+		modifier = { 
+			factor = 0.75
+			truce_with = TUR
+		}
+		modifier = { 
+			factor = 0.5
+			war_with = TUR
+		}
+	}
+	option = { 
+		name = flavor_hun.20.a
+		add_mil_power = -100
+		2612 = { 
+			hidden_effect = { 
+				change_variable = { 
+					which = asq
+					value = 10
+				}
+				change_variable = { 
+					which = asr
+					value = 10
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+			custom_tooltip = POP_NOLoyProv_10
+			add_province_modifier = { 
+				name = "local_fortress"
+				duration = 5475
+			}
+		}
+	}
+	option = { 
+		name = flavor_hun.20.b
+		2612 = { 
+			hidden_effect = { 
+				change_variable = { 
+					which = asq
+					value = -20
+				}
+				change_variable = { 
+					which = asr
+					value = -20
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+			custom_tooltip = POP_NOLoyProv_-20
+			add_province_modifier = { 
+				name = "hun_poorly_maintained_fortifications"
+				duration = 5475
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.21
+	title = flavor_hun.21.t
+	desc = flavor_hun.21.d
+	picture = BORDER_TENSION_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = { 
+		owns = 2612
+		religion_group = christian
+		NOT = { 
+			exists = SER
+		}
+		NOT = { 
+			alliance_with = TUR
+		}
+		2612 = { 
+			culture = serbian
+			any_neighbor_province = { 
+				owned_by = TUR
+				culture = serbian
+			}
+		}
+	}
+	immediate = { 
+		hidden_effect = { 
+			2612 = { 
+				save_event_target_as = belgrade_localized
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		years = 4
+	}
+	option = { 
+		name = flavor_hun.21.a
+		2612 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						religion = orthodox
+					}
+					any_neighbor_province = { 
+						religion = orthodox
+					}
+				}
+				change_religion = orthodox
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.23
+	title = flavor_hun.23.t
+	desc = flavor_hun.23.d
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		owns = 135
+		OR = { 
+			tag = HUN
+			mission_completed = hab_decline_of_hungary
+		}
+		religion_group = christian
+		OR = { 
+			adm_tech = 33
+			dip_tech = 33
+			mil_tech = 33
+		}
+	}
+	mean_time_to_happen = { 
+		months = 75
+	}
+	option = { 
+		name = flavor_hun.23.a
+		trigger = { 
+			adm_tech = 32
+		}
+		define_advisor = { 
+			name = "Támas Nádasdy"
+			culture = hungarian
+			type = statesman_NO
+			skill = 2
+			location = 135
+			discount = yes
+		}
+	}
+	option = { 
+		name = flavor_hun.23.b
+		trigger = { 
+			dip_tech = 32
+		}
+		define_advisor = { 
+			name = "Támas Nádasdy"
+			culture = hungarian
+			type = diplomat_NO
+			skill = 2
+			location = 135
+			discount = yes
+		}
+	}
+	option = { 
+		name = flavor_hun.23.c
+		trigger = { 
+			mil_tech = 32
+		}
+		define_advisor = { 
+			name = "Támas Nádasdy"
+			type = commandant_NO
+			culture = hungarian
+			skill = 2
+			location = 135
+			discount = yes
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.240
+	title = EVT_AI
+	desc = EVT_AI
+	picture = BAD_WITH_MONARCH_eventPicture
+	hidden = yes
+	trigger = { 
+		NOT = { 
+			has_global_flag = hungary_inherited
+		}
+		tag = HUN
+		government = monarchy
+		is_subject = no
+		NOT = { 
+			exists = TRA
+		}
+		HAB = { 
+			exists = yes
+			is_neighbor_of = ROOT
+			dynasty = "von Habsburg"
+			OR = { 
+				total_development = HUN
+				is_emperor = yes
+			}
+		}
+		1267 = { 
+			controller = { 
+				total_development = HAB
+				OR = { 
+					NOT = { 
+						religion_group = christian
+					}
+					religion = orthodox
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	option = { 
+		name = EVT_AI
+		log = "FE-HUN:[GetYear]:[Root.GetName]:AI-only event, Hungary identified as potentially inheritable by Austria:flavor_hun.240"
+		1267 = { 
+			controller = { 
+				save_event_target_as = pest_controller
+			}
+		}
+		HUN = { 
+			set_country_flag = ready_to_decide_on_union_with_HAB
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.24
+	title = flavor_hun.24.t
+	desc = flavor_hun.24.d
+	picture = BAD_WITH_MONARCH_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = { 
+		tag = HUN
+		has_country_flag = ready_to_decide_on_union_with_HAB
+		NOT = { 
+			is_at_war = yes
+		}
+		government = monarchy
+		is_subject = no
+		NOT = { 
+			num_of_cities = 35
+		}
+		HAB = { 
+			exists = yes
+			is_neighbor_of = ROOT
+			dynasty = "von Habsburg"
+			OR = { 
+				total_development = HUN
+				is_emperor = yes
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		months = 1
+	}
+	option = { 
+		name = flavor_hun.24.a
+		trigger = { 
+			NOT = { 
+				exists = TRA
+			}
+			transylvania_area = { 
+				owned_by = ROOT
+			}
+		}
+		ai_chance = { 
+			factor = 25
+		}
+		define_ruler = { 
+			name = "János"
+			culture = hungarian
+			dynasty = "Zápolya"
+			claim = 95
+			ADM = 3
+			DIP = 3
+			MIL = 3
+		}
+		log = "FE-HUN:[GetYear]:[Root.GetName]:rejected [HAB.GetName], [Root.Monarch.GetName] is a ruler:flavor_hun.24"
+	}
+	option = { 
+		name = flavor_hun.24.b
+		log = "FE-HUN:[GetYear]:[Root.GetName]:asked [HAB.GetName] for lead, Janos Zapolya rejected:flavor_hun.24"
+		trigger = { 
+			NOT = { 
+				exists = TRA
+			}
+			transylvania_area = { 
+				owned_by = ROOT
+			}
+		}
+		ai_chance = { 
+			factor = 75
+		}
+		set_global_flag = hungary_inherited
+		hidden_effect = { 
+			every_owned_province = { 
+				set_province_flag = royal_hungary_flag
+			}
+		}
+		HAB = { 
+			country_event = { 
+				id = flavor_hun.25
+				days = 1
+			}
+		}
+		release = TRA
+		TRA = { 
+			grant_independence = yes
+			change_government = monarchy
+			define_ruler = { 
+				name = "János"
+				culture = hungarian
+				dynasty = "Zápolya"
+				claim = 95
+				ADM = 3
+				DIP = 3
+				MIL = 3
+			}
+		}
+		if = { 
+			limit = { 
+				NOT = { 
+					calc_true_if = { 
+						all_countries_including_self = { 
+							ai = no
+						}
+						amount = 2
+					}
+				}
+			}
+			switch_tag = HAB
+		}
+	}
+	option = { 
+		name = flavor_hun.24.c
+		trigger = { 
+			OR = { 
+				exists = TRA
+				NOT = { 
+					transylvania_area = { 
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+		ai_chance = { 
+			factor = 25
+		}
+		define_ruler = { 
+			culture = hungarian
+			claim = 95
+		}
+		log = "FE-HUN:[GetYear]:[Root.GetName]:rejected [HAB.GetName], [Root.Monarch.GetName] is a ruler:flavor_hun.24"
+	}
+	option = { 
+		name = flavor_hun.24.optd
+		log = "FE-HUN:[GetYear]:[Root.GetName]:asked [HAB.GetName] for lead, local noble rejected:flavor_hun.24"
+		trigger = { 
+			OR = { 
+				exists = TRA
+				NOT = { 
+					transylvania_area = { 
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+		ai_chance = { 
+			factor = 75
+		}
+		set_global_flag = hungary_inherited
+		hidden_effect = { 
+			every_owned_province = { 
+				set_province_flag = royal_hungary_flag
+			}
+		}
+		HAB = { 
+			country_event = { 
+				id = flavor_hun.25
+				days = 1
+			}
+		}
+		if = { 
+			limit = { 
+				NOT = { 
+					calc_true_if = { 
+						all_countries_including_self = { 
+							ai = no
+						}
+						amount = 2
+					}
+				}
+			}
+			switch_tag = HAB
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.25
+	title = flavor_hun.25.t
+	desc = flavor_hun.25.d
+	picture = BORDER_TENSION_eventPicture
+	is_triggered_only = yes
+	option = { 
+		name = flavor_hun.25.a
+		ai_chance = { 
+			factor = 75
+		}
+		log = "FE-HUN:[GetYear]:[Root.GetName]:integrated [From.GetName]:flavor_hun.25"
+		hidden_effect = { 
+			create_union = HUN
+		}
+		inherit = HUN
+		hidden_effect = { 
+			every_province = { 
+				limit = { 
+					has_province_flag = royal_hungary_flag
+				}
+				clr_province_flag = royal_hungary_flag
+				add_province_modifier = { 
+					name = "hab_royal_hungary"
+					duration = 18250
+				}
+			}
+		}
+		custom_tooltip = flavor_hun.25.a.tt
+		tooltip = { 
+			add_country_modifier = { 
+				name = "hab_royal_hungary"
+				duration = 18250
+			}
+		}
+	}
+	option = { 
+		name = flavor_hun.25.b
+		log = "FE-HUN:[GetYear]:[Root.GetName]:formed permanent union with [From.GetName]:flavor_hun.25"
+		ai_chance = { 
+			factor = 25
+		}
+		every_owned_province = { 
+			limit = { 
+				has_province_flag = royal_hungary_flag
+			}
+			clr_province_flag = royal_hungary_flag
+		}
+		create_subject = { 
+			subject_type = permanent_union
+			subject = HUN
+		}
+	}
+	option = { 
+		name = "OPT.SENDAWAY"
+		log = "FE-HUN:[GetYear]:[Root.GetName]:rejected union with [From.GetName]:flavor_hun.25"
+		ai_chance = { 
+			factor = 0
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.27
+	title = flavor_hun.27.t
+	desc = flavor_hun.27.d
+	picture = ANGRY_MOB_eventPicture
+	major = yes
+	trigger = { 
+		NOT = { 
+			culture_group = romanian
+		}
+		NOT = { 
+			has_country_flag = romanian_revolt
+		}
+		has_institution = Nationalism
+		any_owned_province = { 
+			culture = transylvanian
+			is_capital = no
+		}
+	}
+	mean_time_to_happen = { 
+		years = 50
+	}
+	immediate = { 
+		set_country_flag = romanian_revolt
+	}
+	option = { 
+		name = flavor_hun.27.a
+		log = "FE-HUN:[GetYear]:[Root.GetName]:[ROU.GetName] gets cores on Transylvanian culture provinces:flavor_hun.27"
+		every_owned_province = { 
+			limit = { 
+				OR = { 
+					area = transylvania_area
+					culture = transylvanian
+				}
+			}
+			add_core = ROU
+		}
+		random_owned_province = { 
+			limit = { 
+				culture = transylvanian
+			}
+			spawn_rebels = { 
+				type = nationalist_rebels
+				size = 2
+				leader = "Horea"
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.28
+	title = flavor_hun.28.t
+	desc = flavor_hun.28.d
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		tag = HUN
+		mil_tech = 38
+		owns = 1267
+		CRO = { 
+			junior_union_with = ROOT
+		}
+	}
+	mean_time_to_happen = { 
+		months = 12
+	}
+	option = { 
+		name = flavor_hun.28.a
+		define_advisor = { 
+			name = "Tamás Erdödy"
+			culture = croatian
+			skill = 2
+			discount = yes
+			type = commandant_NO
+		}
+	}
+	option = { 
+		name = flavor_hun.28.b
+		define_general = { 
+			name = "Tamás Erdödy"
+			shock = 3
+			fire = 3
+			manuever = 2
+			siege = 2
+			trait = hardy_warrior_personality
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.26
+	title = flavor_hun.26.t
+	desc = flavor_hun.26.d
+	picture = BORDER_TENSION_eventPicture
+	fire_only_once = yes
+	trigger = { 
+		tag = HUN
+		dip_tech = 40
+		OR = { 
+			TUR = { 
+				is_neighbor_of = ROOT
+				num_of_cities = ROOT
+			}
+			OTT = { 
+				is_neighbor_of = ROOT
+				num_of_cities = ROOT
+			}
+		}
+	}
+	mean_time_to_happen = { 
+		years = 50`
+	}
+	option = { 
+		name = flavor_hun.26.a
+		add_prestige = -5
+		random_owned_area = { 
+			limit = { 
+				has_owner_culture = yes
+				is_state = yes
+				is_capital = no
+			}
+			add_devastation = 20
+		}
+		add_country_modifier = { 
+			name = "hun_kurucs"
+			duration = 9125
+		}
+	}
+	option = { 
+		name = flavor_hun.26.b
+	}
+}
+country_event = { 
+	id = flavor_hun.34
+	title = flavor_hun.34.t
+	desc = flavor_hun.34.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		tag = HUN
+		is_subject = no
+		has_regency = yes
+		government = monarchy
+		is_year = 1694
+		NOT = { 
+			is_year = 1730
+		}
+	}
+	mean_time_to_happen = { 
+		years = 4
+	}
+	option = { 
+		name = flavor_hun.34.a
+		ai_chance = { 
+			factor = 95
+		}
+		log = "FE-HUN:[GetYear]:[Root.GetName]:elected Ferenc Rakoczy as a king:flavor_hun.34"
+		define_ruler = { 
+			name = "Ferenc"
+			dynasty = "Rákóczy"
+			culture = hungarian
+			adm = 4
+			dip = 5
+			mil = 4
+		}
+	}
+	option = { 
+		name = flavor_hun.34.b
+		log = "FE-HUN:[GetYear]:[Root.GetName]:rejected Ferenc Rakoczy, he started rebellion:flavor_hun.34"
+		ai_chance = { 
+			factor = 5
+		}
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					stability = 3
+				}
+				set_variable = { 
+					which = ahf
+					value = 1200
+				}
+			}
+			else = { 
+				add_stability = 1
+			}
+		}
+		tooltip = { 
+			add_stability = 1
+		}
+		if = { 
+			limit = { 
+				is_emperor_of_china = yes
+			}
+			add_mandate = 5
+		}
+		random_owned_province = { 
+			limit = { 
+				is_in_capital_area = yes
+			}
+			spawn_rebels = { 
+				type = pretender_rebels
+				size = 3
+				culture = hungarian
+				leader = "Ferenc Rákóczy"
+				leader_dynasty = "Rákóczy"
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.35
+	title = flavor_hun.35.t
+	desc = flavor_hun.35.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		tag = HUN
+		AND = { 
+			is_subject = yes
+			NOT = { 
+				is_subject_of_type = tributary_state
+			}
+			NOT = { 
+				is_subject_of_type = close_tributary_state
+			}
+		}
+		government = monarchy
+		is_year = 1694
+		NOT = { 
+			is_year = 1730
+		}
+	}
+	mean_time_to_happen = { 
+		years = 9
+	}
+	option = { 
+		name = flavor_hun.35.a
+		ai_chance = { 
+			factor = 10
+		}
+		log = "FE-HUN:[GetYear]:[Root.GetName]:elected Ferenc Rakoczy as a king:flavor_hun.35"
+		overlord = { 
+			country_event = { 
+				id = flavor_hun.36
+			}
+		}
+		define_ruler = { 
+			name = "Ferenc"
+			dynasty = "Rákóczy"
+			culture = hungarian
+			adm = 4
+			dip = 5
+			mil = 4
+		}
+	}
+	option = { 
+		name = flavor_hun.35.b
+		ai_chance = { 
+			factor = 90
+		}
+		log = "FE-HUN:[GetYear]:[Root.GetName]:rejected Ferenc Rakoczy, he started rebellion:flavor_hun.34"
+		random_owned_province = { 
+			limit = { 
+				is_in_capital_area = yes
+			}
+			spawn_rebels = { 
+				type = pretender_rebels
+				culture = hungarian
+				size = 3
+				leader = "Ferenc Rákóczy"
+				leader_dynasty = "Rákóczy"
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_hun.36
+	title = flavor_hun.36.t
+	desc = flavor_hun.36.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = flavor_hun.36.a
+		ai_chance = { 
+			factor = 90
+		}
+		log = "FE-HUN:[GetYear]:[Root.GetName]:reacted to Ferenc Rakoczy by declaring war:flavor_hun.36"
+		HUN = { 
+			declare_war_with_cb = { 
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+	}
+	option = { 
+		name = " OPT.LATER"
+		log = "FE-HUN:[GetYear]:[Root.GetName]:accepted Ferenc Rakoczy, have not declared war:flavor_hun.36"
+		ai_chance = { 
+			factor = 10
+			modifier = { 
+				factor = 2
+				war_exhaustion = 5
+			}
+			modifier = { 
+				factor = 4
+				war_exhaustion = 10
+			}
+		}
+		add_prestige = -20
+	}
+}
+country_event = { 
+	id = hee_HUN.9
+	title = hee_HUN.9.t
+	desc = hee_HUN.9.d
+	picture = MILITARY_CAMP_eventPicture
+	trigger = { 
+		tag = HUN
+		mission_completed = hun_black_army
+		NOT = { 
+			mil_tech = 33
+		}
+	}
+	fire_only_once = yes
+	mean_time_to_happen = { 
+		years = 1
+	}
+	option = { 
+		name = hee_HUN.9.a
+		add_country_modifier = { 
+			name = hungarian_mercenary_core
+			duration = 21900
+		}
+	}
+	option = { 
+		name = hee_HUN.9.b
+		add_mil_power = 100
+		hidden_effect = { 
+			change_variable = { 
+				which = ahf
+				value = 600
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ahf
+							value = 1200
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						stability = 3
+					}
+					set_variable = { 
+						which = ahf
+						value = 1200
+					}
+				}
+				else = { 
+					subtract_variable = { 
+						which = ahf
+						value = 1200
+					}
+					add_stability = 1
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ahf
+								value = 0
+							}
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							stability = -2
+						}
+					}
+					set_variable = { 
+						which = ahf
+						value = 0
+					}
+				}
+				else = { 
+					change_variable = { 
+						which = ahf
+						value = 1200
+					}
+					add_stability = -1
+				}
+			}
+			set_variable = { 
+				which = ahd
+				which = ahf
+			}
+			divide_variable = { 
+				which = ahd
+				value = 12
+			}
+			multiply_variable = { 
+				which = ahd
+				value = 0.1
+			}
+			multiply_variable = { 
+				which = ahd
+				value = 10
+			}
+			set_variable = { 
+				which = lsc
+				value = 100
+			}
+			subtract_variable = { 
+				which = lsc
+				which = ahd
+			}
+		}
+		custom_tooltip = POP_StabAdd50
+		if = { 
+			limit = { 
+				is_emperor_of_china = yes
+			}
+			add_mandate = 2.5
+		}
+	}
+}
+country_event = { 
+	id = hee_HUN.10
+	title = hee_HUN.10.t
+	desc = hee_HUN.10.d
+	picture = BIG_BOOK_eventPicture
+	trigger = { 
+		tag = HUN
+		adm = 4
+		dynasty = "Hunyadi"
+		NOT = { 
+			adm_tech = 33
+		}
+	}
+	fire_only_once = yes
+	mean_time_to_happen = { 
+		years = 5
+	}
+	option = { 
+		name = hee_HUN.10.a
+		add_country_modifier = { 
+			name = hungarian_renaissance
+			duration = 9125
+		}
+	}
+	option = { 
+		name = hee_HUN.10.b
+		add_adm_power = 100
+		add_prestige = 10
+	}
+}

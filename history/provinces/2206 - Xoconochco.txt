@@ -1,0 +1,33 @@
+owner = XOC
+controller = XOC
+add_core = XOC
+capital = "Xoconochco"
+trade_goods = cotton
+culture = mixean
+religion = cocijo
+hre = no
+base_tax = 6
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 1
+}
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 4.500
+	}
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+	set_province_flag = cacao
+	add_permanent_province_modifier = { 
+		name = urban_goods_naval_supplies
+		duration = -1
+	}
+	set_province_flag = cotton
+}

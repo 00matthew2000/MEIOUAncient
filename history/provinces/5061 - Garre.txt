@@ -1,0 +1,33 @@
+owner = AJU
+controller = AJU
+add_core = AJU
+capital = "Garre"
+trade_goods = millet
+culture = sab
+religion = sunni
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = east_african
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 35.000
+	}
+	set_variable = { 
+		which = atc
+		value = 70.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+	set_province_flag = iron
+}

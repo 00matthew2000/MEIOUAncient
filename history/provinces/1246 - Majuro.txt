@@ -1,0 +1,27 @@
+capital = "Aorangi"
+trade_goods = unknown
+culture = micronesian
+religion = polynesian_pagan
+hre = no
+base_tax = 0
+base_production = 0
+base_manpower = 0
+native_size = 10
+native_ferocity = 4
+native_hostileness = 9
+100.1.1 = { 
+	set_variable = { 
+		which = amh
+		value = 6.482
+	}
+	set_variable = { 
+		which = ami
+		value = 0.000
+	}
+}
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}

@@ -1,0 +1,42 @@
+owner = SOF
+controller = SOF
+add_core = SOF
+capital = "Sofala"
+trade_goods = fish
+culture = kimwani
+religion = sunni
+hre = no
+base_tax = 1
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 2
+}
+discovered_by = central_african
+discovered_by = east_african
+discovered_by = malagasy_tech
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 60.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 1.534
+	}
+	set_province_flag = TN_Minor
+	set_province_flag = TN_Harbour_Important
+	set_province_flag = TN_Natural_Important
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+	add_permanent_province_modifier = { 
+		name = "pearls_medium"
+		duration = -1
+	}
+}

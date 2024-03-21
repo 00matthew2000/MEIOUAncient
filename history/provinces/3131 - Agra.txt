@@ -1,0 +1,44 @@
+owner = DLH
+controller = DLH
+add_core = DLH
+capital = "Kaanapur"
+trade_goods = indigo
+culture = kanauji
+religion = hinduism
+hre = no
+base_tax = 42
+base_production = 1
+base_manpower = 3
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gci
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 3
+}
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_variable = { 
+		which = baf
+		value = 70
+	}
+	set_variable = { 
+		which = acp
+		value = 8
+	}
+	set_province_flag = sugar
+}
+1356.1.1 = { 
+	add_core = AHM
+}

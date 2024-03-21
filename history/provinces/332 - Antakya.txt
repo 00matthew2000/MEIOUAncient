@@ -1,0 +1,64 @@
+owner = SYR
+controller = SYR
+add_core = SYR
+capital = "Antakya"
+trade_goods = indigo
+culture = shami
+religion = sunni
+hre = no
+base_tax = 4
+base_production = 1
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gci
+	value = 1
+}
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = muslim
+discovered_by = western
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = ottoman
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 17.000
+	}
+	set_province_flag = orthodox_patriarchate
+	set_variable = { 
+		which = pza
+		value = 100
+	}
+	set_province_flag = TN_Important
+	set_province_flag = TN_Port
+	set_province_flag = TN_Harbour_Minor
+	set_province_flag = TN_Natural_Minor
+	set_province_flag = TN_Silk
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+}
+500.1.1 = { 
+	add_permanent_province_modifier = { 
+		name = urban_goods_cloth
+		duration = -1
+	}
+	set_province_flag = olive
+}

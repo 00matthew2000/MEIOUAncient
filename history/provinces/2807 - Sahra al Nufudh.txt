@@ -1,0 +1,31 @@
+owner = BTA
+controller = BTA
+add_core = BTA
+capital = "Al Ma'ajmah"
+trade_goods = palm_date
+culture = najdi
+religion = sunni
+hre = no
+base_tax = 4
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = muslim
+discovered_by = ottoman
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 70.000
+	}
+	set_variable = { 
+		which = atc
+		value = 95.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+	set_province_flag = dates
+}

@@ -1,0 +1,24 @@
+owner = TLP
+controller = TLP
+add_core = TLP
+capital = "Tinda'i"
+trade_goods = fish
+culture = tlapanec
+religion = nahuatl
+hre = no
+base_tax = 11
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 1
+}
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+	set_province_flag = cacao
+}

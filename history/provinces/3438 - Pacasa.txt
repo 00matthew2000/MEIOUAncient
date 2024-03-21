@@ -1,0 +1,47 @@
+owner = AYP
+controller = AYP
+add_core = AYP
+capital = "Pacasa"
+trade_goods = livestock
+culture = aimara
+religion = inti
+hre = no
+base_tax = 10
+base_production = 1
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = baf
+	value = 130
+}
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = south_american
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_province_flag = coca
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+	add_permanent_province_modifier = { 
+		name = urban_goods_cloth
+		duration = -1
+	}
+	add_permanent_province_modifier = { 
+		name = urban_goods_naval_supplies
+		duration = -1
+	}
+	set_province_flag = tin
+	set_province_flag = TN_Natural_Minor
+}

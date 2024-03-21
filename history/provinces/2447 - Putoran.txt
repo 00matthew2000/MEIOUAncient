@@ -1,0 +1,2 @@
+culture = eveni
+religion = tengri_pagan

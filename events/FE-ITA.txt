@@ -1,0 +1,574 @@
+namespace = flavor_ita
+country_event = { 
+	id = flavor_ita.1
+	title = "flavor_ita.1.n"
+	desc = "flavor_ita.1.t"
+	picture = IRONCROWN_eventPicture
+	is_triggered_only = yes
+	option = { 
+		name = "flavor_ita.1.a"
+		log = "FE-ITA:[GetYear]:[Root.GetName]:gave up the Iron Crown of Italy:flavor_ita.1"
+		ai_chance = { 
+			factor = 50
+			modifier = { 
+				has_opinion = { 
+					who = FROM
+					value = 50
+				}
+				factor = 1.10
+			}
+			modifier = { 
+				has_opinion = { 
+					who = FROM
+					value = 100
+				}
+				factor = 1.10
+			}
+			modifier = { 
+				has_opinion = { 
+					who = FROM
+					value = 150
+				}
+				factor = 1.10
+			}
+			modifier = { 
+				has_opinion = { 
+					who = FROM
+					value = 200
+				}
+				factor = 1.10
+			}
+			modifier = { 
+				num_of_owned_provinces_with = { 
+					value = 1
+					AND = { 
+						superregion = italy_superregion
+						OR = { 
+							region = east_italy_region
+							region = west_italy_region
+							region = central_italy_region
+						}
+					}
+				}
+				factor = 0.90
+			}
+			modifier = { 
+				num_of_owned_provinces_with = { 
+					value = 5
+					AND = { 
+						superregion = italy_superregion
+						OR = { 
+							region = east_italy_region
+							region = west_italy_region
+							region = central_italy_region
+						}
+					}
+				}
+				factor = 0.90
+			}
+			modifier = { 
+				num_of_owned_provinces_with = { 
+					value = 10
+					AND = { 
+						superregion = italy_superregion
+						OR = { 
+							region = east_italy_region
+							region = west_italy_region
+							region = central_italy_region
+						}
+					}
+				}
+				factor = 0.90
+			}
+			modifier = { 
+				FROM = { 
+					num_of_owned_provinces_with = { 
+						value = 15
+						superregion = italy_superregion
+					}
+				}
+				factor = 1.10
+			}
+			modifier = { 
+				FROM = { 
+					num_of_owned_provinces_with = { 
+						value = 20
+						superregion = italy_superregion
+					}
+				}
+				factor = 1.10
+			}
+			modifier = { 
+				FROM = { 
+					num_of_owned_provinces_with = { 
+						value = 25
+						superregion = italy_superregion
+					}
+				}
+				factor = 1.10
+			}
+			modifier = { 
+				FROM = { 
+					num_of_owned_provinces_with = { 
+						value = 30
+						superregion = italy_superregion
+					}
+				}
+				factor = 1.10
+			}
+		}
+		FROM = { 
+			country_event = { 
+				id = flavor_ita.2
+				days = 5
+			}
+		}
+	}
+	option = { 
+		name = "flavor_ita.1.b"
+		log = "FE-ITA:[GetYear]:[Root.GetName]:refused to give up the Iron Crown of Italy:flavor_ita.1"
+		ai_chance = { 
+			factor = 50
+			modifier = { 
+				NOT = { 
+					has_opinion = { 
+						who = FROM
+						value = -50
+					}
+				}
+				factor = 1.10
+			}
+			modifier = { 
+				NOT = { 
+					has_opinion = { 
+						who = FROM
+						value = -100
+					}
+				}
+				factor = 1.10
+			}
+			modifier = { 
+				NOT = { 
+					has_opinion = { 
+						who = FROM
+						value = -150
+					}
+				}
+				factor = 2.00
+			}
+		}
+		FROM = { 
+			country_event = { 
+				id = flavor_ita.3
+				days = 5
+			}
+		}
+		hidden_effect = { 
+			add_ruler_modifier = { 
+				name = iron_crown_refused
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_ita.2
+	title = "flavor_ita.2.n"
+	desc = "flavor_ita.2.t"
+	picture = IRONCROWN_eventPicture
+	is_triggered_only = yes
+	option = { 
+		name = "flavor_ita.2.a"
+		set_country_flag = iron_crown_granted
+		log = "FE-ITA:[GetYear]:[Root.GetName]:received the Iron Crown of Italy:flavor_ita.2"
+		set_global_flag = italy_out_of_HRE
+		country_event = { 
+			id = mission_event.025
+			days = 1
+		}
+	}
+}
+country_event = { 
+	id = flavor_ita.3
+	title = "flavor_ita.3.n"
+	desc = "flavor_ita.3.t"
+	picture = IRONCROWN_eventPicture
+	is_triggered_only = yes
+	immediate = { 
+		log = "FE-ITA:[GetYear]:[Root.GetName]:was refused the Iron Crown of Italy:flavor_ita.3"
+	}
+	option = { 
+		name = "flavor_ita.3.a"
+		log = "FE-ITA:[GetYear]:[Root.GetName]:rejected Emperor decision that refused them the Iron Crown of Italy:flavor_ita.3"
+		country_event = { 
+			id = holyromanempire.1
+			days = 1
+		}
+		country_event = { 
+			id = mission_event.025
+			days = 5
+		}
+		FROM = { 
+			country_event = { 
+				id = flavor_ita.4
+				days = 1
+			}
+		}
+	}
+	option = { 
+		name = "flavor_ita.3.b"
+		log = "FE-ITA:[GetYear]:[Root.GetName]:accepted Emperor decision that refused them the Iron Crown of Italy:flavor_ita.3"
+		FROM = { 
+			country_event = { 
+				id = flavor_ita.5
+				days = 1
+			}
+		}
+		add_prestige = -10
+	}
+}
+country_event = { 
+	id = flavor_ita.4
+	title = "flavor_ita.4.n"
+	desc = "flavor_ita.4.t"
+	picture = IRONCROWN_eventPicture
+	is_triggered_only = yes
+	option = { 
+		name = "flavor_ita.4.a"
+		every_province = { 
+			limit = { 
+				is_city = yes
+				owned_by = FROM
+			}
+			add_claim = ROOT
+		}
+	}
+	option = { 
+		name = "flavor_ita.4.a"
+		FROM = { 
+			set_in_empire = no
+			swap_non_generic_missions = yes
+			if = { 
+				limit = { 
+					hre_reform_passed = gemeinerpfennig
+				}
+				every_owned_province = { 
+					limit = { 
+						has_province_modifier = HRE_Gemeiner_Pfennig
+					}
+					remove_province_modifier = HRE_Gemeiner_Pfennig
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_ita.5
+	title = "flavor_ita.5.n"
+	desc = "flavor_ita.5.t"
+	picture = IRONCROWN_eventPicture
+	is_triggered_only = yes
+	option = { 
+		name = "flavor_ita.5.a"
+		FROM = { 
+			add_opinion = { 
+				who = ROOT
+				modifier = italian_crown_refused
+			}
+		}
+	}
+}
+country_event = { 
+	id = flavor_ita.6
+	title = "flavor_ita.6.n"
+	desc = "flavor_ita.6.t"
+	picture = ITALIAN_POWER_eventPicture
+	is_triggered_only = yes
+	option = { 
+		name = "flavor_ita.6.a"
+		log = "FE-ITA:[GetYear]:[Root.GetName]:kept capital in [Root.Capital.GetCapitalName]:flavor_ita.6"
+		ai_chance = { 
+			factor = 1
+			modifier = { 
+				factor = 5
+				capital_scope = { 
+					AND = { 
+						check_variable = { 
+							which = gcl
+							value = 1
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 2
+				capital_scope = { 
+					AND = { 
+						check_variable = { 
+							which = gcl
+							value = 2
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 2
+				capital_scope = { 
+					AND = { 
+						check_variable = { 
+							which = gcl
+							value = 3
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 5
+				capital_scope = { 
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 60
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 2
+				capital_scope = { 
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 100
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 2
+				capital_scope = { 
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 150
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 2
+				capital_scope = { 
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 200
+						}
+					}
+				}
+			}
+		}
+	}
+	option = { 
+		name = "flavor_ita.6.b"
+		trigger = { 
+			NOT = { 
+				capital = 1347
+			}
+			owns_core_province = 1347
+		}
+		hidden_effect = { 
+			clr_country_flag = changed_capital_by_event
+			set_country_flag = changed_capital_by_event
+		}
+		set_capital = 1347
+		log = "FE-ITA:[GetYear]:[Root.GetName]:moved capital to [Root.Capital.GetCapitalName]:flavor_ita.6"
+		ai_chance = { 
+			factor = 1
+			modifier = { 
+				factor = 5
+				NOT = { 
+					is_year = 1500
+				}
+			}
+			modifier = { 
+				factor = 5
+				1347 = { 
+					AND = { 
+						check_variable = { 
+							which = gcl
+							value = 1
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 2
+				1347 = { 
+					AND = { 
+						check_variable = { 
+							which = gcl
+							value = 2
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 2
+				1347 = { 
+					AND = { 
+						check_variable = { 
+							which = gcl
+							value = 3
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 5
+				1347 = { 
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 60
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 2
+				1347 = { 
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 100
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 2
+				1347 = { 
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 150
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 2
+				1347 = { 
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 200
+						}
+					}
+				}
+			}
+		}
+	}
+	option = { 
+		name = "flavor_ita.6.c"
+		trigger = { 
+			NOT = { 
+				capital = 2530
+			}
+			owns_core_province = 2530
+		}
+		hidden_effect = { 
+			clr_country_flag = changed_capital_by_event
+			set_country_flag = changed_capital_by_event
+		}
+		set_capital = 2530
+		log = "FE-ITA:[GetYear]:[Root.GetName]:moved capital to [Root.Capital.GetCapitalName]:flavor_ita.6"
+		ai_chance = { 
+			factor = 1
+			modifier = { 
+				factor = 0
+				NOT = { 
+					has_institution = Nationalism
+				}
+			}
+			modifier = { 
+				factor = 5
+				2530 = { 
+					AND = { 
+						check_variable = { 
+							which = gcl
+							value = 1
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 2
+				2530 = { 
+					AND = { 
+						check_variable = { 
+							which = gcl
+							value = 2
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 2
+				2530 = { 
+					AND = { 
+						check_variable = { 
+							which = gcl
+							value = 3
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 5
+				2530 = { 
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 60
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 2
+				2530 = { 
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 100
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 2
+				2530 = { 
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 150
+						}
+					}
+				}
+			}
+			modifier = { 
+				factor = 2
+				2530 = { 
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 200
+						}
+					}
+				}
+			}
+		}
+	}
+}

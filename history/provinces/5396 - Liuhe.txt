@@ -1,0 +1,55 @@
+owner = MNG
+controller = MNG
+capital = "Jiangpu"
+trade_goods = rice
+culture = jianghuai
+religion = mahayana
+hre = no
+base_tax = 44
+base_production = 0
+base_manpower = 2
+is_city = yes
+fort_14th = yes
+set_variable = { 
+	which = gch
+	value = 3
+}
+set_variable = { 
+	which = gck
+	value = 3
+}
+set_variable = { 
+	which = gcj
+	value = 1
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 8.000
+	}
+	set_variable = { 
+		which = baf
+		value = 87
+	}
+	set_variable = { 
+		which = acp
+		value = 8
+	}
+	set_province_flag = tea
+}
+1276.1.1 = { 
+	owner = YUA
+	controller = YUA
+	add_core = YUA
+}
+1351.1.1 = { 
+	owner = MNG
+	controller = MNG
+	add_core = MNG
+}

@@ -1,0 +1,19 @@
+owner = CBC
+controller = CBC
+add_core = CBC
+capital = "Kuélap"
+trade_goods = brazil
+culture = chachapoyan
+religion = inti
+hre = no
+base_tax = 6
+base_production = 0
+base_manpower = 0
+discovered_by = south_american
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 1.5
+	}
+	set_province_flag = cacao
+}

@@ -1,0 +1,24 @@
+capital = "Ohlone"
+trade_goods = unknown
+culture = yokut
+religion = northwestern
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+native_size = 25
+native_ferocity = 3
+native_hostileness = 6
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 52
+	}
+	set_province_flag = TN_RiverSea
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+	set_province_flag = TN_Harbour_Major
+	set_province_flag = TN_Natural_Major
+}

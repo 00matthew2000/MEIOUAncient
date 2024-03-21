@@ -1,0 +1,43 @@
+owner = KHI
+controller = KHI
+add_core = KHI
+capital = "Nokis"
+trade_goods = wool
+culture = tartar
+religion = sunni
+hre = no
+base_tax = 1
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = ottoman
+discovered_by = muslim
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 15.000
+	}
+	set_variable = { 
+		which = atc
+		value = 40.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 4.000
+	}
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+	set_province_flag = TN_Silk
+	set_province_flag = inlandsalt
+}

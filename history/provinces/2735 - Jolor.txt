@@ -1,0 +1,31 @@
+owner = PAT
+controller = PAT
+add_core = PAT
+capital = "Jala"
+trade_goods = lumber
+culture = malayan
+religion = kejawen_h
+hre = no
+base_tax = 2
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = indian
+discovered_by = muslim
+discovered_by = austranesian
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+	set_province_flag = gold
+	set_province_flag = fruits
+}

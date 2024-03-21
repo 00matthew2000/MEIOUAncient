@@ -1,0 +1,19 @@
+owner = ZAP
+controller = ZAP
+add_core = ZAP
+capital = "Totontepec"
+trade_goods = cotton
+culture = mixean
+religion = cocijo
+hre = no
+base_tax = 7
+base_production = 0
+base_manpower = 0
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+	set_province_flag = cacao
+}

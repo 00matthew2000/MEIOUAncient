@@ -1,0 +1,36 @@
+owner = BNG
+controller = BNG
+add_core = BNG
+capital = "Arariya"
+trade_goods = rice
+culture = maithili
+religion = hinduism
+hre = no
+base_tax = 25
+base_production = 0
+base_manpower = 2
+is_city = yes
+discovered_by = indian
+discovered_by = muslim
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 6
+	}
+}
+1338.1.1 = { 
+	add_core = DLH
+}
+1353.1.1 = { 
+	owner = DLH
+	controller = DLH
+}
+1356.1.1 = { 
+	add_core = TRT
+}

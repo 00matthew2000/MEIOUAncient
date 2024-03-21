@@ -1,0 +1,147 @@
+defined_text = { 
+	name = Disp_Culture_Conversion
+	text = { 
+		localisation_key = Disp_CultureConversion_Active
+		trigger = { 
+			AND = { 
+				is_state_core = owner
+				OR = { 
+					has_owner_culture = no
+					OR = { 
+						has_province_flag = CV_SC_german_ostsiedlung
+						has_province_flag = CV_SC_frankish_settlers
+					}
+				}
+				NOT = { 
+					nationalism = 1
+				}
+				OR = { 
+					AND = { 
+						any_friendly_coast_border_province = { 
+							owned_by = PREV
+							OR = { 
+								has_owner_culture = yes
+								AND = { 
+									culture_group = owner
+									PREV = { 
+										NOT = { 
+											culture_group = owner
+										}
+									}
+								}
+								has_owner_accepted_culture = yes
+							}
+						}
+						OR = { 
+							NOT = { 
+								has_owner_culture = yes
+							}
+							AND = { 
+								culture_group = owner
+								OR = { 
+									culture_group = greek_group
+									culture_group = oghuz
+									culture_group = tartar_group
+									culture_group = old_turkic
+									culture_group = altaic
+									owner = { 
+										total_development = 1200
+									}
+								}
+							}
+							AND = { 
+								owner = { 
+									has_institution = Academia
+								}
+								owner = { 
+									has_institution = Nationalism
+								}
+							}
+							AND = { 
+								culture_group = oghuz
+								owner = { 
+									culture_group = greek_group
+								}
+								has_owner_religion = yes
+							}
+							AND = { 
+								culture_group = greek_group
+								owner = { 
+									culture_group = oghuz
+								}
+								has_owner_religion = yes
+							}
+							AND = { 
+								culture_group = tartar_group
+								owner = { 
+									culture_group = east_slavic
+								}
+								has_owner_religion = yes
+							}
+						}
+					}
+					is_capital = yes
+					AND = { 
+						province_id = 3876
+						owner = { 
+							has_country_flag = capital_to_thraki
+						}
+					}
+					OR = { 
+						has_province_flag = CV_SC_german_ostsiedlung
+						has_province_flag = CV_SC_frankish_settlers
+					}
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Disp_CultureConversion_Active_SC_Ostsiedlung
+		trigger = { 
+			is_state_core = owner
+			has_owner_culture = no
+			NOT = { 
+				nationalism = 1
+			}
+			OR = { 
+				has_province_flag = CV_SC_german_ostsiedlung
+				has_province_flag = CV_SC_frankish_settlers
+			}
+		}
+	}
+	text = { 
+		localisation_key = Disp_CultureConversion_Not_Active_Core
+		trigger = { 
+			NOT = { 
+				is_state_core = owner
+			}
+		}
+	}
+	text = { 
+		localisation_key = Disp_CultureConversion_Not_Active_Culture
+		trigger = { 
+			has_owner_culture = yes
+		}
+	}
+	text = { 
+		localisation_key = Disp_CultureConversion_Not_Active_Nationalism
+		trigger = { 
+			nationalism = 1
+		}
+	}
+}
+defined_text = { 
+	name = Get_CC_SC
+	text = { 
+		localisation_key = Disp_CultureConversion_Ostsiedlung
+		trigger = { 
+			has_province_flag = CV_SC_german_ostsiedlung
+		}
+	}
+	text = { 
+		localisation_key = Disp_CultureConversion_FrankishSettlers
+		trigger = { 
+			has_province_flag = CV_SC_frankish_settlers
+		}
+	}
+}

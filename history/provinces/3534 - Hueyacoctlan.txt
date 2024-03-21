@@ -1,0 +1,20 @@
+owner = MET
+controller = MET
+add_core = MET
+capital = "Hueyacoctlan"
+trade_goods = maize
+culture = metztitlani
+religion = cocijo
+hre = no
+base_tax = 7
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 6
+	}
+	set_province_flag = gold
+}

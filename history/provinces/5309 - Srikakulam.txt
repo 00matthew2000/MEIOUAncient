@@ -1,0 +1,40 @@
+owner = ORI
+controller = ORI
+add_core = ORI
+capital = "Srikakulam"
+trade_goods = sugar
+culture = telegu
+religion = hinduism
+hre = no
+base_tax = 32
+base_production = 1
+base_manpower = 3
+is_city = yes
+discovered_by = indian
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = muslim
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 20.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 6
+	}
+	set_province_flag = TN_Important
+	add_permanent_province_modifier = { 
+		name = "lack_of_harbour"
+		duration = -1
+	}
+	set_province_flag = sugar
+	set_province_flag = seasalt
+}
+1356.1.1 = { 
+	set_province_flag = add_local_autonomy_25
+}

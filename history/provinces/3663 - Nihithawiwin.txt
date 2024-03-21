@@ -1,0 +1,2 @@
+culture = cree
+religion = midewiwin

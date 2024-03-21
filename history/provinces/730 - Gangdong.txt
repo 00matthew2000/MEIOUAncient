@@ -1,0 +1,48 @@
+owner = KOR
+controller = KOR
+capital = "Uiju"
+trade_goods = wheat
+culture = korean
+religion = mahayana
+hre = no
+base_tax = 16
+base_production = 1
+base_manpower = 2
+is_city = yes
+set_variable = { 
+	which = gcn
+	value = 1
+}
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 3
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+	set_province_flag = gold
+}
+1270.1.1 = { 
+	owner = YUA
+	controller = YUA
+	add_core = YUA
+}
+1290.1.1 = { 
+	owner = KOR
+	controller = KOR
+	add_core = KOR
+	remove_core = YUA
+}

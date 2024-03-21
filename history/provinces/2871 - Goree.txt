@@ -1,0 +1,33 @@
+capital = "Gorée"
+trade_goods = slaves
+culture = wolof
+religion = west_african_pagan
+hre = no
+base_tax = 1
+base_production = 0
+base_manpower = 0
+native_size = 50
+native_ferocity = 4.5
+native_hostileness = 9
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_province_flag = TN_Harbour_Important
+	set_province_flag = TN_Natural_Important
+	set_variable = { 
+		which = acp
+		value = 1
+	}
+}
+1356.1.1 = { 
+	add_permanent_province_modifier = { 
+		name = trading_post_province
+		duration = -1
+	}
+}

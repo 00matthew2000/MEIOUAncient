@@ -1,0 +1,44 @@
+owner = CHA
+controller = CHA
+add_core = CHA
+add_core = KHM
+capital = "Châu Dôc"
+trade_goods = fish
+culture = khmer
+religion = theravada
+hre = no
+base_tax = 17
+base_production = 0
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = muslim
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = austranesian
+discovered_by = indian
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 5.000
+	}
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = baf
+		value = 82
+	}
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+	set_province_flag = spices
+}

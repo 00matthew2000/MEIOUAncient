@@ -1,0 +1,60 @@
+owner = YUA
+controller = YUA
+capital = "She"
+trade_goods = lumber
+culture = wunan
+religion = mahayana
+hre = no
+base_tax = 66
+base_production = 0
+base_manpower = 3
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 3
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 5.000
+	}
+	set_variable = { 
+		which = acp
+		value = 6.5
+	}
+	set_province_flag = tea
+}
+985.1.1 = { 
+	owner = SNG
+	controller = SNG
+	add_core = SNG
+}
+1276.1.1 = { 
+	owner = YUA
+	controller = YUA
+	add_core = YUA
+}
+1320.1.1 = { 
+	remove_core = SNG
+}
+1351.1.1 = { 
+	add_core = MNG
+}
+1356.1.1 = { 
+	owner = MNG
+	controller = MNG
+}

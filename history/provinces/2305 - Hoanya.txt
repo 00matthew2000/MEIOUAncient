@@ -1,0 +1,35 @@
+capital = "Hoanya"
+trade_goods = unknown
+culture = taiwanese
+religion = polynesian_pagan
+hre = no
+base_tax = 8
+base_production = 0
+base_manpower = 0
+native_size = 75
+native_ferocity = 3
+native_hostileness = 5
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = austranesian
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_province_flag = TN_Harbour_Minor
+	set_province_flag = TN_Natural_Minor
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+	set_province_flag = taiwanese_natives
+	add_permanent_province_modifier = { 
+		name = fur_low
+		duration = -1
+	}
+}

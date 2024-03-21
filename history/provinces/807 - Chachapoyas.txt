@@ -1,0 +1,25 @@
+owner = CBC
+controller = CBC
+add_core = CBC
+capital = "Kuélap"
+trade_goods = cotton
+culture = chachapoyan
+religion = inti
+hre = no
+base_tax = 4
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = south_american
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 2
+	}
+	set_variable = { 
+		which = ami
+		value = 5.000
+	}
+	set_province_flag = gold
+}

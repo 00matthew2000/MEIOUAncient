@@ -1,0 +1,1421 @@
+namespace = MEC_Technology
+country_event = { 
+	id = MEC_Technology.1
+	title = "no_localisation"
+	desc = "no_localisation"
+	picture = CITY_DEVELOPMENT_AU_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	trigger = { 
+		ai = yes
+		OR = { 
+			adm_power = 600
+			dip_power = 600
+			mil_power = 600
+		}
+	}
+	immediate = { 
+		set_variable = { 
+			which = arf
+			value = 0
+		}
+		set_variable = { 
+			which = arg
+			value = 0
+		}
+		set_variable = { 
+			which = arh
+			value = 0
+		}
+		export_to_variable = { 
+			which = adm_power
+			value = trigger_value:adm_power
+		}
+		subtract_variable = { 
+			which = adm_power
+			value = 1
+		}
+		multiply_variable = { 
+			which = arf
+			value = 0.75
+		}
+		export_to_variable = { 
+			which = dip_power
+			value = trigger_value:dip_power
+		}
+		subtract_variable = { 
+			which = dip_power
+			value = 1
+		}
+		multiply_variable = { 
+			which = arg
+			value = 0.75
+		}
+		export_to_variable = { 
+			which = mil_power
+			value = trigger_value:mil_power
+		}
+		subtract_variable = { 
+			which = mil_power
+			value = 1
+		}
+		multiply_variable = { 
+			which = arh
+			value = 0.75
+		}
+		export_to_variable = { 
+			which = export
+			value = modifier:technology_cost
+		}
+		set_variable = { 
+			which = nnj
+			which = export
+		}
+		export_to_variable = { 
+			which = export
+			value = modifier:all_power_cost
+		}
+		set_variable = { 
+			which = nnk
+			which = export
+		}
+		change_variable = { 
+			which = nnj
+			which = nnk
+		}
+		if = { 
+			limit = { 
+				is_institution_enabled = Legalism
+				NOT = { 
+					has_institution = Legalism
+				}
+			}
+			AAA = { 
+				set_variable = { 
+					which = nnj
+					which = hsr
+				}
+				subtract_variable = { 
+					which = nnj
+					which = nns
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = nnj
+								value = 400
+							}
+						}
+					}
+					set_variable = { 
+						which = nnj
+						value = 400
+					}
+				}
+				multiply_variable = { 
+					which = nnj
+					value = 0.01
+				}
+				PREV = { 
+					change_variable = { 
+						which = nnj
+						which = PREV
+					}
+				}
+				set_variable = { 
+					which = nnj
+					value = 0
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				is_institution_enabled = Banking
+				NOT = { 
+					has_institution = Banking
+				}
+			}
+			AAA = { 
+				set_variable = { 
+					which = nnj
+					which = hsr
+				}
+				subtract_variable = { 
+					which = nnj
+					which = nnu
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = nnj
+								value = 25
+							}
+						}
+					}
+					set_variable = { 
+						which = nnj
+						value = 25
+					}
+				}
+				multiply_variable = { 
+					which = nnj
+					value = 0.01
+				}
+				PREV = { 
+					change_variable = { 
+						which = nnj
+						which = PREV
+					}
+				}
+				set_variable = { 
+					which = nnj
+					value = 0
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				is_institution_enabled = Casual_Literacy
+				NOT = { 
+					has_institution = Casual_Literacy
+				}
+			}
+			AAA = { 
+				set_variable = { 
+					which = nnj
+					which = hsr
+				}
+				subtract_variable = { 
+					which = nnj
+					which = nnv
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = nnj
+								value = 50
+							}
+						}
+					}
+					set_variable = { 
+						which = nnj
+						value = 50
+					}
+				}
+				multiply_variable = { 
+					which = nnj
+					value = 0.01
+				}
+				PREV = { 
+					change_variable = { 
+						which = nnj
+						which = PREV
+					}
+				}
+				set_variable = { 
+					which = nnj
+					value = 0
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				is_institution_enabled = Columbian_Exchange
+				NOT = { 
+					has_institution = Columbian_Exchange
+				}
+			}
+			AAA = { 
+				set_variable = { 
+					which = nnj
+					which = hsr
+				}
+				subtract_variable = { 
+					which = nnj
+					which = nnw
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = nnj
+								value = 35
+							}
+						}
+					}
+					set_variable = { 
+						which = nnj
+						value = 35
+					}
+				}
+				multiply_variable = { 
+					which = nnj
+					value = 0.01
+				}
+				PREV = { 
+					change_variable = { 
+						which = nnj
+						which = PREV
+					}
+				}
+				set_variable = { 
+					which = nnj
+					value = 0
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				is_institution_enabled = Scientific_Method
+				NOT = { 
+					has_institution = Scientific_Method
+				}
+			}
+			AAA = { 
+				set_variable = { 
+					which = nnj
+					which = hsr
+				}
+				subtract_variable = { 
+					which = nnj
+					which = nnx
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = nnj
+								value = 75
+							}
+						}
+					}
+					set_variable = { 
+						which = nnj
+						value = 75
+					}
+				}
+				multiply_variable = { 
+					which = nnj
+					value = 0.01
+				}
+				PREV = { 
+					change_variable = { 
+						which = nnj
+						which = PREV
+					}
+				}
+				set_variable = { 
+					which = nnj
+					value = 0
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				is_institution_enabled = Global_Trade
+				NOT = { 
+					has_institution = Global_Trade
+				}
+			}
+			AAA = { 
+				set_variable = { 
+					which = nnj
+					which = hsr
+				}
+				subtract_variable = { 
+					which = nnj
+					which = nny
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = nnj
+								value = 50
+							}
+						}
+					}
+					set_variable = { 
+						which = nnj
+						value = 50
+					}
+				}
+				multiply_variable = { 
+					which = nnj
+					value = 0.01
+				}
+				PREV = { 
+					change_variable = { 
+						which = nnj
+						which = PREV
+					}
+				}
+				set_variable = { 
+					which = nnj
+					value = 0
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				is_institution_enabled = Academia
+				NOT = { 
+					has_institution = Academia
+				}
+			}
+			AAA = { 
+				set_variable = { 
+					which = nnj
+					which = hsr
+				}
+				subtract_variable = { 
+					which = nnj
+					which = nnz
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = nnj
+								value = 100
+							}
+						}
+					}
+					set_variable = { 
+						which = nnj
+						value = 100
+					}
+				}
+				multiply_variable = { 
+					which = nnj
+					value = 0.01
+				}
+				PREV = { 
+					change_variable = { 
+						which = nnj
+						which = PREV
+					}
+				}
+				set_variable = { 
+					which = nnj
+					value = 0
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				is_institution_enabled = Nationalism
+				NOT = { 
+					has_institution = Nationalism
+				}
+			}
+			AAA = { 
+				set_variable = { 
+					which = nnj
+					which = hsr
+				}
+				subtract_variable = { 
+					which = nnj
+					which = noa
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = nnj
+								value = 75
+							}
+						}
+					}
+					set_variable = { 
+						which = nnj
+						value = 75
+					}
+				}
+				multiply_variable = { 
+					which = nnj
+					value = 0.01
+				}
+				PREV = { 
+					change_variable = { 
+						which = nnj
+						which = PREV
+					}
+				}
+				set_variable = { 
+					which = nnj
+					value = 0
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				is_institution_enabled = Industrialisation
+				NOT = { 
+					has_institution = Industrialisation
+				}
+			}
+			AAA = { 
+				set_variable = { 
+					which = nnj
+					which = hsr
+				}
+				subtract_variable = { 
+					which = nnj
+					which = nob
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = nnj
+								value = 100
+							}
+						}
+					}
+					set_variable = { 
+						which = nnj
+						value = 100
+					}
+				}
+				multiply_variable = { 
+					which = nnj
+					value = 0.01
+				}
+				PREV = { 
+					change_variable = { 
+						which = nnj
+						which = PREV
+					}
+				}
+				set_variable = { 
+					which = nnj
+					value = 0
+				}
+			}
+		}
+		export_to_variable = { 
+			which = export
+			value = modifier:adm_tech_cost_modifier
+		}
+		set_variable = { 
+			which = nnk
+			which = export
+		}
+		export_to_variable = { 
+			which = export
+			value = adm_tech
+		}
+		set_variable = { 
+			which = nnl
+			which = export
+		}
+		change_variable = { 
+			which = nnl
+			value = 1
+		}
+		change_variable = { 
+			which = nnk
+			value = 1
+		}
+		if = { 
+			limit = { 
+				adm_tech = 6
+			}
+			set_variable = { 
+				which = nnm
+				which = nnl
+			}
+			multiply_variable = { 
+				which = nnm
+				value = 0.016
+			}
+			subtract_variable = { 
+				which = nnm
+				value = 0.106
+			}
+		}
+		else = { 
+			set_variable = { 
+				which = nnm
+				value = 6
+			}
+			subtract_variable = { 
+				which = nnm
+				which = nnl
+			}
+			multiply_variable = { 
+				which = nnm
+				value = -0.016
+			}
+			subtract_variable = { 
+				which = nnm
+				value = 0.009
+			}
+		}
+		change_variable = { 
+			which = nnk
+			which = nnm
+		}
+		set_variable = { 
+			which = nnm
+			which = nnl
+		}
+		multiply_variable = { 
+			which = nnm
+			value = 10
+		}
+		change_variable = { 
+			which = nnm
+			value = 1290
+		}
+		AAA = { 
+			set_variable = { 
+				which = nnn
+				which = hsr
+			}
+			PREV = { 
+				set_variable = { 
+					which = nnn
+					which = PREV
+				}
+			}
+		}
+		subtract_variable = { 
+			which = nnm
+			which = nnn
+		}
+		multiply_variable = { 
+			which = nnm
+			value = 0.1
+		}
+		if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = nnm
+						value = 0
+					}
+				}
+			}
+			change_variable = { 
+				which = nnk
+				which = nnm
+			}
+		}
+		change_variable = { 
+			which = nnk
+			which = nnj
+		}
+		set_variable = { 
+			which = nnp
+			value = 400
+		}
+		multiply_variable = { 
+			which = nnp
+			which = nnk
+		}
+		set_variable = { 
+			which = nnk
+			value = 0
+		}
+		set_variable = { 
+			which = nnl
+			value = 0
+		}
+		set_variable = { 
+			which = nnm
+			value = 0
+		}
+		set_variable = { 
+			which = nnn
+			value = 0
+		}
+		export_to_variable = { 
+			which = export
+			value = modifier:dip_tech_cost_modifier
+		}
+		set_variable = { 
+			which = nnk
+			which = export
+		}
+		export_to_variable = { 
+			which = export
+			value = dip_tech
+		}
+		set_variable = { 
+			which = nnl
+			which = export
+		}
+		change_variable = { 
+			which = nnl
+			value = 1
+		}
+		change_variable = { 
+			which = nnk
+			value = 1
+		}
+		if = { 
+			limit = { 
+				dip_tech = 6
+			}
+			set_variable = { 
+				which = nnm
+				which = nnl
+			}
+			multiply_variable = { 
+				which = nnm
+				value = 0.016
+			}
+			subtract_variable = { 
+				which = nnm
+				value = 0.106
+			}
+		}
+		else = { 
+			set_variable = { 
+				which = nnm
+				value = 6
+			}
+			subtract_variable = { 
+				which = nnm
+				which = nnl
+			}
+			multiply_variable = { 
+				which = nnm
+				value = -0.016
+			}
+			subtract_variable = { 
+				which = nnm
+				value = 0.009
+			}
+		}
+		change_variable = { 
+			which = nnk
+			which = nnm
+		}
+		set_variable = { 
+			which = nnm
+			which = nnl
+		}
+		multiply_variable = { 
+			which = nnm
+			value = 10
+		}
+		change_variable = { 
+			which = nnm
+			value = 1290
+		}
+		AAA = { 
+			set_variable = { 
+				which = nnn
+				which = hsr
+			}
+			PREV = { 
+				set_variable = { 
+					which = nnn
+					which = PREV
+				}
+			}
+		}
+		subtract_variable = { 
+			which = nnm
+			which = nnn
+		}
+		multiply_variable = { 
+			which = nnm
+			value = 0.1
+		}
+		if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = nnm
+						value = 0
+					}
+				}
+			}
+			change_variable = { 
+				which = nnk
+				which = nnm
+			}
+		}
+		change_variable = { 
+			which = nnk
+			which = nnj
+		}
+		set_variable = { 
+			which = nnq
+			value = 400
+		}
+		multiply_variable = { 
+			which = nnq
+			which = nnk
+		}
+		set_variable = { 
+			which = nnk
+			value = 0
+		}
+		set_variable = { 
+			which = nnl
+			value = 0
+		}
+		set_variable = { 
+			which = nnm
+			value = 0
+		}
+		set_variable = { 
+			which = nnn
+			value = 0
+		}
+		export_to_variable = { 
+			which = export
+			value = modifier:mil_tech_cost_modifier
+		}
+		set_variable = { 
+			which = nnk
+			which = export
+		}
+		export_to_variable = { 
+			which = export
+			value = mil_tech
+		}
+		set_variable = { 
+			which = nnl
+			which = export
+		}
+		change_variable = { 
+			which = nnl
+			value = 1
+		}
+		change_variable = { 
+			which = nnk
+			value = 1
+		}
+		if = { 
+			limit = { 
+				mil_tech = 6
+			}
+			set_variable = { 
+				which = nnm
+				which = nnl
+			}
+			multiply_variable = { 
+				which = nnm
+				value = 0.016
+			}
+			subtract_variable = { 
+				which = nnm
+				value = 0.106
+			}
+		}
+		else = { 
+			set_variable = { 
+				which = nnm
+				value = 6
+			}
+			subtract_variable = { 
+				which = nnm
+				which = nnl
+			}
+			multiply_variable = { 
+				which = nnm
+				value = -0.016
+			}
+			subtract_variable = { 
+				which = nnm
+				value = 0.009
+			}
+		}
+		change_variable = { 
+			which = nnk
+			which = nnm
+		}
+		set_variable = { 
+			which = nnm
+			which = nnl
+		}
+		multiply_variable = { 
+			which = nnm
+			value = 10
+		}
+		change_variable = { 
+			which = nnm
+			value = 1290
+		}
+		AAA = { 
+			set_variable = { 
+				which = nnn
+				which = hsr
+			}
+			PREV = { 
+				set_variable = { 
+					which = nnn
+					which = PREV
+				}
+			}
+		}
+		subtract_variable = { 
+			which = nnm
+			which = nnn
+		}
+		multiply_variable = { 
+			which = nnm
+			value = 0.1
+		}
+		if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = nnm
+						value = 0
+					}
+				}
+			}
+			change_variable = { 
+				which = nnk
+				which = nnm
+			}
+		}
+		change_variable = { 
+			which = nnk
+			which = nnj
+		}
+		set_variable = { 
+			which = nnr
+			value = 400
+		}
+		multiply_variable = { 
+			which = nnr
+			which = nnk
+		}
+		set_variable = { 
+			which = nnk
+			value = 0
+		}
+		set_variable = { 
+			which = nnl
+			value = 0
+		}
+		set_variable = { 
+			which = nnm
+			value = 0
+		}
+		set_variable = { 
+			which = nnn
+			value = 0
+		}
+		set_variable = { 
+			which = nnj
+			value = 0
+		}
+		set_variable = { 
+			which = nnk
+			value = 0
+		}
+		if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = arf
+						which = nnp
+					}
+				}
+			}
+			set_variable = { 
+				which = arf
+				which = nnp
+			}
+			while = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 1024
+					}
+				}
+				add_mil_power = -1024
+				subtract_variable = { 
+					which = milit_cost
+					value = 1024
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 512
+					}
+				}
+				add_mil_power = -512
+				subtract_variable = { 
+					which = milit_cost
+					value = 512
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 256
+					}
+				}
+				add_mil_power = -256
+				subtract_variable = { 
+					which = milit_cost
+					value = 256
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 128
+					}
+				}
+				add_mil_power = -128
+				subtract_variable = { 
+					which = milit_cost
+					value = 128
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 64
+					}
+				}
+				add_mil_power = -64
+				subtract_variable = { 
+					which = milit_cost
+					value = 64
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 32
+					}
+				}
+				add_mil_power = -32
+				subtract_variable = { 
+					which = milit_cost
+					value = 32
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 16
+					}
+				}
+				add_mil_power = -16
+				subtract_variable = { 
+					which = milit_cost
+					value = 16
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 8
+					}
+				}
+				add_mil_power = -8
+				subtract_variable = { 
+					which = milit_cost
+					value = 8
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 4
+					}
+				}
+				add_mil_power = -4
+				subtract_variable = { 
+					which = milit_cost
+					value = 4
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 2
+					}
+				}
+				add_mil_power = -2
+				subtract_variable = { 
+					which = milit_cost
+					value = 2
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 1
+					}
+				}
+				add_mil_power = -1
+				subtract_variable = { 
+					which = milit_cost
+					value = 1
+				}
+			}
+			set_variable = { 
+				which = milit_cost
+				value = 0
+			}
+			add_adm_tech = 1
+		}
+		if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = arg
+						which = nnq
+					}
+				}
+			}
+			set_variable = { 
+				which = arg
+				which = nnq
+			}
+			while = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 1024
+					}
+				}
+				add_mil_power = -1024
+				subtract_variable = { 
+					which = milit_cost
+					value = 1024
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 512
+					}
+				}
+				add_mil_power = -512
+				subtract_variable = { 
+					which = milit_cost
+					value = 512
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 256
+					}
+				}
+				add_mil_power = -256
+				subtract_variable = { 
+					which = milit_cost
+					value = 256
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 128
+					}
+				}
+				add_mil_power = -128
+				subtract_variable = { 
+					which = milit_cost
+					value = 128
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 64
+					}
+				}
+				add_mil_power = -64
+				subtract_variable = { 
+					which = milit_cost
+					value = 64
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 32
+					}
+				}
+				add_mil_power = -32
+				subtract_variable = { 
+					which = milit_cost
+					value = 32
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 16
+					}
+				}
+				add_mil_power = -16
+				subtract_variable = { 
+					which = milit_cost
+					value = 16
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 8
+					}
+				}
+				add_mil_power = -8
+				subtract_variable = { 
+					which = milit_cost
+					value = 8
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 4
+					}
+				}
+				add_mil_power = -4
+				subtract_variable = { 
+					which = milit_cost
+					value = 4
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 2
+					}
+				}
+				add_mil_power = -2
+				subtract_variable = { 
+					which = milit_cost
+					value = 2
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 1
+					}
+				}
+				add_mil_power = -1
+				subtract_variable = { 
+					which = milit_cost
+					value = 1
+				}
+			}
+			set_variable = { 
+				which = milit_cost
+				value = 0
+			}
+			add_dip_tech = 1
+		}
+		if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = arh
+						which = nnr
+					}
+				}
+			}
+			set_variable = { 
+				which = arh
+				which = nnr
+			}
+			while = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 1024
+					}
+				}
+				add_mil_power = -1024
+				subtract_variable = { 
+					which = milit_cost
+					value = 1024
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 512
+					}
+				}
+				add_mil_power = -512
+				subtract_variable = { 
+					which = milit_cost
+					value = 512
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 256
+					}
+				}
+				add_mil_power = -256
+				subtract_variable = { 
+					which = milit_cost
+					value = 256
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 128
+					}
+				}
+				add_mil_power = -128
+				subtract_variable = { 
+					which = milit_cost
+					value = 128
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 64
+					}
+				}
+				add_mil_power = -64
+				subtract_variable = { 
+					which = milit_cost
+					value = 64
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 32
+					}
+				}
+				add_mil_power = -32
+				subtract_variable = { 
+					which = milit_cost
+					value = 32
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 16
+					}
+				}
+				add_mil_power = -16
+				subtract_variable = { 
+					which = milit_cost
+					value = 16
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 8
+					}
+				}
+				add_mil_power = -8
+				subtract_variable = { 
+					which = milit_cost
+					value = 8
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 4
+					}
+				}
+				add_mil_power = -4
+				subtract_variable = { 
+					which = milit_cost
+					value = 4
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 2
+					}
+				}
+				add_mil_power = -2
+				subtract_variable = { 
+					which = milit_cost
+					value = 2
+				}
+			}
+			if = { 
+				limit = { 
+					check_variable = { 
+						which = milit_cost
+						value = 1
+					}
+				}
+				add_mil_power = -1
+				subtract_variable = { 
+					which = milit_cost
+					value = 1
+				}
+			}
+			set_variable = { 
+				which = milit_cost
+				value = 0
+			}
+			add_mil_tech = 1
+		}
+		set_variable = { 
+			which = nnp
+			value = 0
+		}
+		set_variable = { 
+			which = nnq
+			value = 0
+		}
+		set_variable = { 
+			which = nnr
+			value = 0
+		}
+	}
+	option = { 
+		name = "no_localisation"
+	}
+}

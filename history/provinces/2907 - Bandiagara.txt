@@ -1,0 +1,30 @@
+owner = YAT
+controller = YAT
+add_core = YAT
+capital = "Bandiagara"
+trade_goods = millet
+culture = fulani
+religion = sunni
+hre = no
+base_tax = 8
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 10.000
+	}
+	set_variable = { 
+		which = atc
+		value = 60.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+}

@@ -1,0 +1,99 @@
+north_asia_pagan = { 
+	flags_with_emblem_percentage = 10
+	flag_emblem_index_range = { 83 96}
+	tengri_pagan = { 
+		color = { 0.1 0.3 0.85}
+		icon = 33
+		province = { 
+			local_missionary_strength = 0.025
+		}
+		country = { 
+			global_missionary_strength = -0.01
+			global_heretic_missionary_strength = 0.02
+			tolerance_of_heretics_capacity = 1
+			land_morale = 0.10
+			tolerance_heathen = 2
+			leader_land_manuever = 1
+			legitimacy = -0.25
+			diplomatic_reputation = -1
+		}
+		country_as_secondary = { 
+			global_missionary_strength = -0.02
+			global_heretic_missionary_strength = 0.02
+			land_morale = 0.10
+			tolerance_heathen = 2
+			leader_land_manuever = 1
+			legitimacy = -0.25
+			diplomatic_reputation = -1
+			tolerance_own = -1
+		}
+		uses_piety = yes
+		has_patriarchs = yes
+		can_have_secondary_religion = yes
+		misguided_heretic = yes
+		heretic = { Fundamentalist Reactionary Prophetic Charismatic Syncretic Tribal}
+		date = 2000.1.1
+	}
+	shamanism = { 
+		color = { 0.3 0.6 0.3}
+		icon = 44
+		province = { 
+			local_missionary_strength = 0.025
+		}
+		country = { 
+			global_missionary_strength = -0.50
+			tolerance_of_heretics_capacity = 1
+			loot_amount = 0.25
+			tolerance_heretic = 2
+			tolerance_heathen = 2
+		}
+		country_as_secondary = { 
+			global_missionary_strength = -0.50
+			loot_amount = 0.25
+			tolerance_heretic = 2
+			tolerance_heathen = 2
+		}
+		uses_piety = yes
+		has_patriarchs = yes
+		can_have_secondary_religion = yes
+		misguided_heretic = yes
+		fetishist_cult = yes
+		heretic = { Fundamentalist Reactionary Prophetic Charismatic Syncretic Tribal}
+	}
+	crusade_name = HOLY_WAR
+}
+inuuk_group = { 
+	flags_with_emblem_percentage = 10
+	flag_emblem_index_range = { 83 96}
+	inuuk_pagan = { 
+		color = { 0.4 0.6 0.6}
+		icon = 31
+		province = { 
+			local_missionary_strength = 0.025
+		}
+		country = { 
+			global_missionary_strength = -0.01
+			global_heretic_missionary_strength = 0.02
+			tolerance_of_heretics_capacity = 1
+			heir_chance = 1.0
+			tolerance_heretic = 1.5
+			tolerance_heathen = 1.5
+			prestige_decay = 0.01
+		}
+		country_as_secondary = { 
+			global_missionary_strength = -0.02
+			global_heretic_missionary_strength = 0.02
+			heir_chance = 1.0
+			tolerance_heretic = 1.5
+			tolerance_heathen = 1.5
+			prestige_decay = 0.01
+			tolerance_own = -1
+		}
+		can_have_secondary_religion = yes
+		uses_piety = yes
+		has_patriarchs = yes
+		misguided_heretic = yes
+		heretic = { Fundamentalist Reactionary Prophetic Charismatic Syncretic Tribal}
+	}
+	crusade_name = HOLY_WAR
+}

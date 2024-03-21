@@ -1,0 +1,26 @@
+owner = MAL
+controller = MAL
+add_core = MAL
+capital = "Gangaran"
+trade_goods = millet
+culture = maninka
+religion = sunni
+hre = no
+base_tax = 4
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 20.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+}

@@ -1,0 +1,9448 @@
+namespace = dg_humanism
+country_event = { 
+	id = dg_humanism.001
+	title = dg_humanism.001.t
+	desc = dg_humanism.001.d
+	picture = renaissance_painters
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		NOT = { 
+			has_global_flag = renaissance
+		}
+		owns = 116
+		is_year = 1374
+		OR = { 
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = waldensian
+			religion = lollard
+			religion = avignonist
+			religion = holyleague
+		}
+	}
+	option = { 
+		name = dg_humanism.001.a
+		hidden_effect = { 
+			set_global_flag = renaissance
+		}
+		define_advisor = { 
+			type = artist_BG
+			religion = catholic
+			discount = yes
+			skill = 2
+		}
+		add_prestige = 5
+	}
+}
+country_event = { 
+	id = dg_humanism.002
+	title = dg_humanism.002.t
+	desc = dg_humanism.002.d
+	picture = renaissance_painters
+	is_triggered_only = yes
+	trigger = { 
+		capital_scope = { 
+			continent = europe
+		}
+		OR = { 
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = waldensian
+			religion = lollard
+			religion = avignonist
+			religion = holyleague
+		}
+		has_institution = Legalism
+		has_global_flag = renaissance
+		NOT = { 
+			has_country_flag = humanism
+		}
+		NOT = { 
+			has_country_flag = renaissance
+		}
+		OR = { 
+			culture_group = latin
+			AND = { 
+				adm_tech = 20
+				culture_group = napolitan
+			}
+			AND = { 
+				adm_tech = 25
+				OR = { 
+					culture_group = magyar
+					culture_group = low_frankish
+				}
+			}
+			AND = { 
+				adm_tech = 27
+				OR = { 
+					culture_group = langue_d_oil
+					culture_group = langue_d_oc
+					culture_group = high_germanic
+					culture_group = low_germanic
+				}
+			}
+			AND = { 
+				adm_tech = 29
+				OR = { 
+					culture_group = iberian
+					culture_group = basque_group
+					culture_group = british
+					culture_group = brythonic
+				}
+			}
+			AND = { 
+				adm_tech = 30
+				OR = { 
+					culture_group = gaelic
+					culture_group = scandinavian
+					culture_group = west_slavic
+				}
+			}
+			AND = { 
+				adm_tech = 32
+				OR = { 
+					culture_group = albanese
+					culture_group = baltic
+					culture_group = balkan_slavic
+					culture_group = finnic
+					culture_group = romanian
+					culture_group = east_slavic
+					culture_group = greek_group
+				}
+			}
+			AND = { 
+				adm_tech = 34
+				culture_group = finno_ugric
+			}
+		}
+	}
+	option = { 
+		name = dg_humanism.002.a
+		trigger = { 
+			religion = catholic
+			OR = { 
+				is_colonial_nation = no
+				overlord = { 
+					NOT = { 
+						has_country_flag = humanism
+					}
+				}
+			}
+		}
+		ai_chance = { 
+			factor = 70
+			modifier = { 
+				religion = hussite
+				factor = 0.7
+			}
+			modifier = { 
+				is_emperor = yes
+				factor = 0.7
+			}
+			modifier = { 
+				factor = 1.4
+				any_neighbor_country = { 
+					NOT = { 
+						religion_group = christian
+					}
+				}
+			}
+			modifier = { 
+				factor = 1.4
+				any_neighbor_province = { 
+					owned_by = PAP
+				}
+			}
+			modifier = { 
+				factor = 1.4
+				owner = { 
+					government = theocracy
+					is_elector = yes
+				}
+			}
+			modifier = { 
+				owner = { 
+					government = theocracy
+				}
+				factor = 1.4
+			}
+			modifier = { 
+				factor = 1.4
+				NOT = { 
+					owner = { 
+						religious_unity = 0.80
+					}
+				}
+				religion = catholic
+			}
+			modifier = { 
+				factor = 1.4
+				NOT = { 
+					owner = { 
+						religious_unity = 0.60
+					}
+				}
+				religion = catholic
+			}
+			modifier = { 
+				factor = 0.7
+				is_religion_enabled = protestant
+			}
+			modifier = { 
+				factor = 2
+				owner = { 
+					NOT = { 
+						reform_desire = 10
+					}
+				}
+			}
+			modifier = { 
+				factor = 2
+				owner = { 
+					NOT = { 
+						reform_desire = 20
+					}
+				}
+			}
+			modifier = { 
+				factor = 1.4
+				owner = { 
+					NOT = { 
+						reform_desire = 30
+					}
+				}
+			}
+			modifier = { 
+				factor = 0.7
+				owner = { 
+					reform_desire = 80
+				}
+			}
+			modifier = { 
+				factor = 0.7
+				owner = { 
+					reform_desire = 100
+				}
+			}
+		}
+		random_list = { 
+			50 = { 
+				define_advisor = { 
+					type = theologian_CL
+					discount = yes
+				}
+			}
+			50 = { 
+				define_advisor = { 
+					type = inquisitor_CL
+					discount = yes
+				}
+			}
+		}
+		set_country_flag = renaissance
+	}
+	option = { 
+		name = dg_humanism.002.b
+		ai_chance = { 
+			factor = 30
+		}
+		trigger = { 
+			OR = { 
+				NOT = { 
+					religion = catholic
+				}
+				NOT = { 
+					AND = { 
+						government = theocracy
+						has_reform = Pol_Mediumship4
+					}
+				}
+			}
+			OR = { 
+				is_colonial_nation = no
+				overlord = { 
+					NOT = { 
+						has_country_flag = renaissance
+					}
+				}
+			}
+		}
+		random_list = { 
+			50 = { 
+				define_advisor = { 
+					type = philosopher_BG
+					discount = yes
+				}
+			}
+			50 = { 
+				define_advisor = { 
+					type = artist_BG
+					discount = yes
+				}
+			}
+		}
+		set_country_flag = humanism
+	}
+}
+country_event = { 
+	id = dg_humanism.011
+	title = dg_humanism.011.t
+	desc = dg_humanism.011.d
+	picture = all_publishing
+	is_triggered_only = yes
+	trigger = { 
+		OR = { 
+			has_country_flag = humanism
+			has_country_flag = renaissance
+		}
+		capital_scope = { 
+			OR = { 
+				has_province_modifier = LN_Minor
+				has_province_modifier = LN_Important
+				has_province_modifier = LN_Major
+			}
+		}
+		religion = catholic
+		adm_tech = 27
+		NOT = { 
+			has_country_flag = veiled_criticsm
+		}
+		NOT = { 
+			is_religion_enabled = reformed
+		}
+	}
+	immediate = { 
+		set_country_flag = veiled_criticsm
+	}
+	option = { 
+		name = dg_humanism.011.a
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = humanism
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				AND = { 
+					check_variable = { 
+						which = ata
+						value = 75
+					}
+				}
+			}
+			modifier = { 
+				factor = 0
+				AND = { 
+					government = theocracy
+					has_reform = Pol_Mediumship4
+				}
+			}
+		}
+		add_adm_power = 100
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = -25
+			}
+			change_variable = { 
+				which = atb
+				value = -25
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_-25
+		add_papal_influence = -25
+		if = { 
+			limit = { 
+				NOT = { 
+					has_country_modifier = CL_Secularise_S
+				}
+				NOT = { 
+					has_country_modifier = CL_Secularise_M
+				}
+				NOT = { 
+					has_country_modifier = CL_Secularise_L
+				}
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asx
+							value = 65
+						}
+					}
+				}
+				add_country_modifier = { 
+					name = CL_Secularise_L
+					duration = 3650
+				}
+			}
+			else_if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asx
+							value = 35
+						}
+					}
+				}
+				add_country_modifier = { 
+					name = CL_Secularise_M
+					duration = 3650
+				}
+			}
+			else = { 
+				add_country_modifier = { 
+					name = CL_Secularise_S
+					duration = 3650
+				}
+			}
+			custom_tooltip = CL_Secularise_effect
+		}
+	}
+	option = { 
+		name = dg_humanism.011.b
+		ai_chance = { 
+			factor = 60
+			modifier = { 
+				factor = 0
+				AND = { 
+					government = theocracy
+					has_reform = Pol_Mediumship4
+				}
+			}
+		}
+		add_adm_power = 75
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = -10
+			}
+			change_variable = { 
+				which = atb
+				value = -10
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_-10
+		add_papal_influence = -10
+	}
+	option = { 
+		name = dg_humanism.011.c
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				factor = 1.5
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 25
+						}
+					}
+				}
+			}
+		}
+		add_adm_power = 50
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = 25
+			}
+			change_variable = { 
+				which = atb
+				value = 25
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_25
+		add_papal_influence = 25
+		if = { 
+			limit = { 
+				NOT = { 
+					has_country_modifier = CL_PopularReform_S
+				}
+				NOT = { 
+					has_country_modifier = CL_PopularReform_M
+				}
+				NOT = { 
+					has_country_modifier = CL_PopularReform_L
+				}
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asx
+							value = 65
+						}
+					}
+				}
+				add_country_modifier = { 
+					name = CL_PopularReform_L
+					duration = 3650
+				}
+			}
+			else_if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asx
+							value = 35
+						}
+					}
+				}
+				add_country_modifier = { 
+					name = CL_PopularReform_M
+					duration = 3650
+				}
+			}
+			else = { 
+				add_country_modifier = { 
+					name = CL_PopularReform_S
+					duration = 3650
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = dg_humanism.012
+	title = dg_humanism.012.t
+	desc = dg_humanism.012.d
+	picture = all_publishing
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			has_country_flag = humanism
+			has_country_flag = renaissance
+		}
+		any_owned_province = { 
+			OR = { 
+				has_province_modifier = LN_Minor
+				has_province_modifier = LN_Important
+				has_province_modifier = LN_Major
+			}
+		}
+		OR = { 
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = waldensian
+			religion = lollard
+			religion = avignonist
+			religion = holyleague
+		}
+		advisor = theologian_CL
+		adm_tech = 21
+		NOT = { 
+			is_religion_enabled = reformed
+		}
+		NOT = { 
+			has_country_flag = renaissance_humanism_theologian
+		}
+	}
+	mean_time_to_happen = { 
+		years = 5
+		modifier = { 
+			factor = 0.5
+			ai = no
+		}
+	}
+	immediate = { 
+		every_known_country = { 
+			limit = { 
+				ai = no
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+			country_event = { 
+				id = dg_humanism.0121
+			}
+		}
+		set_country_flag = renaissance_humanism_theologian
+	}
+	option = { 
+		name = dg_humanism.012.a
+		trigger = { 
+			NOT = { 
+				tag = PAP
+			}
+		}
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = humanism
+				factor = 2
+			}
+			modifier = { 
+				war_with = PAP
+				factor = 3
+			}
+			modifier = { 
+				truce_with = PAP
+				factor = 3
+			}
+			modifier = { 
+				is_rival = PAP
+				factor = 3
+			}
+			modifier = { 
+				is_enemy = PAP
+				factor = 3
+			}
+		}
+		add_adm_power = 100
+		add_papal_influence = -25
+		reverse_add_opinion = { 
+			who = PAP
+			modifier = disobeyed_religious_leader
+		}
+		add_opinion = { 
+			who = PAP
+			modifier = papacy_bad
+		}
+		PAP = { 
+			country_event = { 
+				id = dg_papacy.953
+				days = 30
+			}
+		}
+		add_reform_desire = 0.002
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 730
+		}
+	}
+	option = { 
+		name = dg_humanism.012.b
+		trigger = { 
+			NOT = { 
+				tag = PAP
+			}
+		}
+		ai_chance = { 
+			factor = 60
+		}
+		add_adm_power = 75
+		remove_advisor = theologian_CL
+		add_reform_desire = 0.001
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 365
+		}
+	}
+	option = { 
+		name = dg_humanism.012.c
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = renaissance
+				factor = 2
+			}
+		}
+		add_adm_power = 50
+		kill_advisor = theologian_CL
+		add_papal_influence = 25
+	}
+}
+country_event = { 
+	id = dg_humanism.0121
+	title = dg_humanism.012.t
+	desc = dg_humanism.0121.d
+	picture = all_publishing
+	is_triggered_only = yes
+	option = { 
+		name = dg_humanism.0121.a
+	}
+}
+country_event = { 
+	id = dg_humanism.013
+	title = dg_humanism.013.t
+	desc = dg_humanism.013.d
+	picture = all_publishing
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			has_country_flag = humanism
+			has_country_flag = renaissance
+		}
+		religion = catholic
+		employed_advisor = { 
+			type = theologian_CL
+			religion = catholic
+		}
+		adm_tech = 30
+		NOT = { 
+			has_country_flag = renaissance_humanism_theologian
+		}
+	}
+	mean_time_to_happen = { 
+		years = 5
+		modifier = { 
+			factor = 0.5
+			ai = no
+		}
+	}
+	immediate = { 
+		every_known_country = { 
+			limit = { 
+				ai = no
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+			country_event = { 
+				id = dg_humanism.0131
+			}
+		}
+		set_country_flag = renaissance_humanism_theologian
+	}
+	option = { 
+		name = dg_humanism.013.a
+		trigger = { 
+			NOT = { 
+				tag = PAP
+			}
+		}
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				factor = 2
+				has_country_flag = humanism
+			}
+			modifier = { 
+				factor = 1.5
+				AND = { 
+					check_variable = { 
+						which = ata
+						value = 75
+					}
+				}
+			}
+		}
+		add_adm_power = 100
+		add_papal_influence = -20
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = -20
+			}
+			change_variable = { 
+				which = atb
+				value = -20
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_-20
+		add_reform_desire = 0.002
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 730
+		}
+	}
+	option = { 
+		name = dg_humanism.013.b
+		ai_chance = { 
+			factor = 60
+		}
+		add_adm_power = 75
+		remove_advisor = theologian_CL
+		add_reform_desire = 0.001
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 365
+		}
+	}
+	option = { 
+		name = dg_humanism.013.c
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = renaissance
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 25
+						}
+					}
+				}
+			}
+		}
+		add_adm_power = 50
+		kill_advisor = theologian_CL
+		add_papal_influence = 20
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = 20
+			}
+			change_variable = { 
+				which = atb
+				value = 20
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_20
+		if = { 
+			limit = { 
+				government = theocracy
+			}
+			add_devotion = 25
+		}
+	}
+}
+country_event = { 
+	id = dg_humanism.0131
+	title = dg_humanism.013.t
+	desc = dg_humanism.0131.d
+	picture = all_publishing
+	is_triggered_only = yes
+	option = { 
+		name = dg_humanism.0131.a
+	}
+}
+country_event = { 
+	id = dg_humanism.014
+	title = dg_humanism.014.t
+	desc = dg_humanism.014.d
+	picture = all_publishing
+	is_triggered_only = yes
+	trigger = { 
+		OR = { 
+			has_country_flag = humanism
+			has_country_flag = renaissance
+		}
+		employed_advisor = { 
+			type = theologian_CL
+			religion = ROOT
+			culture = ROOT
+		}
+		OR = { 
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = waldensian
+			religion = lollard
+			religion = avignonist
+			religion = holyleague
+		}
+		any_owned_province = { 
+			culture = ROOT
+			religion = ROOT
+			OR = { 
+				has_province_modifier = LN_Minor
+				has_province_modifier = LN_Important
+				has_province_modifier = LN_Major
+			}
+		}
+		adm_tech = 26
+		NOT = { 
+			any_country = { 
+				culture = ROOT
+				has_country_flag = bible_translation
+			}
+		}
+	}
+	immediate = { 
+		set_country_flag = bible_translation
+		every_known_country = { 
+			limit = { 
+				ai = no
+				culture = ROOT
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+			country_event = { 
+				id = dg_humanism.0141
+			}
+		}
+	}
+	option = { 
+		name = dg_humanism.014.a
+		trigger = { 
+			NOT = { 
+				tag = PAP
+			}
+		}
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = humanism
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				AND = { 
+					check_variable = { 
+						which = ata
+						value = 75
+					}
+				}
+			}
+			modifier = { 
+				factor = 0.1
+				NOT = { 
+					treasury = 50
+				}
+			}
+		}
+		add_adm_power = 100
+		add_treasury = -50
+		add_papal_influence = -20
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = -20
+			}
+			change_variable = { 
+				which = atb
+				value = -20
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_-20
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 730
+		}
+		hidden_effect = { 
+			random_owned_province = { 
+				limit = { 
+					culture = ROOT
+					religion = ROOT
+					OR = { 
+						has_province_modifier = LN_Minor
+						has_province_modifier = LN_Important
+						has_province_modifier = LN_Major
+					}
+				}
+				change_variable = { 
+					which = aam
+					value = 50
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = aam
+									value = 1.0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = aam
+						value = 1.0
+					}
+				}
+				set_province_flag = POP_ChangedWealth
+			}
+		}
+	}
+	option = { 
+		name = dg_humanism.014.b
+		ai_chance = { 
+			factor = 60
+		}
+		add_adm_power = 75
+		add_papal_influence = -10
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = -10
+			}
+			change_variable = { 
+				which = atb
+				value = -10
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_-10
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 365
+		}
+	}
+	option = { 
+		name = dg_humanism.014.c
+		trigger = { 
+			religion = catholic
+		}
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = renaissance
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 25
+						}
+					}
+				}
+			}
+		}
+		add_adm_power = 50
+		kill_advisor = theologian_CL
+		add_papal_influence = 25
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = 15
+			}
+			change_variable = { 
+				which = atb
+				value = 15
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_15
+		if = { 
+			limit = { 
+				government = theocracy
+			}
+			add_devotion = 25
+		}
+	}
+}
+country_event = { 
+	id = dg_humanism.0141
+	title = dg_humanism.014.t
+	desc = dg_humanism.0141.d
+	picture = all_publishing
+	is_triggered_only = yes
+	option = { 
+		name = dg_humanism.0141.a
+	}
+}
+country_event = { 
+	id = dg_humanism.015
+	title = dg_humanism.015.t
+	desc = dg_humanism.015.d
+	picture = protestant_translation
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			has_country_flag = humanism
+			has_country_flag = renaissance
+		}
+		OR = { 
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = waldensian
+			religion = lollard
+			religion = avignonist
+			religion = holyleague
+		}
+		advisor = theologian_CL
+		adm_tech = 31
+		OR = { 
+			NOT = { 
+				has_country_flag = renaissance_humanism_theologian
+			}
+			has_country_flag = desiderius_erasmus
+		}
+	}
+	mean_time_to_happen = { 
+		years = 5
+		modifier = { 
+			factor = 0.5
+			ai = no
+		}
+		modifier = { 
+			factor = 0.1
+			has_country_flag = desiderius_erasmus
+		}
+	}
+	immediate = { 
+		every_known_country = { 
+			limit = { 
+				ai = no
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+			country_event = { 
+				id = dg_humanism.0151
+			}
+		}
+		set_country_flag = renaissance_humanism_theologian
+	}
+	option = { 
+		name = dg_humanism.015.a
+		trigger = { 
+			NOT = { 
+				tag = PAP
+			}
+		}
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				factor = 2
+				has_country_flag = humanism
+			}
+			modifier = { 
+				factor = 1.5
+				AND = { 
+					check_variable = { 
+						which = ata
+						value = 75
+					}
+				}
+			}
+		}
+		add_adm_power = 100
+		add_papal_influence = -20
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = -20
+			}
+			change_variable = { 
+				which = atb
+				value = -20
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_-20
+		add_reform_desire = 0.002
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 730
+		}
+	}
+	option = { 
+		name = dg_humanism.015.b
+		ai_chance = { 
+			factor = 60
+		}
+		add_adm_power = 75
+		add_papal_influence = 5
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = 5
+			}
+			change_variable = { 
+				which = atb
+				value = 5
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_5
+		add_reform_desire = 0.001
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 365
+		}
+	}
+	option = { 
+		name = dg_humanism.015.c
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = renaissance
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 25
+						}
+					}
+				}
+			}
+		}
+		add_adm_power = 50
+		kill_advisor = theologian_CL
+		add_papal_influence = 20
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = 20
+			}
+			change_variable = { 
+				which = atb
+				value = 20
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_20
+		if = { 
+			limit = { 
+				government = theocracy
+			}
+			add_devotion = 25
+		}
+	}
+}
+country_event = { 
+	id = dg_humanism.0151
+	title = dg_humanism.015.t
+	desc = dg_humanism.0151.d
+	picture = protestant_translation
+	is_triggered_only = yes
+	option = { 
+		name = dg_humanism.0151.a
+	}
+}
+country_event = { 
+	id = dg_humanism.016
+	title = dg_humanism.016.t
+	desc = dg_humanism.016.d
+	picture = all_cleric_scientist
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			has_country_flag = humanism
+			has_country_flag = renaissance
+		}
+		OR = { 
+			advisor = natural_scientist_NO
+			advisor = natural_scientist_BG
+			advisor = natural_scientist_BU
+		}
+		OR = { 
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = waldensian
+			religion = lollard
+			religion = avignonist
+			religion = holyleague
+		}
+		any_owned_province = { 
+			OR = { 
+				has_province_modifier = LN_Minor
+				has_province_modifier = LN_Important
+				has_province_modifier = LN_Major
+			}
+		}
+		adm_tech = 20
+		NOT = { 
+			has_country_flag = renaissance_humanism_natural_scientist
+		}
+	}
+	mean_time_to_happen = { 
+		years = 5
+		modifier = { 
+			factor = 0.5
+			ai = no
+		}
+	}
+	immediate = { 
+		every_known_country = { 
+			limit = { 
+				ai = no
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+			country_event = { 
+				id = dg_humanism.0161
+			}
+		}
+		set_country_flag = renaissance_humanism_natural_scientist
+	}
+	option = { 
+		name = dg_humanism.016.a
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = humanism
+				factor = 2
+			}
+			modifier = { 
+				NOT = { 
+					treasury = 50
+				}
+				factor = 0.1
+			}
+		}
+		add_treasury = -50
+		random_list = { 
+			60 = { 
+				add_dip_power = 200
+			}
+			40 = { 
+				add_prestige = -5
+			}
+		}
+		hidden_effect = { 
+			random_owned_province = { 
+				limit = { 
+					OR = { 
+						has_province_modifier = LN_Minor
+						has_province_modifier = LN_Important
+						has_province_modifier = LN_Major
+					}
+				}
+				change_variable = { 
+					which = aam
+					value = 50
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = aam
+									value = 1.0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = aam
+						value = 1.0
+					}
+				}
+				set_province_flag = POP_ChangedWealth
+			}
+		}
+	}
+	option = { 
+		name = dg_humanism.016.b
+		ai_chance = { 
+			factor = 60
+			modifier = { 
+				NOT = { 
+					treasury = 25
+				}
+				factor = 0.1
+			}
+		}
+		add_treasury = -25
+		add_dip_power = 75
+		hidden_effect = { 
+			random_owned_province = { 
+				limit = { 
+					OR = { 
+						has_province_modifier = LN_Minor
+						has_province_modifier = LN_Important
+						has_province_modifier = LN_Major
+					}
+				}
+				change_variable = { 
+					which = aam
+					value = 25
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = aam
+									value = 1.0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = aam
+						value = 1.0
+					}
+				}
+				set_province_flag = POP_ChangedWealth
+			}
+		}
+	}
+	option = { 
+		name = dg_humanism.016.c
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = renaissance
+				factor = 2
+			}
+		}
+		if = { 
+			limit = { 
+				advisor = natural_scientist_NO
+			}
+			remove_advisor = natural_scientist_NO
+		}
+		else_if = { 
+			limit = { 
+				advisor = natural_scientist_BG
+			}
+			remove_advisor = natural_scientist_BG
+		}
+		else_if = { 
+			limit = { 
+				advisor = natural_scientist_BU
+			}
+			remove_advisor = natural_scientist_BU
+		}
+	}
+}
+country_event = { 
+	id = dg_humanism.0161
+	title = dg_humanism.016.t
+	desc = dg_humanism.0161.d
+	picture = all_cleric_scientist
+	is_triggered_only = yes
+	option = { 
+		name = dg_humanism.0161.a
+	}
+}
+country_event = { 
+	id = dg_humanism.017
+	title = dg_humanism.017.t
+	desc = dg_humanism.017.d
+	picture = all_cleric_scientist
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			has_country_flag = humanism
+			has_country_flag = renaissance
+		}
+		OR = { 
+			advisor = natural_scientist_NO
+			advisor = natural_scientist_BG
+			advisor = natural_scientist_BU
+		}
+		OR = { 
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = waldensian
+			religion = lollard
+			religion = avignonist
+			religion = holyleague
+		}
+		adm_tech = 32
+		NOT = { 
+			has_country_flag = renaissance_humanism_natural_scientist
+		}
+	}
+	mean_time_to_happen = { 
+		years = 5
+		modifier = { 
+			factor = 0.5
+			ai = no
+		}
+	}
+	immediate = { 
+		every_known_country = { 
+			limit = { 
+				ai = no
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+			country_event = { 
+				id = dg_humanism.0171
+			}
+		}
+		set_country_flag = renaissance_humanism_natural_scientist
+	}
+	option = { 
+		name = dg_humanism.017.a
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = humanism
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				AND = { 
+					check_variable = { 
+						which = ata
+						value = 75
+					}
+				}
+			}
+			modifier = { 
+				ADM = 5
+				factor = 0.5
+			}
+			modifier = { 
+				DIP = 5
+				factor = 0.5
+			}
+			modifier = { 
+				MIL = 5
+				factor = 0.5
+			}
+			modifier = { 
+				ADM = 6
+				factor = 0
+			}
+			modifier = { 
+				DIP = 6
+				factor = 0
+			}
+			modifier = { 
+				MIL = 6
+				factor = 0
+			}
+			modifier = { 
+				NOT = { 
+					ADM = 2
+				}
+				factor = 2
+			}
+			modifier = { 
+				NOT = { 
+					DIP = 2
+				}
+				factor = 2
+			}
+			modifier = { 
+				NOT = { 
+					MIL = 2
+				}
+				factor = 2
+			}
+		}
+		if = { 
+			limit = { 
+				natural_scientist_NO = 3
+			}
+			random_list = { 
+				10 = { 
+					kill_ruler = yes
+				}
+				90 = { 
+					add_dip_power = 150
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				natural_scientist_NO = 2
+			}
+			random_list = { 
+				20 = { 
+					kill_ruler = yes
+				}
+				80 = { 
+					add_dip_power = 150
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				natural_scientist_NO = 1
+			}
+			random_list = { 
+				30 = { 
+					kill_ruler = yes
+				}
+				70 = { 
+					add_dip_power = 150
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				natural_scientist_BG = 3
+			}
+			random_list = { 
+				10 = { 
+					kill_ruler = yes
+				}
+				90 = { 
+					add_dip_power = 150
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				natural_scientist_BG = 2
+			}
+			random_list = { 
+				20 = { 
+					kill_ruler = yes
+				}
+				80 = { 
+					add_dip_power = 150
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				natural_scientist_BG = 1
+			}
+			random_list = { 
+				30 = { 
+					kill_ruler = yes
+				}
+				70 = { 
+					add_dip_power = 150
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				natural_scientist_BU = 3
+			}
+			random_list = { 
+				10 = { 
+					kill_ruler = yes
+				}
+				90 = { 
+					add_dip_power = 150
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				natural_scientist_BU = 2
+			}
+			random_list = { 
+				20 = { 
+					kill_ruler = yes
+				}
+				80 = { 
+					add_dip_power = 150
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				natural_scientist_BU = 1
+			}
+			random_list = { 
+				30 = { 
+					kill_ruler = yes
+				}
+				70 = { 
+					add_dip_power = 150
+				}
+			}
+		}
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = -20
+			}
+			change_variable = { 
+				which = atb
+				value = -20
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_-20
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 730
+		}
+	}
+	option = { 
+		name = dg_humanism.017.b
+		ai_chance = { 
+			factor = 60
+		}
+		add_dip_power = 75
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = -10
+			}
+			change_variable = { 
+				which = atb
+				value = -10
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_-10
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 365
+		}
+	}
+	option = { 
+		name = dg_humanism.017.c
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = renaissance
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 25
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = 10
+			}
+			change_variable = { 
+				which = atb
+				value = 10
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_10
+		if = { 
+			limit = { 
+				advisor = natural_scientist_NO
+			}
+			remove_advisor = natural_scientist_NO
+		}
+		else_if = { 
+			limit = { 
+				advisor = natural_scientist_BG
+			}
+			remove_advisor = natural_scientist_BG
+		}
+		else_if = { 
+			limit = { 
+				advisor = natural_scientist_BU
+			}
+			remove_advisor = natural_scientist_BU
+		}
+	}
+}
+country_event = { 
+	id = dg_humanism.0171
+	title = dg_humanism.017.t
+	desc = dg_humanism.0171.d
+	picture = all_cleric_scientist
+	is_triggered_only = yes
+	option = { 
+		name = dg_humanism.0171.a
+	}
+}
+country_event = { 
+	id = dg_humanism.018
+	title = dg_humanism.018.t
+	desc = dg_humanism.018.d
+	picture = all_cleric_scientist
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			has_country_flag = humanism
+			has_country_flag = renaissance
+		}
+		OR = { 
+			employed_advisor = { 
+				type = astronomist_NO
+				religion = catholic
+			}
+			employed_advisor = { 
+				type = astronomist_BG
+				religion = catholic
+			}
+			employed_advisor = { 
+				type = astronomist_BU
+				religion = catholic
+			}
+		}
+		religion = catholic
+		NOT = { 
+			AND = { 
+				government = theocracy
+				has_reform = Pol_Mediumship4
+			}
+		}
+		adm_tech = 32
+		OR = { 
+			NOT = { 
+				has_country_flag = renaissance_humanism_natural_scientist
+			}
+			has_country_flag = copernicus
+		}
+	}
+	mean_time_to_happen = { 
+		years = 5
+		modifier = { 
+			factor = 0.5
+			ai = no
+		}
+		modifier = { 
+			factor = 0.1
+			has_country_flag = copernicus
+		}
+	}
+	immediate = { 
+		every_known_country = { 
+			limit = { 
+				ai = no
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+			country_event = { 
+				id = dg_humanism.0181
+			}
+		}
+		set_country_flag = renaissance_humanism_natural_scientist
+	}
+	option = { 
+		name = dg_humanism.018.a
+		trigger = { 
+			any_owned_province = { 
+				OR = { 
+					has_province_modifier = LN_Minor
+					has_province_modifier = LN_Important
+					has_province_modifier = LN_Major
+				}
+			}
+		}
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = humanism
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				AND = { 
+					check_variable = { 
+						which = ata
+						value = 75
+					}
+				}
+			}
+			modifier = { 
+				num_of_loans = 1
+				factor = 0.2
+			}
+			modifier = { 
+				NOT = { 
+					treasury = 25
+				}
+				factor = 0.2
+			}
+		}
+		add_dip_power = 100
+		add_treasury = -25
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = -20
+			}
+			change_variable = { 
+				which = atb
+				value = -20
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_-20
+		add_papal_influence = -20
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 730
+		}
+		hidden_effect = { 
+			random_owned_province = { 
+				limit = { 
+					OR = { 
+						has_province_modifier = LN_Minor
+						has_province_modifier = LN_Important
+						has_province_modifier = LN_Major
+					}
+				}
+				change_variable = { 
+					which = aam
+					value = 25
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = aam
+									value = 1.0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = aam
+						value = 1.0
+					}
+				}
+				set_province_flag = POP_ChangedWealth
+			}
+		}
+	}
+	option = { 
+		name = dg_humanism.018.b
+		ai_chance = { 
+			factor = 60
+		}
+		add_dip_power = 50
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = -5
+			}
+			change_variable = { 
+				which = atb
+				value = -5
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_-5
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 365
+		}
+	}
+	option = { 
+		name = dg_humanism.018.c
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = renaissance
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 25
+						}
+					}
+				}
+			}
+		}
+		add_dip_power = 25
+		if = { 
+			limit = { 
+				advisor = astronomist_NO
+			}
+			remove_advisor = astronomist_NO
+		}
+		else_if = { 
+			limit = { 
+				advisor = astronomist_BG
+			}
+			remove_advisor = astronomist_BG
+		}
+		else_if = { 
+			limit = { 
+				advisor = astronomist_BU
+			}
+			remove_advisor = astronomist_BU
+		}
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = 20
+			}
+			change_variable = { 
+				which = atb
+				value = 20
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_20
+		add_papal_influence = 20
+	}
+}
+country_event = { 
+	id = dg_humanism.0181
+	title = dg_humanism.018.t
+	desc = dg_humanism.0181.d
+	picture = all_cleric_scientist
+	is_triggered_only = yes
+	option = { 
+		name = dg_humanism.0181.a
+	}
+}
+country_event = { 
+	id = dg_humanism.019
+	title = dg_humanism.019.t
+	desc = dg_humanism.019.d
+	picture = all_cleric_scientist
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			has_country_flag = humanism
+			has_country_flag = renaissance
+		}
+		OR = { 
+			advisor = natural_scientist_NO
+			advisor = natural_scientist_BG
+			advisor = natural_scientist_BU
+		}
+		OR = { 
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = waldensian
+			religion = lollard
+			religion = avignonist
+			religion = holyleague
+		}
+		capital_scope = { 
+			AND = { 
+				check_variable = { 
+					which = aax
+					value = 5
+				}
+			}
+		}
+		adm_tech = 35
+		NOT = { 
+			has_country_flag = renaissance_humanism_natural_scientist
+		}
+	}
+	mean_time_to_happen = { 
+		years = 5
+		modifier = { 
+			factor = 0.5
+			ai = no
+		}
+	}
+	immediate = { 
+		every_known_country = { 
+			limit = { 
+				ai = no
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+			country_event = { 
+				id = dg_humanism.0191
+			}
+		}
+		set_country_flag = renaissance_humanism_natural_scientist
+	}
+	option = { 
+		name = dg_humanism.019.a
+		trigger = { 
+			NOT = { 
+				AND = { 
+					government = theocracy
+					has_reform = Pol_Mediumship4
+				}
+			}
+		}
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = humanism
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				AND = { 
+					check_variable = { 
+						which = ata
+						value = 75
+					}
+				}
+			}
+			modifier = { 
+				num_of_loans = 1
+				factor = 0.2
+			}
+			modifier = { 
+				NOT = { 
+					treasury = 25
+				}
+				factor = 0.2
+			}
+		}
+		add_dip_power = 100
+		add_treasury = -25
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = -20
+			}
+			change_variable = { 
+				which = atb
+				value = -20
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_-20
+		add_reform_desire = 0.001
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 730
+		}
+		hidden_effect = { 
+			capital_scope = { 
+				change_variable = { 
+					which = aam
+					value = 25
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = aam
+									value = 1.0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = aam
+						value = 1.0
+					}
+				}
+				set_province_flag = POP_ChangedWealth
+			}
+		}
+	}
+	option = { 
+		name = dg_humanism.019.b
+		ai_chance = { 
+			factor = 60
+		}
+		if = { 
+			limit = { 
+				advisor = natural_scientist_NO
+			}
+			remove_advisor = natural_scientist_NO
+		}
+		else_if = { 
+			limit = { 
+				advisor = natural_scientist_BG
+			}
+			remove_advisor = natural_scientist_BG
+		}
+		else_if = { 
+			limit = { 
+				advisor = natural_scientist_BU
+			}
+			remove_advisor = natural_scientist_BU
+		}
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = 10
+			}
+			change_variable = { 
+				which = atb
+				value = 10
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_10
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 365
+		}
+	}
+	option = { 
+		name = dg_humanism.019.c
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = renaissance
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 25
+						}
+					}
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				advisor = natural_scientist_NO
+			}
+			kill_advisor = natural_scientist_NO
+		}
+		else_if = { 
+			limit = { 
+				advisor = natural_scientist_BG
+			}
+			kill_advisor = natural_scientist_BG
+		}
+		else_if = { 
+			limit = { 
+				advisor = natural_scientist_BU
+			}
+			kill_advisor = natural_scientist_BU
+		}
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = 20
+			}
+			change_variable = { 
+				which = atb
+				value = 20
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_20
+		add_papal_influence = 20
+		if = { 
+			limit = { 
+				tag = PAP
+			}
+			add_devotion = 25
+		}
+	}
+}
+country_event = { 
+	id = dg_humanism.0191
+	title = dg_humanism.019.t
+	desc = dg_humanism.0191.d
+	picture = all_cleric_scientist
+	is_triggered_only = yes
+	option = { 
+		name = dg_humanism.0191.a
+	}
+}
+country_event = { 
+	id = dg_humanism.020
+	title = dg_humanism.020.t
+	desc = dg_humanism.020.d
+	picture = all_cleric_scientist
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			has_country_flag = humanism
+			has_country_flag = renaissance
+			culture_group = low_germanic
+			culture_group = high_germanic
+		}
+		OR = { 
+			advisor = natural_scientist_NO
+			advisor = natural_scientist_BG
+			advisor = natural_scientist_BU
+		}
+		OR = { 
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = waldensian
+			religion = lollard
+			religion = avignonist
+			religion = holyleague
+		}
+		capital_scope = { 
+			AND = { 
+				check_variable = { 
+					which = aax
+					value = 5
+				}
+			}
+		}
+		adm_tech = 24
+		NOT = { 
+			has_country_flag = renaissance_humanism_natural_scientist
+		}
+	}
+	mean_time_to_happen = { 
+		years = 5
+		modifier = { 
+			factor = 0.5
+			ai = no
+		}
+		modifier = { 
+			factor = 0.3
+			OR = { 
+				culture_group = low_germanic
+				culture_group = high_germanic
+			}
+		}
+	}
+	immediate = { 
+		every_known_country = { 
+			limit = { 
+				ai = no
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+			country_event = { 
+				id = dg_humanism.0201
+			}
+		}
+		set_country_flag = renaissance_humanism_natural_scientist
+	}
+	option = { 
+		name = dg_humanism.020.a
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = humanism
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				AND = { 
+					check_variable = { 
+						which = ata
+						value = 75
+					}
+				}
+			}
+			modifier = { 
+				num_of_loans = 1
+				factor = 0.1
+			}
+			modifier = { 
+				NOT = { 
+					treasury = 50
+				}
+				factor = 0.1
+			}
+		}
+		add_treasury = -50
+		add_adm_power = 50
+		add_dip_power = 50
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = -20
+			}
+			change_variable = { 
+				which = atb
+				value = -20
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_-20
+		add_reform_desire = 0.002
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 730
+		}
+		hidden_effect = { 
+			capital_scope = { 
+				change_variable = { 
+					which = aam
+					value = 50
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = aam
+									value = 1.0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = aam
+						value = 1.0
+					}
+				}
+				set_province_flag = POP_ChangedWealth
+			}
+		}
+	}
+	option = { 
+		name = dg_humanism.020.b
+		ai_chance = { 
+			factor = 60
+			modifier = { 
+				num_of_loans = 1
+				factor = 0.5
+			}
+			modifier = { 
+				NOT = { 
+					treasury = 10
+				}
+				factor = 0.5
+			}
+		}
+		add_treasury = -10
+		add_adm_power = 25
+		add_dip_power = 25
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = -10
+			}
+			change_variable = { 
+				which = atb
+				value = -10
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_-10
+		add_reform_desire = 0.001
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 365
+		}
+		hidden_effect = { 
+			capital_scope = { 
+				change_variable = { 
+					which = aam
+					value = 10
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = aam
+									value = 1.0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = aam
+						value = 1.0
+					}
+				}
+				set_province_flag = POP_ChangedWealth
+			}
+		}
+	}
+	option = { 
+		name = dg_humanism.020.c
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = renaissance
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 25
+						}
+					}
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				advisor = natural_scientist_NO
+			}
+			remove_advisor = natural_scientist_NO
+		}
+		else_if = { 
+			limit = { 
+				advisor = natural_scientist_BG
+			}
+			remove_advisor = natural_scientist_BG
+		}
+		else_if = { 
+			limit = { 
+				advisor = natural_scientist_BU
+			}
+			remove_advisor = natural_scientist_BU
+		}
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = 20
+			}
+			change_variable = { 
+				which = atb
+				value = 20
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_20
+		add_papal_influence = 20
+		if = { 
+			limit = { 
+				tag = PAP
+			}
+			add_devotion = 25
+		}
+	}
+}
+country_event = { 
+	id = dg_humanism.0201
+	title = dg_humanism.020.t
+	desc = dg_humanism.0201.d
+	picture = all_cleric_scientist
+	is_triggered_only = yes
+	option = { 
+		name = dg_humanism.0201.a
+	}
+}
+country_event = { 
+	id = dg_humanism.021
+	title = dg_humanism.021.t
+	desc = dg_humanism.021.d
+	picture = renaissance_painters
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			has_country_flag = humanism
+			has_country_flag = renaissance
+		}
+		OR = { 
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = waldensian
+			religion = lollard
+			religion = avignonist
+			religion = holyleague
+		}
+		any_owned_province = { 
+			OR = { 
+				has_province_modifier = LN_Minor
+				has_province_modifier = LN_Important
+				has_province_modifier = LN_Major
+			}
+		}
+		adm_tech = 29
+		NOT = { 
+			has_country_flag = renaissance_humanism_artist
+		}
+	}
+	mean_time_to_happen = { 
+		years = 5
+		modifier = { 
+			factor = 0.5
+			ai = no
+		}
+		modifier = { 
+			factor = 0.3
+			culture_group = latin
+		}
+	}
+	immediate = { 
+		every_known_country = { 
+			limit = { 
+				ai = no
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+			country_event = { 
+				id = dg_humanism.0211
+			}
+		}
+		set_country_flag = renaissance_humanism_artist
+	}
+	option = { 
+		name = dg_humanism.021.a
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = humanism
+				factor = 2
+			}
+			modifier = { 
+				num_of_loans = 1
+				factor = 0.2
+			}
+			modifier = { 
+				NOT = { 
+					treasury = 25
+				}
+				factor = 0.2
+			}
+		}
+		if = { 
+			limit = { 
+				culture_group = latin
+				NOT = { 
+					has_global_flag = leonardo_da_vinci
+				}
+			}
+			define_advisor = { 
+				type = artist_BU
+				name = "Leonardo da Vinci"
+				culture = tuscan
+				skill = 3
+				discount = yes
+			}
+			set_global_flag = leonardo_da_vinci
+		}
+		else = { 
+			define_advisor = { 
+				type = artist_BU
+				skill = 3
+				discount = yes
+			}
+		}
+		add_treasury = -25
+		add_prestige = 10
+		add_adm_power = 50
+		hidden_effect = { 
+			random_owned_province = { 
+				limit = { 
+					OR = { 
+						has_province_modifier = LN_Minor
+						has_province_modifier = LN_Important
+						has_province_modifier = LN_Major
+					}
+				}
+				change_variable = { 
+					which = aak
+					value = 25
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = aak
+									value = 1.0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = aak
+						value = 1.0
+					}
+				}
+				set_province_flag = POP_ChangedWealth
+			}
+		}
+	}
+	option = { 
+		name = dg_humanism.021.b
+		ai_chance = { 
+			factor = 60
+		}
+		add_treasury = -10
+		add_prestige = 5
+		add_adm_power = 25
+		hidden_effect = { 
+			random_owned_province = { 
+				limit = { 
+					OR = { 
+						has_province_modifier = LN_Minor
+						has_province_modifier = LN_Important
+						has_province_modifier = LN_Major
+					}
+				}
+				change_variable = { 
+					which = aak
+					value = 10
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = aak
+									value = 1.0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = aak
+						value = 1.0
+					}
+				}
+				set_province_flag = POP_ChangedWealth
+			}
+		}
+	}
+	option = { 
+		name = dg_humanism.021.c
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = renaissance
+				factor = 2
+			}
+		}
+		add_adm_power = 10
+	}
+}
+country_event = { 
+	id = dg_humanism.0211
+	title = dg_humanism.021.t
+	desc = dg_humanism.0211.d
+	picture = renaissance_painters
+	is_triggered_only = yes
+	option = { 
+		name = dg_humanism.0211.a
+	}
+}
+country_event = { 
+	id = dg_humanism.022
+	title = dg_humanism.022.t
+	desc = dg_humanism.022.d
+	picture = renaissance_painters
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			has_country_flag = humanism
+			has_country_flag = renaissance
+		}
+		OR = { 
+			advisor = artist_NO
+			advisor = artist_BG
+			advisor = artist_BU
+		}
+		OR = { 
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = waldensian
+			religion = lollard
+			religion = avignonist
+			religion = holyleague
+		}
+		capital_scope = { 
+			AND = { 
+				check_variable = { 
+					which = aax
+					value = 10
+				}
+			}
+		}
+		adm_tech = 23
+		NOT = { 
+			has_country_flag = renaissance_humanism_artist
+		}
+	}
+	mean_time_to_happen = { 
+		years = 5
+		modifier = { 
+			factor = 0.5
+			ai = no
+		}
+	}
+	immediate = { 
+		every_known_country = { 
+			limit = { 
+				ai = no
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+			country_event = { 
+				id = dg_humanism.0221
+			}
+		}
+		set_country_flag = renaissance_humanism_artist
+	}
+	option = { 
+		name = dg_humanism.022.a
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = humanism
+				factor = 2
+			}
+			modifier = { 
+				government = republic
+				factor = 2
+			}
+		}
+		add_adm_power = 25
+		add_republican_tradition = 10
+		hidden_effect = { 
+			change_variable = { 
+				which = asv
+				value = 5
+			}
+			change_variable = { 
+				which = asw
+				value = 5
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asv
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = asv
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = asv
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = asv
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_BGLoyProv_5
+	}
+	option = { 
+		name = dg_humanism.022.b
+		ai_chance = { 
+			factor = 60
+		}
+		add_adm_power = 25
+		add_prestige = 10
+		hidden_effect = { 
+			change_variable = { 
+				which = asq
+				value = 5
+			}
+			change_variable = { 
+				which = asr
+				value = 5
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asq
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = asq
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = asq
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_NOLoyProv_5
+	}
+	option = { 
+		name = dg_humanism.022.c
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = renaissance
+				factor = 2
+			}
+		}
+		add_adm_power = 25
+		add_papal_influence = 10
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = 5
+			}
+			change_variable = { 
+				which = atb
+				value = 5
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_5
+		if = { 
+			limit = { 
+				tag = PAP
+			}
+			add_devotion = 10
+		}
+	}
+}
+country_event = { 
+	id = dg_humanism.0221
+	title = dg_humanism.022.t
+	desc = dg_humanism.0221.d
+	picture = renaissance_painters
+	is_triggered_only = yes
+	option = { 
+		name = dg_humanism.0221.a
+	}
+}
+country_event = { 
+	id = dg_humanism.023
+	title = dg_humanism.023.t
+	desc = dg_humanism.023.d
+	picture = renaissance_painters
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			has_country_flag = humanism
+			has_country_flag = renaissance
+		}
+		OR = { 
+			advisor = artist_NO
+			advisor = artist_BG
+			advisor = artist_BU
+		}
+		OR = { 
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = waldensian
+			religion = lollard
+			religion = avignonist
+			religion = holyleague
+		}
+		adm_tech = 29
+		OR = { 
+			NOT = { 
+				has_country_flag = renaissance_humanism_artist
+			}
+			has_country_flag = sandro_botticelli
+		}
+	}
+	mean_time_to_happen = { 
+		years = 5
+		modifier = { 
+			factor = 0.5
+			ai = no
+		}
+		modifier = { 
+			factor = 0.1
+			has_country_flag = sandro_botticelli
+		}
+	}
+	immediate = { 
+		every_known_country = { 
+			limit = { 
+				ai = no
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+			country_event = { 
+				id = dg_humanism.0231
+			}
+		}
+		set_country_flag = renaissance_humanism_artist
+	}
+	option = { 
+		name = dg_humanism.023.a
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = humanism
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				AND = { 
+					check_variable = { 
+						which = ata
+						value = 75
+					}
+				}
+			}
+		}
+		add_adm_power = 25
+		add_papal_influence = -10
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = -10
+			}
+			change_variable = { 
+				which = atb
+				value = -10
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_-10
+		add_reform_desire = 0.001
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 730
+		}
+	}
+	option = { 
+		name = dg_humanism.023.b
+		ai_chance = { 
+			factor = 60
+		}
+		if = { 
+			limit = { 
+				advisor = artist_NO
+			}
+			remove_advisor = artist_NO
+		}
+		else_if = { 
+			limit = { 
+				advisor = artist_BG
+			}
+			remove_advisor = artist_BG
+		}
+		else_if = { 
+			limit = { 
+				advisor = artist_BU
+			}
+			remove_advisor = artist_BU
+		}
+		add_country_modifier = { 
+			name = book_burning
+			duration = 365
+		}
+	}
+	option = { 
+		name = dg_humanism.023.c
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = renaissance
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 25
+						}
+					}
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				advisor = artist_NO
+			}
+			remove_advisor = artist_NO
+		}
+		else_if = { 
+			limit = { 
+				advisor = artist_BG
+			}
+			remove_advisor = artist_BG
+		}
+		else_if = { 
+			limit = { 
+				advisor = artist_BU
+			}
+			remove_advisor = artist_BU
+		}
+		add_papal_influence = 10
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = 10
+			}
+			change_variable = { 
+				which = atb
+				value = 10
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_10
+		if = { 
+			limit = { 
+				tag = PAP
+			}
+			add_devotion = 10
+		}
+		add_country_modifier = { 
+			name = book_burning
+			duration = 730
+		}
+	}
+}
+country_event = { 
+	id = dg_humanism.0231
+	title = dg_humanism.023.t
+	desc = dg_humanism.0231.d
+	picture = renaissance_painters
+	is_triggered_only = yes
+	option = { 
+		name = dg_humanism.0231.a
+	}
+}
+country_event = { 
+	id = dg_humanism.024
+	title = dg_humanism.024.t
+	desc = dg_humanism.024.d
+	picture = renaissance_painters
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			has_country_flag = humanism
+			has_country_flag = renaissance
+		}
+		OR = { 
+			advisor = artist_NO
+			advisor = artist_BG
+			advisor = artist_BU
+		}
+		OR = { 
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = waldensian
+			religion = lollard
+			religion = avignonist
+			religion = holyleague
+		}
+		any_owned_province = { 
+			OR = { 
+				has_province_modifier = LN_Minor
+				has_province_modifier = LN_Important
+				has_province_modifier = LN_Major
+			}
+		}
+		adm_tech = 28
+		NOT = { 
+			has_country_flag = renaissance_humanism_artist
+		}
+	}
+	mean_time_to_happen = { 
+		years = 5
+		modifier = { 
+			factor = 0.5
+			ai = no
+		}
+	}
+	immediate = { 
+		every_known_country = { 
+			limit = { 
+				ai = no
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+			country_event = { 
+				id = dg_humanism.0241
+			}
+		}
+		set_country_flag = renaissance_humanism_artist
+	}
+	option = { 
+		name = dg_humanism.024.a
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = humanism
+				factor = 2
+			}
+			modifier = { 
+				num_of_loans = 1
+				factor = 0.2
+			}
+			modifier = { 
+				NOT = { 
+					treasury = 25
+				}
+				factor = 0.2
+			}
+			modifier = { 
+				prestige = 75
+				factor = 0.5
+			}
+		}
+		add_treasury = -25
+		if = { 
+			limit = { 
+				artist_NO = 3
+			}
+			random_list = { 
+				85 = { 
+					add_prestige = 20
+				}
+				15 = { 
+					add_prestige = -5
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				artist_BG = 3
+			}
+			random_list = { 
+				85 = { 
+					add_prestige = 20
+				}
+				15 = { 
+					add_prestige = -5
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				artist_BU = 3
+			}
+			random_list = { 
+				85 = { 
+					add_prestige = 20
+				}
+				15 = { 
+					add_prestige = -5
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				artist_NO = 2
+			}
+			random_list = { 
+				70 = { 
+					add_prestige = 20
+				}
+				30 = { 
+					add_prestige = -5
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				artist_BG = 2
+			}
+			random_list = { 
+				70 = { 
+					add_prestige = 20
+				}
+				30 = { 
+					add_prestige = -5
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				artist_BU = 2
+			}
+			random_list = { 
+				70 = { 
+					add_prestige = 20
+				}
+				30 = { 
+					add_prestige = -5
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				artist_NO = 1
+			}
+			random_list = { 
+				55 = { 
+					add_prestige = 20
+				}
+				45 = { 
+					add_prestige = -5
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				artist_BG = 1
+			}
+			random_list = { 
+				55 = { 
+					add_prestige = 20
+				}
+				45 = { 
+					add_prestige = -5
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				artist_BU = 1
+			}
+			random_list = { 
+				55 = { 
+					add_prestige = 20
+				}
+				45 = { 
+					add_prestige = -5
+				}
+			}
+		}
+		add_adm_power = 50
+		capital_scope = { 
+			add_province_modifier = { 
+				name = religious_scandal_province
+				duration = 730
+			}
+		}
+		hidden_effect = { 
+			random_owned_province = { 
+				limit = { 
+					OR = { 
+						has_province_modifier = LN_Minor
+						has_province_modifier = LN_Important
+						has_province_modifier = LN_Major
+					}
+				}
+				change_variable = { 
+					which = aam
+					value = 25
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = aam
+									value = 1.0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = aam
+						value = 1.0
+					}
+				}
+				set_province_flag = POP_ChangedWealth
+			}
+		}
+	}
+	option = { 
+		name = dg_humanism.024.b
+		ai_chance = { 
+			factor = 60
+		}
+		add_prestige = 5
+		add_adm_power = 40
+		capital_scope = { 
+			add_province_modifier = { 
+				name = religious_scandal_province
+				duration = 360
+			}
+		}
+	}
+	option = { 
+		name = dg_humanism.024.c
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = renaissance
+				factor = 2
+			}
+		}
+		if = { 
+			limit = { 
+				advisor = artist_NO
+			}
+			remove_advisor = artist_NO
+		}
+		else_if = { 
+			limit = { 
+				advisor = artist_BG
+			}
+			remove_advisor = artist_BG
+		}
+		else_if = { 
+			limit = { 
+				advisor = artist_BU
+			}
+			remove_advisor = artist_BU
+		}
+	}
+}
+country_event = { 
+	id = dg_humanism.0241
+	title = dg_humanism.024.t
+	desc = dg_humanism.0241.d
+	picture = renaissance_painters
+	is_triggered_only = yes
+	option = { 
+		name = dg_humanism.0241.a
+	}
+}
+country_event = { 
+	id = dg_humanism.025
+	title = dg_humanism.025.t
+	desc = dg_humanism.025.d
+	picture = renaissance_painters
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			has_country_flag = humanism
+			has_country_flag = renaissance
+		}
+		OR = { 
+			advisor = artist_NO
+			advisor = artist_BG
+			advisor = artist_BU
+		}
+		OR = { 
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = waldensian
+			religion = lollard
+			religion = avignonist
+			religion = holyleague
+		}
+		capital_scope = { 
+			AND = { 
+				check_variable = { 
+					which = aax
+					value = 10
+				}
+			}
+		}
+		adm_tech = 31
+		OR = { 
+			NOT = { 
+				has_country_flag = renaissance_humanism_artist
+			}
+			has_country_flag = michelangelo
+		}
+	}
+	mean_time_to_happen = { 
+		years = 5
+		modifier = { 
+			factor = 0.5
+			ai = no
+		}
+		modifier = { 
+			factor = 0.1
+			has_country_flag = michelangelo
+		}
+	}
+	immediate = { 
+		every_known_country = { 
+			limit = { 
+				ai = no
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+			country_event = { 
+				id = dg_humanism.0251
+			}
+		}
+		set_country_flag = renaissance_humanism_artist
+	}
+	option = { 
+		name = dg_humanism.025.a
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = humanism
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				AND = { 
+					check_variable = { 
+						which = ata
+						value = 75
+					}
+				}
+			}
+		}
+		add_adm_power = 50
+		if = { 
+			limit = { 
+				artist_NO = 3
+			}
+			random_list = { 
+				80 = { 
+					add_prestige = 10
+				}
+				20 = { 
+					capital_scope = { 
+						add_province_modifier = { 
+							name = religious_scandal_province
+							duration = 1000
+						}
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				artist_BG = 3
+			}
+			random_list = { 
+				80 = { 
+					add_prestige = 10
+				}
+				20 = { 
+					capital_scope = { 
+						add_province_modifier = { 
+							name = religious_scandal_province
+							duration = 1000
+						}
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				artist_BU = 3
+			}
+			random_list = { 
+				80 = { 
+					add_prestige = 10
+				}
+				20 = { 
+					capital_scope = { 
+						add_province_modifier = { 
+							name = religious_scandal_province
+							duration = 1000
+						}
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				artist_NO = 2
+			}
+			random_list = { 
+				60 = { 
+					add_prestige = 10
+				}
+				40 = { 
+					capital_scope = { 
+						add_province_modifier = { 
+							name = religious_scandal_province
+							duration = 1000
+						}
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				artist_BG = 2
+			}
+			random_list = { 
+				60 = { 
+					add_prestige = 10
+				}
+				40 = { 
+					capital_scope = { 
+						add_province_modifier = { 
+							name = religious_scandal_province
+							duration = 1000
+						}
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				artist_BU = 2
+			}
+			random_list = { 
+				60 = { 
+					add_prestige = 10
+				}
+				40 = { 
+					capital_scope = { 
+						add_province_modifier = { 
+							name = religious_scandal_province
+							duration = 1000
+						}
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				artist_NO = 1
+			}
+			random_list = { 
+				40 = { 
+					add_prestige = 10
+				}
+				60 = { 
+					capital_scope = { 
+						add_province_modifier = { 
+							name = religious_scandal_province
+							duration = 1000
+						}
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				artist_BG = 1
+			}
+			random_list = { 
+				40 = { 
+					add_prestige = 10
+				}
+				60 = { 
+					capital_scope = { 
+						add_province_modifier = { 
+							name = religious_scandal_province
+							duration = 1000
+						}
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				artist_BU = 1
+			}
+			random_list = { 
+				40 = { 
+					add_prestige = 10
+				}
+				60 = { 
+					capital_scope = { 
+						add_province_modifier = { 
+							name = religious_scandal_province
+							duration = 1000
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = -10
+			}
+			change_variable = { 
+				which = atb
+				value = -10
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_-10
+	}
+	option = { 
+		name = dg_humanism.025.b
+		ai_chance = { 
+			factor = 60
+		}
+		add_treasury = -10
+		add_adm_power = 25
+		if = { 
+			limit = { 
+				advisor = artist_NO
+			}
+			remove_advisor = artist_NO
+		}
+		else_if = { 
+			limit = { 
+				advisor = artist_BG
+			}
+			remove_advisor = artist_BG
+		}
+		else_if = { 
+			limit = { 
+				advisor = artist_BU
+			}
+			remove_advisor = artist_BU
+		}
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = 5
+			}
+			change_variable = { 
+				which = atb
+				value = 5
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_5
+		hidden_effect = { 
+			capital_scope = { 
+				change_variable = { 
+					which = aam
+					value = 10
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = aam
+									value = 1.0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = aam
+						value = 1.0
+					}
+				}
+				set_province_flag = POP_ChangedWealth
+			}
+		}
+	}
+	option = { 
+		name = dg_humanism.025.c
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = renaissance
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 25
+						}
+					}
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				advisor = artist_NO
+			}
+			kill_advisor = artist_NO
+		}
+		else_if = { 
+			limit = { 
+				advisor = artist_BG
+			}
+			kill_advisor = artist_BG
+		}
+		else_if = { 
+			limit = { 
+				advisor = artist_BU
+			}
+			kill_advisor = artist_BU
+		}
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = 10
+			}
+			change_variable = { 
+				which = atb
+				value = 10
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_10
+		add_papal_influence = 10
+		if = { 
+			limit = { 
+				tag = PAP
+			}
+			add_devotion = 10
+		}
+		add_country_modifier = { 
+			name = book_burning
+			duration = 730
+		}
+	}
+}
+country_event = { 
+	id = dg_humanism.0251
+	title = dg_humanism.025.t
+	desc = dg_humanism.0251.d
+	picture = renaissance_painters
+	is_triggered_only = yes
+	option = { 
+		name = dg_humanism.0251.a
+	}
+}
+country_event = { 
+	id = dg_humanism.026
+	title = dg_humanism.026.t
+	desc = dg_humanism.026.d
+	picture = renaissance_humanism
+	is_triggered_only = yes
+	trigger = { 
+		OR = { 
+			had_country_flag = { 
+				flag = humanism
+				days = 7300
+			}
+			had_country_flag = { 
+				flag = renaissance
+				days = 7300
+			}
+		}
+		OR = { 
+			advisor = philosopher_NO
+			advisor = philosopher_CL
+			advisor = philosopher_BG
+			advisor = philosopher_BU
+		}
+		OR = { 
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = waldensian
+			religion = lollard
+			religion = avignonist
+			religion = holyleague
+		}
+		any_owned_province = { 
+			OR = { 
+				has_province_modifier = LN_Minor
+				has_province_modifier = LN_Important
+				has_province_modifier = LN_Major
+			}
+		}
+		adm_tech = 21
+		NOT = { 
+			has_country_flag = christian_ethics
+		}
+		NOT = { 
+			is_religion_enabled = reformed
+		}
+	}
+	immediate = { 
+		set_country_flag = christian_ethics
+		if = { 
+			limit = { 
+				NOT = { 
+					OR = { 
+						culture_group = british
+						culture_group = latin
+						culture_group = napolitan
+						culture_group = iberian
+						culture_group = langue_d_oil
+						culture_group = langue_d_oc
+						culture_group = basque_group
+						culture_group = balkan_slavic
+						culture_group = romanian
+						culture_group = greek_group
+						culture_group = albanese
+						culture_group = mashreqi
+						culture_group = maghreb
+					}
+				}
+			}
+			custom_tooltip = no_roman_literature
+		}
+	}
+	option = { 
+		name = dg_humanism.026.a
+		trigger = { 
+			NOT = { 
+				AND = { 
+					government = theocracy
+					has_reform = Pol_Mediumship4
+				}
+			}
+		}
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = humanism
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				AND = { 
+					check_variable = { 
+						which = ata
+						value = 75
+					}
+				}
+			}
+		}
+		add_adm_power = 100
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = -20
+			}
+			change_variable = { 
+				which = atb
+				value = -20
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_-20
+		add_papal_influence = -20
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 730
+		}
+	}
+	option = { 
+		name = dg_humanism.026.b
+		ai_chance = { 
+			factor = 60
+		}
+		add_adm_power = 50
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = -10
+			}
+			change_variable = { 
+				which = atb
+				value = -10
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_-10
+		add_papal_influence = -10
+		if = { 
+			limit = { 
+				tag = PAP
+			}
+			add_devotion = -10
+		}
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 365
+		}
+	}
+	option = { 
+		name = dg_humanism.026.c
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = renaissance
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 25
+						}
+					}
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				advisor = philosopher_NO
+			}
+			kill_advisor = philosopher_NO
+		}
+		else_if = { 
+			limit = { 
+				advisor = philosopher_CL
+			}
+			kill_advisor = philosopher_CL
+		}
+		else_if = { 
+			limit = { 
+				advisor = philosopher_BG
+			}
+			kill_advisor = philosopher_BG
+		}
+		else_if = { 
+			limit = { 
+				advisor = philosopher_BU
+			}
+			kill_advisor = philosopher_BU
+		}
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = 10
+			}
+			change_variable = { 
+				which = atb
+				value = 10
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_10
+		add_papal_influence = 10
+		if = { 
+			limit = { 
+				tag = PAP
+			}
+			add_devotion = 10
+		}
+		add_country_modifier = { 
+			name = book_burning
+			duration = 730
+		}
+	}
+}
+country_event = { 
+	id = dg_humanism.027
+	title = dg_humanism.027.t
+	desc = dg_humanism.027.d
+	picture = all_publishing
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			has_country_flag = humanism
+			has_country_flag = renaissance
+		}
+		OR = { 
+			advisor = philosopher_NO
+			advisor = philosopher_CL
+			advisor = philosopher_BG
+			advisor = philosopher_BU
+		}
+		capital_scope = { 
+			OR = { 
+				has_province_modifier = LN_Minor
+				has_province_modifier = LN_Important
+				has_province_modifier = LN_Major
+			}
+		}
+		OR = { 
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = waldensian
+			religion = lollard
+			religion = avignonist
+			religion = holyleague
+		}
+		adm_tech = 32
+		NOT = { 
+			has_country_flag = renaissance_humanism_philosopher
+		}
+	}
+	mean_time_to_happen = { 
+		years = 5
+		modifier = { 
+			factor = 0.5
+			ai = no
+		}
+	}
+	immediate = { 
+		every_known_country = { 
+			limit = { 
+				ai = no
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+			country_event = { 
+				id = dg_humanism.0271
+			}
+		}
+		set_country_flag = renaissance_humanism_philosopher
+	}
+	option = { 
+		name = dg_humanism.027.a
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = humanism
+				factor = 2
+			}
+			modifier = { 
+				num_of_loans = 1
+				factor = 0.1
+			}
+			modifier = { 
+				NOT = { 
+					treasury = 100
+				}
+				factor = 0.1
+			}
+			modifier = { 
+				factor = 1.5
+				AND = { 
+					check_variable = { 
+						which = ata
+						value = 75
+					}
+				}
+			}
+		}
+		add_treasury = -100
+		add_adm_power = 200
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = -10
+			}
+			change_variable = { 
+				which = atb
+				value = -10
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_-10
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 730
+		}
+		hidden_effect = { 
+			capital_scope = { 
+				change_variable = { 
+					which = aam
+					value = 100
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = aam
+									value = 1.0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = aam
+						value = 1.0
+					}
+				}
+				set_province_flag = POP_ChangedWealth
+			}
+		}
+	}
+	option = { 
+		name = dg_humanism.027.b
+		ai_chance = { 
+			factor = 60
+		}
+		add_adm_power = 50
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = -5
+			}
+			change_variable = { 
+				which = atb
+				value = -5
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_-5
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 365
+		}
+	}
+	option = { 
+		name = dg_humanism.027.c
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = renaissance
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 25
+						}
+					}
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				advisor = philosopher_NO
+			}
+			kill_advisor = philosopher_NO
+		}
+		else_if = { 
+			limit = { 
+				advisor = philosopher_CL
+			}
+			kill_advisor = philosopher_CL
+		}
+		else_if = { 
+			limit = { 
+				advisor = philosopher_BG
+			}
+			kill_advisor = philosopher_BG
+		}
+		else_if = { 
+			limit = { 
+				advisor = philosopher_BU
+			}
+			kill_advisor = philosopher_BU
+		}
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = 10
+			}
+			change_variable = { 
+				which = atb
+				value = 10
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_10
+		if = { 
+			limit = { 
+				tag = PAP
+			}
+			add_devotion = 10
+		}
+		add_country_modifier = { 
+			name = book_burning
+			duration = 730
+		}
+	}
+}
+country_event = { 
+	id = dg_humanism.0271
+	title = dg_humanism.027.t
+	desc = dg_humanism.0271.d
+	picture = all_publishing
+	is_triggered_only = yes
+	option = { 
+		name = dg_humanism.0271.a
+	}
+}
+country_event = { 
+	id = dg_humanism.028
+	title = dg_humanism.028.t
+	desc = dg_humanism.028.d
+	picture = renaissance_humanism
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			has_country_flag = humanism
+			has_country_flag = renaissance
+		}
+		OR = { 
+			advisor = philosopher_NO
+			advisor = philosopher_CL
+			advisor = philosopher_BG
+			advisor = philosopher_BU
+		}
+		government = monarchy
+		OR = { 
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = waldensian
+			religion = lollard
+			religion = avignonist
+			religion = holyleague
+		}
+		adm_tech = 30
+		OR = { 
+			NOT = { 
+				has_country_flag = renaissance_humanism_philosopher
+			}
+			has_country_flag = we_have_macchiavelli
+		}
+	}
+	mean_time_to_happen = { 
+		years = 5
+		modifier = { 
+			factor = 0.5
+			ai = no
+		}
+		modifier = { 
+			factor = 0.1
+			has_country_flag = we_have_macchiavelli
+		}
+	}
+	immediate = { 
+		every_known_country = { 
+			limit = { 
+				ai = no
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+			country_event = { 
+				id = dg_humanism.0281
+			}
+		}
+		set_country_flag = renaissance_humanism_philosopher
+	}
+	option = { 
+		name = dg_humanism.028.a
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = humanism
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				AND = { 
+					check_variable = { 
+						which = ata
+						value = 75
+					}
+				}
+			}
+		}
+		add_adm_power = 50
+		add_dip_power = 50
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = -10
+			}
+			change_variable = { 
+				which = atb
+				value = -10
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_-10
+		add_papal_influence = -10
+		add_country_modifier = { 
+			name = religious_controversy
+			duration = 365
+		}
+	}
+	option = { 
+		name = dg_humanism.028.b
+		ai_chance = { 
+			factor = 60
+		}
+		add_adm_power = 25
+		add_dip_power = 25
+	}
+	option = { 
+		name = dg_humanism.028.c
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = renaissance
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 25
+						}
+					}
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				advisor = philosopher_NO
+			}
+			remove_advisor = philosopher_NO
+		}
+		else_if = { 
+			limit = { 
+				advisor = philosopher_CL
+			}
+			remove_advisor = philosopher_CL
+		}
+		else_if = { 
+			limit = { 
+				advisor = philosopher_BG
+			}
+			remove_advisor = philosopher_BG
+		}
+		else_if = { 
+			limit = { 
+				advisor = philosopher_BU
+			}
+			remove_advisor = philosopher_BU
+		}
+		add_legitimacy = 5
+		hidden_effect = { 
+			change_variable = { 
+				which = ata
+				value = 10
+			}
+			change_variable = { 
+				which = atb
+				value = 10
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ata
+							value = 100.001
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 100
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+					}
+				}
+				set_variable = { 
+					which = ata
+					value = 0
+				}
+			}
+			set_province_flag = Unrest_Update
+		}
+		custom_tooltip = POP_CLLoyProv_10
+		add_papal_influence = 10
+		if = { 
+			limit = { 
+				tag = PAP
+			}
+			add_devotion = 10
+		}
+		add_country_modifier = { 
+			name = book_burning
+			duration = 365
+		}
+	}
+}
+country_event = { 
+	id = dg_humanism.0281
+	title = dg_humanism.028.t
+	desc = dg_humanism.0281.d
+	picture = renaissance_humanism
+	is_triggered_only = yes
+	option = { 
+		name = dg_humanism.0281.a
+	}
+}
+country_event = { 
+	id = dg_humanism.029
+	title = dg_humanism.029.t
+	desc = dg_humanism.029.d
+	picture = renaissance_humanism
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			has_country_flag = humanism
+			has_country_flag = renaissance
+		}
+		OR = { 
+			advisor = philosopher_NO
+			advisor = philosopher_CL
+			advisor = philosopher_BG
+			advisor = philosopher_BU
+		}
+		capital_scope = { 
+			OR = { 
+				has_province_modifier = LN_Minor
+				has_province_modifier = LN_Important
+				has_province_modifier = LN_Major
+			}
+		}
+		OR = { 
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = waldensian
+			religion = lollard
+			religion = avignonist
+			religion = holyleague
+		}
+		adm_tech = 35
+		OR = { 
+			NOT = { 
+				has_country_flag = renaissance_humanism_philosopher
+			}
+			has_country_flag = marsilio_ficino
+		}
+	}
+	mean_time_to_happen = { 
+		years = 5
+		modifier = { 
+			factor = 0.5
+			ai = no
+		}
+		modifier = { 
+			factor = 0.1
+			has_country_flag = marsilio_ficino
+		}
+	}
+	immediate = { 
+		every_known_country = { 
+			limit = { 
+				ai = no
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+			country_event = { 
+				id = dg_humanism.0291
+			}
+		}
+		set_country_flag = renaissance_humanism_philosopher
+	}
+	option = { 
+		name = dg_humanism.029.a
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = humanism
+				factor = 2
+			}
+			modifier = { 
+				num_of_loans = 1
+				factor = 0.2
+			}
+			modifier = { 
+				NOT = { 
+					treasury = 50
+				}
+				factor = 0.2
+			}
+		}
+		add_treasury = -50
+		add_adm_power = 75
+		define_advisor = { 
+			type = philosopher_BU
+			discount = yes
+		}
+		if = { 
+			limit = { 
+				philosopher_NO = 3
+			}
+			random_list = { 
+				85 = { 
+					add_prestige = 10
+				}
+				15 = { 
+					capital_scope = { 
+						add_unrest = 10
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				philosopher_CL = 3
+			}
+			random_list = { 
+				85 = { 
+					add_prestige = 10
+				}
+				15 = { 
+					capital_scope = { 
+						add_unrest = 10
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				philosopher_BG = 3
+			}
+			random_list = { 
+				85 = { 
+					add_prestige = 10
+				}
+				15 = { 
+					capital_scope = { 
+						add_unrest = 10
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				philosopher_BU = 3
+			}
+			random_list = { 
+				85 = { 
+					add_prestige = 10
+				}
+				15 = { 
+					capital_scope = { 
+						add_unrest = 10
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				philosopher_NO = 2
+			}
+			random_list = { 
+				70 = { 
+					add_prestige = 10
+				}
+				30 = { 
+					capital_scope = { 
+						add_unrest = 10
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				philosopher_CL = 2
+			}
+			random_list = { 
+				70 = { 
+					add_prestige = 10
+				}
+				30 = { 
+					capital_scope = { 
+						add_unrest = 10
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				philosopher_BG = 2
+			}
+			random_list = { 
+				70 = { 
+					add_prestige = 10
+				}
+				30 = { 
+					capital_scope = { 
+						add_unrest = 10
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				philosopher_BU = 2
+			}
+			random_list = { 
+				70 = { 
+					add_prestige = 10
+				}
+				30 = { 
+					capital_scope = { 
+						add_unrest = 10
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				philosopher_NO = 1
+			}
+			random_list = { 
+				50 = { 
+					add_prestige = 10
+				}
+				50 = { 
+					capital_scope = { 
+						add_unrest = 10
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				philosopher_CL = 1
+			}
+			random_list = { 
+				50 = { 
+					add_prestige = 10
+				}
+				50 = { 
+					capital_scope = { 
+						add_unrest = 10
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				philosopher_BG = 1
+			}
+			random_list = { 
+				50 = { 
+					add_prestige = 10
+				}
+				50 = { 
+					capital_scope = { 
+						add_unrest = 10
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				philosopher_BU = 1
+			}
+			random_list = { 
+				50 = { 
+					add_prestige = 10
+				}
+				50 = { 
+					capital_scope = { 
+						add_unrest = 10
+					}
+				}
+			}
+		}
+		hidden_effect = { 
+			capital_scope = { 
+				change_variable = { 
+					which = aam
+					value = 50
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = aam
+									value = 1.0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = aam
+						value = 1.0
+					}
+				}
+				set_province_flag = POP_ChangedWealth
+			}
+		}
+	}
+	option = { 
+		name = dg_humanism.029.b
+		ai_chance = { 
+			factor = 60
+		}
+		add_adm_power = 25
+	}
+	option = { 
+		name = dg_humanism.029.c
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = renaissance
+				factor = 2
+			}
+		}
+		if = { 
+			limit = { 
+				advisor = philosopher_NO
+			}
+			remove_advisor = philosopher_NO
+		}
+		else_if = { 
+			limit = { 
+				advisor = philosopher_CL
+			}
+			remove_advisor = philosopher_CL
+		}
+		else_if = { 
+			limit = { 
+				advisor = philosopher_BG
+			}
+			remove_advisor = philosopher_BG
+		}
+		else_if = { 
+			limit = { 
+				advisor = philosopher_BU
+			}
+			remove_advisor = philosopher_BU
+		}
+	}
+}
+country_event = { 
+	id = dg_humanism.0291
+	title = dg_humanism.029.t
+	desc = dg_humanism.0291.d
+	picture = renaissance_humanism
+	is_triggered_only = yes
+	option = { 
+		name = dg_humanism.0291.a
+	}
+}
+country_event = { 
+	id = dg_humanism.030
+	title = dg_humanism.030.t
+	desc = dg_humanism.030.d
+	picture = renaissance_humanism
+	fire_only_once = yes
+	major = yes
+	trigger = { 
+		OR = { 
+			has_country_flag = humanism
+			has_country_flag = renaissance
+		}
+		OR = { 
+			advisor = philosopher_NO
+			advisor = philosopher_CL
+			advisor = philosopher_BG
+			advisor = philosopher_BU
+		}
+		OR = { 
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = waldensian
+			religion = lollard
+			religion = avignonist
+			religion = holyleague
+		}
+		adm_tech = 40
+		NOT = { 
+			has_country_flag = renaissance_humanism_philosopher
+		}
+	}
+	mean_time_to_happen = { 
+		years = 5
+		modifier = { 
+			factor = 0.5
+			ai = no
+		}
+	}
+	immediate = { 
+		every_known_country = { 
+			limit = { 
+				ai = no
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+			country_event = { 
+				id = dg_humanism.0301
+			}
+		}
+		set_country_flag = renaissance_humanism_philosopher
+	}
+	option = { 
+		name = dg_humanism.030.a
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = humanism
+				factor = 2
+			}
+			modifier = { 
+				NOT = { 
+					legitimacy = 70
+				}
+				factor = 0.5
+			}
+			modifier = { 
+				legitimacy = 95
+				factor = 1.5
+			}
+			modifier = { 
+				AND = { 
+					NOT = { 
+						OR = { 
+							culture_group = british
+							culture_group = latin
+							culture_group = napolitan
+							culture_group = iberian
+							culture_group = langue_d_oil
+							culture_group = langue_d_oc
+							culture_group = basque_group
+							culture_group = balkan_slavic
+							culture_group = romanian
+							culture_group = greek_group
+							culture_group = albanese
+							culture_group = mashreqi
+							culture_group = maghreb
+						}
+					}
+					NOT = { 
+						stability = 1
+					}
+				}
+				factor = 0.5
+			}
+			modifier = { 
+				AND = { 
+					NOT = { 
+						OR = { 
+							culture_group = british
+							culture_group = latin
+							culture_group = napolitan
+							culture_group = iberian
+							culture_group = langue_d_oil
+							culture_group = langue_d_oc
+							culture_group = basque_group
+							culture_group = balkan_slavic
+							culture_group = romanian
+							culture_group = greek_group
+							culture_group = albanese
+							culture_group = mashreqi
+							culture_group = maghreb
+						}
+					}
+					NOT = { 
+						stability = 0
+					}
+				}
+				factor = 0
+			}
+			modifier = { 
+				factor = 1.5
+				AND = { 
+					check_variable = { 
+						which = asq
+						value = 75
+					}
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				NOT = { 
+					OR = { 
+						culture_group = british
+						culture_group = latin
+						culture_group = napolitan
+						culture_group = iberian
+						culture_group = langue_d_oil
+						culture_group = langue_d_oc
+						culture_group = basque_group
+						culture_group = balkan_slavic
+						culture_group = romanian
+						culture_group = greek_group
+						culture_group = albanese
+						culture_group = mashreqi
+						culture_group = maghreb
+					}
+				}
+			}
+			custom_tooltip = no_roman_tradition
+			hidden_effect = { 
+				if = { 
+					limit = { 
+						NOT = { 
+							stability = -2
+						}
+					}
+					set_variable = { 
+						which = ahf
+						value = 0
+					}
+				}
+				else = { 
+					add_stability = -1
+				}
+			}
+			tooltip = { 
+				add_stability = -1
+			}
+			if = { 
+				limit = { 
+					is_emperor_of_china = yes
+				}
+				add_mandate = -5
+			}
+			hidden_effect = { 
+				every_owned_province = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asn
+								value = 0.001
+							}
+						}
+					}
+					change_variable = { 
+						which = asq
+						value = -20
+					}
+					change_variable = { 
+						which = asr
+						value = -20
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = asq
+							value = 100
+						}
+					}
+					else_if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = asq
+										value = 0
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = asq
+							value = 0
+						}
+					}
+					set_province_flag = Unrest_Update
+				}
+			}
+			custom_tooltip = POP_NOLoyProv_-20
+			custom_tooltip = BU_FactionBoost_20
+			hidden_effect = { 
+				set_variable = { 
+					which = oqc
+					value = 20
+				}
+				country_event = { 
+					id = PTM_Politics.001
+				}
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ati
+							value = 65
+						}
+					}
+				}
+				add_country_modifier = { 
+					name = FC_BU_Boost_L
+					duration = 1825
+				}
+			}
+			else_if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ati
+							value = 35
+						}
+					}
+				}
+				add_country_modifier = { 
+					name = FC_BU_Boost_M
+					duration = 1825
+				}
+			}
+			else = { 
+				add_country_modifier = { 
+					name = FC_BU_Boost_S
+					duration = 1825
+				}
+			}
+			hidden_effect = { 
+				if = { 
+					limit = { 
+						always = yes
+					}
+					if = { 
+						limit = { 
+							faction_influence = { 
+								faction = FC_NO
+								influence = 50
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bdq
+									value = -25
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bdq
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bdq
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bdq
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bdq
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bdq
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bdq
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = NO_RelationState_-25
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = hxi
+									value = -1
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = hxi
+													value = -5
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = hxi
+										value = -5
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = hxi
+												value = 5.001
+											}
+										}
+									}
+									set_variable = { 
+										which = hxi
+										value = 5
+									}
+								}
+								multiply_variable = { 
+									which = hxi
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = hxi
+									value = 1000
+								}
+							}
+						}
+					}
+					else_if = { 
+						limit = { 
+							faction_influence = { 
+								faction = FC_NO
+								influence = 30
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bdq
+									value = -15
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bdq
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bdq
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bdq
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bdq
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bdq
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bdq
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = NO_RelationState_-15
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = hxi
+									value = -1
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = hxi
+													value = -5
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = hxi
+										value = -5
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = hxi
+												value = 5.001
+											}
+										}
+									}
+									set_variable = { 
+										which = hxi
+										value = 5
+									}
+								}
+								multiply_variable = { 
+									which = hxi
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = hxi
+									value = 1000
+								}
+							}
+						}
+					}
+					else = { 
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bdq
+									value = -5
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bdq
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bdq
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bdq
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bdq
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bdq
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bdq
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = NO_RelationState_-5
+							}
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					if = { 
+						limit = { 
+							faction_influence = { 
+								faction = FC_BG
+								influence = 50
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bdr
+									value = -25
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bdr
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bdr
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bdr
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bdr
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bdr
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bdr
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = BG_RelationState_-25
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = hxj
+									value = -1
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = hxj
+													value = -5
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = hxj
+										value = -5
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = hxj
+												value = 5.001
+											}
+										}
+									}
+									set_variable = { 
+										which = hxj
+										value = 5
+									}
+								}
+								multiply_variable = { 
+									which = hxj
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = hxj
+									value = 1000
+								}
+							}
+						}
+					}
+					else_if = { 
+						limit = { 
+							faction_influence = { 
+								faction = FC_BG
+								influence = 30
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bdr
+									value = -15
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bdr
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bdr
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bdr
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bdr
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bdr
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bdr
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = BG_RelationState_-15
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = hxj
+									value = -1
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = hxj
+													value = -5
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = hxj
+										value = -5
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = hxj
+												value = 5.001
+											}
+										}
+									}
+									set_variable = { 
+										which = hxj
+										value = 5
+									}
+								}
+								multiply_variable = { 
+									which = hxj
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = hxj
+									value = 1000
+								}
+							}
+						}
+					}
+					else = { 
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bdr
+									value = -5
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bdr
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bdr
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bdr
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bdr
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bdr
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bdr
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = BG_RelationState_-5
+							}
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					if = { 
+						limit = { 
+							faction_influence = { 
+								faction = FC_CL
+								influence = 50
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bds
+									value = -25
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bds
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bds
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bds
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bds
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bds
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bds
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = CL_RelationState_-25
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = hxk
+									value = -1
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = hxk
+													value = -5
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = hxk
+										value = -5
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = hxk
+												value = 5.001
+											}
+										}
+									}
+									set_variable = { 
+										which = hxk
+										value = 5
+									}
+								}
+								multiply_variable = { 
+									which = hxk
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = hxk
+									value = 1000
+								}
+							}
+						}
+					}
+					else_if = { 
+						limit = { 
+							faction_influence = { 
+								faction = FC_CL
+								influence = 30
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bds
+									value = -15
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bds
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bds
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bds
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bds
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bds
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bds
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = CL_RelationState_-15
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = hxk
+									value = -1
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = hxk
+													value = -5
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = hxk
+										value = -5
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = hxk
+												value = 5.001
+											}
+										}
+									}
+									set_variable = { 
+										which = hxk
+										value = 5
+									}
+								}
+								multiply_variable = { 
+									which = hxk
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = hxk
+									value = 1000
+								}
+							}
+						}
+					}
+					else = { 
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bds
+									value = -5
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bds
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bds
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bds
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bds
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bds
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bds
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = CL_RelationState_-5
+							}
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					if = { 
+						limit = { 
+							faction_influence = { 
+								faction = FC_TR
+								influence = 50
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bdt
+									value = -25
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bdt
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bdt
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bdt
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bdt
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bdt
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bdt
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = TR_RelationState_-25
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = hxl
+									value = -1
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = hxl
+													value = -5
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = hxl
+										value = -5
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = hxl
+												value = 5.001
+											}
+										}
+									}
+									set_variable = { 
+										which = hxl
+										value = 5
+									}
+								}
+								multiply_variable = { 
+									which = hxl
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = hxl
+									value = 1000
+								}
+							}
+						}
+					}
+					else_if = { 
+						limit = { 
+							faction_influence = { 
+								faction = FC_TR
+								influence = 30
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bdt
+									value = -15
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bdt
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bdt
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bdt
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bdt
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bdt
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bdt
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = TR_RelationState_-15
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = hxl
+									value = -1
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = hxl
+													value = -5
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = hxl
+										value = -5
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = hxl
+												value = 5.001
+											}
+										}
+									}
+									set_variable = { 
+										which = hxl
+										value = 5
+									}
+								}
+								multiply_variable = { 
+									which = hxl
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = hxl
+									value = 1000
+								}
+							}
+						}
+					}
+					else = { 
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bdt
+									value = -5
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bdt
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bdt
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bdt
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bdt
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bdt
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bdt
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = TR_RelationState_-5
+							}
+						}
+					}
+				}
+			}
+			if = { 
+				limit = { 
+					philosopher_NO = 3
+				}
+				random_list = { 
+					15 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					85 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_CL = 3
+				}
+				random_list = { 
+					15 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					85 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_BG = 3
+				}
+				random_list = { 
+					15 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					85 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_BU = 3
+				}
+				random_list = { 
+					15 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					85 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_NO = 2
+				}
+				random_list = { 
+					30 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					70 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_CL = 2
+				}
+				random_list = { 
+					30 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					70 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_BG = 2
+				}
+				random_list = { 
+					30 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					70 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_BU = 2
+				}
+				random_list = { 
+					30 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					70 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_NO = 1
+				}
+				random_list = { 
+					50 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					50 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_CL = 1
+				}
+				random_list = { 
+					50 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					50 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_BG = 1
+				}
+				random_list = { 
+					50 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					50 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_BU = 1
+				}
+				random_list = { 
+					50 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					50 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				OR = { 
+					culture_group = british
+					culture_group = latin
+					culture_group = napolitan
+					culture_group = iberian
+					culture_group = langue_d_oil
+					culture_group = langue_d_oc
+					culture_group = basque_group
+					culture_group = balkan_slavic
+					culture_group = romanian
+					culture_group = greek_group
+					culture_group = albanese
+					culture_group = mashreqi
+					culture_group = maghreb
+				}
+			}
+			hidden_effect = { 
+				change_variable = { 
+					which = ahf
+					value = -300
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = ahf
+								value = 1200
+							}
+						}
+					}
+					if = { 
+						limit = { 
+							stability = 3
+						}
+						set_variable = { 
+							which = ahf
+							value = 1200
+						}
+					}
+					else = { 
+						subtract_variable = { 
+							which = ahf
+							value = 1200
+						}
+						add_stability = 1
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = ahf
+									value = 0
+								}
+							}
+						}
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						change_variable = { 
+							which = ahf
+							value = 1200
+						}
+						add_stability = -1
+					}
+				}
+				set_variable = { 
+					which = ahd
+					which = ahf
+				}
+				divide_variable = { 
+					which = ahd
+					value = 12
+				}
+				multiply_variable = { 
+					which = ahd
+					value = 0.1
+				}
+				multiply_variable = { 
+					which = ahd
+					value = 10
+				}
+				set_variable = { 
+					which = lsc
+					value = 100
+				}
+				subtract_variable = { 
+					which = lsc
+					which = ahd
+				}
+			}
+			custom_tooltip = POP_StabSubtract25
+			if = { 
+				limit = { 
+					is_emperor_of_china = yes
+				}
+				add_mandate = -1
+			}
+			hidden_effect = { 
+				every_owned_province = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asn
+								value = 0.001
+							}
+						}
+					}
+					change_variable = { 
+						which = asq
+						value = -10
+					}
+					change_variable = { 
+						which = asr
+						value = -10
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = asq
+							value = 100
+						}
+					}
+					else_if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = asq
+										value = 0
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = asq
+							value = 0
+						}
+					}
+					set_province_flag = Unrest_Update
+				}
+			}
+			custom_tooltip = POP_NOLoyProv_-10
+			custom_tooltip = BU_FactionBoost_20
+			hidden_effect = { 
+				set_variable = { 
+					which = oqc
+					value = 20
+				}
+				country_event = { 
+					id = PTM_Politics.001
+				}
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ati
+							value = 65
+						}
+					}
+				}
+				add_country_modifier = { 
+					name = FC_BU_Boost_L
+					duration = 1825
+				}
+			}
+			else_if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ati
+							value = 35
+						}
+					}
+				}
+				add_country_modifier = { 
+					name = FC_BU_Boost_M
+					duration = 1825
+				}
+			}
+			else = { 
+				add_country_modifier = { 
+					name = FC_BU_Boost_S
+					duration = 1825
+				}
+			}
+			hidden_effect = { 
+				if = { 
+					limit = { 
+						always = yes
+					}
+					if = { 
+						limit = { 
+							faction_influence = { 
+								faction = FC_NO
+								influence = 50
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bdq
+									value = -25
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bdq
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bdq
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bdq
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bdq
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bdq
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bdq
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = NO_RelationState_-25
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = hxi
+									value = -1
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = hxi
+													value = -5
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = hxi
+										value = -5
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = hxi
+												value = 5.001
+											}
+										}
+									}
+									set_variable = { 
+										which = hxi
+										value = 5
+									}
+								}
+								multiply_variable = { 
+									which = hxi
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = hxi
+									value = 1000
+								}
+							}
+						}
+					}
+					else_if = { 
+						limit = { 
+							faction_influence = { 
+								faction = FC_NO
+								influence = 30
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bdq
+									value = -15
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bdq
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bdq
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bdq
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bdq
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bdq
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bdq
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = NO_RelationState_-15
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = hxi
+									value = -1
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = hxi
+													value = -5
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = hxi
+										value = -5
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = hxi
+												value = 5.001
+											}
+										}
+									}
+									set_variable = { 
+										which = hxi
+										value = 5
+									}
+								}
+								multiply_variable = { 
+									which = hxi
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = hxi
+									value = 1000
+								}
+							}
+						}
+					}
+					else = { 
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bdq
+									value = -5
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bdq
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bdq
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bdq
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bdq
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bdq
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bdq
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = NO_RelationState_-5
+							}
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					if = { 
+						limit = { 
+							faction_influence = { 
+								faction = FC_BG
+								influence = 50
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bdr
+									value = -25
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bdr
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bdr
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bdr
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bdr
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bdr
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bdr
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = BG_RelationState_-25
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = hxj
+									value = -1
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = hxj
+													value = -5
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = hxj
+										value = -5
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = hxj
+												value = 5.001
+											}
+										}
+									}
+									set_variable = { 
+										which = hxj
+										value = 5
+									}
+								}
+								multiply_variable = { 
+									which = hxj
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = hxj
+									value = 1000
+								}
+							}
+						}
+					}
+					else_if = { 
+						limit = { 
+							faction_influence = { 
+								faction = FC_BG
+								influence = 30
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bdr
+									value = -15
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bdr
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bdr
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bdr
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bdr
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bdr
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bdr
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = BG_RelationState_-15
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = hxj
+									value = -1
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = hxj
+													value = -5
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = hxj
+										value = -5
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = hxj
+												value = 5.001
+											}
+										}
+									}
+									set_variable = { 
+										which = hxj
+										value = 5
+									}
+								}
+								multiply_variable = { 
+									which = hxj
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = hxj
+									value = 1000
+								}
+							}
+						}
+					}
+					else = { 
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bdr
+									value = -5
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bdr
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bdr
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bdr
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bdr
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bdr
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bdr
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = BG_RelationState_-5
+							}
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					if = { 
+						limit = { 
+							faction_influence = { 
+								faction = FC_CL
+								influence = 50
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bds
+									value = -25
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bds
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bds
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bds
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bds
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bds
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bds
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = CL_RelationState_-25
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = hxk
+									value = -1
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = hxk
+													value = -5
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = hxk
+										value = -5
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = hxk
+												value = 5.001
+											}
+										}
+									}
+									set_variable = { 
+										which = hxk
+										value = 5
+									}
+								}
+								multiply_variable = { 
+									which = hxk
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = hxk
+									value = 1000
+								}
+							}
+						}
+					}
+					else_if = { 
+						limit = { 
+							faction_influence = { 
+								faction = FC_CL
+								influence = 30
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bds
+									value = -15
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bds
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bds
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bds
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bds
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bds
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bds
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = CL_RelationState_-15
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = hxk
+									value = -1
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = hxk
+													value = -5
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = hxk
+										value = -5
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = hxk
+												value = 5.001
+											}
+										}
+									}
+									set_variable = { 
+										which = hxk
+										value = 5
+									}
+								}
+								multiply_variable = { 
+									which = hxk
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = hxk
+									value = 1000
+								}
+							}
+						}
+					}
+					else = { 
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bds
+									value = -5
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bds
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bds
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bds
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bds
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bds
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bds
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = CL_RelationState_-5
+							}
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						always = yes
+					}
+					if = { 
+						limit = { 
+							faction_influence = { 
+								faction = FC_TR
+								influence = 50
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bdt
+									value = -25
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bdt
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bdt
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bdt
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bdt
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bdt
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bdt
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = TR_RelationState_-25
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = hxl
+									value = -1
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = hxl
+													value = -5
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = hxl
+										value = -5
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = hxl
+												value = 5.001
+											}
+										}
+									}
+									set_variable = { 
+										which = hxl
+										value = 5
+									}
+								}
+								multiply_variable = { 
+									which = hxl
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = hxl
+									value = 1000
+								}
+							}
+						}
+					}
+					else_if = { 
+						limit = { 
+							faction_influence = { 
+								faction = FC_TR
+								influence = 30
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bdt
+									value = -15
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bdt
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bdt
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bdt
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bdt
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bdt
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bdt
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = TR_RelationState_-15
+							}
+						}
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = hxl
+									value = -1
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = hxl
+													value = -5
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = hxl
+										value = -5
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = hxl
+												value = 5.001
+											}
+										}
+									}
+									set_variable = { 
+										which = hxl
+										value = 5
+									}
+								}
+								multiply_variable = { 
+									which = hxl
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = hxl
+									value = 1000
+								}
+							}
+						}
+					}
+					else = { 
+						if = { 
+							limit = { 
+								always = yes
+							}
+							hidden_effect = { 
+								change_variable = { 
+									which = bdt
+									value = -5
+								}
+								if = { 
+									limit = { 
+										NOT = { 
+											AND = { 
+												check_variable = { 
+													which = bdt
+													value = -100
+												}
+											}
+										}
+									}
+									set_variable = { 
+										which = bdt
+										value = -100
+									}
+								}
+								else_if = { 
+									limit = { 
+										AND = { 
+											check_variable = { 
+												which = bdt
+												value = 100.001
+											}
+										}
+									}
+									set_variable = { 
+										which = bdt
+										value = 100
+									}
+								}
+								multiply_variable = { 
+									which = bdt
+									value = 0.001
+								}
+								multiply_variable = { 
+									which = bdt
+									value = 1000
+								}
+							}
+							if = { 
+								limit = { 
+									always = yes
+								}
+								custom_tooltip = TR_RelationState_-5
+							}
+						}
+					}
+				}
+			}
+			if = { 
+				limit = { 
+					philosopher_NO = 3
+				}
+				random_list = { 
+					15 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					85 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_CL = 3
+				}
+				random_list = { 
+					15 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					85 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_BG = 3
+				}
+				random_list = { 
+					15 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					85 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_BU = 3
+				}
+				random_list = { 
+					15 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					85 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_NO = 2
+				}
+				random_list = { 
+					30 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					70 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_CL = 2
+				}
+				random_list = { 
+					30 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					70 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_BG = 2
+				}
+				random_list = { 
+					30 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					70 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_BU = 2
+				}
+				random_list = { 
+					30 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					70 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_NO = 1
+				}
+				random_list = { 
+					50 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					50 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_CL = 1
+				}
+				random_list = { 
+					50 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					50 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_BG = 1
+				}
+				random_list = { 
+					50 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					50 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					philosopher_BU = 1
+				}
+				random_list = { 
+					50 = { 
+						add_legitimacy = -40
+						add_republican_tradition = -40
+						add_devotion = -40
+					}
+					50 = { 
+						add_adm_power = 200
+					}
+				}
+			}
+		}
+	}
+	option = { 
+		name = dg_humanism.030.b
+		ai_chance = { 
+			factor = 60
+		}
+		add_adm_power = 50
+		add_faction_influence = { 
+			faction = FC_BU
+			influence = 5
+		}
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asn
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = asq
+					value = -5
+				}
+				change_variable = { 
+					which = asr
+					value = -5
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_NOLoyProv_-5
+	}
+	option = { 
+		name = dg_humanism.030.c
+		ai_chance = { 
+			factor = 20
+			modifier = { 
+				has_country_flag = renaissance
+				factor = 2
+			}
+			modifier = { 
+				factor = 1.5
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = asq
+							value = 25
+						}
+					}
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				advisor = philosopher_NO
+			}
+			remove_advisor = philosopher_NO
+		}
+		else_if = { 
+			limit = { 
+				advisor = philosopher_CL
+			}
+			remove_advisor = philosopher_CL
+		}
+		else_if = { 
+			limit = { 
+				advisor = philosopher_BG
+			}
+			remove_advisor = philosopher_BG
+		}
+		else_if = { 
+			limit = { 
+				advisor = philosopher_BU
+			}
+			remove_advisor = philosopher_BU
+		}
+		hidden_effect = { 
+			change_variable = { 
+				which = ahf
+				value = 300
+			}
+			if = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = ahf
+							value = 1200
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						stability = 3
+					}
+					set_variable = { 
+						which = ahf
+						value = 1200
+					}
+				}
+				else = { 
+					subtract_variable = { 
+						which = ahf
+						value = 1200
+					}
+					add_stability = 1
+				}
+			}
+			else_if = { 
+				limit = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = ahf
+								value = 0
+							}
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							stability = -2
+						}
+					}
+					set_variable = { 
+						which = ahf
+						value = 0
+					}
+				}
+				else = { 
+					change_variable = { 
+						which = ahf
+						value = 1200
+					}
+					add_stability = -1
+				}
+			}
+			set_variable = { 
+				which = ahd
+				which = ahf
+			}
+			divide_variable = { 
+				which = ahd
+				value = 12
+			}
+			multiply_variable = { 
+				which = ahd
+				value = 0.1
+			}
+			multiply_variable = { 
+				which = ahd
+				value = 10
+			}
+			set_variable = { 
+				which = lsc
+				value = 100
+			}
+			subtract_variable = { 
+				which = lsc
+				which = ahd
+			}
+		}
+		custom_tooltip = POP_StabAdd25
+		if = { 
+			limit = { 
+				is_emperor_of_china = yes
+			}
+			add_mandate = 1
+		}
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asn
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = asq
+					value = 10
+				}
+				change_variable = { 
+					which = asr
+					value = 10
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_NOLoyProv_10
+	}
+}
+country_event = { 
+	id = dg_humanism.0301
+	title = dg_humanism.030.t
+	desc = dg_humanism.0301.d
+	picture = renaissance_humanism
+	is_triggered_only = yes
+	option = { 
+		name = dg_humanism.0301.a
+	}
+}

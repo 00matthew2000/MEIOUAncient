@@ -1,0 +1,5 @@
+culture = norwegian
+religion = catholic
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = western

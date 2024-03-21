@@ -1,0 +1,32 @@
+owner = CZC
+controller = CZC
+add_core = CZC
+capital = "Hatun Colla"
+trade_goods = maize
+culture = inca
+religion = inti
+hre = no
+base_tax = 3
+base_production = 1
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = south_american
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+}

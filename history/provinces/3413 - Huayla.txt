@@ -1,0 +1,25 @@
+owner = HYL
+controller = HYL
+add_core = HYL
+capital = "Huayla"
+trade_goods = wool
+culture = huaylas
+religion = inti
+hre = no
+base_tax = 9
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = south_american
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+	set_province_flag = coal
+	set_province_flag = iron
+}

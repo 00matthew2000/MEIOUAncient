@@ -1,0 +1,38 @@
+owner = WHI
+controller = WHI
+add_core = WHI
+capital = "Mukhsha"
+trade_goods = wool
+culture = mishar
+religion = sunni
+hre = no
+base_tax = 10
+base_production = 0
+base_manpower = 1
+is_city = yes
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = western
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = ottoman
+discovered_by = muslim
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 20.000
+	}
+	set_variable = { 
+		which = atc
+		value = 65.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+}
+1356.1.1 = { 
+	add_core = MRQ
+}

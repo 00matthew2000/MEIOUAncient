@@ -1,0 +1,125 @@
+owner = SWE
+controller = SWE
+add_core = SWE
+capital = "Sund"
+trade_goods = fish
+culture = swedish
+religion = catholic
+hre = no
+base_tax = 0
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 1
+}
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = western
+1356.1.1 = { 
+	owner = RSW
+	controller = RSW
+	add_core = RSW
+	add_core = SWE
+	set_province_flag = TN_Island
+	set_province_flag = TN_Natural_Minor
+}
+100.1.1 = { 
+	set_variable = { 
+		which = amj
+		value = 9.000
+	}
+	set_variable = { 
+		which = amk
+		value = 0.000
+	}
+	set_variable = { 
+		which = amh
+		value = 9.000
+	}
+	set_variable = { 
+		which = ami
+		value = 0.000
+	}
+	set_variable = { 
+		which = amf
+		value = 4.242
+	}
+	set_variable = { 
+		which = amg
+		value = 0.000
+	}
+	set_variable = { 
+		which = amd
+		value = 4.242
+	}
+	set_variable = { 
+		which = ame
+		value = 0.000
+	}
+	set_variable = { 
+		which = amb
+		value = 6.221
+	}
+	set_variable = { 
+		which = amc
+		value = 0.000
+	}
+	set_variable = { 
+		which = alz
+		value = 8.483
+	}
+	set_variable = { 
+		which = ama
+		value = 0.000
+	}
+	set_variable = { 
+		which = alx
+		value = 9.901
+	}
+	set_variable = { 
+		which = aly
+		value = 0.000
+	}
+	set_variable = { 
+		which = alv
+		value = 9.553
+	}
+	set_variable = { 
+		which = alw
+		value = 0.000
+	}
+	set_variable = { 
+		which = alt
+		value = 8.852
+	}
+	set_variable = { 
+		which = alu
+		value = 0.000
+	}
+	set_variable = { 
+		which = alr
+		value = 7.798
+	}
+	set_variable = { 
+		which = als
+		value = 0.000
+	}
+	set_variable = { 
+		which = alp
+		value = 8.523
+	}
+	set_variable = { 
+		which = alq
+		value = 0.000
+	}
+	set_variable = { 
+		which = aho
+		value = 11.833
+	}
+	set_variable = { 
+		which = ahp
+		value = 0.000
+	}
+}

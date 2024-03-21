@@ -1,0 +1,41 @@
+owner = KIE
+controller = KIE
+add_core = KIE
+capital = "Zhitomir"
+trade_goods = livestock
+culture = ruthenian
+religion = orthodox
+hre = no
+base_tax = 14
+base_production = 1
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gcn
+	value = 1
+}
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = western
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = ottoman
+discovered_by = muslim
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+}
+1356.1.1 = { 
+	add_permanent_claim = LIT
+}

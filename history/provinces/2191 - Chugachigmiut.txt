@@ -1,0 +1,2 @@
+culture = tanaina
+religion = sun_dance

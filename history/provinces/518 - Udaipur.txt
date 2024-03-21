@@ -1,0 +1,39 @@
+owner = MEW
+controller = MEW
+add_core = MEW
+capital = "Kotharia"
+trade_goods = wheat
+culture = mewari
+religion = hinduism
+hre = no
+base_tax = 31
+base_production = 0
+base_manpower = 2
+is_city = yes
+fort_14th = yes
+discovered_by = indian
+discovered_by = muslim
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = ottoman
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 40.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+	add_permanent_province_modifier = { 
+		name = dungarpur_state
+		duration = -1
+	}
+	set_province_flag = copper
+}
+500.1.1 = { 
+	set_province_flag = mined_goods
+	set_province_flag = lead
+}

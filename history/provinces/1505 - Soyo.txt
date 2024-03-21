@@ -1,0 +1,28 @@
+owner = LOA
+controller = LOA
+add_core = LOA
+capital = "Soyo"
+trade_goods = fish
+culture = bakongo
+religion = bantu_pagan
+base_tax = 1
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 1
+}
+discovered_by = central_african
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 2
+	}
+}

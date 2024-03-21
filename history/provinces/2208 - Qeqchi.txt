@@ -1,0 +1,18 @@
+capital = "Iximche"
+trade_goods = pepper
+culture = pipil
+religion = nahuatl
+hre = no
+base_tax = 11
+base_production = 0
+base_manpower = 2
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+	set_province_flag = mined_goods
+	set_province_flag = obsidian
+	set_province_flag = dyes
+}

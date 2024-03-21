@@ -1,0 +1,48 @@
+owner = ALR
+controller = ALR
+add_core = ALR
+capital = "Nuh"
+trade_goods = wheat
+culture = meo
+religion = sunni
+hre = no
+base_tax = 19
+base_production = 2
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 2
+}
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = indian
+discovered_by = muslim
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = ottoman
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 20.000
+	}
+}
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_variable = { 
+		which = baf
+		value = 70
+	}
+	set_variable = { 
+		which = acp
+		value = 8
+	}
+	set_province_flag = mined_goods
+	set_province_flag = iron
+}

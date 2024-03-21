@@ -1,0 +1,48 @@
+owner = CNP
+controller = CNP
+add_core = CNP
+capital = "Kaan Pech"
+trade_goods = cotton
+culture = yucatecan
+religion = mayan
+hre = no
+base_tax = 37
+base_production = 1
+base_manpower = 3
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gci
+	value = 1
+}
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_province_flag = TN_Major
+	set_province_flag = TN_Port
+	set_province_flag = TN_Natural_Important
+	add_permanent_province_modifier = { 
+		name = urban_goods_naval_supplies
+		duration = -1
+	}
+	set_province_flag = cacao
+	set_province_flag = saltmarsh
+	set_variable = { 
+		which = amh
+		value = 40.000
+	}
+	set_variable = { 
+		which = ami
+		value = 10.000
+	}
+}

@@ -1,0 +1,50 @@
+owner = KAR
+controller = KAR
+add_core = KAR
+add_permanent_claim = BYZ
+capital = "Alaiye"
+trade_goods = lumber
+culture = turkoman
+religion = sunni
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 1
+}
+fort_14th = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = muslim
+discovered_by = ottoman
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 7.500
+	}
+	set_variable = { 
+		which = atc
+		value = 5.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 2.500
+	}
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+	set_province_flag = olive
+}
+1356.1.1 = { 
+	discovered_by = CIR
+	add_claim = KAM
+	set_province_flag = turkish_name
+}

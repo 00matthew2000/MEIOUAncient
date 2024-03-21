@@ -1,0 +1,62 @@
+royal_marriage = { 
+	first = BYZ
+	second = BUL
+	start_date = 1355.8.17
+	end_date = 1371.2.16
+}
+dependency = { 
+	subject_type = "appanage_subject"
+	first = BUL
+	second = VID
+	start_date = 1356.1.1
+	end_date = 1371.2.16
+}
+dependency = { 
+	subject_type = "tributary_state"
+	first = BUL
+	second = WAL
+	start_date = 1356.1.1
+	end_date = 1371.2.16
+}
+dependency = { 
+	subject_type = "rebellious_decentralized_vassal"
+	first = BYZ
+	second = MOE
+	start_date = 1356.1.1
+	end_date = 1383.4.26
+}
+dependency = { 
+	subject_type = "nominal_subject"
+	first = ERE
+	second = CNK
+	start_date = 1356.1.1
+	end_date = 1371.2.16
+}
+dependency = { 
+	subject_type = "decentralized_vassal"
+	first = ERE
+	second = ERZ
+	start_date = 1356.1.1
+	end_date = 1380.1.1
+}
+dependency = { 
+	subject_type = "tributary_state"
+	first = ERE
+	second = AKK
+	start_date = 1356.1.1
+	end_date = 1380.1.1
+}
+dependency = { 
+	subject_type = "nominal_subject"
+	first = QAR
+	second = HSN
+	start_date = 1356.1.1
+	end_date = 1380.1.1
+}
+dependency = { 
+	subject_type = "nominal_subject"
+	first = QAR
+	second = ATQ
+	start_date = 1356.1.1
+	end_date = 1380.1.1
+}

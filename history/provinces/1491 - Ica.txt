@@ -1,0 +1,27 @@
+owner = NZC
+controller = NZC
+add_core = NZC
+capital = "Ica"
+trade_goods = cotton
+culture = nazca
+religion = inti
+hre = no
+base_tax = 11
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = south_american
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+	set_variable = { 
+		which = ami
+		value = 3.000
+	}
+	set_province_flag = gold
+	set_province_flag = cotton
+	set_province_flag = TN_Harbour_Minor
+	set_province_flag = TN_Natural_Minor
+}

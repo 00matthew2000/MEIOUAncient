@@ -1,0 +1,2125 @@
+hagia_sophia = { 
+	start = 1402
+	date = 537.01.01
+	time = { 
+		months = 0
+	}
+	build_cost = 1000
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 2
+	type = monument
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			tooltip = hagia_sophia_tt
+			OR = { 
+				AND = { 
+					OR = { 
+						religion = orthodox
+						religion = oriental
+						religion = assyrian
+						religion = catholic
+						religion_group = muslim
+					}
+					has_owner_religion = yes
+				}
+				AND = { 
+					owner = { 
+						OR = { 
+							secondary_religion = orthodox
+							secondary_religion = oriental
+							secondary_religion = assyrian
+							secondary_religion = catholic
+							secondary_religion = sunni
+							secondary_religion = shiite
+							secondary_religion = ibadi
+						}
+					}
+					OR = { 
+						religion = orthodox
+						religion = oriental
+						religion = assyrian
+						religion = catholic
+						religion_group = muslim
+						has_owner_religion = yes
+					}
+				}
+			}
+		}
+	}
+	on_built = { 
+		if = { 
+			limit = { 
+				has_global_flag = hagia_sophia_now_mosque
+			}
+			show_ambient_object = hagia_sophia_minarets
+		}
+		else = { 
+			show_ambient_object = hagia_sophia
+		}
+		if = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = hagia_sophia_2
+				}
+			}
+			add_permanent_province_modifier = { 
+				name = hagia_sophia_2
+				duration = -1
+			}
+		}
+	}
+	on_destroyed = { 
+		hide_ambient_object = hagia_sophia_minarets
+		hide_ambient_object = hagia_sophia
+		remove_province_modifier = hagia_sophia_1
+		remove_province_modifier = hagia_sophia_2
+		remove_province_modifier = hagia_sophia_3
+	}
+	can_use_modifiers_trigger = { 
+		custom_trigger_tooltip = { 
+			tooltip = hagia_sophia_tt
+			OR = { 
+				AND = { 
+					OR = { 
+						religion = orthodox
+						religion = oriental
+						religion = assyrian
+						religion = catholic
+						religion_group = muslim
+					}
+					has_owner_religion = yes
+				}
+				AND = { 
+					owner = { 
+						OR = { 
+							secondary_religion = orthodox
+							secondary_religion = oriental
+							secondary_religion = assyrian
+							secondary_religion = catholic
+							secondary_religion = sunni
+							secondary_religion = shiite
+							secondary_religion = ibadi
+						}
+					}
+					OR = { 
+						religion = orthodox
+						religion = oriental
+						religion = assyrian
+						religion = catholic
+						religion_group = muslim
+						has_owner_religion = yes
+					}
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = { 
+		custom_trigger_tooltip = { 
+			tooltip = hagia_sophia_tt
+			OR = { 
+				AND = { 
+					OR = { 
+						religion = orthodox
+						religion = oriental
+						religion = assyrian
+						religion = catholic
+						religion_group = muslim
+					}
+					has_owner_religion = yes
+				}
+				AND = { 
+					owner = { 
+						OR = { 
+							secondary_religion = orthodox
+							secondary_religion = oriental
+							secondary_religion = assyrian
+							secondary_religion = catholic
+							secondary_religion = sunni
+							secondary_religion = shiite
+							secondary_religion = ibadi
+						}
+					}
+					OR = { 
+						religion = orthodox
+						religion = oriental
+						religion = assyrian
+						religion = catholic
+						religion_group = muslim
+						has_owner_religion = yes
+					}
+				}
+			}
+		}
+	}
+	keep_trigger = { 
+		always = yes
+	}
+	tier_0 = { 
+		upgrade_time = { 
+			months = 0
+		}
+		cost_to_upgrade = { 
+			factor = 0
+		}
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { 
+			remove_province_modifier = hagia_sophia_1
+		}
+	}
+	tier_1 = { 
+		upgrade_time = { 
+			months = 120
+		}
+		cost_to_upgrade = { 
+			factor = 1000
+		}
+		province_modifiers = { }
+		area_modifier = { 
+			local_missionary_strength = 0.01
+		}
+		country_modifiers = { }
+		on_upgraded = { 
+			hidden_effect = { 
+				every_owned_province = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asx
+								value = 0.001
+							}
+						}
+					}
+					change_variable = { 
+						which = ata
+						value = 5
+					}
+					change_variable = { 
+						which = atb
+						value = 5
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = ata
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = ata
+							value = 100
+						}
+					}
+					else_if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = ata
+										value = 0
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = ata
+							value = 0
+						}
+					}
+					set_province_flag = Unrest_Update
+				}
+			}
+			custom_tooltip = POP_CLLoyProv_5
+			add_permanent_province_modifier = { 
+				name = hagia_sophia_1
+				duration = -1
+			}
+			remove_province_modifier = hagia_sophia_2
+		}
+	}
+	tier_2 = { 
+		upgrade_time = { 
+			months = 240
+		}
+		cost_to_upgrade = { 
+			factor = 2000
+		}
+		province_modifiers = { }
+		area_modifier = { 
+			local_missionary_strength = 0.02
+		}
+		country_modifiers = { }
+		on_upgraded = { 
+			owner = { 
+				hidden_effect = { 
+					every_owned_province = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = asx
+									value = 0.001
+								}
+							}
+						}
+						change_variable = { 
+							which = ata
+							value = 10
+						}
+						change_variable = { 
+							which = atb
+							value = 10
+						}
+						if = { 
+							limit = { 
+								AND = { 
+									check_variable = { 
+										which = ata
+										value = 100.001
+									}
+								}
+							}
+							set_variable = { 
+								which = ata
+								value = 100
+							}
+						}
+						else_if = { 
+							limit = { 
+								NOT = { 
+									AND = { 
+										check_variable = { 
+											which = ata
+											value = 0
+										}
+									}
+								}
+							}
+							set_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+						set_province_flag = Unrest_Update
+					}
+				}
+				custom_tooltip = POP_CLLoyProv_10
+			}
+			remove_province_modifier = hagia_sophia_1
+			remove_province_modifier = hagia_sophia_3
+			add_permanent_province_modifier = { 
+				name = hagia_sophia_2
+				duration = -1
+			}
+		}
+	}
+	tier_3 = { 
+		upgrade_time = { 
+			months = 480
+		}
+		cost_to_upgrade = { 
+			factor = 3000
+		}
+		province_modifiers = { }
+		area_modifier = { 
+			local_missionary_strength = 0.03
+		}
+		country_modifiers = { }
+		on_upgraded = { 
+			owner = { 
+				hidden_effect = { 
+					every_owned_province = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = asx
+									value = 0.001
+								}
+							}
+						}
+						change_variable = { 
+							which = ata
+							value = 15
+						}
+						change_variable = { 
+							which = atb
+							value = 15
+						}
+						if = { 
+							limit = { 
+								AND = { 
+									check_variable = { 
+										which = ata
+										value = 100.001
+									}
+								}
+							}
+							set_variable = { 
+								which = ata
+								value = 100
+							}
+						}
+						else_if = { 
+							limit = { 
+								NOT = { 
+									AND = { 
+										check_variable = { 
+											which = ata
+											value = 0
+										}
+									}
+								}
+							}
+							set_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+						set_province_flag = Unrest_Update
+					}
+				}
+				custom_tooltip = POP_CLLoyProv_15
+			}
+			remove_province_modifier = hagia_sophia_2
+			add_permanent_province_modifier = { 
+				name = hagia_sophia_3
+				duration = -1
+			}
+		}
+	}
+}
+dutch_polders = { 
+	start = 97
+	date = 1600.01.01
+	time = { 
+		months = 120
+	}
+	build_cost = 1000
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = { 
+		owner = { 
+			owns_or_non_sovereign_subject_of = 97
+			owns_or_non_sovereign_subject_of = 98
+			owns_or_non_sovereign_subject_of = 2370
+		}
+		97 = { 
+			OR = { 
+				culture = dutch
+				culture = flemish
+				culture = brabantian
+				culture = frisian
+			}
+			OR = { 
+				has_owner_culture = yes
+				has_owner_accepted_culture = yes
+			}
+		}
+		98 = { 
+			OR = { 
+				culture = dutch
+				culture = flemish
+				culture = brabantian
+				culture = frisian
+			}
+			OR = { 
+				has_owner_culture = yes
+				has_owner_accepted_culture = yes
+			}
+		}
+		2370 = { 
+			OR = { 
+				culture = dutch
+				culture = flemish
+				culture = brabantian
+				culture = frisian
+			}
+			OR = { 
+				has_owner_culture = yes
+				has_owner_accepted_culture = yes
+			}
+		}
+	}
+	on_built = { 
+		owner = { 
+			hidden_effect = { 
+				every_owned_province = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = ass
+								value = 0.001
+							}
+						}
+					}
+					change_variable = { 
+						which = asv
+						value = 5
+					}
+					change_variable = { 
+						which = asw
+						value = 5
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = asv
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = asv
+							value = 100
+						}
+					}
+					else_if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = asv
+										value = 0
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = asv
+							value = 0
+						}
+					}
+					set_province_flag = Unrest_Update
+				}
+			}
+			custom_tooltip = POP_BGLoyProv_5
+			add_prestige = 10
+		}
+		97 = { 
+			add_permanent_province_modifier = { 
+				name = dutch_polders_1
+				duration = -1
+			}
+		}
+		98 = { 
+			add_permanent_province_modifier = { 
+				name = dutch_polders_1
+				duration = -1
+			}
+		}
+		2370 = { 
+			add_permanent_province_modifier = { 
+				name = dutch_polders_1
+				duration = -1
+			}
+		}
+	}
+	on_destroyed = { 
+		97 = { 
+			remove_province_modifier = dutch_polders_1
+			remove_province_modifier = dutch_polders_2
+			remove_province_modifier = dutch_polders_3
+		}
+		98 = { 
+			remove_province_modifier = dutch_polders_1
+			remove_province_modifier = dutch_polders_2
+			remove_province_modifier = dutch_polders_3
+		}
+		2370 = { 
+			remove_province_modifier = dutch_polders_1
+			remove_province_modifier = dutch_polders_2
+			remove_province_modifier = dutch_polders_3
+		}
+	}
+	can_use_modifiers_trigger = { 
+		97 = { 
+			OR = { 
+				culture = dutch
+				culture = flemish
+				culture = brabantian
+				culture = frisian
+			}
+			OR = { 
+				has_owner_culture = yes
+				has_owner_accepted_culture = yes
+			}
+		}
+		98 = { 
+			OR = { 
+				culture = dutch
+				culture = flemish
+				culture = brabantian
+				culture = frisian
+			}
+			OR = { 
+				has_owner_culture = yes
+				has_owner_accepted_culture = yes
+			}
+		}
+		2370 = { 
+			OR = { 
+				culture = dutch
+				culture = flemish
+				culture = brabantian
+				culture = frisian
+			}
+			OR = { 
+				has_owner_culture = yes
+				has_owner_accepted_culture = yes
+			}
+		}
+	}
+	can_upgrade_trigger = { 
+		owner = { 
+			owns_or_non_sovereign_subject_of = 97
+			owns_or_non_sovereign_subject_of = 98
+			owns_or_non_sovereign_subject_of = 2370
+		}
+		97 = { 
+			OR = { 
+				culture = dutch
+				culture = flemish
+				culture = brabantian
+				culture = frisian
+			}
+			OR = { 
+				has_owner_culture = yes
+				has_owner_accepted_culture = yes
+			}
+		}
+		98 = { 
+			OR = { 
+				culture = dutch
+				culture = flemish
+				culture = brabantian
+				culture = frisian
+			}
+			OR = { 
+				has_owner_culture = yes
+				has_owner_accepted_culture = yes
+			}
+		}
+		2370 = { 
+			OR = { 
+				culture = dutch
+				culture = flemish
+				culture = brabantian
+				culture = frisian
+			}
+			OR = { 
+				has_owner_culture = yes
+				has_owner_accepted_culture = yes
+			}
+		}
+	}
+	keep_trigger = { 
+		always = yes
+	}
+	tier_0 = { 
+		upgrade_time = { 
+			months = 0
+		}
+		cost_to_upgrade = { 
+			factor = 0
+		}
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { 
+			97 = { 
+				remove_province_modifier = dutch_polders_1
+			}
+			98 = { 
+				remove_province_modifier = dutch_polders_1
+			}
+			2370 = { 
+				remove_province_modifier = dutch_polders_1
+			}
+		}
+	}
+	tier_1 = { 
+		upgrade_time = { 
+			months = 120
+		}
+		cost_to_upgrade = { 
+			factor = 1000
+		}
+		province_modifiers = { }
+		area_modifier = { 
+			local_defensiveness = 0.1
+			local_monthly_devastation = -0.025
+		}
+		country_modifiers = { }
+		on_upgraded = { 
+			97 = { 
+				add_permanent_province_modifier = { 
+					name = dutch_polders_1
+					duration = -1
+				}
+				remove_province_modifier = dutch_polders_2
+			}
+			98 = { 
+				add_permanent_province_modifier = { 
+					name = dutch_polders_1
+					duration = -1
+				}
+				remove_province_modifier = dutch_polders_2
+			}
+			2370 = { 
+				add_permanent_province_modifier = { 
+					name = dutch_polders_1
+					duration = -1
+				}
+				remove_province_modifier = dutch_polders_2
+			}
+		}
+	}
+	tier_2 = { 
+		upgrade_time = { 
+			months = 240
+		}
+		cost_to_upgrade = { 
+			factor = 2000
+		}
+		province_modifiers = { }
+		area_modifier = { 
+			local_defensiveness = 0.15
+			local_monthly_devastation = -0.05
+		}
+		country_modifiers = { }
+		on_upgraded = { 
+			owner = { 
+				hidden_effect = { 
+					every_owned_province = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = ass
+									value = 0.001
+								}
+							}
+						}
+						change_variable = { 
+							which = asv
+							value = 10
+						}
+						change_variable = { 
+							which = asw
+							value = 10
+						}
+						if = { 
+							limit = { 
+								AND = { 
+									check_variable = { 
+										which = asv
+										value = 100.001
+									}
+								}
+							}
+							set_variable = { 
+								which = asv
+								value = 100
+							}
+						}
+						else_if = { 
+							limit = { 
+								NOT = { 
+									AND = { 
+										check_variable = { 
+											which = asv
+											value = 0
+										}
+									}
+								}
+							}
+							set_variable = { 
+								which = asv
+								value = 0
+							}
+						}
+						set_province_flag = Unrest_Update
+					}
+				}
+				custom_tooltip = POP_BGLoyProv_10
+				add_prestige = 20
+			}
+			97 = { 
+				remove_province_modifier = dutch_polders_1
+				remove_province_modifier = dutch_polders_3
+				add_permanent_province_modifier = { 
+					name = dutch_polders_2
+					duration = -1
+				}
+			}
+			98 = { 
+				remove_province_modifier = dutch_polders_1
+				remove_province_modifier = dutch_polders_3
+				add_permanent_province_modifier = { 
+					name = dutch_polders_2
+					duration = -1
+				}
+			}
+			2370 = { 
+				remove_province_modifier = dutch_polders_1
+				remove_province_modifier = dutch_polders_3
+				add_permanent_province_modifier = { 
+					name = dutch_polders_2
+					duration = -1
+				}
+			}
+		}
+	}
+	tier_3 = { 
+		upgrade_time = { 
+			months = 480
+		}
+		cost_to_upgrade = { 
+			factor = 3000
+		}
+		province_modifiers = { }
+		area_modifier = { 
+			local_defensiveness = 0.25
+			local_monthly_devastation = -0.1
+		}
+		country_modifiers = { }
+		on_upgraded = { 
+			owner = { 
+				hidden_effect = { 
+					every_owned_province = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = ass
+									value = 0.001
+								}
+							}
+						}
+						change_variable = { 
+							which = asv
+							value = 15
+						}
+						change_variable = { 
+							which = asw
+							value = 15
+						}
+						if = { 
+							limit = { 
+								AND = { 
+									check_variable = { 
+										which = asv
+										value = 100.001
+									}
+								}
+							}
+							set_variable = { 
+								which = asv
+								value = 100
+							}
+						}
+						else_if = { 
+							limit = { 
+								NOT = { 
+									AND = { 
+										check_variable = { 
+											which = asv
+											value = 0
+										}
+									}
+								}
+							}
+							set_variable = { 
+								which = asv
+								value = 0
+							}
+						}
+						set_province_flag = Unrest_Update
+					}
+				}
+				custom_tooltip = POP_BGLoyProv_15
+				add_prestige = 30
+			}
+			97 = { 
+				remove_province_modifier = dutch_polders_2
+				add_permanent_province_modifier = { 
+					name = dutch_polders_3
+					duration = -1
+				}
+			}
+			98 = { 
+				remove_province_modifier = dutch_polders_2
+				add_permanent_province_modifier = { 
+					name = dutch_polders_3
+					duration = -1
+				}
+			}
+			2370 = { 
+				remove_province_modifier = dutch_polders_2
+				add_permanent_province_modifier = { 
+					name = dutch_polders_3
+					duration = -1
+				}
+			}
+		}
+	}
+}
+holy_city_jerusalem = { 
+	start = 379
+	date = 1000.01.01
+	time = { 
+		months = 0
+	}
+	build_cost = 1000
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 1
+	type = monument
+	build_trigger = { 
+		OR = { 
+			custom_trigger_tooltip = { 
+				tooltip = province_is_or_accepts_muslim_tt
+				OR = { 
+					AND = { 
+						religion_group = muslim
+						has_owner_religion = yes
+					}
+					AND = { 
+						owner = { 
+							AND = { 
+								OR = { 
+									secondary_religion = sunni
+									secondary_religion = wahhabi
+									secondary_religion = mahdavi
+									secondary_religion = kejawen_m
+									secondary_religion = shiite
+									secondary_religion = ibadi
+									secondary_religion = ismail
+									secondary_religion = zaidi
+								}
+							}
+						}
+						OR = { 
+							religion_group = muslim
+							has_owner_religion = yes
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = { 
+				tooltip = province_is_or_accepts_christian_tt
+				OR = { 
+					AND = { 
+						religion_group = christian
+						has_owner_religion = yes
+					}
+					AND = { 
+						owner = { 
+							AND = { 
+								OR = { 
+									secondary_religion = catholic
+									secondary_religion = hussite
+									secondary_religion = oriental
+									secondary_religion = protestant
+									secondary_religion = reformed
+									secondary_religion = waldensian
+									secondary_religion = lollard
+									secondary_religion = avignonist
+									secondary_religion = holyleague
+									secondary_religion = orthodox
+									secondary_religion = oriental
+									secondary_religion = assyrian
+									secondary_religion = monothelite
+									secondary_religion = monophysite
+									secondary_religion = bogomilist
+								}
+							}
+						}
+						OR = { 
+							religion_group = christian
+							has_owner_religion = yes
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = { 
+				tooltip = province_is_or_accepts_jewish_tt
+				OR = { 
+					AND = { 
+						religion = jewish
+						has_owner_religion = yes
+					}
+					AND = { 
+						owner = { 
+							secondary_religion = jewish
+						}
+						OR = { 
+							religion = jewish
+							has_owner_religion = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	on_built = { 
+		show_ambient_object = holy_city_jerusalem
+		if = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = holy_city_jerusalem_1
+				}
+			}
+			add_permanent_province_modifier = { 
+				name = holy_city_jerusalem_1
+				duration = -1
+			}
+		}
+	}
+	on_destroyed = { 
+		hide_ambient_object = holy_city_jerusalem
+		remove_province_modifier = holy_city_jerusalem_1
+		remove_province_modifier = holy_city_jerusalem_2
+		remove_province_modifier = holy_city_jerusalem_3
+	}
+	can_use_modifiers_trigger = { 
+		OR = { 
+			custom_trigger_tooltip = { 
+				tooltip = province_is_or_accepts_muslim_tt
+				OR = { 
+					AND = { 
+						religion_group = muslim
+						has_owner_religion = yes
+					}
+					AND = { 
+						owner = { 
+							AND = { 
+								OR = { 
+									secondary_religion = sunni
+									secondary_religion = wahhabi
+									secondary_religion = mahdavi
+									secondary_religion = kejawen_m
+									secondary_religion = shiite
+									secondary_religion = ibadi
+									secondary_religion = ismail
+									secondary_religion = zaidi
+								}
+							}
+						}
+						OR = { 
+							religion_group = muslim
+							has_owner_religion = yes
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = { 
+				tooltip = province_is_or_accepts_christian_tt
+				OR = { 
+					AND = { 
+						religion_group = christian
+						has_owner_religion = yes
+					}
+					AND = { 
+						owner = { 
+							AND = { 
+								OR = { 
+									secondary_religion = catholic
+									secondary_religion = hussite
+									secondary_religion = oriental
+									secondary_religion = protestant
+									secondary_religion = reformed
+									secondary_religion = waldensian
+									secondary_religion = lollard
+									secondary_religion = avignonist
+									secondary_religion = holyleague
+									secondary_religion = orthodox
+									secondary_religion = oriental
+									secondary_religion = assyrian
+									secondary_religion = monothelite
+									secondary_religion = monophysite
+									secondary_religion = bogomilist
+								}
+							}
+						}
+						OR = { 
+							religion_group = christian
+							has_owner_religion = yes
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = { 
+				tooltip = province_is_or_accepts_jewish_tt
+				OR = { 
+					AND = { 
+						religion = jewish
+						has_owner_religion = yes
+					}
+					AND = { 
+						owner = { 
+							secondary_religion = jewish
+						}
+						OR = { 
+							religion = jewish
+							has_owner_religion = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = { 
+		OR = { 
+			custom_trigger_tooltip = { 
+				tooltip = province_is_or_accepts_muslim_tt
+				OR = { 
+					AND = { 
+						religion_group = muslim
+						has_owner_religion = yes
+					}
+					AND = { 
+						owner = { 
+							AND = { 
+								OR = { 
+									secondary_religion = sunni
+									secondary_religion = wahhabi
+									secondary_religion = mahdavi
+									secondary_religion = kejawen_m
+									secondary_religion = shiite
+									secondary_religion = ibadi
+									secondary_religion = ismail
+									secondary_religion = zaidi
+								}
+							}
+						}
+						OR = { 
+							religion_group = muslim
+							has_owner_religion = yes
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = { 
+				tooltip = province_is_or_accepts_christian_tt
+				OR = { 
+					AND = { 
+						religion_group = christian
+						has_owner_religion = yes
+					}
+					AND = { 
+						owner = { 
+							AND = { 
+								OR = { 
+									secondary_religion = catholic
+									secondary_religion = hussite
+									secondary_religion = oriental
+									secondary_religion = protestant
+									secondary_religion = reformed
+									secondary_religion = waldensian
+									secondary_religion = lollard
+									secondary_religion = avignonist
+									secondary_religion = holyleague
+									secondary_religion = orthodox
+									secondary_religion = oriental
+									secondary_religion = assyrian
+									secondary_religion = monothelite
+									secondary_religion = monophysite
+									secondary_religion = bogomilist
+								}
+							}
+						}
+						OR = { 
+							religion_group = christian
+							has_owner_religion = yes
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = { 
+				tooltip = province_is_or_accepts_jewish_tt
+				OR = { 
+					AND = { 
+						religion = jewish
+						has_owner_religion = yes
+					}
+					AND = { 
+						owner = { 
+							secondary_religion = jewish
+						}
+						OR = { 
+							religion = jewish
+							has_owner_religion = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	keep_trigger = { 
+		always = yes
+	}
+	tier_0 = { 
+		upgrade_time = { 
+			months = 0
+		}
+		cost_to_upgrade = { 
+			factor = 0
+		}
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { 
+			remove_province_modifier = holy_city_jerusalem_1
+		}
+	}
+	tier_1 = { 
+		upgrade_time = { 
+			months = 120
+		}
+		cost_to_upgrade = { 
+			factor = 1000
+		}
+		province_modifiers = { }
+		area_modifier = { 
+			local_missionary_strength = 0.01
+		}
+		country_modifiers = { 
+			prestige = 0.1
+			papal_influence = 0.25
+		}
+		on_upgraded = { 
+			owner = { 
+				hidden_effect = { 
+					every_owned_province = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = asx
+									value = 0.001
+								}
+							}
+						}
+						change_variable = { 
+							which = ata
+							value = 5
+						}
+						change_variable = { 
+							which = atb
+							value = 5
+						}
+						if = { 
+							limit = { 
+								AND = { 
+									check_variable = { 
+										which = ata
+										value = 100.001
+									}
+								}
+							}
+							set_variable = { 
+								which = ata
+								value = 100
+							}
+						}
+						else_if = { 
+							limit = { 
+								NOT = { 
+									AND = { 
+										check_variable = { 
+											which = ata
+											value = 0
+										}
+									}
+								}
+							}
+							set_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+						set_province_flag = Unrest_Update
+					}
+				}
+				custom_tooltip = POP_CLLoyProv_5
+			}
+			remove_province_modifier = holy_city_jerusalem_2
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_modifier = holy_city_jerusalem_1
+					}
+				}
+				add_permanent_province_modifier = { 
+					name = holy_city_jerusalem_1
+					duration = -1
+				}
+			}
+		}
+	}
+	tier_2 = { 
+		upgrade_time = { 
+			months = 240
+		}
+		cost_to_upgrade = { 
+			factor = 2000
+		}
+		province_modifiers = { }
+		area_modifier = { 
+			local_missionary_strength = 0.02
+		}
+		country_modifiers = { 
+			prestige = 0.25
+			papal_influence = 0.5
+		}
+		on_upgraded = { 
+			owner = { 
+				hidden_effect = { 
+					every_owned_province = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = asx
+									value = 0.001
+								}
+							}
+						}
+						change_variable = { 
+							which = ata
+							value = 10
+						}
+						change_variable = { 
+							which = atb
+							value = 10
+						}
+						if = { 
+							limit = { 
+								AND = { 
+									check_variable = { 
+										which = ata
+										value = 100.001
+									}
+								}
+							}
+							set_variable = { 
+								which = ata
+								value = 100
+							}
+						}
+						else_if = { 
+							limit = { 
+								NOT = { 
+									AND = { 
+										check_variable = { 
+											which = ata
+											value = 0
+										}
+									}
+								}
+							}
+							set_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+						set_province_flag = Unrest_Update
+					}
+				}
+				custom_tooltip = POP_CLLoyProv_10
+			}
+			remove_province_modifier = holy_city_jerusalem_1
+			remove_province_modifier = holy_city_jerusalem_3
+			add_permanent_province_modifier = { 
+				name = holy_city_jerusalem_2
+				duration = -1
+			}
+		}
+	}
+	tier_3 = { 
+		upgrade_time = { 
+			months = 480
+		}
+		cost_to_upgrade = { 
+			factor = 3000
+		}
+		province_modifiers = { }
+		area_modifier = { 
+			local_missionary_strength = 0.03
+		}
+		country_modifiers = { 
+			prestige = 0.5
+			papal_influence = 1
+		}
+		on_upgraded = { 
+			owner = { 
+				hidden_effect = { 
+					every_owned_province = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = asx
+									value = 0.001
+								}
+							}
+						}
+						change_variable = { 
+							which = ata
+							value = 15
+						}
+						change_variable = { 
+							which = atb
+							value = 15
+						}
+						if = { 
+							limit = { 
+								AND = { 
+									check_variable = { 
+										which = ata
+										value = 100.001
+									}
+								}
+							}
+							set_variable = { 
+								which = ata
+								value = 100
+							}
+						}
+						else_if = { 
+							limit = { 
+								NOT = { 
+									AND = { 
+										check_variable = { 
+											which = ata
+											value = 0
+										}
+									}
+								}
+							}
+							set_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+						set_province_flag = Unrest_Update
+					}
+				}
+				custom_tooltip = POP_CLLoyProv_15
+			}
+			remove_province_modifier = holy_city_jerusalem_2
+			add_permanent_province_modifier = { 
+				name = holy_city_jerusalem_3
+				duration = -1
+			}
+		}
+	}
+}
+kaaba = { 
+	start = 385
+	date = 1000.01.01
+	time = { 
+		months = 0
+	}
+	build_cost = 1000
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 1
+	type = monument
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			tooltip = province_is_or_accepts_muslim_tt
+			OR = { 
+				AND = { 
+					religion_group = muslim
+					has_owner_religion = yes
+				}
+				AND = { 
+					owner = { 
+						AND = { 
+							OR = { 
+								secondary_religion = sunni
+								secondary_religion = wahhabi
+								secondary_religion = mahdavi
+								secondary_religion = kejawen_m
+								secondary_religion = shiite
+								secondary_religion = ibadi
+								secondary_religion = ismail
+								secondary_religion = zaidi
+							}
+						}
+					}
+					OR = { 
+						religion_group = muslim
+						has_owner_religion = yes
+					}
+				}
+			}
+		}
+	}
+	on_built = { 
+		show_ambient_object = kaaba
+		if = { 
+			limit = { 
+				NOT = { 
+					has_province_modifier = kaaba_1
+				}
+			}
+			add_permanent_province_modifier = { 
+				name = kaaba_1
+				duration = -1
+			}
+		}
+	}
+	on_destroyed = { 
+		hide_ambient_object = kaaba
+		remove_province_modifier = kaaba_1
+		remove_province_modifier = kaaba_2
+		remove_province_modifier = kaaba_3
+	}
+	can_use_modifiers_trigger = { 
+		custom_trigger_tooltip = { 
+			tooltip = province_is_or_accepts_muslim_tt
+			OR = { 
+				AND = { 
+					religion_group = muslim
+					has_owner_religion = yes
+				}
+				AND = { 
+					owner = { 
+						AND = { 
+							OR = { 
+								secondary_religion = sunni
+								secondary_religion = wahhabi
+								secondary_religion = mahdavi
+								secondary_religion = kejawen_m
+								secondary_religion = shiite
+								secondary_religion = ibadi
+								secondary_religion = ismail
+								secondary_religion = zaidi
+							}
+						}
+					}
+					OR = { 
+						religion_group = muslim
+						has_owner_religion = yes
+					}
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = { 
+		custom_trigger_tooltip = { 
+			tooltip = province_is_or_accepts_muslim_tt
+			OR = { 
+				AND = { 
+					religion_group = muslim
+					has_owner_religion = yes
+				}
+				AND = { 
+					owner = { 
+						AND = { 
+							OR = { 
+								secondary_religion = sunni
+								secondary_religion = wahhabi
+								secondary_religion = mahdavi
+								secondary_religion = kejawen_m
+								secondary_religion = shiite
+								secondary_religion = ibadi
+								secondary_religion = ismail
+								secondary_religion = zaidi
+							}
+						}
+					}
+					OR = { 
+						religion_group = muslim
+						has_owner_religion = yes
+					}
+				}
+			}
+		}
+	}
+	keep_trigger = { 
+		always = yes
+	}
+	tier_0 = { 
+		upgrade_time = { 
+			months = 0
+		}
+		cost_to_upgrade = { 
+			factor = 0
+		}
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { 
+			remove_province_modifier = kaaba_1
+		}
+	}
+	tier_1 = { 
+		upgrade_time = { 
+			months = 120
+		}
+		cost_to_upgrade = { 
+			factor = 1000
+		}
+		province_modifiers = { }
+		area_modifier = { 
+			local_missionary_strength = 0.01
+		}
+		country_modifiers = { 
+			prestige = 0.1
+		}
+		on_upgraded = { 
+			hidden_effect = { 
+				every_owned_province = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asx
+								value = 0.001
+							}
+						}
+					}
+					change_variable = { 
+						which = ata
+						value = 5
+					}
+					change_variable = { 
+						which = atb
+						value = 5
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = ata
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = ata
+							value = 100
+						}
+					}
+					else_if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = ata
+										value = 0
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = ata
+							value = 0
+						}
+					}
+					set_province_flag = Unrest_Update
+				}
+			}
+			custom_tooltip = POP_CLLoyProv_5
+			remove_province_modifier = kaaba_2
+			if = { 
+				limit = { 
+					NOT = { 
+						has_province_modifier = kaaba_1
+					}
+				}
+				add_permanent_province_modifier = { 
+					name = kaaba_1
+					duration = -1
+				}
+			}
+		}
+	}
+	tier_2 = { 
+		upgrade_time = { 
+			months = 240
+		}
+		cost_to_upgrade = { 
+			factor = 2000
+		}
+		province_modifiers = { }
+		area_modifier = { 
+			local_missionary_strength = 0.02
+		}
+		country_modifiers = { 
+			prestige = 0.25
+		}
+		on_upgraded = { 
+			hidden_effect = { 
+				every_owned_province = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asx
+								value = 0.001
+							}
+						}
+					}
+					change_variable = { 
+						which = ata
+						value = 10
+					}
+					change_variable = { 
+						which = atb
+						value = 10
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = ata
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = ata
+							value = 100
+						}
+					}
+					else_if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = ata
+										value = 0
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = ata
+							value = 0
+						}
+					}
+					set_province_flag = Unrest_Update
+				}
+			}
+			custom_tooltip = POP_CLLoyProv_10
+			remove_province_modifier = kaaba_1
+			remove_province_modifier = kaaba_3
+			add_permanent_province_modifier = { 
+				name = kaaba_2
+				duration = -1
+			}
+		}
+	}
+	tier_3 = { 
+		upgrade_time = { 
+			months = 480
+		}
+		cost_to_upgrade = { 
+			factor = 3000
+		}
+		province_modifiers = { }
+		area_modifier = { 
+			local_missionary_strength = 0.03
+		}
+		country_modifiers = { 
+			prestige = 0.5
+		}
+		on_upgraded = { 
+			hidden_effect = { 
+				every_owned_province = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asx
+								value = 0.001
+							}
+						}
+					}
+					change_variable = { 
+						which = ata
+						value = 15
+					}
+					change_variable = { 
+						which = atb
+						value = 15
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = ata
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = ata
+							value = 100
+						}
+					}
+					else_if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = ata
+										value = 0
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = ata
+							value = 0
+						}
+					}
+					set_province_flag = Unrest_Update
+				}
+			}
+			custom_tooltip = POP_CLLoyProv_15
+			remove_province_modifier = kaaba_2
+			add_permanent_province_modifier = { 
+				name = kaaba_3
+				duration = -1
+			}
+		}
+	}
+}
+stpeters_cathedral = { 
+	start = 2530
+	date = 1626.01.01
+	time = { 
+		months = 120
+	}
+	build_cost = 1000
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 1
+	type = monument
+	build_trigger = { 
+		custom_trigger_tooltip = { 
+			tooltip = province_is_or_accepts_catholic_tt
+			OR = { 
+				tag = ROM
+				AND = { 
+					religion = catholic
+					has_owner_religion = yes
+				}
+				AND = { 
+					owner = { 
+						secondary_religion = catholic
+					}
+					OR = { 
+						religion = catholic
+						has_owner_religion = yes
+					}
+				}
+			}
+		}
+	}
+	on_built = { 
+		show_ambient_object = stpeters
+		owner = { 
+			hidden_effect = { 
+				every_owned_province = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asx
+								value = 0.001
+							}
+						}
+					}
+					change_variable = { 
+						which = ata
+						value = 5
+					}
+					change_variable = { 
+						which = atb
+						value = 5
+					}
+					if = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = ata
+									value = 100.001
+								}
+							}
+						}
+						set_variable = { 
+							which = ata
+							value = 100
+						}
+					}
+					else_if = { 
+						limit = { 
+							NOT = { 
+								AND = { 
+									check_variable = { 
+										which = ata
+										value = 0
+									}
+								}
+							}
+						}
+						set_variable = { 
+							which = ata
+							value = 0
+						}
+					}
+					set_province_flag = Unrest_Update
+				}
+			}
+			custom_tooltip = POP_CLLoyProv_5
+		}
+		add_permanent_province_modifier = { 
+			name = stpeter_cathedral_1
+			duration = -1
+		}
+	}
+	on_destroyed = { 
+		hide_ambient_object = stpeters
+		remove_province_modifier = stpeter_cathedral_1
+		remove_province_modifier = stpeter_cathedral_2
+		remove_province_modifier = stpeter_cathedral_3
+	}
+	can_use_modifiers_trigger = { 
+		custom_trigger_tooltip = { 
+			tooltip = province_is_or_accepts_catholic_tt
+			OR = { 
+				tag = ROM
+				AND = { 
+					religion = catholic
+					has_owner_religion = yes
+				}
+				AND = { 
+					owner = { 
+						secondary_religion = catholic
+					}
+					OR = { 
+						religion = catholic
+						has_owner_religion = yes
+					}
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = { 
+		custom_trigger_tooltip = { 
+			tooltip = province_is_or_accepts_catholic_tt
+			OR = { 
+				tag = ROM
+				AND = { 
+					religion = catholic
+					has_owner_religion = yes
+				}
+				AND = { 
+					owner = { 
+						secondary_religion = catholic
+					}
+					OR = { 
+						religion = catholic
+						has_owner_religion = yes
+					}
+				}
+			}
+		}
+	}
+	keep_trigger = { 
+		always = yes
+	}
+	tier_0 = { 
+		upgrade_time = { 
+			months = 0
+		}
+		cost_to_upgrade = { 
+			factor = 0
+		}
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { 
+			remove_province_modifier = stpeter_cathedral_1
+		}
+	}
+	tier_1 = { 
+		upgrade_time = { 
+			months = 120
+		}
+		cost_to_upgrade = { 
+			factor = 1000
+		}
+		province_modifiers = { }
+		area_modifier = { 
+			local_missionary_strength = 0.01
+		}
+		country_modifiers = { 
+			papal_influence = 0.5
+		}
+		on_upgraded = { 
+			remove_province_modifier = stpeter_cathedral_2
+			add_permanent_province_modifier = { 
+				name = stpeter_cathedral_1
+				duration = -1
+			}
+		}
+	}
+	tier_2 = { 
+		upgrade_time = { 
+			months = 240
+		}
+		cost_to_upgrade = { 
+			factor = 2000
+		}
+		province_modifiers = { }
+		area_modifier = { 
+			local_missionary_strength = 0.02
+		}
+		country_modifiers = { 
+			papal_influence = 1
+		}
+		on_upgraded = { 
+			owner = { 
+				hidden_effect = { 
+					every_owned_province = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = asx
+									value = 0.001
+								}
+							}
+						}
+						change_variable = { 
+							which = ata
+							value = 10
+						}
+						change_variable = { 
+							which = atb
+							value = 10
+						}
+						if = { 
+							limit = { 
+								AND = { 
+									check_variable = { 
+										which = ata
+										value = 100.001
+									}
+								}
+							}
+							set_variable = { 
+								which = ata
+								value = 100
+							}
+						}
+						else_if = { 
+							limit = { 
+								NOT = { 
+									AND = { 
+										check_variable = { 
+											which = ata
+											value = 0
+										}
+									}
+								}
+							}
+							set_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+						set_province_flag = Unrest_Update
+					}
+				}
+				custom_tooltip = POP_CLLoyProv_10
+			}
+			remove_province_modifier = stpeter_cathedral_1
+			remove_province_modifier = stpeter_cathedral_3
+			add_permanent_province_modifier = { 
+				name = stpeter_cathedral_2
+				duration = -1
+			}
+		}
+	}
+	tier_3 = { 
+		upgrade_time = { 
+			months = 480
+		}
+		cost_to_upgrade = { 
+			factor = 3000
+		}
+		province_modifiers = { }
+		area_modifier = { 
+			local_missionary_strength = 0.03
+		}
+		country_modifiers = { 
+			papal_influence = 2
+		}
+		on_upgraded = { 
+			owner = { 
+				hidden_effect = { 
+					every_owned_province = { 
+						limit = { 
+							AND = { 
+								check_variable = { 
+									which = asx
+									value = 0.001
+								}
+							}
+						}
+						change_variable = { 
+							which = ata
+							value = 15
+						}
+						change_variable = { 
+							which = atb
+							value = 15
+						}
+						if = { 
+							limit = { 
+								AND = { 
+									check_variable = { 
+										which = ata
+										value = 100.001
+									}
+								}
+							}
+							set_variable = { 
+								which = ata
+								value = 100
+							}
+						}
+						else_if = { 
+							limit = { 
+								NOT = { 
+									AND = { 
+										check_variable = { 
+											which = ata
+											value = 0
+										}
+									}
+								}
+							}
+							set_variable = { 
+								which = ata
+								value = 0
+							}
+						}
+						set_province_flag = Unrest_Update
+					}
+				}
+				custom_tooltip = POP_CLLoyProv_15
+			}
+			remove_province_modifier = stpeter_cathedral_2
+			add_permanent_province_modifier = { 
+				name = stpeter_cathedral_3
+				duration = -1
+			}
+		}
+	}
+}

@@ -1,0 +1,154 @@
+namespace = flavor_dai
+country_event = { 
+	id = flavor_dai.2
+	title = "flavor_dai.EVTNAME2"
+	desc = "flavor_dai.EVTDESC2"
+	picture = mahayana_temple_destroyed
+	fire_only_once = yes
+	trigger = { 
+		tag = DAI
+		is_year = 1527
+		dynasty = "Mac"
+	}
+	mean_time_to_happen = { 
+		years = 16
+	}
+	option = { 
+		name = "flavor_dai.EVTOPTA2"
+		random_owned_province = { 
+			add_province_modifier = { 
+				name = unsafe_roads
+				duration = 7300
+			}
+		}
+		random_owned_province = { 
+			add_province_modifier = { 
+				name = unsafe_roads
+				duration = 7300
+			}
+		}
+		random_owned_province = { 
+			add_province_modifier = { 
+				name = unsafe_roads
+				duration = 7300
+			}
+		}
+		random_owned_province = { 
+			add_province_modifier = { 
+				name = unsafe_roads
+				duration = 7300
+			}
+		}
+	}
+	option = { 
+		name = "flavor_dai.EVTOPTB2"
+		add_mil_power = -20
+		if = { 
+			limit = { 
+				always = yes
+			}
+			hidden_effect = { 
+				change_variable = { 
+					which = bdq
+					value = -15
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = bdq
+									value = -100
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = bdq
+						value = -100
+					}
+				}
+				else_if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = bdq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = bdq
+						value = 100
+					}
+				}
+				multiply_variable = { 
+					which = bdq
+					value = 0.001
+				}
+				multiply_variable = { 
+					which = bdq
+					value = 1000
+				}
+			}
+			if = { 
+				limit = { 
+					always = yes
+				}
+				custom_tooltip = NO_RelationState_-15
+			}
+		}
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = asn
+							value = 0.001
+						}
+					}
+				}
+				change_variable = { 
+					which = asq
+					value = -15
+				}
+				change_variable = { 
+					which = asr
+					value = -15
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							check_variable = { 
+								which = asq
+								value = 100.001
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 100
+					}
+				}
+				else_if = { 
+					limit = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = asq
+									value = 0
+								}
+							}
+						}
+					}
+					set_variable = { 
+						which = asq
+						value = 0
+					}
+				}
+				set_province_flag = Unrest_Update
+			}
+		}
+		custom_tooltip = POP_NOLoyProv_-15
+	}
+}

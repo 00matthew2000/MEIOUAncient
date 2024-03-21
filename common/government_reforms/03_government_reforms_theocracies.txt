@@ -1,0 +1,240 @@
+theocracy_mechanic = { 
+	has_devotion = yes
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = no
+	royal_marriage = no
+	different_religion_acceptance = -20
+	different_religion_group_acceptance = -50
+	religion = yes
+	heir = no
+	can_customise_heir = no
+	basic_reform = yes
+	valid_for_nation_designer = no
+}
+Pol_Mediumship1 = { 
+	icon = "dutch_republic"
+	allow_normal_conversion = yes
+	potential = { 
+		always = yes
+	}
+	trigger = { 
+		OR = { 
+			NOT = { 
+				religion = catholic
+			}
+			NOT = { 
+				has_reform = Pol_Organisation1
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	has_term_election = no
+	modifiers = { 
+		papal_influence = -1
+	}
+	effect = { 
+		hidden_effect = { 
+			set_variable = { 
+				which = grp
+				value = 0
+			}
+		}
+	}
+	custom_attributes = { 
+		election_on_death = yes
+	}
+}
+Pol_Mediumship2 = { 
+	icon = "pope"
+	allow_normal_conversion = yes
+	legacy_equivalent = Theocracy_Inherited
+	potential = { 
+		always = yes
+	}
+	trigger = { 
+		OR = { 
+			NOT = { 
+				religion = catholic
+			}
+			NOT = { 
+				has_reform = Pol_Organisation1
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	modifiers = { 
+		papal_influence = -1
+	}
+	effect = { 
+		hidden_effect = { 
+			set_variable = { 
+				which = grp
+				value = 1
+			}
+		}
+	}
+}
+Pol_Mediumship3 = { 
+	icon = "religious_leader"
+	allow_normal_conversion = yes
+	legacy_equivalent = Theocracy_Shepardic
+	potential = { 
+		always = yes
+	}
+	trigger = { 
+		OR = { 
+			AND = { 
+				religion = catholic
+				NOT = { 
+					tag = PAP
+				}
+			}
+			has_reform = Pol_Organisation1
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = { 
+		papal_influence = 0.5
+	}
+	effect = { 
+		hidden_effect = { 
+			set_variable = { 
+				which = grp
+				value = 2
+			}
+		}
+	}
+}
+Pol_Mediumship4 = { 
+	icon = "papacy"
+	allow_normal_conversion = no
+	legacy_equivalent = Theocracy_Papal
+	potential = { 
+		OR = { 
+			religion = avignonist
+			religion = catholic
+		}
+	}
+	trigger = { 
+		OR = { 
+			tag = PAP
+			tag = AVI
+		}
+	}
+	valid_for_nation_designer = no
+	papacy = yes
+	allow_convert = no
+	modifiers = { 
+		papal_influence = 0.75
+	}
+	effect = { 
+		hidden_effect = { 
+			set_variable = { 
+				which = grp
+				value = 3
+			}
+		}
+	}
+	custom_attributes = { 
+		locked_government_type = yes
+	}
+}
+Pol_Organisation1 = { 
+	icon = "misl_confederacy"
+	allow_normal_conversion = yes
+	potential = { 
+		always = yes
+	}
+	trigger = { 
+		always = yes
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = { }
+	effect = { 
+		hidden_effect = { 
+			set_variable = { 
+				which = grq
+				value = 0
+			}
+		}
+		if = { 
+			limit = { 
+				religion = catholic
+			}
+			add_government_reform = Pol_Mediumship3
+		}
+	}
+}
+Pol_Organisation2 = { 
+	icon = "ottoman_government"
+	allow_normal_conversion = yes
+	legacy_equivalent = Theocracy_Proselytic
+	potential = { 
+		always = yes
+	}
+	trigger = { 
+		always = yes
+	}
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	monastic = yes
+	modifiers = { }
+	effect = { 
+		hidden_effect = { 
+			set_variable = { 
+				which = grq
+				value = 1
+			}
+		}
+	}
+}
+Pol_Organisation3 = { 
+	icon = "church"
+	allow_normal_conversion = yes
+	potential = { 
+		always = yes
+	}
+	trigger = { 
+		always = yes
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = { }
+	effect = { 
+		hidden_effect = { 
+			set_variable = { 
+				which = grq
+				value = 2
+			}
+		}
+	}
+}
+Pol_Organisation4 = { 
+	icon = "nayankara_system"
+	allow_normal_conversion = yes
+	potential = { 
+		always = yes
+	}
+	trigger = { 
+		always = yes
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = { }
+	effect = { 
+		hidden_effect = { 
+			set_variable = { 
+				which = grq
+				value = 3
+			}
+		}
+		change_government = monarchy
+		remove_country_modifier = Teuton_Pilgrims
+		remove_country_modifier = Livonian_Pilgrims
+	}
+}

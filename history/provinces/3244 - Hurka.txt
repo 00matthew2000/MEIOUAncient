@@ -1,0 +1,33 @@
+owner = MWK
+controller = MWK
+add_core = MWK
+capital = "Ningguta"
+trade_goods = wheat
+culture = jurcen
+religion = mahayana
+hre = no
+base_tax = 4
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+	set_province_flag = mined_goods
+	set_province_flag = iron
+	set_province_flag = ginseng
+}

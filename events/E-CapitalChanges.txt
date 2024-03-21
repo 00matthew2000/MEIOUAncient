@@ -1,0 +1,1002 @@
+namespace = flavor_uef
+namespace = capital_city
+country_event = { 
+	id = flavor_uef.001
+	title = "flavor_uef.001_title"
+	desc = "flavor_uef.001_desc"
+	picture = GREAT_BUILDING_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = "flavor_uef.001.opta"
+		trigger = { 
+			owns_core_province = 183
+		}
+		ai_chance = { 
+			factor = 30
+		}
+		hidden_effect = { 
+			clr_country_flag = changed_capital_by_event
+			set_country_flag = changed_capital_by_event
+		}
+		set_capital = 183
+	}
+	option = { 
+		name = "flavor_uef.001.optb"
+		trigger = { 
+			owns_core_province = 3375
+		}
+		ai_chance = { 
+			factor = 40
+		}
+		hidden_effect = { 
+			clr_country_flag = changed_capital_by_event
+			set_country_flag = changed_capital_by_event
+		}
+		set_capital = 3375
+	}
+	option = { 
+		name = "flavor_uef.001.optc"
+		trigger = { 
+			owns_core_province = 176
+		}
+		ai_chance = { 
+			factor = 5
+		}
+		hidden_effect = { 
+			clr_country_flag = changed_capital_by_event
+			set_country_flag = changed_capital_by_event
+		}
+		set_capital = 176
+	}
+	option = { 
+		name = "flavor_uef.001.optd"
+		trigger = { 
+			owns_core_province = 178
+		}
+		ai_chance = { 
+			factor = 10
+		}
+		name = "flavor_uef.001.optd"
+		hidden_effect = { 
+			clr_country_flag = changed_capital_by_event
+			set_country_flag = changed_capital_by_event
+		}
+		set_capital = 178
+	}
+	option = { 
+		name = "flavor_uef.001.opte"
+		ai_chance = { 
+			factor = 15
+		}
+	}
+}
+country_event = { 
+	id = capital_city.001
+	title = "EVT_AI"
+	desc = "EVT_AI"
+	picture = GREAT_BUILDING_eventPicture
+	is_triggered_only = yes
+	trigger = { 
+		ai = yes
+		num_of_cities = 3
+		NOT = { 
+			is_colonial_nation = yes
+			has_country_flag = civil_war_rebel_tag
+		}
+		capital_scope = { 
+			NOT = { 
+				AND = { 
+					check_variable = { 
+						which = aar
+						value = 120
+					}
+				}
+			}
+		}
+		OR = { 
+			NOT = { 
+				has_country_flag = changed_capital_by_event
+			}
+			had_country_flag = { 
+				flag = changed_capital_by_event
+				days = 2
+			}
+		}
+	}
+	immediate = { 
+		if = { 
+			limit = { 
+				capital_scope = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = aar
+								value = 120
+							}
+						}
+					}
+				}
+				any_owned_province = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 120
+						}
+					}
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 120
+						}
+					}
+				}
+				save_event_target_as = new_capital
+			}
+		}
+		else_if = { 
+			limit = { 
+				capital_scope = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = aar
+								value = 100
+							}
+						}
+					}
+				}
+				any_owned_province = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 100
+						}
+					}
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 100
+						}
+					}
+				}
+				save_event_target_as = new_capital
+			}
+		}
+		else_if = { 
+			limit = { 
+				capital_scope = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = aar
+								value = 80
+							}
+						}
+					}
+				}
+				any_owned_province = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 80
+						}
+					}
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 80
+						}
+					}
+				}
+				save_event_target_as = new_capital
+			}
+		}
+		else_if = { 
+			limit = { 
+				capital_scope = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = aar
+								value = 60
+							}
+						}
+					}
+				}
+				any_owned_province = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 60
+						}
+					}
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 60
+						}
+					}
+				}
+				save_event_target_as = new_capital
+			}
+		}
+		else_if = { 
+			limit = { 
+				capital_scope = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = aar
+								value = 40
+							}
+						}
+					}
+				}
+				any_owned_province = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 40
+						}
+					}
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 40
+						}
+					}
+				}
+				save_event_target_as = new_capital
+			}
+		}
+		else_if = { 
+			limit = { 
+				capital_scope = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = aar
+								value = 20
+							}
+						}
+					}
+				}
+				any_owned_province = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 20
+						}
+					}
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 20
+						}
+					}
+				}
+				save_event_target_as = new_capital
+			}
+		}
+		else_if = { 
+			limit = { 
+				capital_scope = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = aar
+								value = 10
+							}
+						}
+					}
+				}
+				any_owned_province = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 10
+						}
+					}
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 10
+						}
+					}
+				}
+				save_event_target_as = new_capital
+			}
+		}
+		else_if = { 
+			limit = { 
+				capital_scope = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = aar
+								value = 5
+							}
+						}
+					}
+				}
+				any_owned_province = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 5
+						}
+					}
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 5
+						}
+					}
+				}
+				save_event_target_as = new_capital
+			}
+		}
+		else_if = { 
+			limit = { 
+				capital_scope = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = aar
+								value = 1
+							}
+						}
+					}
+				}
+				any_owned_province = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 1
+						}
+					}
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 1
+						}
+					}
+				}
+				save_event_target_as = new_capital
+			}
+		}
+	}
+	option = { 
+		name = "EVT_AI"
+		if = { 
+			limit = { 
+				has_saved_event_target = new_capital
+			}
+			log = "FE-CapitalChanges:[GetYear]:[Root.GetName]:changed capital from [Root.Capital.GetName] (city: [Root.Capital.GetCapitalName]) to [new_capital.GetName] (city: [new_capital.GetCapitalName]):capital_city.001"
+			hidden_effect = { 
+				clr_country_flag = changed_capital_by_event
+				set_country_flag = changed_capital_by_event
+			}
+			set_capital = event_target:new_capital
+		}
+	}
+}
+country_event = { 
+	id = capital_city.002
+	title = "EVT_AI"
+	desc = "EVT_AI"
+	picture = GREAT_BUILDING_eventPicture
+	is_triggered_only = yes
+	trigger = { 
+		ai = yes
+		num_of_cities = 3
+		NOT = { 
+			is_colonial_nation = yes
+			has_country_flag = civil_war_rebel_tag
+		}
+		NOT = { 
+			AND = { 
+				tag = PAP
+				NOT = { 
+					has_global_flag = DG_Babylonian_Captivity_Ends
+				}
+			}
+		}
+		capital_scope = { 
+			NOT = { 
+				AND = { 
+					check_variable = { 
+						which = aar
+						value = 120
+					}
+				}
+			}
+		}
+		OR = { 
+			NOT = { 
+				has_country_flag = changed_capital_by_event
+			}
+			had_country_flag = { 
+				flag = changed_capital_by_event
+				days = 18250
+			}
+		}
+	}
+	immediate = { 
+		if = { 
+			limit = { 
+				capital_scope = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = aar
+								value = 120
+							}
+						}
+					}
+				}
+				any_owned_province = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 150
+						}
+					}
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 150
+						}
+					}
+				}
+				save_event_target_as = new_capital
+			}
+		}
+		else_if = { 
+			limit = { 
+				capital_scope = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = aar
+								value = 100
+							}
+						}
+					}
+				}
+				any_owned_province = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 130
+						}
+					}
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 130
+						}
+					}
+				}
+				save_event_target_as = new_capital
+			}
+		}
+		else_if = { 
+			limit = { 
+				capital_scope = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = aar
+								value = 80
+							}
+						}
+					}
+				}
+				any_owned_province = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 110
+						}
+					}
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 110
+						}
+					}
+				}
+				save_event_target_as = new_capital
+			}
+		}
+		else_if = { 
+			limit = { 
+				capital_scope = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = aar
+								value = 60
+							}
+						}
+					}
+				}
+				any_owned_province = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 90
+						}
+					}
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 90
+						}
+					}
+				}
+				save_event_target_as = new_capital
+			}
+		}
+		else_if = { 
+			limit = { 
+				capital_scope = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = aar
+								value = 40
+							}
+						}
+					}
+				}
+				any_owned_province = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 70
+						}
+					}
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 70
+						}
+					}
+				}
+				save_event_target_as = new_capital
+			}
+		}
+		else_if = { 
+			limit = { 
+				capital_scope = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = aar
+								value = 20
+							}
+						}
+					}
+				}
+				any_owned_province = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 40
+						}
+					}
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 40
+						}
+					}
+				}
+				save_event_target_as = new_capital
+			}
+		}
+		else_if = { 
+			limit = { 
+				capital_scope = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = aar
+								value = 10
+							}
+						}
+					}
+				}
+				any_owned_province = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 20
+						}
+					}
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 20
+						}
+					}
+				}
+				save_event_target_as = new_capital
+			}
+		}
+		else_if = { 
+			limit = { 
+				capital_scope = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = aar
+								value = 6
+							}
+						}
+					}
+				}
+				any_owned_province = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 12
+						}
+					}
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 12
+						}
+					}
+				}
+				save_event_target_as = new_capital
+			}
+		}
+		else_if = { 
+			limit = { 
+				capital_scope = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = aar
+								value = 3
+							}
+						}
+					}
+				}
+				any_owned_province = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 6
+						}
+					}
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 6
+						}
+					}
+				}
+				save_event_target_as = new_capital
+			}
+		}
+		else_if = { 
+			limit = { 
+				capital_scope = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = aar
+								value = 1
+							}
+						}
+					}
+				}
+				any_owned_province = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 2
+						}
+					}
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 2
+						}
+					}
+				}
+				save_event_target_as = new_capital
+			}
+		}
+		else_if = { 
+			limit = { 
+				capital_scope = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = aar
+								value = 0.001
+							}
+						}
+					}
+				}
+				any_owned_province = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 0.1
+						}
+					}
+				}
+			}
+			random_owned_province = { 
+				limit = { 
+					culture = ROOT
+					any_neighbor_province = { 
+						owned_by = ROOT
+					}
+					AND = { 
+						check_variable = { 
+							which = aar
+							value = 0.1
+						}
+					}
+				}
+				save_event_target_as = new_capital
+			}
+		}
+	}
+	option = { 
+		name = "EVT_AI"
+		if = { 
+			limit = { 
+				has_saved_event_target = new_capital
+			}
+			log = "FE-CapitalChanges:[GetYear]:[Root.GetName]:changed capital from [Root.Capital.GetName] (city: [Root.Capital.GetCapitalName]) to [new_capital.GetName] (city: [new_capital.GetCapitalName]):capital_city.002"
+			hidden_effect = { 
+				clr_country_flag = changed_capital_by_event
+				set_country_flag = changed_capital_by_event
+			}
+			set_capital = event_target:new_capital
+			add_adm_power = -200
+		}
+	}
+}

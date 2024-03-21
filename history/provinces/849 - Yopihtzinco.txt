@@ -1,0 +1,26 @@
+owner = TLP
+controller = TLP
+add_core = TLP
+capital = "Chilipantzinco"
+trade_goods = cotton
+culture = tlapanec
+religion = nahuatl
+hre = no
+base_tax = 16
+base_production = 0
+base_manpower = 1
+is_city = yes
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_province_flag = TN_Harbour_Minor
+	set_province_flag = TN_Natural_Minor
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+	set_province_flag = coal
+	add_permanent_province_modifier = { 
+		name = urban_goods_naval_supplies
+		duration = -1
+	}
+}

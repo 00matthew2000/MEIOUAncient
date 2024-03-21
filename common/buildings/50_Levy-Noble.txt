@@ -1,0 +1,395 @@
+levy_noble_no = { 
+	cost = 0
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		always = no
+	}
+	keep_trigger = { 
+		has_building = levy_noble_no
+	}
+	modifier = { }
+	ai_will_do = { 
+		factor = 0
+	}
+	on_destroyed = { 
+		if = { 
+			limit = { 
+				NOT = { 
+					has_building = levy_noble_low
+					has_building = levy_noble_med
+					has_building = levy_noble_high
+				}
+			}
+			add_building = levy_noble_no
+		}
+	}
+	on_built = { }
+	on_obsolete = { }
+}
+levy_noble_low = { 
+	cost = 0
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		is_core = ROOT
+		owner = { 
+			AND = { 
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bbg
+							value = 2
+						}
+					}
+				}
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bba
+							value = 2
+						}
+					}
+				}
+				PREV = { 
+					NOT = { 
+						is_owned_by_trade_company = yes
+					}
+				}
+				PREV = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = atc
+								value = 90
+							}
+						}
+					}
+				}
+				PREV = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = abb
+								value = 75
+							}
+						}
+					}
+				}
+			}
+		}
+		NOT = { 
+			has_building = levy_noble_med
+			has_building = levy_noble_high
+		}
+	}
+	keep_trigger = { 
+		is_core = ROOT
+		owner = { 
+			AND = { 
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bbg
+							value = 2
+						}
+					}
+				}
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bba
+							value = 2
+						}
+					}
+				}
+				PREV = { 
+					NOT = { 
+						is_owned_by_trade_company = yes
+					}
+				}
+				PREV = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = atc
+								value = 90
+							}
+						}
+					}
+				}
+				PREV = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = abb
+								value = 75
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		remove_building = levy_noble_no
+	}
+	on_destroyed = { 
+		if = { 
+			limit = { 
+				NOT = { 
+					has_building = levy_noble_med
+					has_building = levy_noble_high
+				}
+			}
+			add_building = levy_noble_no
+		}
+	}
+	on_obsolete = { }
+}
+levy_noble_med = { 
+	cost = 0
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		is_core = ROOT
+		owner = { 
+			AND = { 
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bbg
+							value = 2
+						}
+					}
+				}
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bba
+							value = 2
+						}
+					}
+				}
+				PREV = { 
+					NOT = { 
+						is_owned_by_trade_company = yes
+					}
+				}
+				PREV = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = atc
+								value = 90
+							}
+						}
+					}
+				}
+				PREV = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = abb
+								value = 75
+							}
+						}
+					}
+				}
+			}
+		}
+		NOT = { 
+			has_building = levy_noble_high
+		}
+	}
+	keep_trigger = { 
+		is_core = ROOT
+		owner = { 
+			AND = { 
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bbg
+							value = 2
+						}
+					}
+				}
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bba
+							value = 2
+						}
+					}
+				}
+				PREV = { 
+					NOT = { 
+						is_owned_by_trade_company = yes
+					}
+				}
+				PREV = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = atc
+								value = 90
+							}
+						}
+					}
+				}
+				PREV = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = abb
+								value = 75
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		remove_building = levy_noble_no
+		remove_building = levy_noble_low
+	}
+	on_destroyed = { 
+		if = { 
+			limit = { 
+				NOT = { 
+					has_building = levy_noble_high
+				}
+			}
+			add_building = levy_noble_low
+		}
+	}
+	on_obsolete = { }
+}
+levy_noble_high = { 
+	cost = 0
+	time = 0
+	potential = { 
+		always = yes
+	}
+	build_trigger = { 
+		is_core = ROOT
+		owner = { 
+			AND = { 
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bbg
+							value = 2
+						}
+					}
+				}
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bba
+							value = 2
+						}
+					}
+				}
+				PREV = { 
+					NOT = { 
+						is_owned_by_trade_company = yes
+					}
+				}
+				PREV = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = atc
+								value = 90
+							}
+						}
+					}
+				}
+				PREV = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = abb
+								value = 75
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	keep_trigger = { 
+		is_core = ROOT
+		owner = { 
+			AND = { 
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bbg
+							value = 2
+						}
+					}
+				}
+				NOT = { 
+					AND = { 
+						check_variable = { 
+							which = bba
+							value = 2
+						}
+					}
+				}
+				PREV = { 
+					NOT = { 
+						is_owned_by_trade_company = yes
+					}
+				}
+				PREV = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = atc
+								value = 90
+							}
+						}
+					}
+				}
+				PREV = { 
+					NOT = { 
+						AND = { 
+							check_variable = { 
+								which = abb
+								value = 75
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	ai_will_do = { 
+		factor = 0
+	}
+	on_built = { 
+		remove_building = levy_noble_no
+		remove_building = levy_noble_low
+		remove_building = levy_noble_med
+	}
+	on_destroyed = { 
+		add_building = levy_noble_med
+	}
+	on_obsolete = { }
+}

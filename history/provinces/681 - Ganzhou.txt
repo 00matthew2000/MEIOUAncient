@@ -1,0 +1,58 @@
+owner = YUA
+controller = YUA
+capital = "Gan"
+trade_goods = lumber
+culture = hakka
+religion = mahayana
+hre = no
+base_tax = 22
+base_production = 3
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gcj
+	value = 3
+}
+set_variable = { 
+	which = gck
+	value = 3
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = baf
+		value = 87
+	}
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+}
+985.1.1 = { 
+	owner = SNG
+	controller = SNG
+	add_core = SNG
+}
+1200.1.1 = { 
+	set_province_flag = mined_goods
+	set_province_flag = copper
+}
+1276.1.1 = { 
+	owner = CNG
+	controller = CNG
+	add_core = CNG
+}
+1320.1.1 = { 
+	add_core = YUA
+	remove_core = SNG
+}

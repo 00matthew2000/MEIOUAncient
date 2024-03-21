@@ -1,0 +1,42 @@
+owner = HEJ
+controller = HEJ
+add_core = HEJ
+capital = "'Abha"
+trade_goods = wheat
+culture = hejazi
+religion = shiite
+hre = no
+base_tax = 16
+base_production = 1
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+fort_14th = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 50.000
+	}
+	set_variable = { 
+		which = atc
+		value = 80.000
+	}
+}
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+	set_province_flag = seasalt
+	set_province_flag = dates
+}

@@ -1,0 +1,42 @@
+owner = ECB
+controller = ECB
+add_core = ECB
+capital = "Coba"
+trade_goods = cotton
+culture = yucatecan
+religion = mayan
+hre = no
+base_tax = 32
+base_production = 2
+base_manpower = 2
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gci
+	value = 2
+}
+set_variable = { 
+	which = gch
+	value = 2
+}
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_province_flag = TN_Port
+	add_permanent_province_modifier = { 
+		name = urban_goods_naval_supplies
+		duration = -1
+	}
+	set_province_flag = saltmarsh
+	set_variable = { 
+		which = amh
+		value = 18.000
+	}
+	set_variable = { 
+		which = ami
+		value = 4.000
+	}
+}

@@ -1,0 +1,24 @@
+owner = AUT
+controller = AUT
+add_core = AUT
+capital = "Cihuatlan"
+trade_goods = fish
+culture = tecos
+religion = nahuatl
+hre = no
+base_tax = 10
+base_production = 0
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 1
+}
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+	set_province_flag = seasalt
+}

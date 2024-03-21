@@ -1,0 +1,55 @@
+owner = QIN
+controller = QIN
+capital = "Lanzhou"
+trade_goods = wheat
+culture = guanzhong
+religion = mahayana
+hre = no
+base_tax = 7
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 7.000
+	}
+	set_province_flag = TN_Important
+	set_province_flag = TN_Silk
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+	set_province_flag = mined_goods
+	set_province_flag = silver
+	set_province_flag = TN_Natural_Minor
+}
+1276.1.1 = { 
+	owner = YUA
+	controller = YUA
+	add_core = YUA
+}
+1351.1.1 = { 
+	owner = QIN
+	controller = QIN
+	add_core = QIN
+	add_core = CTA
+}

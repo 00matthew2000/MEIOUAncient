@@ -1,0 +1,27 @@
+owner = PEG
+controller = PEG
+add_core = PEG
+capital = "Ye"
+trade_goods = rice
+culture = monic
+religion = theravada
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = indian
+discovered_by = austranesian
+discovered_by = muslim
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+	set_province_flag = seasalt
+	set_province_flag = fruits
+}

@@ -1,0 +1,40 @@
+royal_marriage = { 
+	first = BUR
+	second = FLA
+	start_date = 1356.1.10
+	end_date = 1361.11.21
+}
+royal_marriage = { 
+	first = LUX
+	second = BRB
+	start_date = 1356.1.10
+	end_date = 1361.11.21
+}
+dependency = { 
+	subject_type = "personal_union"
+	first = FLA
+	second = NEV
+	start_date = 1346.1.2
+	end_date = 1363.9.6
+}
+dependency = { 
+	subject_type = "personal_union"
+	first = HOL
+	second = HAI
+	start_date = 1356.1.10
+	end_date = 1432.12.31
+}
+dependency = { 
+	subject_type = "custom_vassal"
+	first = HAI
+	second = NAM
+	start_date = 1356.1.10
+	end_date = 1362.1.18
+}
+dependency = { 
+	subject_type = "personal_union"
+	first = LUX
+	second = BRB
+	start_date = 1355.12.5
+	end_date = 1383.12.8
+}

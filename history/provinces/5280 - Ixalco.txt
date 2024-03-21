@@ -1,0 +1,21 @@
+owner = PIP
+controller = PIP
+add_core = PIP
+capital = "Ixalco"
+trade_goods = pepper
+culture = pipil
+religion = nahuatl
+hre = no
+base_tax = 11
+base_production = 0
+base_manpower = 2
+is_city = yes
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+	set_province_flag = dyes
+	set_province_flag = cacao
+}

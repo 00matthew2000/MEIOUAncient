@@ -1,0 +1,5980 @@
+Privilege_BUOffice0 = { 
+	icon = BUOffice_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUOffice0Has
+			AND = { 
+				is_variable_equal = { 
+					which = noh
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUOffice0_description
+		custom_tooltip = Privilege_BUOffice0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.1
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUOffice1 = { 
+	icon = BUOffice_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUOffice1Has
+			AND = { 
+				is_variable_equal = { 
+					which = noh
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUOffice1_description
+		custom_tooltip = Privilege_BUOffice1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.1
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUOffice2 = { 
+	icon = BUOffice_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUOffice2Has
+			AND = { 
+				is_variable_equal = { 
+					which = noh
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUOffice2_description
+		custom_tooltip = Privilege_BUOffice2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.1
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUFarm0 = { 
+	icon = BUFarm_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUFarm0Has
+			AND = { 
+				is_variable_equal = { 
+					which = noi
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUFarm0_description
+		custom_tooltip = Privilege_BUFarm0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.2
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUFarm1 = { 
+	icon = BUFarm_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUFarm1Has
+			AND = { 
+				is_variable_equal = { 
+					which = noi
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUFarm1_description
+		custom_tooltip = Privilege_BUFarm1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.2
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUFarm2 = { 
+	icon = BUFarm_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUFarm2Has
+			AND = { 
+				is_variable_equal = { 
+					which = noi
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUFarm2_description
+		custom_tooltip = Privilege_BUFarm2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.2
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUTenure0 = { 
+	icon = BUTenure_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUTenure0Has
+			AND = { 
+				is_variable_equal = { 
+					which = noj
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUTenure0_description
+		custom_tooltip = Privilege_BUTenure0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.3
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUTenure1 = { 
+	icon = BUTenure_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUTenure1Has
+			AND = { 
+				is_variable_equal = { 
+					which = noj
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUTenure1_description
+		custom_tooltip = Privilege_BUTenure1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.3
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUTenure2 = { 
+	icon = BUTenure_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUTenure2Has
+			AND = { 
+				is_variable_equal = { 
+					which = noj
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUTenure2_description
+		custom_tooltip = Privilege_BUTenure2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.3
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUWages0 = { 
+	icon = BUWages_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUWages0Has
+			AND = { 
+				is_variable_equal = { 
+					which = nok
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUWages0_description
+		custom_tooltip = Privilege_BUWages0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.4
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUWages1 = { 
+	icon = BUWages_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUWages1Has
+			AND = { 
+				is_variable_equal = { 
+					which = nok
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUWages1_description
+		custom_tooltip = Privilege_BUWages1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.4
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUWages2 = { 
+	icon = BUWages_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUWages2Has
+			AND = { 
+				is_variable_equal = { 
+					which = nok
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUWages2_description
+		custom_tooltip = Privilege_BUWages2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.4
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUWages3 = { 
+	icon = BUWages_3
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUWages3Has
+			AND = { 
+				is_variable_equal = { 
+					which = nok
+					value = 3
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUWages3_description
+		custom_tooltip = Privilege_BUWages3_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.4
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUHierarchy0 = { 
+	icon = BUHierarchy_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUHierarchy0Has
+			AND = { 
+				is_variable_equal = { 
+					which = nol
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUHierarchy0_description
+		custom_tooltip = Privilege_BUHierarchy0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.5
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUHierarchy1 = { 
+	icon = BUHierarchy_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUHierarchy1Has
+			AND = { 
+				is_variable_equal = { 
+					which = nol
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUHierarchy1_description
+		custom_tooltip = Privilege_BUHierarchy1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.5
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUHierarchy2 = { 
+	icon = BUHierarchy_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUHierarchy2Has
+			AND = { 
+				is_variable_equal = { 
+					which = nol
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUHierarchy2_description
+		custom_tooltip = Privilege_BUHierarchy2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.5
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUHire0 = { 
+	icon = BUHire_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUHire0Has
+			AND = { 
+				is_variable_equal = { 
+					which = nom
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUHire0_description
+		custom_tooltip = Privilege_BUHire0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.6
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUHire1 = { 
+	icon = BUHire_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUHire1Has
+			AND = { 
+				is_variable_equal = { 
+					which = nom
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUHire1_description
+		custom_tooltip = Privilege_BUHire1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.6
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUHire2 = { 
+	icon = BUHire_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUHire2Has
+			AND = { 
+				is_variable_equal = { 
+					which = nom
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUHire2_description
+		custom_tooltip = Privilege_BUHire2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.6
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUHire3 = { 
+	icon = BUHire_3
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUHire3Has
+			AND = { 
+				is_variable_equal = { 
+					which = nom
+					value = 3
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUHire3_description
+		custom_tooltip = Privilege_BUHire3_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.6
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUHire4 = { 
+	icon = BUHire_4
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUHire4Has
+			AND = { 
+				is_variable_equal = { 
+					which = nom
+					value = 4
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUHire4_description
+		custom_tooltip = Privilege_BUHire4_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.6
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUExams0 = { 
+	icon = BUExams_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUExams0Has
+			AND = { 
+				is_variable_equal = { 
+					which = non
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUExams0_description
+		custom_tooltip = Privilege_BUExams0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.7
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUExams1 = { 
+	icon = BUExams_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUExams1Has
+			AND = { 
+				is_variable_equal = { 
+					which = non
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUExams1_description
+		custom_tooltip = Privilege_BUExams1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.7
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUExams2 = { 
+	icon = BUExams_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUExams2Has
+			AND = { 
+				is_variable_equal = { 
+					which = non
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUExams2_description
+		custom_tooltip = Privilege_BUExams2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.7
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUExams3 = { 
+	icon = BUExams_3
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUExams3Has
+			AND = { 
+				is_variable_equal = { 
+					which = non
+					value = 3
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUExams3_description
+		custom_tooltip = Privilege_BUExams3_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.7
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUOversight0 = { 
+	icon = BUOversight_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUOversight0Has
+			AND = { 
+				is_variable_equal = { 
+					which = noo
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUOversight0_description
+		custom_tooltip = Privilege_BUOversight0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.8
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUOversight1 = { 
+	icon = BUOversight_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUOversight1Has
+			AND = { 
+				is_variable_equal = { 
+					which = noo
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUOversight1_description
+		custom_tooltip = Privilege_BUOversight1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.8
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUOversight2 = { 
+	icon = BUOversight_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUOversight2Has
+			AND = { 
+				is_variable_equal = { 
+					which = noo
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUOversight2_description
+		custom_tooltip = Privilege_BUOversight2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.8
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUEnlist0 = { 
+	icon = BUEnlist_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUEnlist0Has
+			AND = { 
+				is_variable_equal = { 
+					which = nop
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUEnlist0_description
+		custom_tooltip = Privilege_BUEnlist0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.9
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUEnlist1 = { 
+	icon = BUEnlist_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUEnlist1Has
+			AND = { 
+				is_variable_equal = { 
+					which = nop
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUEnlist1_description
+		custom_tooltip = Privilege_BUEnlist1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.9
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUEnlist2 = { 
+	icon = BUEnlist_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUEnlist2Has
+			AND = { 
+				is_variable_equal = { 
+					which = nop
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUEnlist2_description
+		custom_tooltip = Privilege_BUEnlist2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.9
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUStructure0 = { 
+	icon = BUStructure_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUStructure0Has
+			AND = { 
+				is_variable_equal = { 
+					which = noq
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUStructure0_description
+		custom_tooltip = Privilege_BUStructure0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.10
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUStructure1 = { 
+	icon = BUStructure_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUStructure1Has
+			AND = { 
+				is_variable_equal = { 
+					which = noq
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUStructure1_description
+		custom_tooltip = Privilege_BUStructure1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.10
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUStructure2 = { 
+	icon = BUStructure_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUStructure2Has
+			AND = { 
+				is_variable_equal = { 
+					which = noq
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUStructure2_description
+		custom_tooltip = Privilege_BUStructure2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.10
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUStructure3 = { 
+	icon = BUStructure_3
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUStructure3Has
+			AND = { 
+				is_variable_equal = { 
+					which = noq
+					value = 3
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUStructure3_description
+		custom_tooltip = Privilege_BUStructure3_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.10
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUCourts0 = { 
+	icon = BUCourts_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUCourts0Has
+			AND = { 
+				is_variable_equal = { 
+					which = nor
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUCourts0_description
+		custom_tooltip = Privilege_BUCourts0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.11
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUCourts1 = { 
+	icon = BUCourts_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUCourts1Has
+			AND = { 
+				is_variable_equal = { 
+					which = nor
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUCourts1_description
+		custom_tooltip = Privilege_BUCourts1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.11
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUCourts2 = { 
+	icon = BUCourts_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUCourts2Has
+			AND = { 
+				is_variable_equal = { 
+					which = nor
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUCourts2_description
+		custom_tooltip = Privilege_BUCourts2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.11
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUCourts3 = { 
+	icon = BUCourts_3
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUCourts3Has
+			AND = { 
+				is_variable_equal = { 
+					which = nor
+					value = 3
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUCourts3_description
+		custom_tooltip = Privilege_BUCourts3_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.11
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUPolitics0 = { 
+	icon = BUPolitics_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUPolitics0Has
+			AND = { 
+				is_variable_equal = { 
+					which = not
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUPolitics0_description
+		custom_tooltip = Privilege_BUPolitics0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.12
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUPolitics1 = { 
+	icon = BUPolitics_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUPolitics1Has
+			AND = { 
+				is_variable_equal = { 
+					which = not
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUPolitics1_description
+		custom_tooltip = Privilege_BUPolitics1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.12
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUPolitics2 = { 
+	icon = BUPolitics_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUPolitics2Has
+			AND = { 
+				is_variable_equal = { 
+					which = not
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUPolitics2_description
+		custom_tooltip = Privilege_BUPolitics2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.12
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BUPolitics3 = { 
+	icon = BUPolitics_3
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BUPolitics3Has
+			AND = { 
+				is_variable_equal = { 
+					which = not
+					value = 3
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BUPolitics3_description
+		custom_tooltip = Privilege_BUPolitics3_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.12
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BURotate0 = { 
+	icon = BURotate_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BURotate0Has
+			AND = { 
+				is_variable_equal = { 
+					which = noy
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BURotate0_description
+		custom_tooltip = Privilege_BURotate0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.13
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_BURotate1 = { 
+	icon = BURotate_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_BURotate1Has
+			AND = { 
+				is_variable_equal = { 
+					which = noy
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_BUChange
+			NOT = { 
+				has_country_modifier = Prov_BUBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_BURotate1_description
+		custom_tooltip = Privilege_BURotate1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.13
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOProcessing0 = { 
+	icon = NOProcessing_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOProcessing0Has
+			AND = { 
+				is_variable_equal = { 
+					which = khx
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOProcessing0_description
+		custom_tooltip = Privilege_NOProcessing0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.14
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOProcessing1 = { 
+	icon = NOProcessing_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOProcessing1Has
+			AND = { 
+				is_variable_equal = { 
+					which = khx
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOProcessing1_description
+		custom_tooltip = Privilege_NOProcessing1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.14
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOProcessing2 = { 
+	icon = NOProcessing_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOProcessing2Has
+			AND = { 
+				is_variable_equal = { 
+					which = khx
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOProcessing2_description
+		custom_tooltip = Privilege_NOProcessing2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.14
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOGame0 = { 
+	icon = NOGame_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOGame0Has
+			AND = { 
+				is_variable_equal = { 
+					which = khy
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOGame0_description
+		custom_tooltip = Privilege_NOGame0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.15
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOGame1 = { 
+	icon = NOGame_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOGame1Has
+			AND = { 
+				is_variable_equal = { 
+					which = khy
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOGame1_description
+		custom_tooltip = Privilege_NOGame1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.15
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOGame2 = { 
+	icon = NOGame_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOGame2Has
+			AND = { 
+				is_variable_equal = { 
+					which = khy
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOGame2_description
+		custom_tooltip = Privilege_NOGame2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.15
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOForestry0 = { 
+	icon = NOForestry_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOForestry0Has
+			AND = { 
+				is_variable_equal = { 
+					which = khz
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOForestry0_description
+		custom_tooltip = Privilege_NOForestry0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.16
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOForestry1 = { 
+	icon = NOForestry_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOForestry1Has
+			AND = { 
+				is_variable_equal = { 
+					which = khz
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOForestry1_description
+		custom_tooltip = Privilege_NOForestry1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.16
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOForestry2 = { 
+	icon = NOForestry_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOForestry2Has
+			AND = { 
+				is_variable_equal = { 
+					which = khz
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOForestry2_description
+		custom_tooltip = Privilege_NOForestry2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.16
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOSeigneurial0 = { 
+	icon = NOSeigneurial_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOSeigneurial0Has
+			AND = { 
+				is_variable_equal = { 
+					which = kia
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOSeigneurial0_description
+		custom_tooltip = Privilege_NOSeigneurial0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.17
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOSeigneurial1 = { 
+	icon = NOSeigneurial_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOSeigneurial1Has
+			AND = { 
+				is_variable_equal = { 
+					which = kia
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOSeigneurial1_description
+		custom_tooltip = Privilege_NOSeigneurial1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.17
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOSeigneurial2 = { 
+	icon = NOSeigneurial_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOSeigneurial2Has
+			AND = { 
+				is_variable_equal = { 
+					which = kia
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOSeigneurial2_description
+		custom_tooltip = Privilege_NOSeigneurial2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.17
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOSeigneurial3 = { 
+	icon = NOSeigneurial_3
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOSeigneurial3Has
+			AND = { 
+				is_variable_equal = { 
+					which = kia
+					value = 3
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOSeigneurial3_description
+		custom_tooltip = Privilege_NOSeigneurial3_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.17
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOTitles0 = { 
+	icon = NOTitles_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOTitles0Has
+			AND = { 
+				is_variable_equal = { 
+					which = auy
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOTitles0_description
+		custom_tooltip = Privilege_NOTitles0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.18
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOTitles1 = { 
+	icon = NOTitles_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOTitles1Has
+			AND = { 
+				is_variable_equal = { 
+					which = auy
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOTitles1_description
+		custom_tooltip = Privilege_NOTitles1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.18
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOTitles2 = { 
+	icon = NOTitles_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOTitles2Has
+			AND = { 
+				is_variable_equal = { 
+					which = auy
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOTitles2_description
+		custom_tooltip = Privilege_NOTitles2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.18
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOTitles3 = { 
+	icon = NOTitles_3
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOTitles3Has
+			AND = { 
+				is_variable_equal = { 
+					which = auy
+					value = 3
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOTitles3_description
+		custom_tooltip = Privilege_NOTitles3_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.18
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOTitles4 = { 
+	icon = NOTitles_4
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOTitles4Has
+			AND = { 
+				is_variable_equal = { 
+					which = auy
+					value = 4
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOTitles4_description
+		custom_tooltip = Privilege_NOTitles4_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.18
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOTitles5 = { 
+	icon = NOTitles_5
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOTitles5Has
+			AND = { 
+				is_variable_equal = { 
+					which = auy
+					value = 5
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOTitles5_description
+		custom_tooltip = Privilege_NOTitles5_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.18
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOAutonomy0 = { 
+	icon = NOAutonomy_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOAutonomy0Has
+			AND = { 
+				is_variable_equal = { 
+					which = kid
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOAutonomy0_description
+		custom_tooltip = Privilege_NOAutonomy0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.19
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOAutonomy1 = { 
+	icon = NOAutonomy_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOAutonomy1Has
+			AND = { 
+				is_variable_equal = { 
+					which = kid
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOAutonomy1_description
+		custom_tooltip = Privilege_NOAutonomy1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.19
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOAutonomy2 = { 
+	icon = NOAutonomy_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOAutonomy2Has
+			AND = { 
+				is_variable_equal = { 
+					which = kid
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOAutonomy2_description
+		custom_tooltip = Privilege_NOAutonomy2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.19
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOAutonomy3 = { 
+	icon = NOAutonomy_3
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOAutonomy3Has
+			AND = { 
+				is_variable_equal = { 
+					which = kid
+					value = 3
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOAutonomy3_description
+		custom_tooltip = Privilege_NOAutonomy3_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.19
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOAutonomy4 = { 
+	icon = NOAutonomy_4
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOAutonomy4Has
+			AND = { 
+				is_variable_equal = { 
+					which = kid
+					value = 4
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOAutonomy4_description
+		custom_tooltip = Privilege_NOAutonomy4_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.19
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOAutonomy5 = { 
+	icon = NOAutonomy_5
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOAutonomy5Has
+			AND = { 
+				is_variable_equal = { 
+					which = kid
+					value = 5
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOAutonomy5_description
+		custom_tooltip = Privilege_NOAutonomy5_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.19
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NODiplomacy0 = { 
+	icon = NODiplomacy_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NODiplomacy0Has
+			AND = { 
+				is_variable_equal = { 
+					which = kie
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NODiplomacy0_description
+		custom_tooltip = Privilege_NODiplomacy0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.20
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NODiplomacy1 = { 
+	icon = NODiplomacy_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NODiplomacy1Has
+			AND = { 
+				is_variable_equal = { 
+					which = kie
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NODiplomacy1_description
+		custom_tooltip = Privilege_NODiplomacy1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.20
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NODiplomacy2 = { 
+	icon = NODiplomacy_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NODiplomacy2Has
+			AND = { 
+				is_variable_equal = { 
+					which = kie
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NODiplomacy2_description
+		custom_tooltip = Privilege_NODiplomacy2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.20
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NODynastic0 = { 
+	icon = NODynastic_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NODynastic0Has
+			AND = { 
+				is_variable_equal = { 
+					which = kif
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NODynastic0_description
+		custom_tooltip = Privilege_NODynastic0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.21
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NODynastic1 = { 
+	icon = NODynastic_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NODynastic1Has
+			AND = { 
+				is_variable_equal = { 
+					which = kif
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NODynastic1_description
+		custom_tooltip = Privilege_NODynastic1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.21
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NODynastic2 = { 
+	icon = NODynastic_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NODynastic2Has
+			AND = { 
+				is_variable_equal = { 
+					which = kif
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NODynastic2_description
+		custom_tooltip = Privilege_NODynastic2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.21
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOHierarchy0 = { 
+	icon = NOHierarchy_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOHierarchy0Has
+			AND = { 
+				is_variable_equal = { 
+					which = kig
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOHierarchy0_description
+		custom_tooltip = Privilege_NOHierarchy0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.22
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOHierarchy1 = { 
+	icon = NOHierarchy_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOHierarchy1Has
+			AND = { 
+				is_variable_equal = { 
+					which = kig
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOHierarchy1_description
+		custom_tooltip = Privilege_NOHierarchy1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.22
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOHierarchy2 = { 
+	icon = NOHierarchy_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOHierarchy2Has
+			AND = { 
+				is_variable_equal = { 
+					which = kig
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOHierarchy2_description
+		custom_tooltip = Privilege_NOHierarchy2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.22
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOHierarchy3 = { 
+	icon = NOHierarchy_3
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOHierarchy3Has
+			AND = { 
+				is_variable_equal = { 
+					which = kig
+					value = 3
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOHierarchy3_description
+		custom_tooltip = Privilege_NOHierarchy3_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.22
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOTaxE0 = { 
+	icon = NOTaxE_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOTaxE0Has
+			AND = { 
+				is_variable_equal = { 
+					which = lqy
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOTaxE0_description
+		custom_tooltip = Privilege_NOTaxE0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.23
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOTaxE1 = { 
+	icon = NOTaxE_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOTaxE1Has
+			AND = { 
+				is_variable_equal = { 
+					which = lqy
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOTaxE1_description
+		custom_tooltip = Privilege_NOTaxE1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.23
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOTaxE2 = { 
+	icon = NOTaxE_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOTaxE2Has
+			AND = { 
+				is_variable_equal = { 
+					which = lqy
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOTaxE2_description
+		custom_tooltip = Privilege_NOTaxE2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.23
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOTaxE3 = { 
+	icon = NOTaxE_3
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOTaxE3Has
+			AND = { 
+				is_variable_equal = { 
+					which = lqy
+					value = 3
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOTaxE3_description
+		custom_tooltip = Privilege_NOTaxE3_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.23
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOTaxE4 = { 
+	icon = NOTaxE_4
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOTaxE4Has
+			AND = { 
+				is_variable_equal = { 
+					which = lqy
+					value = 4
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOTaxE4_description
+		custom_tooltip = Privilege_NOTaxE4_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.23
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOTaxE5 = { 
+	icon = NOTaxE_5
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOTaxE5Has
+			AND = { 
+				is_variable_equal = { 
+					which = lqy
+					value = 5
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOTaxE5_description
+		custom_tooltip = Privilege_NOTaxE5_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.23
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOServiceE0 = { 
+	icon = NOServiceE_0
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOServiceE0Has
+			AND = { 
+				is_variable_equal = { 
+					which = lqz
+					value = 0
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOServiceE0_description
+		custom_tooltip = Privilege_NOServiceE0_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.24
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOServiceE1 = { 
+	icon = NOServiceE_1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOServiceE1Has
+			AND = { 
+				is_variable_equal = { 
+					which = lqz
+					value = 1
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOServiceE1_description
+		custom_tooltip = Privilege_NOServiceE1_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.24
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOServiceE2 = { 
+	icon = NOServiceE_2
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOServiceE2Has
+			AND = { 
+				is_variable_equal = { 
+					which = lqz
+					value = 2
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOServiceE2_description
+		custom_tooltip = Privilege_NOServiceE2_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.24
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOServiceE3 = { 
+	icon = NOServiceE_3
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOServiceE3Has
+			AND = { 
+				is_variable_equal = { 
+					which = lqz
+					value = 3
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOServiceE3_description
+		custom_tooltip = Privilege_NOServiceE3_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.24
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOServiceE4 = { 
+	icon = NOServiceE_4
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOServiceE4Has
+			AND = { 
+				is_variable_equal = { 
+					which = lqz
+					value = 4
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOServiceE4_description
+		custom_tooltip = Privilege_NOServiceE4_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.24
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}
+Privilege_NOServiceE5 = { 
+	icon = NOServiceE_5
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	can_select = { 
+		hidden_trigger = { 
+			ai = no
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Privilege_NOServiceE5Has
+			AND = { 
+				is_variable_equal = { 
+					which = lqz
+					value = 5
+				}
+			}
+		}
+	}
+	can_revoke = { 
+		custom_trigger_tooltip = { 
+			tooltip = Pow_NOChange
+			NOT = { 
+				has_country_modifier = Prov_NOBlock
+			}
+		}
+		custom_trigger_tooltip = { 
+			tooltip = Pow_PrivilegeChange
+			NOT = { 
+				has_country_modifier = Prov_PrivilegeUIBlock
+			}
+		}
+	}
+	on_granted = { }
+	on_revoked = { 
+		custom_tooltip = Privilege_NOServiceE5_description
+		custom_tooltip = Privilege_NOServiceE5_effects
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						has_country_flag = Privilege_Change
+					}
+					NOT = { 
+						has_country_flag = Reset_UI
+					}
+				}
+				country_event = { 
+					id = Privilege.24
+				}
+				add_country_modifier = { 
+					name = Prov_PrivilegeUIBlock
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { 
+		factor = 0
+	}
+}

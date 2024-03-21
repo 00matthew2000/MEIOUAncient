@@ -1,0 +1,548 @@
+defined_text = { 
+	name = Disp_MilLayer
+	random = no
+	text = { 
+		localisation_key = Disp_Mil_0
+		trigger = { 
+			OR = { 
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = ayx
+							value = 0
+						}
+					}
+					owner = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = atc
+									value = 50
+								}
+							}
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = ayx
+							value = 2
+						}
+					}
+					owner = { 
+						AND = { 
+							check_variable = { 
+								which = atc
+								value = 50
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Disp_Mil_1
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ayx
+					value = 1
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Disp_Mil_2
+		trigger = { 
+			OR = { 
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = ayx
+							value = 2
+						}
+					}
+					owner = { 
+						NOT = { 
+							AND = { 
+								check_variable = { 
+									which = atc
+									value = 50
+								}
+							}
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = ayx
+							value = 0
+						}
+					}
+					owner = { 
+						AND = { 
+							check_variable = { 
+								which = atc
+								value = 50
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = Disp_Mil_3
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = ayx
+					value = 3
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = ForeignManpower
+	random = no
+	text = { 
+		localisation_key = ForeignManpower
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = njg
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Ghazi_MPDisp
+	random = no
+	text = { 
+		localisation_key = Ghazi_MPDisp
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = qbz
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Teuton_MPDisp
+	random = no
+	text = { 
+		localisation_key = Teuton_MPDisp
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = qbq
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Knights_MPDisp
+	random = no
+	text = { 
+		localisation_key = Knights_MPDisp
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = qbt
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = BU_SpecialMP
+	random = no
+	text = { 
+		localisation_key = BU_SpecialMP
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = qbj
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = TR_SpecialMP
+	random = no
+	text = { 
+		localisation_key = TR_SpecialMP
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = qbb
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = NO_SpecialMP
+	random = no
+	text = { 
+		localisation_key = NO_SpecialMP
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = qal
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = BG_SpecialMP
+	random = no
+	text = { 
+		localisation_key = BG_SpecialMP
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = qat
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Disp_BGProv
+	random = no
+	text = { 
+		localisation_key = Disp_BGProv
+		trigger = { 
+			OR = { 
+				AND = { 
+					check_variable = { 
+						which = ktf
+						value = 0.001
+					}
+				}
+				AND = { 
+					check_variable = { 
+						which = ksx
+						value = 0.001
+					}
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = BU_SFRecruit
+	random = no
+	text = { 
+		localisation_key = BU_SFRecruit
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = kwh
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = BU_RERecruit
+	random = no
+	text = { 
+		localisation_key = BU_RERecruit
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = kwp
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = BU_NOOfficer
+	random = no
+	text = { 
+		localisation_key = BU_NOOfficer
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = kvj
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = BU_BGOfficer
+	random = no
+	text = { 
+		localisation_key = BU_BGOfficer
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = kvr
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = BU_CLOfficer
+	random = no
+	text = { 
+		localisation_key = BU_CLOfficer
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = kvz
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = TR_BGOfficer
+	random = no
+	text = { 
+		localisation_key = TR_BGOfficer
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = ktv
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = TR_CLOfficer
+	random = no
+	text = { 
+		localisation_key = TR_CLOfficer
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = kud
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = TR_RERecruits
+	random = no
+	text = { 
+		localisation_key = TR_RERecruits
+		trigger = { 
+			AND = { 
+				check_variable = { 
+					which = kut
+					value = 0.001
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = BU_ArmyType
+	random = no
+	text = { 
+		localisation_key = BU_ConscriptsTxt
+		trigger = { 
+			owner = { 
+				AND = { 
+					check_variable = { 
+						which = bca
+						value = 2
+					}
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = BU_VolunteersTxt
+		trigger = { 
+			owner = { 
+				AND = { 
+					is_variable_equal = { 
+						which = bca
+						value = 1
+					}
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = BU_LeviesTxt
+		trigger = { 
+			owner = { 
+				AND = { 
+					is_variable_equal = { 
+						which = bca
+						value = 0
+					}
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Disp_Mil_Desc
+	random = no
+	text = { 
+		localisation_key = Disp_Mil_Desc
+		trigger = { 
+			AND = { 
+				is_variable_equal = { 
+					which = ayx
+					value = 0
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Mil_Fill1
+	random = no
+	text = { 
+		localisation_key = Mil_Fill1
+		trigger = { 
+			NOT = { 
+				AND = { 
+					is_variable_equal = { 
+						which = rhm
+						value = 0
+					}
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Mil_Fill2
+	random = no
+	text = { 
+		localisation_key = Mil_Fill2
+		trigger = { 
+			NOT = { 
+				AND = { 
+					is_variable_equal = { 
+						which = rhn
+						value = 0
+					}
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Mil_Fill5
+	random = no
+	text = { 
+		localisation_key = Mil_Fill5
+		trigger = { 
+			NOT = { 
+				AND = { 
+					is_variable_equal = { 
+						which = rho
+						value = 0
+					}
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Mil_Fill21
+	random = no
+	text = { 
+		localisation_key = Mil_Fill21
+		trigger = { 
+			NOT = { 
+				AND = { 
+					is_variable_equal = { 
+						which = rhp
+						value = 0
+					}
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Mil_Fill22
+	random = no
+	text = { 
+		localisation_key = Mil_Fill22
+		trigger = { 
+			NOT = { 
+				AND = { 
+					is_variable_equal = { 
+						which = rhq
+						value = 0
+					}
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Mil_Fill24
+	random = no
+	text = { 
+		localisation_key = Mil_Fill24
+		trigger = { 
+			NOT = { 
+				AND = { 
+					is_variable_equal = { 
+						which = rhr
+						value = 0
+					}
+				}
+			}
+		}
+	}
+}
+defined_text = { 
+	name = Mil_Fill41
+	random = no
+	text = { 
+		localisation_key = Mil_Fill41
+		trigger = { 
+			NOT = { 
+				AND = { 
+					is_variable_equal = { 
+						which = rhs
+						value = 0
+					}
+				}
+			}
+		}
+	}
+}

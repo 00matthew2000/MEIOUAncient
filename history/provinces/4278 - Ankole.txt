@@ -1,0 +1,32 @@
+owner = NKO
+controller = NKO
+add_core = NKO
+capital = "Ankolee"
+trade_goods = millet
+culture = ganda
+religion = bantu_pagan
+hre = no
+base_tax = 10
+base_production = 1
+base_manpower = 0
+is_city = yes
+discovered_by = central_african
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 3.325
+	}
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+	set_province_flag = mined_goods
+	set_province_flag = salt
+	set_province_flag = TN_Minor
+}

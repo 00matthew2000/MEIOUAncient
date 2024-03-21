@@ -1,0 +1,34 @@
+owner = MAL
+controller = MAL
+add_core = MAL
+capital = "Benga"
+trade_goods = rice
+culture = dogon
+religion = sunni
+hre = no
+base_tax = 6
+base_production = 0
+base_manpower = 1
+is_city = yes
+discovered_by = muslim
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 15.000
+	}
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+}
+1356.1.1 = { 
+	add_core = JNN
+}

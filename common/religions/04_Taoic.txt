@@ -1,0 +1,172 @@
+buddhism = { 
+	flags_with_emblem_percentage = 33
+	flag_emblem_index_range = { 58 80}
+	theravada = { 
+		color = { 0.9 0.6 0.5}
+		icon = 17
+		allowed_conversion = { vajrayana mahayana}
+		country = { 
+			global_missionary_strength = 0.01
+			tolerance_of_heretics_capacity = 1
+			prestige = 1
+			tolerance_heretic = 1
+			tolerance_heathen = 2
+			mercenary_cost = -0.20
+			years_of_nationalism = 5
+		}
+		country_as_secondary = { 
+			prestige = 1
+			tolerance_heretic = 1
+			tolerance_heathen = 2
+			mercenary_cost = -0.20
+			years_of_nationalism = 5
+			tolerance_own = -1
+		}
+		on_convert = { 
+			change_religion = theravada
+		}
+		uses_piety = yes
+		has_patriarchs = yes
+		misguided_heretic = yes
+		heretic = { Fundamentalist Sectarian Populist Reactionary Millenarian Apocalyptic Ultraorthodox Humanistic Syncretic Messianic}
+	}
+	vajrayana = { 
+		color = { 1.0 0.3 0.0}
+		icon = 20
+		allowed_conversion = { mahayana theravada}
+		country = { 
+			tolerance_of_heretics_capacity = 1
+			legitimacy = 0.50
+			republican_tradition = 0.25
+			horde_unity = 0.25
+			devotion = 1
+			tolerance_heretic = 1
+			global_unrest = -1
+			land_maintenance_modifier = 0.05
+		}
+		country_as_secondary = { 
+			legitimacy = 0.50
+			republican_tradition = 0.25
+			horde_unity = 0.25
+			devotion = 1
+			tolerance_heretic = 1
+			global_unrest = -1
+			land_maintenance_modifier = 0.05
+			tolerance_own = -1
+			global_missionary_strength = -0.01
+		}
+		on_convert = { 
+			change_religion = vajrayana
+		}
+		uses_piety = yes
+		has_patriarchs = yes
+		misguided_heretic = yes
+		heretic = { Fundamentalist Sectarian Populist Reactionary Millenarian Apocalyptic Ultraorthodox Humanistic Syncretic Messianic}
+	}
+	mahayana = { 
+		color = { 0.6 0.0 0.0}
+		icon = 19
+		allowed_conversion = { theravada vajrayana}
+		country = { 
+			tolerance_of_heretics_capacity = 1
+			tolerance_heretic = 1
+			tolerance_heathen = 1
+			prestige = 0.5
+			idea_cost = -0.10
+			free_leader_pool = 1
+			global_autonomy = 0.05
+		}
+		country_as_secondary = { 
+			tolerance_heretic = 1
+			tolerance_heathen = 1
+			prestige = 0.5
+			idea_cost = -0.10
+			free_leader_pool = 1
+			global_autonomy = 0.05
+			tolerance_own = -1
+			global_missionary_strength = -0.01
+		}
+		on_convert = { 
+			change_religion = mahayana
+		}
+		uses_piety = yes
+		has_patriarchs = yes
+		misguided_heretic = yes
+		heretic = { Fundamentalist Sectarian Populist Reactionary Millenarian Apocalyptic Ultraorthodox Humanistic Syncretic Messianic}
+	}
+	kejawen_b = { 
+		color = { 0.6 0.2 0.1}
+		icon = 19
+		allowed_conversion = { }
+		country = { 
+			tolerance_of_heretics_capacity = 1
+			tolerance_heretic = 1
+			tolerance_heathen = 1
+			prestige = 0.5
+			idea_cost = -0.10
+			free_leader_pool = 1
+			global_autonomy = 0.05
+		}
+		country_as_secondary = { 
+			tolerance_heretic = 1
+			tolerance_heathen = 1
+			prestige = 0.5
+			idea_cost = -0.10
+			free_leader_pool = 1
+			global_autonomy = 0.05
+			tolerance_own = -1
+			global_missionary_strength = -0.01
+		}
+		on_convert = { 
+			change_religion = kejawen_b
+		}
+		uses_piety = yes
+		has_patriarchs = yes
+		misguided_heretic = yes
+		heretic = { Fundamentalist Sectarian Populist Reactionary Millenarian Apocalyptic Ultraorthodox Humanistic Syncretic Messianic}
+	}
+	crusade_name = HOLY_WAR
+}
+philosophy = { 
+	flags_with_emblem_percentage = 33
+	flag_emblem_index_range = { 58 80}
+	confucianism = { 
+		color = { 0.9 0.4 0.8}
+		icon = 18
+		province = { }
+		country = { 
+			global_missionary_strength = -0.01
+			tolerance_of_heretics_capacity = 1
+			tolerance_heretic = 1
+			tolerance_heathen = 1
+			global_unrest = -2
+			ae_impact = -0.1
+			improve_relation_modifier = 0.25
+			prestige = 0.5
+			legitimacy = -0.25
+			republican_tradition = -0.5
+			horde_unity = -0.5
+			devotion = -0.1
+			tolerance_own = -0.5
+		}
+		country_as_secondary = { 
+			global_missionary_strength = -0.02
+			tolerance_heretic = 1
+			tolerance_heathen = 1
+			global_unrest = -2
+			ae_impact = -0.1
+			improve_relation_modifier = 0.25
+			prestige = 0.5
+			legitimacy = -0.25
+			republican_tradition = -0.5
+			horde_unity = -0.5
+			devotion = -0.1
+			tolerance_own = -1.5
+		}
+		uses_piety = yes
+		has_patriarchs = yes
+		misguided_heretic = yes
+		heretic = { Fundamentalist Sectarian Populist Reactionary Millenarian Apocalyptic Ultraorthodox Humanistic Syncretic Messianic}
+	}
+	crusade_name = HOLY_WAR
+}

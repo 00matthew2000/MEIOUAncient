@@ -1,0 +1,27 @@
+owner = IGB
+controller = IGB
+add_core = IGB
+capital = "Igumale"
+trade_goods = palm
+culture = igala
+religion = odinala
+hre = no
+base_tax = 10
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 60.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+	set_province_flag = spices
+}

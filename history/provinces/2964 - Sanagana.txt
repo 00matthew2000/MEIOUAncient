@@ -1,0 +1,36 @@
+owner = MAL
+controller = MAL
+add_core = MAL
+capital = "Awlil"
+trade_goods = palm_date
+culture = sanhaja
+religion = sunni
+hre = no
+base_tax = 1
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 5.000
+	}
+	set_variable = { 
+		which = atc
+		value = 90.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+	set_province_flag = mined_goods
+	set_province_flag = salt
+	set_province_flag = dates
+}
+1356.1.1 = { 
+	add_core = SNJ
+}

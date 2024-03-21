@@ -1,0 +1,25 @@
+owner = SLL
+controller = SLL
+add_core = SLL
+capital = "Asosa"
+trade_goods = wool
+culture = shilluk
+religion = lotuko_pagan
+hre = no
+base_tax = 6
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = east_african
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 1.5
+	}
+}

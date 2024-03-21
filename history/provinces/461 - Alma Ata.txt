@@ -1,0 +1,54 @@
+owner = MGH
+controller = MGH
+add_core = MGH
+capital = "Almatu"
+trade_goods = wheat
+culture = tartar
+religion = sunni
+base_tax = 9
+base_production = 1
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = muslim
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 70.000
+	}
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_province_flag = TN_Major
+	set_province_flag = TN_NorthernSilk
+	set_province_flag = TN_Natural_Important
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+	set_province_flag = mined_goods
+	set_province_flag = lead
+	set_province_flag = silk_road_town
+}
+1225.1.1 = { 
+	owner = ZUN
+	controller = ZUN
+	add_core = ZUN
+}
+1310.1.1 = { 
+	owner = MGH
+	controller = MGH
+	add_core = MGH
+}

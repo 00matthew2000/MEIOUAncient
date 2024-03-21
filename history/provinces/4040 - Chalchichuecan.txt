@@ -1,0 +1,18 @@
+capital = "Chalchichuecan"
+trade_goods = maize
+culture = totonac
+religion = cocijo
+hre = no
+base_tax = 4
+base_production = 0
+base_manpower = 0
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_province_flag = TN_Harbour_Minor
+	set_province_flag = TN_Natural_Minor
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+	set_province_flag = gold
+}

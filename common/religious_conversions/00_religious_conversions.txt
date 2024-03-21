@@ -1,0 +1,2101 @@
+propagate_religion_policy = { 
+	trading_policy = yes
+	map_icon = GFX_religious_conversion_center_trading_policy
+	base_conversion_speed = 0.75
+	target_province_weights = { 
+		factor = 5.0
+		modifier = { 
+			factor = 0
+			has_missionary = yes
+		}
+		modifier = { 
+			factor = 0
+			is_empty = yes
+		}
+		modifier = { 
+			factor = 0
+			province_id = 2530
+		}
+		modifier = { 
+			factor = 0
+			has_province_modifier = religious_center
+		}
+		modifier = { 
+			factor = 0
+			has_province_modifier = religious_zeal_at_conv
+		}
+		modifier = { 
+			factor = 0.25
+			religion_group = muslim
+		}
+		modifier = { 
+			factor = 0.25
+			has_port = no
+		}
+		modifier = { 
+			factor = 1.15
+			has_province_modifier = trading_settlement
+		}
+		modifier = { 
+			factor = 1.5
+			has_province_modifier = islamic_missionaries
+		}
+		modifier = { 
+			factor = 1.5
+			has_province_modifier = muslim_sailor_community
+		}
+		modifier = { 
+			factor = 2
+			OR = { 
+				any_neighbor_province = { 
+					religion = FROM
+				}
+				has_port = yes
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				religion = FROM
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			owner = { 
+				religion_group = FROM
+			}
+		}
+	}
+}
+catholic_center_of_reformation = { 
+	religion = catholic
+	map_icon = GFX_religious_conversion_center_protestant
+	max_distance = 100.0
+	base_conversion_speed = 0.75
+	target_province_weights = { 
+		factor = 0.01
+		modifier = { 
+			factor = 100
+			has_global_flag = DG_Counter_Reformation
+		}
+		modifier = { 
+			factor = 2.0
+			owner = { 
+				religion = catholic
+			}
+			culture = owner
+		}
+		modifier = { 
+			factor = 2.5
+			owner = { 
+				religion = catholic
+			}
+			culture_group = owner
+		}
+		modifier = { 
+			factor = 2.0
+			owner = { 
+				NOT = { 
+					religion = catholic
+				}
+			}
+			NOT = { 
+				culture = owner
+			}
+		}
+		modifier = { 
+			factor = 2.5
+			owner = { 
+				NOT = { 
+					religion = catholic
+				}
+			}
+			NOT = { 
+				culture_group = owner
+			}
+		}
+		modifier = { 
+			factor = 0
+			has_missionary = yes
+		}
+		modifier = { 
+			factor = 0
+			is_empty = yes
+		}
+		modifier = { 
+			factor = 0
+			has_province_modifier = religious_center
+		}
+		modifier = { 
+			factor = 0
+			has_province_modifier = religious_zeal_at_conv
+		}
+		modifier = { 
+			factor = 1.2
+			OR = { 
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adv
+							value = 1
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwg
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adx
+							value = 1
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwh
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adz
+							value = 1
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwi
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aeb
+							value = 1
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwj
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aed
+							value = 1
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwk
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aef
+							value = 1
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwl
+							value = 5
+						}
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.2
+			OR = { 
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adv
+							value = 1
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwg
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adx
+							value = 1
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwh
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adz
+							value = 1
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwi
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aeb
+							value = 1
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwj
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aed
+							value = 1
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwk
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aef
+							value = 1
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwl
+							value = 10
+						}
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 0
+			NOT = { 
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+		}
+		modifier = { 
+			factor = 0
+			NOT = { 
+				continent = FROM
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				num_of_cardinals = 1
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				num_of_cardinals = 2
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				num_of_cardinals = 3
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				num_of_cardinals = 4
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				num_of_cardinals = 5
+			}
+		}
+		modifier = { 
+			factor = 3.0
+			owner = { 
+				religion = FROM
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				religion_group = FROM
+			}
+		}
+		modifier = { 
+			factor = 2.0
+			owner = { 
+				has_country_flag = silence_02
+			}
+		}
+		modifier = { 
+			factor = 2.0
+			owner = { 
+				has_country_flag = silence_03
+			}
+		}
+		modifier = { 
+			factor = 3
+			culture_group = FROM
+		}
+		modifier = { 
+			factor = 5
+			culture = FROM
+		}
+	}
+}
+protestant_center_of_reformation = { 
+	religion = protestant
+	map_icon = GFX_religious_conversion_center_protestant
+	max_distance = 100.0
+	base_conversion_speed = 0.75
+	target_province_weights = { 
+		factor = 1.0
+		modifier = { 
+			factor = 2.0
+			owner = { 
+				religion = protestant
+			}
+			culture = owner
+		}
+		modifier = { 
+			factor = 2.5
+			owner = { 
+				religion = protestant
+			}
+			culture_group = owner
+		}
+		modifier = { 
+			factor = 2.0
+			owner = { 
+				NOT = { 
+					religion = protestant
+				}
+			}
+			NOT = { 
+				culture = owner
+			}
+		}
+		modifier = { 
+			factor = 2.5
+			owner = { 
+				NOT = { 
+					religion = protestant
+				}
+			}
+			NOT = { 
+				culture_group = owner
+			}
+		}
+		modifier = { 
+			factor = 0
+			has_missionary = yes
+		}
+		modifier = { 
+			factor = 0
+			is_empty = yes
+		}
+		modifier = { 
+			factor = 0
+			province_id = 2530
+		}
+		modifier = { 
+			factor = 0
+			has_province_modifier = religious_center
+		}
+		modifier = { 
+			factor = 0
+			has_province_modifier = religious_zeal_at_conv
+		}
+		modifier = { 
+			factor = 1.2
+			OR = { 
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adv
+							value = 2
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwg
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adx
+							value = 2
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwh
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adz
+							value = 2
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwi
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aeb
+							value = 2
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwj
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aed
+							value = 2
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwk
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aef
+							value = 2
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwl
+							value = 5
+						}
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.2
+			OR = { 
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adv
+							value = 2
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwg
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adx
+							value = 2
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwh
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adz
+							value = 2
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwi
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aeb
+							value = 2
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwj
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aed
+							value = 2
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwk
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aef
+							value = 2
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwl
+							value = 10
+						}
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			religion = lollard
+		}
+		modifier = { 
+			factor = 1.5
+			religion = hussite
+		}
+		modifier = { 
+			factor = 0.5
+			religion = waldensian
+		}
+		modifier = { 
+			factor = 0.25
+			religion = reformed
+		}
+		modifier = { 
+			factor = 0
+			NOT = { 
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+		}
+		modifier = { 
+			factor = 0
+			NOT = { 
+				continent = FROM
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 1
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 2
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 3
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 4
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 5
+			}
+		}
+		modifier = { 
+			factor = 3.0
+			owner = { 
+				religion = FROM
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				religion_group = FROM
+			}
+		}
+		modifier = { 
+			factor = 0.2
+			owner = { 
+				has_country_flag = silence_02
+			}
+		}
+		modifier = { 
+			factor = 0.2
+			owner = { 
+				has_country_flag = silence_03
+			}
+		}
+		modifier = { 
+			factor = 3
+			culture_group = FROM
+		}
+		modifier = { 
+			factor = 5
+			culture = FROM
+		}
+	}
+}
+reformed_center_of_reformation = { 
+	religion = reformed
+	map_icon = GFX_religious_conversion_center_protestant
+	max_distance = 100.0
+	base_conversion_speed = 0.75
+	target_province_weights = { 
+		factor = 1.0
+		modifier = { 
+			factor = 2.0
+			owner = { 
+				religion = reformed
+			}
+			culture = owner
+		}
+		modifier = { 
+			factor = 2.5
+			owner = { 
+				religion = reformed
+			}
+			culture_group = owner
+		}
+		modifier = { 
+			factor = 2.0
+			owner = { 
+				NOT = { 
+					religion = reformed
+				}
+			}
+			NOT = { 
+				culture = owner
+			}
+		}
+		modifier = { 
+			factor = 2.5
+			owner = { 
+				NOT = { 
+					religion = reformed
+				}
+			}
+			NOT = { 
+				culture_group = owner
+			}
+		}
+		modifier = { 
+			factor = 0
+			has_missionary = yes
+		}
+		modifier = { 
+			factor = 0
+			is_empty = yes
+		}
+		modifier = { 
+			factor = 0
+			province_id = 2530
+		}
+		modifier = { 
+			factor = 0
+			has_province_modifier = religious_center
+		}
+		modifier = { 
+			factor = 0
+			has_province_modifier = religious_zeal_at_conv
+		}
+		modifier = { 
+			factor = 1.2
+			OR = { 
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adv
+							value = 5
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwg
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adx
+							value = 5
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwh
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adz
+							value = 5
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwi
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aeb
+							value = 5
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwj
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aed
+							value = 5
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwk
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aef
+							value = 5
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwl
+							value = 5
+						}
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.2
+			OR = { 
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adv
+							value = 5
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwg
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adx
+							value = 5
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwh
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adz
+							value = 5
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwi
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aeb
+							value = 5
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwj
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aed
+							value = 5
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwk
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aef
+							value = 5
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwl
+							value = 10
+						}
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.5
+			religion = lollard
+		}
+		modifier = { 
+			factor = 0.5
+			religion = hussite
+		}
+		modifier = { 
+			factor = 1.5
+			religion = waldensian
+		}
+		modifier = { 
+			factor = 0.25
+			religion = protestant
+		}
+		modifier = { 
+			factor = 0
+			NOT = { 
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+		}
+		modifier = { 
+			factor = 0
+			NOT = { 
+				continent = FROM
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 1
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 2
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 3
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 4
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 5
+			}
+		}
+		modifier = { 
+			factor = 3.0
+			owner = { 
+				religion = FROM
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				religion_group = FROM
+			}
+		}
+		modifier = { 
+			factor = 0.2
+			owner = { 
+				has_country_flag = silence_02
+			}
+		}
+		modifier = { 
+			factor = 0.2
+			owner = { 
+				has_country_flag = silence_03
+			}
+		}
+		modifier = { 
+			factor = 3
+			culture_group = FROM
+		}
+		modifier = { 
+			factor = 5
+			culture = FROM
+		}
+	}
+}
+hussite_center_of_reformation = { 
+	religion = hussite
+	map_icon = GFX_religious_conversion_center_protestant
+	max_distance = 50.0
+	base_conversion_speed = 0.75
+	target_province_weights = { 
+		factor = 1.0
+		modifier = { 
+			factor = 2.0
+			owner = { 
+				religion = hussite
+			}
+			culture = owner
+		}
+		modifier = { 
+			factor = 2.5
+			owner = { 
+				religion = hussite
+			}
+			culture_group = owner
+		}
+		modifier = { 
+			factor = 2.0
+			owner = { 
+				NOT = { 
+					religion = hussite
+				}
+			}
+			NOT = { 
+				culture = owner
+			}
+		}
+		modifier = { 
+			factor = 2.5
+			owner = { 
+				NOT = { 
+					religion = hussite
+				}
+			}
+			NOT = { 
+				culture_group = owner
+			}
+		}
+		modifier = { 
+			factor = 0.1
+			NOT = { 
+				culture = czech
+			}
+		}
+		modifier = { 
+			factor = 0.1
+			NOT = { 
+				culture_group = west_slavic
+			}
+		}
+		modifier = { 
+			factor = 0
+			has_missionary = yes
+		}
+		modifier = { 
+			factor = 0
+			is_empty = yes
+		}
+		modifier = { 
+			factor = 0
+			province_id = 2530
+		}
+		modifier = { 
+			factor = 0
+			has_province_modifier = religious_center
+		}
+		modifier = { 
+			factor = 0
+			has_province_modifier = religious_zeal_at_conv
+		}
+		modifier = { 
+			factor = 0.1
+			owner = { 
+				any_owned_province = { 
+					NOT = { 
+						has_province_flag = hus_craddle
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.2
+			OR = { 
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adv
+							value = 11
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwg
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adx
+							value = 11
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwh
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adz
+							value = 11
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwi
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aeb
+							value = 11
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwj
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aed
+							value = 11
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwk
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aef
+							value = 11
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwl
+							value = 5
+						}
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.2
+			OR = { 
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adv
+							value = 11
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwg
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adx
+							value = 11
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwh
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adz
+							value = 11
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwi
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aeb
+							value = 11
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwj
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aed
+							value = 11
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwk
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aef
+							value = 11
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwl
+							value = 10
+						}
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			religion = lollard
+		}
+		modifier = { 
+			factor = 0
+			religion = protestant
+		}
+		modifier = { 
+			factor = 0
+			religion = reformed
+		}
+		modifier = { 
+			factor = 0
+			NOT = { 
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+		}
+		modifier = { 
+			factor = 0
+			NOT = { 
+				continent = FROM
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 1
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 2
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 3
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 4
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 5
+			}
+		}
+		modifier = { 
+			factor = 3.0
+			owner = { 
+				religion = FROM
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				religion_group = FROM
+			}
+		}
+		modifier = { 
+			factor = 3
+			culture_group = FROM
+		}
+		modifier = { 
+			factor = 5
+			culture = FROM
+		}
+	}
+}
+waldensian_center_of_reformation = { 
+	religion = waldensian
+	map_icon = GFX_religious_conversion_center_protestant
+	max_distance = 50.0
+	base_conversion_speed = 0.75
+	target_province_weights = { 
+		factor = 1.0
+		modifier = { 
+			factor = 2.0
+			owner = { 
+				religion = waldensian
+			}
+			culture = owner
+		}
+		modifier = { 
+			factor = 2.5
+			owner = { 
+				religion = waldensian
+			}
+			culture_group = owner
+		}
+		modifier = { 
+			factor = 2.0
+			owner = { 
+				NOT = { 
+					religion = waldensian
+				}
+			}
+			NOT = { 
+				culture = owner
+			}
+		}
+		modifier = { 
+			factor = 2.5
+			owner = { 
+				NOT = { 
+					religion = waldensian
+				}
+			}
+			NOT = { 
+				culture_group = owner
+			}
+		}
+		modifier = { 
+			factor = 0
+			has_missionary = yes
+		}
+		modifier = { 
+			factor = 0
+			is_empty = yes
+		}
+		modifier = { 
+			factor = 0
+			province_id = 2530
+		}
+		modifier = { 
+			factor = 0
+			has_province_modifier = religious_center
+		}
+		modifier = { 
+			factor = 0
+			has_province_modifier = religious_zeal_at_conv
+		}
+		modifier = { 
+			factor = 1.2
+			OR = { 
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adv
+							value = 15
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwg
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adx
+							value = 15
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwh
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adz
+							value = 15
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwi
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aeb
+							value = 15
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwj
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aed
+							value = 15
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwk
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aef
+							value = 15
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwl
+							value = 5
+						}
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.2
+			OR = { 
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adv
+							value = 15
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwg
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adx
+							value = 15
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwh
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adz
+							value = 15
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwi
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aeb
+							value = 15
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwj
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aed
+							value = 15
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwk
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aef
+							value = 15
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwl
+							value = 10
+						}
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 0.5
+			religion = lollard
+		}
+		modifier = { 
+			factor = 0.5
+			religion = hussite
+		}
+		modifier = { 
+			factor = 1.5
+			religion = reformed
+		}
+		modifier = { 
+			factor = 0.25
+			religion = protestant
+		}
+		modifier = { 
+			factor = 0
+			NOT = { 
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+		}
+		modifier = { 
+			factor = 0
+			NOT = { 
+				continent = FROM
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 1
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 2
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 3
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 4
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 5
+			}
+		}
+		modifier = { 
+			factor = 3.0
+			owner = { 
+				religion = FROM
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				religion_group = FROM
+			}
+		}
+		modifier = { 
+			factor = 3
+			culture_group = FROM
+		}
+		modifier = { 
+			factor = 5
+			culture = FROM
+		}
+	}
+}
+lollard_center_of_reformation = { 
+	religion = lollard
+	map_icon = GFX_religious_conversion_center_protestant
+	max_distance = 50.0
+	base_conversion_speed = 0.75
+	target_province_weights = { 
+		factor = 1.0
+		modifier = { 
+			factor = 2.0
+			owner = { 
+				religion = lollard
+			}
+			culture = owner
+		}
+		modifier = { 
+			factor = 2.5
+			owner = { 
+				religion = lollard
+			}
+			culture_group = owner
+		}
+		modifier = { 
+			factor = 2.0
+			owner = { 
+				NOT = { 
+					religion = lollard
+				}
+			}
+			NOT = { 
+				culture = owner
+			}
+		}
+		modifier = { 
+			factor = 2.5
+			owner = { 
+				NOT = { 
+					religion = lollard
+				}
+			}
+			NOT = { 
+				culture_group = owner
+			}
+		}
+		modifier = { 
+			factor = 0.1
+			NOT = { 
+				culture = english
+			}
+		}
+		modifier = { 
+			factor = 0.1
+			NOT = { 
+				culture_group = british
+			}
+		}
+		modifier = { 
+			factor = 0
+			has_missionary = yes
+		}
+		modifier = { 
+			factor = 0
+			is_empty = yes
+		}
+		modifier = { 
+			factor = 0
+			province_id = 2530
+		}
+		modifier = { 
+			factor = 0
+			has_province_modifier = religious_center
+		}
+		modifier = { 
+			factor = 0
+			has_province_modifier = religious_zeal_at_conv
+		}
+		modifier = { 
+			factor = 0.1
+			owner = { 
+				any_owned_province = { 
+					NOT = { 
+						has_province_flag = lol_craddle
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.2
+			OR = { 
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adv
+							value = 16
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwg
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adx
+							value = 16
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwh
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adz
+							value = 16
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwi
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aeb
+							value = 16
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwj
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aed
+							value = 16
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwk
+							value = 5
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aef
+							value = 16
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwl
+							value = 5
+						}
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 1.2
+			OR = { 
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adv
+							value = 16
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwg
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adx
+							value = 16
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwh
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = adz
+							value = 16
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwi
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aeb
+							value = 16
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwj
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aed
+							value = 16
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwk
+							value = 10
+						}
+					}
+				}
+				AND = { 
+					AND = { 
+						is_variable_equal = { 
+							which = aef
+							value = 16
+						}
+					}
+					AND = { 
+						check_variable = { 
+							which = jwl
+							value = 10
+						}
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 0
+			religion = protestant
+		}
+		modifier = { 
+			factor = 0
+			religion = reformed
+		}
+		modifier = { 
+			factor = 0
+			NOT = { 
+				OR = { 
+					religion = catholic
+					religion = protestant
+					religion = reformed
+					religion = hussite
+					religion = waldensian
+					religion = lollard
+					religion = avignonist
+					religion = holyleague
+				}
+			}
+		}
+		modifier = { 
+			factor = 0
+			NOT = { 
+				continent = FROM
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 1
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 2
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 3
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 4
+			}
+		}
+		modifier = { 
+			factor = 0.7
+			owner = { 
+				num_of_cardinals = 5
+			}
+		}
+		modifier = { 
+			factor = 3.0
+			owner = { 
+				religion = FROM
+			}
+		}
+		modifier = { 
+			factor = 1.5
+			owner = { 
+				religion_group = FROM
+			}
+		}
+		modifier = { 
+			factor = 3
+			culture_group = FROM
+		}
+		modifier = { 
+			factor = 5
+			culture = FROM
+		}
+	}
+}

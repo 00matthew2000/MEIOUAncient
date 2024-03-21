@@ -1,0 +1,30 @@
+owner = BKE
+controller = BKE
+add_core = BKE
+capital = "Sikassoa"
+trade_goods = millet
+culture = senufo
+religion = west_african_pagan
+hre = no
+base_tax = 7
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 10.000
+	}
+	set_variable = { 
+		which = atc
+		value = 80.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+}

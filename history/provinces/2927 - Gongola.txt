@@ -1,0 +1,30 @@
+owner = JUK
+controller = JUK
+add_core = JUK
+capital = "Gombé"
+trade_goods = millet
+culture = kutumbawa
+religion = odinala
+hre = no
+base_tax = 8
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 15.000
+	}
+	set_variable = { 
+		which = atc
+		value = 50.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+}

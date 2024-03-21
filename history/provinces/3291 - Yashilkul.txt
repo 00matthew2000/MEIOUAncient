@@ -1,0 +1,46 @@
+owner = CHG
+controller = CHG
+add_core = CHG
+add_core = MGH
+capital = "Erkeshtam"
+trade_goods = wool
+culture = tajihk
+religion = sunni
+base_tax = 1
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 1
+}
+discovered_by = indian
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = ottoman
+discovered_by = muslim
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 25.000
+	}
+	set_variable = { 
+		which = atc
+		value = 55.000
+	}
+}
+450.1.1 = { 
+	set_province_flag = TN_Silk
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+	set_province_flag = gold
+}
+1356.1.1 = { 
+	add_core = YRK
+}

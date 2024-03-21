@@ -1,0 +1,62 @@
+owner = YUA
+controller = YUA
+capital = "Yazhou"
+trade_goods = wool
+culture = yizu
+religion = bimoism
+hre = no
+base_tax = 4
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 50.000
+	}
+}
+450.1.1 = { 
+	set_province_flag = TN_Tea
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+	set_province_flag = spices
+	set_province_flag = coal
+}
+967.1.1 = { 
+	owner = SNG
+	controller = SNG
+	add_core = SNG
+}
+1241.1.1 = { 
+	owner = SHU
+	controller = SHU
+}
+1259.1.1 = { 
+	owner = YUA
+	controller = YUA
+	remove_core = SNG
+}
+1271.12.18 = { 
+	add_core = YUA
+}
+1351.1.1 = { 
+	owner = DXI
+	controller = DXI
+	add_core = DXI
+}

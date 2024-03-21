@@ -1,0 +1,128 @@
+owner = PIS
+controller = PIS
+add_core = PIS
+capital = "Livorno"
+trade_goods = fish
+culture = tuscan
+religion = catholic
+hre = yes
+base_tax = 5
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 2
+}
+discovered_by = western
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = muslim
+discovered_by = ottoman
+450.1.1 = { 
+	set_province_flag = olive
+	set_province_flag = mined_goods
+	set_province_flag = iron
+}
+1356.1.1 = { 
+	add_core = PIS
+	add_claim = FIR
+}
+100.1.1 = { 
+	set_variable = { 
+		which = amj
+		value = 56.780
+	}
+	set_variable = { 
+		which = amk
+		value = 0.000
+	}
+	set_variable = { 
+		which = amh
+		value = 55.850
+	}
+	set_variable = { 
+		which = ami
+		value = 1.000
+	}
+	set_variable = { 
+		which = amf
+		value = 39.822
+	}
+	set_variable = { 
+		which = amg
+		value = 0.000
+	}
+	set_variable = { 
+		which = amd
+		value = 47.931
+	}
+	set_variable = { 
+		which = ame
+		value = 0.500
+	}
+	set_variable = { 
+		which = amb
+		value = 57.062
+	}
+	set_variable = { 
+		which = amc
+		value = 0.000
+	}
+	set_variable = { 
+		which = alz
+		value = 61.391
+	}
+	set_variable = { 
+		which = ama
+		value = 1.500
+	}
+	set_variable = { 
+		which = alx
+		value = 67.712
+	}
+	set_variable = { 
+		which = aly
+		value = 0.000
+	}
+	set_variable = { 
+		which = alv
+		value = 58.060
+	}
+	set_variable = { 
+		which = alw
+		value = 0.000
+	}
+	set_variable = { 
+		which = alt
+		value = 69.673
+	}
+	set_variable = { 
+		which = alu
+		value = 0.000
+	}
+	set_variable = { 
+		which = alr
+		value = 74.453
+	}
+	set_variable = { 
+		which = als
+		value = 32.524
+	}
+	set_variable = { 
+		which = alp
+		value = 82.644
+	}
+	set_variable = { 
+		which = alq
+		value = 0.000
+	}
+	set_variable = { 
+		which = aho
+		value = 122.222
+	}
+	set_variable = { 
+		which = ahp
+		value = 96.000
+	}
+}

@@ -1,0 +1,27 @@
+owner = CZC
+controller = CZC
+add_core = CZC
+capital = "Vilcabamba"
+trade_goods = maize
+culture = inca
+religion = inti
+hre = no
+base_tax = 7
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = south_american
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+	set_variable = { 
+		which = ami
+		value = 3.000
+	}
+}

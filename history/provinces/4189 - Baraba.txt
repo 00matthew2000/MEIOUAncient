@@ -1,0 +1,4 @@
+culture = khanty
+religion = shamanism
+discovered_by = steppestech
+discovered_by = YUA

@@ -1,0 +1,17 @@
+owner = TCX
+controller = TCX
+add_core = TCX
+capital = "Tepatitlan"
+trade_goods = unknown
+culture = chichimecha
+religion = cocijo
+hre = no
+base_tax = 3
+is_city = yes
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4.5
+	}
+}

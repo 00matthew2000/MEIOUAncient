@@ -1,0 +1,43 @@
+owner = JHU
+controller = JHU
+capital = "Alchuka"
+trade_goods = lumber
+culture = hulun
+religion = mahayana
+hre = no
+base_tax = 15
+base_production = 0
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 80.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 119
+	}
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+}
+1271.12.18 = { 
+	add_core = YUA
+}
+1356.1.1 = { 
+	add_core = JHU
+}

@@ -1,0 +1,3 @@
+culture = het
+religion = south_cone
+discovered_by = south_american

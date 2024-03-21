@@ -1,0 +1,35 @@
+owner = AYG
+controller = AYG
+add_core = AYG
+capital = "Caranga"
+trade_goods = livestock
+culture = aimara
+religion = inti
+hre = no
+base_tax = 9
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = south_american
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_province_flag = TN_Natural_Minor
+	set_province_flag = TN_Lake
+	set_province_flag = coca
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+	set_variable = { 
+		which = ami
+		value = 5.000
+	}
+}

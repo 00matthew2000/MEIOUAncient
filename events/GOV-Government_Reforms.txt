@@ -1,0 +1,611 @@
+namespace = government_reforms
+country_event = { 
+	id = government_reforms.1
+	title = no_localisation
+	desc = no_localisation
+	picture = ai_only
+	hidden = yes
+	is_triggered_only = yes
+	trigger = { 
+		AND = { 
+			num_of_cities = 1
+			NOT = { 
+				tag = AAA
+			}
+		}
+		government = monarchy
+		has_government_attribute = ruler_stats_affect_legitimacy
+	}
+	immediate = { 
+		remove_country_modifier = pol_succession2_legitimacy1
+		remove_country_modifier = pol_succession2_legitimacy2
+		remove_country_modifier = pol_succession2_legitimacy3
+		remove_country_modifier = pol_succession2_legitimacy4
+		remove_country_modifier = pol_succession2_legitimacy5
+		remove_country_modifier = pol_succession2_legitimacy6
+		remove_country_modifier = pol_succession2_legitimacy7
+		remove_country_modifier = pol_succession2_legitimacy8
+		remove_country_modifier = pol_succession2_legitimacy9
+		remove_country_modifier = pol_succession2_legitimacy10
+		remove_country_modifier = pol_succession2_legitimacy11
+		remove_country_modifier = pol_succession2_legitimacy12
+		remove_country_modifier = pol_succession2_legitimacy13
+		remove_country_modifier = pol_succession2_legitimacy14
+		remove_country_modifier = pol_succession2_legitimacy15
+		remove_country_modifier = pol_succession2_legitimacy16
+		remove_country_modifier = pol_succession2_legitimacy17
+		remove_country_modifier = pol_succession2_legitimacy18
+		set_variable = { 
+			which = hxx
+			value = 0
+		}
+		trigger_switch = { 
+			on_trigger = adm
+			6 = { 
+				change_variable = { 
+					which = hxx
+					value = 6
+				}
+			}
+			5 = { 
+				change_variable = { 
+					which = hxx
+					value = 5
+				}
+			}
+			4 = { 
+				change_variable = { 
+					which = hxx
+					value = 4
+				}
+			}
+			3 = { 
+				change_variable = { 
+					which = hxx
+					value = 3
+				}
+			}
+			2 = { 
+				change_variable = { 
+					which = hxx
+					value = 2
+				}
+			}
+			1 = { 
+				change_variable = { 
+					which = hxx
+					value = 1
+				}
+			}
+		}
+		trigger_switch = { 
+			on_trigger = dip
+			6 = { 
+				change_variable = { 
+					which = hxx
+					value = 6
+				}
+			}
+			5 = { 
+				change_variable = { 
+					which = hxx
+					value = 5
+				}
+			}
+			4 = { 
+				change_variable = { 
+					which = hxx
+					value = 4
+				}
+			}
+			3 = { 
+				change_variable = { 
+					which = hxx
+					value = 3
+				}
+			}
+			2 = { 
+				change_variable = { 
+					which = hxx
+					value = 2
+				}
+			}
+			1 = { 
+				change_variable = { 
+					which = hxx
+					value = 1
+				}
+			}
+		}
+		trigger_switch = { 
+			on_trigger = mil
+			6 = { 
+				change_variable = { 
+					which = hxx
+					value = 6
+				}
+			}
+			5 = { 
+				change_variable = { 
+					which = hxx
+					value = 5
+				}
+			}
+			4 = { 
+				change_variable = { 
+					which = hxx
+					value = 4
+				}
+			}
+			3 = { 
+				change_variable = { 
+					which = hxx
+					value = 3
+				}
+			}
+			2 = { 
+				change_variable = { 
+					which = hxx
+					value = 2
+				}
+			}
+			1 = { 
+				change_variable = { 
+					which = hxx
+					value = 1
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				NOT = { 
+					has_reform = Pol_Succession3
+				}
+			}
+			multiply_variable = { 
+				which = hxx
+				value = 0.2
+			}
+		}
+		else = { 
+			multiply_variable = { 
+				which = hxx
+				value = 1.0
+			}
+		}
+		if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = hxx
+						value = 18
+					}
+				}
+			}
+			add_ruler_modifier = { 
+				name = pol_succession2_legitimacy18
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = hxx
+						value = 17
+					}
+				}
+			}
+			add_ruler_modifier = { 
+				name = pol_succession2_legitimacy17
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = hxx
+						value = 16
+					}
+				}
+			}
+			add_ruler_modifier = { 
+				name = pol_succession2_legitimacy16
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = hxx
+						value = 15
+					}
+				}
+			}
+			add_ruler_modifier = { 
+				name = pol_succession2_legitimacy15
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = hxx
+						value = 14
+					}
+				}
+			}
+			add_ruler_modifier = { 
+				name = pol_succession2_legitimacy14
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = hxx
+						value = 13
+					}
+				}
+			}
+			add_ruler_modifier = { 
+				name = pol_succession2_legitimacy13
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = hxx
+						value = 12
+					}
+				}
+			}
+			add_ruler_modifier = { 
+				name = pol_succession2_legitimacy12
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = hxx
+						value = 11
+					}
+				}
+			}
+			add_ruler_modifier = { 
+				name = pol_succession2_legitimacy11
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = hxx
+						value = 10
+					}
+				}
+			}
+			add_ruler_modifier = { 
+				name = pol_succession2_legitimacy10
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = hxx
+						value = 9
+					}
+				}
+			}
+			add_ruler_modifier = { 
+				name = pol_succession2_legitimacy9
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = hxx
+						value = 8
+					}
+				}
+			}
+			add_ruler_modifier = { 
+				name = pol_succession2_legitimacy8
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = hxx
+						value = 7
+					}
+				}
+			}
+			add_ruler_modifier = { 
+				name = pol_succession2_legitimacy7
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = hxx
+						value = 6
+					}
+				}
+			}
+			add_ruler_modifier = { 
+				name = pol_succession2_legitimacy6
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = hxx
+						value = 5
+					}
+				}
+			}
+			add_ruler_modifier = { 
+				name = pol_succession2_legitimacy5
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = hxx
+						value = 4
+					}
+				}
+			}
+			add_ruler_modifier = { 
+				name = pol_succession2_legitimacy4
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = hxx
+						value = 3
+					}
+				}
+			}
+			add_ruler_modifier = { 
+				name = pol_succession2_legitimacy3
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = hxx
+						value = 2
+					}
+				}
+			}
+			add_ruler_modifier = { 
+				name = pol_succession2_legitimacy2
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = hxx
+						value = 1
+					}
+				}
+			}
+			add_ruler_modifier = { 
+				name = pol_succession2_legitimacy1
+				duration = -1
+				hidden = yes
+			}
+		}
+		set_variable = { 
+			which = hxx
+			value = 0
+		}
+	}
+	option = { }
+}
+country_event = { 
+	id = government_reforms.2
+	title = no_localisation
+	desc = no_localisation
+	picture = ai_only
+	hidden = yes
+	is_triggered_only = yes
+	trigger = { 
+		AND = { 
+			num_of_cities = 1
+			NOT = { 
+				tag = AAA
+			}
+		}
+		government = monarchy
+		has_government_attribute = dynamic_heir_claim
+	}
+	immediate = { 
+		export_to_variable = { 
+			which = export
+			value = trigger_value:legitimacy
+		}
+		set_variable = { 
+			which = hxx
+			which = export
+		}
+		export_to_variable = { 
+			which = export
+			value = trigger_value:heir_claim
+		}
+		set_variable = { 
+			which = amn
+			which = export
+		}
+		if = { 
+			limit = { 
+				NOT = { 
+					has_reform = Pol_Succession3
+				}
+			}
+			multiply_variable = { 
+				which = hxx
+				value = 1.1
+			}
+		}
+		else = { 
+			multiply_variable = { 
+				which = hxx
+				value = 1.0
+			}
+		}
+		while = { 
+			limit = { 
+				AND = { 
+					check_variable = { 
+						which = amn
+						which = hxx
+					}
+				}
+			}
+			add_heir_claim = -1
+			subtract_variable = { 
+				which = amn
+				value = 1
+			}
+		}
+		set_variable = { 
+			which = hxx
+			value = 0
+		}
+		set_variable = { 
+			which = amn
+			value = 0
+		}
+	}
+	option = { }
+}
+country_event = { 
+	id = government_reforms.3
+	title = no_localisation
+	desc = no_localisation
+	picture = ai_only
+	hidden = yes
+	is_triggered_only = yes
+	trigger = { 
+		tag = AAA
+	}
+	immediate = { 
+		every_country = { 
+			limit = { 
+				AND = { 
+					num_of_cities = 1
+					NOT = { 
+						tag = AAA
+					}
+				}
+				government = monarchy
+				has_government_attribute = dynamic_heir_claim
+			}
+			export_to_variable = { 
+				which = export
+				value = trigger_value:legitimacy
+			}
+			set_variable = { 
+				which = hxx
+				which = export
+			}
+			export_to_variable = { 
+				which = export
+				value = trigger_value:heir_claim
+			}
+			set_variable = { 
+				which = amn
+				which = export
+			}
+			if = { 
+				limit = { 
+					NOT = { 
+						has_reform = Pol_Succession3
+					}
+				}
+				multiply_variable = { 
+					which = hxx
+					value = 1.1
+				}
+			}
+			else = { 
+				multiply_variable = { 
+					which = hxx
+					value = 1.0
+				}
+			}
+			while = { 
+				limit = { 
+					AND = { 
+						check_variable = { 
+							which = amn
+							which = hxx
+						}
+					}
+				}
+				add_heir_claim = -1
+				subtract_variable = { 
+					which = amn
+					value = 1
+				}
+			}
+			set_variable = { 
+				which = hxx
+				value = 0
+			}
+			set_variable = { 
+				which = amn
+				value = 0
+			}
+		}
+	}
+	option = { }
+}

@@ -1,0 +1,30 @@
+owner = MYR
+controller = MYR
+add_core = MYR
+capital = "Ergun"
+trade_goods = wool
+culture = oroqen
+religion = tengri_pagan
+hre = no
+base_tax = 2
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = steppestech
+discovered_by = YUA
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 90.000
+	}
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 1.5
+	}
+}

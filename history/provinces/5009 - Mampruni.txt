@@ -1,0 +1,36 @@
+owner = DGB
+controller = DGB
+add_core = DGB
+capital = "Mampruni"
+trade_goods = millet
+culture = dagomba
+religion = west_african_pagan
+hre = no
+base_tax = 7
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+discovered_by = soudantech
+discovered_by = sub_saharan
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 80.000
+	}
+}
+450.1.1 = { 
+	set_province_flag = TN_Minor
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+	set_variable = { 
+		which = ami
+		value = 8.000
+	}
+	set_province_flag = kola
+}

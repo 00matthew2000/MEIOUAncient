@@ -1,0 +1,29 @@
+owner = NIK
+controller = NIK
+capital = "Kumagaya"
+trade_goods = rice
+culture = kanto
+religion = mahayana
+hre = no
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 2
+}
+base_tax = 20
+base_production = 1
+base_manpower = 2
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 4
+	}
+	set_province_flag = tea
+}
+1352.6.1 = { 
+	add_core = NIK
+}

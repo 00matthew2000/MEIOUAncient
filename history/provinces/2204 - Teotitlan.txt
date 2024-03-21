@@ -1,0 +1,40 @@
+owner = TEO
+controller = TEO
+add_core = TEO
+capital = "Teotitlan"
+trade_goods = cotton
+culture = cuicatec
+religion = nahuatl
+base_tax = 20
+base_production = 2
+base_manpower = 2
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gch
+	value = 2
+}
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_variable = { 
+		which = acp
+		value = 5.5
+	}
+	add_permanent_province_modifier = { 
+		name = urban_goods_cloth
+		duration = -1
+	}
+	add_permanent_province_modifier = { 
+		name = urban_goods_metalwork
+		duration = -1
+	}
+	add_permanent_province_modifier = { 
+		name = urban_goods_luxury_cloth
+		duration = -1
+	}
+	set_province_flag = furs
+}

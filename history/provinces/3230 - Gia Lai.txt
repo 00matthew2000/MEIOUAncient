@@ -1,0 +1,28 @@
+owner = CHA
+controller = CHA
+add_core = CHA
+capital = "Pleiku"
+trade_goods = rice
+culture = degar
+religion = ban_phi
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+200.1.1 = { 
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 2
+	}
+}

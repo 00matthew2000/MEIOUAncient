@@ -1,0 +1,44 @@
+owner = TXL
+controller = TXL
+add_core = TXL
+capital = "Tlaxcallán"
+trade_goods = cacao
+culture = tlaxcallan
+religion = cocijo
+hre = no
+base_tax = 30
+base_production = 3
+base_manpower = 2
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 2
+}
+set_variable = { 
+	which = gcj
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_variable = { 
+		which = acp
+		value = 6.5
+	}
+	set_province_flag = mined_goods
+	set_province_flag = obsidian
+	set_province_flag = cacao
+	add_permanent_province_modifier = { 
+		name = urban_goods_metalwork
+		duration = -1
+	}
+	add_permanent_province_modifier = { 
+		name = urban_goods_luxury_cloth
+		duration = -1
+	}
+	set_province_flag = coal
+}

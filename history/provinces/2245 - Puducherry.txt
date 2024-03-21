@@ -1,0 +1,43 @@
+owner = GNG
+controller = GNG
+capital = "Pantichcheri"
+trade_goods = pepper
+culture = tamil
+religion = hinduism
+hre = no
+base_tax = 6
+base_production = 1
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gci
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = indian
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = muslim
+discovered_by = austranesian
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_province_flag = TN_Port
+	set_province_flag = TN_Harbour_Minor
+	set_province_flag = TN_Natural_Important
+	set_variable = { 
+		which = acp
+		value = 7
+	}
+}
+1356.1.1 = { 
+	owner = MAD
+	controller = MAD
+	add_territorial_core = MAD
+	add_core = GNG
+	set_province_flag = add_local_autonomy_75
+}

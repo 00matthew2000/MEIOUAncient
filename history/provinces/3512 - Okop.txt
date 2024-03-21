@@ -1,0 +1,23 @@
+owner = CCH
+controller = CCH
+add_core = CCH
+capital = "Tihosuco"
+trade_goods = maize
+culture = yucatecan
+religion = mayan
+hre = no
+base_tax = 25
+base_production = 0
+base_manpower = 2
+is_city = yes
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_variable = { 
+		which = amh
+		value = 90.000
+	}
+	set_variable = { 
+		which = ami
+		value = 10.000
+	}
+}

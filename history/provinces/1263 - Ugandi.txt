@@ -1,0 +1,33 @@
+owner = DOR
+controller = DOR
+add_core = DOR
+capital = "Dorpat"
+trade_goods = wax
+culture = estonian
+religion = catholic
+hre = no
+base_tax = 5
+base_production = 0
+base_manpower = 0
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = byzantine
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 5.500
+	}
+	set_province_flag = TN_Important
+	set_variable = { 
+		which = acp
+		value = 3.5
+	}
+	set_province_flag = honey
+}
+1356.1.1 = { 
+	add_core = LVO
+	add_core = EST
+}

@@ -1,0 +1,2345 @@
+country_event = { 
+	id = setup_event.1
+	title = "EVT_AI"
+	desc = "EVT_AI"
+	picture = MEIOU_AND_TAXES_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+	trigger = { 
+		NOT = { 
+			has_global_flag = meiou_and_taxes_mod_start
+		}
+	}
+	immediate = { }
+	option = { 
+		name = "EVT_AI"
+		steppes_group = { 
+			limit = { 
+				AND = { 
+					OR = { 
+						is_city = yes
+						is_colony = yes
+					}
+					NOT = { 
+						province_id = 5154
+					}
+				}
+				AND = { 
+					NOT = { 
+						superregion = eastern_steppe_superregion
+					}
+					NOT = { 
+						superregion = north_china_superregion
+					}
+					NOT = { 
+						superregion = tibet_superregion
+					}
+					OR = { 
+						NOT = { 
+							area = hami_area
+						}
+						province_id = 4958
+					}
+				}
+			}
+			set_province_flag = WestSteppe_Zone
+		}
+		steppes_group = { 
+			limit = { 
+				AND = { 
+					OR = { 
+						is_city = yes
+						is_colony = yes
+					}
+					NOT = { 
+						province_id = 5154
+					}
+				}
+				OR = { 
+					superregion = eastern_steppe_superregion
+					superregion = north_china_superregion
+					superregion = tibet_superregion
+					area = hami_area
+					area = zungaria_area
+					province_id = 3306
+					province_id = 4967
+					province_id = 3277
+				}
+			}
+			set_province_flag = EastSteppe_Zone
+		}
+		eastern_steppe_superregion = { 
+			limit = { 
+				AND = { 
+					OR = { 
+						is_city = yes
+						is_colony = yes
+					}
+					NOT = { 
+						province_id = 5154
+					}
+				}
+				OR = { 
+					region = west_manchuria_region
+					region = east_manchuria_region
+					area = donggye_area
+				}
+				NOT = { 
+					culture = korean
+				}
+			}
+			set_province_flag = Manchu_Zone
+		}
+		every_country = { 
+			limit = { 
+				AND = { 
+					num_of_cities = 1
+					NOT = { 
+						tag = AAA
+					}
+				}
+				OR = { 
+					culture_group = persian_group
+					tag = JAI
+					tag = CHU
+					tag = ISF
+				}
+				NOT = { 
+					primary_culture = kurdish
+				}
+				NOT = { 
+					tag = SHI
+				}
+			}
+			set_country_flag = Ilkhanate_Successor
+			ISF = { 
+				set_country_flag = Ilkhanate_Successor
+			}
+			KER = { 
+				set_country_flag = Ilkhanate_Successor
+			}
+			TAB = { 
+				set_country_flag = Ilkhanate_Successor
+			}
+			central_asia = { 
+				limit = { 
+					AND = { 
+						OR = { 
+							is_city = yes
+							is_colony = yes
+						}
+						NOT = { 
+							province_id = 5154
+						}
+					}
+					OR = { 
+						culture = persian
+						culture = khuzi
+						culture = adari
+						culture = tabari
+						culture = gilak
+						culture = talysh
+					}
+					NOT = { 
+						owned_by = SHI
+					}
+					NOT = { 
+						owned_by = KRS
+					}
+					NOT = { 
+						owned_by = HAZ
+					}
+					NOT = { 
+						owned_by = QAR
+					}
+					NOT = { 
+						owned_by = KHO
+					}
+				}
+				add_claim = PREV
+			}
+			central_asia = { 
+				limit = { 
+					AND = { 
+						OR = { 
+							is_city = yes
+							is_colony = yes
+						}
+						NOT = { 
+							province_id = 5154
+						}
+					}
+					OR = { 
+						PREV = { 
+							tag = CHU
+						}
+						PREV = { 
+							tag = JAI
+						}
+						PREV = { 
+							tag = ISF
+						}
+					}
+					OR = { 
+						culture_group = oghuz
+						culture = kurdish
+						culture = lurish
+					}
+					NOT = { 
+						owned_by = SHI
+					}
+					NOT = { 
+						owned_by = KRS
+					}
+					NOT = { 
+						owned_by = HAZ
+					}
+					NOT = { 
+						owned_by = QAR
+					}
+					NOT = { 
+						owned_by = KHO
+					}
+				}
+				add_claim = PREV
+			}
+		}
+		every_country = { 
+			limit = { 
+				AND = { 
+					num_of_cities = 1
+					NOT = { 
+						tag = AAA
+					}
+				}
+			}
+			if = { 
+				limit = { 
+					has_country_modifier = title_6
+				}
+				remove_country_modifier = title_1
+				remove_country_modifier = title_2
+				remove_country_modifier = title_3
+				remove_country_modifier = title_4
+				remove_country_modifier = title_5
+				add_country_modifier = { 
+					name = title_6
+					duration = -1
+				}
+				clr_country_flag = title_1
+				clr_country_flag = title_2
+				clr_country_flag = title_3
+				clr_country_flag = title_4
+				clr_country_flag = title_5
+				clr_country_flag = title_6
+			}
+			else_if = { 
+				limit = { 
+					has_country_modifier = title_5
+				}
+				remove_country_modifier = title_1
+				remove_country_modifier = title_2
+				remove_country_modifier = title_3
+				remove_country_modifier = title_4
+				remove_country_modifier = title_6
+				add_country_modifier = { 
+					name = title_5
+					duration = -1
+				}
+				clr_country_flag = title_1
+				clr_country_flag = title_2
+				clr_country_flag = title_3
+				clr_country_flag = title_4
+				clr_country_flag = title_5
+				clr_country_flag = title_6
+			}
+			else_if = { 
+				limit = { 
+					has_country_modifier = title_4
+				}
+				remove_country_modifier = title_1
+				remove_country_modifier = title_2
+				remove_country_modifier = title_3
+				remove_country_modifier = title_5
+				remove_country_modifier = title_6
+				add_country_modifier = { 
+					name = title_4
+					duration = -1
+				}
+				clr_country_flag = title_1
+				clr_country_flag = title_2
+				clr_country_flag = title_3
+				clr_country_flag = title_4
+				clr_country_flag = title_5
+				clr_country_flag = title_6
+			}
+			else_if = { 
+				limit = { 
+					has_country_modifier = title_3
+				}
+				remove_country_modifier = title_1
+				remove_country_modifier = title_2
+				remove_country_modifier = title_4
+				remove_country_modifier = title_5
+				remove_country_modifier = title_6
+				add_country_modifier = { 
+					name = title_3
+					duration = -1
+				}
+				clr_country_flag = title_1
+				clr_country_flag = title_2
+				clr_country_flag = title_3
+				clr_country_flag = title_4
+				clr_country_flag = title_5
+				clr_country_flag = title_6
+				set_country_flag = title_3
+			}
+			else_if = { 
+				limit = { 
+					has_country_modifier = title_2
+				}
+				remove_country_modifier = title_1
+				remove_country_modifier = title_3
+				remove_country_modifier = title_4
+				remove_country_modifier = title_5
+				remove_country_modifier = title_6
+				add_country_modifier = { 
+					name = title_2
+					duration = -1
+				}
+				clr_country_flag = title_1
+				clr_country_flag = title_2
+				clr_country_flag = title_3
+				clr_country_flag = title_4
+				clr_country_flag = title_5
+				clr_country_flag = title_6
+			}
+			else_if = { 
+				limit = { 
+					has_country_modifier = title_1
+				}
+				remove_country_modifier = title_2
+				remove_country_modifier = title_3
+				remove_country_modifier = title_4
+				remove_country_modifier = title_5
+				remove_country_modifier = title_6
+				add_country_modifier = { 
+					name = title_1
+					duration = -1
+				}
+				clr_country_flag = title_1
+				clr_country_flag = title_2
+				clr_country_flag = title_3
+				clr_country_flag = title_4
+				clr_country_flag = title_5
+				clr_country_flag = title_6
+			}
+		}
+		every_province = { 
+			limit = { 
+				has_province_modifier = emperors_palace
+			}
+			save_global_event_target_as = imperial_capital
+		}
+		regiongroup = { 
+			region = { 
+				set_province_flag = no_horses_present
+			}
+		}
+		regiongroup = { 
+			region = { 
+				limit = { 
+					OR = { 
+						continent = europe
+						continent = southeast_asia
+						continent = indian_continent
+						continent = asia
+						superregion = japan_superregion
+						continent = central_asia
+						continent = north_asia
+						continent = mena
+						superregion = north_africa_superregion
+						region = niger_bend_region
+						region = manding_region
+						region = senegambia_region
+						region = hausa_region
+						area = plateau_area
+						area = east_mossi_area
+						area = west_mossi_area
+						region = chad_region
+						region = darfur_region
+						province_id = 2260
+						province_id = 2258
+						region = somalia_region
+						area = northern_swahili_coast_area
+						area = central_swahili_coast_area
+						region = sudan_region
+						region = harar_region
+						region = abyssinia_region
+						region = horn_region
+					}
+					OR = { 
+						NOT = { 
+							AND = { 
+								OR = { 
+									has_terrain = forest_flats
+									has_terrain = forest_hills
+									has_terrain = forest_mountains
+									has_terrain = forest_highlands
+								}
+							}
+						}
+						NOT = { 
+							AND = { 
+								OR = { 
+									has_terrain = forest_mountains
+									has_terrain = wood_mountains
+									has_terrain = shrub_mountains
+									has_terrain = grass_mountains
+									has_terrain = desert_mountains
+									has_terrain = alpine_tundra
+								}
+							}
+						}
+						NOT = { 
+							AND = { 
+								OR = { 
+									has_terrain = jungle_flats
+									has_terrain = jungle_hills
+								}
+							}
+						}
+						NOT = { 
+							has_terrain = tundra
+						}
+						NOT = { 
+							has_terrain = taiga
+						}
+						AND = { 
+							continent = europe
+							NOT = { 
+								superregion = scandinavian_superregion
+							}
+							NOT = { 
+								region = north_russia_region
+							}
+						}
+						superregion = japan_superregion
+						superregion = anatolia_superregion
+						region = upper_mesopotamia_region
+						region = lower_mesopotamia_region
+						region = syria_region
+						superregion = central_asia_superregion
+						superregion = eastern_steppe_superregion
+						superregion = persia_superregion
+						superregion = greater_russia_superregion
+						superregion = european_steppe_superregion
+						region = west_sahara_region
+						region = east_sahara_region
+						region = arabia_region
+						region = hadhramaut_region
+						area = libyan_desert_area
+						area = ghana_area
+						area = jallon_area
+						province_id = 2927
+						province_id = 2260
+						province_id = 2258
+						region = sudan_region
+						region = harar_region
+						region = abyssinia_region
+						region = horn_region
+						area = saharan_bend_area
+						region = chad_region
+						region = hausa_region
+						region = senegambia_region
+					}
+				}
+				clr_province_flag = no_horses_present
+			}
+		}
+		every_country = { 
+			if = { 
+				limit = { 
+					exists = yes
+				}
+				if = { 
+					limit = { 
+						all_owned_province = { 
+							has_province_flag = no_horses_present
+						}
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								has_country_flag = no_cavalry
+							}
+						}
+						set_country_flag = no_cavalry
+					}
+				}
+				else_if = { 
+					limit = { 
+						has_country_flag = no_cavalry
+					}
+					clr_country_flag = no_cavalry
+				}
+			}
+			else = { 
+				set_country_flag = no_cavalry
+			}
+		}
+		if = { 
+			limit = { 
+				is_year = 1337
+				NOT = { 
+					is_year = 1453
+				}
+			}
+			set_global_flag = hundred_years_war
+			log = "FE-TempHYW:[GetYear]::flag hundred_years_war was set:00_InitialSetup"
+		}
+		if = { 
+			limit = { 
+				is_year = 1356
+				NOT = { 
+					is_year = 1365
+				}
+				FRA = { 
+					war_with = ENG
+					NOT = { 
+						has_country_flag = ruler_prisonner_of_war
+					}
+					NOT = { 
+						has_country_flag = jean_ransomed
+					}
+				}
+			}
+			FRA = { 
+				hidden_effect = { 
+					set_country_flag = ruler_prisonner_of_war
+					set_country_flag = jean_prisonner_of_war
+					exile_heir_as = heir_fra_hyw_pow
+					exile_consort_as = consort_fra_hyw_pow
+					exile_ruler_as = { 
+						name = ruler_fra_hyw_pow
+					}
+				}
+				define_ruler = { 
+					regency = yes
+					name = "Dauphin Charles"
+					dynasty = "de Valois"
+					ADM = 2
+					DIP = 2
+					MIL = 2
+					age = 20
+				}
+				add_war_exhaustion = 5.5
+				extend_regency = 10
+				define_heir = { 
+					name = "Placeholder"
+					dynasty = "de Valois"
+				}
+				hidden_effect = { 
+					country_event = { 
+						id = flavor_hyw.1000
+						days = 270
+					}
+				}
+			}
+			ENG = { 
+				add_country_modifier = { 
+					name = "Italian_bank_loans_Default"
+					duration = 2555
+				}
+			}
+			NAV = { 
+				define_heir = { 
+					name = "Placeholder"
+					dynasty = NAV
+				}
+				hidden_effect = { 
+					set_country_flag = ruler_prisonner_of_war
+					exile_ruler_as = { 
+						name = ruler_nav_hyw_pow
+					}
+				}
+				define_ruler = { 
+					regency = yes
+					name = "Philip"
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				has_dlc = "Cradle of Civilization"
+			}
+			MAM = { 
+				export_to_variable = { 
+					variable_name = mamluk_dynasty_culture
+					value = ruler_culture
+				}
+			}
+		}
+		every_country = { 
+			loan_size = 4
+		}
+		if = { 
+			limit = { 
+				is_year = 1356
+				NOT = { 
+					is_year = 1603
+				}
+			}
+			246 = { 
+				add_permanent_province_modifier = { 
+					name = marches_of_scotland
+					duration = -1
+				}
+			}
+			409 = { 
+				add_permanent_province_modifier = { 
+					name = marches_of_scotland
+					duration = -1
+				}
+			}
+			3337 = { 
+				add_permanent_province_modifier = { 
+					name = marches_of_the_south
+					duration = -1
+				}
+			}
+			1416 = { 
+				add_permanent_province_modifier = { 
+					name = marches_of_the_south
+					duration = -1
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				is_year = 1356
+				NOT = { 
+					is_year = 1472
+				}
+			}
+			241 = { 
+				add_permanent_province_modifier = { 
+					name = marches_of_wales
+					duration = -1
+				}
+			}
+			242 = { 
+				add_permanent_province_modifier = { 
+					name = marches_of_wales
+					duration = -1
+				}
+			}
+			1412 = { 
+				add_permanent_province_modifier = { 
+					name = marches_of_wales
+					duration = -1
+				}
+			}
+			3323 = { 
+				add_permanent_province_modifier = { 
+					name = marches_of_wales
+					duration = -1
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				is_year = 1472
+				NOT = { 
+					is_year = 1542
+				}
+			}
+			241 = { 
+				add_permanent_province_modifier = { 
+					name = council_of_wales
+					duration = -1
+				}
+			}
+			242 = { 
+				add_permanent_province_modifier = { 
+					name = council_of_wales
+					duration = -1
+				}
+			}
+			1412 = { 
+				add_permanent_province_modifier = { 
+					name = council_of_wales
+					duration = -1
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				is_year = 1542
+				NOT = { 
+					is_year = 1689
+				}
+			}
+			241 = { 
+				add_permanent_province_modifier = { 
+					name = laws_in_wales
+					duration = -1
+				}
+			}
+			242 = { 
+				add_permanent_province_modifier = { 
+					name = laws_in_wales
+					duration = -1
+				}
+			}
+			1412 = { 
+				add_permanent_province_modifier = { 
+					name = laws_in_wales
+					duration = -1
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				is_year = 1356
+				NOT = { 
+					is_year = 1399
+				}
+			}
+			244 = { 
+				add_permanent_province_modifier = { 
+					name = county_palatine
+					duration = -1
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				is_year = 1399
+			}
+			244 = { 
+				add_permanent_province_modifier = { 
+					name = county_palatine_reformed
+					duration = -1
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				is_year = 1356
+				NOT = { 
+					is_year = 1550
+				}
+			}
+			238 = { 
+				add_permanent_province_modifier = { 
+					name = county_palatine
+					duration = -1
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				is_year = 1550
+			}
+			238 = { 
+				add_permanent_province_modifier = { 
+					name = county_palatine_reformed
+					duration = -1
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				is_year = 1356
+				NOT = { 
+					is_year = 1836
+				}
+			}
+			427 = { 
+				add_permanent_province_modifier = { 
+					name = county_palatine
+					duration = -1
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				is_year = 1836
+			}
+			427 = { 
+				add_permanent_province_modifier = { 
+					name = county_palatine_reformed
+					duration = -1
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				is_year = 1356
+				NOT = { 
+					is_year = 1472
+				}
+			}
+			238 = { 
+				add_permanent_province_modifier = { 
+					name = north_of_england
+					duration = -1
+				}
+			}
+			244 = { 
+				add_permanent_province_modifier = { 
+					name = north_of_england
+					duration = -1
+				}
+			}
+			245 = { 
+				add_permanent_province_modifier = { 
+					name = north_of_england
+					duration = -1
+				}
+			}
+			246 = { 
+				add_permanent_province_modifier = { 
+					name = north_of_england
+					duration = -1
+				}
+			}
+			409 = { 
+				add_permanent_province_modifier = { 
+					name = north_of_england
+					duration = -1
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				is_year = 1472
+				NOT = { 
+					is_year = 1641
+				}
+			}
+			238 = { 
+				add_permanent_province_modifier = { 
+					name = council_of_north
+					duration = -1
+				}
+			}
+			244 = { 
+				add_permanent_province_modifier = { 
+					name = council_of_north
+					duration = -1
+				}
+			}
+			245 = { 
+				add_permanent_province_modifier = { 
+					name = council_of_north
+					duration = -1
+				}
+			}
+			246 = { 
+				add_permanent_province_modifier = { 
+					name = council_of_north
+					duration = -1
+				}
+			}
+			409 = { 
+				add_permanent_province_modifier = { 
+					name = council_of_north
+					duration = -1
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				is_year = 1336
+				NOT = { 
+					is_year = 1392
+				}
+			}
+			set_global_flag = nanbokucho
+		}
+		every_country = { 
+			limit = { 
+				primary_culture = silesian
+			}
+			add_country_modifier = { 
+				name = HRE_infertile_dynasty
+				duration = -1
+			}
+		}
+		every_country = { 
+			limit = { 
+				religion_group = muslim
+			}
+			discover_province = 384
+			discover_province = 385
+			discover_province = 379
+		}
+		every_country = { 
+			limit = { 
+				religion = shiite
+			}
+			discover_province = 1330
+		}
+		every_country = { 
+			limit = { 
+				religion = hinduism
+			}
+			discover_province = 556
+		}
+		every_country = { 
+			limit = { 
+				religion = catholic
+			}
+			discover_province = 2530
+		}
+		every_country = { 
+			limit = { 
+				religion = orthodox
+			}
+			discover_province = 1402
+			discover_province = 358
+			discover_province = 379
+			discover_province = 382
+		}
+		every_country = { 
+			limit = { 
+				religion = oriental
+			}
+			discover_province = 358
+			discover_province = 382
+			discover_province = 410
+		}
+		every_country = { 
+			limit = { 
+				religion = shinto
+			}
+			discover_province = 3957
+		}
+		ostsiedlung_group_pre1250 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						OR = { 
+							culture_group = low_germanic
+							culture_group = high_germanic
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						culture = silesian
+					}
+					set_province_flag = CV_SC_german_ostsiedlung
+					set_variable = { 
+						which = azn
+						value = 3
+					}
+					set_province_flag = CV_nopreset
+					clr_province_flag = CV_nopreset
+					set_province_flag = german_silesian
+					set_variable = { 
+						which = azm
+						value = 20
+					}
+					set_province_flag = ostsiedlung_province_effect
+				}
+				else_if = { 
+					limit = { 
+						culture = sorbs
+					}
+					set_province_flag = CV_SC_german_ostsiedlung
+					set_variable = { 
+						which = azn
+						value = 2
+					}
+					set_province_flag = CV_nopreset
+					clr_province_flag = CV_nopreset
+					set_province_flag = high_saxon
+					set_variable = { 
+						which = azm
+						value = 20
+					}
+					set_province_flag = ostsiedlung_province_effect
+				}
+				else_if = { 
+					limit = { 
+						culture = polabian
+					}
+					set_province_flag = CV_SC_german_ostsiedlung
+					set_variable = { 
+						which = azn
+						value = 2
+					}
+					set_province_flag = CV_nopreset
+					clr_province_flag = CV_nopreset
+					set_province_flag = low_saxon
+					set_variable = { 
+						which = azm
+						value = 20
+					}
+					set_province_flag = ostsiedlung_province_effect
+				}
+				else = { 
+					set_province_flag = CV_SC_german_ostsiedlung
+					set_variable = { 
+						which = azn
+						value = 5
+					}
+					set_province_flag = CV_nopreset
+					set_variable = { 
+						which = azm
+						value = 40
+					}
+					set_province_flag = ostsiedlung_province_effect
+				}
+			}
+		}
+		ostsiedlung_group_aft1250 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						OR = { 
+							culture_group = low_germanic
+							culture_group = high_germanic
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						culture = silesian
+					}
+					set_province_flag = CV_SC_german_ostsiedlung
+					set_variable = { 
+						which = azn
+						value = 3
+					}
+					set_province_flag = CV_nopreset
+					clr_province_flag = CV_nopreset
+					set_province_flag = german_silesian
+					set_variable = { 
+						which = azm
+						value = 10
+					}
+					set_province_flag = ostsiedlung_province_effect
+				}
+				else_if = { 
+					limit = { 
+						culture = sorbs
+					}
+					set_province_flag = CV_SC_german_ostsiedlung
+					set_variable = { 
+						which = azn
+						value = 2
+					}
+					set_province_flag = CV_nopreset
+					clr_province_flag = CV_nopreset
+					set_province_flag = high_saxon
+					set_variable = { 
+						which = azm
+						value = 5
+					}
+					set_province_flag = ostsiedlung_province_effect
+				}
+				else_if = { 
+					limit = { 
+						culture = polabian
+					}
+					set_province_flag = CV_SC_german_ostsiedlung
+					set_variable = { 
+						which = azn
+						value = 4
+					}
+					set_province_flag = CV_nopreset
+					clr_province_flag = CV_nopreset
+					set_province_flag = low_saxon
+					set_variable = { 
+						which = azm
+						value = 15
+					}
+					set_province_flag = ostsiedlung_province_effect
+				}
+				else_if = { 
+					limit = { 
+						culture = kashubian
+					}
+					set_province_flag = CV_SC_german_ostsiedlung
+					set_variable = { 
+						which = azn
+						value = 4
+					}
+					set_province_flag = CV_nopreset
+					clr_province_flag = CV_nopreset
+					set_province_flag = pommeranian
+					set_variable = { 
+						which = azm
+						value = 15
+					}
+					set_province_flag = ostsiedlung_province_effect
+				}
+				else = { 
+					set_province_flag = CV_SC_german_ostsiedlung
+					set_variable = { 
+						which = azn
+						value = 4
+					}
+					set_province_flag = CV_nopreset
+					set_variable = { 
+						which = azm
+						value = 30
+					}
+					set_province_flag = ostsiedlung_province_effect
+				}
+			}
+		}
+		ostsiedlung_group_aft1275 = { 
+			if = { 
+				limit = { 
+					NOT = { 
+						OR = { 
+							culture_group = low_germanic
+							culture_group = high_germanic
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						culture = silesian
+					}
+					set_province_flag = CV_SC_german_ostsiedlung
+					set_variable = { 
+						which = azn
+						value = 2
+					}
+					set_province_flag = CV_nopreset
+					clr_province_flag = CV_nopreset
+					set_province_flag = german_silesian
+					set_variable = { 
+						which = azm
+						value = 5
+					}
+					set_province_flag = ostsiedlung_province_effect
+				}
+				else_if = { 
+					limit = { 
+						culture = sorbs
+					}
+					set_province_flag = CV_SC_german_ostsiedlung
+					set_variable = { 
+						which = azn
+						value = 2
+					}
+					set_province_flag = CV_nopreset
+					clr_province_flag = CV_nopreset
+					set_province_flag = low_saxon
+					set_variable = { 
+						which = azm
+						value = 5
+					}
+					set_province_flag = ostsiedlung_province_effect
+				}
+				else_if = { 
+					limit = { 
+						culture = polabian
+					}
+					set_province_flag = CV_SC_german_ostsiedlung
+					set_variable = { 
+						which = azn
+						value = 2
+					}
+					set_province_flag = CV_nopreset
+					clr_province_flag = CV_nopreset
+					set_province_flag = high_saxon
+					set_variable = { 
+						which = azm
+						value = 15
+					}
+					set_province_flag = ostsiedlung_province_effect
+				}
+				else_if = { 
+					limit = { 
+						culture = kashubian
+					}
+					set_province_flag = CV_SC_german_ostsiedlung
+					set_variable = { 
+						which = azn
+						value = 2
+					}
+					set_province_flag = CV_nopreset
+					clr_province_flag = CV_nopreset
+					set_province_flag = pommeranian
+					set_variable = { 
+						which = azm
+						value = 15
+					}
+					set_province_flag = ostsiedlung_province_effect
+				}
+				else = { 
+					set_province_flag = CV_SC_german_ostsiedlung
+					set_variable = { 
+						which = azn
+						value = 4
+					}
+					set_province_flag = CV_nopreset
+					set_variable = { 
+						which = azm
+						value = 20
+					}
+					set_province_flag = ostsiedlung_province_effect
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = setup_event.2
+	title = "EVT_AI"
+	desc = "EVT_AI"
+	picture = MEIOU_AND_TAXES_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	trigger = { 
+		ai = no
+	}
+	immediate = { 
+		if = { 
+			limit = { 
+				tag = FRA
+				is_revolution_target = no
+			}
+			custom_tooltip = royal_french_motto_tooltip
+		}
+		else_if = { 
+			limit = { 
+				tag = FRA
+				is_revolution_target = yes
+			}
+			custom_tooltip = revolutionary_french_motto_tooltip
+		}
+		else_if = { 
+			limit = { 
+				OR = { 
+					tag = ENG
+					tag = GBR
+				}
+			}
+			custom_tooltip = england_motto_tooltip
+		}
+		else_if = { 
+			limit = { 
+				tag = POR
+			}
+			custom_tooltip = portuguese_motto_tooltip
+		}
+		else_if = { 
+			limit = { 
+				tag = PRU
+			}
+			custom_tooltip = prussia_motto_tooltip
+		}
+		else_if = { 
+			limit = { 
+				tag = GRA
+			}
+			custom_tooltip = granada_motto_tooltip
+		}
+		else_if = { 
+			limit = { 
+				tag = SPA
+			}
+			custom_tooltip = spain_motto_tooltip
+		}
+		else_if = { 
+			limit = { 
+				tag = EBU
+			}
+			custom_tooltip = belgian_motto_tooltip
+		}
+		else_if = { 
+			limit = { 
+				tag = NED
+			}
+			custom_tooltip = dutch_motto_tooltip
+		}
+		else_if = { 
+			limit = { 
+				tag = SWI
+			}
+			custom_tooltip = swiss_motto_tooltip
+		}
+		else_if = { 
+			limit = { 
+				tag = USA
+			}
+			custom_tooltip = american_motto_tooltip
+		}
+		else_if = { 
+			limit = { 
+				tag = HAB
+			}
+			custom_tooltip = austrian_motto_tooltip
+		}
+		else_if = { 
+			limit = { 
+				tag = HAN
+			}
+			custom_tooltip = hanover_motto_tooltip
+		}
+		else_if = { 
+			limit = { 
+				tag = HOH
+			}
+			custom_tooltip = hohenzollern_motto_tooltip
+		}
+		else_if = { 
+			limit = { 
+				tag = SCO
+			}
+			custom_tooltip = scotland_motto_tooltip
+		}
+		else_if = { 
+			limit = { 
+				OR = { 
+					tag = POL
+					tag = PLC
+				}
+			}
+			custom_tooltip = polish_motto_tooltip
+		}
+		else_if = { 
+			limit = { 
+				OR = { 
+					tag = DAN
+					tag = DEN
+				}
+			}
+			custom_tooltip = denmark_motto_tooltip
+		}
+		else_if = { 
+			limit = { 
+				tag = SWE
+			}
+			custom_tooltip = sweden_motto_tooltip
+		}
+		else_if = { 
+			limit = { 
+				tag = BOH
+			}
+			custom_tooltip = bohemia_motto_tooltip
+		}
+		else_if = { 
+			limit = { 
+				tag = ROU
+			}
+			custom_tooltip = roumania_motto_tooltip
+		}
+		else_if = { 
+			limit = { 
+				tag = BUL
+			}
+			custom_tooltip = bulgaria_motto_tooltip
+		}
+	}
+	option = { 
+		name = "EVT_AI"
+		country_event = { 
+			id = setup_event.101
+			days = 0
+		}
+		country_event = { 
+			id = AI_Invest.5
+			days = 30
+		}
+	}
+}
+country_event = { 
+	id = setup_event.4
+	title = "EVT_AI"
+	desc = "EVT_AI"
+	picture = MEIOU_AND_TAXES_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	trigger = { 
+		government = monarchy
+		has_heir = no
+		has_regency = no
+		is_lesser_in_union = no
+		NOT = { 
+			OR = { 
+				has_global_flag = 1530_start_date
+				has_global_flag = meiou_and_taxes_mod_start
+				is_playing_custom_nation = yes
+				has_country_flag = no_heir
+				AND = { 
+					tag = MOE
+					NOT = { 
+						ruler_age = 31
+					}
+				}
+			}
+		}
+	}
+	immediate = { 
+		set_global_flag = meiou_and_taxes_mod_start
+	}
+	option = { 
+		name = "EVT_AI"
+		if = { 
+			limit = { 
+				legitimacy = 80
+			}
+			random_list = { 
+				15 = { }
+				15 = { 
+					define_heir = { 
+						claim = 90
+						dynasty = THIS
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 90
+						dynasty = THIS
+						age = 2
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 90
+						dynasty = THIS
+						age = 4
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 90
+						dynasty = THIS
+						age = 6
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 90
+						dynasty = THIS
+						age = 8
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 90
+						dynasty = THIS
+						age = 10
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 90
+						dynasty = THIS
+						age = 12
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 90
+						dynasty = THIS
+						age = 14
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				legitimacy = 60
+			}
+			random_list = { 
+				15 = { }
+				15 = { 
+					define_heir = { 
+						claim = 70
+						dynasty = THIS
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 70
+						dynasty = THIS
+						age = 2
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 70
+						dynasty = THIS
+						age = 4
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 70
+						dynasty = THIS
+						age = 6
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 70
+						dynasty = THIS
+						age = 8
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 70
+						dynasty = THIS
+						age = 10
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 70
+						dynasty = THIS
+						age = 12
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 70
+						dynasty = THIS
+						age = 14
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = { 
+				legitimacy = 40
+			}
+			random_list = { 
+				15 = { }
+				15 = { 
+					define_heir = { 
+						claim = 50
+						dynasty = THIS
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 50
+						dynasty = THIS
+						age = 2
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 50
+						dynasty = THIS
+						age = 4
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 50
+						dynasty = THIS
+						age = 6
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 50
+						dynasty = THIS
+						age = 8
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 50
+						dynasty = THIS
+						age = 10
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 50
+						dynasty = THIS
+						age = 12
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 50
+						dynasty = THIS
+						age = 14
+					}
+				}
+			}
+		}
+		else = { 
+			random_list = { 
+				15 = { }
+				15 = { 
+					define_heir = { 
+						claim = 30
+						dynasty = THIS
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 30
+						dynasty = THIS
+						age = 2
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 30
+						dynasty = THIS
+						age = 4
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 30
+						dynasty = THIS
+						age = 6
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 30
+						dynasty = THIS
+						age = 8
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 30
+						dynasty = THIS
+						age = 10
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 30
+						dynasty = THIS
+						age = 12
+					}
+				}
+				10 = { 
+					define_heir = { 
+						claim = 30
+						dynasty = THIS
+						age = 14
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = setup_event.11
+	title = no_localization
+	desc = no_localization
+	picture = MEIOU_AND_TAXES_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	trigger = { 
+		always = yes
+	}
+	immediate = { 
+		clr_global_flag = multiplayer
+		if = { 
+			limit = { 
+				calc_true_if = { 
+					all_country = { 
+						ai = no
+					}
+					amount = 2
+				}
+			}
+			set_global_flag = multiplayer
+		}
+	}
+	option = { 
+		name = no_localization
+	}
+}
+country_event = { 
+	id = setup_event.101
+	title = "EVT_AI"
+	desc = "EVT_AI"
+	picture = MEIOU_AND_TAXES_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	option = { 
+		name = "EVT_AI"
+		add_country_modifier = { 
+			name = normal_difficulty
+			duration = -1
+			hidden = yes
+		}
+		country_event = { 
+			id = setup_event.102
+		}
+	}
+}
+country_event = { 
+	id = setup_event.102
+	title = "setup_event.102.name"
+	desc = "setup_event.102.desc"
+	picture = MEIOU_AND_TAXES_eventPicture
+	is_triggered_only = yes
+	option = { 
+		name = "setup_event.102.opta"
+		highlight = yes
+		trigger = { 
+			OR = { 
+				has_country_modifier = very_easy_difficulty
+				has_country_modifier = easy_difficulty
+				has_country_modifier = normal_difficulty
+				has_country_modifier = hard_difficulty
+				has_country_modifier = expert_difficulty
+			}
+		}
+		country_event = { 
+			id = setup_event.107
+			days = 1
+		}
+		country_event = { 
+			id = setup_event.201
+			days = 3
+		}
+	}
+	option = { 
+		name = "setup_event.102.optb"
+		hidden_effect = { 
+			country_event = { 
+				id = setup_event.103
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optc"
+		trigger = { 
+			NOT = { 
+				has_country_flag = unlocked_settings
+			}
+		}
+		hidden_effect = { 
+			set_country_flag = unlocked_settings
+			country_event = { 
+				id = setup_event.104
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optd"
+		trigger = { 
+			has_country_flag = unlocked_settings
+		}
+		hidden_effect = { 
+			clr_country_flag = unlocked_settings
+			country_event = { 
+				id = setup_event.104
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optf"
+		trigger = { 
+			has_country_modifier = normal_difficulty
+		}
+		custom_tooltip = setup_event.102.diffd
+		hidden_effect = { 
+			remove_country_modifier = normal_difficulty
+			add_country_modifier = { 
+				name = hard_difficulty
+				duration = -1
+				hidden = yes
+			}
+			country_event = { 
+				id = setup_event.104
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optg"
+		trigger = { 
+			has_country_modifier = hard_difficulty
+		}
+		custom_tooltip = setup_event.102.optgd
+		hidden_effect = { 
+			remove_country_modifier = hard_difficulty
+			add_country_modifier = { 
+				name = expert_difficulty
+				duration = -1
+				hidden = yes
+			}
+			country_event = { 
+				id = setup_event.104
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.opth"
+		trigger = { 
+			has_country_modifier = expert_difficulty
+		}
+		custom_tooltip = setup_event.102.opthd
+		hidden_effect = { 
+			remove_country_modifier = expert_difficulty
+			add_country_modifier = { 
+				name = very_easy_difficulty
+				duration = -1
+				hidden = yes
+			}
+			country_event = { 
+				id = setup_event.104
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.opti"
+		trigger = { 
+			has_country_modifier = easy_difficulty
+		}
+		custom_tooltip = setup_event.102.optid
+		hidden_effect = { 
+			remove_country_modifier = easy_difficulty
+			add_country_modifier = { 
+				name = normal_difficulty
+				duration = -1
+				hidden = yes
+			}
+			country_event = { 
+				id = setup_event.104
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optm"
+		trigger = { 
+			has_country_modifier = very_easy_difficulty
+		}
+		custom_tooltip = setup_event.102.optmd
+		hidden_effect = { 
+			remove_country_modifier = very_easy_difficulty
+			add_country_modifier = { 
+				name = easy_difficulty
+				duration = -1
+				hidden = yes
+			}
+			country_event = { 
+				id = setup_event.104
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optj"
+		trigger = { 
+			NOT = { 
+				has_global_flag = additional_tags_enabled
+			}
+		}
+		hidden_effect = { 
+			set_global_flag = additional_tags_enabled
+			country_event = { 
+				id = setup_event.104
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optk"
+		trigger = { 
+			has_global_flag = additional_tags_enabled
+			NOT = { 
+				has_global_flag = extra_tags_enabled
+			}
+		}
+		custom_tooltip = "additional_tags_enabled_tt"
+		hidden_effect = { 
+			set_global_flag = extra_tags_enabled
+			country_event = { 
+				id = setup_event.104
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optl"
+		trigger = { 
+			has_global_flag = extra_tags_enabled
+		}
+		custom_tooltip = "extra_tags_enabled_tt"
+		hidden_effect = { 
+			clr_global_flag = additional_tags_enabled
+			clr_global_flag = extra_tags_enabled
+			country_event = { 
+				id = setup_event.104
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optn"
+		trigger = { 
+			NOT = { 
+				has_global_flag = historical_conversion
+			}
+		}
+		hidden_effect = { 
+			set_global_flag = historical_conversion
+			country_event = { 
+				id = setup_event.104
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.opto"
+		trigger = { 
+			has_global_flag = historical_conversion
+		}
+		custom_tooltip = setup_event.102.optod
+		hidden_effect = { 
+			clr_global_flag = historical_conversion
+			country_event = { 
+				id = setup_event.104
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optp"
+		trigger = { 
+			NOT = { 
+				has_global_flag = historical_religion
+			}
+		}
+		custom_tooltip = setup_event.102.optpd
+		hidden_effect = { 
+			set_global_flag = historical_religion
+			country_event = { 
+				id = setup_event.104
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optq"
+		trigger = { 
+			has_global_flag = historical_religion
+		}
+		custom_tooltip = setup_event.102.optqd
+		hidden_effect = { 
+			clr_global_flag = historical_religion
+			country_event = { 
+				id = setup_event.104
+			}
+		}
+	}
+}
+country_event = { 
+	id = setup_event.103
+	title = "setup_event.103.name"
+	desc = "setup_event.103.desc"
+	picture = MEIOU_AND_TAXES_eventPicture
+	is_triggered_only = yes
+	trigger = { 
+		ai = no
+	}
+	option = { 
+		name = "PTM_BACK"
+		highlight = yes
+		country_event = { 
+			id = setup_event.102
+			days = 0
+		}
+	}
+}
+country_event = { 
+	id = setup_event.104
+	title = "EVT_AI"
+	desc = "EVT_AI"
+	picture = MEIOU_AND_TAXES_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	trigger = { 
+		ai = no
+	}
+	option = { 
+		name = "EVT_AI"
+		country_event = { 
+			id = setup_event.102
+			days = 0
+		}
+	}
+}
+country_event = { 
+	id = setup_event.105
+	title = "setup_event.102.name"
+	desc = "setup_event.105.desc"
+	picture = MEIOU_AND_TAXES_eventPicture
+	is_triggered_only = yes
+	option = { 
+		name = "setup_event.102.opta"
+		highlight = yes
+		hidden_effect = { 
+			country_event = { 
+				id = setup_event.201
+				days = 3
+			}
+		}
+		country_event = { 
+			id = setup_event.107
+			days = 1
+		}
+	}
+	option = { 
+		name = "setup_event.102.optc"
+		trigger = { 
+			NOT = { 
+				has_country_flag = unlocked_settings
+			}
+		}
+		hidden_effect = { 
+			set_country_flag = unlocked_settings
+			country_event = { 
+				id = setup_event.106
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optd"
+		trigger = { 
+			has_country_flag = unlocked_settings
+		}
+		hidden_effect = { 
+			clr_country_flag = unlocked_settings
+			country_event = { 
+				id = setup_event.106
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optf"
+		trigger = { 
+			has_country_modifier = normal_difficulty
+		}
+		custom_tooltip = setup_event.102.diff
+		hidden_effect = { 
+			remove_country_modifier = normal_difficulty
+			add_country_modifier = { 
+				name = hard_difficulty
+				duration = -1
+				hidden = yes
+			}
+			country_event = { 
+				id = setup_event.106
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optg"
+		trigger = { 
+			has_country_modifier = hard_difficulty
+		}
+		custom_tooltip = setup_event.102.optgd
+		custom_tooltip = setup_event.102.diff
+		hidden_effect = { 
+			remove_country_modifier = hard_difficulty
+			add_country_modifier = { 
+				name = expert_difficulty
+				duration = -1
+				hidden = yes
+			}
+			country_event = { 
+				id = setup_event.106
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.opth"
+		trigger = { 
+			has_country_modifier = expert_difficulty
+		}
+		custom_tooltip = setup_event.102.opthd
+		custom_tooltip = setup_event.102.diff
+		hidden_effect = { 
+			remove_country_modifier = expert_difficulty
+			add_country_modifier = { 
+				name = very_easy_difficulty
+				duration = -1
+				hidden = yes
+			}
+			country_event = { 
+				id = setup_event.106
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.opti"
+		trigger = { 
+			has_country_modifier = easy_difficulty
+		}
+		custom_tooltip = setup_event.102.optid
+		custom_tooltip = setup_event.102.diff
+		hidden_effect = { 
+			remove_country_modifier = easy_difficulty
+			add_country_modifier = { 
+				name = normal_difficulty
+				duration = -1
+				hidden = yes
+			}
+			country_event = { 
+				id = setup_event.106
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optm"
+		trigger = { 
+			has_country_modifier = very_easy_difficulty
+		}
+		custom_tooltip = setup_event.102.optmd
+		custom_tooltip = setup_event.102.diff
+		hidden_effect = { 
+			remove_country_modifier = very_easy_difficulty
+			add_country_modifier = { 
+				name = easy_difficulty
+				duration = -1
+				hidden = yes
+			}
+			country_event = { 
+				id = setup_event.106
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optj"
+		trigger = { 
+			NOT = { 
+				has_global_flag = additional_tags_enabled
+			}
+		}
+		hidden_effect = { 
+			set_global_flag = additional_tags_enabled
+			country_event = { 
+				id = setup_event.106
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optk"
+		trigger = { 
+			has_global_flag = additional_tags_enabled
+			NOT = { 
+				has_global_flag = extra_tags_enabled
+			}
+		}
+		custom_tooltip = "additional_tags_enabled_tt"
+		hidden_effect = { 
+			set_global_flag = extra_tags_enabled
+			country_event = { 
+				id = setup_event.106
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optl"
+		trigger = { 
+			has_global_flag = extra_tags_enabled
+		}
+		custom_tooltip = "extra_tags_enabled_tt"
+		hidden_effect = { 
+			clr_global_flag = additional_tags_enabled
+			clr_global_flag = extra_tags_enabled
+			country_event = { 
+				id = setup_event.106
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optn"
+		trigger = { 
+			NOT = { 
+				has_global_flag = historical_conversion
+			}
+		}
+		custom_tooltip = setup_event.102.optnd
+		hidden_effect = { 
+			set_global_flag = historical_conversion
+			country_event = { 
+				id = setup_event.106
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.opto"
+		trigger = { 
+			has_global_flag = historical_conversion
+		}
+		custom_tooltip = setup_event.102.optod
+		hidden_effect = { 
+			clr_global_flag = historical_conversion
+			country_event = { 
+				id = setup_event.106
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optp"
+		trigger = { 
+			NOT = { 
+				has_global_flag = historical_religion
+			}
+		}
+		custom_tooltip = setup_event.102.optpd
+		hidden_effect = { 
+			set_global_flag = historical_religion
+			country_event = { 
+				id = setup_event.106
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optq"
+		trigger = { 
+			has_global_flag = historical_religion
+		}
+		custom_tooltip = setup_event.102.optqd
+		hidden_effect = { 
+			clr_global_flag = historical_religion
+			country_event = { 
+				id = setup_event.106
+			}
+		}
+	}
+}
+country_event = { 
+	id = setup_event.106
+	title = "EVT_AI"
+	desc = "EVT_AI"
+	picture = MEIOU_AND_TAXES_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	trigger = { 
+		ai = no
+	}
+	option = { 
+		name = "EVT_AI"
+		country_event = { 
+			id = setup_event.105
+			days = 0
+		}
+	}
+}
+country_event = { 
+	id = setup_event.107
+	title = "EVT_AI"
+	desc = "EVT_AI"
+	picture = MEIOU_AND_TAXES_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	option = { 
+		name = "EVT_AI"
+		if = { 
+			limit = { 
+				has_global_flag = historical_religion
+			}
+			every_country = { 
+				add_country_modifier = { 
+					name = historical_religion_em
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+		else = { 
+			every_country = { 
+				remove_country_modifier = historical_religion_em
+			}
+		}
+	}
+}
+country_event = { 
+	id = setup_event.201
+	title = "setup_event.201.name"
+	desc = "setup_event.201.desc"
+	picture = MEIOU_AND_TAXES_eventPicture
+	is_triggered_only = yes
+	option = { 
+		name = "setup_event.102.opta"
+		highlight = yes
+	}
+	option = { 
+		name = "setup_event.102.optb"
+		trigger = { 
+			religion = catholic
+			NOT = { 
+				has_country_flag = cardinal_imp
+			}
+			NOT = { 
+				has_country_flag = cardinal_all
+			}
+		}
+		hidden_effect = { 
+			set_country_flag = cardinal_imp
+			country_event = { 
+				id = setup_event.202
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optc"
+		trigger = { 
+			religion = catholic
+			has_country_flag = cardinal_imp
+		}
+		hidden_effect = { 
+			clr_country_flag = cardinal_imp
+			set_country_flag = cardinal_all
+			country_event = { 
+				id = setup_event.202
+			}
+		}
+	}
+	option = { 
+		name = "setup_event.102.optd"
+		trigger = { 
+			religion = catholic
+			has_country_flag = cardinal_all
+		}
+		hidden_effect = { 
+			clr_country_flag = cardinal_all
+			country_event = { 
+				id = setup_event.202
+			}
+		}
+	}
+}
+country_event = { 
+	id = setup_event.202
+	title = "EVT_AI"
+	desc = "EVT_AI"
+	picture = MEIOU_AND_TAXES_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	trigger = { 
+		ai = no
+	}
+	option = { 
+		name = "EVT_AI"
+		country_event = { 
+			id = setup_event.201
+			days = 0
+		}
+	}
+}
+country_event = { 
+	id = setup_event.301
+	title = startup_warning_t
+	desc = startup_warning_d
+	picture = MEIOU_AND_TAXES_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	option = { 
+		name = "EVT_AI"
+	}
+}

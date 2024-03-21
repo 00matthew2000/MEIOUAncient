@@ -1,0 +1,22 @@
+capital = "Onigamiinsing"
+trade_goods = unknown
+culture = ojibwa
+religion = midewiwin
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+native_size = 25
+native_ferocity = 2
+native_hostileness = 5
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 62
+	}
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+	set_province_flag = iron
+}

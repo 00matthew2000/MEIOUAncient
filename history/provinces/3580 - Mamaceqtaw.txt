@@ -1,0 +1,25 @@
+capital = "Mamaceqtaw"
+trade_goods = unknown
+culture = ojibwa
+religion = midewiwin
+hre = no
+base_tax = 3
+base_production = 0
+base_manpower = 0
+native_size = 50
+native_ferocity = 2
+native_hostileness = 5
+450.1.1 = { 
+	set_variable = { 
+		which = baf
+		value = 61
+	}
+	set_variable = { 
+		which = acp
+		value = 3
+	}
+	add_permanent_province_modifier = { 
+		name = fur_medium
+		duration = -1
+	}
+}

@@ -1,0 +1,54 @@
+owner = YUA
+controller = YUA
+capital = "Shangrao"
+trade_goods = rice
+culture = chuqu
+religion = mahayana
+hre = no
+base_tax = 53
+base_production = 1
+base_manpower = 2
+is_city = yes
+set_variable = { 
+	which = gch
+	value = 3
+}
+set_variable = { 
+	which = gcj
+	value = 2
+}
+set_variable = { 
+	which = gck
+	value = 3
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_province_flag = TN_Important
+	set_variable = { 
+		which = acp
+		value = 5
+	}
+	set_province_flag = tea
+}
+985.1.1 = { 
+	owner = SNG
+	controller = SNG
+	add_core = SNG
+}
+1276.1.1 = { 
+	owner = CNG
+	controller = CNG
+	add_core = CNG
+}
+1320.1.1 = { 
+	add_core = YUA
+	remove_core = SNG
+}
+1351.1.1 = { 
+	add_core = MNG
+}

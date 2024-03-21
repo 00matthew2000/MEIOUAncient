@@ -1,0 +1,19 @@
+capital = "Copiapo"
+trade_goods = unknown
+culture = diaguita
+religion = inti
+hre = no
+base_tax = 14
+base_production = 0
+base_manpower = 1
+native_size = 80
+native_ferocity = 1
+native_hostileness = 5
+discovered_by = south_american
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 1.5
+	}
+	set_province_flag = iron
+}

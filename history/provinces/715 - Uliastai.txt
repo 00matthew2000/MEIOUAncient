@@ -1,0 +1,36 @@
+owner = YUA
+controller = YUA
+add_core = YUA
+capital = "Uliastai"
+trade_goods = wheat
+culture = mongol
+religion = tengri_pagan
+hre = no
+base_tax = 9
+base_production = 0
+base_manpower = 1
+is_city = yes
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = YEN
+discovered_by = SAK
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 90.000
+	}
+	set_variable = { 
+		which = atc
+		value = 100.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 1.5
+	}
+}

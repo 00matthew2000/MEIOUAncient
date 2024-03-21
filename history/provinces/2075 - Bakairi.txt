@@ -1,0 +1,17 @@
+capital = "Bakairi"
+trade_goods = unknown
+culture = maipurean
+religion = south_cone
+hre = no
+base_tax = 7
+base_production = 0
+base_manpower = 0
+native_size = 35
+native_ferocity = 1
+native_hostileness = 3
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 1
+	}
+}

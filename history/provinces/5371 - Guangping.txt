@@ -1,0 +1,46 @@
+owner = YUA
+controller = YUA
+capital = "Yongnian"
+trade_goods = wheat
+culture = hebei
+religion = mahayana
+hre = no
+base_tax = 23
+base_production = 1
+base_manpower = 1
+is_city = yes
+set_variable = { 
+	which = gcj
+	value = 1
+}
+set_variable = { 
+	which = gci
+	value = 1
+}
+set_variable = { 
+	which = gck
+	value = 2
+}
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = steppestech
+discovered_by = YUA
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 6.5
+	}
+	set_province_flag = coal
+}
+1276.1.1 = { 
+	owner = YUA
+	controller = YUA
+	add_core = YUA
+}
+1351.1.1 = { 
+	owner = CYU
+	controller = CYU
+	add_core = CYU
+}

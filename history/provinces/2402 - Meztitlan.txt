@@ -1,0 +1,32 @@
+owner = MET
+controller = MET
+add_core = MET
+capital = "Meztitlan"
+trade_goods = maize
+culture = metztitlani
+religion = cocijo
+hre = no
+base_tax = 8
+base_production = 0
+base_manpower = 0
+is_city = yes
+set_variable = { 
+	which = gck
+	value = 1
+}
+discovered_by = mesoamerican
+450.1.1 = { 
+	set_variable = { 
+		which = ami
+		value = 3.500
+	}
+	set_variable = { 
+		which = acp
+		value = 5.5
+	}
+	set_province_flag = copper
+	add_permanent_province_modifier = { 
+		name = urban_goods_metalwork
+		duration = -1
+	}
+}

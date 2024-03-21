@@ -1,0 +1,226 @@
+capital = "Lappland"
+trade_goods = livestock
+culture = sapmi
+religion = finnish_pagan
+hre = no
+base_tax = 1
+base_production = 0
+base_manpower = 0
+native_size = 5
+native_ferocity = 2
+native_hostileness = 1
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 70.000
+	}
+	set_variable = { 
+		which = atc
+		value = 90.000
+	}
+}
+450.1.1 = { 
+	add_permanent_province_modifier = { 
+		name = "fur_low"
+		duration = -1
+	}
+	set_province_flag = iron
+	set_province_flag = no_mines
+	set_province_flag = sami_province
+}
+100.1.1 = { 
+	set_variable = { 
+		which = amj
+		value = 3.868
+	}
+	set_variable = { 
+		which = amk
+		value = 0.000
+	}
+	set_variable = { 
+		which = amh
+		value = 3.868
+	}
+	set_variable = { 
+		which = ami
+		value = 0.000
+	}
+	set_variable = { 
+		which = amf
+		value = 2.418
+	}
+	set_variable = { 
+		which = amg
+		value = 0.000
+	}
+	set_variable = { 
+		which = amd
+		value = 3.143
+	}
+	set_variable = { 
+		which = ame
+		value = 0.000
+	}
+	set_variable = { 
+		which = amb
+		value = 3.868
+	}
+	set_variable = { 
+		which = amc
+		value = 0.000
+	}
+	set_variable = { 
+		which = alz
+		value = 4.352
+	}
+	set_variable = { 
+		which = ama
+		value = 0.000
+	}
+	set_variable = { 
+		which = alx
+		value = 4.276
+	}
+	set_variable = { 
+		which = aly
+		value = 0.000
+	}
+	set_variable = { 
+		which = alv
+		value = 4.957
+	}
+	set_variable = { 
+		which = alw
+		value = 0.000
+	}
+	set_variable = { 
+		which = alt
+		value = 6.048
+	}
+	set_variable = { 
+		which = alu
+		value = 0.000
+	}
+	set_variable = { 
+		which = alr
+		value = 8.859
+	}
+	set_variable = { 
+		which = als
+		value = 0.000
+	}
+	set_variable = { 
+		which = alp
+		value = 15.493
+	}
+	set_variable = { 
+		which = alq
+		value = 0.000
+	}
+	set_variable = { 
+		which = aho
+		value = 28.068
+	}
+	set_variable = { 
+		which = ahp
+		value = 0.000
+	}
+}
+100.1.1 = { 
+	set_variable = { 
+		which = amj
+		value = 3.868
+	}
+	set_variable = { 
+		which = amk
+		value = 0.000
+	}
+	set_variable = { 
+		which = amh
+		value = 3.868
+	}
+	set_variable = { 
+		which = ami
+		value = 0.000
+	}
+	set_variable = { 
+		which = amf
+		value = 2.418
+	}
+	set_variable = { 
+		which = amg
+		value = 0.000
+	}
+	set_variable = { 
+		which = amd
+		value = 3.143
+	}
+	set_variable = { 
+		which = ame
+		value = 0.000
+	}
+	set_variable = { 
+		which = amb
+		value = 3.868
+	}
+	set_variable = { 
+		which = amc
+		value = 0.000
+	}
+	set_variable = { 
+		which = alz
+		value = 4.352
+	}
+	set_variable = { 
+		which = ama
+		value = 0.000
+	}
+	set_variable = { 
+		which = alx
+		value = 4.276
+	}
+	set_variable = { 
+		which = aly
+		value = 0.000
+	}
+	set_variable = { 
+		which = alv
+		value = 4.957
+	}
+	set_variable = { 
+		which = alw
+		value = 0.000
+	}
+	set_variable = { 
+		which = alt
+		value = 6.048
+	}
+	set_variable = { 
+		which = alu
+		value = 0.000
+	}
+	set_variable = { 
+		which = alr
+		value = 8.859
+	}
+	set_variable = { 
+		which = als
+		value = 0.000
+	}
+	set_variable = { 
+		which = alp
+		value = 15.493
+	}
+	set_variable = { 
+		which = alq
+		value = 0.000
+	}
+	set_variable = { 
+		which = aho
+		value = 28.068
+	}
+	set_variable = { 
+		which = ahp
+		value = 0.000
+	}
+}

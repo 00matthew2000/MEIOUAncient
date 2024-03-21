@@ -1,0 +1,30 @@
+owner = SDB
+controller = SDB
+add_core = SDB
+capital = "Khucan"
+trade_goods = wool
+culture = persian
+religion = sunni
+base_tax = 1
+base_production = 0
+base_manpower = 0
+discovered_by = steppestech
+discovered_by = YUA
+discovered_by = ottoman
+discovered_by = muslim
+200.1.1 = { 
+	set_variable = { 
+		which = abb
+		value = 25.000
+	}
+	set_variable = { 
+		which = atc
+		value = 50.000
+	}
+}
+450.1.1 = { 
+	set_variable = { 
+		which = acp
+		value = 2.5
+	}
+}
