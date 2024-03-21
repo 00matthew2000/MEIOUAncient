@@ -1,6 +1,3 @@
-owner = MLC
-controller = MLC
-add_core = MLC
 capital = "Ranai"
 trade_goods = fish
 culture = malayan

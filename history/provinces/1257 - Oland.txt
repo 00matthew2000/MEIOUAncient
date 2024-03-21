@@ -18,14 +18,7 @@ set_variable = {
 	which = gcn
 	value = 1
 }
-discovered_by = western
-discovered_by = eastern
-discovered_by = byzantine
-discovered_by = muslim
 1356.1.1 = { 
-	owner = RSW
-	controller = RSW
-	add_core = RSW
 	set_province_flag = TN_Island
 	set_province_flag = TN_Natural_Minor
 }

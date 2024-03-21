@@ -1,6 +1,6 @@
 capital = "Sihanaka"
 trade_goods = rice
-culture = vezu
+culture = vazimba
 religion = fomba_gasy
 hre = no
 base_tax = 1

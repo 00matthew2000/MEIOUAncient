@@ -1,6 +1,6 @@
 capital = "Toamasina"
 trade_goods = fish
-culture = vazimba
+culture = vezu
 religion = fomba_gasy
 hre = no
 base_tax = 1

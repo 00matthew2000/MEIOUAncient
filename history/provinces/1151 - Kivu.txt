@@ -1,22 +1,20 @@
-owner = MSB
-controller = MSB
-add_core = MSB
 capital = "Nacala"
 trade_goods = fish
 culture = kimgao
 religion = sunni
 hre = no
-base_tax = 6
+base_tax = 3
 base_production = 0
 base_manpower = 0
-is_city = yes
+native_size = 55
+native_ferocity = 3
+native_hostileness = 2
 set_variable = { 
 	which = gci
 	value = 1
 }
 discovered_by = east_african
 discovered_by = central_african
-discovered_by = indian
 discovered_by = malagasy_tech
 200.1.1 = { 
 	set_variable = { 

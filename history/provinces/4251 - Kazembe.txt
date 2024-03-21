@@ -1,6 +1,3 @@
-owner = KZB
-controller = KZB
-add_core = KZB
 capital = "Kazambe"
 trade_goods = livestock
 culture = luba
@@ -9,7 +6,9 @@ hre = no
 base_tax = 3
 base_production = 0
 base_manpower = 0
-is_city = yes
+native_size = 60
+native_ferocity = 2
+native_hostileness = 7
 discovered_by = central_african
 200.1.1 = { 
 	set_variable = { 

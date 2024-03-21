@@ -1,6 +1,3 @@
-owner = TOC
-controller = TOC
-add_core = TOC
 capital = "Cuauhtzualco"
 trade_goods = fish
 culture = nawa
@@ -9,6 +6,9 @@ hre = no
 base_tax = 5
 base_production = 0
 base_manpower = 0
+native_size = 55
+native_ferocity = 6
+native_hostileness = 6
 is_city = yes
 set_variable = { 
 	which = gci

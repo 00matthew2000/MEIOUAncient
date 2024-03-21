@@ -1,6 +1,3 @@
-owner = MBA
-controller = MBA
-add_core = MBA
 capital = "Monbasa"
 trade_goods = slaves
 culture = kiunguja
@@ -9,7 +6,9 @@ hre = no
 base_tax = 3
 base_production = 1
 base_manpower = 0
-is_city = yes
+native_size = 55
+native_ferocity = 2
+native_hostileness = 2
 set_variable = { 
 	which = gcj
 	value = 1

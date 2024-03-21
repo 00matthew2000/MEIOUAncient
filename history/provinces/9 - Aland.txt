@@ -1,27 +1,16 @@
-owner = SWE
-controller = SWE
-add_core = SWE
 capital = "Sund"
 trade_goods = fish
-culture = swedish
-religion = catholic
+culture = sapmi
+religion = finnish_pagan
 hre = no
 base_tax = 0
 base_production = 0
 base_manpower = 0
-is_city = yes
 set_variable = { 
 	which = gci
 	value = 1
 }
-discovered_by = eastern
-discovered_by = byzantine
-discovered_by = western
 1356.1.1 = { 
-	owner = RSW
-	controller = RSW
-	add_core = RSW
-	add_core = SWE
 	set_province_flag = TN_Island
 	set_province_flag = TN_Natural_Minor
 }

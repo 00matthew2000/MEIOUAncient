@@ -1,6 +1,3 @@
-owner = OTO
-controller = OTO
-add_core = OTO
 capital = "Paxtitlan"
 trade_goods = unknown
 culture = otomi
@@ -9,7 +6,6 @@ hre = no
 base_tax = 3
 base_production = 0
 base_manpower = 0
-is_city = yes
 native_size = 25
 native_ferocity = 4
 native_hostileness = 8

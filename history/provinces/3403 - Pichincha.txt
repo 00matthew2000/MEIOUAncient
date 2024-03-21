@@ -1,22 +1,16 @@
-owner = QUI
-controller = QUI
-add_core = QUI
 capital = "Atacames"
 trade_goods = unknown
-culture = cara
-religion = inti
 hre = no
-is_city = yes
-set_variable = { 
-	which = gck
-	value = 1
-}
-base_tax = 28
+base_tax = 6
 base_production = 0
 base_manpower = 2
 native_size = 45
 native_ferocity = 1
 native_hostileness = 2
+set_variable = { 
+	which = gck
+	value = 1
+}
 discovered_by = south_american
 450.1.1 = { 
 	set_variable = { 

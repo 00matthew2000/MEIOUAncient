@@ -1,19 +1,18 @@
-owner = TOC
-controller = TOC
-add_core = TOC
 capital = "Tlacotlalpan"
 trade_goods = cacao
 culture = nawa
 religion = nahuatl
 hre = no
-is_city = yes
 set_variable = { 
 	which = gck
 	value = 1
 }
-base_tax = 11
+base_tax = 5
 base_production = 0
 base_manpower = 0
+native_size = 55
+native_ferocity = 7
+native_hostileness = 5
 discovered_by = mesoamerican
 450.1.1 = { 
 	set_variable = { 

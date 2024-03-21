@@ -1,6 +1,3 @@
-owner = QLM
-controller = QLM
-add_core = QLM
 capital = "Cinde"
 trade_goods = slaves
 culture = kimwani
@@ -9,7 +6,9 @@ hre = no
 base_tax = 2
 base_production = 0
 base_manpower = 0
-is_city = yes
+native_size = 35
+native_ferocity = 1
+native_hostileness = 2
 set_variable = { 
 	which = gci
 	value = 1

@@ -1,5 +1,5 @@
 name="MEIOU Ancient"
-path="mod/MEIOU Ancient"
+path="mod/MEIOU-Ancient"
 replace_path="common/achievements"
 replace_path="common/advisortypes"
 replace_path="common/ages"

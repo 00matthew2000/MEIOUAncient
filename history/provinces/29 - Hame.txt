@@ -19,11 +19,6 @@ discovered_by = byzantine
 1250.1.1 = { 
 	set_province_flag = freeholders_control_province
 }
-1356.1.1 = { 
-	owner = RSW
-	controller = RSW
-	add_core = RSW
-}
 100.1.1 = { 
 	set_variable = { 
 		which = amj
