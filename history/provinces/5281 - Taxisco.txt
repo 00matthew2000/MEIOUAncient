@@ -1,6 +1,3 @@
-owner = PIP
-controller = PIP
-add_core = PIP
 capital = "Taxisco"
 trade_goods = pepper
 culture = tzeltal

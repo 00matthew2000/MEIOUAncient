@@ -6,8 +6,8 @@ hre = no
 base_tax = 1
 base_production = 0
 base_manpower = 0
-native_size = 50
-native_ferocity = 2
+native_size = 30
+native_ferocity = 3
 native_hostileness = 5
 discovered_by = eastern
 discovered_by = byzantine
@@ -38,14 +38,4 @@ discovered_by = byzantine
 		name = "Fish_Medium"
 		duration = -1
 	}
-}
-1356.1.1 = { 
-	discovered_by = NOR
-	discovered_by = SWE
-	discovered_by = RSW
-	owner = NOV
-	controller = NOV
-	add_core = NOV
-	citysize = 100
-	set_province_flag = trade_good_set
 }

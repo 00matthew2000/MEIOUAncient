@@ -1,15 +1,14 @@
-owner = MAL
-controller = MAL
-add_core = MAL
 capital = "Brucama"
 trade_goods = rice
 culture = bainuk
 religion = west_african_pagan
 hre = no
-base_tax = 9
+base_tax = 3
 base_production = 0
 base_manpower = 1
-is_city = yes
+native_size = 50
+native_ferocity = 5
+native_hostileness = 9
 set_variable = { 
 	which = gcn
 	value = 1
@@ -31,8 +30,4 @@ discovered_by = sub_saharan
 		which = acp
 		value = 3.5
 	}
-}
-1356.1.1 = { 
-	add_core = KAA
-	add_core = KSA
 }

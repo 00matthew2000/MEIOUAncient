@@ -1,12 +1,9 @@
-owner = MIX
-controller = MIX
-add_core = MIX
 capital = "Tututepec"
 trade_goods = cotton
 culture = mixtec
 religion = nahuatl
 hre = no
-base_tax = 6
+base_tax = 4
 base_production = 0
 base_manpower = 1
 native_size = 55

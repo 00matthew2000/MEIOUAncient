@@ -1,12 +1,9 @@
-owner = TLC
-controller = TLC
-add_core = TLC
 capital = "Cuauhnahuac"
 trade_goods = maize
 culture = tlahuica
 religion = nahuatl
 hre = no
-base_tax = 6
+base_tax = 4
 base_production = 0
 base_manpower = 1
 native_size = 55

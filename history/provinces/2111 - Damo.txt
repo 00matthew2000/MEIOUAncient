@@ -1,6 +1,6 @@
-owner = MPH
-controller = MPH
-add_core = MPH
+owner = BNE
+controller = BNE
+add_core = BNE
 capital = "Rembang"
 trade_goods = rice
 culture = javan

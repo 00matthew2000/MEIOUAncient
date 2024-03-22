@@ -1,6 +1,3 @@
-owner = SOS
-controller = SOS
-add_core = SOS
 capital = "Taroudant"
 trade_goods = palm_date
 culture = chleuh
@@ -9,10 +6,9 @@ hre = no
 base_tax = 3
 base_production = 0
 base_manpower = 0
-is_city = yes
-discovered_by = muslim
-discovered_by = western
-discovered_by = ottoman
+native_size = 60
+native_ferocity = 7
+native_hostileness = 9
 discovered_by = soudantech
 discovered_by = sub_saharan
 discovered_by = MAL
@@ -34,10 +30,4 @@ discovered_by = MAL
 	set_province_flag = copper
 	set_province_flag = no_mines
 	set_province_flag = dates
-}
-1356.1.1 = { 
-	owner = FEZ
-	controller = FEZ
-	add_core = FEZ
-	set_province_flag = add_local_autonomy_100
 }

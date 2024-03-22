@@ -1,15 +1,14 @@
-owner = AHS
-controller = AHS
-add_core = AHS
 capital = "Al Hasa"
 trade_goods = palm_date
 culture = khaliji
 religion = shiite
 hre = no
-base_tax = 10
+base_tax = 2
 base_production = 1
 base_manpower = 1
-is_city = yes
+native_size = 50
+native_ferocity = 6
+native_hostileness = 6
 set_variable = { 
 	which = gcj
 	value = 1
@@ -19,8 +18,6 @@ set_variable = {
 	value = 1
 }
 discovered_by = muslim
-discovered_by = ottoman
-discovered_by = indian
 200.1.1 = { 
 	set_variable = { 
 		which = abb
@@ -44,7 +41,4 @@ discovered_by = indian
 		duration = -1
 	}
 	set_province_flag = dates
-}
-1356.1.1 = { 
-	discovered_by = ADA
 }

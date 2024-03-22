@@ -1,6 +1,3 @@
-owner = BKL
-controller = BKL
-add_core = BKL
 capital = "Hafar"
 trade_goods = wool
 culture = khaliji
@@ -9,13 +6,14 @@ hre = no
 base_tax = 1
 base_production = 0
 base_manpower = 0
-is_city = yes
+native_size = 50
+native_ferocity = 6
+native_hostileness = 6
 set_variable = { 
 	which = gcn
 	value = 1
 }
 discovered_by = muslim
-discovered_by = ottoman
 200.1.1 = { 
 	set_variable = { 
 		which = abb

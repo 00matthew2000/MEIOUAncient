@@ -1,6 +1,3 @@
-owner = ETH
-controller = ETH
-add_core = ETH
 capital = "Bahir Dar"
 trade_goods = millet
 culture = amhara
@@ -8,7 +5,9 @@ religion = jewish
 base_tax = 2
 base_production = 1
 base_manpower = 0
-is_city = yes
+native_size = 50
+native_ferocity = 5
+native_hostileness = 9
 set_variable = { 
 	which = gcj
 	value = 1
@@ -18,9 +17,6 @@ set_variable = {
 	value = 132
 }
 discovered_by = muslim
-discovered_by = eastern
-discovered_by = byzantine
-discovered_by = ottoman
 discovered_by = east_african
 450.1.1 = { 
 	set_province_flag = TN_Minor

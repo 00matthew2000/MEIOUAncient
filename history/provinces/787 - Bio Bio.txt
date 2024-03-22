@@ -1,12 +1,9 @@
-owner = MAP
-controller = MAP
-add_core = MAP
 capital = "Anacongua"
 trade_goods = livestock
 culture = mapuche
 religion = ngenechen
 hre = no
-base_tax = 38
+base_tax = 3
 base_production = 0
 base_manpower = 3
 native_size = 85

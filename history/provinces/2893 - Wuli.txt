@@ -1,6 +1,3 @@
-owner = MAL
-controller = MAL
-add_core = MAL
 capital = "Medina"
 trade_goods = cotton
 culture = mandinka
@@ -9,7 +6,9 @@ hre = no
 base_tax = 4
 base_production = 0
 base_manpower = 0
-is_city = yes
+native_size = 70
+native_ferocity = 5
+native_hostileness = 9
 discovered_by = soudantech
 discovered_by = sub_saharan
 200.1.1 = { 
@@ -23,10 +22,4 @@ discovered_by = sub_saharan
 		which = acp
 		value = 2
 	}
-}
-1356.1.1 = { 
-	add_core = KAA
-}
-1356.1.1 = { 
-	add_core = KAA
 }

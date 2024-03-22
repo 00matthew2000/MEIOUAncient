@@ -1,6 +1,6 @@
-owner = PLB
-controller = PLB
-add_core = PLB
+owner = MKS
+controller = MKS
+add_core = MKS
 capital = "Jambi"
 trade_goods = pepper
 culture = sumatran
@@ -43,8 +43,4 @@ discovered_by = austranesian
 		value = 2
 	}
 	set_province_flag = fruits
-}
-1356.1.1 = { 
-	add_core = SIJ
-	add_core = JMB
 }
