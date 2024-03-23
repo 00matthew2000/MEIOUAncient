@@ -1,6 +1,3 @@
-owner = AYU
-controller = AYU
-add_core = AYU
 capital = "Prachinburi"
 trade_goods = rice
 culture = khmer
@@ -9,7 +6,9 @@ hre = no
 base_tax = 1
 base_production = 0
 base_manpower = 0
-is_city = yes
+native_size = 50
+native_ferocity = 8
+native_hostileness = 8
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -21,7 +20,4 @@ discovered_by = austranesian
 		which = acp
 		value = 2.5
 	}
-}
-1356.1.1 = { 
-	add_core = KHM
 }

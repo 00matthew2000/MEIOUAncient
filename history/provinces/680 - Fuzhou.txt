@@ -33,7 +33,6 @@ discovered_by = southeast_asian
 discovered_by = steppestech
 discovered_by = austranesian
 discovered_by = indian
-discovered_by = muslim
 discovered_by = YUA
 450.1.1 = { 
 	set_province_flag = TN_Major
@@ -56,21 +55,4 @@ discovered_by = YUA
 		name = urban_goods_metalwork
 		duration = -1
 	}
-}
-985.1.1 = { 
-	owner = SNG
-	controller = SNG
-	add_core = SNG
-}
-1279.1.1 = { 
-	owner = YUA
-	controller = YUA
-	add_core = YUA
-	remove_core = SNG
-}
-1315.1.1 = { 
-	owner = CMN
-	controller = CMN
-	add_core = CEN
-	add_core = CMN
 }

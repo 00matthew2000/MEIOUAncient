@@ -1,11 +1,12 @@
-owner = YUA
-controller = YUA
+owner = MYR
+controller = MYR
+add_core = MYR
 capital = "Jizhou"
 trade_goods = wheat
 culture = yanyun
 religion = mahayana
 hre = no
-base_tax = 11
+base_tax = 9
 base_production = 0
 base_manpower = 0
 is_city = yes
@@ -33,9 +34,4 @@ discovered_by = YUA
 		duration = -1
 	}
 	set_province_flag = saltmarsh
-}
-1276.1.1 = { 
-	owner = YUA
-	controller = YUA
-	add_core = YUA
 }

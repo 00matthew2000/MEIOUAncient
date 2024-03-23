@@ -1,6 +1,3 @@
-owner = MHX
-controller = MHX
-add_core = MHX
 capital = "Boheri"
 trade_goods = lumber
 culture = nanai
@@ -9,7 +6,9 @@ hre = no
 base_tax = 4
 base_production = 0
 base_manpower = 0
-is_city = yes
+native_size = 45
+native_ferocity = 8
+native_hostileness = 7
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan

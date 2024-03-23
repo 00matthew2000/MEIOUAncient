@@ -1,12 +1,9 @@
-owner = GON
-controller = GON
-add_core = GON
 capital = "Yagbum"
 trade_goods = millet
 culture = dagomba
 religion = west_african_pagan
 hre = no
-base_tax = 5
+base_tax = 3
 base_production = 0
 base_manpower = 0
 is_city = yes

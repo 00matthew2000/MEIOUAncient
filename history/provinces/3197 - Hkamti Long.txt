@@ -1,6 +1,3 @@
-owner = MYA
-controller = MYA
-add_core = MYA
 capital = "Hkamti Long"
 trade_goods = rice
 culture = kachin
@@ -8,7 +5,9 @@ religion = ban_phi
 base_tax = 1
 base_production = 0
 base_manpower = 0
-is_city = yes
+native_size = 40
+native_ferocity = 8
+native_hostileness = 8
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -25,7 +24,4 @@ discovered_by = indian
 		which = acp
 		value = 1.5
 	}
-}
-1356.1.1 = { 
-	add_core = DLI
 }

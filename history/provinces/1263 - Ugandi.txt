@@ -1,18 +1,14 @@
-owner = DOR
-controller = DOR
-add_core = DOR
 capital = "Dorpat"
 trade_goods = wax
 culture = estonian
 religion = catholic
 hre = no
-base_tax = 5
+base_tax = 3
 base_production = 0
 base_manpower = 0
-is_city = yes
-discovered_by = western
-discovered_by = eastern
-discovered_by = byzantine
+native_size = 55
+native_ferocity = 6
+native_hostileness = 6
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
@@ -27,7 +23,4 @@ discovered_by = YUA
 	}
 	set_province_flag = honey
 }
-1356.1.1 = { 
-	add_core = LVO
-	add_core = EST
-}
+

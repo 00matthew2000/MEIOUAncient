@@ -1,15 +1,14 @@
-owner = KHM
-controller = KHM
-add_core = KHM
 capital = "Angkor Borei"
 trade_goods = fish
 culture = khmer
 religion = theravada
 hre = no
-base_tax = 17
+base_tax = 4
 base_production = 0
 base_manpower = 1
-is_city = yes
+native_size = 50
+native_ferocity = 8
+native_hostileness = 8
 set_variable = { 
 	which = gci
 	value = 1
@@ -18,7 +17,6 @@ set_variable = {
 	which = gck
 	value = 2
 }
-discovered_by = muslim
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan

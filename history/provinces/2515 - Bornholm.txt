@@ -1,6 +1,3 @@
-owner = DEN
-controller = DEN
-add_core = DEN
 capital = "Rothnne"
 trade_goods = fish
 culture = danish
@@ -9,7 +6,9 @@ hre = no
 base_tax = 0
 base_production = 0
 base_manpower = 0
-is_city = yes
+native_size = 65
+native_ferocity = 8
+native_hostileness = 6
 set_variable = { 
 	which = gci
 	value = 1
@@ -18,12 +17,7 @@ set_variable = {
 	which = gcn
 	value = 1
 }
-discovered_by = eastern
-discovered_by = byzantine
-discovered_by = western
-discovered_by = muslim
 450.1.1 = { 
-	set_province_flag = freeholders_control_province
 	set_province_flag = TN_Island
 	set_province_flag = TN_Natural_Minor
 }

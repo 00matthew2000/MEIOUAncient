@@ -1,5 +1,3 @@
-owner = NOR
-controller = NOR
 capital = "Balley Chashtal"
 trade_goods = fish
 culture = lowland_scottish
@@ -8,7 +6,9 @@ hre = no
 base_tax = 0
 base_production = 0
 base_manpower = 0
-is_city = yes
+native_size = 25
+native_ferocity = 7
+native_hostileness = 5
 set_variable = { 
 	which = gcn
 	value = 1
@@ -27,16 +27,6 @@ discovered_by = byzantine
 		name = "Fish_Medium"
 		duration = -1
 	}
-}
-1266.1.1 = { 
-	owner = SCO
-	controller = SCO
-	add_core = SCO
-	add_core = ENG
-}
-1333.8.9 = { 
-	owner = ENG
-	controller = ENG
 }
 100.1.1 = { 
 	set_variable = { 

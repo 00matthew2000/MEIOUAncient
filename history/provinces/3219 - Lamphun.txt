@@ -1,6 +1,3 @@
-owner = LNA
-controller = LNA
-add_core = LNA
 capital = "Lamphun"
 trade_goods = rice
 culture = lanna
@@ -9,7 +6,9 @@ hre = no
 base_tax = 1
 base_production = 1
 base_manpower = 0
-is_city = yes
+native_size = 50
+native_ferocity = 7
+native_hostileness = 9
 set_variable = { 
 	which = gcj
 	value = 2

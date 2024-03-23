@@ -1,6 +1,3 @@
-owner = MYA
-controller = MYA
-add_core = MYA
 capital = "Myitkyina"
 trade_goods = rice
 culture = kachin
@@ -8,12 +5,13 @@ religion = ban_phi
 base_tax = 3
 base_production = 0
 base_manpower = 0
-is_city = yes
+native_size = 40
+native_ferocity = 8
+native_hostileness = 8
 set_variable = { 
 	which = gch
 	value = 2
 }
-fort_14th = yes
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -32,7 +30,4 @@ discovered_by = indian
 	}
 	set_province_flag = mined_goods
 	set_province_flag = coal
-}
-1356.1.1 = { 
-	add_core = DLI
 }

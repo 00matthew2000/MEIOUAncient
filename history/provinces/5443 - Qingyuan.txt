@@ -1,5 +1,3 @@
-owner = YUA
-controller = YUA
 capital = "Yishan"
 trade_goods = rice
 culture = zhuang
@@ -8,7 +6,9 @@ hre = no
 base_tax = 10
 base_production = 0
 base_manpower = 0
-is_city = yes
+native_size = 85
+native_ferocity = 6
+native_hostileness = 7
 set_variable = { 
 	which = gck
 	value = 1
@@ -33,14 +33,4 @@ discovered_by = YUA
 	set_province_flag = sugar
 	set_province_flag = salt
 }
-1276.1.1 = { 
-	owner = YUA
-	controller = YUA
-	add_core = YUA
-	add_core = LNG
-}
-1351.1.1 = { 
-	owner = ZHN
-	controller = ZHN
-	add_core = ZHN
-}
+

@@ -1,11 +1,12 @@
-owner = PIN
-controller = PIN
+owner = LNA
+controller = LNA
+add_core = LNA
 capital = "Magwe"
 trade_goods = rice
 culture = burmese
 religion = theravada
 hre = no
-base_tax = 14
+base_tax = 5
 base_production = 0
 base_manpower = 0
 is_city = yes
@@ -27,9 +28,4 @@ discovered_by = indian
 		which = acp
 		value = 4
 	}
-}
-1313.2.7 = { 
-	owner = PIN
-	controller = PIN
-	add_core = PIN
 }

@@ -6,7 +6,7 @@ trade_goods = rice
 culture = khmer
 religion = theravada
 hre = no
-base_tax = 7
+base_tax = 4
 base_production = 1
 base_manpower = 0
 is_city = yes
@@ -42,7 +42,4 @@ discovered_by = austranesian
 	}
 	set_province_flag = mined_goods
 	set_province_flag = gems
-}
-1356.1.1 = { 
-	add_core = AYU
 }

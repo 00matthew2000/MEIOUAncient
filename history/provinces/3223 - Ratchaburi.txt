@@ -1,6 +1,3 @@
-owner = AYU
-controller = AYU
-add_core = AYU
 capital = "Ratchaburi"
 trade_goods = fish
 culture = thai
@@ -9,7 +6,9 @@ hre = no
 base_tax = 7
 base_production = 0
 base_manpower = 0
-is_city = yes
+native_size = 65
+native_ferocity = 8
+native_hostileness = 8
 set_variable = { 
 	which = gci
 	value = 1
@@ -24,7 +23,6 @@ discovered_by = tibetan
 discovered_by = southeast_asian
 discovered_by = indian
 discovered_by = austranesian
-discovered_by = muslim
 450.1.1 = { 
 	set_variable = { 
 		which = ami
@@ -41,6 +39,4 @@ discovered_by = muslim
 	}
 	set_province_flag = fruits
 }
-1352.1.1 = { 
-	add_core = SUK
-}
+

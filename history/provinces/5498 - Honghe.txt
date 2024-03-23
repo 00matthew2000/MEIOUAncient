@@ -1,5 +1,3 @@
-owner = DLI
-controller = DLI
 capital = "Guangxi"
 trade_goods = rice
 culture = hani
@@ -8,7 +6,9 @@ hre = no
 base_tax = 12
 base_production = 0
 base_manpower = 0
-is_city = yes
+native_size = 60
+native_ferocity = 8
+native_hostileness = 8
 set_variable = { 
 	which = gch
 	value = 2
@@ -45,14 +45,4 @@ discovered_by = YUA
 	}
 	set_province_flag = tea
 	set_province_flag = spices
-}
-1276.1.1 = { 
-	owner = YUA
-	controller = YUA
-	add_core = YUA
-}
-1351.1.1 = { 
-	owner = LNG
-	controller = LNG
-	add_core = LNG
 }

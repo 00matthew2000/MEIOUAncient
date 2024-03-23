@@ -1,5 +1,6 @@
-owner = MNA
-controller = MNA
+owner = MHR
+controller = MHR
+add_core = MHR
 capital = "Icun"
 trade_goods = wheat
 culture = hulun
@@ -32,7 +33,4 @@ discovered_by = YUA
 		value = 2.5
 	}
 	set_province_flag = coal
-}
-1356.1.1 = { 
-	add_core = MNA
 }

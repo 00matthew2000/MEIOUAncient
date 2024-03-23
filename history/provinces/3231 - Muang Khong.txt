@@ -40,9 +40,3 @@ discovered_by = indian
 		value = 1
 	}
 }
-1355.1.1 = { 
-	add_core = KHM
-}
-1356.1.1 = { 
-	add_core = CHK
-}

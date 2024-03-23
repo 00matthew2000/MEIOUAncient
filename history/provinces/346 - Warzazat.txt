@@ -1,19 +1,15 @@
-owner = TFL
-controller = TFL
-add_core = TFL
 capital = "Warzazat"
 trade_goods = palm_date
 culture = tamazight
 religion = sunni
-base_tax = 5
+base_tax = 2
 base_production = 0
 base_manpower = 0
-is_city = yes
-discovered_by = muslim
+native_size = 35
+native_ferocity = 7
+native_hostileness = 4
 discovered_by = western
-discovered_by = ottoman
 discovered_by = soudantech
-discovered_by = MAL
 200.1.1 = { 
 	set_variable = { 
 		which = abb
@@ -33,10 +29,4 @@ discovered_by = MAL
 	set_province_flag = no_mines
 	set_province_flag = dates
 	set_province_flag = qanat
-}
-1356.1.1 = { 
-	owner = FEZ
-	controller = FEZ
-	add_core = FEZ
-	set_province_flag = add_local_autonomy_100
 }

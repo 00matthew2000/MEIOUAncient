@@ -1,5 +1,3 @@
-owner = CYU
-controller = CYU
 capital = "Yueyang"
 trade_goods = millet
 culture = jinyu
@@ -8,7 +6,9 @@ hre = no
 base_tax = 47
 base_production = 0
 base_manpower = 2
-is_city = yes
+native_size = 85
+native_ferocity = 6
+native_hostileness = 7
 set_variable = { 
 	which = gch
 	value = 2
@@ -29,13 +29,4 @@ discovered_by = YUA
 		value = 5.5
 	}
 }
-1276.1.1 = { 
-	owner = YUA
-	controller = YUA
-	add_core = YUA
-}
-1351.1.1 = { 
-	owner = CYU
-	controller = CYU
-	add_core = CYU
-}
+

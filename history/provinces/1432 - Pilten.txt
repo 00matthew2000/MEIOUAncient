@@ -1,8 +1,3 @@
-owner = PIL
-controller = PIL
-add_core = PIL
-add_core = LIV
-add_core = KUR
 capital = "Piltene"
 trade_goods = wheat
 culture = curonian
@@ -11,11 +6,9 @@ hre = no
 base_tax = 1
 base_production = 0
 base_manpower = 0
-is_city = yes
-discovered_by = western
-discovered_by = eastern
-discovered_by = byzantine
-discovered_by = muslim
+native_size = 55
+native_ferocity = 6
+native_hostileness = 6
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
@@ -24,7 +17,4 @@ discovered_by = YUA
 		value = 3
 	}
 	set_province_flag = honey
-}
-1356.1.1 = { 
-	add_core = LVO
 }

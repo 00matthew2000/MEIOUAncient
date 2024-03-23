@@ -1,5 +1,3 @@
-owner = YUE
-controller = YUE
 capital = "Liánzhou"
 trade_goods = cotton
 culture = yaozu
@@ -8,7 +6,9 @@ hre = no
 base_tax = 14
 base_production = 0
 base_manpower = 0
-is_city = yes
+native_size = 85
+native_ferocity = 6
+native_hostileness = 7
 set_variable = { 
 	which = gck
 	value = 2
@@ -33,18 +33,5 @@ discovered_by = YUA
 	set_province_flag = mined_goods
 	set_province_flag = iron
 }
-985.1.1 = { 
-	owner = SNG
-	controller = SNG
-	add_core = SNG
-}
-1276.1.1 = { 
-	owner = YUA
-	controller = YUA
-	add_core = YUA
-}
-1351.1.1 = { 
-	owner = YUE
-	controller = YUE
-	add_core = YUE
-}
+
+

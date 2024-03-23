@@ -1,6 +1,3 @@
-owner = AYU
-controller = AYU
-add_core = AYU
 capital = "Ayutthaya"
 trade_goods = rice
 culture = thai
@@ -9,7 +6,9 @@ hre = no
 base_tax = 5
 base_production = 3
 base_manpower = 1
-is_city = yes
+native_size = 65
+native_ferocity = 8
+native_hostileness = 8
 set_variable = { 
 	which = gcl
 	value = 1
@@ -49,6 +48,4 @@ discovered_by = austranesian
 		duration = -1
 	}
 }
-1352.1.1 = { 
-	add_core = SUK
-}
+

@@ -1,6 +1,3 @@
-owner = DAI
-controller = DAI
-add_core = DAI
 capital = "Quy Hoa"
 trade_goods = tea
 culture = tay_nung
@@ -9,7 +6,9 @@ hre = no
 base_tax = 2
 base_production = 0
 base_manpower = 0
-is_city = yes
+native_size = 60
+native_ferocity = 7
+native_hostileness = 9
 set_variable = { 
 	which = gcj
 	value = 1

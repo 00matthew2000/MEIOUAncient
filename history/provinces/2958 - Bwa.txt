@@ -3,7 +3,7 @@ trade_goods = millet
 culture = senufo
 religion = west_african_pagan
 hre = no
-base_tax = 6
+base_tax = 3
 base_production = 0
 base_manpower = 0
 native_size = 80
@@ -26,7 +26,4 @@ discovered_by = sub_saharan
 		which = acp
 		value = 3.5
 	}
-}
-1356.1.1 = { 
-	add_core = BKE
 }

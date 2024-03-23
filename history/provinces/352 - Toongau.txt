@@ -1,15 +1,14 @@
-owner = TAU
-controller = TAU
-add_core = TAU
 capital = "Toongau"
 trade_goods = rice
 culture = burmese
 religion = theravada
 hre = no
-base_tax = 7
+base_tax = 2
 base_production = 2
 base_manpower = 1
-is_city = yes
+native_size = 55
+native_ferocity = 7
+native_hostileness = 8
 set_variable = { 
 	which = gcj
 	value = 2
@@ -29,7 +28,4 @@ discovered_by = indian
 		which = acp
 		value = 4
 	}
-}
-1313.2.7 = { 
-	add_core = PIN
 }

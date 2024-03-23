@@ -1,6 +1,6 @@
-owner = MAL
-controller = MAL
-add_core = MAL
+owner = KOT
+controller = KOT
+add_core = KOT
 capital = "Bruco"
 trade_goods = cotton
 culture = bainuk
@@ -27,8 +27,4 @@ discovered_by = sub_saharan
 		which = acp
 		value = 3.5
 	}
-}
-1356.1.1 = { 
-	add_core = KAA
-	add_core = BIA
 }

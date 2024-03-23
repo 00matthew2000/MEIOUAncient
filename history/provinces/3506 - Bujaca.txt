@@ -1,6 +1,3 @@
-owner = CBS
-controller = CBS
-add_core = CBS
 capital = "Uitoto"
 trade_goods = maize
 culture = muisca

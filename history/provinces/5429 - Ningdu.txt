@@ -1,14 +1,14 @@
-owner = YUA
-controller = YUA
 capital = "Ningdu"
 trade_goods = rice
 culture = hakka
 religion = mahayana
 hre = no
-base_tax = 17
+base_tax = 11
 base_production = 0
 base_manpower = 1
-is_city = yes
+native_size = 85
+native_ferocity = 7
+native_hostileness = 6
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -21,18 +21,4 @@ discovered_by = YUA
 		value = 4.5
 	}
 	set_province_flag = coal
-}
-985.1.1 = { 
-	owner = SNG
-	controller = SNG
-	add_core = SNG
-}
-1276.1.1 = { 
-	owner = CNG
-	controller = CNG
-	add_core = CNG
-}
-1320.1.1 = { 
-	add_core = YUA
-	remove_core = SNG
 }

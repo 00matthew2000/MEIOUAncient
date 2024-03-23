@@ -1,6 +1,3 @@
-owner = VIE
-controller = VIE
-add_core = VIE
 capital = "Sakhon Nakhon"
 trade_goods = rice
 culture = laotian
@@ -9,7 +6,9 @@ hre = no
 base_tax = 1
 base_production = 0
 base_manpower = 0
-is_city = yes
+native_size = 40
+native_ferocity = 6
+native_hostileness = 9
 set_variable = { 
 	which = gck
 	value = 1
@@ -30,10 +29,4 @@ discovered_by = indian
 		which = acp
 		value = 1
 	}
-}
-1355.1.1 = { 
-	add_core = KHM
-}
-1356.1.1 = { 
-	add_core = LXA
 }

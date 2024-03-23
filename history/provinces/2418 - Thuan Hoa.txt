@@ -1,20 +1,18 @@
-owner = CHA
-controller = CHA
-add_core = CHA
 capital = "Thuan Hoa"
 trade_goods = fish
 culture = cham
 religion = hinduism
 hre = no
-base_tax = 5
+base_tax = 4
 base_production = 0
 base_manpower = 0
-is_city = yes
+native_size = 75
+native_ferocity = 8
+native_hostileness = 8
 set_variable = { 
 	which = gci
 	value = 1
 }
-fort_14th = yes
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -40,9 +38,4 @@ discovered_by = austranesian
 		name = urban_goods_naval_supplies
 		duration = -1
 	}
-}
-1307.1.1 = { 
-	owner = DAI
-	controller = DAI
-	add_core = DAI
 }

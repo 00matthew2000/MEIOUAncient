@@ -1,5 +1,3 @@
-owner = CHA
-controller = CHA
 capital = "Tay Binh"
 trade_goods = fish
 culture = cham
@@ -8,7 +6,9 @@ hre = no
 base_tax = 2
 base_production = 0
 base_manpower = 0
-is_city = yes
+native_size = 70
+native_ferocity = 8
+native_hostileness = 8
 set_variable = { 
 	which = gci
 	value = 1
@@ -18,7 +18,6 @@ discovered_by = japanese
 discovered_by = tibetan
 discovered_by = southeast_asian
 discovered_by = indian
-discovered_by = muslim
 discovered_by = austranesian
 450.1.1 = { 
 	set_variable = { 
@@ -27,12 +26,4 @@ discovered_by = austranesian
 	}
 	set_province_flag = iron
 	set_province_flag = spices
-}
-1307.1.1 = { 
-	owner = DAI
-	controller = DAI
-	add_core = DAI
-}
-1356.1.1 = { 
-	add_core = CHA
 }

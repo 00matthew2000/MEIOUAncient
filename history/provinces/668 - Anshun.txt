@@ -1,5 +1,6 @@
 owner = YUA
 controller = YUA
+add_core = YUA
 capital = "Puding"
 trade_goods = rice
 culture = zhuang
@@ -37,26 +38,4 @@ discovered_by = YUA
 	set_province_flag = salt
 	set_province_flag = tea
 	set_province_flag = coal
-}
-967.1.1 = { 
-	owner = SNG
-	controller = SNG
-	add_core = SNG
-}
-1241.1.1 = { 
-	owner = SHU
-	controller = SHU
-}
-1265.1.1 = { 
-	owner = YUA
-	controller = YUA
-	add_core = YUA
-}
-1274.1.1 = { 
-	owner = JCH
-	controller = JCH
-	add_core = JCH
-}
-1320.1.1 = { 
-	remove_core = SNG
 }
