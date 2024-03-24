@@ -64,11 +64,3 @@ discovered_by = YUA
 1308.1.1 = { 
 	rename_capital = "Gyerim"
 }
-1356.1.1 = { 
-	spawn_rebels = { 
-		type = wokou_pirates
-		size = 4
-	}
-	controller = REB
-	unrest = 3
-}

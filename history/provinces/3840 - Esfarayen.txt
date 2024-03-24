@@ -35,13 +35,3 @@ discovered_by = ottoman
 	set_province_flag = saffron
 	set_province_flag = qanat
 }
-1356.1.1 = { 
-	revolt = { 
-		type = pretender_rebels
-		size = 1
-		leader = "Luft Allah Mas'ud"
-		name = "Mas'ud Loyalists"
-	}
-	controller = REB
-	add_claim = ATB
-}
