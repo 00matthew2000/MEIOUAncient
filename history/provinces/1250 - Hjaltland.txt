@@ -1,6 +1,6 @@
 capital = "Leirvik"
 trade_goods = fish
-culture = norse
+culture = lowland_scottish
 religion = catholic
 hre = no
 base_tax = 1

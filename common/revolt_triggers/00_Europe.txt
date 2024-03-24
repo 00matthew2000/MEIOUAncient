@@ -275,5 +275,4 @@ SCO = {
 }
 NOL = { 
 	is_core = NOL
-	culture = northern_e
 }

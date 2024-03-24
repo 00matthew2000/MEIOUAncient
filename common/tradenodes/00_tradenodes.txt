@@ -392,7 +392,7 @@ jiangxi_node={
 fujian_node={
 	location=1053
 	color={
-		98 135 31 
+		150 57 114
 	}
 	outgoing={
 		name="guangzhou_node"
@@ -3484,7 +3484,7 @@ west_med_node={
 west_france_node={
 	location=176
 	color={
-		62 173 165 
+		126 172 85
 	}
 	outgoing={
 		name="france_node"
@@ -3511,7 +3511,7 @@ west_france_node={
 france_node={
 	location=183
 	color={
-		10 20 150 
+		234 195 18
 	}
 	inland=yes
 	outgoing={
@@ -3575,7 +3575,7 @@ venezia_node={
 norway_node={
 	location=16
 	color={
-		0 60 60 
+		144 165 219
 	}
 	outgoing={
 		name="north_sea_node"
@@ -3639,7 +3639,7 @@ elbe_node={
 north_sea_node={
 	location=45
 	color={
-		60 60 0 
+		150 188 52
 	}
 	outgoing={
 		name="dutch_node"
@@ -3685,7 +3685,7 @@ genoa_node={
 channel_node={
 	location=236
 	color={
-		210 67 43 
+		150 43 81
 	}
 	members={
 		90 236 87 2363 233 1411 3326 239 235 1410 234 237 3325 2386 3859 1283 2360 96 399 243 3324 240 247 5156 245 4991 2307 63 88 2353 91 

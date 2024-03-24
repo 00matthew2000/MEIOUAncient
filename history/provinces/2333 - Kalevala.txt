@@ -1,4 +1,4 @@
-culture = norwegian
+culture = norse
 religion = catholic
 discovered_by = eastern
 discovered_by = byzantine
