@@ -1,3 +1,3 @@
-culture = norse
+culture = nordic
 religion = catholic
 discovered_by = western

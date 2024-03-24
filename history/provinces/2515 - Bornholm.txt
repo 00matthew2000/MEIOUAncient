@@ -1,6 +1,6 @@
 capital = "Rothnne"
 trade_goods = fish
-culture = norse
+culture = nordic
 religion = catholic
 hre = no
 base_tax = 0

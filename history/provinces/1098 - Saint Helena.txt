@@ -1,7 +1,5 @@
 capital = "Saint Helena"
 trade_goods = unknown
-culture = english
-religion = catholic
 hre = no
 base_tax = 0
 base_production = 0
