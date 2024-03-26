@@ -1,6 +1,6 @@
 capital = "Tawang"
 trade_goods = tea
-culture = sutiya
+culture = kiratan
 religion = hinduism
 base_tax = 2
 base_production = 0

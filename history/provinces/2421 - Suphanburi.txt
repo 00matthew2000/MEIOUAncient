@@ -1,6 +1,6 @@
 capital = "Suphanburi"
 trade_goods = opium
-culture = thai
+culture = mon_culture
 religion = theravada
 hre = no
 base_tax = 3

@@ -1,6 +1,6 @@
 capital = "Pagan"
 trade_goods = rice
-culture = burmese
+culture = pyu
 religion = theravada
 hre = no
 base_tax = 3

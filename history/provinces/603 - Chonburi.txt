@@ -1,6 +1,6 @@
 capital = "Chonburi"
 trade_goods = fish
-culture = thai
+culture = pearic
 religion = theravada
 hre = no
 base_tax = 5

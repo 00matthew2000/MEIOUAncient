@@ -1,6 +1,6 @@
 capital = "Mongnai"
 trade_goods = opium
-culture = shan
+culture = palaungic
 religion = ban_phi
 hre = no
 base_tax = 3

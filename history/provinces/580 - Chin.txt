@@ -1,6 +1,6 @@
 capital = "Chin"
 trade_goods = sandal
-culture = chin
+culture = manipuri
 religion = adi_dharam
 hre = no
 base_tax = 3

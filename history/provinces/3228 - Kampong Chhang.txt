@@ -1,6 +1,6 @@
 capital = "Longvek"
 trade_goods = rice
-culture = khmer
+culture = funanese
 religion = theravada
 hre = no
 base_tax = 3

@@ -1,6 +1,6 @@
 capital = "Vientiane"
 trade_goods = lumber
-culture = laotian
+culture = katuic
 religion = ban_phi
 hre = no
 base_tax = 2

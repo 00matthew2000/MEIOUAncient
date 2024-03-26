@@ -1,6 +1,6 @@
 capital = "Lashio"
 trade_goods = wool
-culture = palaung
+culture = palaungic
 religion = ban_phi
 hre = no
 base_tax = 3

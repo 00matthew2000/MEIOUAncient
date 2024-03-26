@@ -1,6 +1,6 @@
 capital = "Thien Truong"
 trade_goods = tea
-culture = vietnamese
+culture = lac_viet
 religion = mahayana
 hre = no
 base_tax = 3

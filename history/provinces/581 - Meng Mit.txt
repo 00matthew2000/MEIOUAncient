@@ -1,6 +1,6 @@
 capital = "Meng Mit"
 trade_goods = rice
-culture = shan
+culture = kachin
 religion = ban_phi
 hre = no
 base_tax = 2

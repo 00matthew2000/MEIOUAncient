@@ -1,6 +1,6 @@
 capital = "Prachuap Khiri"
 trade_goods = fish
-culture = thai
+culture = mon_culture
 religion = theravada
 hre = no
 base_tax = 1

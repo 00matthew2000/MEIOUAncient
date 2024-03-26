@@ -1,6 +1,6 @@
 capital = "Fengqing"
 trade_goods = tea
-culture = palaung
+culture = palaungic
 religion = ban_phi
 hre = no
 base_tax = 3

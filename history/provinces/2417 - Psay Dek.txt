@@ -1,6 +1,6 @@
 capital = "Psay Dek"
 trade_goods = cinnamon
-culture = khmer
+culture = funanese
 religion = theravada
 hre = no
 base_tax = 3

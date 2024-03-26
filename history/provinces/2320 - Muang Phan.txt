@@ -1,6 +1,6 @@
 capital = "Muang Phan"
 trade_goods = rice
-culture = laotian
+culture = katuic
 religion = ban_phi
 hre = no
 base_tax = 2

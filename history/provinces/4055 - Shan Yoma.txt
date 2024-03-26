@@ -1,6 +1,6 @@
 capital = "Baoshan"
 trade_goods = wool
-culture = lisu
+culture = palaungic
 religion = bimoism
 hre = no
 base_tax = 3

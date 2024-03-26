@@ -1,6 +1,6 @@
 capital = "Nandian"
 trade_goods = wool
-culture = lisu
+culture = burmese
 religion = bimoism
 hre = no
 base_tax = 3

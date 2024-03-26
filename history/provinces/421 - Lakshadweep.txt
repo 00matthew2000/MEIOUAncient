@@ -1,6 +1,6 @@
 capital = "Lakshadwipa"
 trade_goods = unknown
-culture = malayalam
+culture = tamil
 religion = sunni
 hre = no
 base_tax = 0

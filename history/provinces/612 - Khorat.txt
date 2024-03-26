@@ -1,6 +1,6 @@
 capital = "Khorat"
 trade_goods = rice
-culture = khmer
+culture = pearic
 religion = theravada
 hre = no
 base_tax = 3

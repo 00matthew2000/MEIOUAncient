@@ -1,6 +1,6 @@
 capital = "Mong Kawng"
 trade_goods = lumber
-culture = shan
+culture = kachin
 religion = ban_phi
 base_tax = 3
 base_production = 0

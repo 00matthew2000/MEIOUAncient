@@ -1,6 +1,6 @@
 capital = "Nam Sach"
 trade_goods = rice
-culture = vietnamese
+culture = lac_viet
 religion = mahayana
 hre = no
 base_tax = 4

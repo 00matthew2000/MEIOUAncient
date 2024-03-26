@@ -1,6 +1,6 @@
 capital = "Nakkavaram"
 trade_goods = fish
-culture = nicobarese
+culture = rakshasa
 religion = polynesian_pagan
 hre = no
 base_tax = 1

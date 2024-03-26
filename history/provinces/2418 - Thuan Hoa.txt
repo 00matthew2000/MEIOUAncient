@@ -1,6 +1,6 @@
 capital = "Thuan Hoa"
 trade_goods = fish
-culture = cham
+culture = chamic
 religion = hinduism
 hre = no
 base_tax = 4

@@ -1,6 +1,6 @@
 capital = "Yanpunagara"
 trade_goods = opium
-culture = cham
+culture = chamic
 religion = hinduism
 hre = no
 base_tax = 2

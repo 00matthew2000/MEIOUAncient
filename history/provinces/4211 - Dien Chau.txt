@@ -1,6 +1,6 @@
 capital = "Dien Chau"
 trade_goods = fish
-culture = vietnamese
+culture = lac_viet
 religion = mahayana
 hre = no
 base_tax = 3

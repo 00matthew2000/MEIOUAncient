@@ -1,6 +1,6 @@
 capital = "Angkor Borei"
 trade_goods = fish
-culture = khmer
+culture = funanese
 religion = theravada
 hre = no
 base_tax = 4
