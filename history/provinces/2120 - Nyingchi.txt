@@ -1,6 +1,6 @@
 capital = "Lhabagar"
 trade_goods = wool
-culture = tibetan
+culture = sumpa
 religion = vajrayana
 hre = no
 base_tax = 1

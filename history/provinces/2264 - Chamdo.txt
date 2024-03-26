@@ -1,6 +1,6 @@
 capital = "Chamdo"
 trade_goods = wool
-culture = kham
+culture = sumpa
 religion = vajrayana
 hre = no
 base_tax = 1

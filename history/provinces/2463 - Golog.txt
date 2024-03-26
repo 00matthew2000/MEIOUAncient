@@ -1,6 +1,6 @@
 capital = "Maqên"
 trade_goods = wool
-culture = amdo
+culture = qiang
 religion = vajrayana
 hre = no
 base_tax = 1

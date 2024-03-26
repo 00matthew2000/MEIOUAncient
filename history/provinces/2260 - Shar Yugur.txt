@@ -1,6 +1,6 @@
 capital = "Qabqa"
 trade_goods = wool
-culture = teihu
+culture = wusun
 religion = vajrayana
 hre = no
 base_tax = 1

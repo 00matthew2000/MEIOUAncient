@@ -1,6 +1,6 @@
 capital = "Dartsedo"
 trade_goods = tea
-culture = kham
+culture = sumpa
 religion = vajrayana
 hre = no
 base_tax = 1

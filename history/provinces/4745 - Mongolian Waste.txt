@@ -1,4 +1,4 @@
-culture = oirats
+culture = altaic
 religion = tengri_pagan
 discovered_by = chinese
 discovered_by = japanese
