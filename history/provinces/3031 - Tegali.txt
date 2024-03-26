@@ -1,6 +1,6 @@
 capital = "Tegali"
 trade_goods = unknown
-culture = nuba
+culture = mahas
 religion = lotuko_pagan
 hre = no
 base_tax = 8

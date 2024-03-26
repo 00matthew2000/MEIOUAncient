@@ -3,7 +3,7 @@ controller = SWI
 add_core = SWI
 capital = "St Gallen"
 trade_goods = livestock
-culture = high_alemanisch
+culture = western_hallstat
 religion = catholic
 hre = yes
 base_tax = 14
@@ -20,11 +20,6 @@ discovered_by = byzantine
 discovered_by = muslim
 450.1.1 = { 
 	set_province_flag = TN_Minor
-	set_province_flag = freeholders_control_province
-	add_permanent_province_modifier = { 
-		name = Knights_Commandery_Med
-		duration = -1
-	}
 }
 1264.1.1 = { 
 	controller = HAB

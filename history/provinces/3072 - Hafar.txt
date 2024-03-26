@@ -1,6 +1,6 @@
 capital = "Hafar"
 trade_goods = wool
-culture = khaliji
+culture = gerrhan
 religion = sunni
 hre = no
 base_tax = 1

@@ -1,6 +1,6 @@
 capital = "Socotra"
 trade_goods = fish
-culture = soqotri_c
+culture = somali
 religion = oriental
 hre = no
 base_tax = 1

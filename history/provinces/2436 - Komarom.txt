@@ -3,7 +3,7 @@ controller = HUN
 add_core = HUN
 capital = "Gyor"
 trade_goods = lumber
-culture = hungarian
+culture = noric
 religion = catholic
 hre = no
 base_tax = 7
@@ -37,11 +37,7 @@ discovered_by = ottoman
 		which = acp
 		value = 5
 	}
-	add_permanent_province_modifier = { 
-		name = hungarian_estates
-		duration = -1
-	}
-	add_permanent_province_modifier = { 
+		add_permanent_province_modifier = { 
 		name = Knights_Commandery_Low
 		duration = -1
 	}

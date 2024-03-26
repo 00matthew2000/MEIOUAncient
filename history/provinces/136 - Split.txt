@@ -3,7 +3,7 @@ controller = CRO
 add_core = CRO
 capital = "Spalatro"
 trade_goods = lumber
-culture = croatian
+culture = greco_illyrian
 religion = catholic
 hre = no
 base_tax = 1
@@ -47,13 +47,6 @@ discovered_by = ottoman
 	}
 	set_province_flag = seasalt
 	set_province_flag = olive
-}
-1356.1.1 = { 
-	owner = VEN
-	controller = VEN
-	add_core = VEN
-	culture = dalmatian
-	add_core = HUN
 }
 100.1.1 = { 
 	set_variable = { 

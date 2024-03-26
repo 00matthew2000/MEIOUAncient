@@ -3,7 +3,7 @@ controller = GRA
 add_core = GRA
 capital = "Jabal Tariq"
 trade_goods = fish
-culture = andalucian
+culture = ibero_phoenician
 religion = sunni
 hre = no
 base_tax = 0
@@ -26,10 +26,6 @@ discovered_by = ottoman
 450.1.1 = { 
 	set_province_flag = TN_Harbour_Important
 	set_province_flag = TN_Natural_Minor
-}
-1356.1.1 = { 
-	set_province_flag = granada_emirate
-	set_province_flag = arabic_name
 }
 100.1.1 = { 
 	set_variable = { 

@@ -1,6 +1,6 @@
 capital = "Ortelsburg"
 trade_goods = lumber
-culture = old_prussian
+culture = baltic
 religion = catholic
 hre = no
 base_tax = 2

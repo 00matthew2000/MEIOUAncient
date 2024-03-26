@@ -1,6 +1,6 @@
 capital = "Bila"
 trade_goods = lumber
-culture = ruthenian
+culture = gotones
 religion = orthodox
 hre = no
 base_tax = 2

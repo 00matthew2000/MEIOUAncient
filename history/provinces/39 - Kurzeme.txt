@@ -1,6 +1,6 @@
 capital = "Kuldiga"
 trade_goods = wheat
-culture = curonian
+culture = baltic
 religion = catholic
 hre = no
 base_tax = 2

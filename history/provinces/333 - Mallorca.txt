@@ -3,7 +3,7 @@ controller = ARA
 add_core = ARA
 capital = "Mallorca"
 trade_goods = olive
-culture = catalan
+culture = talaiotic
 religion = catholic
 hre = no
 base_tax = 8
@@ -33,10 +33,6 @@ discovered_by = ottoman
 	set_province_flag = TN_Island
 	set_province_flag = TN_Harbour_Minor
 	set_province_flag = TN_Natural_Important
-	add_permanent_province_modifier = { 
-		name = Knights_Commandery_Low
-		duration = -1
-	}
 	set_province_flag = olive
 	set_province_flag = seasalt
 }

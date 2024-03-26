@@ -1,6 +1,6 @@
 capital = "Memel"
 trade_goods = livestock
-culture = old_prussian
+culture = baltic
 religion = catholic
 hre = no
 base_tax = 3

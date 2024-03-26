@@ -1,6 +1,6 @@
 capital = "Kaunas"
 trade_goods = livestock
-culture = lithuanian
+culture = baltic
 religion = baltic_pagan
 hre = no
 base_tax = 3

@@ -1,6 +1,6 @@
 capital = "Turau"
 trade_goods = livestock
-culture = ruthenian
+culture = slavic
 religion = orthodox
 hre = no
 base_tax = 2

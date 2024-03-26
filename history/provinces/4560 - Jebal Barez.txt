@@ -3,5 +3,5 @@ discovered_by = muslim
 discovered_by = steppestech
 discovered_by = YUA
 discovered_by = ottoman
-culture = baluchi
+culture = baloch
 religion = sunni

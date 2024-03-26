@@ -1,6 +1,6 @@
 capital = "Warzazat"
 trade_goods = palm_date
-culture = tamazight
+culture = mauretanian
 religion = sunni
 base_tax = 2
 base_production = 0

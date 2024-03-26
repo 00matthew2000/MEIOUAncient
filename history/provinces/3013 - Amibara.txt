@@ -1,6 +1,5 @@
 capital = "Fategar"
 trade_goods = wool
-culture = dir_c
 religion = sunni
 base_tax = 3
 base_production = 0

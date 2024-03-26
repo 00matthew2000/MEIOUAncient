@@ -3,7 +3,7 @@ controller = MLO
 add_core = MLO
 capital = "Pavia"
 trade_goods = rice
-culture = lombard
+culture = lepontic
 religion = catholic
 hre = yes
 base_tax = 26
@@ -14,7 +14,6 @@ set_variable = {
 	which = gcj
 	value = 2
 }
-set_province_flag = small_university
 set_variable = { 
 	which = gcn
 	value = 1
@@ -30,47 +29,6 @@ set_variable = {
 set_variable = { 
 	which = gci
 	value = 1
-}
-if = { 
-	limit = { 
-		OR = { 
-			AND = { 
-				religion = catholic
-				owner = { 
-					religion = catholic
-				}
-			}
-			AND = { 
-				religion = avignonist
-				owner = { 
-					religion = avignonist
-				}
-			}
-		}
-		has_cardinal = no
-		NOT = { 
-			AAA = { 
-				AND = { 
-					check_variable = { 
-						which = nje
-						value = 50
-					}
-				}
-			}
-		}
-	}
-	add_cardinal = yes
-	hidden_effect = { 
-		owner = { 
-			add_papal_influence = 5
-		}
-		AAA = { 
-			change_variable = { 
-				which = nje
-				value = 1
-			}
-		}
-	}
 }
 discovered_by = western
 discovered_by = eastern
@@ -89,10 +47,6 @@ discovered_by = ottoman
 	}
 	add_permanent_province_modifier = { 
 		name = urban_goods_metalwork
-		duration = -1
-	}
-	add_permanent_province_modifier = { 
-		name = Knights_Commandery_Low
 		duration = -1
 	}
 	set_province_flag = cotton

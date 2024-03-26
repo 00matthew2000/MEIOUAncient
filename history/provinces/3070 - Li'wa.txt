@@ -1,6 +1,6 @@
 capital = "Ghayathi"
 trade_goods = palm_date
-culture = najdi
+culture = andanite
 religion = sunni
 hre = no
 base_tax = 1

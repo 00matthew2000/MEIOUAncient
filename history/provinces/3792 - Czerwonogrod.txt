@@ -1,6 +1,6 @@
 capital = "Halych"
 trade_goods = wheat
-culture = ruthenian
+culture = galatian
 religion = orthodox
 hre = no
 base_tax = 2

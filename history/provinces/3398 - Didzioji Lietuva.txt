@@ -1,6 +1,6 @@
 capital = "Breslauja"
 trade_goods = wax
-culture = lithuanian
+culture = baltic
 religion = baltic_pagan
 hre = no
 base_tax = 8

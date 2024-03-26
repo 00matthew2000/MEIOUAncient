@@ -1,6 +1,6 @@
 capital = "Dyneburg"
 trade_goods = lumber
-culture = lattgalian
+culture = baltic
 religion = catholic
 hre = no
 base_tax = 2

@@ -3,7 +3,7 @@ controller = ZIE
 add_core = ZIE
 capital = "Ziegenhain"
 trade_goods = wool
-culture = hessian
+culture = helvetii
 religion = catholic
 hre = yes
 base_tax = 4
@@ -22,10 +22,6 @@ discovered_by = muslim
 	set_variable = { 
 		which = acp
 		value = 4.5
-	}
-	add_permanent_province_modifier = { 
-		name = Teuton_Commandery_Low
-		duration = -1
 	}
 }
 100.1.1 = { 

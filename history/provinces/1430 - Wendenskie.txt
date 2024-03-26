@@ -1,6 +1,6 @@
 capital = "Cesis"
 trade_goods = wheat
-culture = lattgalian
+culture = baltic
 religion = catholic
 hre = no
 base_tax = 2

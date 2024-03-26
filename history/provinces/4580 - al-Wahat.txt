@@ -1,4 +1,4 @@
-culture = saidi
+culture = coptic
 religion = sunni
 discovered_by = east_african
 discovered_by = muslim

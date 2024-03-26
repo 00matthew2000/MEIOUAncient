@@ -3,7 +3,7 @@ controller = MLO
 add_core = MLO
 capital = "Milàn"
 trade_goods = wheat
-culture = lombard
+culture = lepontic
 religion = catholic
 hre = yes
 base_tax = 16
@@ -31,58 +31,12 @@ set_variable = {
 	which = gck
 	value = 2
 }
-if = { 
-	limit = { 
-		OR = { 
-			AND = { 
-				religion = catholic
-				owner = { 
-					religion = catholic
-				}
-			}
-			AND = { 
-				religion = avignonist
-				owner = { 
-					religion = avignonist
-				}
-			}
-		}
-		has_cardinal = no
-		NOT = { 
-			AAA = { 
-				AND = { 
-					check_variable = { 
-						which = nje
-						value = 50
-					}
-				}
-			}
-		}
-	}
-	add_cardinal = yes
-	hidden_effect = { 
-		owner = { 
-			add_papal_influence = 5
-		}
-		AAA = { 
-			change_variable = { 
-				which = nje
-				value = 1
-			}
-		}
-	}
-}
 discovered_by = western
 discovered_by = eastern
 discovered_by = byzantine
 discovered_by = muslim
 discovered_by = ottoman
 450.1.1 = { 
-	set_province_flag = catholic_archbishopric
-	add_province_modifier = { 
-		name = catholic_archbishopric
-		duration = -1
-	}
 	set_province_flag = TN_Important
 	set_variable = { 
 		which = baf

@@ -3,5 +3,5 @@ discovered_by = western
 discovered_by = ottoman
 discovered_by = soudantech
 discovered_by = MAL
-culture = rifain
+culture = mauretanian
 religion = sunni

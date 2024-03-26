@@ -1,6 +1,6 @@
 capital = "Königsberg"
 trade_goods = wheat
-culture = old_prussian
+culture = baltic
 religion = catholic
 hre = no
 base_tax = 2

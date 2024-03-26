@@ -1,6 +1,6 @@
 capital = "Al Hasa"
 trade_goods = palm_date
-culture = khaliji
+culture = gerrhan
 religion = shiite
 hre = no
 base_tax = 2

@@ -1,6 +1,6 @@
 capital = "Garre"
 trade_goods = millet
-culture = sab
+culture = somali
 religion = sunni
 hre = no
 base_tax = 3

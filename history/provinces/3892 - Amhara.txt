@@ -1,6 +1,6 @@
 capital = "Ankober"
 trade_goods = livestock
-culture = amhara
+culture = axumite
 religion = oriental
 base_tax = 4
 base_production = 0

@@ -1,6 +1,6 @@
 capital = "Lietuvos Brasta"
 trade_goods = lumber
-culture = ruthenian
+culture = slavic
 religion = orthodox
 hre = no
 base_tax = 2

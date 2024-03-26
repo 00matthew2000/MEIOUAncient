@@ -1,5 +1,5 @@
 discovered_by = steppestech
 discovered_by = YUA
 discovered_by = ottoman
-culture = tartar
+culture = sarmatian
 religion = sunni

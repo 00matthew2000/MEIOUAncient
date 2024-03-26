@@ -1,6 +1,6 @@
 capital = "Ostroh"
 trade_goods = carmine
-culture = ruthenian
+culture = slavic
 religion = orthodox
 hre = no
 base_tax = 4

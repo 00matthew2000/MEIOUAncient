@@ -1,4 +1,4 @@
-culture = bulgarian
+culture = odrysian
 religion = orthodox
 discovered_by = western
 discovered_by = eastern

@@ -2,5 +2,5 @@ discovered_by = steppestech
 discovered_by = YUA
 discovered_by = ottoman
 discovered_by = muslim
-culture = tajihk
+culture = margianan
 religion = sunni

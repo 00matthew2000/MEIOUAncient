@@ -3,7 +3,7 @@ controller = CAS
 add_core = CAS
 capital = "Segovia"
 trade_goods = wool
-culture = castillian
+culture = celtiberian
 religion = catholic
 hre = no
 base_tax = 16
@@ -17,47 +17,6 @@ set_variable = {
 set_variable = { 
 	which = gcn
 	value = 1
-}
-if = { 
-	limit = { 
-		OR = { 
-			AND = { 
-				religion = catholic
-				owner = { 
-					religion = catholic
-				}
-			}
-			AND = { 
-				religion = avignonist
-				owner = { 
-					religion = avignonist
-				}
-			}
-		}
-		has_cardinal = no
-		NOT = { 
-			AAA = { 
-				AND = { 
-					check_variable = { 
-						which = nje
-						value = 50
-					}
-				}
-			}
-		}
-	}
-	add_cardinal = yes
-	hidden_effect = { 
-		owner = { 
-			add_papal_influence = 5
-		}
-		AAA = { 
-			change_variable = { 
-				which = nje
-				value = 1
-			}
-		}
-	}
 }
 discovered_by = western
 discovered_by = eastern

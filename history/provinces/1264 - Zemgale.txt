@@ -1,6 +1,6 @@
 capital = "Jelgava"
 trade_goods = wax
-culture = curonian
+culture = baltic
 religion = catholic
 hre = no
 base_tax = 2

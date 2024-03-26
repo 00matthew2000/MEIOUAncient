@@ -1,6 +1,6 @@
 capital = "Hargeisa"
 trade_goods = lumber
-culture = dir_c
+culture = somali
 religion = sunni
 hre = no
 base_tax = 3

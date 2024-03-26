@@ -1,6 +1,6 @@
 capital = "Jaww"
 trade_goods = livestock
-culture = najdi
+culture = andanite
 religion = sunni
 hre = no
 base_tax = 3

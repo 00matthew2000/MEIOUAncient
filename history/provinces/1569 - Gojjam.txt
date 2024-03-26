@@ -1,6 +1,6 @@
 capital = "Debre Marqos"
 trade_goods = lumber
-culture = amhara
+culture = axumite
 religion = oriental
 base_tax = 4
 base_production = 0

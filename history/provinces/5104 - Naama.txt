@@ -1,6 +1,6 @@
 capital = "Bouarfa"
 trade_goods = unknown
-culture = fassi
+culture = mauretanian
 religion = sunni
 base_tax = 2
 base_production = 0

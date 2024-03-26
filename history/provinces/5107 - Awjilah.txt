@@ -1,6 +1,6 @@
 capital = "Awjilah"
 trade_goods = palm_date
-culture = toubous
+culture = nasamones
 religion = sunni
 hre = no
 base_tax = 1

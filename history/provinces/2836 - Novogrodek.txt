@@ -1,6 +1,6 @@
 capital = "Navahrudak"
 trade_goods = lumber
-culture = ruthenian
+culture = slavic
 religion = orthodox
 hre = no
 base_tax = 3

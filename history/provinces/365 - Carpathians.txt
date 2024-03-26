@@ -5,5 +5,5 @@ discovered_by = byzantine
 discovered_by = ottoman
 discovered_by = steppestech
 discovered_by = YUA
-culture = vlach
+culture = getean
 religion = orthodox

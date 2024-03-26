@@ -3,7 +3,7 @@ controller = GEN
 add_core = GEN
 capital = "Zena"
 trade_goods = olive
-culture = ligurian
+culture = ligures
 religion = catholic
 hre = no
 base_tax = 15
@@ -30,11 +30,6 @@ discovered_by = byzantine
 discovered_by = muslim
 discovered_by = ottoman
 450.1.1 = { 
-	set_province_flag = catholic_archbishopric
-	add_province_modifier = { 
-		name = catholic_archbishopric
-		duration = -1
-	}
 	set_province_flag = TN_Major
 	set_province_flag = TN_Port
 	set_province_flag = TN_Harbour_Major
@@ -45,10 +40,6 @@ discovered_by = ottoman
 	}
 	add_permanent_province_modifier = { 
 		name = urban_goods_metalwork
-		duration = -1
-	}
-	add_permanent_province_modifier = { 
-		name = Knights_Commandery_Low
 		duration = -1
 	}
 	set_province_flag = olive
