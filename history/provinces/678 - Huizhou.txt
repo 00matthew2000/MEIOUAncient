@@ -1,6 +1,6 @@
 capital = "Guishan"
 trade_goods = sugar
-culture = yueyu
+culture = nanyue
 religion = mahayana
 hre = no
 base_tax = 17

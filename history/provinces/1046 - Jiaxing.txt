@@ -1,6 +1,6 @@
 capital = "Jiaxing"
 trade_goods = rice
-culture = wuhan
+culture = wuyue
 religion = mahayana
 hre = no
 base_tax = 100

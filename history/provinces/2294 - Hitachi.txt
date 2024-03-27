@@ -1,6 +1,6 @@
 owner = STK
 controller = STK
-culture = kanto
+culture = aynu
 religion = mahayana
 capital = "Mito"
 trade_goods = rice

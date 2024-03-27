@@ -1,6 +1,6 @@
 capital = "Lamphun"
 trade_goods = rice
-culture = lanna
+culture = mon_culture
 religion = theravada
 hre = no
 base_tax = 1

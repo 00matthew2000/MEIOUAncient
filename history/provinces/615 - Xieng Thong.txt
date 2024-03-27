@@ -1,6 +1,6 @@
 capital = "Luang Prabang"
 trade_goods = lumber
-culture = katuic
+culture = mangic
 religion = ban_phi
 hre = no
 base_tax = 3

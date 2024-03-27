@@ -1,6 +1,6 @@
 owner = TKD
 controller = TKD
-culture = chubu
+culture = aynu
 religion = mahayana
 capital = "Kaufu"
 trade_goods = rice

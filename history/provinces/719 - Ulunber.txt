@@ -1,9 +1,9 @@
 owner = YUA
 controller = YUA
 add_core = YUA
-capital = "Ker�len"
+capital = "Ker len"
 trade_goods = wheat
-culture = xiongnu
+culture = donghu
 religion = tengri_pagan
 hre = no
 base_tax = 1

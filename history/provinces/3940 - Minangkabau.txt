@@ -1,6 +1,6 @@
 capital = "Bahal"
 trade_goods = clove
-culture = batak
+culture = malay
 religion = kejawen_h
 hre = no
 base_tax = 1

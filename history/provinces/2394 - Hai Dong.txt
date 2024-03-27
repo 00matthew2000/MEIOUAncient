@@ -1,6 +1,6 @@
 capital = "Van Don"
 trade_goods = rice
-culture = lac_viet
+culture = au_viet
 religion = mahayana
 hre = no
 base_tax = 2

@@ -1,6 +1,6 @@
 capital = "Liánzhou"
 trade_goods = cotton
-culture = yaozu
+culture = nanyue
 religion = mahayana
 hre = no
 base_tax = 14

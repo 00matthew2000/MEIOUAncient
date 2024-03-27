@@ -1,6 +1,6 @@
 capital = "Butuan"
 trade_goods = unknown
-culture = maguindanao
+culture = hiligaynon
 religion = kejawen_h
 hre = no
 base_tax = 1

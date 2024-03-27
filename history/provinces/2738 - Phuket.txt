@@ -1,6 +1,6 @@
 capital = "Thalang"
 trade_goods = fish
-culture = malayan
+culture = malay
 religion = theravada
 hre = no
 base_tax = 1

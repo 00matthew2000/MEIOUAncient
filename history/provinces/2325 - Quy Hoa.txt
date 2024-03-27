@@ -1,6 +1,6 @@
 capital = "Quy Hoa"
 trade_goods = tea
-culture = tay_nung
+culture = lac_viet
 religion = bimoism
 hre = no
 base_tax = 2

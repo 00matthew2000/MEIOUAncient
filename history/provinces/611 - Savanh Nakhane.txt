@@ -1,6 +1,6 @@
 capital = "Savanh Nakhane"
 trade_goods = rice
-culture = katu
+culture = katuic
 religion = ban_phi
 hre = no
 base_tax = 4

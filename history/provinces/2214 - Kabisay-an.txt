@@ -1,6 +1,6 @@
 capital = "Madyanos"
 trade_goods = unknown
-culture = cebuano
+culture = hiligaynon
 religion = polynesian_pagan
 hre = no
 base_tax = 4

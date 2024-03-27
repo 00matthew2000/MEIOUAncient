@@ -1,6 +1,6 @@
 capital = "Yishan"
 trade_goods = rice
-culture = zhuang
+culture = shanyue
 religion = bimoism
 hre = no
 base_tax = 10

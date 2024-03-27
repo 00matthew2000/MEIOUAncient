@@ -1,6 +1,6 @@
 capital = "Strung Treng"
 trade_goods = rice
-culture = bahnar
+culture = bahnaric
 religion = ban_phi
 hre = no
 base_tax = 1

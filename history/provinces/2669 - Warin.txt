@@ -1,6 +1,6 @@
 capital = "Warin"
 trade_goods = rice
-culture = katu
+culture = funanese
 religion = ban_phi
 hre = no
 base_tax = 1

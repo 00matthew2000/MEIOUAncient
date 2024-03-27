@@ -1,6 +1,6 @@
 capital = "Maoming"
 trade_goods = cotton
-culture = yueyu
+culture = shanyue
 religion = mahayana
 hre = no
 base_tax = 17

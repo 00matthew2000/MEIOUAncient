@@ -1,6 +1,6 @@
 capital = "Lingui"
 trade_goods = tea
-culture = guiliu
+culture = li
 religion = bimoism
 hre = no
 base_tax = 45

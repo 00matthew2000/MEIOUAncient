@@ -1,6 +1,6 @@
 capital = "Ulahe"
 trade_goods = lumber
-culture = nanai
+culture = sushen
 religion = shamanism
 hre = no
 base_tax = 3

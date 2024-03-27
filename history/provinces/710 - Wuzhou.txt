@@ -1,6 +1,6 @@
 capital = "Beiliu"
 trade_goods = tea
-culture = yueyu
+culture = nanyue
 religion = bimoism
 hre = no
 base_tax = 15

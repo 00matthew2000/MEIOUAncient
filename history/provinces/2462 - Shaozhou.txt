@@ -1,6 +1,6 @@
 capital = "Qujiang"
 trade_goods = rice
-culture = yaozu
+culture = yangyue
 religion = mahayana
 hre = no
 base_tax = 12

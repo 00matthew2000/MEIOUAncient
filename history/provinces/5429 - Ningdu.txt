@@ -1,6 +1,6 @@
 capital = "Ningdu"
 trade_goods = rice
-culture = hakka
+culture = yangyue
 religion = mahayana
 hre = no
 base_tax = 11

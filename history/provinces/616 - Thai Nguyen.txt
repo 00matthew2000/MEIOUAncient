@@ -1,6 +1,6 @@
 capital = "Thai Nguyen"
 trade_goods = tea
-culture = tay_nung
+culture = au_viet
 religion = bimoism
 hre = no
 base_tax = 3

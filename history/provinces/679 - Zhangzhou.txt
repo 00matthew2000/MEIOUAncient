@@ -1,6 +1,6 @@
 capital = "Longxi"
 trade_goods = sugar
-culture = minnan
+culture = minyue
 religion = mahayana
 hre = no
 base_tax = 30

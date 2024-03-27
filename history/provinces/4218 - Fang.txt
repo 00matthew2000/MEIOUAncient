@@ -1,6 +1,6 @@
 capital = "Fang"
 trade_goods = lumber
-culture = lanna
+culture = palaungic
 religion = ban_phi
 hre = no
 base_tax = 2

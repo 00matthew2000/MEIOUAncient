@@ -1,6 +1,6 @@
 owner = AKM
 controller = AKM
-culture = chugoku
+culture = yayoi
 religion = mahayana
 capital = "Tuyama"
 trade_goods = rice

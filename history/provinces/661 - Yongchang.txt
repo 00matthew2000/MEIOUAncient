@@ -1,6 +1,6 @@
 capital = "Jingdong"
 trade_goods = tea
-culture = hani
+culture = dian
 religion = ban_phi
 hre = no
 base_tax = 4

@@ -1,6 +1,6 @@
 capital = "Pingle"
 trade_goods = hemp
-culture = yaozu
+culture = nanyue
 religion = bimoism
 hre = no
 base_tax = 6

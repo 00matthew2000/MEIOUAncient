@@ -1,6 +1,6 @@
 owner = USG
 controller = USG
-culture = tohoku
+culture = aynu
 religion = mahayana
 capital = "Kasugayama"
 trade_goods = hemp

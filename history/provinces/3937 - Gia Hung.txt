@@ -1,6 +1,6 @@
 capital = "Gia Hung"
 trade_goods = tea
-culture = sipsong_thai
+culture = lac_viet
 religion = ban_phi
 hre = no
 base_tax = 3

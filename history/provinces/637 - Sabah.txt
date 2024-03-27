@@ -1,6 +1,6 @@
 capital = "Sabah"
 trade_goods = fish
-culture = bornean
+culture = malay
 religion = polynesian_pagan
 hre = no
 base_tax = 1

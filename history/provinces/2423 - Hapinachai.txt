@@ -1,6 +1,6 @@
 capital = "Hapinachai"
 trade_goods = rice
-culture = lanna
+culture = palaungic
 religion = ban_phi
 hre = no
 base_tax = 1

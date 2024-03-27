@@ -1820,6 +1820,23 @@ malay_group = {
 	malay = {
 		primary = LGK
 	}
+	indonesian = {
+		dynasty_names = {
+			Banten Demak Surabaya Cirebon Samprangan
+		}
+		male_names = {
+			"Girindrawardhana" "Girishawardhana" "Kertabumi" "Kertawijaya" "Rajasawardhana" "Suraprabhawa" 
+			"Wikramawardhana" "Hayam Wuruk" "Kalagamet" "Raden Wijaya" "Kertawardhana" "Raden Sotor" "Raden Sumirat" 
+			"Singhawardhana"
+		}
+		female_names = {
+			"Suhita" "Sri Gitarja" Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi Nu utea Orama Poe Pear Poehina Poenui 
+			Poerava Puaiti 
+			Puatea Puaura Ra ihau Ra imere Ra inui Ranitea Rarahu Raunui Raurii Tahiata Taiana Taina Tania Taurua Tautiare Tehani 
+			Tehea Teora Tera Tevai Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata Vaihere Vaimiti Vairea 
+			Vaite Vaitiare
+		}
+	}
 	chamic = {
 		primary = CHP
 		male_names = {
@@ -4561,6 +4578,28 @@ siberian_group = {
 			Bisultan Ulpu Aino Ivy Jesha
 		}
 	}
+	mansi = {
+		primary = PLM
+		
+		male_names = {
+			Ablegirim Agay Bailm Baybalak Kalb Kolp Kalpan Kazak Kildey Koyal Kulak Kyncha Michey Metik Miron Nahratsh Obaitko Pytkey
+			Sadyga Samar Tagay Taustei Techik Utshyut Yumshan Yurg Velm
+		}
+		female_names = {
+			Koste Nasta Katyö Ölga
+		}
+	}
+	khanty = {
+		primary = KOD
+		
+		male_names = {
+			Aksha Alacam Bildan Ermak Ichigey Gindin Hynda Ladik Luguy Memruk Moldan Molik Onzha Pevgey Rayduk
+			Senger Setanziy Shatrov Taishi Tuchabalda Yangilik Yuvan Yuzor
+		}
+		female_names = {
+			Nasta Katyö Ölga
+		}
+	}
 	finno_ugric = {
 		primary = AGP
 		male_names = {
@@ -4998,5 +5037,427 @@ turkic_group = {
 	}
 	dynasty_names = {
 		Toumanai Modai Gunchenai Ichisai Uwai Chedai Fujuai
+	}
+}
+
+nivkh_group = {
+	graphical_culture = inuitgfx
+	second_graphical_culture = asiangfx
+	nivkh = {
+		male_names = {
+			Smedun Yalin Chelmik Tigan "Vit k" Niavan Yugain Shyvun Matak Agniun Vidain Kekhan Koton
+			Kokhtolok Yurik Tim Akr Vadim Akiliak Hodia Zoia Pogiun Vovk Kolia Khagan Ezdanok Maghmaghun
+		}
+		female_names = {
+			Katik Valera Verek Lida "Kut k"
+		}
+		dynasty_names = {
+			Valdyu Chyivyn Chvynyn Cherzhen Chyozhen Koron
+		}
+	}
+	ulchi = {
+		male_names = {
+			Smedun Yalin Chelmik Tigan "Vit k" Niavan Yugain Shyvun Matak Agniun Vidain Kekhan Koton
+			Kokhtolok Yurik Tim Akr Vadim Akiliak Hodia Zoia Pogiun Vovk Kolia Khagan Ezdanok Maghmaghun
+		}
+		female_names = {
+			Katik Valera Verek Lida "Kut k"
+		}
+		dynasty_names = {
+			Valdyu Chyivyn Chvynyn Cherzhen Chyozhen Koron
+		}
+	}
+	udege = {
+		male_names = {
+			Smedun Yalin Chelmik Tigan "Vit k" Niavan Yugain Shyvun Matak Agniun Vidain Kekhan Koton
+			Kokhtolok Yurik Tim Akr Vadim Akiliak Hodia Zoia Pogiun Vovk Kolia Khagan Ezdanok Maghmaghun
+		}
+		female_names = {
+			Katik Valera Verek Lida "Kut k"
+		}
+		dynasty_names = {
+			Valdyu Chyivyn Chvynyn Cherzhen Chyozhen Koron
+		}
+	}
+	nanai = {
+		male_names = {
+			Smedun Yalin Chelmik Tigan "Vit k" Niavan Yugain Shyvun Matak Agniun Vidain Kekhan Koton
+			Kokhtolok Yurik Tim Akr Vadim Akiliak Hodia Zoia Pogiun Vovk Kolia Khagan Ezdanok Maghmaghun
+		}
+		female_names = {
+			Katik Valera Verek Lida "Kut k"
+		}
+		dynasty_names = {
+			Valdyu Chyivyn Chvynyn Cherzhen Chyozhen Koron
+		}
+	}
+}
+
+aynu_group = {
+	graphical_culture = inuitgfx
+	second_graphical_culture = asiangfx
+	aynu = {
+		male_names = {
+			Asitaka Atoroy Atuy 
+			Cikiriasikay Cikomotain 
+			Hasitain Hawkase Henauke
+			Ikasipa Ikorikayani Ikotoy Ininkari Iwsain
+			Kamokutain Kannisikor Kirawkorekashi Kosamain
+			Mawtarake More
+			Nioy Nisikomake Nocikusa
+			Onibisi
+			Poroya
+			Sakusain Sasuke Simoci Sonko Soyakowci
+			Tanasakasi Tarikona Tsukinoe
+			Utafu
+			Wain
+			Yaitet Yayomanekuh
+		}
+		female_names = {
+			Hikoin
+			Imekan
+			Kin
+			Nein
+			Urukin 
+		}
+		dynasty_names = {
+			Haykur Ishikarunkur Menasunkur Repunmosirunkur Sarunkur Sumunkur 
+		}
+	}
+	sakhalin_aynu = {
+		
+		male_names = {
+			Asitaka Atoroy Atuy 
+			Cikiriasikay Cikomotain 
+			Hasitain Hawkase Henauke
+			Ikasipa Ikorikayani Ikotoy Ininkari Iwsain
+			Kamokutain Kannisikor Kirawkorekashi Kosamain
+			Mawtarake More
+			Nioy Nisikomake Nocikusa
+			Onibisi
+			Poroya
+			Sakusain Sasuke Simoci Sonko Soyakowci
+			Tanasakasi Tarikona Tsukinoe
+			Utafu
+			Wain
+			Yaitet Yayomanekuh
+		}
+		female_names = {
+			Hikoin
+			Imekan
+			Kin
+			Nein
+			Urukin 
+		}
+		dynasty_names = {
+			Haykur Ishikarunkur Menasunkur Repunmosirunkur Sarunkur Sumunkur 
+		}
+	}
+	kuril_aynu = {
+		
+		male_names = {
+			Asitaka Atoroy Atuy 
+			Cikiriasikay Cikomotain 
+			Hasitain Hawkase Henauke
+			Ikasipa Ikorikayani Ikotoy Ininkari Iwsain
+			Kamokutain Kannisikor Kirawkorekashi Kosamain
+			Mawtarake More
+			Nioy Nisikomake Nocikusa
+			Onibisi
+			Poroya
+			Sakusain Sasuke Simoci Sonko Soyakowci
+			Tanasakasi Tarikona Tsukinoe
+			Utafu
+			Wain
+			Yaitet Yayomanekuh
+		}
+		female_names = {
+			Hikoin
+			Imekan
+			Kin
+			Nein
+			Urukin 
+		}
+		dynasty_names = {
+			Haykur Ishikarunkur Menasunkur Repunmosirunkur Sarunkur Sumunkur 
+		}
+	}
+}
+
+tungusic = {
+	graphical_culture = asiangfx
+	evenki = {
+		male_names = {
+			Abai Abatai Adahai Ade Adali Ahacu Ahadan Agada Agu Aihana Aisingga Ajida Ajige Ajigen Aktama Alantai Alin Alingga Amin Anfiyanggu Angguli Arjisan Arli Ardai Argun Arsai Asan Atai
+			Babuhai Babutai Badu Bahai Bakda Bakedu Baindari Balama Banjintai Bayara Bayan Beicen Bohoto Bokedo Bolo Bombogor Boolunga Boosi Bugan Bujai Bujantai Buyan Buyangan Buyanggu
+			Cahar Canggadai Cangsu Cani Cangsudai Cebutan Celge Centai Cereng Cerge "Cinagen Darhan" Cinggiyanu Cirugani Cungsan Cunsan Cuyen
+			Dacuha "Dacuha Bayan" Daisa Dalongai Degelei Daki Derdai Desiku Dodo Doolei Dorbo Dorgon Dorji Doni Dudu Durhu Dulan Dunggo Duresi
+			Ebilun Eidu Elehebu Esu
+			Faha Faka Fanca Fiongdon Fiongga Fiyanggu Fiyanggutai Fuciowan Fulehe Fulin Fuman 
+			Gabula Gaisan Gahacan Gahasanhasihu Gancuhan Gangatai Garse Gerfen Gerte Gintaisi Giocangga Giyesu Gonga Gose Guangke Guangu Gudui "Gudui Juyan" Gugai Gulai Gunaha Gurmahun Gutai
+			Hala Handai Hedu Hide "Hong Taiji" Hohori Hongketai Hongko Hooge Huise Hurhan Huse
+			Igonaha Ilinga Isiha Itabira
+			Jakedu Jaikan Jamakacogu Jeyang Jidu Jinggi Jirgallang Jukungge Julan 
+			Kajihai Kesina Kilanbu Kuaja
+			Labu Laha Laka Lamasi Lambu Lekedehun Leodan Lergiyen Lidun Limbu Lobohoi Loge
+			Mahai Maidali Majan Mandahai Manggultai Manggusi Mantai Mentemu Menggebulu Menggebukha Menggetu Merhu Mingju Mujangga Murgaci Muyangga
+			Nacibulu Nadacu Nalingga Narimbulu Nerdu Nikan "Nikan Wailan" Nisiha Nochin Norobu Nurgaci
+			Oboi Ortai
+			Sabi Sadonge Sahaliyan Sahana Samanhasili Sanyaderci Sarhuda Serha Serhei Sibeoci Sigiyanu Singgen "Singgen Darhan" Singguli Siruggemingedo Solgo Sonin Songgotu Soocanga Sose Soto Subotungge Sudasai Sudun Suksaha Surgaci Susuhei "Susuhei Fiyanggu"
+			Tabai Tabon "Tabon Bayan" Taca "Taca Fiyanggu" Taicu Tailan Taketai Taksi Tanggudai Terbi Terhu Toimo Tolo Toose Turgei Tursi
+			Uici Urgudai Urgutai
+			Wakda Wangtai Wanggao Wangginu Wangger Wangji "Wangji Wailan" Wanjetu Wailan Worgudai Wohena
+			Yakecin Yangginu Yargaci Yebusu Yende Yosaibu Yolo Yoto 
+			
+			Akdun Alan Anabu Anaku Arsun Arsalan Ashai Asu Ayanda Badai Baha Bahabu Baise Bajar Baksan Balu Baran Basan Bohori Boji Bootai Boro Buka Busuku Buyali "Buyali Mergen" Cagan Caida  Carki Ceke Cihala Colhon Coki Coohar Cuku "Cuku Baturu" Dai Daihan Dalai Dalan Dari Dasu Defu Doha Doholon Doola Duici Dulei Dulba Dungga Elbihe Efu Fakjin Fangge Fatha Fatan Fiyada Fiyangga Fiyahan Fiyasha "Gabula Baturu" Gadahun Gaha Gajitai Ganjuhan Garin Gasha Gebungge Giohoto Gisun Goho Gohon Goko Gungge Hada Haidu Halhan Hari Hasiri Hatan Hecen Hele Hethe Hetu Heye Hida Hife "Hife Baksi" Hirgen Hiribu "Hohori Efu" Hokton Holo Homin Hontoho Hose Horontai Hoto Huhu Huju Hutu Huba Huban Hulan Huri Huse Husi Husa Huwaise Ibahan Icangga Icengge Ilibu Ilha Indahun Isan Isangga Isha Isu Itu Jingji Jiratai Jolo Jorho Jortai Juce Jucengge "Jucengge Baturu" Jumara Juntai Kamtu Kacilan Kara Kenje Kesi Kesibu Kilin Kuri Labi Ladu Lahari Laju Lamun Lenggeri Lobi Lomi Lunggu Mahu Maikan Maise Maitu Mala Malukan Malahi Manggai Malu Manggiya Masan Megu Minggan Minggatu Mergen Monggo Mucen Muheliyen Muhu Mujan Mulu Mulan Murca Muri Muru Musen Musi Musi Namu Nacin Nere "Nikan Baturu" Nionio Niyada Nusu Ocir Ofono Oha Olbo Okson Olon Orhodai Ongoro Ordo Sabdangga Sadun Saha Sahada Saibigan Saise Samha Samsu Sanggabu Sege Sele Selmin Singgeri Sijintai Sintai Silan Siteku Solho "Songgotu Baturu" "Sonin Baksi" "Sonin Baturu" Suburi Sube Sudan Suhe Suhecen Suiha Suilan Songkoro "Songkoro Baturu" Sunggina Sunta Suya Sahun Sari Sunjaci Susu Susuna Taktu "Taktu Baturu" Talman Tangguha Tantu To Toro Tubihe Tulhun Tumen Tura Turi Tusa Wahun Wajima Wase Wehe Weihe Ukada Uku Ukuri Ule Ulgiyaci Ulhu Uli Umudu Unca Unduri Usun Usaku Yabu Yala Yaki Yasha "Yehe Jumara" Yentai Yodan Yoro Yuwamboo
+		}
+		female_names = {
+			Abahai Ajigen Alingga Atu
+			Daje Deyinze Donggo 
+			Emeci 
+			Gundei 
+			"Hahana Jacing"
+			Ide
+			Kenje 
+			Makata Mangguji Monggojeje Mukushen 
+			Narinbulu Nunje
+			Suhuli
+			Taisina 
+			Yatu
+		}
+		dynasty_names = {
+			# CKII
+			"Onggirat" "Naiman" "Kereyid" "Sartaq" "Mengu-Timur" "Uriankhai" "Bujakhin" "Besud" "Noyan" 
+			"Jochid" "Chagatayid" "Chupanid" "Injuid" "Toluid" "Ganbold" "Bolormaa" "Batbayar" 
+			"Bat-Erdene" "Otgonbayar" "Enkhtuyaa" "Gantulga" "Nerg i" "Lkhagvas ren" "Enkhjargal" 
+			"Ganzorig" "Narantsetseg" "P revs ren" "Ganbaatar" "M nkhtsetseg" "M nkhbat" "M nkh-Erdene" 
+			"Jalair" "Sartuul" "Olkhunut" "Khatagin" "Iljigin" "Tsookhor" "Qarakhanid"
+		}
+	}
+	neghidal = {
+		male_names = {
+			Abai Abatai Adahai Ade Adali Ahacu Ahadan Agada Agu Aihana Aisingga Ajida Ajige Ajigen Aktama Alantai Alin Alingga Amin Anfiyanggu Angguli Arjisan Arli Ardai Argun Arsai Asan Atai
+			Babuhai Babutai Badu Bahai Bakda Bakedu Baindari Balama Banjintai Bayara Bayan Beicen Bohoto Bokedo Bolo Bombogor Boolunga Boosi Bugan Bujai Bujantai Buyan Buyangan Buyanggu
+			Cahar Canggadai Cangsu Cani Cangsudai Cebutan Celge Centai Cereng Cerge "Cinagen Darhan" Cinggiyanu Cirugani Cungsan Cunsan Cuyen
+			Dacuha "Dacuha Bayan" Daisa Dalongai Degelei Daki Derdai Desiku Dodo Doolei Dorbo Dorgon Dorji Doni Dudu Durhu Dulan Dunggo Duresi
+			Ebilun Eidu Elehebu Esu
+			Faha Faka Fanca Fiongdon Fiongga Fiyanggu Fiyanggutai Fuciowan Fulehe Fulin Fuman 
+			Gabula Gaisan Gahacan Gahasanhasihu Gancuhan Gangatai Garse Gerfen Gerte Gintaisi Giocangga Giyesu Gonga Gose Guangke Guangu Gudui "Gudui Juyan" Gugai Gulai Gunaha Gurmahun Gutai
+			Hala Handai Hedu Hide "Hong Taiji" Hohori Hongketai Hongko Hooge Huise Hurhan Huse
+			Igonaha Ilinga Isiha Itabira
+			Jakedu Jaikan Jamakacogu Jeyang Jidu Jinggi Jirgallang Jukungge Julan 
+			Kajihai Kesina Kilanbu Kuaja
+			Labu Laha Laka Lamasi Lambu Lekedehun Leodan Lergiyen Lidun Limbu Lobohoi Loge
+			Mahai Maidali Majan Mandahai Manggultai Manggusi Mantai Mentemu Menggebulu Menggebukha Menggetu Merhu Mingju Mujangga Murgaci Muyangga
+			Nacibulu Nadacu Nalingga Narimbulu Nerdu Nikan "Nikan Wailan" Nisiha Nochin Norobu Nurgaci
+			Oboi Ortai
+			Sabi Sadonge Sahaliyan Sahana Samanhasili Sanyaderci Sarhuda Serha Serhei Sibeoci Sigiyanu Singgen "Singgen Darhan" Singguli Siruggemingedo Solgo Sonin Songgotu Soocanga Sose Soto Subotungge Sudasai Sudun Suksaha Surgaci Susuhei "Susuhei Fiyanggu"
+			Tabai Tabon "Tabon Bayan" Taca "Taca Fiyanggu" Taicu Tailan Taketai Taksi Tanggudai Terbi Terhu Toimo Tolo Toose Turgei Tursi
+			Uici Urgudai Urgutai
+			Wakda Wangtai Wanggao Wangginu Wangger Wangji "Wangji Wailan" Wanjetu Wailan Worgudai Wohena
+			Yakecin Yangginu Yargaci Yebusu Yende Yosaibu Yolo Yoto 
+			
+			Akdun Alan Anabu Anaku Arsun Arsalan Ashai Asu Ayanda Badai Baha Bahabu Baise Bajar Baksan Balu Baran Basan Bohori Boji Bootai Boro Buka Busuku Buyali "Buyali Mergen" Cagan Caida  Carki Ceke Cihala Colhon Coki Coohar Cuku "Cuku Baturu" Dai Daihan Dalai Dalan Dari Dasu Defu Doha Doholon Doola Duici Dulei Dulba Dungga Elbihe Efu Fakjin Fangge Fatha Fatan Fiyada Fiyangga Fiyahan Fiyasha "Gabula Baturu" Gadahun Gaha Gajitai Ganjuhan Garin Gasha Gebungge Giohoto Gisun Goho Gohon Goko Gungge Hada Haidu Halhan Hari Hasiri Hatan Hecen Hele Hethe Hetu Heye Hida Hife "Hife Baksi" Hirgen Hiribu "Hohori Efu" Hokton Holo Homin Hontoho Hose Horontai Hoto Huhu Huju Hutu Huba Huban Hulan Huri Huse Husi Husa Huwaise Ibahan Icangga Icengge Ilibu Ilha Indahun Isan Isangga Isha Isu Itu Jingji Jiratai Jolo Jorho Jortai Juce Jucengge "Jucengge Baturu" Jumara Juntai Kamtu Kacilan Kara Kenje Kesi Kesibu Kilin Kuri Labi Ladu Lahari Laju Lamun Lenggeri Lobi Lomi Lunggu Mahu Maikan Maise Maitu Mala Malukan Malahi Manggai Malu Manggiya Masan Megu Minggan Minggatu Mergen Monggo Mucen Muheliyen Muhu Mujan Mulu Mulan Murca Muri Muru Musen Musi Musi Namu Nacin Nere "Nikan Baturu" Nionio Niyada Nusu Ocir Ofono Oha Olbo Okson Olon Orhodai Ongoro Ordo Sabdangga Sadun Saha Sahada Saibigan Saise Samha Samsu Sanggabu Sege Sele Selmin Singgeri Sijintai Sintai Silan Siteku Solho "Songgotu Baturu" "Sonin Baksi" "Sonin Baturu" Suburi Sube Sudan Suhe Suhecen Suiha Suilan Songkoro "Songkoro Baturu" Sunggina Sunta Suya Sahun Sari Sunjaci Susu Susuna Taktu "Taktu Baturu" Talman Tangguha Tantu To Toro Tubihe Tulhun Tumen Tura Turi Tusa Wahun Wajima Wase Wehe Weihe Ukada Uku Ukuri Ule Ulgiyaci Ulhu Uli Umudu Unca Unduri Usun Usaku Yabu Yala Yaki Yasha "Yehe Jumara" Yentai Yodan Yoro Yuwamboo
+		}
+		female_names = {
+			Abahai Ajigen Alingga Atu
+			Daje Deyinze Donggo 
+			Emeci 
+			Gundei 
+			"Hahana Jacing"
+			Ide
+			Kenje 
+			Makata Mangguji Monggojeje Mukushen 
+			Narinbulu Nunje
+			Suhuli
+			Taisina 
+			Yatu
+		}
+		dynasty_names = {
+			# CKII
+			"Onggirat" "Naiman" "Kereyid" "Sartaq" "Mengu-Timur" "Uriankhai" "Bujakhin" "Besud" "Noyan" 
+			"Jochid" "Chagatayid" "Chupanid" "Injuid" "Toluid" "Ganbold" "Bolormaa" "Batbayar" 
+			"Bat-Erdene" "Otgonbayar" "Enkhtuyaa" "Gantulga" "Nerg i" "Lkhagvas ren" "Enkhjargal" 
+			"Ganzorig" "Narantsetseg" "P revs ren" "Ganbaatar" "M nkhtsetseg" "M nkhbat" "M nkh-Erdene" 
+			"Jalair" "Sartuul" "Olkhunut" "Khatagin" "Iljigin" "Tsookhor" "Qarakhanid"
+		}
+	}
+	oroqen = {
+		male_names = {
+			Abai Abatai Adahai Ade Adali Ahacu Ahadan Agada Agu Aihana Aisingga Ajida Ajige Ajigen Aktama Alantai Alin Alingga Amin Anfiyanggu Angguli Arjisan Arli Ardai Argun Arsai Asan Atai
+			Babuhai Babutai Badu Bahai Bakda Bakedu Baindari Balama Banjintai Bayara Bayan Beicen Bohoto Bokedo Bolo Bombogor Boolunga Boosi Bugan Bujai Bujantai Buyan Buyangan Buyanggu
+			Cahar Canggadai Cangsu Cani Cangsudai Cebutan Celge Centai Cereng Cerge "Cinagen Darhan" Cinggiyanu Cirugani Cungsan Cunsan Cuyen
+			Dacuha "Dacuha Bayan" Daisa Dalongai Degelei Daki Derdai Desiku Dodo Doolei Dorbo Dorgon Dorji Doni Dudu Durhu Dulan Dunggo Duresi
+			Ebilun Eidu Elehebu Esu
+			Faha Faka Fanca Fiongdon Fiongga Fiyanggu Fiyanggutai Fuciowan Fulehe Fulin Fuman 
+			Gabula Gaisan Gahacan Gahasanhasihu Gancuhan Gangatai Garse Gerfen Gerte Gintaisi Giocangga Giyesu Gonga Gose Guangke Guangu Gudui "Gudui Juyan" Gugai Gulai Gunaha Gurmahun Gutai
+			Hala Handai Hedu Hide "Hong Taiji" Hohori Hongketai Hongko Hooge Huise Hurhan Huse
+			Igonaha Ilinga Isiha Itabira
+			Jakedu Jaikan Jamakacogu Jeyang Jidu Jinggi Jirgallang Jukungge Julan 
+			Kajihai Kesina Kilanbu Kuaja
+			Labu Laha Laka Lamasi Lambu Lekedehun Leodan Lergiyen Lidun Limbu Lobohoi Loge
+			Mahai Maidali Majan Mandahai Manggultai Manggusi Mantai Mentemu Menggebulu Menggebukha Menggetu Merhu Mingju Mujangga Murgaci Muyangga
+			Nacibulu Nadacu Nalingga Narimbulu Nerdu Nikan "Nikan Wailan" Nisiha Nochin Norobu Nurgaci
+			Oboi Ortai
+			Sabi Sadonge Sahaliyan Sahana Samanhasili Sanyaderci Sarhuda Serha Serhei Sibeoci Sigiyanu Singgen "Singgen Darhan" Singguli Siruggemingedo Solgo Sonin Songgotu Soocanga Sose Soto Subotungge Sudasai Sudun Suksaha Surgaci Susuhei "Susuhei Fiyanggu"
+			Tabai Tabon "Tabon Bayan" Taca "Taca Fiyanggu" Taicu Tailan Taketai Taksi Tanggudai Terbi Terhu Toimo Tolo Toose Turgei Tursi
+			Uici Urgudai Urgutai
+			Wakda Wangtai Wanggao Wangginu Wangger Wangji "Wangji Wailan" Wanjetu Wailan Worgudai Wohena
+			Yakecin Yangginu Yargaci Yebusu Yende Yosaibu Yolo Yoto 
+			
+			Akdun Alan Anabu Anaku Arsun Arsalan Ashai Asu Ayanda Badai Baha Bahabu Baise Bajar Baksan Balu Baran Basan Bohori Boji Bootai Boro Buka Busuku Buyali "Buyali Mergen" Cagan Caida  Carki Ceke Cihala Colhon Coki Coohar Cuku "Cuku Baturu" Dai Daihan Dalai Dalan Dari Dasu Defu Doha Doholon Doola Duici Dulei Dulba Dungga Elbihe Efu Fakjin Fangge Fatha Fatan Fiyada Fiyangga Fiyahan Fiyasha "Gabula Baturu" Gadahun Gaha Gajitai Ganjuhan Garin Gasha Gebungge Giohoto Gisun Goho Gohon Goko Gungge Hada Haidu Halhan Hari Hasiri Hatan Hecen Hele Hethe Hetu Heye Hida Hife "Hife Baksi" Hirgen Hiribu "Hohori Efu" Hokton Holo Homin Hontoho Hose Horontai Hoto Huhu Huju Hutu Huba Huban Hulan Huri Huse Husi Husa Huwaise Ibahan Icangga Icengge Ilibu Ilha Indahun Isan Isangga Isha Isu Itu Jingji Jiratai Jolo Jorho Jortai Juce Jucengge "Jucengge Baturu" Jumara Juntai Kamtu Kacilan Kara Kenje Kesi Kesibu Kilin Kuri Labi Ladu Lahari Laju Lamun Lenggeri Lobi Lomi Lunggu Mahu Maikan Maise Maitu Mala Malukan Malahi Manggai Malu Manggiya Masan Megu Minggan Minggatu Mergen Monggo Mucen Muheliyen Muhu Mujan Mulu Mulan Murca Muri Muru Musen Musi Musi Namu Nacin Nere "Nikan Baturu" Nionio Niyada Nusu Ocir Ofono Oha Olbo Okson Olon Orhodai Ongoro Ordo Sabdangga Sadun Saha Sahada Saibigan Saise Samha Samsu Sanggabu Sege Sele Selmin Singgeri Sijintai Sintai Silan Siteku Solho "Songgotu Baturu" "Sonin Baksi" "Sonin Baturu" Suburi Sube Sudan Suhe Suhecen Suiha Suilan Songkoro "Songkoro Baturu" Sunggina Sunta Suya Sahun Sari Sunjaci Susu Susuna Taktu "Taktu Baturu" Talman Tangguha Tantu To Toro Tubihe Tulhun Tumen Tura Turi Tusa Wahun Wajima Wase Wehe Weihe Ukada Uku Ukuri Ule Ulgiyaci Ulhu Uli Umudu Unca Unduri Usun Usaku Yabu Yala Yaki Yasha "Yehe Jumara" Yentai Yodan Yoro Yuwamboo
+		}
+		female_names = {
+			Abahai Ajigen Alingga Atu
+			Daje Deyinze Donggo 
+			Emeci 
+			Gundei 
+			"Hahana Jacing"
+			Ide
+			Kenje 
+			Makata Mangguji Monggojeje Mukushen 
+			Narinbulu Nunje
+			Suhuli
+			Taisina 
+			Yatu
+		}
+		dynasty_names = {
+			# CKII
+			"Onggirat" "Naiman" "Kereyid" "Sartaq" "Mengu-Timur" "Uriankhai" "Bujakhin" "Besud" "Noyan" 
+			"Jochid" "Chagatayid" "Chupanid" "Injuid" "Toluid" "Ganbold" "Bolormaa" "Batbayar" 
+			"Bat-Erdene" "Otgonbayar" "Enkhtuyaa" "Gantulga" "Nerg i" "Lkhagvas ren" "Enkhjargal" 
+			"Ganzorig" "Narantsetseg" "P revs ren" "Ganbaatar" "M nkhtsetseg" "M nkhbat" "M nkh-Erdene" 
+			"Jalair" "Sartuul" "Olkhunut" "Khatagin" "Iljigin" "Tsookhor" "Qarakhanid"
+		}
+	}
+}
+
+kamchatkan_group = {
+	graphical_culture = inuitgfx
+	second_graphical_culture = asiangfx
+	itelmen = {
+		male_names = {
+			Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligtü Dayan 
+			Delbeg Ejei Elbeg Engke Güyük Gün Gulichi Irinchibal Jorightu Kublai Köke Ligdan Markörgis Möngke 
+			Manduulun Öljei Örüg Oyiradai Ögödei Qayshan Qoshila Sayn Suddhipala Tayisung Temujin Temür Toghun 
+			Tolui Toq Uskhal Yesün Ariq Batu Eljigidei Joichi Darayisung Tümen
+		}
+		female_names = {
+			Temülen Börte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun 
+			Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene 
+		}
+		dynasty_names = {
+			# CKII
+			"Onggirat" "Naiman" "Kereyid" "Sartaq" "Mengu-Timur" "Uriankhai" "Bujakhin" "Besud" "Noyan" 
+			"Jochid" "Chagatayid" "Chupanid" "Injuid" "Toluid" "Ganbold" "Bolormaa" "Batbayar" 
+			"Bat-Erdene" "Otgonbayar" "Enkhtuyaa" "Gantulga" "Nergüi" "Lkhagvasüren" "Enkhjargal" 
+			"Ganzorig" "Narantsetseg" "Pürevsüren" "Ganbaatar" "Mönkhtsetseg" "Mönkhbat" "Mönkh-Erdene" 
+			"Jalair" "Sartuul" "Olkhunut" "Khatagin" "Iljigin" "Tsookhor" "Qarakhanid"
+		}
+	}
+	alyutor = {
+		male_names = {
+			Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligtü Dayan 
+			Delbeg Ejei Elbeg Engke Güyük Gün Gulichi Irinchibal Jorightu Kublai Köke Ligdan Markörgis Möngke 
+			Manduulun Öljei Örüg Oyiradai Ögödei Qayshan Qoshila Sayn Suddhipala Tayisung Temujin Temür Toghun 
+			Tolui Toq Uskhal Yesün Ariq Batu Eljigidei Joichi Darayisung Tümen
+		}
+		female_names = {
+			Temülen Börte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun 
+			Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene 
+		}
+		dynasty_names = {
+			# CKII
+			"Onggirat" "Naiman" "Kereyid" "Sartaq" "Mengu-Timur" "Uriankhai" "Bujakhin" "Besud" "Noyan" 
+			"Jochid" "Chagatayid" "Chupanid" "Injuid" "Toluid" "Ganbold" "Bolormaa" "Batbayar" 
+			"Bat-Erdene" "Otgonbayar" "Enkhtuyaa" "Gantulga" "Nergüi" "Lkhagvasüren" "Enkhjargal" 
+			"Ganzorig" "Narantsetseg" "Pürevsüren" "Ganbaatar" "Mönkhtsetseg" "Mönkhbat" "Mönkh-Erdene" 
+			"Jalair" "Sartuul" "Olkhunut" "Khatagin" "Iljigin" "Tsookhor" "Qarakhanid"
+		}
+	}
+	koryak = {
+		male_names = {
+			Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligtü Dayan 
+			Delbeg Ejei Elbeg Engke Güyük Gün Gulichi Irinchibal Jorightu Kublai Köke Ligdan Markörgis Möngke 
+			Manduulun Öljei Örüg Oyiradai Ögödei Qayshan Qoshila Sayn Suddhipala Tayisung Temujin Temür Toghun 
+			Tolui Toq Uskhal Yesün Ariq Batu Eljigidei Joichi Darayisung Tümen
+		}
+		female_names = {
+			Temülen Börte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun 
+			Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene 
+		}
+		dynasty_names = {
+			# CKII
+			"Onggirat" "Naiman" "Kereyid" "Sartaq" "Mengu-Timur" "Uriankhai" "Bujakhin" "Besud" "Noyan" 
+			"Jochid" "Chagatayid" "Chupanid" "Injuid" "Toluid" "Ganbold" "Bolormaa" "Batbayar" 
+			"Bat-Erdene" "Otgonbayar" "Enkhtuyaa" "Gantulga" "Nergüi" "Lkhagvasüren" "Enkhjargal" 
+			"Ganzorig" "Narantsetseg" "Pürevsüren" "Ganbaatar" "Mönkhtsetseg" "Mönkhbat" "Mönkh-Erdene" 
+			"Jalair" "Sartuul" "Olkhunut" "Khatagin" "Iljigin" "Tsookhor" "Qarakhanid"
+		}
+	}
+}
+
+yukaghir_group = {
+	graphical_culture = inuitgfx
+	second_graphical_culture = asiangfx
+	yukaghir = {
+		male_names = {
+			Acadie Ail
+			Candelo Chailaru
+			Hanedo
+			Igilvay
+			Joguldle
+			Kigiche
+			Tshuor
+		}
+		female_names = {
+			Enjekey
+			Halarcha
+			Lerpu Limhadie
+			Motu
+		}
+		dynasty_names = {
+			# CKII
+			"Onggirat" "Naiman" "Kereyid" "Sartaq" "Mengu-Timur" "Uriankhai" "Bujakhin" "Besud" "Noyan" 
+			"Jochid" "Chagatayid" "Chupanid" "Injuid" "Toluid" "Ganbold" "Bolormaa" "Batbayar" 
+			"Bat-Erdene" "Otgonbayar" "Enkhtuyaa" "Gantulga" "Nergüi" "Lkhagvasüren" "Enkhjargal" 
+			"Ganzorig" "Narantsetseg" "Pürevsüren" "Ganbaatar" "Mönkhtsetseg" "Mönkhbat" "Mönkh-Erdene" 
+			"Jalair" "Sartuul" "Olkhunut" "Khatagin" "Iljigin" "Tsookhor" "Qarakhanid"
+		}
+	}
+}
+
+samodeic = {
+	graphical_culture = inuitgfx
+	second_graphical_culture = asiangfx
+	selkup = {
+		primary = SKP
+		
+		male_names = {
+			Alacam Alatay Bardak Kanna Kichey Kirsha Kunyaz Olosha Tayboghta Urunka Vagay Vonya
+		}
+		female_names = {
+			Nasta Katyö Ölga
+		}
+	}
+	nenet = {
+		
+		male_names = {
+			Mikhail Yermolay Matvey Vasiley Pitirim Gerasim Isaak Iona Volod Gavril Yegor Ivan Mikulay Petyr 
+			Kos'ta Öndrey Stepan Ölyöksey Boris Danil Dmitry Pedot Illya Segö Semö Pedör 
+		}
+		female_names = {
+			Nasta Katyö Ölga
+		}
+	}
+	nganasan = {
+		
+		male_names = {
+			Mikhail Yermolay Matvey Vasiley Pitirim Gerasim Isaak Iona Volod Gavril Yegor Ivan Mikulay Petyr 
+			Kos'ta Öndrey Stepan Ölyöksey Boris Danil Dmitry Pedot Illya Segö Semö Pedör 
+		}
+		female_names = {
+			Nasta Katyö Ölga
+		}
 	}
 }

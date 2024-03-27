@@ -1,6 +1,6 @@
 capital = "Shangqiu"
 trade_goods = tea
-culture = hanyu
+culture = dongtu
 religion = mahayana
 hre = no
 base_tax = 27

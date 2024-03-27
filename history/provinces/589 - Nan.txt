@@ -1,6 +1,6 @@
 capital = "Muang Klang"
 trade_goods = lumber
-culture = lanna
+culture = palaungic
 religion = theravada
 hre = no
 base_tax = 1

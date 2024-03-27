@@ -1,6 +1,6 @@
 capital = "Rejang"
 trade_goods = fish
-culture = sumatran
+culture = malay
 religion = hinduism
 hre = no
 base_tax = 1

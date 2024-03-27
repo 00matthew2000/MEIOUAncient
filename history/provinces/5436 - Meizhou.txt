@@ -1,6 +1,6 @@
 capital = "Chengxiang"
 trade_goods = rice
-culture = hakka
+culture = minyue
 religion = mahayana
 hre = no
 base_tax = 17

@@ -1,6 +1,6 @@
 capital = "Tubigarao"
 trade_goods = unknown
-culture = tagalog
+culture = lokano
 religion = polynesian_pagan
 hre = no
 base_tax = 1

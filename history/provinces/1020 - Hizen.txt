@@ -1,7 +1,7 @@
 owner = SHN
 controller = SHN
 add_core = SHN
-culture = kyushu
+culture = yayoi
 religion = mahayana
 capital = "Saga"
 trade_goods = fish

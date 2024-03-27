@@ -1,6 +1,6 @@
 capital = "Chaiya"
 trade_goods = fish
-culture = malayan
+culture = moken
 religion = theravada
 hre = no
 base_tax = 3

@@ -1,6 +1,6 @@
 capital = "Guangxi"
 trade_goods = rice
-culture = hani
+culture = dian
 religion = bimoism
 hre = no
 base_tax = 12

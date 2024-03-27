@@ -1,6 +1,6 @@
 capital = "Yueyang"
 trade_goods = millet
-culture = jinyu
+culture = shanxi
 religion = mahayana
 hre = no
 base_tax = 47

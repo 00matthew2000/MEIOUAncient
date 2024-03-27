@@ -1,6 +1,6 @@
 capital = "Lam Dong"
 trade_goods = lumber
-culture = bahnar
+culture = bahnaric
 religion = theravada
 hre = no
 base_tax = 2

@@ -1,6 +1,6 @@
 capital = "Gan"
 trade_goods = lumber
-culture = hakka
+culture = yangyue
 religion = mahayana
 hre = no
 base_tax = 14

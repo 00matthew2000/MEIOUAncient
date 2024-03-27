@@ -1,6 +1,6 @@
 capital = "Pangadyian"
 trade_goods = unknown
-culture = maguindanao
+culture = tausug
 religion = polynesian_pagan
 hre = no
 base_tax = 2

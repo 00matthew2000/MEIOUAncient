@@ -1,7 +1,5 @@
 capital = "Galepagos"
 trade_goods = unknown
-culture = manteno
-religion = inti
 hre = no
 base_tax = 0
 base_production = 0

@@ -1,6 +1,6 @@
 capital = "Hirara"
 trade_goods = fish
-culture = ryukyuan
+culture = liuqiuan
 religion = shinto
 hre = no
 base_tax = 1

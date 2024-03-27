@@ -1,6 +1,6 @@
 capital = "Ranai"
 trade_goods = fish
-culture = malayan
+culture = malay
 religion = kejawen_h
 hre = no
 base_tax = 1

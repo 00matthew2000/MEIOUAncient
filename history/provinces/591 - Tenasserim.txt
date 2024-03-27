@@ -1,6 +1,6 @@
 capital = "Tanonsri"
 trade_goods = fish
-culture = mon_culture
+culture = moken
 religion = theravada
 hre = no
 base_tax = 1

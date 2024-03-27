@@ -1,6 +1,6 @@
 capital = "Nanping"
 trade_goods = lumber
-culture = minbei
+culture = minyue
 religion = mahayana
 hre = no
 base_tax = 34

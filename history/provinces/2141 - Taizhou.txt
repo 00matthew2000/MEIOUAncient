@@ -1,6 +1,6 @@
 capital = "Huangyan"
 trade_goods = tea
-culture = wunan
+culture = ouyue
 religion = mahayana
 hre = no
 base_tax = 66

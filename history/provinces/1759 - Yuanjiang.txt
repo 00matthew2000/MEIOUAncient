@@ -1,6 +1,6 @@
 capital = "Fenghua"
 trade_goods = tea
-culture = hani
+culture = kra
 religion = ban_phi
 base_tax = 2
 base_production = 0

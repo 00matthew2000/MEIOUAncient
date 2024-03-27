@@ -1,6 +1,6 @@
 capital = "Chongshan"
 trade_goods = hemp
-culture = tay_nung
+culture = shanyue
 religion = bimoism
 hre = no
 base_tax = 2

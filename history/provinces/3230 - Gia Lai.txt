@@ -1,6 +1,6 @@
 capital = "Pleiku"
 trade_goods = rice
-culture = degar
+culture = bahnaric
 religion = ban_phi
 hre = no
 base_tax = 3

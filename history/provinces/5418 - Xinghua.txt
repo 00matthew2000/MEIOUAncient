@@ -1,6 +1,6 @@
 capital = "Putian"
 trade_goods = lumber
-culture = minnan
+culture = minyue
 religion = mahayana
 hre = no
 base_tax = 38

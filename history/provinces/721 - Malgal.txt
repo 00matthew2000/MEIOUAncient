@@ -1,6 +1,6 @@
 capital = "Ergun"
 trade_goods = wool
-culture = oroqen
+culture = donghu
 religion = tengri_pagan
 hre = no
 base_tax = 2

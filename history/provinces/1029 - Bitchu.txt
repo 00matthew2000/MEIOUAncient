@@ -1,6 +1,6 @@
 owner = HKW
 controller = HKW
-culture = chugoku
+culture = yayoi
 religion = mahayana
 capital = "Matuyama"
 trade_goods = rice

@@ -1,6 +1,6 @@
 capital = "Haiyang"
 trade_goods = rice
-culture = minnan
+culture = nanyue
 religion = mahayana
 hre = no
 base_tax = 23

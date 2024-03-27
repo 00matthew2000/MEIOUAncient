@@ -1,6 +1,6 @@
 capital = "Xuanhua"
 trade_goods = cinnamon
-culture = zhuang
+culture = shanyue
 religion = bimoism
 hre = no
 base_tax = 12

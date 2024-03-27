@@ -1,6 +1,6 @@
 capital = "Xinhui"
 trade_goods = tea
-culture = yueyu
+culture = nanyue
 religion = mahayana
 hre = no
 base_tax = 27

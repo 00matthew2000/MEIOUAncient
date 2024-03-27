@@ -1,6 +1,6 @@
 capital = "Jinjiang"
 trade_goods = fish
-culture = minnan
+culture = minyue
 religion = mahayana
 hre = no
 base_tax = 23

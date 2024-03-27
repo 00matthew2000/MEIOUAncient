@@ -1,6 +1,6 @@
 capital = "Gaoyao"
 trade_goods = rice
-culture = yueyu
+culture = nanyue
 religion = mahayana
 hre = no
 base_tax = 35

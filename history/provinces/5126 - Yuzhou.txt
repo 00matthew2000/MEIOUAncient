@@ -1,6 +1,6 @@
 capital = "Cangwu"
 trade_goods = tea
-culture = yueyu
+culture = shanyue
 religion = mahayana
 hre = no
 base_tax = 9

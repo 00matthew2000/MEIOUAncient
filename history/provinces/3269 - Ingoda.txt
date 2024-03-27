@@ -1,6 +1,6 @@
 capital = "Shilke"
 trade_goods = wool
-culture = sumpanigan
+culture = donghu
 religion = tengri_pagan
 hre = no
 base_tax = 2

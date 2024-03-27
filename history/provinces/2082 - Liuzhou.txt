@@ -1,6 +1,6 @@
 capital = "Maping"
 trade_goods = cinnamon
-culture = zhuang
+culture = shanyue
 religion = bimoism
 hre = no
 base_tax = 21

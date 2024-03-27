@@ -1,6 +1,6 @@
 capital = "Hepu"
 trade_goods = fish
-culture = minnan
+culture = shanyue
 religion = mahayana
 hre = no
 base_tax = 33

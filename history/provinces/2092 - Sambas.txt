@@ -1,6 +1,6 @@
 capital = "Sambas"
 trade_goods = rice
-culture = bornean
+culture = malay
 religion = polynesian_pagan
 hre = no
 base_tax = 1

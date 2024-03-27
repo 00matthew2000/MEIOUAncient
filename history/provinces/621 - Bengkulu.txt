@@ -1,6 +1,6 @@
 capital = "Benkulen"
 trade_goods = fish
-culture = sumatran
+culture = malay
 religion = hinduism
 hre = no
 base_tax = 2

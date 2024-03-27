@@ -1,6 +1,6 @@
 capital = "Manila"
 trade_goods = unknown
-culture = cebuano
+culture = tausug
 religion = polynesian_pagan
 hre = no
 base_tax = 7

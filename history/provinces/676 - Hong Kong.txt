@@ -1,6 +1,6 @@
 capital = "Daxishan"
 trade_goods = fish
-culture = yueyu
+culture = nanyue
 religion = mahayana
 hre = no
 base_tax = 1

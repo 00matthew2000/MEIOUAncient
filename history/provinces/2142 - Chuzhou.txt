@@ -1,6 +1,6 @@
 capital = "Lishui"
 trade_goods = tea
-culture = chuqu
+culture = ouyue
 religion = mahayana
 hre = no
 base_tax = 42
