@@ -1,6 +1,6 @@
 capital = "Ekete"
 trade_goods = palm
-culture = edo_c
+culture = nok
 religion = odinala
 hre = no
 base_tax = 5

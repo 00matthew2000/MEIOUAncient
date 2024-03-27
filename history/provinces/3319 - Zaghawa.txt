@@ -1,6 +1,6 @@
 capital = "Kamoi"
 trade_goods = unknown
-culture = foora
+culture = daza
 religion = lotuko_pagan
 hre = no
 base_tax = 3

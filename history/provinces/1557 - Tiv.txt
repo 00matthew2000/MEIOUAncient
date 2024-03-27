@@ -1,6 +1,6 @@
 capital = "Wukari"
 trade_goods = palm
-culture = tiv_c
+culture = tiv
 religion = odinala
 hre = no
 base_tax = 4

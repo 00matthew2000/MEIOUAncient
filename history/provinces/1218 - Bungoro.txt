@@ -1,6 +1,6 @@
 capital = "Takala"
 trade_goods = unknown
-culture = foora
+culture = fur_culture
 religion = lotuko_pagan
 hre = no
 base_tax = 8

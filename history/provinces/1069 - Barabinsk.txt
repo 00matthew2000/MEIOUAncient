@@ -1,6 +1,6 @@
 capital = "Telennet"
 trade_goods = unknown
-culture = siberian
+culture = ugric
 religion = shamanism
 hre = no
 base_tax = 1

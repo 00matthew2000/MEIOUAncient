@@ -1,6 +1,6 @@
 capital = "Bin Yauri"
 trade_goods = millet
-culture = berom
+culture = nok
 religion = odinala
 hre = no
 base_tax = 4

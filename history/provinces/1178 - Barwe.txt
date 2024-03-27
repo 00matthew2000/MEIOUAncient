@@ -1,6 +1,6 @@
 capital = "Barwe"
 trade_goods = lumber
-culture = shona
+culture = san
 religion = bantu_pagan
 hre = no
 base_tax = 2

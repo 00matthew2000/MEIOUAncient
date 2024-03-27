@@ -1,6 +1,6 @@
 capital = "Rukwa"
 trade_goods = livestock
-culture = makua
+culture = san
 religion = bantu_pagan
 hre = no
 base_tax = 3

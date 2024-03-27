@@ -1,6 +1,6 @@
 capital = "Atacama"
 trade_goods = unknown
-culture = aimara
+culture = wankarani
 religion = inti
 hre = no
 base_tax = 27

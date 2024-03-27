@@ -1,6 +1,6 @@
 capital = "Angoche"
 trade_goods = slaves
-culture = kimwani
+culture = san
 religion = sunni
 hre = no
 base_tax = 4

@@ -1,6 +1,6 @@
 capital = "Cempohuallan"
 trade_goods = cotton
-culture = totonac
+culture = huastec
 religion = cocijo
 hre = no
 base_tax = 5

@@ -1,6 +1,6 @@
 capital = "Sauk"
 trade_goods = unknown
-culture = potawatomi
+culture = couture
 religion = midewiwin
 hre = no
 base_tax = 3

@@ -1,6 +1,6 @@
 capital = "Segu"
 trade_goods = cotton
-culture = bambara
+culture = bura
 religion = sunni
 hre = no
 base_tax = 3

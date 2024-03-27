@@ -1,6 +1,6 @@
 capital = "Ghat"
 trade_goods = palm_date
-culture = tuareg
+culture = troglodytian
 religion = sunni
 base_tax = 1
 base_production = 0

@@ -1,5 +1,6 @@
 capital = "Fategar"
 trade_goods = wool
+culture = surmic
 religion = sunni
 base_tax = 3
 base_production = 0

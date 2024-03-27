@@ -1,6 +1,6 @@
 capital = "Kitala"
 trade_goods = livestock
-culture = ganda
+culture = urewe
 religion = bantu_pagan
 hre = no
 base_tax = 3

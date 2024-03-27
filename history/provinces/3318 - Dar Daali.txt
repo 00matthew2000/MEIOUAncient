@@ -1,6 +1,6 @@
 capital = "Al Fashir"
 trade_goods = incense
-culture = foora
+culture = fur_culture
 religion = lotuko_pagan
 hre = no
 base_tax = 3

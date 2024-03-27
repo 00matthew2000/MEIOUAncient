@@ -1,6 +1,6 @@
 capital = "Mapachtepec"
 trade_goods = cotton
-culture = mixean
+culture = zapotec
 religion = cocijo
 hre = no
 base_tax = 4

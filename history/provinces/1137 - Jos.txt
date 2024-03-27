@@ -1,6 +1,6 @@
 capital = "Jos"
 trade_goods = slaves
-culture = kutumbawa
+culture = tiv
 religion = odinala
 hre = no
 base_tax = 5

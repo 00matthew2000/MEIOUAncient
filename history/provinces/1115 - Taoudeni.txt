@@ -1,6 +1,6 @@
 capital = "Taoudeni"
 trade_goods = palm_date
-culture = sanhaja
+culture = troglodytian
 religion = sunni
 hre = no
 base_tax = 1

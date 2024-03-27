@@ -120,7 +120,7 @@ je = {
 		}
 	}
 }
-andean_group = {
+southern_andean_group = {
 	graphical_culture = southamericagfx
 	
 	quechuan = {
@@ -358,8 +358,7 @@ andean_group = {
 		}			
 	}
 	
-	aimara = {
-		primary = AYG
+	wankarani = {
 		dynasty_names = {
 			Anquimarca Apo Atahualpa Atoc Atoc-Suqui Auqui-Huaman
 			Canchari Chalcuchima Challco Chiaquitinta Chilche Colla-Topa Curiatao Cusi
@@ -506,35 +505,7 @@ andean_group = {
 			Nina
 		}
 	}
-	diaguita = {
-		dynasty_names = {
-			Aconquijas Anguinahao
-			Caca Capayan
-			Hualfin
-			Omaguaca
-			Paccioca Pular
-			Quilme
-			Tocpo
-		}
-		male_names = {
-			Aman Anco Anto
-			Cafa Chamijo
-			Fama Ficpam
-			Hualpa Huanchicay Huilla
-			Ismi
-			Payo
-			Tancol Tino Tucuma
-			Viltipoco
-		}
-		female_names = {
-			Ana Axomamma
-			Cavillaca
-			Kantuta
-			Maiara
-			Nina
-		}
-	}
-	chiribaya = {
+	chinchorro = {
 		dynasty_names = {
 			Chachapoya
 			Jivaro
@@ -568,64 +539,8 @@ andean_group = {
 		}
 	}
 	
-	colla = {
+	pukara = {
 		primary = AYM
-		dynasty_names = {
-			Anquimarca Apo Atahualpa Atoc Atoc-Suqui Auqui-Huaman
-			Canchari Chalcuchima Challco Chiaquitinta Chilche Colla-Topa Curiatao Cusi
-			Guacra Guaritito Guaritopa
-			Huachuri Huaman Huascar Huaypalcon
-			Illaquita Inquill
-			Llicllic
-			Maila Maras Marcavilca Mayta
-			Ninancoro
-			Ozcoc
-			Parinango Paucar Paullu Pomacapi Puma Pusca Puyu-Vilca
-			Quilaco Quingallumbo Quintiraura Quisquis Quizo
-			Rimac Ronpa
-			Sahuaraura Sotaurco
-			Tanqui Tucuycuyche Tupac-Amaru
-			Yupanqui
-		}
-		male_names = {
-			Amaru Anquimarca
-			Cari Coyllas Cusichaca
-			Guaritopa
-			Huachuri Huaypalcon
-			Illapa Inti
-			Katari
-			Luyes
-			Marcavilca
-			Pascac Pomaguala
-			Ruminavi
-			Sahuaraura Surandaman
-			Taraque Tucuycuyche Tunupa Tupac
-			Yupanqui
-			Zambiza Zopahua
-			"Atoc Sopa"
-			"Cayo Topa"
-			"Chuqui Capac"
-			"Colla Capac"
-			"Ninan Cuyuchi"
-			"Orco Varanca"
-			"Pumi Sopa"
-			"Quispe Titu"
-			"Tomás Katari"
-			"Usca Curiatao"
-			"Villac Umu"
-			"Yamqui Mayta"
-		}
-		female_names = {
-			Ana Axomamma
-			Cavillaca
-			Kantuta
-			Maiara
-			Nina
-		}
-	}
-	
-	lupaka = {
-		primary = AYL
 		dynasty_names = {
 			Anquimarca Apo Atahualpa Atoc Atoc-Suqui Auqui-Huaman
 			Canchari Chalcuchima Challco Chiaquitinta Chilche Colla-Topa Curiatao Cusi
@@ -686,7 +601,61 @@ north_central_tradition_group = {
 
 	graphical_culture = southamericagfx
 	
-	chimu = {
+	chiripa = {
+		dynasty_names = {
+			Anquimarca Apo Atahualpa Atoc Atoc-Suqui Auqui-Huaman
+			Canchari Chalcuchima Challco Chiaquitinta Chilche Colla-Topa Curiatao Cusi
+			Guacra Guaritito Guaritopa
+			Huachuri Huaman Huascar Huaypalcon
+			Illaquita Inquill
+			Llicllic
+			Maila Maras Marcavilca Mayta
+			Ninancoro
+			Ozcoc
+			Parinango Paucar Paullu Pomacapi Puma Pusca Puyu-Vilca
+			Quilaco Quingallumbo Quintiraura Quisquis Quizo
+			Rimac Ronpa
+			Sahuaraura Sotaurco
+			Tanqui Tucuycuyche Tupac-Amaru
+			Yupanqui
+		}
+		male_names = {
+			Amaru Anquimarca
+			Cari Coyllas Cusichaca
+			Guaritopa
+			Huachuri Huaypalcon
+			Illapa Inti
+			Katari
+			Luyes
+			Marcavilca
+			Pascac Pomaguala
+			Ruminavi
+			Sahuaraura Surandaman
+			Taraque Tucuycuyche Tunupa Tupac
+			Yupanqui
+			Zambiza Zopahua
+			"Atoc Sopa"
+			"Cayo Topa"
+			"Chuqui Capac"
+			"Colla Capac"
+			"Ninan Cuyuchi"
+			"Orco Varanca"
+			"Pumi Sopa"
+			"Quispe Titu"
+			"Tomás Katari"
+			"Usca Curiatao"
+			"Villac Umu"
+			"Yamqui Mayta"
+		}
+		female_names = {
+			Ana Axomamma
+			Cavillaca
+			Kantuta
+			Maiara
+			Nina
+		}
+	}
+	chavin = {
 		primary = CHM
 		dynasty_names = {
 			Chilche
@@ -1037,6 +1006,34 @@ maranon = {
 }
 mapuchan = {
 	
+	diaguita = {
+		dynasty_names = {
+			Aconquijas Anguinahao
+			Caca Capayan
+			Hualfin
+			Omaguaca
+			Paccioca Pular
+			Quilme
+			Tocpo
+		}
+		male_names = {
+			Aman Anco Anto
+			Cafa Chamijo
+			Fama Ficpam
+			Hualpa Huanchicay Huilla
+			Ismi
+			Payo
+			Tancol Tino Tucuma
+			Viltipoco
+		}
+		female_names = {
+			Ana Axomamma
+			Cavillaca
+			Kantuta
+			Maiara
+			Nina
+		}
+	}
 	mapuche = {
 		male_names = {
 			Aillavilu Ancamilla
@@ -1683,10 +1680,10 @@ purepechan_group = {
 	}
 }
 
-nahua_group = {
+olmec_group = {
 	graphical_culture = southamericagfx
 	
-	mexica = {
+	teotihuacan = {
 		primary = TEN
 		male_names = {
 			Acacitli Acamapichtli Ahcambal Auitzotl Axacaya Axayacatl
@@ -1740,7 +1737,7 @@ nahua_group = {
 			Yaotl
 		}
 	}
-	colhua = {
+	cuicuilco = {
 		primary = NAH
 		male_names = {
 			Acacitli Acamapichtli Ahcambal Auitzotl Axacaya Axayacatl
@@ -1948,10 +1945,7 @@ nahua_group = {
 			Zeltzin Zyanya
 		}
 	}
-	nawa = { # Nawa
-		# the "coarse" form of nahuatl spoken in the eastern part of the empire
-		# must add an accelretad cultural assimilation if strong AZT
-		primary = TOC
+	olmec = { # Epi-Olmec
 		male_names = {
 			Ocuil Olli Opochtli Ozomatli
 			Quauhtli
@@ -2050,6 +2044,87 @@ nahua_group = {
 otomanguean = {
 	graphical_culture = northamericagfx
 
+	chichimecha = {
+		male_names = {
+			Ocuil Olli Opochtli Ozomatli
+			Quauhtli
+			Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc Tizoc Tizocic Tlacaelel Tlacaeleltzin Tlalli Tlaloc Tlilpotonqui Tochtli Topiltzin Totoquihuaztli Tototl Tzompantzin
+			Ueman
+			Xicohtencatl Xihuitl Xipil Xipilli Xiuhpilli Xochipepe Xochipilli Xochitl
+			Yaotl Yayauhqui Yolotli Yolyamanitzin
+			Zipactonal Zolin
+		}
+		female_names = {
+			Acacitlu
+			Citali Citlamina
+			Etapali
+			Ichtaca Icnoyotl Ilhuitl
+			Macuilxochitl Mahuitzic Moyolehuani Moztla
+			Nenetl Nochtli
+			Papan
+			Quiauhxochitl
+			Sacnite
+			Techichpotzin Teoxihuitl Teuicui Tezcatlan Tezozomoc Tlachinolli Tlaco Tlacotl Tlahco Tlahcoehua Tlahutli Tlalli Tlazohtzin Tlazozomizqui Tlexictli Toltecatl Tonalnan Tonatzin Tziquetzalpoztectzin
+			Xihuitl Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl
+			Yaretzi Yoltzin
+			Zeltzin Zyanya
+		}
+	}
+	otomi = {
+		male_names = {
+			An
+			Beljjw Bibejw Bicu Binech Bzojj
+			Chonna Chsáaxcejj Cháalaxa Cocijocza Cocijoeza Cocijopi Cocijouza Coqui
+			Dao Djoraxa
+			Gwèibóoné Gyazob Gyejj
+			Ipalnemoani
+			Ji Jituh Jzió
+			Lyebe Láxdaóxo
+			Mbalaz
+			Na Naquichinisa Naxiñanguiiu Ngolbex Nguiiu Nisa Nucano
+			Pijje Pwuix
+			Rire Ro Rusiguunda
+			Tobi
+			Veziá Véeni
+			Xolo
+			Yel
+			Zaachilla Zne Zniá Zyrx
+		}
+		female_names = {
+			Nayeli
+			Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl
+			Yaretzi Yoltzin
+			Zeltzin Zyanya
+		}
+	}
+	metztitlani = {
+		primary = MET
+		male_names = {
+			An
+			Beljjw Bibejw Bicu Binech Bzojj
+			Chonna Chsáaxcejj Cháalaxa Cocijocza Cocijoeza Cocijopi Cocijouza Coqui
+			Dao Djoraxa
+			Gwèibóoné Gyazob Gyejj
+			Ipalnemoani
+			Ji Jituh Jzió
+			Lyebe Láxdaóxo
+			Mbalaz
+			Na Naquichinisa Naxiñanguiiu Ngolbex Nguiiu Nisa Nucano
+			Pijje Pwuix
+			Rire Ro Rusiguunda
+			Tobi
+			Veziá Véeni
+			Xolo
+			Yel
+			Zaachilla Zne Zniá Zyrx
+		}
+		female_names = {
+			Nayeli
+			Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl
+			Yaretzi Yoltzin
+			Zeltzin Zyanya
+		}
+	}
 	manguean = {
 		male_names = {
 			An
@@ -2158,112 +2233,6 @@ huarpean = {
 			Pichiñán Picunche Promaucae
 			Toqui
 		}
-	}
-}
-
-aridoamerican = {
-	graphical_culture = northamericagfx
-	
-	chichimecha = {
-		male_names = {
-			Ocuil Olli Opochtli Ozomatli
-			Quauhtli
-			Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc Tizoc Tizocic Tlacaelel Tlacaeleltzin Tlalli Tlaloc Tlilpotonqui Tochtli Topiltzin Totoquihuaztli Tototl Tzompantzin
-			Ueman
-			Xicohtencatl Xihuitl Xipil Xipilli Xiuhpilli Xochipepe Xochipilli Xochitl
-			Yaotl Yayauhqui Yolotli Yolyamanitzin
-			Zipactonal Zolin
-		}
-		female_names = {
-			Acacitlu
-			Citali Citlamina
-			Etapali
-			Ichtaca Icnoyotl Ilhuitl
-			Macuilxochitl Mahuitzic Moyolehuani Moztla
-			Nenetl Nochtli
-			Papan
-			Quiauhxochitl
-			Sacnite
-			Techichpotzin Teoxihuitl Teuicui Tezcatlan Tezozomoc Tlachinolli Tlaco Tlacotl Tlahco Tlahcoehua Tlahutli Tlalli Tlazohtzin Tlazozomizqui Tlexictli Toltecatl Tonalnan Tonatzin Tziquetzalpoztectzin
-			Xihuitl Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl
-			Yaretzi Yoltzin
-			Zeltzin Zyanya
-		}
-	}
-	otomi = {
-		male_names = {
-			An
-			Beljjw Bibejw Bicu Binech Bzojj
-			Chonna Chsáaxcejj Cháalaxa Cocijocza Cocijoeza Cocijopi Cocijouza Coqui
-			Dao Djoraxa
-			Gwèibóoné Gyazob Gyejj
-			Ipalnemoani
-			Ji Jituh Jzió
-			Lyebe Láxdaóxo
-			Mbalaz
-			Na Naquichinisa Naxiñanguiiu Ngolbex Nguiiu Nisa Nucano
-			Pijje Pwuix
-			Rire Ro Rusiguunda
-			Tobi
-			Veziá Véeni
-			Xolo
-			Yel
-			Zaachilla Zne Zniá Zyrx
-		}
-		female_names = {
-			Nayeli
-			Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl
-			Yaretzi Yoltzin
-			Zeltzin Zyanya
-		}
-	}
-	metztitlani = {
-		primary = MET
-		male_names = {
-			An
-			Beljjw Bibejw Bicu Binech Bzojj
-			Chonna Chsáaxcejj Cháalaxa Cocijocza Cocijoeza Cocijopi Cocijouza Coqui
-			Dao Djoraxa
-			Gwèibóoné Gyazob Gyejj
-			Ipalnemoani
-			Ji Jituh Jzió
-			Lyebe Láxdaóxo
-			Mbalaz
-			Na Naquichinisa Naxiñanguiiu Ngolbex Nguiiu Nisa Nucano
-			Pijje Pwuix
-			Rire Ro Rusiguunda
-			Tobi
-			Veziá Véeni
-			Xolo
-			Yel
-			Zaachilla Zne Zniá Zyrx
-		}
-		female_names = {
-			Nayeli
-			Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl
-			Yaretzi Yoltzin
-			Zeltzin Zyanya
-		}
-	}
-	dynasty_names = {
-		Beljjw Bibejw Binech
-		Cháalaxa Coqui
-		Djoraxa
-		Gwpeibóoné Gyazob Gyejj
-		Jituh Jzió
-		Lyebe Láxdaóxo
-		Mbalaz
-		Oaxaca
-		Vziá Véeni
-		Zaachila Zniá Zyrx
-		"Ñuhu Tocuisi"
-		"Bzojj Chsáaxcejj"
-		"Ji Jzió"
-		"Na Yel"
-		"Ngolbex An"
-		"Pijje Jzió"
-		"Pwuix Dao"
-		"Zne Yel"
 	}
 }
 
@@ -2645,8 +2614,7 @@ chibchan_group = {
 			Nina
 		}
 	}
-	manteno = {
-		primary = MTN
+	chorrera = {
 		dynasty_names = {
 			Anquimarca Apo Atahualpa Atoc Atoc-Suqui Auqui-Huaman
 			Canchari Chalcuchima Challco Chiaquitinta Chilche Colla-Topa Curiatao Cusi
@@ -3809,34 +3777,6 @@ south_athabascan_group = {
 caddoan = {
 	graphical_culture = northamericagfx
 	
-	caddo = {
-		dynasty_names = {
-			Adai
-			Cahinnio
-			Doustioni
-			Eyeish
-			Hainai Hasinai
-			Kadohadacho Kichai
-			Nabedache Nabiti Nacogdoche Nacono Nadaco Nanatsoho Nasoni Natchitoches Nechaui Neche
-			Ouachia
-			Tula
-			Yatasi
-		}
-		male_names = {
-			Aach
-			Chowabah
-			Hiahidock
-			Kardy Kianhoon
-			Mattan
-			Ossinse
-			Sanninow Sationwnhown Sauninot Soakiantow Sohone
-			Tashar Tchowainin Tehawahinno Tehowawinow Tewinnun Tiatesun Tinnehinan Tinnowin Tiohtow Toackooch Towahinnek Tsauninot
-		}
-		female_names = {
-			Tsaktahiraas Tskusaski Tstaka Tstakurriwax Tstapittarius Tstarahuxtu Tstaruri'u
-			Zacado
-		}
-	}
 	wichita = {
 		dynasty_names = {
 			Adai
@@ -3960,177 +3900,8 @@ plain_algonquian = {
 }
 muskogean = {
 	graphical_culture = northamericagfx
-	
-	creek = {
-		dynasty_names = {
-			Chebona Chitto
-			Hopoethe Hothlepoya
-			Menewa
-			Osceola
-			Yaholo
-			"Hasse Ola"
-			"Lumhe Chati"
-			"Talof Harjo"
-		}
-		male_names = {
-			Chawooklymico Chinnabie Coosadeshopoy
-			Emistesigo
-			Fife Fuskatchemico
-			Hallethemalthle Hatke Homatah Hopothemico
-			Juleetaulematah
-			Lamochattee
-			Mumagechee Muthtee
-			Neathlock
-			Ocheehajou Opaymico Opothleyaholo Opototaache
-			Soholoesee Stilnaleeje Stimafutchkee
-			Taskanugi Totkeshajou Tuskenaah
-			Yahatatastenake
-			"Hoboi-Hili-Miko"
-			"Mico Malatchi"
-		}
-		female_names = {
-			Immahoka
-			Llanquiray Lunnabaga
-			Manque Millaray
-			Nahomtima
-			Peyeche Piro Pitrel
-			Quetroman Quimey Quintruy Quintuqueo
-			Rayen
-			Saqui Somoche
-		}
-	}
-	choctaw = {
-		dynasty_names = {
-			Abeca Abissa Achohchuba
-			Bissacha Bokfalaya
-			Cabeahoola Chanke Chemifalaya Chiskilikbacha Chucafalaya
-			Haluwahiasha Hankhaula Holithaasha
-			Ibetapoklachitto Imoklashaiskitini Imoklashi Itchechana Itokchako Iyanabe
-			Kafitalaia Kashtasha Kunshabolukta Kunshak
-			Lukfakta
-			Neshobawenya Nusiconchito
-			Ocatalaya Octuechanacbe Okacoopoly Okalusa Onitalemon Osaktalaya Osapachito Otakchitotamaha Ouiacha
-			Pante Puscustakali
-			Saktitamaha Seniasha Shinukkaha Shumotakali
-			Talepokta Tamaha Tinshinkla Tombigbee
-			Usquelagana
-			Yackniachuchuma Yazoo Yowani
-		}
-		male_names = {
-			Alpatakhuma Apuckshunubbee Asetahuma Asitahuma Autoonachuba Ayaestangui Ayaistanaksi
-			Bakalubbe Bucshunubbe
-			Cachuaanchabe Cachumaabi Cachuni Cachunimastabe Canelechabe Capputannethlucco Cayabe Chalitahuma Chicachahuma Chickashioclacta Choccoolacta Chucaastabe Chulomastubee Cshecoopoohoomoch Cshnaangchabba Cunnopoie
-			Eyahchihumo
-			Franchimastabe
-			Hatonahopaii Hiupahoo Hochehomo
-			Illatallahomo Imaabe Iteleskana
-			Massatubby Mastape Mestico Mingohom Mingohomoastabee Mingopooscoos Mingotabasa Mingotalaya Mosholatubbee Muclushahopoia
-			Nackitona Nahollomastubbe Nahumastabbe
-			Ochinohahuma Oclactahuma Ocshumme Oechanyimastabe Okanconnooa Okshakihoma Olactahuma
-			Pangehooloch Panshimantla Pooshahomo Pooshahooma Pooshemastuby Pooshonaltla Puchihuacaya Puchihuma Puchihumachita Pushahuma Pushihuma Pushihumachito Pushimastabew Pushimataha Pushistonahuma Pushmataha
-			Shappahomo Shishemastubby Steabee Stonahuma Stonakoohoopoie Stoonokoohoopoie
-			Taboca Tamaobe Tanetchenna Tehakuhbay Teshuhenochloch Tishomastubbe Tiupoye Tobocoh Toobenohoomoch Tootahomo Tootehoma Tootehooma Tootepana Tuscaabi Tuscaloosa Tuscoonoohoopoie Tushkahoomock Tushkahoomoih Tushkementahock Tushkoheegohta Tushtallay Tuskonahopoia Tuspehachaabe
-			Ulbalent Utacctahuma
-			Yoopahooma Yoostenochla
-		}
-		female_names = {
-			Immahoka
-			Llanquiray Lunnabaga
-			Manque Millaray
-			Nahomtima
-			Peyeche Piro Pitrel
-			Quetroman Quimey Quintruy Quintuqueo
-			Rayen
-			Saqui Somoche
-		}
-	}
-	chickasaw = {
-		dynasty_names = {
-			Ackia Alaoute Amalahta Apeony Apilefaplimengo Ashukhuma Ayebisto
-			Chatelaw Chesafaliah Chinica Chopoussa Chucalissa Chukafalaya Chula Coppertown Couiloussa
-			Etoukouma
-			Falatchao
-			Gouytola
-			Hummalala Hussinkoma Hykehah
-			Ooeasa Oucahata Oucthambolo Outanquatle
-			Phalachehs Pontotoc
-			Shatara Shiokaya
-			Tanyachilca Taposa Teshatulla Thanbolo Tokshish Tuckahaw Tuskaroilloe Tuskawillao
-			Yaneka
-			"Latcha Hoa Run"
-			"Ogoula-Tchetoka"
-			"Onthaba-atchosa"
-		}
-		male_names = {
-			Ahfahmah Ahshacubbe Ahtakintubbe Ahtokowah Ashalatubbi
-			Bahhakahtubbe Bahmahahtubbe Bahmehubbe
-			Chewutaha Chickahshananubbe Cochubbe Conmushkaishkah
-			Eiochetubbe Emubby
-			Fahlahmotubbe Fitchahpla Foluttachah
-			Hushtahtahubbe
-			Illuppahhumba Immahhoolotubbe Immetubbe Immohhobah Inkahyea Ishtahachah Ishtakiyukatabbe Ishteahtubbe Ishtehotopa Ishtimolutka Itawamba Iyahhoutubbe
-			Kinhoicha
-			Lahfinhubbe Latopoia
-			MAhtekoshubbe Mingatuska
-			Ninuckahumba Nuckshopubbe
-			Ohhacubbe Okelahhinlubbe Okelahnahnubbe Okelahshahcubbe Okelahshapia
-			Piomingo Pistahlahtubee
-			Shoppowme
-			Tahhacubbe Taskietoka Tishomingo Tokholthlachah Tomchickah Tootemastubbe Topulkah
-			Untemiahtubbe Untihakahtubbe
-			Wininapa
-			Yummotubbe
-		}
-		female_names = {
-			Ishtimmarharlechar
-			Mintahoye Mintahoyo
-			Phalishta
-			Temusharhoctay
-		}
-	}
+
 	seminole = {
-		dynasty_names = {
-			Chebona Chitto
-			Hopoethe Hothlepoya
-			Menewa
-			Osceola
-			Yaholo
-			"Hasse Ola"
-			"Lumhe Chati"
-			"Talof Harjo"
-		}
-		male_names = {
-			Chawooklymico Chinnabie Coosadeshopoy
-			Emistesigo
-			Fife Fuskatchemico
-			Hallethemalthle Hatke Homatah Hopothemico
-			Juleetaulematah
-			Lamochattee
-			Mumagechee Muthtee
-			Neathlock
-			Ocheehajou Opaymico Opothleyaholo Opototaache
-			Soholoesee Stilnaleeje Stimafutchkee
-			Taskanugi Totkeshajou Tuskenaah
-			Yahatatastenake
-			"Hoboi-Hili-Miko"
-			"Mico Malatchi"
-		}
-		female_names = {
-			Immahoka
-			Llanquiray Lunnabaga
-			Manque Millaray
-			Nahomtima
-			Peyeche Piro Pitrel
-			Quetroman Quimey Quintruy Quintuqueo
-			Rayen
-			Saqui Somoche
-		}
-	}
-}
-timicuan = {
-	graphical_culture = northamericagfx
-	
-	timicua = {
 		dynasty_names = {
 			Chebona Chitto
 			Hopoethe Hothlepoya
@@ -4211,10 +3982,10 @@ calusan = {
 		}
 	}
 }
-eastern_siouan = {
+atlantic_woodland = {
 	graphical_culture = northamericagfx
 	
-	catawba = {
+	deptford = {
 		dynasty_names = {
 			Hunkpapha
 			Ihankthunwanna Ihantkhunwan Isanyathi Itazipcho
@@ -4253,6 +4024,40 @@ eastern_siouan = {
 			Tahcawin Talutah Tasinahlahlawin Tasinasapewin Thasinamani
 			Wachiwi Wasula Weayaya Wichahpi Wichapi Winona
 			Zitkala Zonta
+		}
+	}
+	mingwe = {
+		dynasty_names = {
+			Akhrakouaeronon Akwinoshioni Atquanachuke
+			Carentouan Cepowig
+			Junita
+			Kaiuariegehaga Kanastoge
+			Ohongeoguena Oscalui
+			Quadroque
+			Scahentoarrhonon Sconondihago Seosquacke
+			Takoulguehronon Tehaque Tehotitachsae Tesinigh
+			Unquehiett Usququhaga Utochwig
+			Wyoming Wysox
+			"Onojutta-Haga"
+		}
+		male_names = {
+			Andra Auroghteregh
+			Dahadaghesa
+			Gosweinquecrakqua
+			Hago
+			Kagoregago
+			Nathheldaneh
+			Rutchogah
+			Saraqundett Sawahegeh Scarhuhadigh Sonque
+			Uwhanhierelera
+			Waddon Wanahedana Waskanecqua Wastahanda
+		}
+		female_names = {
+			Alliquippa
+			Genessee
+			Konwatsitiaienni
+			Satékon
+			Tekakwitha Tyonajanegen
 		}
 	}
 	woccon = {
@@ -4304,111 +4109,7 @@ eastern_siouan = {
 iroquian = {
 	graphical_culture = northamericagfx
 	
-	huron = {
-		dynasty_names = {
-			Andiata Angoutenc Anonatea Arendaonatia Arente Arontaen Anioton Ahiragenrega Ahondihronon Andachkhrob Antouaronon
-			Aondironon Atiaonrek Atirhagenrat Atiraguenrek Attiragenrega Attiuoaisgon
-			Cahiague Carhagouha Carmaron Contarea Conchake Chequamegon
-			Ekiodatsaan Endarahy Iahenhouton
-			Junqueindundeh Junundat
-			Karenhassa Kakouagoga Kandouche Kehesetoa Khioetoa
-			Oeniro Onentisati Ossossane Oukhahitoua
-			Scanonaerat Sunyendeand Skenchioe
-			Teanaustayae Teandewiata Tonache Teadeouita Teanhatenaron Tondakhra Tiedonderoga Touaguainchain Tarhetown Teotoguiaton
-		}
-		male_names = {
-			Adario Ahatsistari Awmeyeeray
-			Cheyawe
-			Datasay Dauatout Daughshuttayah Doueyenteat Dunquat
-			Haroenyou Hawdoro Horonu
-			Maudoronk Miere
-			Quouqua
-			Rontondu
-			Shaawrunthe Shateyyaronyah Shawrunthie Skahomat Skotous Stayetah
-			Tahunehawttee Tarhe Tehaawtorens Teoudetosso Terhataw Teyandatontec Teyyaghtwa Thateyyanayoh Tschauendah Tuayaurontoyou
-		}
-		female_names = {
-			Catchemackeseo Chagasort Chekaqua
-			Kataka
-			Mecaitch
-			Namachewana Nanochaatasa Neshota
-			Pecama
-			Taima Taimah
-		}
-	}
-	neutral = {
-		dynasty_names = {
-			Awegen Ahaouet
-			Canajoharie Canastigaone Canienga Caughnawaga Cahunghage Canowaroghere
-			Deseroken Dayoitgao Deonundagae Deyodeshot Deyohnegano Deyonongdadagana
-			Gweugwehono Gandasetaigon Ganogeh Gayagaanhe Gewauga Goiogouen Gadoquat Gannentaha
-			Hostayuntwa
-			Kawauka Kente Kanagaro Kowogoconnughariegugharie Kanadaseagea Kanatakowa
-			Neodakheat Nowadaga Nundawaono
-			Onekagoncka Onoalagona Oquaga Osquake Onayotekaono Oriska Ossewingo
-			Skannayutenate Saratoga Schaunactada Schoharie
-			Teatontaloga Tewanondadon Tionnontoguen Tegasoke Teseroken Tetosweken
-			Yoroonwago
-		}
-		male_names = {
-			Achiout Anachout Aqueia Aupaumut
-			Cageaga Chishekoa
-			Dagaheari
-			Eootenyootauook
-			Gyantwaia Gyasota
-			Hickonquash Honayawus Hotoshahen
-			Jishkaaga Joonondauwanonch
-			Kanatsoyh Kannasseee Katarioniecha Kaujeagaonh Kaukondanaiya Kaunehshonggoo Kaungyanehquee Kayenthoghke Kendarindgon Kenjauaugus Kenneronkwa Kiandogewa Kiantwhauka Kiatulaho Kiondushowa Kiyauhaonh Kodjeote Kohnyeaugaong Konneatorteeooh Konneyoowesot Konoohqung Konyootiayoo Kosshishtowau Kussauwatau
-			Neeshonshuk Nondiyauka
-			Oheadanghton Onaahhah Oncahye Oneatorleeooh Onecnsetee Oneshauee Onnonghsawenghti Onogwendahonji Ononyeahnee Ooduhtsait Oojaugenta Ootaguasso Ootaujeaugenth Oraghoaenendagen Oronhyatekha Otachsaka Otyadonenghti Ounnashattakau Owenewa
-			Sauhtakaongyees Sawedowa Sequidonguquee Sessewa Shaguiesa Sicahowa Skenendoa Snoachshowa Soaheas Soggooyawauthau Sohhonteoquent Sonhyoowauna Sooayoowau Soonongjoowau Soononhquaukau Soonoohshoowau Sooshaoowau
-			Taoundaudeesh Tarondawagon Tauhoondos Tayagonendagighti Teeroos Tehongyagauna Tehongyoowush Tehonwaenghrigagi Teiorhenhsere Tekahias Telenemut Tewanias Thaoowaunias Thayendanega Theyanoguin Tioohquaottakauna Toheonggo Tokenhyouau Tossonggaulolus Touighnatogon Tuggehshotta Twaukewasha Twenniyana
-		}
-		female_names = {
-			Alliquippa
-			Genessee
-			Konwatsitiaienni
-			Satékon
-			Tekakwitha Tyonajanegen
-		}
-	}
 	iroquois = {
-		dynasty_names = {
-			Awegen Ahaouet
-			Canajoharie Canastigaone Canienga Caughnawaga Cahunghage Canowaroghere
-			Deseroken Dayoitgao Deonundagae Deyodeshot Deyohnegano Deyonongdadagana
-			Gweugwehono Gandasetaigon Ganogeh Gayagaanhe Gewauga Goiogouen Gadoquat Gannentaha
-			Hostayuntwa
-			Kawauka Kente Kanagaro Kowogoconnughariegugharie Kanadaseagea Kanatakowa
-			Neodakheat Nowadaga Nundawaono
-			Onekagoncka Onoalagona Oquaga Osquake Onayotekaono Oriska Ossewingo
-			Skannayutenate Saratoga Schaunactada Schoharie
-			Teatontaloga Tewanondadon Tionnontoguen Tegasoke Teseroken Tetosweken
-			Yoroonwago
-		}
-		male_names = {
-			Achiout Anachout Aqueia Aupaumut
-			Cageaga Chishekoa
-			Dagaheari
-			Eootenyootauook
-			Gyantwaia Gyasota
-			Hickonquash Honayawus Hotoshahen
-			Jishkaaga Joonondauwanonch
-			Kanatsoyh Kannasseee Katarioniecha Kaujeagaonh Kaukondanaiya Kaunehshonggoo Kaungyanehquee Kayenthoghke Kendarindgon Kenjauaugus Kenneronkwa Kiandogewa Kiantwhauka Kiatulaho Kiondushowa Kiyauhaonh Kodjeote Kohnyeaugaong Konneatorteeooh Konneyoowesot Konoohqung Konyootiayoo Kosshishtowau Kussauwatau
-			Neeshonshuk Nondiyauka
-			Oheadanghton Onaahhah Oncahye Oneatorleeooh Onecnsetee Oneshauee Onnonghsawenghti Onogwendahonji Ononyeahnee Ooduhtsait Oojaugenta Ootaguasso Ootaujeaugenth Oraghoaenendagen Oronhyatekha Otachsaka Otyadonenghti Ounnashattakau Owenewa
-			Sauhtakaongyees Sawedowa Sequidonguquee Sessewa Shaguiesa Sicahowa Skenendoa Snoachshowa Soaheas Soggooyawauthau Sohhonteoquent Sonhyoowauna Sooayoowau Soonongjoowau Soononhquaukau Soonoohshoowau Sooshaoowau
-			Taoundaudeesh Tarondawagon Tauhoondos Tayagonendagighti Teeroos Tehongyagauna Tehongyoowush Tehonwaenghrigagi Teiorhenhsere Tekahias Telenemut Tewanias Thaoowaunias Thayendanega Theyanoguin Tioohquaottakauna Toheonggo Tokenhyouau Tossonggaulolus Touighnatogon Tuggehshotta Twaukewasha Twenniyana
-		}
-		female_names = {
-			Alliquippa
-			Genessee
-			Konwatsitiaienni
-			Satékon
-			Tekakwitha Tyonajanegen
-		}
-	}
-	erielhonan = {
 		dynasty_names = {
 			Awegen Ahaouet
 			Canajoharie Canastigaone Canienga Caughnawaga Cahunghage Canowaroghere
@@ -4478,40 +4179,6 @@ iroquian = {
 			Tekakwitha Tyonajanegen
 		}
 	}
-	mingwe = {
-		dynasty_names = {
-			Akhrakouaeronon Akwinoshioni Atquanachuke
-			Carentouan Cepowig
-			Junita
-			Kaiuariegehaga Kanastoge
-			Ohongeoguena Oscalui
-			Quadroque
-			Scahentoarrhonon Sconondihago Seosquacke
-			Takoulguehronon Tehaque Tehotitachsae Tesinigh
-			Unquehiett Usququhaga Utochwig
-			Wyoming Wysox
-			"Onojutta-Haga"
-		}
-		male_names = {
-			Andra Auroghteregh
-			Dahadaghesa
-			Gosweinquecrakqua
-			Hago
-			Kagoregago
-			Nathheldaneh
-			Rutchogah
-			Saraqundett Sawahegeh Scarhuhadigh Sonque
-			Uwhanhierelera
-			Waddon Wanahedana Waskanecqua Wastahanda
-		}
-		female_names = {
-			Alliquippa
-			Genessee
-			Konwatsitiaienni
-			Satékon
-			Tekakwitha Tyonajanegen
-		}
-	}
 	tuscarora = {
 		dynasty_names = {
 			Absecon Aquehonga Assupink
@@ -4544,49 +4211,6 @@ iroquian = {
 			Awowas
 			Cholena
 			Moconnoquah
-		}
-	}
-	cherokee = {
-		dynasty_names = {
-			Adahy Atagulkalu
-			Cheasequah
-			Degataga Diwali
-			Mohe
-			Onacona
-			Tsiyi
-			Waya
-		}
-		male_names = {
-			Agi Akonoluchta Akooh Amokontakona Attakullaculla
-			Boudinot
-			Chattakuteehee Cheanoka Chellokee Chescoonwho Chesecotetona Chesetoa Chochuchee Chockonnistaller Chokasatahe Chonosta Chuquilataque
-			Gansini Guwisguwi
-			It
-			Jonnurteekee
-			Kanitta Kanowsurhee Kaweesoolaskee Keenahkunnah Keetakeuskah Kettegiskie Keukuck Koatohee Kolakusta Konatota Kostayeak Kowetatahee Kulsateehee Kumamah Kunnateelah
-			Lach'n
-			Moytoy
-			Necatee Neekaanneah Nemetuah Newota Noothoietah
-			Onanoota Ookoseta Ookouseteeh Oolah Oolassoteh Oonatakoteekee Oorkullaukee Oortlokecteh Ooskwha Ostaiah
-			Salleekookoolah Sawanooekee Scholauetta Sequoyah Skeleak Sketaloska
-			Tallotuskee Tatliusta Tauuotihee Teekalohenah Tlorene Toostaka Tsiyu Tuckasee Tulatiska Tulco Tunksalenee Tuskeegatee Tuskegatahu
-			Umatooetha Unsuokanail Untoola Utturah
-			Weelee Wooaluka Wyuka
-			Yonaguska Yonah Yonahequah
-		}
-		female_names = {
-			Adsila Ahyoka Ama Amadahy Asmita Awenasa Awinita Ayita
-			Cuhtahlatah
-			Galilahi Galilani Ghigau
-			Hialeah Hiawassee
-			Immokalee Immookalee Inola
-			Knasgowa
-			Leotie
-			Nanye-hi Nanyehi Ninovan
-			Salali Sequoia Sequoya
-			Tayanita Tsistunagiska Tsula
-			Usdi
-			Yona
 		}
 	}
 }
@@ -5056,10 +4680,10 @@ east_algonquian = {
 		}
 	}
 }
-west_algonquian = {
+hopewell = {
 	graphical_culture = northamericagfx
 	
-	shawnee = {
+	adena = {
 		dynasty_names = {
 			Akepee Alawaymotakah Aqueloma Auglaize
 			Calaka Chalaakaatha Chillicothe Conedogwinit
@@ -5092,7 +4716,7 @@ west_algonquian = {
 			Tacumwah
 		}
 	}
-	illini = {
+	havana = {
 		dynasty_names = {
 			Albiui Amonokoa
 			Cahokia Chepoussa Chinkoa Coiracoentanon
@@ -5123,7 +4747,160 @@ west_algonquian = {
 			Tacumwah
 		}
 	}
-	miami = {
+	northeast_woodland = {
+		dynasty_names = {
+			Awegen Ahaouet
+			Canajoharie Canastigaone Canienga Caughnawaga Cahunghage Canowaroghere
+			Deseroken Dayoitgao Deonundagae Deyodeshot Deyohnegano Deyonongdadagana
+			Gweugwehono Gandasetaigon Ganogeh Gayagaanhe Gewauga Goiogouen Gadoquat Gannentaha
+			Hostayuntwa
+			Kawauka Kente Kanagaro Kowogoconnughariegugharie Kanadaseagea Kanatakowa
+			Neodakheat Nowadaga Nundawaono
+			Onekagoncka Onoalagona Oquaga Osquake Onayotekaono Oriska Ossewingo
+			Skannayutenate Saratoga Schaunactada Schoharie
+			Teatontaloga Tewanondadon Tionnontoguen Tegasoke Teseroken Tetosweken
+			Yoroonwago
+		}
+		male_names = {
+			Achiout Anachout Aqueia Aupaumut
+			Cageaga Chishekoa
+			Dagaheari
+			Eootenyootauook
+			Gyantwaia Gyasota
+			Hickonquash Honayawus Hotoshahen
+			Jishkaaga Joonondauwanonch
+			Kanatsoyh Kannasseee Katarioniecha Kaujeagaonh Kaukondanaiya Kaunehshonggoo Kaungyanehquee Kayenthoghke Kendarindgon Kenjauaugus Kenneronkwa Kiandogewa Kiantwhauka Kiatulaho Kiondushowa Kiyauhaonh Kodjeote Kohnyeaugaong Konneatorteeooh Konneyoowesot Konoohqung Konyootiayoo Kosshishtowau Kussauwatau
+			Neeshonshuk Nondiyauka
+			Oheadanghton Onaahhah Oncahye Oneatorleeooh Onecnsetee Oneshauee Onnonghsawenghti Onogwendahonji Ononyeahnee Ooduhtsait Oojaugenta Ootaguasso Ootaujeaugenth Oraghoaenendagen Oronhyatekha Otachsaka Otyadonenghti Ounnashattakau Owenewa
+			Sauhtakaongyees Sawedowa Sequidonguquee Sessewa Shaguiesa Sicahowa Skenendoa Snoachshowa Soaheas Soggooyawauthau Sohhonteoquent Sonhyoowauna Sooayoowau Soonongjoowau Soononhquaukau Soonoohshoowau Sooshaoowau
+			Taoundaudeesh Tarondawagon Tauhoondos Tayagonendagighti Teeroos Tehongyagauna Tehongyoowush Tehonwaenghrigagi Teiorhenhsere Tekahias Telenemut Tewanias Thaoowaunias Thayendanega Theyanoguin Tioohquaottakauna Toheonggo Tokenhyouau Tossonggaulolus Touighnatogon Tuggehshotta Twaukewasha Twenniyana
+		}
+		female_names = {
+			Alliquippa
+			Genessee
+			Konwatsitiaienni
+			Satékon
+			Tekakwitha Tyonajanegen
+		}
+	}
+	point_peninsula = {
+		dynasty_names = {
+			Andiata Angoutenc Anonatea Arendaonatia Arente Arontaen Anioton Ahiragenrega Ahondihronon Andachkhrob Antouaronon
+			Aondironon Atiaonrek Atirhagenrat Atiraguenrek Attiragenrega Attiuoaisgon
+			Cahiague Carhagouha Carmaron Contarea Conchake Chequamegon
+			Ekiodatsaan Endarahy Iahenhouton
+			Junqueindundeh Junundat
+			Karenhassa Kakouagoga Kandouche Kehesetoa Khioetoa
+			Oeniro Onentisati Ossossane Oukhahitoua
+			Scanonaerat Sunyendeand Skenchioe
+			Teanaustayae Teandewiata Tonache Teadeouita Teanhatenaron Tondakhra Tiedonderoga Touaguainchain Tarhetown Teotoguiaton
+		}
+		male_names = {
+			Adario Ahatsistari Awmeyeeray
+			Cheyawe
+			Datasay Dauatout Daughshuttayah Doueyenteat Dunquat
+			Haroenyou Hawdoro Horonu
+			Maudoronk Miere
+			Quouqua
+			Rontondu
+			Shaawrunthe Shateyyaronyah Shawrunthie Skahomat Skotous Stayetah
+			Tahunehawttee Tarhe Tehaawtorens Teoudetosso Terhataw Teyandatontec Teyyaghtwa Thateyyanayoh Tschauendah Tuayaurontoyou
+		}
+		female_names = {
+			Catchemackeseo Chagasort Chekaqua
+			Kataka
+			Mecaitch
+			Namachewana Nanochaatasa Neshota
+			Pecama
+			Taima Taimah
+		}
+	}
+	trempeleau = {
+		dynasty_names = {
+			Hunkpapha
+			Ihankthunwanna Ihantkhunwan Isanyathi Itazipcho
+			Mdewakanthunwan Mnikhowozu
+			Oglala Oohenunpa
+			Sichangu Sihasapa Sisithunwan
+			Thithunwan
+			Wahpéhute Wahpéthunwan Wichiyena
+		}
+		male_names = {
+			Belotonkatanga
+			Etaseepa
+			Gleska
+			Hehaka
+			Ite Iyapato Iyotake
+			Keejee Kokomako
+			Luta
+			Mahpiya Makatozaza Maktosabichis Maktowahkeark Maphiya Mascpulochastosh Matowayouwe Mewatanihanska
+			Nakapagigi
+			Oeyakoca Ogle Omagazu
+			Penision Petette Poehapa
+			Sapa Shacope Sinte
+			Takewapa Tarsega Tartunkanasiah Tenchzepart Tetekarmunch Thasunke Thathanka
+			Wabasha Wakauhee Wamadetunka Wannata Wasaota Witko
+		}
+		female_names = {
+			Chapa Chapawee Chumani
+			Dohumme Dowanhowee
+			Ehawee
+			Hantaywee
+			Kimimela
+			Macha Magaskawee Makawee Mika Mina
+			Ojinjintka
+			Ptaysanwee
+			Shappa Skah
+			Tahcawin Talutah Tasinahlahlawin Tasinasapewin Thasinamani
+			Wachiwi Wasula Weayaya Wichahpi Wichapi Winona
+			Zitkala Zonta
+		}
+	}
+	crab_orchard = {
+		dynasty_names = {
+			Ackia Alaoute Amalahta Apeony Apilefaplimengo Ashukhuma Ayebisto
+			Chatelaw Chesafaliah Chinica Chopoussa Chucalissa Chukafalaya Chula Coppertown Couiloussa
+			Etoukouma
+			Falatchao
+			Gouytola
+			Hummalala Hussinkoma Hykehah
+			Ooeasa Oucahata Oucthambolo Outanquatle
+			Phalachehs Pontotoc
+			Shatara Shiokaya
+			Tanyachilca Taposa Teshatulla Thanbolo Tokshish Tuckahaw Tuskaroilloe Tuskawillao
+			Yaneka
+			"Latcha Hoa Run"
+			"Ogoula-Tchetoka"
+			"Onthaba-atchosa"
+		}
+		male_names = {
+			Ahfahmah Ahshacubbe Ahtakintubbe Ahtokowah Ashalatubbi
+			Bahhakahtubbe Bahmahahtubbe Bahmehubbe
+			Chewutaha Chickahshananubbe Cochubbe Conmushkaishkah
+			Eiochetubbe Emubby
+			Fahlahmotubbe Fitchahpla Foluttachah
+			Hushtahtahubbe
+			Illuppahhumba Immahhoolotubbe Immetubbe Immohhobah Inkahyea Ishtahachah Ishtakiyukatabbe Ishteahtubbe Ishtehotopa Ishtimolutka Itawamba Iyahhoutubbe
+			Kinhoicha
+			Lahfinhubbe Latopoia
+			MAhtekoshubbe Mingatuska
+			Ninuckahumba Nuckshopubbe
+			Ohhacubbe Okelahhinlubbe Okelahnahnubbe Okelahshahcubbe Okelahshapia
+			Piomingo Pistahlahtubee
+			Shoppowme
+			Tahhacubbe Taskietoka Tishomingo Tokholthlachah Tomchickah Tootemastubbe Topulkah
+			Untemiahtubbe Untihakahtubbe
+			Wininapa
+			Yummotubbe
+		}
+		female_names = {
+			Ishtimmarharlechar
+			Mintahoye Mintahoyo
+			Phalishta
+			Temusharhoctay
+		}
+	}
+	laurel_complex = {
 		dynasty_names = {
 			Albiui Amonokoa
 			Cahokia Chepoussa Chinkoa Coiracoentanon
@@ -5154,7 +4931,404 @@ west_algonquian = {
 			Tacumwah
 		}
 	}
-	potawatomi = {
+	missouri = {
+		dynasty_names = {
+			Chetopa
+			Doppike
+			Hominy
+			Koholo
+			Neodesha Neosho Niukonska
+			Owasso
+			Pahusan Pasueli Pawhuska Picayune
+			Sansueli
+			Tsishu
+			Wahakolin Wazhaze Wyota
+		}
+		male_names = {
+			Aguigueda Amanpasse
+			Bashemindhe Bassechinga
+			Cahapiche Caygache Caygaywachepeche Cayque Chahetonga Channahon Cheganonsas Chingavoisa Chonguehanga Chonmelase Chonnonsogue Chouquemonnon Couchestawasta Cutsagabe
+			Dogachinga
+			Gradamnsa Grinache
+			Harachabe Honencache Hurate
+			Kemanha
+			Lihibi Lisansandhe Lolechinga
+			Mahsa Mandarihi Manguepeemani Manhegare Manhevoi Manilourana Manjaguida Manquesi Mantsa Manyvoile Mechinga Megahe Mekewatanega Mequaque Meyhe Miaasa Mithechinga
+			Naguemani Nangawahaegea Nanlatoho Natanhi Nehizanga Nehudhe Nekaghre Nendogualui Nenonbas Nepaste Nequevoile Nesaque Nicagaris Nicanauthe Nichumali Nicouilbran Ninchagari Nognithechinga Noguinilayque Nonbasocri Nonpevoite Nudhetavoi Nurahague Nuranin
+			Onhehomani Osogahe Ousabe
+			Pachigue Pagranque Pahelagren Pahuroguesie Panenvoiguanda Papuisea Pedhechiga Pedhechinga Pograngue Poneavoitaniga Ponlachinga Ponlavoitasuga
+			Qhihiramaki Quinihonigue
+			Roudanique
+			Savoi Scamani Sindhe
+			Talechiga Talevoile Taslondhe Tavaingare Tavainthere Tavoingare Tavoinhihi Tawangahuh Teshuhimga Thecayque Tonchenanque
+			Vesasche Voibahe Voibalune Voibisandhe Voichinodhe Voichinouthe Voidhadani Voidoguega Voiengran Voinache Voinonpache Voitasean Voithechinga Voithevoihe
+			Wanougpacha Wasabatougga
+		}
+		female_names = {
+			Egraname
+			Misae
+			Niabi
+			Sekaname Shonsegra
+			Wakonsamoie Watoesa
+		}
+	}
+	cooper = {
+		dynasty_names = {
+			Chetopa
+			Doppike
+			Hominy
+			Koholo
+			Neodesha Neosho Niukonska
+			Owasso
+			Pahusan Pasueli Pawhuska Picayune
+			Sansueli
+			Tsishu
+			Wahakolin Wazhaze Wyota
+		}
+		male_names = {
+			Aguigueda Amanpasse
+			Bashemindhe Bassechinga
+			Cahapiche Caygache Caygaywachepeche Cayque Chahetonga Channahon Cheganonsas Chingavoisa Chonguehanga Chonmelase Chonnonsogue Chouquemonnon Couchestawasta Cutsagabe
+			Dogachinga
+			Gradamnsa Grinache
+			Harachabe Honencache Hurate
+			Kemanha
+			Lihibi Lisansandhe Lolechinga
+			Mahsa Mandarihi Manguepeemani Manhegare Manhevoi Manilourana Manjaguida Manquesi Mantsa Manyvoile Mechinga Megahe Mekewatanega Mequaque Meyhe Miaasa Mithechinga
+			Naguemani Nangawahaegea Nanlatoho Natanhi Nehizanga Nehudhe Nekaghre Nendogualui Nenonbas Nepaste Nequevoile Nesaque Nicagaris Nicanauthe Nichumali Nicouilbran Ninchagari Nognithechinga Noguinilayque Nonbasocri Nonpevoite Nudhetavoi Nurahague Nuranin
+			Onhehomani Osogahe Ousabe
+			Pachigue Pagranque Pahelagren Pahuroguesie Panenvoiguanda Papuisea Pedhechiga Pedhechinga Pograngue Poneavoitaniga Ponlachinga Ponlavoitasuga
+			Qhihiramaki Quinihonigue
+			Roudanique
+			Savoi Scamani Sindhe
+			Talechiga Talevoile Taslondhe Tavaingare Tavainthere Tavoingare Tavoinhihi Tawangahuh Teshuhimga Thecayque Tonchenanque
+			Vesasche Voibahe Voibalune Voibisandhe Voichinodhe Voichinouthe Voidhadani Voidoguega Voiengran Voinache Voinonpache Voitasean Voithechinga Voithevoihe
+			Wanougpacha Wasabatougga
+		}
+		female_names = {
+			Egraname
+			Misae
+			Niabi
+			Sekaname Shonsegra
+			Wakonsamoie Watoesa
+		}
+	}
+	fourche_maline = {
+		dynasty_names = {
+			Adai
+			Cahinnio
+			Doustioni
+			Eyeish
+			Hainai Hasinai
+			Kadohadacho Kichai
+			Nabedache Nabiti Nacogdoche Nacono Nadaco Nanatsoho Nasoni Natchitoches Nechaui Neche
+			Ouachia
+			Tula
+			Yatasi
+		}
+		male_names = {
+			Aach
+			Chowabah
+			Hiahidock
+			Kardy Kianhoon
+			Mattan
+			Ossinse
+			Sanninow Sationwnhown Sauninot Soakiantow Sohone
+			Tashar Tchowainin Tehawahinno Tehowawinow Tewinnun Tiatesun Tinnehinan Tinnowin Tiohtow Toackooch Towahinnek Tsauninot
+		}
+		female_names = {
+			Tsaktahiraas Tskusaski Tstaka Tstakurriwax Tstapittarius Tstarahuxtu Tstaruri'u
+			Zacado
+		}
+	}
+	mossy_grove = {
+		dynasty_names = {
+			Adai
+			Cahinnio
+			Doustioni
+			Eyeish
+			Hainai Hasinai
+			Kadohadacho Kichai
+			Nabedache Nabiti Nacogdoche Nacono Nadaco Nanatsoho Nasoni Natchitoches Nechaui Neche
+			Ouachia
+			Tula
+			Yatasi
+		}
+		male_names = {
+			Aach
+			Chowabah
+			Hiahidock
+			Kardy Kianhoon
+			Mattan
+			Ossinse
+			Sanninow Sationwnhown Sauninot Soakiantow Sohone
+			Tashar Tchowainin Tehawahinno Tehowawinow Tewinnun Tiatesun Tinnehinan Tinnowin Tiohtow Toackooch Towahinnek Tsauninot
+		}
+		female_names = {
+			Tsaktahiraas Tskusaski Tstaka Tstakurriwax Tstapittarius Tstarahuxtu Tstaruri'u
+			Zacado
+		}
+	}
+	chitimacha = {
+		dynasty_names = {
+			Adai
+			Cahinnio
+			Doustioni
+			Eyeish
+			Hainai Hasinai
+			Kadohadacho Kichai
+			Nabedache Nabiti Nacogdoche Nacono Nadaco Nanatsoho Nasoni Natchitoches Nechaui Neche
+			Ouachia
+			Tula
+			Yatasi
+		}
+		male_names = {
+			Aach
+			Chowabah
+			Hiahidock
+			Kardy Kianhoon
+			Mattan
+			Ossinse
+			Sanninow Sationwnhown Sauninot Soakiantow Sohone
+			Tashar Tchowainin Tehawahinno Tehowawinow Tewinnun Tiatesun Tinnehinan Tinnowin Tiohtow Toackooch Towahinnek Tsauninot
+		}
+		female_names = {
+			Tsaktahiraas Tskusaski Tstaka Tstakurriwax Tstapittarius Tstarahuxtu Tstaruri'u
+			Zacado
+		}
+	}
+	copena = {
+		dynasty_names = {
+			Adahy Atagulkalu
+			Cheasequah
+			Degataga Diwali
+			Mohe
+			Onacona
+			Tsiyi
+			Waya
+		}
+		male_names = {
+			Agi Akonoluchta Akooh Amokontakona Attakullaculla
+			Boudinot
+			Chattakuteehee Cheanoka Chellokee Chescoonwho Chesecotetona Chesetoa Chochuchee Chockonnistaller Chokasatahe Chonosta Chuquilataque
+			Gansini Guwisguwi
+			It
+			Jonnurteekee
+			Kanitta Kanowsurhee Kaweesoolaskee Keenahkunnah Keetakeuskah Kettegiskie Keukuck Koatohee Kolakusta Konatota Kostayeak Kowetatahee Kulsateehee Kumamah Kunnateelah
+			Lach'n
+			Moytoy
+			Necatee Neekaanneah Nemetuah Newota Noothoietah
+			Onanoota Ookoseta Ookouseteeh Oolah Oolassoteh Oonatakoteekee Oorkullaukee Oortlokecteh Ooskwha Ostaiah
+			Salleekookoolah Sawanooekee Scholauetta Sequoyah Skeleak Sketaloska
+			Tallotuskee Tatliusta Tauuotihee Teekalohenah Tlorene Toostaka Tsiyu Tuckasee Tulatiska Tulco Tunksalenee Tuskeegatee Tuskegatahu
+			Umatooetha Unsuokanail Untoola Utturah
+			Weelee Wooaluka Wyuka
+			Yonaguska Yonah Yonahequah
+		}
+		female_names = {
+			Adsila Ahyoka Ama Amadahy Asmita Awenasa Awinita Ayita
+			Cuhtahlatah
+			Galilahi Galilani Ghigau
+			Hialeah Hiawassee
+			Immokalee Immookalee Inola
+			Knasgowa
+			Leotie
+			Nanye-hi Nanyehi Ninovan
+			Salali Sequoia Sequoya
+			Tayanita Tsistunagiska Tsula
+			Usdi
+			Yona
+		}
+	}
+	creek = {
+		dynasty_names = {
+			Chebona Chitto
+			Hopoethe Hothlepoya
+			Menewa
+			Osceola
+			Yaholo
+			"Hasse Ola"
+			"Lumhe Chati"
+			"Talof Harjo"
+		}
+		male_names = {
+			Chawooklymico Chinnabie Coosadeshopoy
+			Emistesigo
+			Fife Fuskatchemico
+			Hallethemalthle Hatke Homatah Hopothemico
+			Juleetaulematah
+			Lamochattee
+			Mumagechee Muthtee
+			Neathlock
+			Ocheehajou Opaymico Opothleyaholo Opototaache
+			Soholoesee Stilnaleeje Stimafutchkee
+			Taskanugi Totkeshajou Tuskenaah
+			Yahatatastenake
+			"Hoboi-Hili-Miko"
+			"Mico Malatchi"
+		}
+		female_names = {
+			Immahoka
+			Llanquiray Lunnabaga
+			Manque Millaray
+			Nahomtima
+			Peyeche Piro Pitrel
+			Quetroman Quimey Quintruy Quintuqueo
+			Rayen
+			Saqui Somoche
+		}
+	}
+	choctaw = {
+		dynasty_names = {
+			Abeca Abissa Achohchuba
+			Bissacha Bokfalaya
+			Cabeahoola Chanke Chemifalaya Chiskilikbacha Chucafalaya
+			Haluwahiasha Hankhaula Holithaasha
+			Ibetapoklachitto Imoklashaiskitini Imoklashi Itchechana Itokchako Iyanabe
+			Kafitalaia Kashtasha Kunshabolukta Kunshak
+			Lukfakta
+			Neshobawenya Nusiconchito
+			Ocatalaya Octuechanacbe Okacoopoly Okalusa Onitalemon Osaktalaya Osapachito Otakchitotamaha Ouiacha
+			Pante Puscustakali
+			Saktitamaha Seniasha Shinukkaha Shumotakali
+			Talepokta Tamaha Tinshinkla Tombigbee
+			Usquelagana
+			Yackniachuchuma Yazoo Yowani
+		}
+		male_names = {
+			Alpatakhuma Apuckshunubbee Asetahuma Asitahuma Autoonachuba Ayaestangui Ayaistanaksi
+			Bakalubbe Bucshunubbe
+			Cachuaanchabe Cachumaabi Cachuni Cachunimastabe Canelechabe Capputannethlucco Cayabe Chalitahuma Chicachahuma Chickashioclacta Choccoolacta Chucaastabe Chulomastubee Cshecoopoohoomoch Cshnaangchabba Cunnopoie
+			Eyahchihumo
+			Franchimastabe
+			Hatonahopaii Hiupahoo Hochehomo
+			Illatallahomo Imaabe Iteleskana
+			Massatubby Mastape Mestico Mingohom Mingohomoastabee Mingopooscoos Mingotabasa Mingotalaya Mosholatubbee Muclushahopoia
+			Nackitona Nahollomastubbe Nahumastabbe
+			Ochinohahuma Oclactahuma Ocshumme Oechanyimastabe Okanconnooa Okshakihoma Olactahuma
+			Pangehooloch Panshimantla Pooshahomo Pooshahooma Pooshemastuby Pooshonaltla Puchihuacaya Puchihuma Puchihumachita Pushahuma Pushihuma Pushihumachito Pushimastabew Pushimataha Pushistonahuma Pushmataha
+			Shappahomo Shishemastubby Steabee Stonahuma Stonakoohoopoie Stoonokoohoopoie
+			Taboca Tamaobe Tanetchenna Tehakuhbay Teshuhenochloch Tishomastubbe Tiupoye Tobocoh Toobenohoomoch Tootahomo Tootehoma Tootehooma Tootepana Tuscaabi Tuscaloosa Tuscoonoohoopoie Tushkahoomock Tushkahoomoih Tushkementahock Tushkoheegohta Tushtallay Tuskonahopoia Tuspehachaabe
+			Ulbalent Utacctahuma
+			Yoopahooma Yoostenochla
+		}
+		female_names = {
+			Immahoka
+			Llanquiray Lunnabaga
+			Manque Millaray
+			Nahomtima
+			Peyeche Piro Pitrel
+			Quetroman Quimey Quintruy Quintuqueo
+			Rayen
+			Saqui Somoche
+		}
+	}
+	weeden_island = {
+		dynasty_names = {
+			Chebona Chitto
+			Hopoethe Hothlepoya
+			Menewa
+			Osceola
+			Yaholo
+			"Hasse Ola"
+			"Lumhe Chati"
+			"Talof Harjo"
+		}
+		male_names = {
+			Chawooklymico Chinnabie Coosadeshopoy
+			Emistesigo
+			Fife Fuskatchemico
+			Hallethemalthle Hatke Homatah Hopothemico
+			Juleetaulematah
+			Lamochattee
+			Mumagechee Muthtee
+			Neathlock
+			Ocheehajou Opaymico Opothleyaholo Opototaache
+			Soholoesee Stilnaleeje Stimafutchkee
+			Taskanugi Totkeshajou Tuskenaah
+			Yahatatastenake
+			"Hoboi-Hili-Miko"
+			"Mico Malatchi"
+		}
+		female_names = {
+			Immahoka
+			Llanquiray Lunnabaga
+			Manque Millaray
+			Nahomtima
+			Peyeche Piro Pitrel
+			Quetroman Quimey Quintruy Quintuqueo
+			Rayen
+			Saqui Somoche
+		}
+	}
+	saugeen = {
+		dynasty_names = {
+			Awegen Ahaouet
+			Canajoharie Canastigaone Canienga Caughnawaga Cahunghage Canowaroghere
+			Deseroken Dayoitgao Deonundagae Deyodeshot Deyohnegano Deyonongdadagana
+			Gweugwehono Gandasetaigon Ganogeh Gayagaanhe Gewauga Goiogouen Gadoquat Gannentaha
+			Hostayuntwa
+			Kawauka Kente Kanagaro Kowogoconnughariegugharie Kanadaseagea Kanatakowa
+			Neodakheat Nowadaga Nundawaono
+			Onekagoncka Onoalagona Oquaga Osquake Onayotekaono Oriska Ossewingo
+			Skannayutenate Saratoga Schaunactada Schoharie
+			Teatontaloga Tewanondadon Tionnontoguen Tegasoke Teseroken Tetosweken
+			Yoroonwago
+		}
+		male_names = {
+			Achiout Anachout Aqueia Aupaumut
+			Cageaga Chishekoa
+			Dagaheari
+			Eootenyootauook
+			Gyantwaia Gyasota
+			Hickonquash Honayawus Hotoshahen
+			Jishkaaga Joonondauwanonch
+			Kanatsoyh Kannasseee Katarioniecha Kaujeagaonh Kaukondanaiya Kaunehshonggoo Kaungyanehquee Kayenthoghke Kendarindgon Kenjauaugus Kenneronkwa Kiandogewa Kiantwhauka Kiatulaho Kiondushowa Kiyauhaonh Kodjeote Kohnyeaugaong Konneatorteeooh Konneyoowesot Konoohqung Konyootiayoo Kosshishtowau Kussauwatau
+			Neeshonshuk Nondiyauka
+			Oheadanghton Onaahhah Oncahye Oneatorleeooh Onecnsetee Oneshauee Onnonghsawenghti Onogwendahonji Ononyeahnee Ooduhtsait Oojaugenta Ootaguasso Ootaujeaugenth Oraghoaenendagen Oronhyatekha Otachsaka Otyadonenghti Ounnashattakau Owenewa
+			Sauhtakaongyees Sawedowa Sequidonguquee Sessewa Shaguiesa Sicahowa Skenendoa Snoachshowa Soaheas Soggooyawauthau Sohhonteoquent Sonhyoowauna Sooayoowau Soonongjoowau Soononhquaukau Soonoohshoowau Sooshaoowau
+			Taoundaudeesh Tarondawagon Tauhoondos Tayagonendagighti Teeroos Tehongyagauna Tehongyoowush Tehonwaenghrigagi Teiorhenhsere Tekahias Telenemut Tewanias Thaoowaunias Thayendanega Theyanoguin Tioohquaottakauna Toheonggo Tokenhyouau Tossonggaulolus Touighnatogon Tuggehshotta Twaukewasha Twenniyana
+		}
+		female_names = {
+			Alliquippa
+			Genessee
+			Konwatsitiaienni
+			Satékon
+			Tekakwitha Tyonajanegen
+		}
+	}
+	couture = {
+		dynasty_names = {
+			Albiui Amonokoa
+			Cahokia Chepoussa Chinkoa Coiracoentanon
+			Espeminkia
+			Kaskaskia
+			Maroa Matchinkoa Michibousa Michigamea Moingwena
+			Negawichi
+			Peoria
+			Tamaroa Tapouara
+		}
+		male_names = {
+			Allenepeshensha Aramapingea
+			Batticy
+			Chessagouasse Chicagou
+			Keemaranea Keemawassa Keeshammy Kemonsah Kenmahreneah Kitakimawa Koongeepata
+			Mahkattamaweya Mamentouensa Manggonssa Maressa Meshiwiratta Mooyakacke
+			Naynawitwa Ninkanape
+			Pakeeshama Papenegisawa Pemekawai Pemmikawatta
+			Queckaawpeeta
+			Ramisswnoa
+			Shopinna
+			Wackshingga Wahpeshakana Wapamahwhawa Wapesae Wassacanga Wecomakana Whkahpesewah Wissineeaw
+		}
+		female_names = {
+			Kickkesequah
+			Methoataske Moconnoquah
+			Oshawsequah
+			Tacumwah
+		}
+	}
+	goodall = {
 		dynasty_names = {
 			Albiui Amonokoa
 			Cahokia Chepoussa Chinkoa Coiracoentanon
@@ -5285,37 +5459,6 @@ north_algonquian = {
 			Tacumwah
 		}
 	}
-	ojibwa = {
-		dynasty_names = {
-			Albiui Amonokoa
-			Cahokia Chepoussa Chinkoa Coiracoentanon
-			Espeminkia
-			Kaskaskia
-			Maroa Matchinkoa Michibousa Michigamea Moingwena
-			Negawichi
-			Peoria
-			Tamaroa Tapouara
-		}
-		male_names = {
-			Allenepeshensha Aramapingea
-			Batticy
-			Chessagouasse Chicagou
-			Keemaranea Keemawassa Keeshammy Kemonsah Kenmahreneah Kitakimawa Koongeepata
-			Mahkattamaweya Mamentouensa Manggonssa Maressa Meshiwiratta Mooyakacke
-			Naynawitwa Ninkanape
-			Pakeeshama Papenegisawa Pemekawai Pemmikawatta
-			Queckaawpeeta
-			Ramisswnoa
-			Shopinna
-			Wackshingga Wahpeshakana Wapamahwhawa Wapesae Wassacanga Wecomakana Whkahpesewah Wissineeaw
-		}
-		female_names = {
-			Kickkesequah
-			Methoataske Moconnoquah
-			Oshawsequah
-			Tacumwah
-		}
-	}
 	anishinabe = {
 		dynasty_names = {
 			Albiui Amonokoa
@@ -5389,47 +5532,6 @@ north_algonquian = {
 plain_indians = {# Mississippian
 	graphical_culture = northamericagfx
 	
-	dakota = {
-		dynasty_names = {
-			Hunkpapha
-			Ihankthunwanna Ihantkhunwan Isanyathi Itazipcho
-			Mdewakanthunwan Mnikhowozu
-			Oglala Oohenunpa
-			Sichangu Sihasapa Sisithunwan
-			Thithunwan
-			Wahpéhute Wahpéthunwan Wichiyena
-		}
-		male_names = {
-			Belotonkatanga
-			Etaseepa
-			Gleska
-			Hehaka
-			Ite Iyapato Iyotake
-			Keejee Kokomako
-			Luta
-			Mahpiya Makatozaza Maktosabichis Maktowahkeark Maphiya Mascpulochastosh Matowayouwe Mewatanihanska
-			Nakapagigi
-			Oeyakoca Ogle Omagazu
-			Penision Petette Poehapa
-			Sapa Shacope Sinte
-			Takewapa Tarsega Tartunkanasiah Tenchzepart Tetekarmunch Thasunke Thathanka
-			Wabasha Wakauhee Wamadetunka Wannata Wasaota Witko
-		}
-		female_names = {
-			Chapa Chapawee Chumani
-			Dohumme Dowanhowee
-			Ehawee
-			Hantaywee
-			Kimimela
-			Macha Magaskawee Makawee Mika Mina
-			Ojinjintka
-			Ptaysanwee
-			Shappa Skah
-			Tahcawin Talutah Tasinahlahlawin Tasinasapewin Thasinamani
-			Wachiwi Wasula Weayaya Wichahpi Wichapi Winona
-			Zitkala Zonta
-		}
-	}
 	nakota = {
 		dynasty_names = {
 			Hunkpapha
@@ -5598,157 +5700,11 @@ plain_indians = {# Mississippian
 			Wakonsamoie Watoesa
 		}
 	}
-	missouri = {
-		dynasty_names = {
-			Chetopa
-			Doppike
-			Hominy
-			Koholo
-			Neodesha Neosho Niukonska
-			Owasso
-			Pahusan Pasueli Pawhuska Picayune
-			Sansueli
-			Tsishu
-			Wahakolin Wazhaze Wyota
-		}
-		male_names = {
-			Aguigueda Amanpasse
-			Bashemindhe Bassechinga
-			Cahapiche Caygache Caygaywachepeche Cayque Chahetonga Channahon Cheganonsas Chingavoisa Chonguehanga Chonmelase Chonnonsogue Chouquemonnon Couchestawasta Cutsagabe
-			Dogachinga
-			Gradamnsa Grinache
-			Harachabe Honencache Hurate
-			Kemanha
-			Lihibi Lisansandhe Lolechinga
-			Mahsa Mandarihi Manguepeemani Manhegare Manhevoi Manilourana Manjaguida Manquesi Mantsa Manyvoile Mechinga Megahe Mekewatanega Mequaque Meyhe Miaasa Mithechinga
-			Naguemani Nangawahaegea Nanlatoho Natanhi Nehizanga Nehudhe Nekaghre Nendogualui Nenonbas Nepaste Nequevoile Nesaque Nicagaris Nicanauthe Nichumali Nicouilbran Ninchagari Nognithechinga Noguinilayque Nonbasocri Nonpevoite Nudhetavoi Nurahague Nuranin
-			Onhehomani Osogahe Ousabe
-			Pachigue Pagranque Pahelagren Pahuroguesie Panenvoiguanda Papuisea Pedhechiga Pedhechinga Pograngue Poneavoitaniga Ponlachinga Ponlavoitasuga
-			Qhihiramaki Quinihonigue
-			Roudanique
-			Savoi Scamani Sindhe
-			Talechiga Talevoile Taslondhe Tavaingare Tavainthere Tavoingare Tavoinhihi Tawangahuh Teshuhimga Thecayque Tonchenanque
-			Vesasche Voibahe Voibalune Voibisandhe Voichinodhe Voichinouthe Voidhadani Voidoguega Voiengran Voinache Voinonpache Voitasean Voithechinga Voithevoihe
-			Wanougpacha Wasabatougga
-		}
-		female_names = {
-			Egraname
-			Misae
-			Niabi
-			Sekaname Shonsegra
-			Wakonsamoie Watoesa
-		}
-	}
-	osagee = {
-		dynasty_names = {
-			Chetopa
-			Doppike
-			Hominy
-			Koholo
-			Neodesha Neosho Niukonska
-			Owasso
-			Pahusan Pasueli Pawhuska Picayune
-			Sansueli
-			Tsishu
-			Wahakolin Wazhaze Wyota
-		}
-		male_names = {
-			Aguigueda Amanpasse
-			Bashemindhe Bassechinga
-			Cahapiche Caygache Caygaywachepeche Cayque Chahetonga Channahon Cheganonsas Chingavoisa Chonguehanga Chonmelase Chonnonsogue Chouquemonnon Couchestawasta Cutsagabe
-			Dogachinga
-			Gradamnsa Grinache
-			Harachabe Honencache Hurate
-			Kemanha
-			Lihibi Lisansandhe Lolechinga
-			Mahsa Mandarihi Manguepeemani Manhegare Manhevoi Manilourana Manjaguida Manquesi Mantsa Manyvoile Mechinga Megahe Mekewatanega Mequaque Meyhe Miaasa Mithechinga
-			Naguemani Nangawahaegea Nanlatoho Natanhi Nehizanga Nehudhe Nekaghre Nendogualui Nenonbas Nepaste Nequevoile Nesaque Nicagaris Nicanauthe Nichumali Nicouilbran Ninchagari Nognithechinga Noguinilayque Nonbasocri Nonpevoite Nudhetavoi Nurahague Nuranin
-			Onhehomani Osogahe Ousabe
-			Pachigue Pagranque Pahelagren Pahuroguesie Panenvoiguanda Papuisea Pedhechiga Pedhechinga Pograngue Poneavoitaniga Ponlachinga Ponlavoitasuga
-			Qhihiramaki Quinihonigue
-			Roudanique
-			Savoi Scamani Sindhe
-			Talechiga Talevoile Taslondhe Tavaingare Tavainthere Tavoingare Tavoinhihi Tawangahuh Teshuhimga Thecayque Tonchenanque
-			Vesasche Voibahe Voibalune Voibisandhe Voichinodhe Voichinouthe Voidhadani Voidoguega Voiengran Voinache Voinonpache Voitasean Voithechinga Voithevoihe
-			Wanougpacha Wasabatougga
-		}
-		female_names = {
-			Egraname
-			Misae
-			Niabi
-			Sekaname Shonsegra
-			Wakonsamoie Watoesa
-		}
-	}
 }
 tonkawan = {
 	graphical_culture = northamericagfx
 	
 	tonkawa = {
-		dynasty_names = {
-			Adai
-			Cahinnio
-			Doustioni
-			Eyeish
-			Hainai Hasinai
-			Kadohadacho Kichai
-			Nabedache Nabiti Nacogdoche Nacono Nadaco Nanatsoho Nasoni Natchitoches Nechaui Neche
-			Ouachia
-			Tula
-			Yatasi
-		}
-		male_names = {
-			Aach
-			Chowabah
-			Hiahidock
-			Kardy Kianhoon
-			Mattan
-			Ossinse
-			Sanninow Sationwnhown Sauninot Soakiantow Sohone
-			Tashar Tchowainin Tehawahinno Tehowawinow Tewinnun Tiatesun Tinnehinan Tinnowin Tiohtow Toackooch Towahinnek Tsauninot
-		}
-		female_names = {
-			Tsaktahiraas Tskusaski Tstaka Tstakurriwax Tstapittarius Tstarahuxtu Tstaruri'u
-			Zacado
-		}
-	}
-}
-atakapan = {
-	graphical_culture = northamericagfx
-	
-	atakapa = {
-		dynasty_names = {
-			Adai
-			Cahinnio
-			Doustioni
-			Eyeish
-			Hainai Hasinai
-			Kadohadacho Kichai
-			Nabedache Nabiti Nacogdoche Nacono Nadaco Nanatsoho Nasoni Natchitoches Nechaui Neche
-			Ouachia
-			Tula
-			Yatasi
-		}
-		male_names = {
-			Aach
-			Chowabah
-			Hiahidock
-			Kardy Kianhoon
-			Mattan
-			Ossinse
-			Sanninow Sationwnhown Sauninot Soakiantow Sohone
-			Tashar Tchowainin Tehawahinno Tehowawinow Tewinnun Tiatesun Tinnehinan Tinnowin Tiohtow Toackooch Towahinnek Tsauninot
-		}
-		female_names = {
-			Tsaktahiraas Tskusaski Tstaka Tstakurriwax Tstapittarius Tstarahuxtu Tstaruri'u
-			Zacado
-		}
-	}
-}
-chetimachan = {
-	graphical_culture = northamericagfx
-	
-	chitimacha = {
 		dynasty_names = {
 			Adai
 			Cahinnio

@@ -1,6 +1,6 @@
 capital = "Aondironon"
 trade_goods = unknown
-culture = neutral
+culture = saugeen
 religion = midewiwin
 hre = no
 base_tax = 3

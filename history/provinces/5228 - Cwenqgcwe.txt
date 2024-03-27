@@ -1,6 +1,6 @@
 capital = "Cwenqgcwe"
 trade_goods = unknown
-culture = xhosa
+culture = khoi
 religion = bantu_pagan
 hre = no
 base_tax = 2

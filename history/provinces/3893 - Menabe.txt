@@ -1,6 +1,6 @@
 capital = "Morondava"
 trade_goods = fish
-culture = vezu
+culture = vazimba
 religion = fomba_gasy
 hre = no
 base_tax = 1

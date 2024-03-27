@@ -1,6 +1,6 @@
 capital = "Misi-zaagi"
 trade_goods = unknown
-culture = odawa
+culture = point_peninsula
 religion = midewiwin
 hre = no
 base_tax = 2

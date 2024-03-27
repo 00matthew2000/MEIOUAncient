@@ -1,6 +1,6 @@
 capital = "A'aninin"
 trade_goods = unknown
-culture = cree
+culture = laurel_complex
 religion = sun_dance
 hre = no
 base_tax = 3

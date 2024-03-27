@@ -1,6 +1,6 @@
 capital = "Chumpivilca"
 trade_goods = unknown
-culture = quechuan
+culture = chinchorro
 religion = inti
 hre = no
 base_tax = 7

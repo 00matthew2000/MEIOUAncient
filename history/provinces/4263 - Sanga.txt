@@ -1,6 +1,6 @@
 capital = "Sanga"
 trade_goods = livestock
-culture = lunda
+culture = upemba
 religion = bantu_pagan
 hre = no
 base_tax = 1

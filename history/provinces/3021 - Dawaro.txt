@@ -1,7 +1,5 @@
 capital = "Megalo"
 trade_goods = wool
-culture = galla_c
-religion = sunni
 hre = no
 base_tax = 3
 base_production = 0

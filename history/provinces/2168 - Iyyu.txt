@@ -1,6 +1,6 @@
 capital = "Iyyu"
 trade_goods = unknown
-culture = cree
+culture = laurel_complex
 religion = midewiwin
 hre = no
 base_tax = 3

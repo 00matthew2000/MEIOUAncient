@@ -1,6 +1,6 @@
 capital = "Kwango"
 trade_goods = livestock
-culture = mbundu
+culture = kongolese
 religion = bantu_pagan
 hre = no
 base_tax = 4

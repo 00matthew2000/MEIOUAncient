@@ -1,7 +1,5 @@
 capital = "Gabal"
 trade_goods = livestock
-culture = galla_c
-religion = sunni
 base_tax = 4
 base_production = 0
 base_manpower = 0

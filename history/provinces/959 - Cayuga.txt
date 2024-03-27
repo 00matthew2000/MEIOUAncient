@@ -1,6 +1,6 @@
 capital = "Cayuga"
 trade_goods = unknown
-culture = iroquois
+culture = northeast_woodland
 religion = midewiwin
 hre = no
 base_tax = 3

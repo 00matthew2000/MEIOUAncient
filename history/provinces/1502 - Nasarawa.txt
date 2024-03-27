@@ -1,6 +1,6 @@
 capital = "Lafia"
 trade_goods = millet
-culture = tiv_c
+culture = tiv
 religion = odinala
 hre = no
 base_tax = 5

@@ -1,6 +1,6 @@
 capital = "Kouroussa"
 trade_goods = cotton
-culture = maninka
+culture = bura
 religion = sunni
 hre = no
 base_tax = 3

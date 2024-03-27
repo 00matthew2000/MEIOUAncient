@@ -1,6 +1,6 @@
 capital = "Tzintla"
 trade_goods = fish
-culture = nawa
+culture = olmec
 religion = mayan
 hre = no
 base_tax = 2

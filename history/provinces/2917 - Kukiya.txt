@@ -1,6 +1,6 @@
 capital = "Kukiya"
 trade_goods = wool
-culture = songhai
+culture = bozo
 religion = sunni
 hre = no
 base_tax = 5

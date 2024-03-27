@@ -1,4 +1,4 @@
-culture = foora
+culture = daza
 religion = lotuko_pagan
 discovered_by = soudantech
 discovered_by = muslim

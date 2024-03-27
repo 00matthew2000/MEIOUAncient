@@ -1,6 +1,6 @@
 capital = "Adamawa"
 trade_goods = rice
-culture = kuba
+culture = upemba
 religion = bantu_pagan
 hre = no
 base_tax = 3

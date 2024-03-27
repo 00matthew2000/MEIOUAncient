@@ -1,6 +1,6 @@
 capital = "Ubangi"
 trade_goods = cotton
-culture = chadic
+culture = daza
 religion = lotuko_pagan
 hre = no
 base_tax = 3

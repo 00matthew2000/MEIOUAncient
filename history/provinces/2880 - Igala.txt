@@ -1,6 +1,6 @@
 capital = "Idah"
 trade_goods = palm
-culture = igala
+culture = nok
 religion = odinala
 hre = no
 base_tax = 5

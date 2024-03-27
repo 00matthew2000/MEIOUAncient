@@ -1,6 +1,6 @@
 capital = "Barotse"
 trade_goods = millet
-culture = lunda
+culture = upemba
 religion = bantu_pagan
 hre = no
 base_tax = 1

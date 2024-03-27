@@ -1,6 +1,6 @@
 capital = "Hymachi"
 trade_goods = unknown
-culture = catawba
+culture = deptford
 religion = mississippian
 hre = no
 base_tax = 3

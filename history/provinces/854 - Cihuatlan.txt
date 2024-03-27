@@ -1,6 +1,6 @@
 capital = "Cihuatlan"
 trade_goods = cacao
-culture = cuitlatec
+culture = cuicuilco
 religion = nahuatl
 hre = no
 base_tax = 5

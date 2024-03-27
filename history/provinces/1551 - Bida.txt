@@ -1,6 +1,6 @@
 capital = "Bida"
 trade_goods = millet
-culture = nupe
+culture = nok
 religion = odinala
 hre = no
 base_tax = 4

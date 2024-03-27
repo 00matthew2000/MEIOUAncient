@@ -1,6 +1,6 @@
 capital = "Chicaza"
 trade_goods = unknown
-culture = chickasaw
+culture = crab_orchard
 religion = mississippian
 hre = no
 base_tax = 3

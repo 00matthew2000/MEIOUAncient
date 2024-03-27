@@ -1,6 +1,6 @@
 capital = "Nyala"
 trade_goods = millet
-culture = foora
+culture = bagirmi
 religion = lotuko_pagan
 hre = no
 base_tax = 4

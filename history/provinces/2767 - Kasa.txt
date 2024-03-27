@@ -1,6 +1,6 @@
 capital = "Brucama"
 trade_goods = rice
-culture = bainuk
+culture = bozo
 religion = west_african_pagan
 hre = no
 base_tax = 3

@@ -1,6 +1,6 @@
 capital = "Daniski"
 trade_goods = cotton
-culture = kanouri
+culture = agisymbian
 religion = sunni
 hre = no
 base_tax = 4

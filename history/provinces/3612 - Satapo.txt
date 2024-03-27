@@ -1,6 +1,6 @@
 capital = "Satapo"
 trade_goods = tobacco
-culture = cherokee
+culture = copena
 religion = midewiwin
 hre = no
 base_tax = 3

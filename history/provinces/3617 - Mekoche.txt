@@ -1,6 +1,6 @@
 capital = "Chalahgawtha"
 trade_goods = unknown
-culture = shawnee
+culture = adena
 religion = midewiwin
 hre = no
 base_tax = 3

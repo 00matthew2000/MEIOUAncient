@@ -1,6 +1,6 @@
 capital = "Ntrubu"
 trade_goods = millet
-culture = dagomba
+culture = bono
 religion = west_african_pagan
 hre = no
 base_tax = 3

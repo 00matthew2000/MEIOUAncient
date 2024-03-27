@@ -1,6 +1,6 @@
 capital = "Wenrohronon"
 trade_goods = unknown
-culture = neutral
+culture = northeast_woodland
 religion = midewiwin
 hre = no
 base_tax = 3

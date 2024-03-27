@@ -1,6 +1,6 @@
 capital = "Lamba"
 trade_goods = millet
-culture = bemba
+culture = upemba
 religion = bantu_pagan
 hre = no
 base_tax = 3

@@ -1,6 +1,6 @@
 capital = "Mtwara"
 trade_goods = fish
-culture = kimgao
+culture = azanian
 religion = sunni
 hre = no
 base_tax = 5

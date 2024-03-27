@@ -1,6 +1,6 @@
 capital = "Ambozes"
 trade_goods = unknown
-culture = bakongo
+culture = nok
 religion = bantu_pagan
 hre = no
 base_tax = 4

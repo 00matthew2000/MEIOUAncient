@@ -1,6 +1,6 @@
 capital = "Ghadames"
 trade_goods = wool
-culture = berber
+culture = garamantes
 religion = sunni
 hre = no
 base_tax = 2

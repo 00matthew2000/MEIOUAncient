@@ -1,6 +1,6 @@
 capital = "Upemba"
 trade_goods = rice
-culture = luba
+culture = upemba
 religion = bantu_pagan
 hre = no
 base_tax = 4

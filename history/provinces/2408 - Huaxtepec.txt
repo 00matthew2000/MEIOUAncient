@@ -1,6 +1,6 @@
 capital = "Oaxtepec"
 trade_goods = maize
-culture = tlahuica
+culture = cuicuilco
 religion = nahuatl
 hre = no
 base_tax = 5

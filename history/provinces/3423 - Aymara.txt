@@ -1,6 +1,6 @@
 capital = "Andahuaylas"
 trade_goods = unknown
-culture = chanka
+culture = nazca
 religion = inti
 hre = no
 base_tax = 9

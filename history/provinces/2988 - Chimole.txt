@@ -1,6 +1,6 @@
 capital = "Chimole"
 trade_goods = livestock
-culture = shona
+culture = san
 religion = bantu_pagan
 hre = no
 base_tax = 3

@@ -1,6 +1,6 @@
 capital = "Jarawa"
 trade_goods = millet
-culture = kutumbawa
+culture = tiv
 religion = odinala
 hre = no
 base_tax = 3

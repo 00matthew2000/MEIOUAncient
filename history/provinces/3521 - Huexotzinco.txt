@@ -1,6 +1,6 @@
 capital = "Huexotzinco"
 trade_goods = maize
-culture = otomi
+culture = olmec
 religion = cocijo
 hre = no
 base_tax = 6

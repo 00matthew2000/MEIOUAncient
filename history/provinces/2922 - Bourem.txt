@@ -1,6 +1,6 @@
 capital = "Bourem"
 trade_goods = millet
-culture = songhai
+culture = bozo
 religion = sunni
 hre = no
 base_tax = 4

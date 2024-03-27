@@ -1,6 +1,6 @@
 capital = "Borona"
 trade_goods = unknown
-culture = oromo_c
+culture = surmic
 religion = waaq
 hre = no
 base_tax = 1

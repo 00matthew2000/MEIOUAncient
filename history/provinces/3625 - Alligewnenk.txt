@@ -1,6 +1,6 @@
 capital = "Alligewnenk"
 trade_goods = unknown
-culture = erielhonan
+culture = northeast_woodland
 religion = midewiwin
 hre = no
 base_tax = 3

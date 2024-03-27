@@ -1,6 +1,6 @@
 capital = "Awori"
 trade_goods = millet
-culture = yorumba
+culture = nok
 religion = odinala
 hre = no
 base_tax = 3

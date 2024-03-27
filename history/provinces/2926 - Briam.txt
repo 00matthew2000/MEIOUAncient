@@ -1,6 +1,6 @@
 capital = "Bauchi"
 trade_goods = cotton
-culture = haussa
+culture = tiv
 religion = sunni
 hre = no
 base_tax = 5

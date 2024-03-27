@@ -1,6 +1,6 @@
 capital = "Myaamia"
 trade_goods = unknown
-culture = miami
+culture = goodall
 religion = midewiwin
 hre = no
 base_tax = 3

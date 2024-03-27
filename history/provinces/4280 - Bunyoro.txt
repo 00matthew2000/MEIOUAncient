@@ -1,6 +1,6 @@
 capital = "Bukaleeba"
 trade_goods = livestock
-culture = masaba
+culture = datooga
 religion = bantu_pagan
 hre = no
 base_tax = 4

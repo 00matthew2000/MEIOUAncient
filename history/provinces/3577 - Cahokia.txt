@@ -1,6 +1,6 @@
 capital = "Cahokia"
 trade_goods = unknown
-culture = missouri
+culture = havana
 religion = mississippian
 hre = no
 base_tax = 3

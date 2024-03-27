@@ -1,6 +1,6 @@
 capital = "Sofala"
 trade_goods = fish
-culture = kimwani
+culture = san
 religion = sunni
 hre = no
 base_tax = 1

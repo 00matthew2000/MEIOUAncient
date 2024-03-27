@@ -1,6 +1,6 @@
 capital = "Chucalissa"
 trade_goods = cotton
-culture = chickasaw
+culture = crab_orchard
 religion = mississippian
 hre = no
 base_tax = 3

@@ -1,6 +1,6 @@
 capital = "Mahajanga"
 trade_goods = slaves
-culture = vezu
+culture = vazimba
 religion = fomba_gasy
 hre = no
 base_tax = 1

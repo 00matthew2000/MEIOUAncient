@@ -1,6 +1,6 @@
 capital = "Tlaxcallán"
 trade_goods = cacao
-culture = tlaxcallan
+culture = olmec
 religion = cocijo
 hre = no
 base_tax = 6

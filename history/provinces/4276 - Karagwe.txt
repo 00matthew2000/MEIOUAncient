@@ -1,6 +1,6 @@
 capital = "Karagwe"
 trade_goods = wax
-culture = ganda
+culture = urewe
 religion = bantu_pagan
 hre = no
 base_tax = 4

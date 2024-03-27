@@ -1,6 +1,6 @@
 capital = "Tlacotlalpan"
 trade_goods = cacao
-culture = nawa
+culture = olmec
 religion = nahuatl
 hre = no
 set_variable = { 

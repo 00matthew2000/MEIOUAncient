@@ -1,6 +1,6 @@
 capital = "Ndar"
 trade_goods = slaves
-culture = wolof
+culture = daradae
 religion = west_african_pagan
 hre = no
 base_tax = 1

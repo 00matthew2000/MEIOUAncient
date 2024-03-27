@@ -1,6 +1,6 @@
 capital = "Cuauhtzualco"
 trade_goods = fish
-culture = nawa
+culture = olmec
 religion = nahuatl
 hre = no
 base_tax = 5

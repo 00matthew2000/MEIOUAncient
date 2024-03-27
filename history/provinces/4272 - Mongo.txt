@@ -1,6 +1,6 @@
 capital = "Mongo"
 trade_goods = unknown
-culture = kuba
+culture = abatwa
 religion = bantu_pagan
 hre = no
 base_tax = 4

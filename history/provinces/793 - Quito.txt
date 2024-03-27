@@ -1,6 +1,6 @@
 capital = "Quito"
 trade_goods = cotton
-culture = cara
+culture = chorrera
 religion = inti
 hre = no
 base_tax = 6

@@ -1,6 +1,6 @@
 capital = "Manidou Minising"
 trade_goods = unknown
-culture = potawatomi
+culture = laurel_complex
 religion = midewiwin
 hre = no
 base_tax = 3

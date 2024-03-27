@@ -1,6 +1,6 @@
 capital = "Chiha"
 trade_goods = unknown
-culture = cherokee
+culture = copena
 religion = midewiwin
 hre = no
 base_tax = 3

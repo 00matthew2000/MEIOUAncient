@@ -1,6 +1,6 @@
 capital = "Hasi-nay"
 trade_goods = unknown
-culture = atakapa
+culture = mossy_grove
 religion = mississippian
 hre = no
 base_tax = 3

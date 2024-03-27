@@ -1,6 +1,6 @@
 capital = "Paucartampo"
 trade_goods = wool
-culture = quechuan
+culture = maipurean_group
 religion = inti
 hre = no
 base_tax = 8

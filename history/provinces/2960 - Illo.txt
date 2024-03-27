@@ -1,6 +1,6 @@
 capital = "Illo"
 trade_goods = millet
-culture = bariba
+culture = nok
 religion = west_african_pagan
 hre = no
 base_tax = 2

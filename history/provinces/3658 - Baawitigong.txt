@@ -1,6 +1,6 @@
 capital = "Baawitigong"
 trade_goods = unknown
-culture = ojibwa
+culture = laurel_complex
 religion = midewiwin
 hre = no
 base_tax = 2

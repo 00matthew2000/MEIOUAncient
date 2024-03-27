@@ -1,6 +1,6 @@
 capital = "Suku"
 trade_goods = unknown
-culture = kuba
+culture = upemba
 religion = bantu_pagan
 hre = no
 base_tax = 5

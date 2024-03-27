@@ -1,6 +1,6 @@
 capital = "Ekuju"
 trade_goods = lumber
-culture = yorumba
+culture = nok
 religion = odinala
 hre = no
 base_tax = 5

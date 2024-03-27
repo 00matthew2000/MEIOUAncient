@@ -1,6 +1,6 @@
 capital = "Oztoman"
 trade_goods = maize
-culture = chontal
+culture = cuicuilco
 religion = nahuatl
 hre = no
 base_tax = 5

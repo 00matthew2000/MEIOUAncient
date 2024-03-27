@@ -1,6 +1,6 @@
 capital = "Timicua"
 trade_goods = unknown
-culture = timicua
+culture = weeden_island
 religion = mississippian
 hre = no
 base_tax = 3

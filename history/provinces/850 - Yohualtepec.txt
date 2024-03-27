@@ -1,6 +1,6 @@
 capital = "Ychca atoyac"
 trade_goods = cotton
-culture = mixtec
+culture = zapotec
 religion = nahuatl
 hre = no
 base_tax = 5

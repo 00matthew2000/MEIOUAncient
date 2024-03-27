@@ -1,6 +1,6 @@
 capital = "Caranga"
 trade_goods = livestock
-culture = aimara
+culture = wankarani
 religion = inti
 hre = no
 base_tax = 5

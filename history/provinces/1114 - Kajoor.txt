@@ -1,6 +1,6 @@
 capital = "Mboul"
 trade_goods = slaves
-culture = wolof
+culture = bozo
 religion = sunni
 hre = no
 base_tax = 3

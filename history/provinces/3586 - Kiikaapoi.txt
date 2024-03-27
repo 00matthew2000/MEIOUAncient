@@ -1,6 +1,6 @@
 capital = "Kiikaapoi"
 trade_goods = unknown
-culture = illini
+culture = havana
 religion = midewiwin
 hre = no
 base_tax = 3

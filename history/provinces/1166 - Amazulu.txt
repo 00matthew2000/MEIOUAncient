@@ -1,6 +1,6 @@
 capital = "Umthelewi"
 trade_goods = unknown
-culture = zulu
+culture = san
 religion = bantu_pagan
 hre = no
 base_tax = 3

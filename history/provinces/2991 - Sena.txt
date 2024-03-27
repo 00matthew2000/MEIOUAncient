@@ -1,6 +1,6 @@
 capital = "Sena"
 trade_goods = cotton
-culture = shona
+culture = san
 religion = bantu_pagan
 hre = no
 base_tax = 2

@@ -1,6 +1,6 @@
 capital = "Beyla"
 trade_goods = millet
-culture = susu
+culture = bozo
 religion = west_african_pagan
 hre = no
 base_tax = 5

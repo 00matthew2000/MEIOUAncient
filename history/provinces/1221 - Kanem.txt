@@ -1,6 +1,6 @@
 capital = "Njimi"
 trade_goods = cotton
-culture = kanembu
+culture = bornu
 religion = sunni
 hre = no
 base_tax = 3

@@ -1,6 +1,6 @@
 capital = "Abeche"
 trade_goods = unknown
-culture = chadic
+culture = daza
 religion = lotuko_pagan
 hre = no
 base_tax = 4

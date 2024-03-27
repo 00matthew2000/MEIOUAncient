@@ -1,6 +1,6 @@
 capital = "Listuguj"
 trade_goods = unknown
-culture = huron
+culture = point_peninsula
 religion = midewiwin
 hre = no
 base_tax = 3

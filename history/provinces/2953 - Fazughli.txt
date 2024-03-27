@@ -1,6 +1,6 @@
 capital = "Al Obaid"
 trade_goods = unknown
-culture = mahas
+culture = fur_culture
 religion = lotuko_pagan
 base_tax = 8
 base_production = 0

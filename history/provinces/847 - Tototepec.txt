@@ -1,6 +1,6 @@
 capital = "Tututepec"
 trade_goods = cotton
-culture = mixtec
+culture = zapotec
 religion = nahuatl
 hre = no
 base_tax = 4

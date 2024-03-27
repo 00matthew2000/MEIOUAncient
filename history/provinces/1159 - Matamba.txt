@@ -1,6 +1,6 @@
 capital = "Mapungo"
 trade_goods = millet
-culture = mbundu
+culture = kongolese
 religion = bantu_pagan
 hre = no
 base_tax = 3

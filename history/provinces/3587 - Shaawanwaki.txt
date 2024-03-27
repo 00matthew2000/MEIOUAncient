@@ -1,6 +1,6 @@
 capital = "Shaawanwaki"
 trade_goods = unknown
-culture = shawnee
+culture = adena
 religion = midewiwin
 hre = no
 base_tax = 3

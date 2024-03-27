@@ -1,6 +1,6 @@
 capital = "Kadawdàachuh"
 trade_goods = unknown
-culture = caddo
+culture = fourche_maline
 religion = mississippian
 hre = no
 base_tax = 3

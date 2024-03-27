@@ -1,6 +1,6 @@
 capital = "Nerchüü"
 trade_goods = wool
-culture = khamnigan
+culture = donghu
 religion = tengri_pagan
 hre = no
 base_tax = 2

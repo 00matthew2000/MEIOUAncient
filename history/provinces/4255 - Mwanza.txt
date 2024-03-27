@@ -1,6 +1,6 @@
 capital = "Mwanza"
 trade_goods = livestock
-culture = luba
+culture = upemba
 religion = bantu_pagan
 hre = no
 base_tax = 2

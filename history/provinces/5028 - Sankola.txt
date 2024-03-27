@@ -1,6 +1,6 @@
 capital = "Sankola"
 trade_goods = cotton
-culture = mandinka
+culture = bozo
 religion = sunni
 hre = no
 base_tax = 4

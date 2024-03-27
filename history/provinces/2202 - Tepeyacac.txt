@@ -1,6 +1,6 @@
 capital = "Tepeyacac"
 trade_goods = cotton
-culture = nawa
+culture = olmec
 religion = nahuatl
 hre = no
 base_tax = 5

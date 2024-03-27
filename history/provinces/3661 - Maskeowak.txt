@@ -1,2 +1,2 @@
-culture = cree
+culture = laurel_complex
 religion = midewiwin

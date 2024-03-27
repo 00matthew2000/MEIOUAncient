@@ -1,6 +1,6 @@
 capital = "Teotitlan"
 trade_goods = cotton
-culture = cuicatec
+culture = zapotec
 religion = nahuatl
 hre = no
 base_tax = 5

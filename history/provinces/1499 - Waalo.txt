@@ -1,6 +1,6 @@
 capital = "Diourbel"
 trade_goods = slaves
-culture = wolof
+culture = daradae
 religion = sunni
 hre = no
 base_tax = 5

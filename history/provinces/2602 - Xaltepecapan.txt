@@ -1,6 +1,6 @@
 capital = "Texistepec"
 trade_goods = maize
-culture = zoque
+culture = zapotec
 religion = cocijo
 hre = no
 base_tax = 4

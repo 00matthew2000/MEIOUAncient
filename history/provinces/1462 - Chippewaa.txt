@@ -1,6 +1,6 @@
 capital = "Chippewa"
 trade_goods = unknown
-culture = potawatomi
+culture = goodall
 religion = midewiwin
 hre = no
 base_tax = 3

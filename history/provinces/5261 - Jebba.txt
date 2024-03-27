@@ -1,6 +1,6 @@
 capital = "Jebba"
 trade_goods = palm
-culture = yorumba
+culture = nok
 religion = odinala
 hre = no
 base_tax = 3

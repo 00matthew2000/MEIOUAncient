@@ -1,6 +1,6 @@
 capital = "Tumaco"
 trade_goods = unknown
-culture = cara
+culture = chorrera
 religion = inti
 hre = no
 base_tax = 27

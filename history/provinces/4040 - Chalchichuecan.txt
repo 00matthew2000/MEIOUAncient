@@ -1,6 +1,6 @@
 capital = "Chalchichuecan"
 trade_goods = maize
-culture = totonac
+culture = huastec
 religion = cocijo
 hre = no
 base_tax = 4

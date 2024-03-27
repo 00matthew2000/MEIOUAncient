@@ -1,6 +1,6 @@
 capital = "Accra"
 trade_goods = slaves
-culture = akaa
+culture = bono
 religion = west_african_pagan
 hre = no
 base_tax = 2

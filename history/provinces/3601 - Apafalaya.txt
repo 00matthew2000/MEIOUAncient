@@ -1,6 +1,6 @@
 capital = "Apafalaya"
 trade_goods = unknown
-culture = choctaw
+culture = chitimacha
 religion = mississippian
 hre = no
 base_tax = 3

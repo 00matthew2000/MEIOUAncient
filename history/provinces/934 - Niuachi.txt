@@ -1,6 +1,6 @@
 capital = "Niuachi"
 trade_goods = unknown
-culture = osagee
+culture = cooper
 religion = mississippian
 hre = no
 base_tax = 3

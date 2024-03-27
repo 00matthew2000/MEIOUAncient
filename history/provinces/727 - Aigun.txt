@@ -1,6 +1,6 @@
 capital = "Aytyun"
 trade_goods = wool
-culture = daur
+culture = oroqen
 religion = shamanism
 hre = no
 base_tax = 4

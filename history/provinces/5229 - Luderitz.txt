@@ -1,6 +1,6 @@
 capital = "Karas"
 trade_goods = unknown
-culture = khoisan
+culture = khoi
 religion = san_pagan
 hre = no
 base_tax = 2

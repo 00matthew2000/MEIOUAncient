@@ -1,6 +1,6 @@
 capital = "Garsila"
 trade_goods = wool
-culture = silla
+culture = daza
 religion = lotuko_pagan
 hre = no
 base_tax = 4

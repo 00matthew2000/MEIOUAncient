@@ -1,6 +1,6 @@
 capital = "Ganz"
 trade_goods = wool
-culture = harari
+culture = surmic
 religion = sunni
 base_tax = 3
 base_production = 0

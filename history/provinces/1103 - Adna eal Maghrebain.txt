@@ -1,7 +1,5 @@
 capital = "de Bourbon"
 trade_goods = unknown
-religion = west_african_pagan
-culture = dagomba
 hre = no
 base_tax = 0
 base_production = 0

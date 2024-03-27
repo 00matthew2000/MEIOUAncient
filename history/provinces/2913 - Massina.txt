@@ -1,6 +1,6 @@
 capital = "Jenne"
 trade_goods = rice
-culture = bozo
+culture = bura
 religion = sunni
 hre = no
 base_tax = 3

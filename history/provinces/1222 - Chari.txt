@@ -1,6 +1,6 @@
 capital = "Chari"
 trade_goods = livestock
-culture = bagirmi
+culture = agisymbian
 religion = lotuko_pagan
 hre = no
 base_tax = 3

@@ -1,6 +1,6 @@
 capital = "Gangaran"
 trade_goods = millet
-culture = maninka
+culture = daradae
 religion = sunni
 hre = no
 base_tax = 4

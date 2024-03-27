@@ -1,6 +1,6 @@
 capital = "El Golea"
 trade_goods = palm_date
-culture = berber
+culture = troglodytian
 religion = ibadi
 is_city = yes
 base_tax = 1

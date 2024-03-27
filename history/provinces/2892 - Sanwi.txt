@@ -1,6 +1,6 @@
 capital = "Sanwi"
 trade_goods = millet
-culture = dyola
+culture = idogo
 religion = west_african_pagan
 hre = no
 base_tax = 3

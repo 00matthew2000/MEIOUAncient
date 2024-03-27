@@ -1,6 +1,6 @@
 capital = "Asosa"
 trade_goods = wool
-culture = shilluk
+culture = dinka
 religion = lotuko_pagan
 hre = no
 base_tax = 4

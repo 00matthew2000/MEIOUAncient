@@ -1,5 +1,7 @@
 capital = "Atacames"
 trade_goods = unknown
+culture = chorrera
+religion = inti
 hre = no
 base_tax = 6
 base_production = 0

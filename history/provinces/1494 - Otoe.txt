@@ -1,6 +1,6 @@
 capital = "Otoe"
 trade_goods = unknown
-culture = osagee
+culture = kanza
 religion = sun_dance
 hre = no
 base_tax = 3

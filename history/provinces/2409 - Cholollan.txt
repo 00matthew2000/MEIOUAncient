@@ -1,6 +1,6 @@
 capital = "Cholollan"
 trade_goods = pepper
-culture = nawa
+culture = olmec
 religion = nahuatl
 hre = no
 base_tax = 6

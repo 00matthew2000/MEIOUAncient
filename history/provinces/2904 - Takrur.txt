@@ -1,6 +1,6 @@
 capital = "Podor"
 trade_goods = livestock
-culture = fulani
+culture = daradae
 religion = sunni
 hre = no
 base_tax = 4

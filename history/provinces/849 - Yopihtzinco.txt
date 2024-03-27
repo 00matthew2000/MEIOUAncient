@@ -1,6 +1,6 @@
 capital = "Chilipantzinco"
 trade_goods = cotton
-culture = tlapanec
+culture = zapotec
 religion = nahuatl
 hre = no
 base_tax = 5

@@ -1,6 +1,6 @@
 capital = "Caruma"
 trade_goods = cotton
-culture = chiribaya
+culture = chinchorro
 religion = inti
 hre = no
 base_tax = 2

@@ -1,2 +1,2 @@
-culture = osagee
+culture = cooper
 religion = mississippian

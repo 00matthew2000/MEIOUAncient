@@ -1,6 +1,6 @@
 capital = "Gumar"
 trade_goods = wool
-culture = sidamo
+culture = surmic
 religion = sunni
 base_tax = 5
 base_production = 0

@@ -1,6 +1,6 @@
 capital = "Pemba"
 trade_goods = fish
-culture = kimgao
+culture = san
 religion = sunni
 hre = no
 base_tax = 3

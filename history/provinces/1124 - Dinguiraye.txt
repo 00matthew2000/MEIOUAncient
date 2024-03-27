@@ -1,7 +1,5 @@
 capital = "Dinguiraye"
 trade_goods = rice
-culture = maninka
-religion = sunni
 hre = no
 base_tax = 2
 base_production = 0

@@ -1,6 +1,6 @@
 capital = "Wahpatowan"
 trade_goods = unknown
-culture = dakota
+culture = trempeleau
 religion = sun_dance
 hre = no
 base_tax = 3

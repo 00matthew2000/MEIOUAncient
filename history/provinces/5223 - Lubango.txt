@@ -1,6 +1,6 @@
 capital = "Bengo"
 trade_goods = unknown
-culture = mbundu
+culture = kongolese
 religion = bantu_pagan
 hre = no
 base_tax = 6

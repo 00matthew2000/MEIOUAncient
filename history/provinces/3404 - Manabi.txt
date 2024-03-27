@@ -1,6 +1,6 @@
 capital = "Manabi"
 trade_goods = fish
-culture = manteno
+culture = chorrera
 religion = inti
 hre = no
 base_tax = 5

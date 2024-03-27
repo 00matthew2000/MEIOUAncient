@@ -1,6 +1,6 @@
 capital = "Nduga"
 trade_goods = livestock
-culture = rwandan
+culture = hutu
 religion = bantu_pagan
 hre = no
 base_tax = 3

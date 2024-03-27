@@ -1,6 +1,6 @@
 capital = "Turkana"
 trade_goods = unknown
-culture = oromo_c
+culture = nilotic
 religion = waaq
 hre = no
 base_tax = 3

@@ -1,6 +1,6 @@
 capital = "Hadiya"
 trade_goods = livestock
-culture = sidamo
+culture = surmic
 religion = sunni
 base_tax = 4
 base_production = 0

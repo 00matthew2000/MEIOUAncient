@@ -1,6 +1,6 @@
 capital = "Nkoma"
 trade_goods = fish
-culture = rwandan
+culture = hutu
 religion = bantu_pagan
 hre = no
 base_tax = 3

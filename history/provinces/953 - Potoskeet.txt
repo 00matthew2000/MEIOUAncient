@@ -1,6 +1,6 @@
 capital = "Potoskeet"
 trade_goods = unknown
-culture = mingwe
+culture = bushnell
 religion = midewiwin
 hre = no
 base_tax = 3

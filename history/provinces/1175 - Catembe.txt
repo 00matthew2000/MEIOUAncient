@@ -1,6 +1,6 @@
 capital = "Catembé"
 trade_goods = unknown
-culture = kimwani
+culture = san
 religion = sunni
 hre = no
 base_tax = 5

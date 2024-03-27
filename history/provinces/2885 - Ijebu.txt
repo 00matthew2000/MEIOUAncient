@@ -1,6 +1,6 @@
 capital = "Ijebu-Ode"
 trade_goods = slaves
-culture = yorumba
+culture = nok
 religion = odinala
 hre = no
 base_tax = 3

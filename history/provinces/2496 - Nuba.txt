@@ -1,6 +1,6 @@
 capital = "Nuba"
 trade_goods = unknown
-culture = mahas
+culture = fur_culture
 religion = lotuko_pagan
 hre = no
 base_tax = 6

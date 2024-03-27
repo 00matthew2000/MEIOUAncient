@@ -1,6 +1,6 @@
 capital = "Iwerre"
 trade_goods = slaves
-culture = ijaw
+culture = nok
 religion = odinala
 hre = no
 base_tax = 3

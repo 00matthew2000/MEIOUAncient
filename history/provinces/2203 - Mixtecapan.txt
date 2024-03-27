@@ -1,6 +1,6 @@
 capital = "Tilantongo"
 trade_goods = maize
-culture = mixtec
+culture = zapotec
 religion = nahuatl
 hre = no
 base_tax = 3
