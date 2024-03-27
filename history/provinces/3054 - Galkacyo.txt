@@ -1,7 +1,5 @@
 capital = "Marehan"
 trade_goods = incense
-culture = somali
-religion = sunni
 hre = no
 base_tax = 1
 base_production = 0

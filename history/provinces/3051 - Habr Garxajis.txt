@@ -1,7 +1,5 @@
 capital = "Gidaya"
 trade_goods = unknown
-culture = somali
-religion = sunni
 base_tax = 1
 base_production = 0
 base_manpower = 0

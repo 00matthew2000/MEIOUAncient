@@ -1,6 +1,6 @@
 capital = "Guam"
 trade_goods = unknown
-culture = chamicorro
+culture = chamorro
 religion = polynesian_pagan
 hre = no
 base_tax = 3

@@ -1,7 +1,5 @@
 capital = "Gosha"
 trade_goods = millet
-culture = somali
-religion = sunni
 hre = no
 base_tax = 3
 base_production = 0

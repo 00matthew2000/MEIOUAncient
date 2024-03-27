@@ -1,7 +1,5 @@
 capital = "Baardheere"
 trade_goods = millet
-culture = somali
-religion = sunni
 hre = no
 base_tax = 2
 base_production = 0

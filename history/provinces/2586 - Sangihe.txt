@@ -1,6 +1,6 @@
 capital = "Sangir"
 trade_goods = nutmeg
-culture = maguindanao
+culture = hiligaynon
 religion = polynesian_pagan
 hre = no
 base_tax = 1

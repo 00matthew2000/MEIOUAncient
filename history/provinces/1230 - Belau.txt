@@ -1,6 +1,6 @@
 capital = "Belau"
 trade_goods = fish
-culture = chamicorro
+culture = chamorro
 religion = polynesian_pagan
 hre = no
 base_tax = 1
