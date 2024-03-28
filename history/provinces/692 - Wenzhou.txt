@@ -1,7 +1,7 @@
 capital = "Yongjia"
 trade_goods = tea
 culture = ouyue
-religion = mahayana
+religion = southern_mythology
 hre = no
 base_tax = 64
 base_production = 2

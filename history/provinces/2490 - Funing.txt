@@ -1,7 +1,7 @@
 capital = "Funing"
 trade_goods = cotton
 culture = minyue
-religion = mahayana
+religion = southern_mythology
 hre = no
 base_tax = 32
 base_production = 0

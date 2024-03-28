@@ -1,7 +1,7 @@
 capital = "Chinook"
 trade_goods = unknown
 culture = chinook
-religion = kachina
+religion = burmese_religion
 hre = no
 base_tax = 3
 base_production = 0

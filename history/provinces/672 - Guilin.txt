@@ -1,7 +1,7 @@
 capital = "Lingui"
 trade_goods = tea
 culture = li
-religion = bimoism
+religion = wuism
 hre = no
 base_tax = 45
 base_production = 3

@@ -1,7 +1,7 @@
 capital = "Hoanya"
 trade_goods = unknown
 culture = austronesian
-religion = polynesian_pagan
+religion = austronesian_religion
 hre = no
 base_tax = 8
 base_production = 0

@@ -1,7 +1,7 @@
 capital = "Myitkyina"
 trade_goods = rice
 culture = kachin
-religion = ban_phi
+religion = burmese_religion
 base_tax = 3
 base_production = 0
 base_manpower = 0

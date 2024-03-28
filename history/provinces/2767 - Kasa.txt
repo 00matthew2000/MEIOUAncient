@@ -1,7 +1,7 @@
 capital = "Brucama"
 trade_goods = rice
 culture = bozo
-religion = west_african
+religion = west_african_religion
 hre = no
 base_tax = 3
 base_production = 0

@@ -1,7 +1,7 @@
 capital = "Chongshan"
 trade_goods = hemp
 culture = shanyue
-religion = bimoism
+religion = southern_mythology
 hre = no
 base_tax = 2
 base_production = 2

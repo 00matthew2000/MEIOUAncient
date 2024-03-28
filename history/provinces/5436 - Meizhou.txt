@@ -1,7 +1,7 @@
 capital = "Chengxiang"
 trade_goods = rice
 culture = minyue
-religion = mahayana
+religion = southern_mythology
 hre = no
 base_tax = 17
 base_production = 0

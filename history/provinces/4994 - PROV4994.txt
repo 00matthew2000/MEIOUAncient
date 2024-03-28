@@ -1,7 +1,7 @@
 capital = "Ekete"
 trade_goods = palm
 culture = nok
-religion = west_african
+religion = west_african_religion
 hre = no
 base_tax = 5
 base_production = 0

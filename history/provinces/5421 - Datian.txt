@@ -1,7 +1,7 @@
 capital = "Datian"
 trade_goods = lumber
 culture = minyue
-religion = mahayana
+religion = southern_mythology
 hre = no
 base_tax = 28
 base_production = 0

@@ -1,7 +1,7 @@
 capital = "Vijaya"
 trade_goods = pepper
 culture = chamic
-religion = hinduism
+religion = austronesian_religion
 hre = no
 base_tax = 3
 base_production = 2

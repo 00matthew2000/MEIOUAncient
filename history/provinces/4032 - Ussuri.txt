@@ -1,7 +1,7 @@
 capital = "Ulahe"
 trade_goods = lumber
 culture = sushen
-religion = shamanism
+religion = tengri
 hre = no
 base_tax = 3
 base_production = 0

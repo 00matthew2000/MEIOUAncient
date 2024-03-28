@@ -1,7 +1,7 @@
 capital = "Changhua"
 trade_goods = lumber
 culture = wuyue
-religion = mahayana
+religion = liyuebadao
 hre = no
 base_tax = 34
 base_production = 0

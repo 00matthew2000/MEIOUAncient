@@ -1,5 +1,5 @@
 culture = khasi
-religion = bantu_pagan
+religion = ajivika
 discovered_by = indian
 discovered_by = chinese
 discovered_by = japanese

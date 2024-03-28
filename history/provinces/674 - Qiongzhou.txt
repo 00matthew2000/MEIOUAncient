@@ -1,7 +1,7 @@
 capital = "Qiongshan"
 trade_goods = sugar
 culture = hlai
-religion = mahayana
+religion = southern_mythology
 hre = no
 base_tax = 39
 base_production = 0

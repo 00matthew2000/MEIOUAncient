@@ -1,7 +1,7 @@
 capital = "Jiaxing"
 trade_goods = rice
 culture = wuyue
-religion = mahayana
+religion = liyuebadao
 hre = no
 base_tax = 100
 base_production = 3

@@ -1,7 +1,7 @@
 capital = "Guishan"
 trade_goods = sugar
 culture = nanyue
-religion = mahayana
+religion = southern_mythology
 hre = no
 base_tax = 17
 base_production = 2

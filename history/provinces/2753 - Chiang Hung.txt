@@ -1,7 +1,7 @@
 capital = "Chiang Hung"
 trade_goods = lumber
 culture = kra
-religion = ban_phi
+religion = southern_mythology
 base_tax = 5
 base_production = 0
 base_manpower = 0

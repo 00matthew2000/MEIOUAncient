@@ -1,7 +1,7 @@
 capital = "Loikaw"
 trade_goods = lumber
 culture = karen
-religion = theravada
+religion = burmese_religion
 hre = no
 base_tax = 2
 base_production = 0

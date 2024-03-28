@@ -1,7 +1,7 @@
 capital = "Atayal"
 trade_goods = unknown
 culture = austronesian
-religion = polynesian_pagan
+religion = austronesian_religion
 hre = no
 base_tax = 6
 base_production = 0

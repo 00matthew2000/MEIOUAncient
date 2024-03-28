@@ -1,7 +1,7 @@
 capital = "Haikang"
 trade_goods = fish
 culture = shanyue
-religion = mahayana
+religion = southern_mythology
 hre = no
 base_tax = 11
 base_production = 1

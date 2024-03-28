@@ -1,7 +1,7 @@
 capital = "Al Obaid"
 trade_goods = unknown
 culture = fur_culture
-religion = east_african
+religion = east_african_religion
 base_tax = 8
 base_production = 0
 base_manpower = 0

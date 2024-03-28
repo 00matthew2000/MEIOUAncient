@@ -1,7 +1,7 @@
 capital = "Thai Nguyen"
 trade_goods = tea
 culture = au_viet
-religion = bimoism
+religion = southern_mythology
 hre = no
 base_tax = 3
 base_production = 0

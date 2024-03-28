@@ -1,7 +1,7 @@
 capital = "Pursat"
 trade_goods = rice
 culture = funanese
-religion = theravada
+religion = southern_mythology
 hre = no
 base_tax = 4
 base_production = 0

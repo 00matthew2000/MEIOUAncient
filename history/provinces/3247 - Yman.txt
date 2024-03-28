@@ -1,7 +1,7 @@
 capital = "Boheri"
 trade_goods = lumber
 culture = sushen
-religion = shamanism
+religion = tengri
 hre = no
 base_tax = 4
 base_production = 0

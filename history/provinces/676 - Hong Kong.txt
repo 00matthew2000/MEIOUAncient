@@ -1,7 +1,7 @@
 capital = "Daxishan"
 trade_goods = fish
 culture = nanyue
-religion = mahayana
+religion = southern_mythology
 hre = no
 base_tax = 1
 base_production = 0

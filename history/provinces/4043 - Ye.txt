@@ -1,7 +1,7 @@
 capital = "Ye"
 trade_goods = rice
 culture = mon_culture
-religion = theravada
+religion = southern_mythology
 hre = no
 base_tax = 3
 base_production = 0

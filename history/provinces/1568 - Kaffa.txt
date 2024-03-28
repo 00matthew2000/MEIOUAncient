@@ -1,7 +1,7 @@
 capital = "Hadiya"
 trade_goods = livestock
 culture = surmic
-religion = east_african
+religion = east_african_religion
 base_tax = 4
 base_production = 0
 base_manpower = 0

@@ -1,7 +1,7 @@
 capital = "Mairete"
 trade_goods = unknown
 culture = waray
-religion = polynesian_pagan
+religion = austronesian_religion
 hre = no
 base_tax = 4
 base_production = 0

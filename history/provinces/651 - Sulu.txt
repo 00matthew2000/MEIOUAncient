@@ -1,7 +1,7 @@
 capital = "Astana Putih"
 trade_goods = fish
 culture = tausug
-religion = polynesian_pagan
+religion = austronesian_religion
 hre = no
 base_tax = 1
 base_production = 0

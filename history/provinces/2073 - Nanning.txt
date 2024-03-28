@@ -1,7 +1,7 @@
 capital = "Xuanhua"
 trade_goods = cinnamon
 culture = shanyue
-religion = bimoism
+religion = southern_mythology
 hre = no
 base_tax = 12
 base_production = 1

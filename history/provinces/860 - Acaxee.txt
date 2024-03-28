@@ -1,7 +1,7 @@
 capital = "Quetzalla"
 trade_goods = unknown
 culture = mogollon
-religion = kachina
+religion = burmese_religion
 hre = no
 base_tax = 2
 base_production = 0

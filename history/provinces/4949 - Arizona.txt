@@ -1,2 +1,2 @@
 culture = archaic_plains
-religion = kachina
+religion = burmese_religion

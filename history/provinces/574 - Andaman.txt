@@ -1,7 +1,7 @@
 capital = "Andoman"
 trade_goods = fish
 culture = rakshasa
-religion = polynesian_pagan
+religion = aslian_shamanism
 hre = no
 base_tax = 1
 base_production = 0

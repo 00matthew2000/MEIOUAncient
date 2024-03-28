@@ -1,7 +1,7 @@
 capital = "Tegali"
 trade_goods = unknown
 culture = dinka
-religion = east_african
+religion = east_african_religion
 hre = no
 base_tax = 8
 base_production = 0

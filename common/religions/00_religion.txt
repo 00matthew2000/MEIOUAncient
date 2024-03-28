@@ -1488,7 +1488,7 @@ pagan_group = {
 		heretic = { heretic }
 	}
 
-	east_african = {
+	east_african_religion = {
 		icon = 22
 		color = { 55 147 122 }
 		country = {
@@ -1504,7 +1504,7 @@ pagan_group = {
 		}
 		heretic = { heretic }
 		has_patriarchs = yes
-		harmonized_modifier = harmonized_east_african
+		harmonized_modifier = harmonized_east_african_religion
 		orthodox_icons = {
 			god_dushara_african = {
 				global_unrest = -1
@@ -1560,7 +1560,7 @@ pagan_group = {
 		}
 		heretic = { heretic }
 		has_patriarchs = yes
-		harmonized_modifier = harmonized_east_african
+		harmonized_modifier = harmonized_east_african_religion
 		orthodox_icons = {
 			god_almaqah = {
 				stability_cost_modifier = -0.1
@@ -1600,7 +1600,7 @@ pagan_group = {
 		}
 	}
 
-	west_african = {
+	west_african_religion = {
 		icon = 22
 		color = { 127 76 76 }
 
@@ -1617,7 +1617,7 @@ pagan_group = {
 		}
 		heretic = { heretic }
 		has_patriarchs = yes
-		harmonized_modifier = harmonized_west_african
+		harmonized_modifier = harmonized_west_african_religion
 		orthodox_icons = {
 			god_osanobua_african = {
 				global_unrest = -1
@@ -2631,7 +2631,7 @@ jewish_group = {
 			arab_religion
 			punic_religion
 			egyptian_religion
-			east_african
+			east_african_religion
 			awsan_religion
 			roman_religion
 			etruscan_religion
@@ -5619,7 +5619,7 @@ brahmin_group = {
 			arab_religion
 			punic_religion
 			egyptian_religion
-			east_african
+			east_african_religion
 			awsan_religion
 			roman_religion
 			etruscan_religion
@@ -5742,7 +5742,7 @@ brahmin_group = {
 			arab_religion
 			punic_religion
 			egyptian_religion
-			east_african
+			east_african_religion
 			awsan_religion
 			roman_religion
 			etruscan_religion
@@ -5904,7 +5904,7 @@ brahmin_group = {
 			arab_religion
 			punic_religion
 			egyptian_religion
-			east_african
+			east_african_religion
 			awsan_religion
 			roman_religion
 			etruscan_religion

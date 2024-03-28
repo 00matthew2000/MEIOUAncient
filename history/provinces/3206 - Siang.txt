@@ -1,7 +1,7 @@
 capital = "Itanagar"
 trade_goods = tea
 culture = kiratan
-religion = hinduism
+religion = ajivika
 base_tax = 2
 base_production = 0
 base_manpower = 0

@@ -1,7 +1,7 @@
 capital = "Tay Binh"
 trade_goods = fish
 culture = chamic
-religion = hinduism
+religion = austronesian_religion
 hre = no
 base_tax = 2
 base_production = 0

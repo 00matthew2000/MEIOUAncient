@@ -1,7 +1,7 @@
 capital = "Mamulique"
 trade_goods = unknown
 culture = coahuiltec
-religion = kachina
+religion = burmese_religion
 hre = no
 base_tax = 2
 base_production = 0
