@@ -1,2 +1,2 @@
 culture = ugric
-religion = sunni
+religion = finno_ugric_religion

@@ -1,7 +1,7 @@
 capital = "Deker"
 trade_goods = wool
 culture = afar
-religion = sunni
+religion = awsan_religion
 hre = no
 base_tax = 4
 base_production = 1

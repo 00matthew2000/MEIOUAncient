@@ -4,4 +4,4 @@ discovered_by = steppestech
 discovered_by = YUA
 discovered_by = ottoman
 culture = pashtuns
-religion = sunni
+religion = zoroastrianism

@@ -1,7 +1,6 @@
 capital = "Paraku"
 trade_goods = millet
 culture = bariba
-religion = west_african_pagan
 hre = no
 base_tax = 3
 base_production = 0

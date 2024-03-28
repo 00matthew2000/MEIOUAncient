@@ -6,4 +6,4 @@ discovered_by = nomad_group
 discovered_by = steppestech
 discovered_by = YUA
 culture = xiongnu
-religion = tengri_pagan
+religion = tengri

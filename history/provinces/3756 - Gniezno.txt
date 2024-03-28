@@ -4,7 +4,7 @@ add_core = POL
 capital = "Gniezno"
 trade_goods = livestock
 culture = lugian
-religion = catholic
+religion = celtic_religion
 hre = no
 base_tax = 9
 base_production = 0
@@ -22,12 +22,7 @@ discovered_by = ottoman
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_province_flag = catholic_archbishopric
-	add_province_modifier = { 
-		name = catholic_archbishopric
-		duration = -1
-	}
-	set_variable = { 
+		set_variable = { 
 		which = baf
 		value = 7
 	}

@@ -3,4 +3,4 @@ discovered_by = YUA
 discovered_by = ottoman
 discovered_by = muslim
 culture = parni
-religion = sunni
+religion = scythian_religion

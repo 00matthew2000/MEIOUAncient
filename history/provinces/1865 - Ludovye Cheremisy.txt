@@ -1,7 +1,7 @@
 capital = "Çabaqsar"
 trade_goods = lumber
 culture = mari
-religion = finnish_pagan
+religion = finno_ugric_religion
 base_tax = 6
 base_production = 0
 base_manpower = 0

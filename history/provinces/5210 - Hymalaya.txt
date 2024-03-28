@@ -1,5 +1,5 @@
 culture = tibetan
-religion = vajrayana
+religion = bon_religion
 discovered_by = indian
 discovered_by = chinese
 discovered_by = japanese

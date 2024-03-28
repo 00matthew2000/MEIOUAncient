@@ -1,7 +1,7 @@
 capital = "Riga"
 trade_goods = hemp
-culture = baltendeutsche
-religion = catholic
+culture = baltic
+religion = baltic_religion
 hre = no
 base_tax = 2
 base_production = 1

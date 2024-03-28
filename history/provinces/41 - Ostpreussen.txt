@@ -1,7 +1,7 @@
 capital = "Königsberg"
 trade_goods = wheat
 culture = baltic
-religion = catholic
+religion = baltic_religion
 hre = no
 base_tax = 2
 base_production = 1

@@ -1,5 +1,5 @@
 culture = meroitic
-religion = oriental
+religion = egyptian_religion
 discovered_by = eastern
 discovered_by = byzantine
 discovered_by = muslim

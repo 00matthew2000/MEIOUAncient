@@ -1,7 +1,7 @@
 capital = "eThekwini"
 trade_goods = unknown
 culture = san
-religion = bantu_pagan
+religion = san_pagan
 hre = no
 base_tax = 2
 base_production = 0

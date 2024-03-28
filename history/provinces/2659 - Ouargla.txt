@@ -1,7 +1,7 @@
 capital = "Ouargla"
 trade_goods = wool
 culture = gaetuli
-religion = ibadi
+religion = numidian_religion
 hre = no
 base_tax = 2
 base_production = 0

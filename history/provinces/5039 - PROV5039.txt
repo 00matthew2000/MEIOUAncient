@@ -3,4 +3,4 @@ discovered_by = YUA
 discovered_by = YEN
 discovered_by = SAK
 culture = altaic
-religion = tengri_pagan
+religion = tengri

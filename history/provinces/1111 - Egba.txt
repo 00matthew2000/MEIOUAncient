@@ -1,7 +1,6 @@
 capital = "Ake"
 trade_goods = slaves
 culture = yorumba
-religion = odinala
 hre = no
 base_tax = 3
 base_production = 0

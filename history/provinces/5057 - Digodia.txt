@@ -1,7 +1,6 @@
 capital = "Digodia"
 trade_goods = unknown
 culture = oromo_c
-religion = waaq
 hre = no
 base_tax = 1
 base_production = 0

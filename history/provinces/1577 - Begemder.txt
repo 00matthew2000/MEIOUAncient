@@ -1,7 +1,7 @@
 capital = "Bahir Dar"
 trade_goods = millet
 culture = axumite
-religion = jewish
+religion = awsan_religion
 base_tax = 2
 base_production = 1
 base_manpower = 0

@@ -1,7 +1,7 @@
 capital = "Dabat"
 trade_goods = wax
 culture = axumite
-religion = jewish
+religion = awsan_religion
 base_tax = 4
 base_production = 0
 base_manpower = 0

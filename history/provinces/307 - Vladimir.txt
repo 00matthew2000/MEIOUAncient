@@ -1,7 +1,7 @@
 capital = "Vladimir"
 trade_goods = wheat
 culture = murom
-religion = orthodox
+religion = finno_ugric_religion
 base_tax = 9
 base_production = 2
 base_manpower = 1

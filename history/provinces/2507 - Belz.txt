@@ -1,7 +1,7 @@
 capital = "Belz"
 trade_goods = livestock
 culture = slavic
-religion = orthodox
+religion = slavic_religion
 base_tax = 3
 base_production = 0
 base_manpower = 0

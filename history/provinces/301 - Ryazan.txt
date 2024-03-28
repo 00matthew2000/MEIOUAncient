@@ -1,7 +1,7 @@
 capital = "Ryazan"
 trade_goods = livestock
 culture = mordvinians
-religion = orthodox
+religion = finno_ugric_religion
 hre = no
 base_tax = 14
 base_production = 0

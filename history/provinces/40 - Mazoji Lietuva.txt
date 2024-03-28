@@ -1,7 +1,7 @@
 capital = "Memel"
 trade_goods = livestock
 culture = baltic
-religion = catholic
+religion = baltic_religion
 hre = no
 base_tax = 3
 base_production = 0

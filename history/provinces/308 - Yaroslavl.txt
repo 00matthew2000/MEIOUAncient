@@ -1,7 +1,7 @@
 capital = "Yaroslavl"
 trade_goods = livestock
 culture = merya
-religion = orthodox
+religion = finno_ugric_religion
 hre = no
 base_tax = 8
 base_production = 1

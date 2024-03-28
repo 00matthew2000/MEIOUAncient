@@ -4,7 +4,7 @@ add_core = FIR
 capital = "Fiorenza"
 trade_goods = wool
 culture = etruscan
-religion = catholic
+religion = etruscan_religion
 hre = yes
 base_tax = 20
 base_production = 9
@@ -37,9 +37,9 @@ if = {
 	limit = { 
 		OR = { 
 			AND = { 
-				religion = catholic
+				religion = etruscan_religion
 				owner = { 
-					religion = catholic
+					religion = etruscan_religion
 				}
 			}
 			AND = { 
@@ -80,12 +80,7 @@ discovered_by = byzantine
 discovered_by = muslim
 discovered_by = ottoman
 450.1.1 = { 
-	set_province_flag = catholic_archbishopric
-	add_province_modifier = { 
-		name = catholic_archbishopric
-		duration = -1
-	}
-	set_province_flag = TN_Important
+		set_province_flag = TN_Important
 	set_variable = { 
 		which = baf
 		value = 10

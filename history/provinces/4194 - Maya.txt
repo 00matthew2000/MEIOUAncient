@@ -1,7 +1,7 @@
 capital = "Itik Kuol"
 trade_goods = unknown
 culture = yukaghir
-religion = tengri_pagan
+religion = tengri
 hre = no
 base_tax = 1
 base_production = 0

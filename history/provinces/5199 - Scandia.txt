@@ -1,5 +1,5 @@
 culture = nordic
-religion = catholic
+religion = germanic_religion
 discovered_by = eastern
 discovered_by = byzantine
 discovered_by = western

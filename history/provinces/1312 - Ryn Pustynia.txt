@@ -6,4 +6,4 @@ discovered_by = steppestech
 discovered_by = YUA
 discovered_by = ottoman
 culture = sarmatian
-religion = sunni
+religion = sarmatian_religion

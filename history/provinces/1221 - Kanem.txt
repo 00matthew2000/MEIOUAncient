@@ -1,7 +1,7 @@
 capital = "Njimi"
 trade_goods = cotton
 culture = bornu
-religion = sunni
+religion = east_african
 hre = no
 base_tax = 3
 base_production = 1

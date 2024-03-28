@@ -3,7 +3,7 @@ controller = FRA
 capital = "Vièna"
 trade_goods = lumber
 culture = southern_gaul
-religion = catholic
+religion = celtic_religion
 hre = no
 base_tax = 21
 base_production = 0
@@ -22,12 +22,7 @@ discovered_by = byzantine
 discovered_by = western
 discovered_by = muslim
 450.1.1 = { 
-	set_province_flag = catholic_archbishopric
-	add_province_modifier = { 
-		name = catholic_archbishopric
-		duration = -1
-	}
-	set_variable = { 
+		set_variable = { 
 		which = baf
 		value = 4
 	}

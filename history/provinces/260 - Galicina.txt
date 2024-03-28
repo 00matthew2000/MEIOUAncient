@@ -1,7 +1,7 @@
 capital = "Lviv"
 trade_goods = wheat
 culture = neuri
-religion = orthodox
+religion = baltic_religion
 hre = no
 base_tax = 3
 base_production = 1

@@ -2,4 +2,4 @@ discovered_by = steppestech
 discovered_by = YUA
 discovered_by = YEN
 culture = altaic
-religion = tengri_pagan
+religion = tengri

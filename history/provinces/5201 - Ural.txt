@@ -1,5 +1,5 @@
 culture = mansi
-religion = tengri_pagan
+religion = finno_ugric_religion
 1356.1.1 = { 
 	discovered_by = PRM
 }

@@ -1,7 +1,7 @@
 capital = "Trakai"
 trade_goods = wheat
 culture = baltic
-religion = baltic_pagan
+religion = baltic_religion
 hre = no
 base_tax = 9
 base_production = 2

@@ -1,7 +1,7 @@
 capital = "Pustozersk"
 trade_goods = lumber
 culture = nenet
-religion = shamanism
+religion = finno_ugric_religion
 hre = no
 base_tax = 1
 base_production = 0

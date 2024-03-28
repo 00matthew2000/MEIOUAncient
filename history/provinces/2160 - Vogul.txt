@@ -1,5 +1,5 @@
 culture = uralic
-religion = shamanism
+religion = finno_ugric_religion
 discovered_by = eastern
 discovered_by = byzantine
 discovered_by = muslim

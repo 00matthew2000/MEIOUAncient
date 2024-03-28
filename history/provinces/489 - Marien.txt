@@ -1,7 +1,7 @@
 capital = "Marien"
 trade_goods = unknown
 culture = arawak
-religion = iocauna
+religion = finno_ugric_religion
 hre = no
 base_tax = 9
 base_production = 0

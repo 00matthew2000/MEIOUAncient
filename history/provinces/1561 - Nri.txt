@@ -1,7 +1,6 @@
 capital = "Igbo-Ukwu"
 trade_goods = palm
 culture = igbo
-religion = odinala
 hre = no
 base_tax = 5
 base_production = 0

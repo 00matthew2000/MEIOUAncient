@@ -1,7 +1,7 @@
 capital = "Peremyshl"
 trade_goods = hemp
 culture = galatian
-religion = orthodox
+religion = celtic_religion
 hre = no
 base_tax = 2
 base_production = 0

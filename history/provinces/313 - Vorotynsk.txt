@@ -1,7 +1,7 @@
 capital = "Vorotynsk"
 trade_goods = livestock
 culture = meshchera
-religion = orthodox
+religion = finno_ugric_religion
 hre = no
 base_tax = 13
 base_production = 0

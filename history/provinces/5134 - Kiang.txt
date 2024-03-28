@@ -1,7 +1,7 @@
 capital = "Kiang"
 trade_goods = cotton
 culture = bozo
-religion = west_african_pagan
+religion = west_african
 hre = no
 base_tax = 4
 base_production = 0

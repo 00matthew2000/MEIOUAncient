@@ -4,4 +4,4 @@ discovered_by = ottoman
 discovered_by = steppestech
 discovered_by = YUA
 culture = bactrian
-religion = sunni
+religion = zoroastrianism

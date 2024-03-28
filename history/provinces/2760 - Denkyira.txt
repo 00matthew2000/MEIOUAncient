@@ -4,7 +4,6 @@ add_core = DNK
 capital = "Jukwaa"
 trade_goods = palm
 culture = akaa
-religion = west_african_pagan
 hre = no
 base_tax = 3
 base_production = 1

@@ -5,7 +5,7 @@ add_permanent_claim = FRA
 capital = "Fois"
 trade_goods = livestock
 culture = north_iberian
-religion = catholic
+religion = iberian_religion
 hre = no
 base_tax = 7
 base_production = 0
@@ -19,9 +19,9 @@ if = {
 	limit = { 
 		OR = { 
 			AND = { 
-				religion = catholic
+				religion = iberian_religion
 				owner = { 
-					religion = catholic
+					religion = iberian_religion
 				}
 			}
 			AND = { 

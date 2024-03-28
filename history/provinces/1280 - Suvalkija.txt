@@ -1,7 +1,7 @@
 capital = "Sejny"
 trade_goods = lumber
 culture = baltic
-religion = baltic_pagan
+religion = baltic_religion
 hre = no
 base_tax = 3
 base_production = 0

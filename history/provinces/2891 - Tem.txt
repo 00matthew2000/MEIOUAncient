@@ -1,7 +1,6 @@
 capital = "Sokode"
 trade_goods = millet
 culture = fon_c
-religion = west_african_pagan
 hre = no
 base_tax = 3
 base_production = 0

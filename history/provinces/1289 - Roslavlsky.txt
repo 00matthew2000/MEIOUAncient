@@ -1,7 +1,7 @@
 capital = "Vyazma"
 trade_goods = livestock
 culture = meshchera
-religion = orthodox
+religion = finno_ugric_religion
 hre = no
 base_tax = 10
 base_production = 0

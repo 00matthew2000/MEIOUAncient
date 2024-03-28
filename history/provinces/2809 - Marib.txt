@@ -1,7 +1,7 @@
 capital = "'Unayzah"
 trade_goods = palm_date
 culture = andanite
-religion = sunni
+religion = arab_religion
 hre = no
 base_tax = 3
 base_production = 0

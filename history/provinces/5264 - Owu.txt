@@ -1,7 +1,6 @@
 capital = "Owu"
 trade_goods = palm
 culture = yorumba
-religion = odinala
 hre = no
 base_tax = 3
 base_production = 1

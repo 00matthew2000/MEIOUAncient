@@ -3,7 +3,7 @@ controller = PAP
 capital = "Forli"
 trade_goods = wine
 culture = umbri
-religion = catholic
+religion = roman_religion
 hre = no
 base_tax = 7
 base_production = 2
@@ -25,9 +25,9 @@ if = {
 	limit = { 
 		OR = { 
 			AND = { 
-				religion = catholic
+				religion = roman_religion
 				owner = { 
-					religion = catholic
+					religion = roman_religion
 				}
 			}
 			AND = { 

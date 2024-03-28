@@ -1,7 +1,7 @@
 capital = "Bila"
 trade_goods = lumber
 culture = gotones
-religion = orthodox
+religion = germanic_religion
 hre = no
 base_tax = 2
 base_production = 0

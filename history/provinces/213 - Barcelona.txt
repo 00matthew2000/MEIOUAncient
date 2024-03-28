@@ -4,7 +4,7 @@ add_core = ARA
 capital = "Barcelona"
 trade_goods = fish
 culture = east_iberian
-religion = catholic
+religion = iberian_religion
 hre = no
 base_tax = 1
 base_production = 4
@@ -34,9 +34,9 @@ if = {
 	limit = { 
 		OR = { 
 			AND = { 
-				religion = catholic
+				religion = iberian_religion
 				owner = { 
-					religion = catholic
+					religion = iberian_religion
 				}
 			}
 			AND = { 

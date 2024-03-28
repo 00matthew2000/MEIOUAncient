@@ -4,7 +4,7 @@ add_core = PAP
 capital = "Spoleto"
 trade_goods = wine
 culture = umbri
-religion = catholic
+religion = roman_religion
 hre = no
 base_tax = 9
 base_production = 5
@@ -31,9 +31,9 @@ if = {
 	limit = { 
 		OR = { 
 			AND = { 
-				religion = catholic
+				religion = roman_religion
 				owner = { 
-					religion = catholic
+					religion = roman_religion
 				}
 			}
 			AND = { 

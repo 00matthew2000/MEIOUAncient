@@ -1,7 +1,7 @@
 capital = "Qal`at Bishah"
 trade_goods = wheat
 culture = dadanitic
-religion = shiite
+religion = arab_religion
 hre = no
 base_tax = 3
 base_production = 1

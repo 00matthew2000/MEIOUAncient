@@ -1,7 +1,7 @@
 capital = "Hajr Al Yamama"
 trade_goods = palm_date
 culture = andanite
-religion = sunni
+religion = arab_religion
 hre = no
 base_tax = 4
 base_production = 0

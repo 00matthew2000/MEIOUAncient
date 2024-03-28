@@ -1,2 +1,2 @@
 culture = nenet
-religion = shamanism
+religion = finno_ugric_religion

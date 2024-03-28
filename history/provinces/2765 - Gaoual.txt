@@ -1,7 +1,6 @@
 capital = "Gaoual"
 trade_goods = livestock
 culture = susu
-religion = west_african_pagan
 hre = no
 base_tax = 4
 base_production = 0

@@ -4,4 +4,4 @@ discovered_by = ottoman
 discovered_by = soudantech
 discovered_by = MAL
 culture = mauretanian
-religion = sunni
+religion = numidian_religion

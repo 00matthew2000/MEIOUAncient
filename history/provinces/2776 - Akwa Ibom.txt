@@ -1,7 +1,7 @@
 capital = "Uyo"
 trade_goods = slaves
 culture = bozo
-religion = odinala
+religion = west_african
 hre = no
 base_tax = 1
 base_production = 0

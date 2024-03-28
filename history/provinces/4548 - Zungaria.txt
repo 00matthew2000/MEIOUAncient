@@ -5,7 +5,7 @@ discovered_by = southeast_asian
 discovered_by = steppestech
 discovered_by = YUA
 culture = altaic
-religion = tengri_pagan
+religion = tengri
 1356.1.1 = { 
 	discovered_by = YUA
 }

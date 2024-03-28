@@ -1,7 +1,7 @@
 capital = "Taroudant"
 trade_goods = palm_date
 culture = salathian
-religion = sunni
+religion = numidian_religion
 hre = no
 base_tax = 3
 base_production = 0

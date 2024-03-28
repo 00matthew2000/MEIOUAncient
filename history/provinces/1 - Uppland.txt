@@ -1,7 +1,7 @@
 capital = "Stockholm"
 trade_goods = wheat
 culture = sapmi
-religion = finnish_pagan
+religion = finno_ugric_religion
 hre = no
 base_tax = 1
 base_production = 0

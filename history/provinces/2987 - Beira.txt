@@ -1,7 +1,7 @@
 capital = "Beira"
 trade_goods = slaves
 culture = san
-religion = sunni
+religion = san_pagan
 hre = no
 base_tax = 1
 base_production = 0

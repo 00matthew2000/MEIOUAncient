@@ -1,7 +1,7 @@
 capital = "Kashin"
 trade_goods = lumber
 culture = merya
-religion = orthodox
+religion = finno_ugric_religion
 hre = no
 base_tax = 5
 base_production = 0

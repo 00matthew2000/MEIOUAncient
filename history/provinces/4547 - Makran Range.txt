@@ -4,4 +4,4 @@ discovered_by = steppestech
 discovered_by = YUA
 discovered_by = ottoman
 culture = baloch
-religion = sunni
+religion = zoroastrianism

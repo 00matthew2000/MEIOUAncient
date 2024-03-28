@@ -1,2 +1,2 @@
 culture = sapmi
-religion = finnish_pagan
+religion = finno_ugric_religion

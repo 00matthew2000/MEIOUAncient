@@ -5,4 +5,4 @@ discovered_by = southeast_asian
 discovered_by = steppestech
 discovered_by = YUA
 culture = altaic
-religion = sunni
+religion = tengri

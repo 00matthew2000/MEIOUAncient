@@ -1,7 +1,6 @@
 capital = "Bondukru"
 trade_goods = lumber
 culture = akaa
-religion = west_african_pagan
 hre = no
 base_tax = 4
 base_production = 0

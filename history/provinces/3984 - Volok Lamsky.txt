@@ -1,7 +1,7 @@
 capital = "Volok"
 trade_goods = lumber
 culture = merya
-religion = orthodox
+religion = finno_ugric_religion
 base_tax = 3
 base_production = 0
 base_manpower = 0

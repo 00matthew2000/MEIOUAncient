@@ -1,4 +1,4 @@
 culture = khanty
-religion = shamanism
+religion = finno_ugric_religion
 discovered_by = steppestech
 discovered_by = YUA

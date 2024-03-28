@@ -4,7 +4,7 @@ add_core = ENG
 capital = "Canterbury"
 trade_goods = fish
 culture = britannic
-religion = catholic
+religion = celtic_religion
 hre = no
 base_tax = 13
 base_production = 1
@@ -28,58 +28,12 @@ set_variable = {
 }
 fort_14th = yes
 set_seat_in_parliament = yes
-if = { 
-	limit = { 
-		OR = { 
-			AND = { 
-				religion = catholic
-				owner = { 
-					religion = catholic
-				}
-			}
-			AND = { 
-				religion = avignonist
-				owner = { 
-					religion = avignonist
-				}
-			}
-		}
-		has_cardinal = no
-		NOT = { 
-			AAA = { 
-				AND = { 
-					check_variable = { 
-						which = nje
-						value = 50
-					}
-				}
-			}
-		}
-	}
-	add_cardinal = yes
-	hidden_effect = { 
-		owner = { 
-			add_papal_influence = 5
-		}
-		AAA = { 
-			change_variable = { 
-				which = nje
-				value = 1
-			}
-		}
-	}
-}
 discovered_by = western
 discovered_by = muslim
 discovered_by = eastern
 discovered_by = byzantine
 500.1.1 = { 
-	set_province_flag = catholic_archbishopric
-	add_province_modifier = { 
-		name = catholic_archbishopric
-		duration = -1
-	}
-	set_province_flag = TN_Minor
+		set_province_flag = TN_Minor
 	set_province_flag = TN_Port
 	set_province_flag = TN_Harbour_Minor
 	set_province_flag = TN_Natural_Minor

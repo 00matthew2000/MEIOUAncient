@@ -4,7 +4,6 @@ native_hostileness = 9
 capital = "Sahwi"
 trade_goods = lumber
 culture = akaa
-religion = west_african_pagan
 hre = no
 base_tax = 8
 base_production = 0

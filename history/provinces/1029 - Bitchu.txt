@@ -1,7 +1,7 @@
 owner = HKW
 controller = HKW
 culture = yayoi
-religion = mahayana
+religion = shinto
 capital = "Matuyama"
 trade_goods = rice
 hre = no

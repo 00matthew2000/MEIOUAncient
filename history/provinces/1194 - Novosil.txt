@@ -1,7 +1,7 @@
 capital = "Novosil'"
 trade_goods = livestock
 culture = meshchera
-religion = orthodox
+religion = finno_ugric_religion
 base_tax = 16
 base_production = 0
 base_manpower = 2

@@ -1,2 +1,2 @@
 culture = khanty
-religion = shamanism
+religion = finno_ugric_religion

@@ -4,7 +4,7 @@ add_core = ENG
 capital = "Dublin"
 trade_goods = fish
 culture = hibernian
-religion = catholic
+religion = celtic_religion
 hre = no
 base_tax = 5
 base_production = 1
@@ -34,12 +34,7 @@ discovered_by = byzantine
 	}
 }
 450.1.1 = { 
-	set_province_flag = catholic_archbishopric
-	add_province_modifier = { 
-		name = catholic_archbishopric
-		duration = -1
-	}
-	set_province_flag = TN_Important
+		set_province_flag = TN_Important
 	set_province_flag = TN_Port
 	set_province_flag = TN_Harbour_Minor
 	set_province_flag = TN_Natural_Important

@@ -1,7 +1,7 @@
 capital = "Bonga"
 trade_goods = millet
 culture = nilotic
-religion = oriental
+religion = east_african
 base_tax = 4
 base_production = 0
 base_manpower = 0

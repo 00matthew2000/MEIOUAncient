@@ -7,7 +7,7 @@ discovered_by = steppestech
 discovered_by = YUA
 discovered_by = muslim
 culture = saka
-religion = sunni
+religion = scythian_religion
 1356.1.1 = { 
 	discovered_by = KSH
 }

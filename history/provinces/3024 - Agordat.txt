@@ -1,7 +1,7 @@
 capital = "Agordat"
 trade_goods = wool
 culture = habesha
-religion = oriental
+religion = awsan_religion
 base_tax = 2
 base_production = 0
 base_manpower = 0

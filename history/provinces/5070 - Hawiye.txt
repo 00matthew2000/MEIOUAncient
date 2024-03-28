@@ -1,7 +1,7 @@
 capital = "Karaan"
 trade_goods = wax
 culture = somali
-religion = sunni
+religion = awsan_religion
 hre = no
 base_tax = 4
 base_production = 0

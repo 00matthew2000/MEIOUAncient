@@ -1,7 +1,7 @@
 owner = USG
 controller = USG
 culture = aynu
-religion = mahayana
+religion = shinto
 capital = "Kasugayama"
 trade_goods = hemp
 hre = no

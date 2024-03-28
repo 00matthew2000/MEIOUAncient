@@ -1,7 +1,7 @@
 capital = "Boorama"
 trade_goods = lumber
 culture = afar
-religion = sunni
+religion = awsan_religion
 hre = no
 base_tax = 1
 base_production = 0

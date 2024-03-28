@@ -1,7 +1,7 @@
 capital = "Meyäs"
 trade_goods = lumber
 culture = ugric
-religion = shamanism
+religion = finno_ugric_religion
 hre = no
 base_tax = 1
 base_production = 0

@@ -1,7 +1,6 @@
 capital = "Dori"
 trade_goods = wool
 culture = fulani
-religion = west_african_pagan
 hre = no
 base_tax = 1
 base_production = 0

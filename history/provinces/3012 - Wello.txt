@@ -1,7 +1,7 @@
 capital = "Ku'bar"
 trade_goods = wool
 culture = axumite
-religion = oriental
+religion = awsan_religion
 base_tax = 3
 base_production = 0
 base_manpower = 0

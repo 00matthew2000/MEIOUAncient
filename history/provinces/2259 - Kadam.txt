@@ -1,7 +1,7 @@
 capital = "Gyêgu"
 trade_goods = wool
 culture = qiang
-religion = vajrayana
+religion = bon_religion
 hre = no
 base_tax = 1
 base_production = 0

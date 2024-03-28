@@ -1,7 +1,6 @@
 capital = "Mahi"
 trade_goods = slaves
 culture = fon_c
-religion = west_african_pagan
 hre = no
 base_tax = 5
 base_production = 0

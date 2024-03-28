@@ -1,7 +1,7 @@
 capital = "Burgabo"
 trade_goods = slaves
 culture = somali
-religion = sunni
+religion = awsan_religion
 hre = no
 base_tax = 2
 base_production = 0

@@ -1,7 +1,7 @@
 capital = "Yaksa"
 trade_goods = wool
 culture = oroqen
-religion = tengri_pagan
+religion = tengri
 hre = no
 base_tax = 1
 base_production = 0

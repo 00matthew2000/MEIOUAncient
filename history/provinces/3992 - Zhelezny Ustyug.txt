@@ -1,7 +1,7 @@
 capital = "Beloe"
 trade_goods = lumber
 culture = permian
-religion = orthodox
+religion = finno_ugric_religion
 hre = no
 base_tax = 3
 base_production = 0

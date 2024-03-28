@@ -4,4 +4,4 @@ discovered_by = byzantine
 discovered_by = muslim
 discovered_by = ottoman
 culture = getean
-religion = orthodox
+religion = dacian_religion

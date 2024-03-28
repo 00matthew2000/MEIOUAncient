@@ -1,7 +1,6 @@
 capital = "Kamberi"
 trade_goods = millet
 culture = berom
-religion = odinala
 hre = no
 base_tax = 2
 base_production = 0

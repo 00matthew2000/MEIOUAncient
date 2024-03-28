@@ -1,7 +1,7 @@
 capital = "Dobe'a"
 trade_goods = livestock
 culture = afar
-religion = sunni
+religion = awsan_religion
 base_tax = 2
 base_production = 0
 base_manpower = 0

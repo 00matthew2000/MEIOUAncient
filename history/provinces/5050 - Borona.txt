@@ -1,7 +1,7 @@
 capital = "Borona"
 trade_goods = unknown
 culture = surmic
-religion = waaq
+religion = east_african
 hre = no
 base_tax = 1
 base_production = 0

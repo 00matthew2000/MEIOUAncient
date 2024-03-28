@@ -3,4 +3,4 @@ discovered_by = YUA
 discovered_by = ottoman
 discovered_by = muslim
 culture = sarmatian
-religion = sunni
+religion = sarmatian_religion

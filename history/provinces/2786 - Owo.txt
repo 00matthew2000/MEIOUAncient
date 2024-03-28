@@ -1,7 +1,6 @@
 capital = "Owo"
 trade_goods = lumber
 culture = yorumba
-religion = odinala
 hre = no
 base_tax = 5
 base_production = 0

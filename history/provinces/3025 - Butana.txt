@@ -1,7 +1,7 @@
 capital = "Gedaref"
 trade_goods = wool
 culture = mahas
-religion = oriental
+religion = east_african
 base_tax = 4
 base_production = 0
 base_manpower = 1
