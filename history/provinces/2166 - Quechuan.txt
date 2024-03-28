@@ -1,6 +1,6 @@
 capital = "Quechuan"
 trade_goods = unknown
-culture = pima
+culture = hohokam
 religion = kachina
 hre = no
 base_tax = 3

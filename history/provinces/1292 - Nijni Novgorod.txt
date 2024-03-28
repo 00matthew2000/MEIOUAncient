@@ -1,6 +1,6 @@
 capital = "Nizhny Novgorod"
 trade_goods = livestock
-culture = russian
+culture = mari
 religion = orthodox
 hre = no
 base_tax = 12

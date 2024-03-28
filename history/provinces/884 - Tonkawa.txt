@@ -1,6 +1,6 @@
 capital = "Tonkawa"
 trade_goods = unknown
-culture = comanche
+culture = archaic_plains
 religion = sun_dance
 hre = no
 base_tax = 3

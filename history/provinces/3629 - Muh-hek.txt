@@ -1,6 +1,6 @@
 capital = "Muh-hek"
 trade_goods = unknown
-culture = mahican
+culture = eastern_woodland
 religion = midewiwin
 hre = no
 base_tax = 3

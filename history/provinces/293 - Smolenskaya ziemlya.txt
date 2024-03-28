@@ -1,6 +1,6 @@
 capital = "Smolensk"
 trade_goods = wax
-culture = russian
+culture = meshchera
 religion = orthodox
 hre = no
 base_tax = 9

@@ -1,6 +1,6 @@
 capital = "Kurmys"
 trade_goods = lumber
-culture = mordivin
+culture = mordvinians
 religion = finnish_pagan
 hre = no
 base_tax = 3

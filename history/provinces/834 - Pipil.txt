@@ -1,6 +1,6 @@
 capital = "Kuskatan"
 trade_goods = maize
-culture = lenca
+culture = xinca
 religion = mayan
 hre = no
 base_tax = 5

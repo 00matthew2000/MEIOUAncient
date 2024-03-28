@@ -1,6 +1,6 @@
 capital = "Tauisk"
 trade_goods = unknown
-culture = eveni
+culture = nivkh
 religion = shamanism
 hre = no
 base_tax = 1

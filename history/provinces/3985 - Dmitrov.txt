@@ -1,6 +1,6 @@
 capital = "Dmitrov"
 trade_goods = wool
-culture = russian
+culture = meshchera
 religion = orthodox
 hre = no
 base_tax = 4

@@ -1,6 +1,6 @@
 capital = "Yoreme"
 trade_goods = unknown
-culture = mayo
+culture = mogollon
 religion = kachina
 hre = no
 base_tax = 3

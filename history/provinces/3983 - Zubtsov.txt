@@ -1,6 +1,6 @@
 capital = "Zubtsov"
 trade_goods = lumber
-culture = russian
+culture = merya
 religion = orthodox
 hre = no
 base_tax = 3

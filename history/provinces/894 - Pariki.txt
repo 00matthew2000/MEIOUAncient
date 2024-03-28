@@ -1,6 +1,6 @@
 capital = "Pariki"
 trade_goods = unknown
-culture = apache
+culture = anasazi
 religion = kachina
 hre = no
 base_tax = 3

@@ -1,6 +1,6 @@
 capital = "Kakisalmi"
 trade_goods = lumber
-culture = karelian
+culture = permian
 religion = finnish_pagan
 hre = no
 base_tax = 1

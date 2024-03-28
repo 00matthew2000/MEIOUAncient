@@ -1,6 +1,6 @@
 capital = "Tuscarora"
 trade_goods = unknown
-culture = tuscarora
+culture = deptford
 religion = midewiwin
 hre = no
 base_tax = 3

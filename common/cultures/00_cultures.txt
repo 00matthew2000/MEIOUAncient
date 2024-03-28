@@ -4598,35 +4598,32 @@ siberian_group = {
 	graphical_culture = scythiangfx
 
 	finnic = {
-		male_names = {
-			Oksi Otso Oftanj Köndös Udmurt Zangari Arvo Bajan Chotkar Ensio Peer Lembit Keljgan Shemvyu Kaisa Raido Oftnja Tansari
-		}
-		female_names = {
-			Bisultan Ulpu Aino Ivy Jesha
-		}
+	}
+	veps = {
+	}
+	estonian = {
+	}
+	ingrian = {
+	}
+	permian = {
+	}
+	mari = {
+	}
+	merya = {
+	}
+	meshchera = {
+	}
+	mordvinians = {
+	}
+	murom = {
 	}
 	sapmi = {
-		male_names = {
-			Oksi Otso Oftanj Köndös Udmurt Zangari Arvo Bajan Chotkar Ensio Peer Lembit Keljgan Shemvyu Kaisa Raido Oftnja Tansari
-		}
-		female_names = {
-			Bisultan Ulpu Aino Ivy Jesha
-		}
 	}
 	mansi = {
-		primary = PLM
-		
-		male_names = {
-			Ablegirim Agay Bailm Baybalak Kalb Kolp Kalpan Kazak Kildey Koyal Kulak Kyncha Michey Metik Miron Nahratsh Obaitko Pytkey
-			Sadyga Samar Tagay Taustei Techik Utshyut Yumshan Yurg Velm
-		}
-		female_names = {
-			Koste Nasta Katyö Ölga
-		}
+	}
+	udmurt = {
 	}
 	khanty = {
-		primary = KOD
-		
 		male_names = {
 			Aksha Alacam Bildan Ermak Ichigey Gindin Hynda Ladik Luguy Memruk Moldan Molik Onzha Pevgey Rayduk
 			Senger Setanziy Shatrov Taishi Tuchabalda Yangilik Yuvan Yuzor
@@ -4635,23 +4632,15 @@ siberian_group = {
 			Nasta Katyö Ölga
 		}
 	}
-	finno_ugric = {
-		primary = AGP
-		male_names = {
-			Oksi Otso Oftanj Köndös Udmurt Zangari Arvo Bajan Chotkar Ensio Peer Lembit Keljgan Shemvyu Kaisa Raido Oftnja Tansari
-		}
-		female_names = {
-			Bisultan Ulpu Aino Ivy Jesha
-		}
+	uralic = {
 	}
 	ugric = {
-		primary = HUN
-		male_names = {
+	}
+	male_names = {
 			Oksi Otso Oftanj Köndös Udmurt Zangari Arvo Bajan Chotkar Ensio Peer Lembit Keljgan Shemvyu Kaisa Raido Oftnja Tansari
-		}
-		female_names = {
+	}
+	female_names = {
 			Bisultan Ulpu Aino Ivy Jesha
-		}
 	}
 }
 
@@ -5719,3 +5708,27 @@ southern_african = {
 	}
 }
 
+yeniseian_group = {
+	graphical_culture = inuitgfx
+	second_graphical_culture = asiangfx
+	ket = {
+		male_names = {
+			Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligt  Dayan 
+			Delbeg Ejei Elbeg Engke G y k G n Gulichi Irinchibal Jorightu Kublai K ke Ligdan Mark rgis M ngke 
+			Manduulun  ljei  r g Oyiradai  g dei Qayshan Qoshila Sayn Suddhipala Tayisung Temujin Tem r Toghun 
+			Tolui Toq Uskhal Yes n Ariq Batu Eljigidei Joichi Darayisung T men
+		}
+		female_names = {
+			Tem len B rte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun 
+			Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene 
+		}
+		dynasty_names = {
+			# CKII
+			"Onggirat" "Naiman" "Kereyid" "Sartaq" "Mengu-Timur" "Uriankhai" "Bujakhin" "Besud" "Noyan" 
+			"Jochid" "Chagatayid" "Chupanid" "Injuid" "Toluid" "Ganbold" "Bolormaa" "Batbayar" 
+			"Bat-Erdene" "Otgonbayar" "Enkhtuyaa" "Gantulga" "Nerg i" "Lkhagvas ren" "Enkhjargal" 
+			"Ganzorig" "Narantsetseg" "P revs ren" "Ganbaatar" "M nkhtsetseg" "M nkhbat" "M nkh-Erdene" 
+			"Jalair" "Sartuul" "Olkhunut" "Khatagin" "Iljigin" "Tsookhor" "Qarakhanid"
+		}
+	}
+}

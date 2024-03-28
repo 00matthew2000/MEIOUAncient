@@ -1,6 +1,6 @@
 capital = "Skidi"
 trade_goods = unknown
-culture = pawnee
+culture = archaic_plains
 religion = sun_dance
 hre = no
 base_tax = 3

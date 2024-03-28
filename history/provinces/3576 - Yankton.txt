@@ -1,6 +1,6 @@
 capital = "Yankton"
 trade_goods = unknown
-culture = lakota
+culture = archaic_plains
 religion = sun_dance
 hre = no
 base_tax = 3

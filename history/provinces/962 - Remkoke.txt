@@ -1,6 +1,6 @@
 capital = "Roanoac"
 trade_goods = unknown
-culture = lenape
+culture = eastern_woodland
 religion = midewiwin
 hre = no
 base_tax = 3

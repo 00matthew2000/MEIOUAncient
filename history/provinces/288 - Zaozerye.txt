@@ -1,6 +1,6 @@
 capital = "Ustyug"
 trade_goods = lumber
-culture = pomor
+culture = permian
 religion = orthodox
 hre = no
 base_tax = 3

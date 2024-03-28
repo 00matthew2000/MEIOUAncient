@@ -1,6 +1,6 @@
 capital = "Turku"
 trade_goods = wheat
-culture = finnish
+culture = finnic
 religion = finnish_pagan
 hre = no
 base_tax = 1

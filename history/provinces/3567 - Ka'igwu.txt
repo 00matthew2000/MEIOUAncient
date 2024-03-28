@@ -1,6 +1,6 @@
 capital = "Ka'igwu"
 trade_goods = unknown
-culture = arapaho
+culture = archaic_plains
 religion = sun_dance
 hre = no
 base_tax = 3

@@ -1,6 +1,6 @@
 capital = "Kem-Kemchik"
 trade_goods = wool
-culture = old_kirgiz
+culture = east_scythian
 religion = tengri_pagan
 hre = no
 base_tax = 1

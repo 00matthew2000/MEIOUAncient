@@ -1,6 +1,6 @@
 capital = "Yesah"
 trade_goods = unknown
-culture = susquehannock
+culture = northeast_woodland
 religion = midewiwin
 hre = no
 base_tax = 3

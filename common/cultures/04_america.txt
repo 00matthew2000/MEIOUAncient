@@ -2728,58 +2728,6 @@ uto_aztecan = { # Aridoamerican
 			Zyanya
 		}
 	}
-	tarahumaran = {
-		male_names = {
-			Ocuil Olli Opochtli Ozomatli
-			Quauhtli
-			Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc Tizoc Tizocic Tlacaelel Tlacaeleltzin Tlalli Tlaloc Tlilpotonqui Tochtli Topiltzin Totoquihuaztli Tototl Tzompantzin
-			Ueman
-			Xicohtencatl Xihuitl Xipil Xipilli Xiuhpilli Xochipepe Xochipilli Xochitl
-			Yaotl Yayauhqui Yolotli Yolyamanitzin
-			Zipactonal Zolin
-		}
-		female_names = {
-			Acacitlu
-			Citali Citlamina
-			Etapali
-			Ichtaca Icnoyotl Ilhuitl
-			Macuilxochitl Mahuitzic Moyolehuani Moztla
-			Nenetl Nochtli
-			Papan
-			Quiauhxochitl
-			Sacnite
-			Techichpotzin Teoxihuitl Teuicui Tezcatlan Tezozomoc Tlachinolli Tlaco Tlacotl Tlahco Tlahcoehua Tlahutli Tlalli Tlazohtzin Tlazozomizqui Tlexictli Toltecatl Tonalnan Tonatzin Tziquetzalpoztectzin
-			Xihuitl Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl
-			Yaretzi Yoltzin
-			Zeltzin Zyanya
-		}
-	}
-	pima = {
-		male_names = {
-			Ocuil Olli Opochtli Ozomatli
-			Quauhtli
-			Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc Tizoc Tizocic Tlacaelel Tlacaeleltzin Tlalli Tlaloc Tlilpotonqui Tochtli Topiltzin Totoquihuaztli Tototl Tzompantzin
-			Ueman
-			Xicohtencatl Xihuitl Xipil Xipilli Xiuhpilli Xochipepe Xochipilli Xochitl
-			Yaotl Yayauhqui Yolotli Yolyamanitzin
-			Zipactonal Zolin
-		}
-		female_names = {
-			Acacitlu
-			Citali Citlamina
-			Etapali
-			Ichtaca Icnoyotl Ilhuitl
-			Macuilxochitl Mahuitzic Moyolehuani Moztla
-			Nenetl Nochtli
-			Papan
-			Quiauhxochitl
-			Sacnite
-			Techichpotzin Teoxihuitl Teuicui Tezcatlan Tezozomoc Tlachinolli Tlaco Tlacotl Tlahco Tlahcoehua Tlahutli Tlalli Tlazohtzin Tlazozomizqui Tlexictli Toltecatl Tonalnan Tonatzin Tziquetzalpoztectzin
-			Xihuitl Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl
-			Yaretzi Yoltzin
-			Zeltzin Zyanya
-		}
-	}
 	hopi = {
 		male_names = {
 			Ocuil Olli Opochtli Ozomatli
@@ -3638,52 +3586,9 @@ north_athabascan_group = {
 	}
 }
 
-south_athabascan_group = {
+oasisamerican = {
 	graphical_culture = northamericagfx
 	
-	apache = {
-		dynasty_names = {
-			Arivaipa
-			Carlanas Ch'uuk'anen Chiricahua Cholome Cibecue Coyotero
-			Faraones
-			Gileno
-			Jicarilla Jocome
-			KIowa Kiva
-			Lipan Lipiyanes Llanero
-			Manso Mescalero Mimbrenos Mogollon Mojave
-			Na'iisha Natages Navajo
-			Pelone Pinal
-			Querechos
-			Ramah
-			Sibolo
-			Toboso Tonto
-			Yavapai
-		}
-		male_names = {
-			Ahzaah
-			Bazheech
-			Chacon Choseta Cochise
-			Dasoda-hae Delshay
-			Goyaale
-			Harkkahome
-			Juh
-			Konzhontaco Kootzzah
-			Mahvipah Moketaveto Munamenek
-			Nahtan
-			Oahtekah Ohtoahnesotowheo Otoahnisto
-			Sitahle
-			Tillaka
-			"Nanni Chaddi"
-			"Na tio tish"
-		}
-		female_names = {
-			Dahteste
-			Gouyen
-			Ilthgozay
-			Lozen
-			Tohayea
-		}
-	}
 	coahuiltec = {
 		dynasty_names = {
 			Arivaipa
@@ -3727,7 +3632,59 @@ south_athabascan_group = {
 			Tohayea
 		}
 	}
-	navajo = {
+	hohokam = {
+		male_names = {
+			Ocuil Olli Opochtli Ozomatli
+			Quauhtli
+			Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc Tizoc Tizocic Tlacaelel Tlacaeleltzin Tlalli Tlaloc Tlilpotonqui Tochtli Topiltzin Totoquihuaztli Tototl Tzompantzin
+			Ueman
+			Xicohtencatl Xihuitl Xipil Xipilli Xiuhpilli Xochipepe Xochipilli Xochitl
+			Yaotl Yayauhqui Yolotli Yolyamanitzin
+			Zipactonal Zolin
+		}
+		female_names = {
+			Acacitlu
+			Citali Citlamina
+			Etapali
+			Ichtaca Icnoyotl Ilhuitl
+			Macuilxochitl Mahuitzic Moyolehuani Moztla
+			Nenetl Nochtli
+			Papan
+			Quiauhxochitl
+			Sacnite
+			Techichpotzin Teoxihuitl Teuicui Tezcatlan Tezozomoc Tlachinolli Tlaco Tlacotl Tlahco Tlahcoehua Tlahutli Tlalli Tlazohtzin Tlazozomizqui Tlexictli Toltecatl Tonalnan Tonatzin Tziquetzalpoztectzin
+			Xihuitl Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl
+			Yaretzi Yoltzin
+			Zeltzin Zyanya
+		}
+	}
+	mogollon = {
+		male_names = {
+			Ocuil Olli Opochtli Ozomatli
+			Quauhtli
+			Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc Tizoc Tizocic Tlacaelel Tlacaeleltzin Tlalli Tlaloc Tlilpotonqui Tochtli Topiltzin Totoquihuaztli Tototl Tzompantzin
+			Ueman
+			Xicohtencatl Xihuitl Xipil Xipilli Xiuhpilli Xochipepe Xochipilli Xochitl
+			Yaotl Yayauhqui Yolotli Yolyamanitzin
+			Zipactonal Zolin
+		}
+		female_names = {
+			Acacitlu
+			Citali Citlamina
+			Etapali
+			Ichtaca Icnoyotl Ilhuitl
+			Macuilxochitl Mahuitzic Moyolehuani Moztla
+			Nenetl Nochtli
+			Papan
+			Quiauhxochitl
+			Sacnite
+			Techichpotzin Teoxihuitl Teuicui Tezcatlan Tezozomoc Tlachinolli Tlaco Tlacotl Tlahco Tlahcoehua Tlahutli Tlalli Tlazohtzin Tlazozomizqui Tlexictli Toltecatl Tonalnan Tonatzin Tziquetzalpoztectzin
+			Xihuitl Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl
+			Yaretzi Yoltzin
+			Zeltzin Zyanya
+		}
+	}
+	anasazi = {
 		dynasty_names = {
 			Ashinuii
 			Bit'anhi
@@ -3833,39 +3790,7 @@ caddoan = {
 plain_algonquian = {
 	graphical_culture = northamericagfx
 	
-	cheyenne = {
-		dynasty_names = {
-			Adahy Atagulkalu
-			Cheasequah
-			Degataga Diwali
-			Mohe
-			Onacona
-			Tsiyi
-			Waya
-		}
-		male_names = { #TODO
-			Aamanaco Avonaco
-			Chahpacpahha
-			Japu
-			Kohkahywhcumest
-			Matewashena Motavato
-			Nahkkomeien Nahpatonca Nakohaistah
-			Ohkeecheta Oneahaket
-			Shongemonetoeahca Shonggemoneto
-			Tahhiota Takchesca Tatoncahooohcalehpaha Tatoncapa
-			Voisttitoevetz Vokivokamast
-			Wahhanissatta Wechegalla
-		}
-		female_names = {
-			Ameo Ameone Ametane Ami Anaba Aquene
-			Ehyophsta Emona Emonah
-			Maheona Meona Misstanstur Moneva
-			Paveena
-			Shaianne Sheyanne Shian Shiana Shiann Shy Shyanna
-			Tahtahtoisneh
-		}
-	}
-	arapaho = {
+	archaic_plains = {
 		dynasty_names = {
 			Adahy Atagulkalu
 			Cheasequah
@@ -4026,7 +3951,7 @@ atlantic_woodland = {
 			Zitkala Zonta
 		}
 	}
-	mingwe = {
+	bushnell = {
 		dynasty_names = {
 			Akhrakouaeronon Akwinoshioni Atquanachuke
 			Carentouan Cepowig
@@ -4060,49 +3985,35 @@ atlantic_woodland = {
 			Tekakwitha Tyonajanegen
 		}
 	}
-	woccon = {
+	eastern_woodland = {
 		dynasty_names = {
-			Aegitina
-			Bizibina
-			Canhdada Canhewincasta Canknuhabi Cephubi
-			Hebina Hudesabina Huhuganebabi Huhumasmibi
-			Indogahwincasta Innianonbi Insaombi Inwantonwanbina
-			Minisatonwanbi
-			Osnibi
-			Ptegabina
-			Sahiyaiyeskabi Sihabi Snugabi Sunkcebi
-			Tanidabi Tanzinapebina Tokanbi
-			Unskaha
-			Wadopabina Wadopahtonwan Wasinazinyabi Waziyamwincasta Wiciyabina Wokpanbi
-			"Hen Atonwaabina"
-			"Minisoee Swnkeebi"
+			Appamattuck Arrohateck
+			Chiskiack
+			Kecoughtan
+			Mattaponi Moraughtacund
+			Nansemond
+			Pamunkey Paspahegh Powhatan
+			Quiyoughcohannock
+			Rappahannock
+			Warraskoyack Weyanoak
+			Youghtanund
 		}
 		male_names = {
-			Akakotos Apawonistaw Apawstamix Attistahhawes Ayestipissimat
-			Chenka
-			Ekaskine Emitahapiskinne Etamepeton
-			Kawasaskotrepahik Kayetapo Kayookosis Kichipwot Kissoum
-			Mahtowewitko Makoyekin Masgwahasid Mastepitah Matapikomotziw Misketo Moyanymen
-			Nesoauases Netahkiteipimew Nochkpitshitoepish
-			Omaksisapop Onistah Onistahpokah Otamakooewin
-			Pitah Pitahannes Pitahonistah Pitahotiskin Pitahotocan Pitahsiksinum Ponokahstamix
-			Shapousetung Sheohmantho Stamixosok Stamixotakapiw Stokimatis Sukeman
-			Tepeeoska Toetahkiehnan
-			Waywasecapow Wichawostaka
+			Ashaquid
+			Catataugh Chauco
+			Debedeavon
+			Kiptopeke
+			Nectowance Nemattanew
+			Okiawampe Opechancanough Opitchapan
+			Parahunt Pochins
+			Tomocomo Totopotomoi
+			Wahunsenacawh
 		}
 		female_names = {
-			Chapa Chapawee Chumani
-			Dohumme Dowanhowee
-			Ehawee
-			Hantaywee
-			Kimimela
-			Macha Magaskawee Makawee Mika Mina
-			Ojinjintka
-			Ptaysanwee
-			Shappa Skah
-			Tahcawin Talutah Tasinahlahlawin Tasinasapewin Thasinamani
-			Wachiwi Wasula Weayaya Wichahpi Wichapi Winona
-			Zitkala Zonta
+			Amonute
+			Cockacoeske
+			Nandua
+			Pocahontas
 		}
 	}
 }
@@ -4440,37 +4351,6 @@ maya = { # Mayan
 east_algonquian = {
 	graphical_culture = northamericagfx
 	
-	powhatan = {
-		dynasty_names = {
-			Appamattuck Arrohateck
-			Chiskiack
-			Kecoughtan
-			Mattaponi Moraughtacund
-			Nansemond
-			Pamunkey Paspahegh Powhatan
-			Quiyoughcohannock
-			Rappahannock
-			Warraskoyack Weyanoak
-			Youghtanund
-		}
-		male_names = {
-			Ashaquid
-			Catataugh Chauco
-			Debedeavon
-			Kiptopeke
-			Nectowance Nemattanew
-			Okiawampe Opechancanough Opitchapan
-			Parahunt Pochins
-			Tomocomo Totopotomoi
-			Wahunsenacawh
-		}
-		female_names = {
-			Amonute
-			Cockacoeske
-			Nandua
-			Pocahontas
-		}
-	}
 	mahican = {
 		dynasty_names = {
 			Bantam

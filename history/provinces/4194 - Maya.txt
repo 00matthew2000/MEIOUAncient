@@ -1,6 +1,6 @@
 capital = "Itik Kuol"
 trade_goods = unknown
-culture = eveni
+culture = yukaghir
 religion = tengri_pagan
 hre = no
 base_tax = 1

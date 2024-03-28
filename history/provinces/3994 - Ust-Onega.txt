@@ -1,6 +1,6 @@
 capital = "Solovki"
 trade_goods = lumber
-culture = pomor
+culture = permian
 religion = orthodox
 base_tax = 2
 base_production = 0

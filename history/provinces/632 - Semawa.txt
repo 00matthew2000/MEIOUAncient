@@ -1,6 +1,6 @@
 capital = "Sumbawa"
 trade_goods = unknown
-culture = balinese
+culture = indonesian
 religion = hinduism
 hre = no
 base_tax = 4

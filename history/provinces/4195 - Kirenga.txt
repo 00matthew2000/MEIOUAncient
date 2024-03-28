@@ -1,6 +1,6 @@
 capital = "Kirenga"
 trade_goods = unknown
-culture = yakut
+culture = yukaghir
 religion = shamanism
 base_tax = 1
 base_production = 0

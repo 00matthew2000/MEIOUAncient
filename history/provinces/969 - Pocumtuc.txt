@@ -1,6 +1,6 @@
 capital = "Pocumtuc"
 trade_goods = unknown
-culture = pequot
+culture = eastern_woodland
 religion = midewiwin
 hre = no
 base_tax = 3

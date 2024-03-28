@@ -1,6 +1,6 @@
 capital = "Tawakoni"
 trade_goods = unknown
-culture = wichita
+culture = archaic_plains
 religion = sun_dance
 hre = no
 base_tax = 3

@@ -1,6 +1,6 @@
 capital = "Acahualinca"
 trade_goods = unknown
-culture = manguean
+culture = misumalpan
 religion = chiminigagua
 hre = no
 base_tax = 5

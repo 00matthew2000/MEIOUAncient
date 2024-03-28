@@ -1,6 +1,6 @@
 capital = "Jicarilla"
 trade_goods = unknown
-culture = navajo
+culture = anasazi
 religion = kachina
 hre = no
 base_tax = 3

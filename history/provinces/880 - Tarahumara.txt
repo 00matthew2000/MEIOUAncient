@@ -1,6 +1,6 @@
 capital = "Cusihuiriachi"
 trade_goods = unknown
-culture = tarahumaran
+culture = mogollon
 religion = kachina
 hre = no
 base_tax = 2

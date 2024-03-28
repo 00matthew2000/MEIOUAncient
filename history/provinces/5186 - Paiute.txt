@@ -1,2 +1,2 @@
-culture = cheyenne
+culture = archaic_plains
 religion = kachina

@@ -1,6 +1,6 @@
 capital = "Kerey"
 trade_goods = wool
-culture = altai
+culture = east_scythian
 religion = tengri_pagan
 hre = no
 base_tax = 1

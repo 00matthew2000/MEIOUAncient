@@ -1,6 +1,6 @@
 capital = "Quetzalla"
 trade_goods = unknown
-culture = tarachatitian
+culture = mogollon
 religion = kachina
 hre = no
 base_tax = 2

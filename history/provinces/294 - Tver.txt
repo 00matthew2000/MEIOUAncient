@@ -1,6 +1,6 @@
 capital = "Tver"
 trade_goods = livestock
-culture = russian
+culture = merya
 religion = orthodox
 hre = no
 base_tax = 9

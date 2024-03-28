@@ -1,6 +1,6 @@
 capital = "Usolye"
 trade_goods = wool
-culture = burya
+culture = altaic
 religion = shamanism
 hre = no
 base_tax = 1

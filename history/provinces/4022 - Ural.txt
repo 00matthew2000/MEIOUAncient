@@ -1,2 +1,2 @@
-culture = bashkir
+culture = ugric
 religion = sunni

@@ -1,6 +1,6 @@
 capital = "Irkutsk"
 trade_goods = wool
-culture = buryat
+culture = altaic
 religion = shamanism
 hre = no
 base_tax = 1

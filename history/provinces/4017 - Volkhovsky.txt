@@ -1,6 +1,6 @@
 capital = "Ladoga"
 trade_goods = lumber
-culture = novgorodian
+culture = permian
 religion = orthodox
 hre = no
 base_tax = 7

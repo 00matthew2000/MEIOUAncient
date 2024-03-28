@@ -1,6 +1,6 @@
 capital = "Nakota"
 trade_goods = unknown
-culture = laurel_complex
+culture = archaic_plains
 religion = midewiwin
 hre = no
 base_tax = 3

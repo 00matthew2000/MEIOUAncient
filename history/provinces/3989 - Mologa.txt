@@ -1,6 +1,6 @@
 capital = "Zhelezny Ustyug"
 trade_goods = lumber
-culture = russian
+culture = meshchera
 religion = orthodox
 hre = no
 base_tax = 5

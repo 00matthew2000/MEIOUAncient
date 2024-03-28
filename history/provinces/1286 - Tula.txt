@@ -1,6 +1,6 @@
 capital = "Pronsk"
 trade_goods = lumber
-culture = russian
+culture = mordvinians
 religion = orthodox
 hre = no
 base_tax = 10

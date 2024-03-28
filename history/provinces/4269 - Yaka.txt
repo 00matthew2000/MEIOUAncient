@@ -1,6 +1,6 @@
 capital = "Yaka"
 trade_goods = palm
-culture = yaka
+culture = kongolese
 religion = bantu_pagan
 hre = no
 base_tax = 4

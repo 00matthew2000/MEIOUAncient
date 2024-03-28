@@ -1,6 +1,6 @@
 capital = "Porvoo"
 trade_goods = fish
-culture = finnish
+culture = finnic
 religion = finnish_pagan
 hre = no
 base_tax = 1

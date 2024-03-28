@@ -1,6 +1,6 @@
 capital = "Mustasaari"
 trade_goods = lumber
-culture = finnish
+culture = finnic
 religion = finnish_pagan
 hre = no
 base_tax = 1

@@ -1,6 +1,6 @@
 capital = "Mescallero"
 trade_goods = unknown
-culture = apache
+culture = archaic_plains
 religion = kachina
 hre = no
 base_tax = 3

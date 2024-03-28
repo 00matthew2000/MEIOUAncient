@@ -1,6 +1,6 @@
 capital = "Murom"
 trade_goods = lumber
-culture = russian
+culture = murom
 religion = orthodox
 hre = no
 base_tax = 6

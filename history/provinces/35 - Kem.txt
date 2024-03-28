@@ -1,6 +1,6 @@
 capital = "Kam"
 trade_goods = unknown
-culture = karelian
+culture = permian
 religion = finnish_pagan
 hre = no
 base_tax = 1

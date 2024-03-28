@@ -1,6 +1,6 @@
 capital = "Bolghar"
 trade_goods = livestock
-culture = chuvash
+culture = udmurt
 religion = shamanism
 hre = no
 base_tax = 4

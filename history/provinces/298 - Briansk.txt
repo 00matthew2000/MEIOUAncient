@@ -1,6 +1,6 @@
 capital = "Briansk"
 trade_goods = livestock
-culture = russian
+culture = meshchera
 religion = orthodox
 base_tax = 16
 base_production = 0

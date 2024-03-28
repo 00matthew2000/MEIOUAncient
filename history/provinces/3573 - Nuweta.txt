@@ -1,6 +1,6 @@
 capital = "Nuweta"
 trade_goods = unknown
-culture = cheyenne
+culture = archaic_plains
 religion = sun_dance
 hre = no
 base_tax = 3

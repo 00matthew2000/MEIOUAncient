@@ -1,2 +1,2 @@
-culture = nakota
+culture = archaic_plains
 religion = sun_dance

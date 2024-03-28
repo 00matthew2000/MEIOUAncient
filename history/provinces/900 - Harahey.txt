@@ -1,6 +1,6 @@
 capital = "Harahey"
 trade_goods = unknown
-culture = comanche
+culture = archaic_plains
 religion = kachina
 hre = no
 base_tax = 3

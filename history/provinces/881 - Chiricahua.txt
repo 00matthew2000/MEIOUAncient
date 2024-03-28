@@ -1,6 +1,6 @@
 capital = "Paquimé"
 trade_goods = unknown
-culture = apache
+culture = mogollon
 religion = kachina
 hre = no
 base_tax = 1

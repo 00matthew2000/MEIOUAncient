@@ -1,6 +1,6 @@
 capital = "Novgorod"
 trade_goods = livestock
-culture = novgorodian
+culture = permian
 religion = orthodox
 hre = no
 base_tax = 5

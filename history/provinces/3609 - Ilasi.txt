@@ -1,6 +1,6 @@
 capital = "Ilasi"
 trade_goods = unknown
-culture = woccon
+culture = deptford
 religion = midewiwin
 hre = no
 base_tax = 3
