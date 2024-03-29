@@ -1,7 +1,7 @@
 capital = "Quechuan"
 trade_goods = unknown
 culture = hohokam
-religion = burmese_religion
+religion = kachina
 hre = no
 base_tax = 3
 native_size = 5

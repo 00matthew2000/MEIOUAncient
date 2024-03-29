@@ -1,7 +1,7 @@
 ﻿l_english:
- DEV_MAKE_STATE: " with $VAL|Y$¤1"
+ DEV_MAKE_STATE: " with $VAL
  PROV_MAKE_STATE: " $COLOR$$PROV$/$SIZE$¤2§!"
- MAKE_STATE_TOO_MANY: "and $AMOUNT|Y$ more Territories..."
+ MAKE_STATE_TOO_MANY: "and $AMOUNT
  REGCAT_normal: "Regulars"
  REGCAT_mercenary: "Mercenaries"
  REGCAT_banner: "Banners"
@@ -28,30 +28,30 @@
  CAN_COLONY_BOOST_DEVELOPMENT: "+1 Rural pop., +1 Urban pop. and +1 Upper class pop. when Colony Finished"
  STV_LVL_DEV: "§YDevelopment§!"
  edict_encourage_development: "Encourage Development"
- EMBRACEMENT_RATIO: "Embraced in $NUM_EMBRACED|Y$ of $NUM_PROVINCES$ provinces, totaling $VAL|Y$ of $COUNTRY_ADJ$ development ($TOTAL_DEV|Y$ after Local Autonomy)."
- EMBRACE_RATIO_PROV: "  $PROV$ $COST|Y$¤ of cost ($DEV$ development)\n"
+ EMBRACEMENT_RATIO: "Embraced in $NUM_EMBRACED
+ EMBRACE_RATIO_PROV: "  $PROV$ $COST
  GP_RATING_TT: "The rating is the §Ydevelopment§! divided by current §Ytechnology cost§!."
- LIBERTY_DESIRE_FROM_DEVELOPMENT_VASSAL: "From $AMOUNT|Y$ development: $VAL$"
+ LIBERTY_DESIRE_FROM_DEVELOPMENT_VASSAL: "From $AMOUNT
  SM_BASE_DEV_COST_EDICT: "From Development: §Y$VAL$¤§!\n$EDICT$: §R+$ED_VAL$¤§!"
  SM_BASE_DEV_COST: "From Development: §Y$VAL$¤§!"
- STATE_ENTRY_IRO: "$NAME|Y$ has $DEV|Y$ Development and cost $COST$¤"
- TERRITORIES_ENTRY_IRO: "$NAME|Y$ would cost ($COST|R$¤) monthly as a state.\n  $DEV|Y$ Development & $PROV|Y$ Provinces."
+ STATE_ENTRY_IRO: "$NAME
+ TERRITORIES_ENTRY_IRO: "$NAME
  LEDGER_TOTAL_DEVELOPMENT: "Total Development"
  DEVELOPMENT_COST: "Resource Size Inefficiency"
  LOCAL_DEVELOPMENT_COST: "Local Resource Size Inefficiency"
  MODIFIER_DEVELOPMENT_COST_MODIFIER: "Maximum Extraction Resources Size"
  development: "Development"
  development_scaled: "Development"
- DEVELOPMENT_LESS_THAN: "Development less than $VAL|Y$\n"
- DEVELOPMENT_AT_LEAST: "Development at least $VAL|Y$\n"
- TOTAL_DEVELOPMENT_LESS_THAN: "Total Development less than $VAL|Y$\n"
- TOTAL_DEVELOPMENT_AT_LEAST: "Total Development at least $VAL|Y$\n"
+ DEVELOPMENT_LESS_THAN: "Development less than $VAL
+ DEVELOPMENT_AT_LEAST: "Development at least $VAL
+ TOTAL_DEVELOPMENT_LESS_THAN: "Total Development less than $VAL
+ TOTAL_DEVELOPMENT_AT_LEAST: "Total Development at least $VAL
  IMPR_FURTHER_MODIFIED_BY_2: "Maximum Resources Size: $TECH$"
  IMPR_FURTHER_MODIFIED_BY_3: " Capital City: $MULT$ (Due to §Y$VAL$§! total development.)"
  CORRUPTION_SLIDER_TOOLTIP: "With this setting, we will pay up to §Y$PERDEV$§!¤ per §YDevelopment§! to combat §YCorruption§! each month. Currently, we pay §Y$COST$§!¤ monthly to reduce corruption by $ROOTOUT$ yearly, for a total yearly change of $CHANGE$.\nRooting out corruption will decrease your manpower recovery speed and prestige."
- SET_PRIMARY_CULTURE_TOO_WEAK: "$NAME|Y$ needs to be at least §Y$NEED$%§! of your development in your states to become the primary culture, but it is only at §Y$VAL$%§!."
- ADD_ACC_CULTURE_TOO_WEAK: "$NAME|Y$ needs to have at least $NEED|Y$ development in your states to be promoted to an accepted culture, but it is only at $VAL|Y$ development."
- CULTURE_VIEW_DEV_EXPLAIN: "The Development in our state Cores that belong to this culture is $DEV|Y$ (§Y$PERC$%§! of total in state Cores)."
+ SET_PRIMARY_CULTURE_TOO_WEAK: "$NAME
+ ADD_ACC_CULTURE_TOO_WEAK: "$NAME
+ CULTURE_VIEW_DEV_EXPLAIN: "The Development in our state Cores that belong to this culture is $DEV
  BASE_CORE_POWER_COST: "Base Cost per Development: §Y$BASE$§!£adm£\n"
  BASE_CULTURE_CHANGE_COST: "Base Cost and Time: §Y$BASE$§!£dip£/£time£ ($PER_DEV$ per development point, capped at $UP_TO_DEV$ development)\n\nThe following modifiers affect cost:\n"
  AGGRESSIVE_EXPANSION_PENALTY_DEV: "Total Development of $COUNTRY$"
@@ -151,8 +151,8 @@
  NUM_IMP_PROV_COST_INFO: ""
  IMPR_FURTHER_MODIFIED_BY: "§YMTTH§! of those events is affected by:"
  HAS_CAPITAL_FORT: "Has a capital or province modifier fort."
- CV_INFLATION_YEARLY_CHANGE_EXTRAS: "Inflation changes by $INFLATION|-2$§!%§W/year. It is increased by $GOLD|Y$ from our reliance on gold mines, and the yearly base increase is $YEAR|Y$, while our advisors, buildings, ideas and centralisation level reduce it by $REDUCTION|Y$ per year."
- CV_INFLATION_YEARLY_CHANGE: "Inflation changes by $INFLATION|-2$§!%§W/year. It is increased by $GOLD|Y$ from our reliance on gold mines, while our advisors, buildings, ideas and centralisation level reduce it by $REDUCTION|Y$ per year."
+ CV_INFLATION_YEARLY_CHANGE_EXTRAS: "Inflation changes by $INFLATION
+ CV_INFLATION_YEARLY_CHANGE: "Inflation changes by $INFLATION
  one_currency_act: "One Currency Act"
  desc_one_currency_act: "Incorporating foreign lands into our country is a difficult and time-consuming affair. By setting down a series of standard practises for currency coining, we can make it easier.\n§YMain effect will be that the assimilation process will progress 10% faster.§!"
  vassal_integration_act: "Vassal Integration Act"
@@ -221,13 +221,13 @@
  ITALY_HRE_NOPE: "After Italy left the Holy Roman Empire there is no going back for us."
  EMPIRE_JOIN_CANNOT_CONNECT_CAPITAL: "You can only join the Empire if your capital is historically part of the medieval kingdoms of Germania, Lotharingia and Italia and can be directly connected to the Empire.\nFurthermore, the Pontificate, Venice and Genoa would never submit themselves voluntarily to the authority of the Emperor."
  APH_ONLY_EUROPE: "You can only add provinces to the Empire if they are historically part of the medieval kingdoms of Germania, Lotharingia and Italia."
- PP_BASE_PROD_VALUE: "§YUrban Development§!\nThe Urban Development of this province is $VAL|Y$.\n\nUrban Development represents the economic productivity of your urban population. This value is determined by how much wealth your urban industries are generating. Urban industries convert trade goods produced by rural industries into high value products, that are required to maintain a developed society."
+ PP_BASE_PROD_VALUE: "§YUrban Development§!\nThe Urban Development of this province is $VAL
  PP_DEVELOPMENT: "§YTotal Development§!\nTotal Development provides:\n $EFFECT$"
- PP_BASE_TAX_VALUE2: "§YUpper Class Development§!\nThe Upper Class Development of this province is $VAL|Y$.\n\nUpper Class Development represents the economic productivity of your notable population. This value is determined by how much wealth your elite industries are generating. Elite industries provide goods like commerce and knowledge that are essential for maintaining a sophisticated society."
- PP_BASE_MP_VALUE: "§YRural Development§!\nThe Rural Development of this province is $VAL|Y$.\n\nRural Development represents the economic productivity of your rural population. This value is determined by how much wealth your rural industries are generating. Rural industries provide food and other raw materials to other sectors of the economy, providing a strong foundation."
+ PP_BASE_TAX_VALUE2: "§YUpper Class Development§!\nThe Upper Class Development of this province is $VAL
+ PP_BASE_MP_VALUE: "§YRural Development§!\nThe Rural Development of this province is $VAL
  MACRO_INCREASE_MANPOWER_DESC: ""
- CV_DEV_TOTAL_INFO: "The total development of our provinces is $DEV|Y$, based on:\n  $MANPOWER|Y$ Rural Development\n  $PRODUCTION|Y$ Urban Development\n  $TAX|Y$ Upper Class Development\nWe have $PROVS|Y$ provinces and $HOME|Y$ non-overseas cores."
- CV_SUB_DEV_TOTAL_INFO: "The total development of their provinces is $DEV|Y$, based on:\n  $MANPOWER|Y$ Rural Development\n  $PRODUCTION|Y$ Urban Development\n  $TAX|Y$ Upper Class Development\n$WHO$ have $PROVS|Y$ provinces and $HOME|Y$ non-overseas cores."
+ CV_DEV_TOTAL_INFO: "The total development of our provinces is $DEV
+ CV_SUB_DEV_TOTAL_INFO: "The total development of their provinces is $DEV
  OVEREXT_DESC: "We gain Overextension by owning provinces that are not cores. Colonies of your primary culture are exempt from causing Overextension.  Apart from the obvious downsides, high overextension will not hurt your nation."
  provincial_production_size: "Urban Development"
  YEARLY_INC_TXT: ""
@@ -244,10 +244,10 @@
  DEVASTATION_NO_CHANGE:2 "Nothing will currently impact Province Trauma of this province. However, if the province is looted, Province Trauma will be increased."
  DEVASTATION_EFFECTS: "Current Effects of Province Trauma is:\n$WHY$"
  NO_PROSE_DEV_IN: " - Province Trauma in $WHERE$!"
- UNIT_SCORCH_PROVINCE_IRO:4 "Scorched Earth costs §Y$COST$§! £mil and impacts $NAME$ with $MOD$ for $TIME|Y$ months."
- NO_DEVASTATION_MAP_TT: "$NAME|Y$ is not suffering any Province Trauma."
- DEVASTATION_MAP_TT: "The Province Trauma in $NAME|Y$ is at §R$VAL$%§!"
- NO_SCORCH_HI_DEVASTATION:2 "You can't scorch earth in a province that has been devastated past $VAL|$ Province Trauma."
+ UNIT_SCORCH_PROVINCE_IRO:4 "Scorched Earth costs §Y$COST$§! £mil and impacts $NAME$ with $MOD$ for $TIME
+ NO_DEVASTATION_MAP_TT: "$NAME
+ DEVASTATION_MAP_TT: "The Province Trauma in $NAME
+ NO_SCORCH_HI_DEVASTATION:2 "You can't scorch earth in a province that has been devastated past $VAL
  absolutism: "Centralisation"
  ABSOLUTISM_NOT_YET_TOOLTIP: "§YCentralisation§!\nCentralisation is a measure of the effort your government puts into directly controlling the various parts of your nation."
  ABSOLUTISM_IMPACT_TT: "§YCentralisation§!\nCentralisation is a measure of the effort your government puts into directly controlling the various parts of your nation.  A more relaxed approach is a safe path, whereas harsh control is more dangerous, but much more beneficial."
@@ -268,38 +268,38 @@
  CONFIRSIBERIANFRONTIER: "Confirm Establish Frontier"
  CONFIRSIBERIANFRONTIER_TEXT: "$EFFECT$\nAre you sure?"
  NOT_SIB_TO_BE_SEI: "Colonial Frontiers cannot be seized like normal colonies."
- SIB_FRONTIER_TOOLTIP: "This colony gains between $MIN|Y$ and $MAX|Y$ settlers each month."
+ SIB_FRONTIER_TOOLTIP: "This colony gains between $MIN
  SIB_FRONT_TXT: "Colonial Frontier"
  NOSF_NO_POINTS: "You need §Y$COST$§!£dip to establish a Colonial frontier, and you only have §Y$VAL$§!."
  NOSF_HAS_OWNER: "You can't establish a new Colonial frontier in a province which is currently being colonised."
  NOSF_ALREADY_COLONISED: "It is impossible to establish a Colonial frontier in a province where there is a colonisation of some sort in process."
  NOSF_NO_TRACE_HOME: "A frontier can only be established next to a city we own that can trace a route back to our capital."
  ESTABLISH_SIBFRO_IRO: "Establishing a Colonial Frontier will cost of §Y$COST$§!£dip . This will create a colony that will slowly grow, without the need for a colonist, nor any colonial maintenance."
- BASE_HARSH_COST: "Base from Rebelsize: $VAL|Y$."
+ BASE_HARSH_COST: "Base from Rebelsize: $VAL
  patriarch_state: "Metropolitan of $NAME$"
  CONSECRATE_FOR_PA: "You can Consecrate a Metropolitan of a state to get $VAL$ Patriarch Authority."
  STATE_PATRIARCH_ALREADY: "$NAME$ already have a consecrated metropolitan!"
  STAPAT_OTHER_REL: "$NAME$ is $REL$."
  STAPAT_NOT_FULL_CORE: "$NAME$ is just a territorial core."
  STAPAT_OTHER_CUL: "$NAME$ is $CUL$."
- STAPAT_LOW_DEV: "Metropolitans can only be consecrated in states with at least $NEED|Y$ development and there is only $CUR|Y$ in $NAME$."
- STAPAT_DO_IT: "You can Consecrate Metropolitans in states with 30 development if all provinces are Orthodox and of an Accepted Culture.\n\nConsecrating a Metropolitan in $NAME|Y$ will give us $VAL$ Patriarch Authority, and the following permanent effect:\n$EFFECT$"
+ STAPAT_LOW_DEV: "Metropolitans can only be consecrated in states with at least $NEED
+ STAPAT_DO_IT: "You can Consecrate Metropolitans in states with 30 development if all provinces are Orthodox and of an Accepted Culture.\n\nConsecrating a Metropolitan in $NAME
  CONFIRCONSECRATEPATRIARCh: "Confirm Consecrate Metropolitan"
  CONFIRCONSECRATEPATRIARCH_TEXT: "$EFFECT$\nAre you sure?"
  CONSECRATE_BUTTON: "Consecrate Metropolitan"
  METROPOLITAN_EMPTY: "No Metropolitan"
  STATE_PATRIARCH_ALREADY_MAX_AUTH: "Patriarch Authority is already maximised."
- ORTHIC_NOT_CURR: "The '$NAME|Y$' is already our commissioned icon!"
- ORTHIC_NO_AUTH: "You need $VAL|Y$ Patriarch Authority to commission new icons to all churches, but you only have $CURR|Y$."
- ORTHIC_DO_IT: "Commissioning $NAME|Y$ to all churches will cost $COST|R$ Patriarch Authority, but give ($EFFECT$) until $UNTIL|Y$."
+ ORTHIC_NOT_CURR: "The '$NAME
+ ORTHIC_NO_AUTH: "You need $VAL
+ ORTHIC_DO_IT: "Commissioning $NAME
  CONFIRMICON: "Confirm Icon Commission"
  CONFIRMICON_TEXT: "$EFFECT$\nAre you sure?"
  NO_ICON_COMMISSIONED: "There is currently no icon commissioned."
  SELECT_ICON_TO_BECOMMISSIONED: "Select an icon to be commissioned."
- ORTHIC_LOSE: "You will lose the benefits you currently have from '$NAME|Y$'."
- PATRIARCH_MAP_TT_HAS: "$NAME|Y$ has a Metropolitan."
- PATRIARCH_MAP_TT_CAN: "$NAME|Y$ could get a Metropolitan."
- LASTS_ICON_UNTIL: "This lasts until $WHEN|Y$."
+ ORTHIC_LOSE: "You will lose the benefits you currently have from '$NAME
+ PATRIARCH_MAP_TT_HAS: "$NAME
+ PATRIARCH_MAP_TT_CAN: "$NAME
+ LASTS_ICON_UNTIL: "This lasts until $WHEN
  icon_michael: "Icon of St. Michael"
  desc_icon_michael: "Saint Michael, the Archistrategos, is the commander of the heavenly hosts and the Archangel who will defeat Satan in the war in Heaven. Icons of Saint Michaels are common throughout Orthodox Christendom and most Russian cities have a church dedicated to him."
  icon_eleusa: "Icon of Eleusa"
@@ -313,20 +313,20 @@
  RUSABIL_SUBEDNIK: "Reform Sudebnik"
  RUSABIL_OPRICHNINA: "Support Oprichnina"
  RUSABIL_STRELTSY: "Raise Streltsy"
- RUSABIL_SUBEDNIK_Q: "This will impact Autonomy by $CHANGE|G$ in all our Provinces."
+ RUSABIL_SUBEDNIK_Q: "This will impact Autonomy by $CHANGE
  RUSABIL_OPRICHNINA_Q: "This will impact progress for all rebel factions by $CHANGE$."
- RUSABIL_STRELTSY_Q: "This will impact war exhaustion by $CHANGE$ and raise $UNITS|Y$ Streltsy Regiments in our capital."
- RUSABIL_NOT_ENOUGH: "You need $NEED|Y$ power gathered to '$NAME|Y$' but you have only gathered $CURR|Y$."
- RUSABIL_NOT_AUTONOMY: "There are no provinces that has at least $VAL|Y$ autonomy that can be reduced by '$NAME|Y$'."
- RUSABIL_DO_IT_SUBEDNIK: "By using $VAL|Y$ gathered power for '$NAME|Y$', we will impact Autonomy by $CHANGE|G$ in all our Province(s).\nThere are $PROV|Y$ Province(s) that will be affected."
- RUSABIL_NO_REBELS: "There are no rebel factions with a progress of at least $VAL|R$, so there is no need to '$NAME|Y$'."
- RUSABIL_DO_IT_OPRI: "By using $VAL|Y$ gathered power for '$NAME|Y$', we will impact progress for all rebel factions by $CHANGE$."
- RUSABIL_NO_CAPITAL: "Your capital needs to be under your control for you to be able to '$NAME|Y$'."
- RUSABIL_DO_IT_STRELTSY: "By using $VAL|Y$ gathered power for '$NAME|Y$', we will impact war exhaustion by $CHANGE$ and raise $UNITS|Y$ Streltsy Regiments in our capital. "
+ RUSABIL_STRELTSY_Q: "This will impact war exhaustion by $CHANGE$ and raise $UNITS
+ RUSABIL_NOT_ENOUGH: "You need $NEED
+ RUSABIL_NOT_AUTONOMY: "There are no provinces that has at least $VAL
+ RUSABIL_DO_IT_SUBEDNIK: "By using $VAL
+ RUSABIL_NO_REBELS: "There are no rebel factions with a progress of at least $VAL
+ RUSABIL_DO_IT_OPRI: "By using $VAL
+ RUSABIL_NO_CAPITAL: "Your capital needs to be under your control for you to be able to '$NAME
+ RUSABIL_DO_IT_STRELTSY: "By using $VAL
  RUSABIL_STRELTSY_MODIFIER: "This will increase our stability cost to $MODIFIER$ by relying on these regiments."
- RUSABIL_POOL: "We gain §G+$GAIN$§! to the pool at the start of each year, up to a maximum of $MAX|Y$\nWe currently have $CURR|R$ and using an ability costs $NEED|Y$."
+ RUSABIL_POOL: "We gain §G+$GAIN$§! to the pool at the start of each year, up to a maximum of $MAX
  unconditional_surrender: "Unconditionally Surrendered"
- UNCONDITIONAL_UNSPORTING: "It is unsporting to unconditionally surrender before $VAL|Y$ months have passed in a war."
+ UNCONDITIONAL_UNSPORTING: "It is unsporting to unconditionally surrender before $VAL
  objectives_title: "Objectives"
  BANNERS_NOT_OURS: "If your primary culture is §YManchu§! you can raise Manchu Banners in provinces of Manchu Culture. Banners cost Corruption to raise and have higher Discipline than normal troops.\n\nYou can only raise banners from states that you own. Please select a province that you are the owner of."
  COALITION_WILL_FORM: "A Coalition may form against you with this treaty!"
@@ -340,14 +340,14 @@
  REINFORCE_COST_MODIFIED_BY: "Reinforcement costs are modified by:\n"
  NO_UNREST_IN_COLONY: "Colonies are too small to generate unrest."
  AUTONOMY_NO_AUTHOIRTY: "You have no authority to lose, so you can't increase autonomy."
- CURR_SPLENDOR_AGE_TT: "We have $VAL|Y$ Splendour."
+ CURR_SPLENDOR_AGE_TT: "We have $VAL
  BANNER_NAME: "$HOME$'s $NUM$$ORDER$ Banner"
  FE_ALLOW_NAME_CHANGE: "Allow Province Name Change"
  FE_ALLOW_NAME_CHANGE_DESC: "Allows players to change names of provinces."
  MODIFIER_MONTHLY_PIETY: "Monthly Piety"
  MODIFIER_MONTHLY_KARMA: "Monthly Karma"
  blockaded: "Blockaded"
- SEND_OFFICERS_MARCH_TOO_BIG: "You can't send officers to a subject that has more than $PERC|Y$ of your development.  They need to be less than $VAL|Y$ development."
+ SEND_OFFICERS_MARCH_TOO_BIG: "You can't send officers to a subject that has more than $PERC
  age_of_discovery_short: "Discovery"
  age_of_reformation_short: "Reformation"
  age_of_absolutism_short: "Absolutism"
@@ -428,7 +428,7 @@
  obj_two_institutions: "Control Institutions"
  obj_two_institutions_desc: "Own and Control at least 2 origins of institutions."
  CONFIRAGEABILITY: "Confirm Ability"
- CONFIRAGEABILITY_TEXT: "Selecting $ABILITY|Y$ will grant\n$EFFECT$\nuntil the start of next age.\nAre you sure?"
+ CONFIRAGEABILITY_TEXT: "Selecting $ABILITY
  ab_allow_feudal_de_jure_law: "Feudal De Jure Law."
  ab_justified_wars: "Justified Wars"
  ab_claim_duration: "Longer Claim Duration"
@@ -491,15 +491,15 @@
  war_exhaustion_abs_impact: "Reduce War Exhaustion: $VAL$\n"
  strengthen_government_abs_impact: "Strengthen Government: $VAL$\n"
  MERC_BASE: "Mercenary:"
- FROM_ADM_EFF: "Administrative Efficiency: $VAL|%=+1$"
+ FROM_ADM_EFF: "Administrative Efficiency: $VAL
  ABSO_YEARLY_CHANGE: "Changes by $CHANGE$ each year due to:\n$EFF$"
  AGE_ABSOLUTE_ALLOW: "(Enables the Absolutism mechanics.)"
  AGE_ABSOLUTE_RELIGIOUS_CONFLICTS: "(Enables the Religious Conflicts.)"
  ALREADY_GOLDEN_ERA: "You have already enacted a Golden Era. "
  START_GOLDEN_AGE: "Start Golden Era"
- WE_ARE_IN_A_GOLDEN_ERA: "We are already in a golden era. The Golden Era will last until $UNTIL|Y$.\nA golden era has the following effects:\n$EFFECTS$"
- GOLDEN_ERA_NOT_NUF: "To enact a Golden Era you need to have at least $NUM|Y$ objectives fulfilled.\nA Golden Era have the following effects:\n$EFFECTS$"
- GOLDEN_ERA_ENACT: "A Golden Era lasts for $YEARS|Y$ years, and give the following effects:\n$EFFECTS$\nPlease be aware that a golden era can only be enacted once by a country in a campaign."
+ WE_ARE_IN_A_GOLDEN_ERA: "We are already in a golden era. The Golden Era will last until $UNTIL
+ GOLDEN_ERA_NOT_NUF: "To enact a Golden Era you need to have at least $NUM
+ GOLDEN_ERA_ENACT: "A Golden Era lasts for $YEARS
  GOLDENAGETTITLE: "Start Golden Era!"
  PRESTIGE_FROM_CONV: "This increases our prestige by §G+$VAL$§!."
  KARMA_FROM_CONV: "This increases our karma by §G+$VAL$§!."
@@ -512,15 +512,15 @@
  IGNORE_CORING_DISTANCE: "Ignore Coring Distance"
  FORCE_MARCH_FREE: "Force March costs no Power"
  SPLENDOR_MONTHLY_GAIN: "You gain $VAL$ splendour each month due to:\n"
- ADD_AGE_AB_NOT_ENOUGH_SPLENDOR: "You need more splendour, as it costs $NEED|Y$ to purchase, and you only have $CURR|Y$."
- AGE_STARTS_WHEN: "This age starts when\n$HOW$\nhas been true for at least $MONTHS|Y$ months."
+ ADD_AGE_AB_NOT_ENOUGH_SPLENDOR: "You need more splendour, as it costs $NEED
+ AGE_STARTS_WHEN: "This age starts when\n$HOW$\nhas been true for at least $MONTHS
  AGE_FOLLOWING_OBJECTIVES: "§YObjectives§!"
  AGE_FOLLOWING_OBJECTIVESNC: "With the following objectives:\n"
- CURR_AGE_TRIG_NOT: "It is NOT the $NAME|Y$.\n"
- CURR_AGE_TRIG: "It is currently the $NAME|Y$.\n"
- SPY_OFFENCE_DISC_PENALTY: "Spy Discovered: $VAL|%2+=$"
- ABSOLUTISM_DEC_BY: "Centralisation decreases by $VAL|R$"
- ABSOLUTISM_INC_BY: "Centralisation increases by $VAL|G$"
+ CURR_AGE_TRIG_NOT: "It is NOT the $NAME
+ CURR_AGE_TRIG: "It is currently the $NAME
+ SPY_OFFENCE_DISC_PENALTY: "Spy Discovered: $VAL
+ ABSOLUTISM_DEC_BY: "Centralisation decreases by $VAL
+ ABSOLUTISM_INC_BY: "Centralisation increases by $VAL
  CAN_NOT_JOIN_OFFENSIVE_WARS_INTRUCE: "Trucebreaking is not valid for offensive wars."
  STV_LVL_CORE: "§YOur cores§!"
  STV_LVL_NAME: "§YProvince Name§!"
@@ -531,19 +531,19 @@
  STV_LVL_FORT: "§YFort Level§!"
  BANNER_NOWHERE_TO_GO: "There are no provinces fully under our control in $NAME$ for us to be able to raise the banners."
  BANNER_NONE_AVAIL:2 "There are not enough Manchu People in full cores within the $NAME$ to raise any banners."
- BANNER_ALL_RAISED: "$NAME$ can not raise more banners, as there are already $CURR|Y$ raised.\n"
- BANNER_TOO_HIGH_CORRUPTION: "Raising this banner would increase our corruption by $VAL|R$, taking us beyond 100."
+ BANNER_ALL_RAISED: "$NAME$ can not raise more banners, as there are already $CURR
+ BANNER_TOO_HIGH_CORRUPTION: "Raising this banner would increase our corruption by $VAL
  RAISE_MANCHU_BANNERS: "Raise Banners"
- BANNER_TXT: "$CURR|Y$ of $ALLOW|Y$"
- BANNERS_FROM_TT:2 "\nBanners cost Corruption to raise and have higher Discipline than normal troops.\n\nBanners are raised from the state's full core provinces with Manchu culture.\n\n$NAME$ can raise a total of $AMOUNT|Y$ Banners due to the development in:\n"
- STATE_CORRUPTION_INC: "Raising $RAISED|Y$ regiments as banners will increase corruption by $INC$.\n"
- STATE_EDICT_NOT_REMOVE: "§tCurrently active edict:§!\n\n$ACTIVE|Y$\n\nThe edict can not be changed or removed until $WHEN|Y$."
+ BANNER_TXT: "$CURR
+ BANNERS_FROM_TT:2 "\nBanners cost Corruption to raise and have higher Discipline than normal troops.\n\nBanners are raised from the state's full core provinces with Manchu culture.\n\n$NAME$ can raise a total of $AMOUNT
+ STATE_CORRUPTION_INC: "Raising $RAISED
+ STATE_EDICT_NOT_REMOVE: "§tCurrently active edict:§!\n\n$ACTIVE
  CLICK_TO_REMOVE_EDICT: "Click to remove this edict."
- CLICK_TO_ENACT_EDICT: "$EDICT$ $MODIFIER$\n\nEnact State Edict until at least $UNTIL|Y$. The monarch power is deducted on a yearly basis."
+ CLICK_TO_ENACT_EDICT: "$EDICT$ $MODIFIER$\n\nEnact State Edict until at least $UNTIL
  VIEW_STATE_EDICTS: "View Edicts"
  NO_CURRRENT_EDICT: "No Current Edict"
  CONFIRSTATEEDICT: "Confirm State Edict"
- CONFIRSTATEEDICT_TEXT: "Enacting\n\n $EDICT|Y$\n\nin $STATE$ for at least $DURATION$ months.\nAre you sure?"
+ CONFIRSTATEEDICT_TEXT: "Enacting\n\n $EDICT
  CONFIRRAISEBANNER: "Confirm Raise Banner"
  CONFIRRAISEBANNER_TEXT: "$EFFECT$\nAre you sure?"
  EFFECT_ARE_YOU_SURE: "$EFFECT$\nAre you sure?"
@@ -603,15 +603,15 @@
  STATE_MAINTENANCE_LABEL: "$OWNER$ Maintenance:"
  TOGGLE_EDICTS_OFF: "Click to close the edicts selection."
  TOGGLE_EDICTS_ON: "Click to open the edicts selection."
- TOGGLE_EDICTS_NOT_OURS: "You do not own $PROV|Y$."
+ TOGGLE_EDICTS_NOT_OURS: "You do not own $PROV
  EMBRACED: "Embraced"
  PRESENT: "Present"
  NOT_CREATED: "§gNot created§!"
  EMBRACE_RATIO2: "The following provinces haven't embraced $NAME$ and incur extra costs:\n"
- EMBRACE_RATIO3: "(and $COST|Y$¤ from $NUM$ other provinces)\n"
+ EMBRACE_RATIO3: "(and $COST
  PRESENCE_IN_COUNTRY: "Presence in $NAME$"
- HAS_EMBRACED: "Has embraced $INSTITUTION|Y$\n\n§UEducation:§!"
- NO_TRADE_COMPANY_RECENTLY_REMOVED: "Can not add this province to a Trade Company until $WHEN|Y$."
+ HAS_EMBRACED: "Has embraced $INSTITUTION
+ NO_TRADE_COMPANY_RECENTLY_REMOVED: "Can not add this province to a Trade Company until $WHEN
  CURRENT_PENALTY: "Current Technology Cost Penalty"
  MODIFIER_LOCAL_FRIENDLY_MOVEMENT_SPEED: "Friendly Movement Speed"
  MODIFIER_LOCAL_HOSTILE_MOVEMENT_SPEED: "Hostile Movement Speed"
@@ -626,31 +626,31 @@
  OPEN_COUNTRY_VIEW: "Open/Close Country View"
  RANK_OF_COUNTRY: "$RANK$ of $COUNTRY$"
  REM_ACC_CUL_UNREST_HIT: "§YUnrest§! in all $CULTURE$ provinces will rise by $VAL$."
- REM_ACC_CULT_UNREST_DECAY_TIME: "The unrest will disappear after $YEARS|Y$ years."
+ REM_ACC_CULT_UNREST_DECAY_TIME: "The unrest will disappear after $YEARS
  GREAT_POWER_RANK: "$COUNTRY$ is ranked §Y#$NUM$§! among the Great Powers."
- GREAT_POWER_UNTIL: "$COUNTRY$ will remain a Great Power until $DATE|Y$."
+ GREAT_POWER_UNTIL: "$COUNTRY$ will remain a Great Power until $DATE
  GREAT_POWER_EFF: "Our Great Power status has the following effects:\n"
- GREAT_POWER_MUST_BEAT_BECOME: "To become a Great Power, we must beat $OTHER|Y$, with their Great Power Rating of $SCORE|Y$.\n"
- GREAT_POWER_MUST_BEAT_REMAIN: "To remain a Great Power, we must beat $OTHER|Y$, with their Great Power Rating of $SCORE|Y$.\n"
- GREAT_POWER_MUST_BEAT_INCREASE: "To increase in rank, we must beat $OTHER|Y$, with their Great Power Rating of $SCORE|Y$.\n"
- GREAT_POWER_MUST_BEAT_DECREASE: "To keep our current rank, we must remain ahead of $OTHER|Y$, with their Great Power Rating of $SCORE|Y$.\n"
- GP_NAME_TT: "$WHO|Y$ is a Great Power from $WHERE|Y$."
- GP_MINOR_NAME_TT: "$WHO|Y$ is a Minor Power from $WHERE|Y$"
- GP_RANK_TT: "There are a maximum of $MAX|Y$ Great Powers at any time."
+ GREAT_POWER_MUST_BEAT_BECOME: "To become a Great Power, we must beat $OTHER
+ GREAT_POWER_MUST_BEAT_REMAIN: "To remain a Great Power, we must beat $OTHER
+ GREAT_POWER_MUST_BEAT_INCREASE: "To increase in rank, we must beat $OTHER
+ GREAT_POWER_MUST_BEAT_DECREASE: "To keep our current rank, we must remain ahead of $OTHER
+ GP_NAME_TT: "$WHO
+ GP_MINOR_NAME_TT: "$WHO
+ GP_RANK_TT: "There are a maximum of $MAX
  GP_TECH_TT: "Technology cost affected by:\n"
- TRADE_COMPANY_PENALTY: "Gaining $EFFECT$ until $DATE|Y$"
+ TRADE_COMPANY_PENALTY: "Gaining $EFFECT$ until $DATE
  left_trade_company: "Left Trade Company"
  WILL_LOSE_POWER_AT_EMBRACE: "After embracing this institution, you will lose $LOSS$ due to a lowered maximum storage of monarch power."
  LEDGER_LOCAL_TRADE_GOODS_BONUS: " - $EFF$ to the controller."
- PROV_PRODUCED_GOODS: "Producing $GOOD|Y$"
- OUR_CURRENT_SCORE: "Our current Rating is $SCORE|Y$."
- MACRO_TEMPLATE_MAINT_COST_TT: "Estimated Cost: $VAL|Y$¤"
+ PROV_PRODUCED_GOODS: "Producing $GOOD
+ OUR_CURRENT_SCORE: "Our current Rating is $SCORE
+ MACRO_TEMPLATE_MAINT_COST_TT: "Estimated Cost: $VAL
  CVIEW_OVEREXTENSION_AFFECTS: "§YEffects from our current Overextension:§!"
  USE_ANY_IDEAGROUP: "No limits on Idea Groups"
  FE_NO_LIMITS_ON_IDEAS_DESC: "You can pick any idea group, and are no longer limited from picking the same category all the time."
- DISHONORED_PENALTY_UNTIL: "If we decline, we also gain $EFFECT$ until $WHEN|Y$."
+ DISHONORED_PENALTY_UNTIL: "If we decline, we also gain $EFFECT$ until $WHEN
  HOSTILE_ATTRITION_IN_PROV: "Hostile Attrition: $VAL$"
- WOULD_BE_OVEREXTENDED: "$COUNTRY|Y$ would be §R$AMOUNT$%§! overextended."
+ WOULD_BE_OVEREXTENDED: "$COUNTRY
  HAS_NO_FRIENDLY_REFORMATION_CENTER: "Has NO $NAME$ Reformation Centres"
  HAS_FRIENDLY_REFORMATION_CENTER: "Has a $NAME$ Reformation Centre"
  HAS_NO_HOSTILE_REFORMATION_CENTER: "Has NO hostile Reformation Centres"
@@ -671,16 +671,16 @@
  ABANDONSTATE_NOT_OUR: "We do not own $NAME$, so we cannot abandon it to become a territory.\n"
  ABANDONSTATE_CAPITAL: "It is not possible to abandon the state our capital is in.\n"
  ABANDONSTATE_MAKE: "$NAME$ is a §YState§!.\n(Click to make it a territory)"
- ABANDONSTATE_HAS_ESTATE:2 "It is not possible to abandon this state since $PROVINCENAME|Y$ belongs to an Estate.\n"
+ ABANDONSTATE_HAS_ESTATE:2 "It is not possible to abandon this state since $PROVINCENAME
  STATE_IRO: "$NAME$ is a §YState§!."
  STATE_DRO: "A realm is divided into several territories, where all provinces owned in an area make up one territory. A territory can be made into a state of the nation, which is an integral part of the realm. This will cost some maintenance depending on the distance from the capital, while reducing its minimum autonomy dramatically.\n\nThe maximum number of states can be increased by increasing government rank, advancing administrative technology and completing the Administrative Ideas group."
  CONFIRMAKESTATETITLE: "Turn Territory into State"
- CONFIRMMAKESTATETEXT: "Making $NAME$ into a State will cost us $COST|Y$¤ in maintenance every month, while it will increase our income by about $INC|Y$¤ when autonomy has been reduced to lower levels. It will also increase our manpower and sailors from the area."
+ CONFIRMMAKESTATETEXT: "Making $NAME$ into a State will cost us $COST
  CONFIRABANDONSTATEITLE: "Abandon State into a Territory"
- CONFIRMABANDONSTATETEXT: "By no longer considering $NAME$ as a State, we will no longer be forced to pay $COST|Y$¤ maintenance every month, but their local autonomy in the provinces will increase to a much higher level."
+ CONFIRMABANDONSTATETEXT: "By no longer considering $NAME$ as a State, we will no longer be forced to pay $COST
  CONFIRMABANDONSTATECORECOST: "All your Cores in this State will become Territorial Cores.\nMaking them full Cores again will cost a total of §R$COST$§!£adm£."
- STATES_INFO_TEXT: "$VAL|Y$ States"
- TERRITORIES_INFO_TEXT: "$VAL|Y$ Territories"
+ STATES_INFO_TEXT: "$VAL
+ TERRITORIES_INFO_TEXT: "$VAL
  LEDGER_REGIONS: "States & Territories"
  LEDGER_STATE: "State"
  LEDGER_PROVS: "Provinces"
@@ -689,20 +689,20 @@
  blockade_missions_mod: "Blockading Ships"
  DISPUTED_SUCC_ALERT_TXT: "$COL$$NAME$§! ($AGE$ Years) - Prestige: §!§R$PRESTIGE$§!"
  LEDGER_HR_RULERS: "Current Rulers"
- GOLD_DEPLETE_TOO_LOW: "With a base production below $LEVEL|Y$, there is no risk of this gold mine depleting."
+ GOLD_DEPLETE_TOO_LOW: "With a base production below $LEVEL
  GOLD_DEPLETE_WARNING: "§RIncreasing the gold production of this province to§! §Y$PROD$§!§R will result in a §Y$CHANCE$%§!§R chance of the mine depleting each year, halving its production.§!\n\n"
- GOLD_DEPLETE_CHANCE: "With a base production of $PROD|Y$ there is a §R$CHANCE$%§! chance of the mine depleting each year, halving its production."
- MODIFIER_IN_COUNTRY: "$MODIFIER|Y$"
+ GOLD_DEPLETE_CHANCE: "With a base production of $PROD
+ MODIFIER_IN_COUNTRY: "$MODIFIER
  MODIFIERS_IN_COUNTRY: "Modifiers in $COUNTRY$"
- CANNOT_DECLARE_WAR_FIRST_MONTH: "You must wait until $DATE|Y$ to declare any wars."
- CANNOT_THREATEN_WAR_FIRST_MONTH: "You must wait until $DATE|Y$ to Threaten War."
+ CANNOT_DECLARE_WAR_FIRST_MONTH: "You must wait until $DATE
+ CANNOT_THREATEN_WAR_FIRST_MONTH: "You must wait until $DATE
  LEDGER_PLAYER: "Player"
  recovery_motivation: "Revanchism"
  NO_REVANCHISM_IRO: "Does not have any level of Revanchism in the country."
  REVANCHISM_IRO: "§YRevanchism§!\n$NAME$ is currently experiencing Revanchism, which gives the following effect:\n$EFF$"
  non_core: "Not a Core"
  OCCUPATION_OF: "Occupation of"
- NO_FORT_WILL_FALL_AFTER_N_DAYS: "There is no fort protecting $NAME|Y$, and thus it will be fully occupied at $DATE|Y$."
+ NO_FORT_WILL_FALL_AFTER_N_DAYS: "There is no fort protecting $NAME
  NOAS_NO_BREACH: "You cannot assault a fortress without a breach."
  NOAS_NO_FORT: "Without a fort, there is nothing to assault."
  NOAB_NO_FORT: "There is no fort, so there are no walls to barrage."
@@ -712,28 +712,28 @@
  NOAB_NOT_LEADING: "You can not order an artillery barrage if you are not in the command of the siege."
  NOAB_NO_POINTS: "You need §Y$COST$§!£mil to order an artillery barrage, and you only have §Y$VAL$§!."
  ORDER_ARTILLERY_BARRAGE_IRO: "Ordering an artillery barrage will create a breach for a cost of §Y$COST$§W£mil ."
- NOAB_NOT_ENOUGH_ART: "You need to have at least a full artillery regiment for each Fort Level to do an efficient barrage. You only have $ART|Y$ artillery, while the fort is worth $FORT|Y$."
+ NOAB_NOT_ENOUGH_ART: "You need to have at least a full artillery regiment for each Fort Level to do an efficient barrage. You only have $ART
  WARSCORE_NO_FORT: "No fortress: $VALUE$\n"
  opinion_forced_return_territory: "Forced us to return land"
- FORT_LEVEL_NOT_TRIGGER: "Fort Level less than $VALUE|Y$.\n"
- FORT_LEVEL_TRIGGER: "Fort Level is at least $VALUE|Y$.\n"
+ FORT_LEVEL_NOT_TRIGGER: "Fort Level less than $VALUE
+ FORT_LEVEL_TRIGGER: "Fort Level is at least $VALUE
  HAS_NOT_INFLUENCING_FORT: "Does not have an Influencing Fort"
  HAS_INFLUENCING_FORT: "Has Influencing Fort"
  NO_POSSIBLE_BUILDINGS: "There are no possible buildings that can be built here."
  BUILDING_BLOCKED_WRONG_MANU: "$NAME$ is the wrong type of manufactory.\n"
  BUILDING_BLOCKED_WRONG_OBSOLETE: "$NAME$ is too obsolete by now.\n"
  BUILDING_BLOCKED_NOT_TECH: "$NAME$ requires too advanced technology.\n"
- PARLIAMENT_BACKING_PROG: "$CURR|Y$ of our $TOTAL|Y$ seats are currently backing us, giving us a §Y$CHANCE$%§! chance of winning the debate."
- NEXT_DEBATE_ALLOWED: "The $NAME$ is busy making sure the last edicts are being followed, and we can have our next issue presented to them at $DATE|Y$."
+ PARLIAMENT_BACKING_PROG: "$CURR
+ NEXT_DEBATE_ALLOWED: "The $NAME$ is busy making sure the last edicts are being followed, and we can have our next issue presented to them at $DATE
  PARLIAMENT_CHANCE_DEBATE_ENDS: "Chance to end:"
  PARLIAMENT_CHANCE_TO_WIN: "Chance to win:"
- PARLIAMENT_CURRENT_ISSUE_TITLE: "Debated Issue: $NAME|Y$"
- PARLIAMENT_ENACTED_ISSUE_TITLE: "Enacted Issue: $NAME|Y$"
+ PARLIAMENT_CURRENT_ISSUE_TITLE: "Debated Issue: $NAME
+ PARLIAMENT_ENACTED_ISSUE_TITLE: "Enacted Issue: $NAME
  dismiss_button: "Retire Advisor"
  CONFIRMDISMISSTITLE: "Retire Advisor"
- CONFIRMDISMISSDESC: "Permanently retiring an advisor from advisor pool will cost $COST|Y$¤. If there are less than §Y$SIZE$§! advisors in the same category in your court, a new one may take their place."
- DISMISS_ADVISOR_NOT_AFFORD: "You need at least $COST|Y$¤ to dismiss this advisor."
- DISMISS_ADVISOR_INFO: "Retiring this advisor will cost $COST|Y$¤ and free up their slot for a new advisor."
+ CONFIRMDISMISSDESC: "Permanently retiring an advisor from advisor pool will cost $COST
+ DISMISS_ADVISOR_NOT_AFFORD: "You need at least $COST
+ DISMISS_ADVISOR_INFO: "Retiring this advisor will cost $COST
  DISMISS_ADVISOR: "Retire"
  native_assimilation: "Assimilated Natives"
  swedish_hats: "Hats in Power"
@@ -826,14 +826,14 @@
  FE_LIMITED_LEDGER: "Limited Ledger"
  FE_LIMITED_LEDGER_DESC: "Reduces the amount of information given by the ledger in game. Can be used in multiplayer to prevent players from gaining access to information that is unknown."
  AFFECTED_BY_AUTONOMY: "Reduced by $AMT$ due to the local autonomy in the province."
- PI_GRANTS: "And for the next $DURATION|Y$ years:\n$MOD$"
- PARLIAMENT_SMALLER_THAN: "$NAME$ has less than $VAL|Y$ seats.\n"
- PARLIAMENT_AT_LEAST: "At least $VAL|Y$ seats in $NAME$.\n"
+ PI_GRANTS: "And for the next $DURATION
+ PARLIAMENT_SMALLER_THAN: "$NAME$ has less than $VAL
+ PARLIAMENT_AT_LEAST: "At least $VAL
  PARL_ISSUE_TITLE: "Select Issue to push through $NAME$"
  SEAT_PRO_ISSUE: "This seat is backing the current issue."
  SEAT_BRIBE2: "$NAME$ is currently opposing this issue. You can bribe them to back the issue, but that will have the following effects:\n"
  SEAT_AGAINST_ISSUE: "This seat is opposing the current issue."
- PARLIAMENT_NEEDED: "With §Y$COUNTRY|Y$§! non-overseas cities and a $NAME$ that requires at least §Y$PERC$%§! of its provinces represented, we need $NEED|Y$ seats in it."
+ PARLIAMENT_NEEDED: "With §Y$COUNTRY
  TRIG_HAS_NO_PARLIAMENT: "Have No Parliament\n"
  TRIG_HAS_PARLIAMENT: "Have a Parliament\n"
  TRIG_HAS_NO_SEAT_IN_PARL: "$NAME$ does NOT have a seat in $PARL$.\n"
@@ -842,24 +842,24 @@
  TRIG_HAS_ACTIVE_DEBATE: "Has an active debate in $NAME$.\n"
  CURR_DEBATE_TRIG_NOT: "$NAME$ is not in an active debate.\n"
  CURR_DEBATE_TRIG: "$NAME$ is in an active debate.\n"
- REMOVE_SEAT_PARL_EFFECT: "$NAME|Y$ loses its seat in $PARL$.\n"
- ADD_SEAT_PARL_EFFECT: "$NAME|Y$ gains a seat in $PARL$.\n"
- STOP_BACK_CURR_ISSUE_EFFECT: "$NAME|Y$ now opposes $ISSUE|Y$.\n"
- BACK_CURR_ISSUE_EFFECT: "$NAME|Y$ will now back support $ISSUE|Y$.\n"
+ REMOVE_SEAT_PARL_EFFECT: "$NAME
+ ADD_SEAT_PARL_EFFECT: "$NAME
+ STOP_BACK_CURR_ISSUE_EFFECT: "$NAME
+ BACK_CURR_ISSUE_EFFECT: "$NAME
  CONFIRADDSEATINPARLIAMENTITLE: "Give Seat in $NAME$"
- CONFIRMADDSEATINPARLIAMENTTEXT: "Giving $PROV|Y$ a seat will let them vote on issues in $NAME$ and have the following effects on the province:\n$EFF$"
- SEAT_IN_PARLIAMENT: "$NAME|Y$ has a seat in $PARL$."
- CASIP_NOCORE: "$NAME|Y$ must be a core to give it a seat in $PARL$."
- CASIP_ALREADYSEAT: "$NAME|Y$ already have a seat in $PARL$."
- CASIP_ESTATE: "$NAME|Y$ is controlled by the $ESTATE|Y$."
- CASIP_TERRITORY: "$NAME|Y$ is in a territory, and only provinces in states can be represented in $PARL$."
+ CONFIRMADDSEATINPARLIAMENTTEXT: "Giving $PROV
+ SEAT_IN_PARLIAMENT: "$NAME
+ CASIP_NOCORE: "$NAME
+ CASIP_ALREADYSEAT: "$NAME
+ CASIP_ESTATE: "$NAME
+ CASIP_TERRITORY: "$NAME
  CASIP_GOV_NOT: "A $NAME$ does not allow a $PARL$."
  MOVE_CAPITAL_STATE_RULE: "You can only move the capital to a province inside a state."
  CONDENSED_PROV_MOD_FORCE: "From $NUM$ Provinces: $VAL$"
  EVTOPT5073_new: "Increase Production"
  GOV_HAS_PARLIAMENT: "Has $NAME$"
  MACRO_IS_ONE_PER_COUNTRY: "Only one per country allowed."
- BUILD_BUILDING_COST_TOO_HIGH: "Cannot afford the $COST|Y$¤ needed."
+ BUILD_BUILDING_COST_TOO_HIGH: "Cannot afford the $COST
  MODIFIER_ALLOWED_NUM_OF_BUILDINGS: "Possible Number of Buildings"
  BUILDING_NOT_IN_GOLD_PROVINCE: "$NAME$ cannot be built in a province that produces $GOODS$."
  TOO_MANY_BUILDINGS: "We cannot construct more buildings in this province."
@@ -874,8 +874,8 @@
  FORT_CURRENTLY_HALF_MAIN: "This fortress is mothballed, costing us §Y$CASH$§!¤ every month. Mothballed fortresses cost only half maintenance but have no garrison ready to defend them."
  FORT_CURRENTLY_WITH_MAIN: "This fortress is fully maintained, costing us §Y$CASH$§!¤ every month."
  FORT_MAIN_DRO: "§GClick to toggle maintenance§!"
- FORT_MAINTENANCE_ECO_IRO: "We are paying maintenance for $PAID|Y$ fortresses, of which $MOTH|Y$ are currently mothballed."
- FORT_MAINTENANCE_ECO_IRO_2: "$MOTH|Y$ enemy fortresses are mothballed and cost us nothing."
+ FORT_MAINTENANCE_ECO_IRO: "We are paying maintenance for $PAID
+ FORT_MAINTENANCE_ECO_IRO_2: "$MOTH
  FORT_MAIN_NONC: "Maintenance can only be toggled on forts you control, as those are the only ones you pay money for."
  FORT_MAIN_SIEGE: "Maintenance cannot be toggled when the province is under siege!"
  OFR_DEVELOPMENT_LESS_THAN: "Total Development less than §Y$VAL$%§! of $OVERLORD$\n"
@@ -895,22 +895,22 @@
  IMPR_PROD_IMCOME: " Monthly Production Income: §G+$VAL$§!¤"
  IMPR_GOLD_IMCOME: " Monthly Gold Income: §G+$VAL$§!¤"
  IMPR_TRADE_VALUE: " Trade Value: §G+$VAL$§!¤ ($TRADE_GOOD$)"
- IMPPR_DO: "$ACTION|G$\n--------------\nThe §YCycle UI Layer§! button will allow you to cycle the layer of province's UI modifiers. When cycled, those modifiers will display different informations that can be categorized into general, economy, and politics. \n\nThe §YSelect Province Button§! button will allow you to select this province to interact with it. When selected the province will get a flag, which allows it to be targeted by other game systems. If the button is gray, use the other half that is colorised.\n--------------"
+ IMPPR_DO: "$ACTION
  IMPPR_TOO_MUCH_ONE_TYPE_ADM: "§GCycle UI Layer§!\n\nThis button will allow you to cycle the layer of province's UI modifiers. When cycled, those modifiers will display different informations that can be categorized into general, economy, and politics."
  IMPPR_TOO_MUCH_ONE_TYPE_DIP: "§GSelect Province Button§!\n\nThis button will allow you to select this province to interact with it. When selected the province will get a flag, which allows it to be targeted by other game systems. If the button is gray, use the other half that is colorised."
  IMPPR_TOO_MUCH_ONE_TYPE_MIL: "§GSelect Province Button§!\n\nThis button will allow you to select this province to interact with it. When selected the province will get a flag, which allows it to be targeted by other game systems. If the button is gray, use the other half that is colorised."
- IMPPR_NOT_OWNING_PROVINCE: "You cannot $ACTION|Y$ in a province that you do not own."
- IMPPR_NOT_OWN_NOR_SUBJ_OWN_PROVINCE: "You cannot $ACTION|Y$ in a province unless it is owned by you or one of your subjects."
- IMPPR_NOT_CONTROLLING_PROVINCE: "You cannot $ACTION|Y$ in a province that you do not control."
- IMPPR_NOT_CONTROLLING_PROVINCE_SUBJ: "You cannot $ACTION|Y$ in this province unless it is controlled by your subject."
- IMPPR_UNDER_SIEGE: "You cannot $ACTION|Y$ in a province that is under siege."
- IMPPR_COLONY: "$NAME$ is still a colony, so it is not possible to $ACTION|Y$ in it yet."
- IMPPR_NOTCORE: "$NAME$ is not one of our cores, so it is not possible to $ACTION|Y$ in it yet."
- IMPPR_NOTCORE_SUBJECT: "$NAME$ is not one of our subject's cores, so it is not possible to $ACTION|Y$ in it yet."
- IMPPR_NOT_ENOUGH_POWER: "§RYou do not have the $POWER|Y$ $TYPE$ Power required to $ACTION$ in $NAME$.§!"
- IMPROVED_COUNT_TRIGGER_LESS: "Have been improved less than $VAL|Y$ times.\n"
- IMPROVED_COUNT_TRIGGER_AT_LEAST: "Have been improved at least $VAL|Y$ times.\n"
- IMPR_FINAL_BASE_COST: "Final Base Cost: $FINALBASECOST|Y$"
+ IMPPR_NOT_OWNING_PROVINCE: "You cannot $ACTION
+ IMPPR_NOT_OWN_NOR_SUBJ_OWN_PROVINCE: "You cannot $ACTION
+ IMPPR_NOT_CONTROLLING_PROVINCE: "You cannot $ACTION
+ IMPPR_NOT_CONTROLLING_PROVINCE_SUBJ: "You cannot $ACTION
+ IMPPR_UNDER_SIEGE: "You cannot $ACTION
+ IMPPR_COLONY: "$NAME$ is still a colony, so it is not possible to $ACTION
+ IMPPR_NOTCORE: "$NAME$ is not one of our cores, so it is not possible to $ACTION
+ IMPPR_NOTCORE_SUBJECT: "$NAME$ is not one of our subject's cores, so it is not possible to $ACTION
+ IMPPR_NOT_ENOUGH_POWER: "§RYou do not have the $POWER
+ IMPROVED_COUNT_TRIGGER_LESS: "Have been improved less than $VAL
+ IMPROVED_COUNT_TRIGGER_AT_LEAST: "Have been improved at least $VAL
+ IMPR_FINAL_BASE_COST: "Final Base Cost: $FINALBASECOST
  IMPR_TOTAL_FURTHER_MODIFIED_BY: ""
  IMPR_FINAL_COST: ""
  CRUSADER_BENEFIT: "Joining the crusader, and paying full maintenance on your armies will give\n$WHAT$"
@@ -943,8 +943,8 @@
  MODIFIER_MONARCH_MILITARY_POWER: "Monarch Military Skill"
  SLAVERAID_LACKS_IDEA: "You lack the idea to raid coastal provinces for ¤ & £icon_sailors£!"
  SLAVERAID_FLEET_NEEDS_TO_BE_AT_SEA: "A Navy needs to be at sea to raid."
- SLAVERAID_NOT_ON_FRIENDS: "You cannot raid your friends in $NAME|Y$.\n"
- SLAVERAID_NOT_ON_RELIGION: "You cannot raid the $RELIGION$ in $NAME|Y$.\n"
+ SLAVERAID_NOT_ON_FRIENDS: "You cannot raid your friends in $NAME
+ SLAVERAID_NOT_ON_RELIGION: "You cannot raid the $RELIGION$ in $NAME
  SLAVERAID_FLEET_TO_WEAK: "This fleet is too small and weak to raid $NAME$, its blockading power is §Y$CURR$§! but need §R$NEED$§! to raid.\n"
  SLAVE_RAID_IMPACT: "$VAL$ effective raiding $WHERE$.\n"
  SLAVE_RAID_NO_TARGETS: "No valid targets nearby."
@@ -952,27 +952,27 @@
  SLAVE_RAID: "§YRaid Coasts§!"
  SLAVE_RAID_DESC: "A fleet is able to raid the surrounding coastlines for sailors and gold, provided it belongs to a nation with appropriate ideas. Other fleets currently hunting for pirates in the region reduce its effectiveness."
  SLAVERAID_TOTAL_INCOME: "This raid would give $CASH$¤ & $SAILORS$£icon_sailors£"
- SAILORPRES_IRO: "$NAME|Y$ is taking the £icon_sailors£ sailors to their pool."
+ SAILORPRES_IRO: "$NAME
  SLAVERAID_FLEET_NEEDS_TO_BE_NOT_COMBAT: "It is not possible to raid while in combat."
  SLAVERAID_FLEET_TOO_FAR_FROM_HOME: "This is too far away from our homelands to raid securely."
  slaves_raided: "Raided Coast"
  desc_slaves_raided: "The province was attacked by a fleet with the Raid Coasts action recently, and has suffered looting as a consequence. It cannot be raided again until this modifier expires."
  aragonese: "Aragonese"
  violated_tordesillas: "Violated Treaty of Tordesillas"
- MACRO_OBSOLETE_BY_OTHER: "There is already an $BUILDING|Y$ in $PROVINCE$ which makes $NEW$ too obsolete to be built."
- MAKES_OBSOLETE: "Replaces $NAME|Y$."
+ MACRO_OBSOLETE_BY_OTHER: "There is already an $BUILDING
+ MAKES_OBSOLETE: "Replaces $NAME
  PAPAL_GRANT: "Claimed by $WHO$"
  PAPAL_GRANTED: "The entire $COLONIAL_REGION$ is granted to $COUNTRY$."
  PAPAL_GRANT_ADVISE: "§YIt is not adviseable for us to settle here as a fellow Catholic country, since it will upset our relation with both $COUNTRY$ and $PAPALNATION$, as well as making it harder for us to attract settlers.§!"
  large_colonial_nation: "Large Colonial Nation"
  START_PIRATEHUNT_MISSION: "Hunt Pirates"
  START_PIRATEHUNT_MISSION_DESC: "Sending a fleet to hunt pirates will reduce the efficiency of Privateers in that Trade Node. Galleys can only hunt in inland seas."
- PIRATE_HUNT_TOOLTIP: "With a total of $HUNT|Y$ guns in pirate hunting, and $PIRATE|Y$ guns privateering, the penalty to privateering in this node is $PENALTY$%."
+ PIRATE_HUNT_TOOLTIP: "With a total of $HUNT
  STOP_PIRATEHUNT_MISSION: "Stop hunting for pirates"
  PIRATE_HUNT_NAVY_NO_SHIPS: "You need to have heavy ships, light ships or galleys to pirate hunt. Galleys can only hunt into the inland seas and transports cannot do it at all."
  PIRATE_HUNT_MOVEMENT_LOCKED: "You cannot send your fleet to hunt pirates while it is already locked on a destination. Wait until it has reached its destination."
- BUILD_POWER_DESC2: "It will cost $VAL|Y$ $TYPE$ power to buy this idea."
- IDEAS_MORE_EXPENSIVE: "Having more than half your idea groups of the same category makes it more expensive.\n$NAME$: $IMPACT|+$"
+ BUILD_POWER_DESC2: "It will cost $VAL
+ IDEAS_MORE_EXPENSIVE: "Having more than half your idea groups of the same category makes it more expensive.\n$NAME$: $IMPACT
  IDEA_GROUP_STACKING_WARNING: "Having more than half your idea groups of the same category makes it more expensive."
  REBELSUPP_FACTION_LIST: "$VAL$ province(s)"
  religious_rebels_seige_effect_tooltip: "Heathen or Heretic Zealots will convert provinces to their own religion as well as cause unrest and loss of income.\nZealots of your own religion will embark on a campaign of religious violence reducing manpower and tax income in the provinces they gain control of."
@@ -985,13 +985,13 @@
  DISASTER_PROGRESS_WHERE: "Currently at §Y$VAL$%§! progress towards starting."
  DISASTER_DOWN_PROGRESS: "Progress would be $DEC$ each month if we stop this.\n$WHY$"
  DISASTER_PROGRESS_WHY: "Progress is $INC$ each month:\n$WHY$"
- DISASTER_ESTIMATED_START: "At this rate, $DISASTER|Y$ will start on $STARTDATE|Y$."
- END_OF_DISASTER: "$NAME|Y$ will end.\n"
+ DISASTER_ESTIMATED_START: "At this rate, $DISASTER
+ END_OF_DISASTER: "$NAME
  ALERT_DISASTER_ENTRY: "§Y$NAME$§! - §Y$CURR$%§! ($CHANGE$)\nThe monthly progress is due to:\n$REASON$"
  MONARCHY_LESSER_IN_UNION_NOT_CONVERT: "As a lesser partner in a union, you cannot change government."
- HAVE_LESS_SHIPS_PRIVATEERING: "Have fewer ships privateering than $VAL|Y$."
+ HAVE_LESS_SHIPS_PRIVATEERING: "Have fewer ships privateering than $VAL
  HAVE_MORE_SHIPS_PRIVATEERING_THAN: "Have at least $VAL$ ships privateering."
- LIB_TOO_LOW_TARIFF: "$CHANGE$ due to Effective Tariff $TARIFF|Y$ lower than current Liberty Desire $CURRENT|Y$.\n"
+ LIB_TOO_LOW_TARIFF: "$CHANGE$ due to Effective Tariff $TARIFF
  eng_opposes_lollards: "Opposing the Wycliffites"
  desc_eng_opposes_lollards: "The English are opposing the Wycliffite Heresy, which is truly appreciated by the Holy See."
  internal_conflicts: "Internal Conflicts"
@@ -1163,7 +1163,7 @@
  TECH_GROUP_INFO_POWER: " and reduces your monthly power by §R$VAL$§!."
  HARSH_EXPLAIN_BUY: "Spend §Y$POINTS$§W£mil to reduce the chance of a revolt in $NAME$."
  CHANGE_CULTURE_EXPLAIN_BUY: "Spend §Y$POINTS$§W£dip to change culture to §Y$CULTURE$§! in this province."
- CUL_TIME_MONTHS: "Changing culture will take $MONTHS|Y$ months."
+ CUL_TIME_MONTHS: "Changing culture will take $MONTHS
  NO_EFFECT_ON_SIEGE: "This had no immediate impact on the Siege Status."
  SIEGE_STATUS_EFFECT: "This affected the Siege Status by §Y+$VAL$§!."
  MANU_ONLY_IN_FOR_BONUS: "Can be built in a §Y$NAME$§! province."
@@ -1215,7 +1215,7 @@
  VASSALIZED_ELECTORS: "§Y$CURR$§! of the electors in the empire are subject states. Therefore the Imperial Authority is decreased by §R$VAL$§! every month."
  ENACT_DECREE_ONLY_ONE: "Only one decree can be enacted at once, and they cannot be cancelled before their end date.\n"
  ENACT_DECREE_NOT_EMPEROR: "Only the Emperor can enact Decrees."
- ENACT_DECREE_ALREADY_ENACTED: "$DECREENAME$ already enacted. It will run out on $DATE|Y$."
+ ENACT_DECREE_ALREADY_ENACTED: "$DECREENAME$ already enacted. It will run out on $DATE
  ENACT_DECREE_NOT_ENOUGH_MERITOCRACY: "Enacting this Decree requires $MERITOCRACYREQUIRED$ Meritocracy, you only have $CURRENTMERITOCRACY$."
  CAN_NOT_ENACT_REFORM_NOT_EMPEROR: "Only the emperor can enact reforms in the empire."
  CAN_NOT_ENACT_REFORM_LEAGUES: "Cannot enact reforms during religious conflict in the empire."
@@ -1291,17 +1291,17 @@
  desc_state_controlled_guilds: "By allowing the state to control various guilds in the country we have increased our revenue."
  LAND_MAINT_IRO: "Maintenance costs are modified by:\n$TXT$"
  MERC_MAINT_IRO: "Mercenaries cost §Y$VAL$%§! in maintenance due to:\n$TXT$"
- NAVY_TRADITION_IRO: "Navy Tradition changed by $VAL|+$ yearly due to:\n"
+ NAVY_TRADITION_IRO: "Navy Tradition changed by $VAL
  NAVY_TRADITION_DRO: "Navy Tradition is the accumulated naval experience that your nation has. Tradition is increased by ideas, buildings, naval combat and exploration."
- ARMY_TRADITION_IRO: "Army Tradition changed by $VAL|+$ yearly due to:\n"
+ ARMY_TRADITION_IRO: "Army Tradition changed by $VAL
  ARMY_TRADITION_DRO: "Army Tradition is the accumulated army experience that your nation has. Tradition is increased by ideas, buildings, land combat and sieging."
  CURRENT_EFFECTS: "§YCurrent Effects§!"
  TRADE_THROUGH_TT: "$WHO$ belongs to the §Y$WHERE$§W trade node, and is $COL$$RANGE$§! away from our closest core province or port where we have fleet basing rights.\n$POWER$"
  TRADE_POWER_MAP_TT_EXPL: "It provides $VAL$ trading power to the node, which is §Y$PERC$%§! of the provinces."
- WE_EMBARGO: "$WHO|Y$ embargo $TARGET|Y$, reducing their maximum power in the following nodes by the stated percentage."
- THEY_EMBARGO: "$WHO|Y$ are being embargoed by $TARGET|Y$ which reduces their maximum power in the following nodes."
- THEY_TRANSFER: "$WHO|Y$ are transferring $AMOUNT|Y$ of their trade power to $TARGET|Y$ each month, last month increasing ours by:"
- THEY_TRANSFER_LIST_ENTRY: "\n§Y$VAL$§! in $NODE|Y$"
+ WE_EMBARGO: "$WHO
+ THEY_EMBARGO: "$WHO
+ THEY_TRANSFER: "$WHO
+ THEY_TRANSFER_LIST_ENTRY: "\n§Y$VAL$§! in $NODE
  CVIEW_PRESTIGE_DESC: "Prestige affects many things, but primarily how likely other nations are to accept our proposals, and how likely it is that our royal marriages will result in Personal Unions."
  CVIEW_PRESTIGE: "§YPrestige§W\nCurrently at §Y$VALUE$§! ($GAIN$ / yearly)\n"
  CVIEW_PRESTIGE_AFFECTS: "§YEffects from our current Prestige:§W"
@@ -1315,7 +1315,7 @@
  SUBJECT_NOT_NEIGHBOR_OTHER_RELIGION: "A $SUBJECTTYPE$ can only $DOWHAT$ a nation of another religion group if they are neighbours."
  SUBJECT_WITH_INDEPENDENT: "$SUBJECTTYPES$ can't $DOWHAT$ independent nations."
  SUBJECT_COLONIAL_BROTHERS: "Colonial brothers cannot declare war on each other."
- SUBJECT_TO_LOW_LIBERTY: "You need at least $LIMIT|0$ Liberty desire to declare war on your overlord while in a war together."
+ SUBJECT_TO_LOW_LIBERTY: "You need at least $LIMIT
  HAS_NO_TRADER_IS_NODE: "§Y$WHO$§! do NOT have a merchant in §Y$NAME$§!\n"
  HAS_TRADER_IS_NODE: "§Y$WHO$§! has a merchant in §Y$NAME$§!\n"
  ACTUALPOWER_MODIFIER: "Modified by $VAL$.\n"
@@ -1329,9 +1329,9 @@
  MAPSPH_UNION: "In Union"
  MAPSPH_GUARANTEE: "Guaranteed"
  TERRAIN: "§Y$TERRAIN$§!"
- CURRENT_TERRAIN: "Terrain: $TERRAIN|Y$"
+ CURRENT_TERRAIN: "Terrain: $TERRAIN
  CURRENT_VALUE: "Current value: $VALUE$"
- DOMINANT_TERRAIN: "Terrain: $TERRAIN|Y$"
+ DOMINANT_TERRAIN: "Terrain: $TERRAIN
  OTHER_TERRAINS: "Other terrain in this province: "
  CURRENT_COMBAT_WIDTH: "Current combat width: §Y$WIDTH$§!"
  IDEAGROUP_SWAPPED: "Gain new traditions & Ambitions\n"
@@ -1356,7 +1356,7 @@
  TRUCE_DIPVIEW_IRO: "Have a truce with §Y$WHO$§! until §Y$DATE$§!"
  TAG_IS_VASSAL_IRO: "§Y$WHO$§! is a vassal."
  TAG_IS_VASSAL_OF_IRO: "Is a vassal of §Y$WHO$§!."
- TAG_IS_MARCH_UNDER_TAG: "$WHO|Y$ is a march under $OVERLORD|Y$."
+ TAG_IS_MARCH_UNDER_TAG: "$WHO
  VASSAL_INCOME_INFO: "Give §Y$VAL$§!¤ to their liege every month.\n"
  VASSAL_TROOP_INFO: "They have §Y$MEN$§! men under arms, and a fleet of §Y$SHIPS$§! ship(s)."
  TAG_IS_LESSER_IN_UNION: "§Y$WHO$§! is lesser partner in a union."
@@ -1391,18 +1391,18 @@
  MAY_LOWER_N_ATTRITION: "The §YNaval Attrition§! is no longer increased by staying out at sea each month."
  RULER_SKILLS: " ($ADM$/$DIP$/$MIL$)"
  RULER_CLAIM: " with a $CLAIM$ claim"
- RULER_CULTURE: ", of $CULTURE|Y$ heritage"
- RULER_RELIGION: ", following the $RELIGION|Y$ faith"
- RULER_AGE: " at an age of $AGE|Y$"
- DEFINE_RULER_EFFECT:5 "$NAME|Y$$SKILLS$$CLAIM$$CULTURE$$RELIGION$ becomes ruler$AGE$.\n"
- DEFINE_RULER_EFFECT_NOCLAIM:3 "$NAME|Y$$SKILLS$$CULTURE$$RELIGION$ becomes ruler$AGE$.\n"
+ RULER_CULTURE: ", of $CULTURE
+ RULER_RELIGION: ", following the $RELIGION
+ RULER_AGE: " at an age of $AGE
+ DEFINE_RULER_EFFECT:5 "$NAME
+ DEFINE_RULER_EFFECT_NOCLAIM:3 "$NAME
  DEFINE_HEIR_EFFECT_UNKNOWN:5 "A new legal Heir$SKILLS$$CLAIM$$CULTURE$$RELIGION$ appears$AGE$.\n"
- DEFINE_HEIR_EFFECT:5 "$NAME|Y$$SKILLS$$CLAIM$$CULTURE$$RELIGION$ becomes the new Heir$AGE$.\n"
+ DEFINE_HEIR_EFFECT:5 "$NAME
  DEFINE_QUEEN_EFFECT_UNKNOWN:5 "A new $CONSORT$$SKILLS$$CULTURE$$RELIGION$ appears$AGE$.\n"
- DEFINE_QUEEN_EFFECT:5 "$NAME|Y$$SKILLS$$CULTURE$$RELIGION$ becomes the new $CONSORT$$AGE$.\n"
+ DEFINE_QUEEN_EFFECT:5 "$NAME
  DEFINE_HEIR_EFFECT_DYN:2 "A Noble of the $NAME$ family$SKILLS$$CLAIM$$CULTURE$$RELIGION$ becomes Heir$AGE$.\n"
  MIL_UPKEEP_EXPLANATION: "$CURR$/$ALLOW$ Leaders: $COST$"
- MIL_UPKEEP_MOD_DESC: "We can support $NUM|Y$ leaders (Rulers and their heirs are free), due to:"
+ MIL_UPKEEP_MOD_DESC: "We can support $NUM
  inverse_republican_tradition: "Lack of Republican Tradition"
  republican_tradition: "Republican Tradition"
  army_tradition: "Army Tradition"
@@ -1639,10 +1639,10 @@
  MERCANTILISM_LABEL: "Mercantilism"
  positive_piety: "Being Pious"
  negative_piety: "Lack of Piety"
- MERCANTILISM_LESS_THAN: "Mercantilism is less than $VAL|Y$ percent (current $CURRENTVAL|Y$ percent)."
- MERCANTILISM_AT_LEAST: "Mercantilism is at least $VAL|Y$ percent (currently $CURRENTVAL|Y$ percent)."
- MERCANTILISM_LESS_THAN_COMP: "Mercantilism is less than mercantilism of $COUNTRYNAME|Y$ ($VAL|Y$ percent). Currently $CURRENTVAL|Y$ percent."
- MERCANTILISM_AT_LEAST_COMP: "Mercantilism is at least same as mercantilism of $COUNTRYNAME|Y$ ($VAL|Y$ percent). Currently $CURRENTVAL|Y$ percent."
+ MERCANTILISM_LESS_THAN: "Mercantilism is less than $VAL
+ MERCANTILISM_AT_LEAST: "Mercantilism is at least $VAL
+ MERCANTILISM_LESS_THAN_COMP: "Mercantilism is less than mercantilism of $COUNTRYNAME
+ MERCANTILISM_AT_LEAST_COMP: "Mercantilism is at least same as mercantilism of $COUNTRYNAME
  CORRUPTION_LESS_THAN: "Corruption is less than §Y$VAL$§W percent.\n"
  CORRUPTION_AT_LEAST: "Corruption is at least §Y$VAL$§W percent.\n"
  YEARLY_CORRUPTION_LESS_THAN: "Yearly Corruption is less than $VAL$.\n"
@@ -1693,8 +1693,8 @@
  ENVOY_MISSIONARY: "Missionary"
  ENVOY_DIPLOMAT: "Diplomat"
  ENVOY_DIPLOMATING_TRAVELTO: "$NAME$ is travelling to §Y$PROV$§! to §Y$ACTION$§!."
- ENVOY_DIPLOMATING_WORKING: "$NAME$ from $FROM|Y$ is working to $ACTION|Y$ in $PROV|Y$ ($COUNTRY|Y$). He has been doing it for $DAYS|Y$ days."
- ENVOY_DIPLOMATING_IMPROVING_RELATION: "Our relation with $COUNTRY|Y$ has been improved by $OPINION|+2$."
+ ENVOY_DIPLOMATING_WORKING: "$NAME$ from $FROM
+ ENVOY_DIPLOMATING_IMPROVING_RELATION: "Our relation with $COUNTRY
  ENVOY_DIPLOMATING_RETURN: "$NAME$ is returning from §Y$PROV$§! after working to §Y$ACTION$§!. Returns on §Y$DATE$§!"
  SEND_PATROL_TO: "Send patrol to the trade node §Y$NAME$§W."
  NO_MERCHANT_HERE: "You have no merchant here."
@@ -1708,8 +1708,8 @@
  MANPOWER_IRO: "§YManpower§!\nMaximum is §Y$MAX$§W\nCurrently you gain §Y$YEARLY$§W each month, up to §Y$MAX$§W minus the amount you have in the field.\nTo fully reinforce your armies you need §Y$NEED$§W men, and §Y$USED$§W will reach the armies this month.\n\n§YOur maximum manpower includes troops placed on the field§!, and as such our 'real' or effective manpower cannot surpass Maximum - Recruited. As an aside, our own §MState§! regiments require pay, whether they are on the field or not."
  MANPOWER_DRO2: "The Maximum Manpower of §Y$BASE$§W depends on\n"
  MANPOWER_IRO_OTHERS:3 "§YManpower§!\nMaximum is §Y$MAX$§W\nCurrently §Y$NAME$§W gain §Y$YEARLY$§W each month, up to §Y$MAX$§W minus the amount they have in the field.\nTo fully reinforce their armies, they need §Y$NEED$§W men, and §Y$USED$§W will reach the armies this month."
- SAILOR_MAINT_BASE: "Base: $VAL|Y$ ($PERC$%)\n"
- SAILORS_IRO:2 "§YNaval Materials§!\nMaximum is §Y$MAX$§W\nCurrently you gain §Y$YEARLY$§W each month, and use $MAIN|R$ materials to support missions.\nTo fully repair your navies you need §Y$NEED$§W material, and §Y$USED$§W will reach the navies this month.\nThere are $FLEET$ fleets on missions."
+ SAILOR_MAINT_BASE: "Base: $VAL
+ SAILORS_IRO:2 "§YNaval Materials§!\nMaximum is §Y$MAX$§W\nCurrently you gain §Y$YEARLY$§W each month, and use $MAIN
  SAILORS_IRO_OTHERS: "§YNaval Materials§!\nMaximum is §Y$MAX$§W\nCurrently they gain §Y$YEARLY$§W each month\nTo fully reinforce their navies they need §Y$NEED$§W sailors, and §Y$USED$§W will reach the navies this month."
  SAILORS_DRO2: "The naval material stockpile of §Y$BASE$§W depends on\n"
  POOL_HAS_SAILORS: "With §Y$POOL$§! materials already prepared to maintain and build new ships, our stockpile cannot grow to be bigger than §Y$MAX$§!."
@@ -1749,12 +1749,12 @@
  CV_HARSH_TREATMENTS_IN: "Harsh Treatment in $PROVINCE$"
  CV_UPRISING_NONE_ATM: "No Unrest for this faction, the progress towards revolt will instead decay by §R$VAL$%§! each month.\n"
  CV_ADD_TEMPLATE: "Add army template"
- MISSIONARY_PROGRESS: "Missionary progress: $VAL|Y1%$"
+ MISSIONARY_PROGRESS: "Missionary progress: $VAL
  COLONIZE_HORDE: "Colonise on horde land"
  SELECT_THIS_UNIT: "Select this unit"
  HOLD_SHIFT_TO_DESELECT_UNIT: "Hold §YShift§! to deselect this unit."
  OPINIONOF: "§YThe $WHO_ADJ$ opinion of $NAME$ is modified by:§!"
- OPINIONOF_IS: "$WHO_ADJ$ opinion of $NAME$ is: $VAL|+$"
+ OPINIONOF_IS: "$WHO_ADJ$ opinion of $NAME$ is: $VAL
  desert_mountain: "Desert Mountain"
  grasslands: "Grasslands"
  coastline: "Coastline"
@@ -1765,8 +1765,8 @@
  alert_invest_in_tech_delayed: "The following technologies can be invested in:\n$LIST$"
  alert_max_monarch_power_instant: "§YMaximum Monarch Power reached§!"
  alert_max_monarch_power_1_delayed: "You have reached the maximum amount of §Y$POW1$ Power§!."
- alert_max_monarch_power_2_delayed: "You have reached the maximum amount of $POW1|Y$ and §Y$POW2$ Power§!."
- alert_max_monarch_power_3_delayed: "You have reached the maximum amount of $POW1|Y$, $POW2|Y$ and §Y$POW3$ Power§!."
+ alert_max_monarch_power_2_delayed: "You have reached the maximum amount of $POW1
+ alert_max_monarch_power_3_delayed: "You have reached the maximum amount of $POW1
  alert_max_monarch_power_desc: "You should spend some of your power, otherwise the power you gain every month will go to waste."
  CONTINUE_BUTTON_NOTICE: "You can continue playing past the scenario end date."
  CONTINUE_BUTTON_NOTICE_DELAYED: "§RNo game content has been designed for this and Paradox provides no support for any issues encountered.§!"
@@ -1782,7 +1782,7 @@
  SELECT_LEADER_EXPLORING: "§RThis leader cannot be reassigned until the current Exploration mission is completed.§!"
  SELECT_LEADER_IN_HOSTILE_TERRITORY: "§RThis leader is in hostile territory and cannot be reassigned.§!"
  MISSIONS_TO_SELECT: "You have the following missions to choose between: "
- MAY_NOT_RETREAT: "§YRetreat§!\nMay not retreat until $DATE|Y$."
+ MAY_NOT_RETREAT: "§YRetreat§!\nMay not retreat until $DATE
  MAY_NOT_RETREAT_DELAYED: "It is not possible, nor would it be honourable, to retreat from a battle in the first $DAYS$ days."
  HREVOTE_VASSAL_ELECTOR: "Controlling other Electors: §R$VAL$§W\n"
  HREVOTE_IMP_AUTH: "Infamy: §R$VAL$§W\n"
@@ -1815,15 +1815,15 @@
  INC_M_ALREADY_MAX: "Militarization is already at its highest!"
  MIL_SOC_CHANGE: "Militarization of our Country change by $VAL$ each month due to:\n"
  GOV_IS_MIL_SOCIETY: "Is a Militarized Society, where rulers cannot get MIL below 3."
- INC_MIL_NO_POINTS: "You require at least $COST|Y$ military power to increase militarization of your country, but you only have $VAL|Y$!"
- INC_MIL_DO_IT: "Spend $COST|Y$ military power to increase militarization of your country by §G+$EFFECT$§!."
- STR_GOV_NO_POINTS: "You require at least $COST|Y$ military power to strengthen your government, but you only have $VAL|Y$!"
- STR_GOV_DO_IT: "Spend $COST|Y$ military power to strengthen your government and $EFFECT$."
- STR_HORDE_UNITY: "gain $VAL|G$ Clan Unity"
- STR_LEGITIMACY: "gain $VAL|G$ Legitimacy"
- STR_REPUBLIC: "gain $VAL|G$ Republican Tradition"
- STR_DEVOITION: "gain $VAL|G$ Devotion"
- STR_MERITOCRACY: "gain $VAL|G$ Meritocracy"
+ INC_MIL_NO_POINTS: "You require at least $COST
+ INC_MIL_DO_IT: "Spend $COST
+ STR_GOV_NO_POINTS: "You require at least $COST
+ STR_GOV_DO_IT: "Spend $COST
+ STR_HORDE_UNITY: "gain $VAL
+ STR_LEGITIMACY: "gain $VAL
+ STR_REPUBLIC: "gain $VAL
+ STR_DEVOITION: "gain $VAL
+ STR_MERITOCRACY: "gain $VAL
  STRENGTHEN_GOVERNMENT: "Strengthen Government"
  STRGOVTTITLE: "Strengthen Government"
  STR_GOV_ALREADY_MAX_HORDE_UNIT: "Clan Unity is already at its highest!"
@@ -1833,8 +1833,8 @@
  STR_GOV_ALREADY_MAX_MERITOCRACY: "Meritocracy is already at its highest!"
  DISINHERIT_NOT_MONARCHY: "You can only Disinherit an Heir in a Monarchy!"
  DISINHERIT_NOT_DURING_REGENCY: "It is not possible to Disinherit an Heir during a Regency!"
- DISINHERIT_LOW_PRESTIGE: "Prestige needs to be at least $NEED|Y$ to be able to disinherit an heir."
- DISINHERIT_PERFORM_IRO1: "Disinherit $HEIR|Y$, and hope for a more capable heir.\nThis will give a hit of $PRESTIGE_HIT|R$ prestige from this action."
+ DISINHERIT_LOW_PRESTIGE: "Prestige needs to be at least $NEED
+ DISINHERIT_PERFORM_IRO1: "Disinherit $HEIR
  DISINHERITTITLE: "Disinherit!"
  DISINHERIT_NOT_HEIR: "You currently have no heir which can be disinherited!"
  DISINHERIT_SUBJECT: "Cannot disinherit your overlord's heir!"
@@ -1842,38 +1842,38 @@
  ABDICATE_NOT_MONARCHY: "You can only Abdicate from the throne in a Monarchy!"
  ABDICATE_NOT_WHEN_AT_WAR: "It is too cowardly to Abdicate while your nation is at war!"
  ABDICATE_NO_HEIR: "You can not Abdicate while you do not have an heir."
- ABDICATE_HEIR_NOT_OF_AGE: "You can only Abdicate if your heir is at least $NEED|Y$ years old. $NAME$ is currently $AGE$ year(s) old."
- ABDICATE_LOW_LEGITIMACY: "Legitimacy must be at least $NEED|Y$ if you wish to Abdicate."
+ ABDICATE_HEIR_NOT_OF_AGE: "You can only Abdicate if your heir is at least $NEED
+ ABDICATE_LOW_LEGITIMACY: "Legitimacy must be at least $NEED
  ABDICATE_SUBJECT: "Cannot abdicate your overlord's monarch!"
- ABDICATE_LOW_HORDE_UNITY: "Clan Unity must be at least $NEED|Y$ if you wish to Abdicate."
- ABDICATE_TOO_EARLY: "A ruler must be at least $AGE|Y$ years old or have ruled for $RULE|Y$ years to be able to Abdicate."
+ ABDICATE_LOW_HORDE_UNITY: "Clan Unity must be at least $NEED
+ ABDICATE_TOO_EARLY: "A ruler must be at least $AGE
  ABDICATE_PENDING_EVENT: "Cannot abdicate while there are pending events!"
- ABDICATE_PERFORM_IRO1: "Make $RULER|Y$ Abdicate, and let $HEIR|Y$ take the throne!"
- ABDICATE_PERFORM_IRO2_HORDE: "There will be a hit of $HIT|R$ Clan Unity and $PRESTIGE_HIT|R$ prestige from this action, after the Heir's claim has been considered."
- ABDICATE_PERFORM_IRO2: "There will be a hit of $HIT|R$ Legitimacy and $PRESTIGE_HIT|R$ prestige from this action, after the Heir's claim has been considered."
+ ABDICATE_PERFORM_IRO1: "Make $RULER
+ ABDICATE_PERFORM_IRO2_HORDE: "There will be a hit of $HIT
+ ABDICATE_PERFORM_IRO2: "There will be a hit of $HIT
  ABDICATETITLE: "Abdicate!"
- ARE_YOU_SURE_PASS_REFORM: "Are you sure you want to enact $REFORMTITLE|Y$?\n"
- ARE_YOU_SURE_PASS_DECREE: "Are you sure you want to enact $TITLE|Y$?\n"
- ENACT_REFORM_COST_DESC: "This will cost us $STABILITY|R$ Stability and $MANDATE|R$ Mandate, and give us the following long-term effects:\n$EFFECTS$"
- ENACT_DECREE_COST_DESC: "This will cost us $MERITOCRACYCOST|R$ Meritocracy, and give us the following effects for $YEARS|Y$ years:\n$EFFECTS$"
+ ARE_YOU_SURE_PASS_REFORM: "Are you sure you want to enact $REFORMTITLE
+ ARE_YOU_SURE_PASS_DECREE: "Are you sure you want to enact $TITLE
+ ENACT_REFORM_COST_DESC: "This will cost us $STABILITY
+ ENACT_DECREE_COST_DESC: "This will cost us $MERITOCRACYCOST
  ACCEPTED_CULTURES_MAX_COUNT: "Promoted Culture Slots"
  ACCEPTED_CULTURES_COUNT: "Promoted Cultures: $CURR$/$MAX$"
- ACCEPTED_CULTURE_SLOTS_DESC: "You have $FREE|Y$ of $MAX|Y$ free Promoted Culture slots.\nTo promote a culture, click the §Y"Promote Culture"§! button on a Non-Accepted Culture.\nThe number of slots is calculated from:\n"
- ADD_ACC_CULTURE_TOO_MANY: "We can not promote more cultures, as we already have $CURR|Y$, and our nation can only have $MAX|Y$ promoted cultures with our ideas and technology."
- SET_PRIMARY_CULTURE_NO_POINTS: "You require at least $COST|Y$ diplomatic power to change primary culture, but you only have $VAL|Y$!"
- SET_PRIMARY_CULTURE_COST: "Changing Primary Culture to $NAME|Y$ will cost $COST|Y$ diplomatic power."
- SET_PRIMARY_CULTURE_WRONG_TYPE: "$NAME|Y$ is neither an accepted culture, nor belong to the $GROUP|Y$ culture group, so it can not be made into our primary culture."
- ADD_ACCEPTED_CULTURE_NO_POINTS: "You require at least $COST|Y$ diplomatic power to promote a culture to being accepted, but you only have $VAL|Y$."
- ADD_ACCEPTED_CULTURE_COST: "Promoting $NAME|Y$ to being an accepted culture will cost $COST|Y$ diplomatic power."
- REM_ACCEPTED_CULTURE_NO_POINTS: "You require at least $COST|Y$ diplomatic power to remove a promoted culture, but you only have $VAL|Y$!"
- REM_ACCEPTED_CULTURE_COST: "Removing $NAME|Y$ as a promoted culture will cost $COST|Y$ diplomatic power."
- CULTURE_VIEW_IS_IN_GROUP: "$NAME|Y$ is in the $GROUP|Y$ group."
- CULTURE_VIEW_IS_PRIMARY_CULTURE: "$NAME|Y$ is the primary culture."
- CULTURE_VIEW_IS_ACCEPTED_CULTURE: "$NAME|Y$ has been promoted to Accepted status, so it gives us no penalties."
- CULTURE_VIEW_ACCEPTED_IS_BROTHER: "Since $NAME|Y$ is in the same culture group as $PRIMARY|Y$, demoting it will only give us reduced penalties."
- CULTURE_VIEW_IS_BROTHER_CULTURE: "$NAME|Y$ belongs to the same culture group as $PRIMARY|Y$, so it gives us reduced penalties."
- CULTURE_VIEW_IS_IN_CULTURAL_UNION: "$NAME|Y$ culture is Accepted because it is part of our Cultural Union based on the $GROUP|Y$ culture group."
- CULTURE_VIEW_IS_OUR_PRIMARY_CULTURE: "$NAME|Y$ is our Primary Culture. It gives us no penalties, and any cultures in the same culture group gives us reduced penalties."
+ ACCEPTED_CULTURE_SLOTS_DESC: "You have $FREE
+ ADD_ACC_CULTURE_TOO_MANY: "We can not promote more cultures, as we already have $CURR
+ SET_PRIMARY_CULTURE_NO_POINTS: "You require at least $COST
+ SET_PRIMARY_CULTURE_COST: "Changing Primary Culture to $NAME
+ SET_PRIMARY_CULTURE_WRONG_TYPE: "$NAME
+ ADD_ACCEPTED_CULTURE_NO_POINTS: "You require at least $COST
+ ADD_ACCEPTED_CULTURE_COST: "Promoting $NAME
+ REM_ACCEPTED_CULTURE_NO_POINTS: "You require at least $COST
+ REM_ACCEPTED_CULTURE_COST: "Removing $NAME
+ CULTURE_VIEW_IS_IN_GROUP: "$NAME
+ CULTURE_VIEW_IS_PRIMARY_CULTURE: "$NAME
+ CULTURE_VIEW_IS_ACCEPTED_CULTURE: "$NAME
+ CULTURE_VIEW_ACCEPTED_IS_BROTHER: "Since $NAME
+ CULTURE_VIEW_IS_BROTHER_CULTURE: "$NAME
+ CULTURE_VIEW_IS_IN_CULTURAL_UNION: "$NAME
+ CULTURE_VIEW_IS_OUR_PRIMARY_CULTURE: "$NAME
  CULTURES_IN_COUNTRY: "Cultures in $COUNTRY$"
  HREVOTE_LEGITIMACY: "Legitimacy: $VAL$§W\n"
  HREVOTE_ROYALMARRIAGE: "Royal Marriage: §G+$VAL$§W\n"
@@ -1902,14 +1902,14 @@
  CV_REBEL_INDEP_MONTH: "The rebels may declare independence in §Y$MONTH$§W months."
  CV_REBEL_INDEP_ANYMONTH: "The rebels may declare independence any month now."
  CV_REBEL_HANDLE_DESC: "Show different means to handle the rebels."
- CV_REBEL_PROGRESS_DESC: "They are $PROGRESS|%Y1$ towards enforcing their demands."
+ CV_REBEL_PROGRESS_DESC: "They are $PROGRESS
  CV_REBEL_LEADER_DESC: "The rebel leader is §Y$NAME$§!."
  CV_DISASTERS_DESC: "A Disaster is a series of bad events that can strike your country in times of turmoil. When the starting conditions are fulfilled for a Disaster, its progress begins to tick up every month at a rate depending on a separate set of modifiers. A ticking disaster can be stopped completely by fulfilling a set of stopping conditions that are separate from its starting conditions. When progress reaches 100% the disaster starts and will continue until its ending conditions are fulfilled."
  CV_WAREX_PROGRESS: "Current War exhaustion is §Y$WE$/$MAX$§!."
  CV_WAREX_NONE: "We have no War exhaustion."
  CV_UPRISING_PROGRESS: "§YProgress until the next Uprising§!\n"
- CV_UPRISING_PROGRESS_DESC: "When the progress reaches 100%, the faction will revolt and a couple of rebel armies will spawn. The faction has a $VAL|%1Y$ chance of increasing the progress by §R$INC$%§! each month due to how much unrest is in their provinces. At this pace, the next revolt will be in about $YEARS|Y1$ years."
- CV_UPRISING_PROGRESS_VAL: "Uprising progress: $VAL|Y1$%"
+ CV_UPRISING_PROGRESS_DESC: "When the progress reaches 100%, the faction will revolt and a couple of rebel armies will spawn. The faction has a $VAL
+ CV_UPRISING_PROGRESS_VAL: "Uprising progress: $VAL
  CV_REBEL_OCCPROV_DESC: "Provinces occupied by the rebels"
  RISE_OF_THE_OTTOMANS: "Rise of the Ottomans"
  RISE_OF_THE_OTTOMANS_DESC: "Rumours of Ottoman weakness caused Pope Eugene IV to call for a crusade against them in 1443. With the West still embroiled in the Hundred Years War, the King of Hungary and Poland, Wladyslaw III, took on the cause to finally expel the scourge of Christendom from Europe. Led by general John Hunyadi, The White Knight, the Hungarian army saw some initial success, but was ultimately defeated. The abdicated Sultan Murad II came back to aid his son and led the Ottoman army to victory at the battle of Varna where King Wladyslaw was killed. Peace was eventually signed but the way for further Ottoman expansion into Eastern Europe now lay open..."
@@ -1918,7 +1918,7 @@
  CV_IDEAS_GROUP_UNLOCK: "Free Slot"
  CV_IDEAS_GROUP_UNLOCK_UNLOCKED: "Choose an idea group for your unlocked slot '$NAME$'"
  CV_IDEAS_GROUP_UNLOCK_LOCKED: "You need to research the technology '$NAME$' to unlock the next slot"
- CV_IDEA_UNLOCK_NOPOWER: "You don't have enough $TYPE$ to unlock the next idea. You need $POWER_COST|Y0$ and have $POWER_AVAILABLE|Y$ available. We expect to have enough power to do it in $DATE|Y$."
+ CV_IDEA_UNLOCK_NOPOWER: "You don't have enough $TYPE$ to unlock the next idea. You need $POWER_COST
  CV_UNLOCK_IDEA_DIALOG_TITLE: "Confirm to unlock idea $NAME$"
  CV_ABANDON_IDEA_GROUP_DIALOG_TITLE: "Confirm to abandon idea group $NAME$"
  CV_UNLOCK_IDEA_DIALOG_DESC: "This will unlock the idea §Y$NAME$§! at a cost of §Y$POWER_COST$§! $TYPE$ power.\n"
@@ -1977,7 +1977,7 @@
  CV_RESEARCHED_TECH_TOOLTIP: "+ Researched at level $LEVEL$§!"
  CV_NOTRESEARCHED_TECH_TOOLTIP: "§g- Researched at level $LEVEL$§!"
  CV_TECH_BUILDINGS: "Buildings and Taxes"
- EXISTING_BUILDINGS_MOD: "Buildings: $BUILDINGCOUNT|Y$"
+ EXISTING_BUILDINGS_MOD: "Buildings: $BUILDINGCOUNT
  BEST_COMBAT_WIDTH: "Technology ($COUNTRY$): §G+$VAL$§!"
  COMBAT_TERRAIN_MOD: "Current terrain ($TERRAIN$): §R$VAL$%§!"
  EFR: "East Frisia"
@@ -2016,7 +2016,7 @@
  MIGRATION_COOLDOWN: "Migration Cooldown"
  CLICK_TO_SELECT_UNIT: "Click here to select this unit"
  EMBARKED_UNITS: "This transport has $REGIMENTS$ regiments embarked, containing a total of $UNITS$ units."
- EMBARKED_UNITS_FREE_SLOTS: "This transport can accommodate $VAL|Y$ more regiments."
+ EMBARKED_UNITS_FREE_SLOTS: "This transport can accommodate $VAL
  CV_INCOMES_TOTAL: "Total Income:"
  CV_EXPENSES_TOTAL: "Total Expenses:"
  CV_BALANCE: "Balance: $VAL$"
@@ -2031,16 +2031,16 @@
  INFLATION_EFF_IRO: "§YCurrent Inflation§!\nThis has the following effects:\n"
  LACK_IDEA_FOR_REDUCE: "You need to have unlocked all the '§YEconomic Ideas§!' before you can spend Administrative Power to Reduce Inflation."
  CV_REPAY_LOAN_TITLE: "Our current §Y$VAL$§! loan(s)"
- CV_ECONOMY_PROVINCE: "$PROV$: $VAL|Y2$¤"
+ CV_ECONOMY_PROVINCE: "$PROV$: $VAL
  CV_ECONOMY_LOOT: "Loot from $PROV$: §G$VAL$§!¤"
  CV_ECONOMY_LOOT_BLOCKADE: "Blockading $PROV$: §G$VAL$§!¤"
- CV_ECONOMY_OTHERS: "and others: $VAL|Y2$¤"
+ CV_ECONOMY_OTHERS: "and others: $VAL
  CV_ECONOMY_LOAN_LENDER: "Lender: $TAG$ $NAME$"
  CV_ECONOMY_LOAN_AMOUNT_INTEREST: "$AMOUNT$¤ with interest §Y$INTEREST$§!%."
  CV_ECONOMY_LOAN_TOTAL: "(Total: $TOTAL$¤)"
  CV_ECONOMY_LOAN_EXPIRE: "Expires at $DATE$"
  CV_ECONOMY_LOAN_REPAY: "Repay"
- CV_ECONOMY_LOAN_REPAY_CANT_AFFORD_DESC: "You can't afford to spend $VAL|2Y$¤ to repay the loan!"
+ CV_ECONOMY_LOAN_REPAY_CANT_AFFORD_DESC: "You can't afford to spend $VAL
  CV_ECONOMY_LOAN_REPAY_DESC: "Repay the loan"
  CV_ECONOMY_LOAN_REPAY_BUTTON_DESC: "Click here to show a window with your loans"
  CV_ECONOMY_LOAN_NOREPAY_BUTTON_DESC: "You don't have any loans!"
@@ -2050,11 +2050,11 @@
  CV_INCOMES_TEMP_DESC: "Gifts: §Y$GIFTS$§W\nEvents: §Y$EVENTS$§W\nAdvisor hired: §Y$ADVISOR$§W"
  CV_INCOMES_TAX_DESC: "Taxes: §Y$TAXES$§W"
  CV_ECONOMY_LOAN_REPAY_ALL_TITLE: "§YRepay all loans§!"
- CV_ECONOMY_LOAN_REPAY_ALL: "You have enough money to repay all your loans. This will cost $COST|Y0$¤"
+ CV_ECONOMY_LOAN_REPAY_ALL: "You have enough money to repay all your loans. This will cost $COST
  CV_ECONOMY_LOAN_REPAY_X_TITLE: "§YRepay $NUM$ loans.§!"
- CV_ECONOMY_LOAN_REPAY_X: "You have enough money to repay $NUM|Y$ of your loans. This will cost $COST|Y0$¤"
+ CV_ECONOMY_LOAN_REPAY_X: "You have enough money to repay $NUM
  CV_ECONOMY_LOAN_REPAY_NO: "You don't have enough money to repay any loans."
- CV_ECONOMY_PRIVATEERS: "Privateers ($PROV$): $VAL|Y2$¤"
+ CV_ECONOMY_PRIVATEERS: "Privateers ($PROV$): $VAL
  INCOMEHARBORFLEET_D: "We get paid for fleet access from: $LIST$."
  NO_INCOMEHARBORFLEET_D: "No one has fleet access to our country."
  CV_INCOME_TAXCHANGE: "Taxation Change"
@@ -2141,7 +2141,7 @@
  CV_UNIQUE_FINISHED: "\nAnd our §Y$NAME$§! grant \n$EFFECT$"
  CV_UNIQUE_WHENFINISHED: "\nWhen we have gained all the §Y$NAME$§! we will also gain:\n$EFFECT$"
  CV_IDEAS_ALL_UNLOCKED: "We have all our §Y$NAME$§!"
- NUM_OF_IDEAS: "Number of ideas: $NUM|Y$"
+ NUM_OF_IDEAS: "Number of ideas: $NUM
  CV_IDEAS_BONUS_IDEA_NOTUNLOCKED: "You need to unlock all ideas in the idea group to get the bonus idea"
  CV_IDEAS_BONUS_IDEA: "When fully unlocked, you gain the following additional benefit:"
  MENU_BAR_LOAD_GAME: "Load Game"
@@ -2308,7 +2308,7 @@
  INDEPENDENCE_WAR_NAME: "$ORDER$$FIRST$ War for Independence"
  attack_capital_INDEPENDENCE_WAR_NAME: "$SECOND$ War for Independence"
  DEFENDER_DESC: "The Defender of the Faith gets Casus Belli to enforce religious unity. This will cost §Y$VALUE$§W¤. After §Y$MONTHS$§W months, countries with more prestige than the current Defender can claim the title. \nYou'll also lose if you decline a call to war from a country of your faith being attacked by infidels."
- CARDINAL_NEW: "§YActive cardinal§!\nWe control this active cardinal from $HOME|Y$. Each active cardinal gives us $BENEFIT$ Papal Influence per year."
+ CARDINAL_NEW: "§YActive cardinal§!\nWe control this active cardinal from $HOME
  NO_ACTIVE_CARDINALS: "Spend your papal influence to vote on future cardinals to increase your chance to control a cardinal in the Papacy in the future."
  OPEN_PAPACY: "§YPapacy view§!\nClick here to open the papacy view."
  NAME: "Name"
@@ -2325,7 +2325,7 @@
  MISSION: "Mission"
  SORT_TIME: "Sort by the time it will take to convert."
  SORT_UNITY: "Sort by the impact on religious unity converting this province will have."
- UNITY_IMPACT: "Converting $NAME$ will increases religious unity by $CHANGE$.\nIt currently increases it by $CURR|Y$."
+ UNITY_IMPACT: "Converting $NAME$ will increases religious unity by $CHANGE$.\nIt currently increases it by $CURR
  CONVERT: "Convert"
  CONVERT_SECONDARY: "Choose Syncretic Faith"
  NO_CONVERT_POSSIBLE: "There is currently no religion for a §Y$RELIGION$§! country to convert to. If §GWestern Christian§!, to convert, you need to use the §YDirect the Clergy§! interaction in the §YEstates§! screen."
@@ -2336,7 +2336,7 @@
  RELIGIUS_UNITY_LABEL_D: "It's always good to unite all your provinces under the same religion. Religious unity under 100% increases the local unrest and decreases your influence over the Papacy if your state religion is Catholicism."
  RELIG_PERFECT: "We have achieved religious unity in $COUNTRY$ and live in harmony!"
  RELIG_PROBLEMS: "There are some provinces in our realm that are not $RELIGION$, causing problems for us. The list below contains the provinces currently not adhering to the one true faith."
- RELIG_UNITY_FROM_PROVINCES: "From Provinces: $VAL|G1%$"
+ RELIG_UNITY_FROM_PROVINCES: "From Provinces: $VAL
  RELIG_UNITY_EFFECT: "Having this level of religious unity has the following effects:"
  HAVE_LESS_RELIGIUS_UNITY_THAN: "Less religious unity than "
  HAVE_MORE_RELIGIUS_UNITY_THAN: "Have religious unity of at least "
@@ -2372,8 +2372,8 @@
  AUTOMATE_CARDINAL_OFF: "Click to turn Automatic Spending off."
  NO_ACTVIVE_CARDINALS: "No active cardinals."
  VOTE_ON_CARDINAL: "Spend Papal Influence to vote for this future cardinal."
- VOTE_ONE_ON_CARDINAL: "§YLeft click§! to spend $PI|R$ point of Papal Influence to add $PI|G$ vote for this future cardinal."
- CANT_VOTE_ON_CARDINAL: "You need at least $PI|Y$ point(s) of Papal Influence to vote for this cardinal."
+ VOTE_ONE_ON_CARDINAL: "§YLeft click§! to spend $PI
+ CANT_VOTE_ON_CARDINAL: "You need at least $PI
  ACTIVE_CARDINALS: "The country that has the most loyal active cardinals will be the papal controller."
  FUTURE_CARDINALS: "When an active cardinal dies, a random one of future cardinals will be chosen to be an active cardinal. The cardinal will be loyal to the one who has spent the most points on him."
  CARDINAL_CONTROLLER: "$COUNTRY$ ($VAL$)"
@@ -2410,14 +2410,14 @@
  NOT_ADVISOR_EXISTS: "The advisor with id $NAME$ doesn't exist."
  FLEETS: "Fleets"
  OPEN_YOUR_COUNTRY_DIPLO: "Open the diplomacy view for your own country."
- HAVE_LESS_AVERAGE_AUTONOMY_THAN: "Average autonomy is less than $VAL|Y$%.\n"
- HAVE_AT_LEAST_AVERAGE_AUTONOMY: "Average autonomy is $VAL|Y$% or higher.\n"
- HAVE_LESS_AVERAGE_AUTONOMY_ABOVE_MIN_THAN: "Average autonomy above minimum is less than $VAL|Y$%.\n"
- HAVE_AT_LEAST_AVERAGE_AUTONOMY_ABOVE_MIN: "Average autonomy above minimum is $VAL|Y$% or higher.\n"
- HAVE_LESS_LOCAL_AUTONOMY_ABOVE_MIN_THAN: "Local autonomy above minimum is less than $VAL|Y$%.\n"
- HAVE_AT_LEAST_LOCAL_AUTONOMY_ABOVE_MIN: "Local autonomy above minimum is $VAL|Y$% or higher.\n"
- HAVE_LESS_AVERAGE_HOME_AUTONOMY_THAN: "Average non-overseas autonomy is less than $VAL|Y$%.\n"
- HAVE_AT_LEAST_AVERAGE_HOME_AUTONOMY: "Average non-overseas autonomy is $VAL|Y$% or higher.\n"
+ HAVE_LESS_AVERAGE_AUTONOMY_THAN: "Average autonomy is less than $VAL
+ HAVE_AT_LEAST_AVERAGE_AUTONOMY: "Average autonomy is $VAL
+ HAVE_LESS_AVERAGE_AUTONOMY_ABOVE_MIN_THAN: "Average autonomy above minimum is less than $VAL
+ HAVE_AT_LEAST_AVERAGE_AUTONOMY_ABOVE_MIN: "Average autonomy above minimum is $VAL
+ HAVE_LESS_LOCAL_AUTONOMY_ABOVE_MIN_THAN: "Local autonomy above minimum is less than $VAL
+ HAVE_AT_LEAST_LOCAL_AUTONOMY_ABOVE_MIN: "Local autonomy above minimum is $VAL
+ HAVE_LESS_AVERAGE_HOME_AUTONOMY_THAN: "Average non-overseas autonomy is less than $VAL
+ HAVE_AT_LEAST_AVERAGE_HOME_AUTONOMY: "Average non-overseas autonomy is $VAL
  DIPLO_BAD_NEWS: "bad"
  DIPLO_GOOD_NEWS: "good"
  DIPLO_NEUTRAL_NEWS: "some"
@@ -2432,7 +2432,7 @@
  CANCEL_TRADENODE_PATROL: "Cancel Protect Trade"
  SHOW_DIPLOMATIC_ACTIONS: "Show Diplomatic Actions"
  SHOW_DIPLOMATIC_FEEDBACK: "Show Diplomatic Feedback"
- SHOW_OPINIONS: "Show Opinions of $WHO|Y$"
+ SHOW_OPINIONS: "Show Opinions of $WHO
  RECRUITMENT_COST: "Recruitment Cost"
  RECRUITMENT_TIME: "Recruitment Time"
  REPAIR_SPEED: "Repair speed"
@@ -2445,7 +2445,7 @@
  MAX_GARRISON: "Maximum garrison is §Y$VALUE$§!."
  SORTIES_TITLE: "§YSortie from Siege§!"
  SORTIES_DESC: "Spend §Y$COST$§!£mil to create an army from the garrison to protect the province. "
- GARRISON_MODIFIERS: "The garrison will increase with §G+$VAL|0$§! each month due to the following modifiers"
+ GARRISON_MODIFIERS: "The garrison will increase with §G+$VAL
  POWER_ACTION_SELECT_HEADER: "Select action. You have §Y$POWER$§! $TYPE$ power that you can spend."
  POWER_ACTION_MAKE_CORE: "Make $PROVINCE$ a Core."
  OFFER_NAVALACCTITLE: "Offer Fleet Basing Rights"
@@ -2513,7 +2513,7 @@
  MIGRATE_TO: "Migrate To"
  TRADEGOODSFROM: "Goods from §Y$PROV$§W ( @$FLAG$ $OWNER$ )"
  UNIT_MORALE_TT: "Morale is currently at $COL$$CURR$§W out of a maximum of §Y$MAX$§W."
- CV_DIPLOMACY_TECH_LEVEL: "$NAME$ is level $LEVEL|Y$"
+ CV_DIPLOMACY_TECH_LEVEL: "$NAME$ is level $LEVEL
  CV_DIPLOMACY_COUNTRYNAME: "@$TAG$ $NAME$"
  ENEMYWITH: "Enemy of $LIST$."
  OPINIONTHEMSELVES: "$WHO$ love themselves!"
@@ -2571,12 +2571,12 @@
  TARGET_PRIMARYCULTURE: "The culture in $NAME$ is §Y$CULTURE$§W. §Y$CULTURE$§W is in the §Y$GROUP$§W group."
  TARGET_SECONDARYCULTURE: "$NAME$ also accept the following cultures:"
  CULTURE_IS_IN_GROUP: "§Y$CULTURE$§W is in the §Y$GROUP$§W culture group."
- NOT_ACCEPTED_CULTURE: "$CULTURE|Y$ is §Rnot§W an accepted culture in $COUNTRY$."
- ACCEPTED_CULTURE: "$CULTURE|Y$ is an §Gaccepted culture§! in $COUNTRY$."
- PRIMARY_CULTURE: "$CULTURE|Y$ is the §Gprimary culture§! in $COUNTRY$."
- NOT_ACCEPTED_CULTURE_PRIMARY_GROUP: "$CULTURE|Y$ is §Rnot§W an accepted culture in $COUNTRY$, but it belongs to the primary culture group $GROUP|Y$."
+ NOT_ACCEPTED_CULTURE: "$CULTURE
+ ACCEPTED_CULTURE: "$CULTURE
+ PRIMARY_CULTURE: "$CULTURE
+ NOT_ACCEPTED_CULTURE_PRIMARY_GROUP: "$CULTURE
  ACCEPTED_CULTURES: "Accepted cultures in $COUNTRY$ are:"
- IS_CHANGING_CULTURE: "We are currently working on making $CULTURE|Y$ the primary culture in this province."
+ IS_CHANGING_CULTURE: "We are currently working on making $CULTURE
  CULTURES_IN_PRIMARY_GROUP: "Cultures in primary group (§Y$GROUP$§!):"
  OTHER_CULTURES_IN_GROUP: "Other cultures in the §Y$CULTURE$§W group are:"
  NO_NAME_MODIFIERS: "§Y$NAME$§W has no modifiers that modifies this value right now."
@@ -2722,9 +2722,9 @@
  RECALL: "Recall"
  NO_COLONY_PRESENT: "Uncolonised Land."
  COLONY_HISTORY: "Became uncolonised land."
- COLONIST_PROGRESS: "$NAME$ from $COUNTRY|Y$ will arrive at $PROVINCE$ in $DAYS$ days ($DATE$). On arrival he will start building a colony and will have a chance of $CHANCE$ to increase the progress of colonization each month."
- COLONIST_TRAVELING: "The Colonist $NAME$ from $COUNTRY|Y$ is on his way to $PROVINCE$."
- COLONY_TRADE: "Trade Power: $POWER|1$\nTrade Value: $VALUE|2$\nTrade Node: $NODE$"
+ COLONIST_PROGRESS: "$NAME$ from $COUNTRY
+ COLONIST_TRAVELING: "The Colonist $NAME$ from $COUNTRY
+ COLONY_TRADE: "Trade Power: $POWER
  COLONY_PROGRESS: "$SETTLERS$ progress has been made in this province. $MAX$ is needed to create a city."
  IS_ENEMY1: "Views"
  IS_ENEMY2: "as an enemy."
@@ -2758,10 +2758,10 @@
  SHATTERED_RETREAT_DESC: "§YShattered retreat§W\nThis unit is doing a shattered retreat to §Y$PROVINCE$§!. It will recover morale §G$RECOVERSPEED$%§W faster on controlled provinces."
  SHATTERED_RETREAT_OTHER_DESC: "§YShattered retreat§W\nThis unit is doing a shattered retreat. It will recover morale §G$RECOVERSPEED$%§W faster on controlled provinces."
  VALUE_TRADE_GOODS: "Value of trade goods: §Y$INCOME$§W"
- TRADE_GOODS_ONMAP: "$GOODS|G$ \nGoods produced: $PRODUCED|Y2$ \nTrade value: $VALUE|Y2$ \nTrade power: $TRADE|Y2$"
+ TRADE_GOODS_ONMAP: "$GOODS
  TRADE_GOODS_ONMAP_UNKNOWN_1: "Possible trade goods:"
- TRADE_GOODS_ONMAP_UNKNOWN_2: "Goods produced: $PRODUCED|Y2$ \nTrade value: $VALUE|Y2$ \nTrade power: $TRADE|Y2$"
- POSSIBLE_TRADEGOOD_ENTRY: "$TRADE|G$: §Y$VALUE|2$%§W"
+ TRADE_GOODS_ONMAP_UNKNOWN_2: "Goods produced: $PRODUCED
+ POSSIBLE_TRADEGOOD_ENTRY: "$TRADE
  UNIT_ON_HOLD: "This production is on hold because there are other units before it in the build queue."
  UNIT_RELOCATION: "This unit is relocating to §Y$PROVINCE$§!. The unit will arrive on §Y$DATE$§!."
  UNIT_RELOCATION_BLOCKADED: "This unit is relocating to §Y$PROVINCE$§!. Their relocation progress is currently halted because of the blockade."
@@ -2828,12 +2828,12 @@
  WAR_GOAL_CONTROLLER_ATTACKER_SUP: "War Goal: Attacker has won enough battles ($WARSCORE$ war score from battles)"
  WAR_GOAL_CONTROLLER_DEFENDER_SUP: "War Goal: Defender has won enough battles ($WARSCORE$ war score from battles)"
  WAR_GOAL_CONTROLLER_NOONE_SUP: "War Goal: No one has won enough battles (over $WARSCORE$ war score from battles)"
- WAR_GOAL_BLOCKADE: "Attacker blocks $A_BLOCK|0Y$ ports. Defender blocks $D_BLOCK|0Y$ ports. This gives the $WHO$ $SCORE|+$ war score each month. Current war score from goal is"
+ WAR_GOAL_BLOCKADE: "Attacker blocks $A_BLOCK
  NOACCEPTEDCULTURES: "No accepted cultures"
  nowargoal: "No War Goal"
  nowargoal_desc: "We have no valid reason to attack them."
  NO_MORE_BANKLOANS: "You cannot take any more Bank Loans."
- NO_MORE_BANKLOANS_TOO_MANY: "You have taken $LOANNUM|Y$ loans, cannot take more than $MAXNUM|Y$ loans!"
+ NO_MORE_BANKLOANS_TOO_MANY: "You have taken $LOANNUM
  NO_MORE_BANKLOANS_UNCONDITIONAL: "Cannot take loans while unconditionally surrendered!"
  WE_IMPACT_ON_ANNEX_INTEGRATE: "Diplomatic Annexation and Integration: $VAL$\n"
  TRIBAL: "Tribal"
@@ -2912,7 +2912,7 @@
  VOLUNTEER_BANKRUPT_NO_LOANS: "Without any loans, there is no reason to declare bankruptcy."
  VOLUNTEER_BANKRUPT: "Declaring a bankruptcy will wipe our loans, but we will suffer some severe drawbacks."
  CV_GO_BANKRUPT_TITLE: "Declare Bankruptcy"
- CV_GO_BANKRUPT_TEXT: "By declaring bankruptcy, we will wipe all our loans, but lost a lot of prestige, stability, and set us back for a fair bit, with all progress being stopped in our nation, and devastation increased. Our advisors and mercenaries have left. During the $DURATION|Y$ years we will also have\n$EFFECT$\n\nAre you sure?"
+ CV_GO_BANKRUPT_TEXT: "By declaring bankruptcy, we will wipe all our loans, but lost a lot of prestige, stability, and set us back for a fair bit, with all progress being stopped in our nation, and devastation increased. Our advisors and mercenaries have left. During the $DURATION
  CV_DEBASE_CURRENCY_CONFIRM_TITLE: "Debase Currency"
  CV_DEBASE_CURRENCY_CONFIRM_TEXT: "Are you sure you wish to debase your currency?\n\nYou will get §Y$VAL$§W¤, but corruption will increase by §R$CORRUPTION$%§!."
  CV_TAKE_LOAN_CONFIRM_TITLE: "Take Loan"
@@ -2920,11 +2920,11 @@
  CV_REPAY_LOAN_CONFIRM_TITLE: "Repay Loan"
  CV_REPAY_LOAN_CONFIRM_TEXT: "Are you sure you want to repay §Y$VAL$§W¤? This sum includes §Y$FEE$§W¤ in remaining interest."
  CV_REPAY_ALL_LOANS_CONFIRM_TITLE: "Repay All Loans"
- CV_REPAY_ALL_LOANS_CONFIRM_TEXT: "Are you sure you want to repay $NUM$ loans by the total value of $VAL|Y2$¤? This sum includes $FEE|Y2$¤ in remaining interest."
- CV_CURRENT_INFLATION: "Current Inflation: $VAL|Y%$§Y%§!"
- CV_AVARAGE_INFLATION: "Average Inflation (last $TIME$ Months): $VAL|Y%$§Y%§!"
- CV_MAX_INFLATION: "Maximum Inflation (last $TIME$ Months): $VAL|Y%$§Y%§!"
- CV_MIN_INFLATION: "Minimum Inflation (last $TIME$ Months): $VAL|Y%$§Y%§!"
+ CV_REPAY_ALL_LOANS_CONFIRM_TEXT: "Are you sure you want to repay $NUM$ loans by the total value of $VAL
+ CV_CURRENT_INFLATION: "Current Inflation: $VAL
+ CV_AVARAGE_INFLATION: "Average Inflation (last $TIME$ Months): $VAL
+ CV_MAX_INFLATION: "Maximum Inflation (last $TIME$ Months): $VAL
+ CV_MIN_INFLATION: "Minimum Inflation (last $TIME$ Months): $VAL
  EFR_ADJ: "East Frisian"
  EFR_ADJ2: "East Frisian"
  TRADE_TRADE_NODES: "Trade Nodes"
@@ -3143,23 +3143,23 @@
  CLAIMINFO_PERMANENT: "§Y$COUNTRY$§W has a permanent claim on this province."
  CLAIMINFO_DELAYED_START: "§Y$COUNTRY$§W has some legitimacy in viewing this province as theirs. "
  CLAIMINFO_DELAYED_PERMANENT: "The claim is permanent and will not expire."
- CLAIMINFO_DELAYED_PEACE: "The claim is valid until $DATE|Y$."
- CLAIMINFO_DELAYED_TRUCE: "The claim is valid until $DATE|Y$, the day the truce with $PROVINCE_OWNER|Y$ ends."
- CLAIMINFO_DELAYED_WAR_END: "The claim is valid until the war with $PROVINCE_OWNER|Y$ ends. "
- CLAIMINFO_DELAYED_WAR_BOTH: "The claim is valid until the war with $PROVINCE_OWNER|Y$ ends, or $DATE|Y$, whichever is later."
- CLAIMINFO_DELAYED_OWNED: "The claim can never expire while $PROVINCE_OWNER|Y$ owns and hasn't cored the province. If the province is lost, the claim will expire $DATE|Y$."
+ CLAIMINFO_DELAYED_PEACE: "The claim is valid until $DATE
+ CLAIMINFO_DELAYED_TRUCE: "The claim is valid until $DATE
+ CLAIMINFO_DELAYED_WAR_END: "The claim is valid until the war with $PROVINCE_OWNER
+ CLAIMINFO_DELAYED_WAR_BOTH: "The claim is valid until the war with $PROVINCE_OWNER
+ CLAIMINFO_DELAYED_OWNED: "The claim can never expire while $PROVINCE_OWNER
  CLAIMINFO_DELAYED_EXPLAINED: "Claims expire $CLAIM_YEARS$ years after they are created, unless the claimant is at war with the owner of the province, or the claimant is the owner. "
  LEADER: "Leader"
  LAND_BATTLE: "Land battle"
  NAVAL_BATTLE: "Naval battle"
  RESULT: "Result"
  CHANGE_GOVERNMENT_TYPE: "§YChange Government§!"
- DISCIPLINE_VALUE: "The army's discipline value is §Y$VALUE|0$%§!."
+ DISCIPLINE_VALUE: "The army's discipline value is §Y$VALUE
  DISCIPLINE_VALUE_NEW: "$COUNTRY$'s Discipline is $VALUE$"
  SELECT_ADVISOR: "Select Advisor"
  CANCEL_COLONIST: "Recall Colonist"
  CANCEL_COLONIST_DESC: "Recalling your colonist before the province is properly integrated into your realm will not cancel your colony, although it might trigger a native uprising."
- COLONY_NATIVE_CULTURE: "The natives in this province have the culture $CULTURE|Y$ ($CULTUREGROUP|Y$)."
+ COLONY_NATIVE_CULTURE: "The natives in this province have the culture $CULTURE
  COLONIST_ARRIVAL_DATE: "Colonist will arrive in §Y$DAYS$§W days."
  COLONIST_WORKING: "Building Colony."
  COLONYCHANCE: "Each month your Colonist has a $CHANCE$% chance of increasing the Settler population."
@@ -3174,7 +3174,7 @@
  AT_LEAST_ONE_PROVINCE_IN_CONTINENT: "At least one province in the $CONTINENT$ continent"
  NOT_ONE_PROVINCE_IN_CONTINENT: "No provinces in the $CONTINENT$ continent"
  HAS_REDUCED_NAVAL_ATTRITION: "Has Reduced Naval Attrition"
- COLONIST_PROGRESS_WORKING: "§Y$NAME$§! from $COUNTRY|Y$ is building a colony in §Y$PROVINCE$§!. Each month he will have a §Y$CHANCE$§! chance to increase the population by §Y$NUM$§!, growing the colony by an average of §Y$VAL$§W people per year."
+ COLONIST_PROGRESS_WORKING: "§Y$NAME$§! from $COUNTRY
  COLONIST_WORKINGNAME: "The colonist $NAME$ from $COUNTRY$ is working in $PROVINCE$."
  UNIT_TRADE_POWER_DESC: "Trade power gives extra power to the trade node currently defended."
  PW_GROWTH_CHANCE: "New Progress:"
@@ -3231,8 +3231,8 @@
  YEARLY_MERCHANTS: "Merchants"
  YEARLY_DIPLOMATS: "Diplomats"
  SUBJECT_EXPENSES: "Expenses:"
- BASE_FORT_LEVEL: "Level $LEVEL$ Fort: $VALUE|Y$"
- LAND_LOANS: "$NAME$ currently have $VAL|Y0$ loan(s) and a total debt of $AMOUNT|Y0$¤."
+ BASE_FORT_LEVEL: "Level $LEVEL$ Fort: $VALUE
+ LAND_LOANS: "$NAME$ currently have $VAL
  CANT_CHANGE_GOV_REASON: "Currently cannot change government because:\n"
  CANT_CHANGE_GOV_VALID: "§RIt's not allowed to manually change from this kind of government.§!"
  NO_GOVERNMENTS_AVAILABLE: "There are no viable government types to change to."
@@ -3267,7 +3267,7 @@
  RIGHT_CLICK_TO_DELETE: "Right click to delete this template."
  PW_BUILDSHIPS: "Build Ships"
  WAR_COMPLETE_VICTORY: "$SIDE$ has a complete victory!"
- GOOD_BAD_RATIO: "We need at least $THRESHOLD|Y$ more §Gpositive§! than §Rnegative§! reasons for an acceptance. We currently have $RATIO|Y$."
+ GOOD_BAD_RATIO: "We need at least $THRESHOLD
  own_chat_message: "There is a new chat message to you personally"
  global_chat_message: "There are new global chat messages"
  CHAT_GLOBAL: "GLOBAL"
@@ -3283,7 +3283,7 @@
  CORE_SAME_REGION: " - colonial region "
  CORE_SAME_CONTINENT: " - colonial continent "
  COLO_SAME_CONTINENT: "Same continent: "
- CULTURE_SAME_RELIGION_OVERSEAS: "Same religion overseas: $VAL|%-1$"
+ CULTURE_SAME_RELIGION_OVERSEAS: "Same religion overseas: $VAL
  COURT_PU_IS_LESSER: "§Y$SUBJECT$§! is subject to §Y$OVERLORD$§! in a personal union."
  PU_BREAK_REASONS: "Requirements for continued union (excluding temporary unions):"
  MIL_TACTICS_EXPLAINED: "Military tactics reduces the damage your units take in combat. The higher it is, the better."
@@ -3298,10 +3298,10 @@
  MERGE_MOTHBALLED: "It is not possible to merge Mothballing and non-Mothballing fleets."
  TRADE_MOTHBALLED: "\nIt is not possible to use the fleet while Mothballing."
  UNIT_DESTINATION_LABEL: "§YDestination§!"
- UNIT_DESTINATION_TEXT: "This unit is currently moving to §Y$LOCATION$§!, and expect to be there at $DATE|Y$."
- MDEATH_PU_BREAKS_PRESTIGE: "$OVERLORD|Y$ having positive prestige"
- MDEATH_PU_BREAKS_OPINION: "$SUBJECT|Y$ opinion of $OVERLORD|Y$ is positive"
- MMDEATH_UNION_INHERIT: "Chance of $OVERLORD|Y$ inheriting $SUBJECT|Y$: $VAL|Y$%"
+ UNIT_DESTINATION_TEXT: "This unit is currently moving to §Y$LOCATION$§!, and expect to be there at $DATE
+ MDEATH_PU_BREAKS_PRESTIGE: "$OVERLORD
+ MDEATH_PU_BREAKS_OPINION: "$SUBJECT
+ MMDEATH_UNION_INHERIT: "Chance of $OVERLORD
  MDEATH_INHERIT_STABILITY: "Stability: "
  MDEATH_INHERIT_CULTURE: "Same culture group: "
  MDEATH_INHERIT_SKILL: "Diplomatic Skill: "
@@ -3312,21 +3312,21 @@
  MDEATH_INHERIT_END: "Not possible to inherit when the union is due to end."
  MODIFIER_ADDED_SHORT: "'§Y$WHAT$§W' until §Y$DATE$§W\n"
  END_OF_DISASTER_MOD: "End of $NAME$"
- FOREIGN_SPY_DEFENCE: "Spy Detection in $WHO|Y$: $VALUE$\n"
+ FOREIGN_SPY_DEFENCE: "Spy Detection in $WHO
  CS_NEW_TC_DESC: "This new Trading City has been formed. You can now change its colour and flag."
  PEACE_WILL_PROBABLY_ACCEPT: "Would probably accept this offer."
  PEACE_WILL_PROBABLY_NOT_ACCEPT: "Would probably not accept this offer."
  HUMAN_PLAYER_RESPONSE: "In the end, since this is a human player, the actual response will be up to them."
  COLONY_TOO_FAR_AWAY: "This province is too far away."
- DISTANCE_TO_COLONY: "$NAME|Y$ is $DISTANCE|Y0$ distance away from our closest unblockaded core province with a port which is $CLOSEST|Y$."
- COLONIAL_RANGE: "Our colonial range: $RANGE|Y0$"
- OUR_CLOSEST_PROVINCE_DISTANCE: "$TARGET|Y$ is $DISTANCE$ away from $PROVINCE|Y$, which is our closest province."
- BASE_FROM_TECH: "Base value from technology: $VAL|Y0$"
- MISSIONARY_TIME: "It will take approximately $MONTHS|Y0$ months to convert $PROVINCE$ to become $RELIGION|Y$."
+ DISTANCE_TO_COLONY: "$NAME
+ COLONIAL_RANGE: "Our colonial range: $RANGE
+ OUR_CLOSEST_PROVINCE_DISTANCE: "$TARGET
+ BASE_FROM_TECH: "Base value from technology: $VAL
+ MISSIONARY_TIME: "It will take approximately $MONTHS
  MISSIONARY_NO_END_DATE: "At this speed, $NAME$ will never be fully converted."
- MISSIONARY_END_DATE:3 "At this speed, $NAME$ will be fully converted on $DATE|Y$."
- MISSIONARY_SLIDER: "Missionary slider: $VAL|1-%$"
- MISSIONARY_MONTHLY_PROGRESS: "The missionary will have a monthly progress of $PROGRESS|Y1%$ due to the following:"
+ MISSIONARY_END_DATE:3 "At this speed, $NAME$ will be fully converted on $DATE
+ MISSIONARY_SLIDER: "Missionary slider: $VAL
+ MISSIONARY_MONTHLY_PROGRESS: "The missionary will have a monthly progress of $PROGRESS
  MISSIONARY_FULL_STRENGTH: "Total Missionary Strength in this province is §Y$VALUE$§!."
  GLOBAL_MISSIONARY_STRENGTH: "Missionary Strength"
  LOCAL_MISSIONARY_STRENGTH: "Local Missionary Strength"
@@ -3340,9 +3340,9 @@
  MANEUVERDESCR: "The manoeuvre value increases the movement speed of units controlled by this leader. It also increases the Trade Power when on a trade mission, lowers attrition and makes the leader more likely to fight in favourable terrain."
  SIEGEDESCR: "The siege value is a measure of how much the leader will help the siege to end faster."
  ALREADY_BUILDING_CORE: "We are already working on making $PROVINCE$ a core province."
- CORE_CONST_TIP: "We are currently working on making $PROVINCE|Y$ a core. Our progress so far is $PROGRESS|Y1%$. The work will be done by $DATE|Y$."
+ CORE_CONST_TIP: "We are currently working on making $PROVINCE
  ALREADY_CHANGING_CULTURE: "We are already working on changing the culture in $PROVINCE$."
- CULTURE_CONST_TIP: "We are currently working on making $CULTURE|Y$ the primary culture in $PROVINCE|Y$. Our progress so far is $PROGRESS|Y1%$. The work will be done by $DATE|Y$."
+ CULTURE_CONST_TIP: "We are currently working on making $CULTURE
  MISSIONARY_WORKING: "A missionary is already working in $PROVINCE$."
  CORE_WORKING: "We're already working in $PROVINCE$ to make it into a core."
  CULTURE_WORKING: "We're already working in $PROVINCE$ to make it change its culture."
@@ -3350,7 +3350,7 @@
  NOT_ENOUGH_MISSIONARIES: "Not enough missionaries."
  CANT_CONVERT_NOW: "Can't send a missionary: "
  alert_no_mercs_instant: "§YMercenary force limit reached§!"
- alert_no_mercs_delayed: "You can't recruit more mercenaries because you have reached the maximum of $VAL|Y$ regiments."
+ alert_no_mercs_delayed: "You can't recruit more mercenaries because you have reached the maximum of $VAL
  alert_idea_slot_instant: "§YYou can now invest in a new idea§W"
  alert_idea_slot_delayed: "$LIST$"
  alert_idea_group_slot_instant: "§YYou can now choose a new idea group§W"
@@ -3372,7 +3372,7 @@
  REVOKE_ELECTOR_TITLE: "Revoke Electorate"
  CB_ALLOWED_ELECTOR_REVOKE: "Electorate Revocation"
  REVOKE_ELECTOR_WAR_NAME: "$ORDER$$FIRST$-$SECOND$ War of Imperial Superiority"
- TRADENODE_POWER_MOD: "Trade Node Power: $VAL|+1$"
+ TRADENODE_POWER_MOD: "Trade Node Power: $VAL
  EXPENSESUPPORTREBELS: "Support rebels"
  MAY_FABRICATE_CLAIMS: "May Fabricate Claims"
  TECHFLAG_NEEDTECH: "Requires $TABLE$ $VAL$"
@@ -3391,9 +3391,9 @@
  MAY_AGITATE_FOR_LIBERTY_SHORT: "Agitate for Liberty"
  MAY_INFILTRATE_ADMINISTRATION_SHORT: "Infiltrate Administration"
  MAY_CORRUPT_OFFICIALS_SHORT: "Corrupt Officials"
- TIME_DAYS: "It would take $DAYS|Y$ days."
- TIME_MONTHS: "It would take $MONTHS|Y$ months."
- TIME_YEARS: "It would take $YEARS|Y$ years."
+ TIME_DAYS: "It would take $DAYS
+ TIME_MONTHS: "It would take $MONTHS
+ TIME_YEARS: "It would take $YEARS
  THEY_DESIRE: "They desire"
  AND_MORE: "And $VAL$ more..."
  AND_MORE_LOWERCASE: "and $VAL$ more..."
@@ -3407,9 +3407,9 @@
  MAPMODE_NON_PRIMARY: "Left-click to show mapmode.\nRight-click to select this as one of your primary mapmodes."
  MAPMODE_PRIMARY_FULL: "(You need to deselect one of your primary modes first.)"
  LOCK_MORE_MAPMODES: "§YLock/Unlock the more mapmodes-interface§!"
- STABILITY_VAL: "Stability: $VAL|0+=$"
- RELIGION_VAR: "Religion: $RELIGION|Y$"
- NUM_OF_MARRIAGES_DESC: "Having $NUM|0Y$ Royal Marriages will have the following effect on $COUNTRY$: "
+ STABILITY_VAL: "Stability: $VAL
+ RELIGION_VAR: "Religion: $RELIGION
+ NUM_OF_MARRIAGES_DESC: "Having $NUM
  conquer_okinawa_title: "Conquer Okinawa"
  conquer_okinawa_desc: "The Ryûkyû Islands rightly belongs to Japan and must be subjugated!"
  jap_colonize_taiwan_title: "Colonise Taiwan"
@@ -3426,12 +3426,12 @@
  MACRO_ADD_NAVY_TEMPLATE: "Create template"
  MACRO_CREATE_LAND_TEMPLATE: "Create Army Template"
  MACRO_CREATE_NAVY_TEMPLATE: "Create Navy Template"
- MACRO_NUM_OF_PROVINCE: "$NUM|0Y$ provinces will be used to build the template."
- MACRO_TEMPLATE_COST: "This template will cost $COST|Y1$¤ to build."
- MACRO_ADD_UNIT: "Add $NUM|G$ $TYPE$"
- MACRO_REMOVE_UNIT: "Remove $NUM|R$ $TYPE$"
- MACRO_ADD_PROVINCE: "Add $NUM|G$ province(s)"
- MACRO_REMOVE_PROVINCE: "Remove $NUM|R$ province(s)"
+ MACRO_NUM_OF_PROVINCE: "$NUM
+ MACRO_TEMPLATE_COST: "This template will cost $COST
+ MACRO_ADD_UNIT: "Add $NUM
+ MACRO_REMOVE_UNIT: "Remove $NUM
+ MACRO_ADD_PROVINCE: "Add $NUM
+ MACRO_REMOVE_PROVINCE: "Remove $NUM
  MACRO_TEMPLATE_NAME: "Template Name"
  MACRO_TEMPLATE_NAME_INVALID: "Template name is already taken."
  MACRO_SAVE_TEMPLATE: "Save your template."
@@ -3444,14 +3444,14 @@
  MACRO_NAVY_TEMPLATE: "Navy Templates"
  MACRO_LAND_UNITS: "Land units"
  MACRO_NAVAL_UNITS: "Naval units"
- MACRO_LAND_TEMPLATE_INFO: "This template contains: \n$INF$ $INFTYPE|Y$$MERCINF$ \n$CAV$ $CAVTYPE|Y$$MERCCAV$ \n$ART$ $ARTTYPE|Y$$MERCART$"
- MACRO_NAVY_TEMPLATE_INFO: "This template contains: \n$HEAVY$ $HEAVYTYPE|Y$ \n$LIGHT$ $LIGHTTYPE|Y$ \n$GALLEY$ $GALLEYTYPE|Y$ \n$TRANSPORT$ $TRANSPORTTYPE|Y$"
- MACRO_TEMPLATE_SPREAD: "$NUM|Y0$ provinces will be used to build this template."
+ MACRO_LAND_TEMPLATE_INFO: "This template contains: \n$INF$ $INFTYPE
+ MACRO_NAVY_TEMPLATE_INFO: "This template contains: \n$HEAVY$ $HEAVYTYPE
+ MACRO_TEMPLATE_SPREAD: "$NUM
  MACRO_MERCS: "Mercenaries"
  MACRO_MERC: "Mercenary"
  MACRO_REGULARS: "Regulars"
  MACRO_MERCS_AVAILABLE: "$VAL$ available"
- MACRO_BUILDING_TOOLTIP: "$BUILDING|Y$\n-----\n§GClick to build in $PROVINCE$§!\n$MODIFIERS$\n\n$BUILDINFO$"
+ MACRO_BUILDING_TOOLTIP: "$BUILDING
  MACRO_NOT_ENOUGH_DUCATS: "Not enough ducats."
  MACRO_NOT_ENOUGH_MONARCH_POINTS: "Not enough $ICON$."
  MACRO_WILL_EXCEED_FORCE_LIMIT_WARNING: "§RThis construction will take you over your force limit, and incur extra costs.§!"
@@ -3479,7 +3479,7 @@
  GLOBAL_SAILORS: "National Naval Material Modifier"
  SAILORS_RECOVERY: "Naval Material Stockpile Speed"
  MACRO_TOO_FEW_MERCS: "Not enough mercenary regiments can be supported to build this template."
- MACRO_NO_MONEY: "§RNeed $NEEDED|0$¤ to build.§!"
+ MACRO_NO_MONEY: "§RNeed $NEEDED
  MACRO_IN_COMBAT: "There is currently a combat in $PROVINCE$."
  MACRO_OPEN_INTERFACE_TOOLTIP: "§YProduction Interface§!\nClick here to recruit units, levy taxes or construct forts."
  MACRO_RULES: "Forbidden by rules."
@@ -3487,12 +3487,12 @@
  MACRO_IS_COLONY: "$PROVINCE$ is a colony."
  MACRO_HAS_BUILDING: "§G$BUILDING$ is already built in $PROVINCE$.§!"
  MACRO_WRONG_TECH:2 "§Y$BUILDING$ requires $TECH$ ($LEVEL$).§!"
- MACRO_NEED_BUILDING: "Need to build $BUILDING_NEEDED|R$ before $BUILDING$ can be built."
+ MACRO_NEED_BUILDING: "Need to build $BUILDING_NEEDED
  MACRO_ALREADY_HIGHLEVEL: "$PROVINCE$ already has a special building."
  MACRO_ALREADY_MANUFACTORY: "$PROVINCE$ already has a manufactory."
  MACRO_ONCE_IN_COUNTRY: "$BUILDING$ can only be built once in each country."
  MACRO_REQUIREMENT_NOT_FULFILLED: "Requirements for $BUILDING$ are not fulfilled for this province."
- MACRO_QUEUE: "$VAL|Y$ unit(s) are under construction:"
+ MACRO_QUEUE: "$VAL
  MACRO_CANCEL: "Click to cancel."
  MACRO_CANT_CANCEL_BECAUSE_OTHERS: "Can't cancel because it is not your construction."
  MACRO_SPECIAL_BUILDING: "Special building (Category: $CAT$)"
@@ -3502,8 +3502,8 @@
  MACRO_ADMIRALTY_REQ: "Can only be built in a coastal province."
  MACRO_EMBASSY_REQ: "Can only be built in a core province."
  MACRO_PALACE_REQ: "Can only be built in the capital."
- MACRO_INCREASE_TRADE_VALUE: "(will increase Trade Value by $VAL|+G2$)"
- MACRO_MAINTENANCE_COST: "Base Maintenance: $COST|1$¤ per month"
+ MACRO_INCREASE_TRADE_VALUE: "(will increase Trade Value by $VAL
+ MACRO_MAINTENANCE_COST: "Base Maintenance: $COST
  MACRO_MAINTENANCE_FORCE_LIMIT_WARN: "§RBuilding this will exceed our force limit!§!"
  MACRO_INCREASE_INCOME_DESC: "This building will increase monthly income by $VAL$¤"
  MACRO_INCREASE_PRODUCTION_DESC: "This building will increase production by $VAL$"
@@ -3515,19 +3515,19 @@
  MACRO_BUILDING_CANT_BUILD: "You don't have the technology for this building yet."
  MACRO_BUILDING_CANT_BUILD_UNTIL_TECH: "You need $TECH$ $LEVEL$ to build this building."
  MACRO_BUILDING_CANT_BUILD_DOESNT_GIVE_SLOTS: "There are no free building slots and building this building wouldn't open any more."
- MACRO_TRADE_GOOD_TOOLTIP: "$TRADE_GOOD$\nCurrent Price: $CURRENT|Y$¤\nBase Price: $BASE|Y$¤"
+ MACRO_TRADE_GOOD_TOOLTIP: "$TRADE_GOOD$\nCurrent Price: $CURRENT
  MACRO_TRADE_GOOD_HEADER: "§YMapmode Values§!"
  CANT_UPGRADE_UNTIL_TECH: "You need $TECH$ $LEVEL$ to upgrade to $NAME$."
  BUILDING_BLOCKED_BY_MISSIONARY: "Can't build while missionary is active in the province."
  BUILDING_BUILT: "§GThis building has been built already.§!"
  BUILDING_BEING_BUILT: "§GThis building is already being constructed.§!"
- MACRO_LOCAL_AUTONOMY_PROVINCE: "Province: $PROVINCE|Y$\nRebel Faction: $REBELS|Y$\nLocal Autonomy: $AUTONOMY|1R$%\nUnrest: $UNREST|1R$%"
+ MACRO_LOCAL_AUTONOMY_PROVINCE: "Province: $PROVINCE
  CANT_BUILD_MERC_SIEGE: "You cannot hire mercenaries in provinces that are under siege."
- ARMY_MAINTENANCE_NUM: "Raised Regiments: $A|2Y$¤ \nMercenaries: $M|2Y$¤\nMercenary Companies: $MC|2Y$¤"
- ARMY_MAINTENANCE_CONDOTTIERI_NUM: "\nCondottieri: $A|2Y$¤"
- ARMY_MAINTENANCE_OVERFORCE: "Over Force Limit: $FORCE|2Y$¤"
- ARMY_MAINTENANCE_REINFORCE: "Reinforcement: $REINFORCE|2Y$¤"
- ARMY_MAINTENANCE_TOTAL: "Total cost: $TOTAL|2Y$¤"
+ ARMY_MAINTENANCE_NUM: "Raised Regiments: $A
+ ARMY_MAINTENANCE_CONDOTTIERI_NUM: "\nCondottieri: $A
+ ARMY_MAINTENANCE_OVERFORCE: "Over Force Limit: $FORCE
+ ARMY_MAINTENANCE_REINFORCE: "Reinforcement: $REINFORCE
+ ARMY_MAINTENANCE_TOTAL: "Total cost: $TOTAL
  NAVAL_UPGRADE_NO_UNITS: "There are no ships in this fleet that can be upgraded."
  NAVAL_UPGRADE_CANNOT_AFFORD: "Cannot afford to upgrade all ships in the fleet. Need §Y$COST$§!¤ to upgrade §Y$AMOUNT$§! ships!"
  NAVAL_UPGRADE_SUCCESS: "The upgrade will cost a total of §Y$COST$§!¤ and §Y$AMOUNT$§! ships will get upgraded.\nUpgraded ships will be reduced to 1% strength and their materials returned to your naval material stockpile."
@@ -3579,7 +3579,7 @@
  SERVER_BOOKMARK: "Bookmark: $BOOKMARK$"
  SERVER_START_DATE: "Start date: $DATE$"
  SERVER_LAUNCHING_MP: "*** Launching MULTIPLAYER-game ***"
- CANCEL_BUILDING_PROGRESS: "Are you sure you wish to cancel $BUILDING$ from being built in $PROVINCE$? $PERCENTAGE_RETURNED|%1Y$ of the investment will be returned."
+ CANCEL_BUILDING_PROGRESS: "Are you sure you wish to cancel $BUILDING$ from being built in $PROVINCE$? $PERCENTAGE_RETURNED
  NO_SHIPS_IN_PORT: "There are no friendly ships in port."
  NO_FRIENDLY_TRANSPORT_SHIPS_IN_PORT: "There are no friendly transport ships in port"
  DISCONNECT_TO_SHIP: "Detach from Transport"
@@ -3672,9 +3672,9 @@
  japan.EVTNAME1:2 "The Fall of Kyoto"
  japan.EVTDESC1: "[new_shogunate.Monarch.GetName] has utterly defeated the shogun, and will crown [new_shogunate.Monarch.GetHerHis] brilliant campaign by having the Emperor name [new_shogunate.Monarch.GetHerHim] the new shogun - becoming the hereditary military dictator of Japan.\n\nOnly time will tell whether the [new_shogunate.Monarch.Dynasty.GetName] shogunate will be more successful than its predecessor when it comes to the task of solidifying the warring clans."
  japan.EVTOPTA1: "We will prevail!"
- WARSCORE_FROM_BATTLE: "($VAL|=+$ War Score)"
- CARDINAL_CONTROLLER_ACTIVE_DESC: "This cardinal belongs to $COUNTRY|Y$."
- CARDINAL_CONTROLLER_FUTURE_DESC: "This cardinal belongs to $COUNTRY|Y$ since they have given them $VOTES|Y$ votes so far."
+ WARSCORE_FROM_BATTLE: "($VAL
+ CARDINAL_CONTROLLER_ACTIVE_DESC: "This cardinal belongs to $COUNTRY
+ CARDINAL_CONTROLLER_FUTURE_DESC: "This cardinal belongs to $COUNTRY
  CARDINAL_TOOLTIP_AMOUNT: "§Y$COUNTRY$§W has §Y$AMOUNT$§W active cardinals."
  CARDINAL_TOOLTIP_PAPAL: "§Y$COUNTRY$§W has §Y$AMOUNT$§W papal influence."
  CARDINAL_TOOLTIP_INVESTED: "§Y$COUNTRY$§W has invested §Y$AMOUNT$§W papal influence in becoming the next curia controller."
@@ -3716,8 +3716,8 @@
  REBELS_FIGHT_FOR: "These rebels want to defect to $NATION$"
  alert_reinforcing_units_instant: "§YYour units have suffered casualties§W"
  ALERT_REINFORCING_UNITS: "§YYour units have suffered casualties§W"
- ALERT_REINFORCING_UNITS_DELAYED: "You are reinforcing $TROOPS|0Y$ troops every month.\nYou need $TOTAL_MISSING|0Y$ men to fully reinforce your armies.\nReinforcing your standing army costs $COST|2Y$¤ extra per month."
- ALERT_REINFORCING_UNITS_DELAYED_MERCENARIES: "You have mercenaries that are reinforcing. No manpower is needed, but it costs $COST|2Y$¤ extra per month."
+ ALERT_REINFORCING_UNITS_DELAYED: "You are reinforcing $TROOPS
+ ALERT_REINFORCING_UNITS_DELAYED_MERCENARIES: "You have mercenaries that are reinforcing. No manpower is needed, but it costs $COST
  SENDGIFTALREADYACTIVE: "§RWe have recently sent them a gift. Only our last gift will affect their relations with us.§!"
  MIS_CONST_OTHER_TIP: "A Missionary is tirelessly working to spread the §Y$RELIGION$§! faith in this province."
  CORE_CONST_OTHER_TIP: "They are currently working on making §Y$PROVINCE$§! a core."
@@ -3726,7 +3726,7 @@
  DOMINANT_RELIGION_IS_NOT: "Dominant religion in $COUNTRY$ is NOT $RELIGION$"
  DOMINANT_RELIGION_IS: "Dominant religion in $COUNTRY$ is $RELIGION$"
  TRADE_EMBARGO_POWER_SHARE: "§Y$NAME$§! share of power: §Y$VAL$%§!"
- TRADE_EMBARGO_POWER_SHARE_MERC: " (of which $VAL|Y$ due to Mercantilism in $NAME$)"
+ TRADE_EMBARGO_POWER_SHARE_MERC: " (of which $VAL
  EMBARGO_BASE: "Embargo base efficiency:"
  APPLIED_EMBARGO_EFFECT: "Impact of $PENALTY$ power due to $WHO$ power of §Y$POSS$%§!."
  SM_BORDERS: "Borders"
@@ -4323,7 +4323,7 @@
  desc_reformed_work_ethic: "Hard work, social success and wealth are considered consequences of being predestined, and so inspire people to reach those goals."
  banned_musical_instruments_in_church: "Banned Musical Instruments in Church"
  desc_banned_musical_instruments_in_church: "As to not distract people from the matters at hand during sermons, musical instruments have been banned in churches."
- AGGRESSIVE_EXPANSION_OPINION: "$FROM$ opinion about $TO$ aggressive expansion: $VAL|+$"
+ AGGRESSIVE_EXPANSION_OPINION: "$FROM$ opinion about $TO$ aggressive expansion: $VAL
  100YearsWarUnitPackDLC: "100 Years War Unit Pack"
  HorsemenoftheCrescentDLC: "Horsemen of the Crescent"
  WingedHussarsUnitPackDLC: "Winged Hussars Unit Pack"
@@ -4370,14 +4370,14 @@
  GOVERNMENT_DONT_ALLOW_VASSAL_WAR: "The government of $WHO$ doesn't allow this action."
  CANT_SUPPORT_OVERLORD: "A subject can't sign a treaty of Support for Independence with its overlord."
  TRUCE_WITH_OVERLORD: "A subject cannot receive support for independence while it has a truce with its overlord."
- DLC_ENABLED: "The $NAME|Y$ expansion is enabled."
+ DLC_ENABLED: "The $NAME
  ALREADY_HAS_POLICY: "- You already have this policy enabled."
  COUNTRY_POLICIES: "Policies"
  MAX_POLICIES_ALREADY: "- You can only have $MAX$ policies at the same time."
  ADD_POLICY: "Add Policy"
  horse_artillery: "Horse Artillery"
  desc_horse_artillery: "With coordination, crews can quickly unlimber and fire, and limber-up and move away. This creates a fast-moving and fast-firing artillery."
- ACTIVE_POLICY_COST: "This costs $COST|Y$ $TYPE$ power each month to maintain."
+ ACTIVE_POLICY_COST: "This costs $COST
  NATIONAL_FOCUS_EFF: "National Focus Cooldown: §G-$AMT$§!"
  armed_neutrality_act: "The Armed Neutrality Act"
  desc_armed_neutrality_act: "Our merchants have a right to trade without foreign involvement and we will protect that right."
@@ -4529,7 +4529,7 @@
  CONFIRMCANCELPOLICY: "Repeal Policy"
  CONFIRMCANCELPOLICY_TEXT: "Are you sure that you wish to repeal §Y$NAME$§!?"
  CONFIRMADDPOLICY: "Enact Policy"
- CONFIRMADDPOLICY_TEXT: "Enacting $NAME$ will cost $COST|Y$ $TYPE$ power each month, and it has to be active for at least $YEARS|Y$ years before it can be repealed. It will give you the following benefits:\n$EFFECTS$\nAre you sure?"
+ CONFIRMADDPOLICY_TEXT: "Enacting $NAME$ will cost $COST
  OTHER_NO_ACTIVE_POLICIES: "They currently have no active policies."
  OTHER_CURR_ACTIVE_POLICIES: "Active Policies"
  POLICY_POSSIBLE: "When fully unlocked, this idea group gives access to the following policies, each depending on another Idea Group finished as well."
@@ -4716,9 +4716,9 @@
  NOT_ADD_RIVAL_UNTIL: "§R- You were recently forced to remove §Y$NAME$§! as a rival and cannot re-add them until §Y$DATE$§!.§!"
  LEDGER_PPROJ: "Power Pr."
  EXTRA_BONUS_GOOD_SMALL: "If you have at least $MAX$ power projection you gain:\n"
- EXTRA_BONUS_GOOD_SMALL_FACT: "\nDue to having at least $VAL|Y$ power projection:\n"
+ EXTRA_BONUS_GOOD_SMALL_FACT: "\nDue to having at least $VAL
  EXTRA_BONUS_GOOD: "If you have at least $MAX$ power projection you gain\n +1 £adm£\n +1 £dip£\n +1 £mil£"
- EXTRA_BONUS_GOOD_FACT: "\nDue to having at least $VAL|Y$ power projection:"
+ EXTRA_BONUS_GOOD_FACT: "\nDue to having at least $VAL
  POWERPROJ_GOOD: "§G+1§! £adm£\n§G+1§! £dip£\n§G+1§! £mil£"
  POWERPROJ_HOWTO_GAIN: "Triumph over your rivals to gain power projection:\n§Y- Enter a war against them.\n- Take their provinces or vassalise them.\n- Insult or humiliate them.\n- Support rebels in their lands.\n- Embargo their merchants.§!"
  INLAND_BONUS: "Inland bonus"
@@ -4728,11 +4728,11 @@
  CANT_DETACH_ALL_OBSOLETE: "This would detach all the ships since they are all outdated."
  NO_SPOILS: "We receive no spoils of war."
  CONFIRM_NEW_DEITY_TITLE: "Confirm New Deity"
- CONFIRM_NEW_DEITY_DESC: "Do you wish to start following $NAME|Y$ as your new god?"
+ CONFIRM_NEW_DEITY_DESC: "Do you wish to start following $NAME
  CONFIRM_NEW_ASPECT_TITLE: "Confirm New Aspect of Faith"
- CONFIRM_NEW_ASPECT_DESC: "Do you wish to add $NAME|Y$ to the aspects of your church? It will cost us $COST$ Church Power"
+ CONFIRM_NEW_ASPECT_DESC: "Do you wish to add $NAME
  CONFIRM_REMOVE_ASPECT_TITLE: "Confirm Removing Aspect of Faith"
- CONFIRM_REMOVE_ASPECT_DESC_A: "Do you wish to remove $NAME|Y$ from the aspects of your church?"
+ CONFIRM_REMOVE_ASPECT_DESC_A: "Do you wish to remove $NAME
  CONFIRM_REMOVE_ASPECT_DESC_B: "It will cause a $COST$ loss to stability."
  RV_NO_DEITY: "No Deity Selected"
  CHACUL_NATIONALISM: "You cannot convert the culture of a province that has separatism."
@@ -4769,7 +4769,7 @@
  desc_pol_zebrzydowski_rebellion_flag: "The Polish Nobles are up in arms against the attempt at curtailing their rights."
  IN_DEBT_BANKRUPT: "$WHO$ is bankrupt"
  IN_DEBT_LOANS_DEFICIT: "$WHO$ running a deficit while having loans"
- IN_DEBT_YEARS: "$WHO$ having a debt bigger than $VAL|Y$ years of income"
+ IN_DEBT_YEARS: "$WHO$ having a debt bigger than $VAL
  SENDGIFT_INDEBT: "Not possible to send gifts due to $REASON$."
  OFFERLOAN_INDEBT: "Not possible to offer loans due to $REASON$."
  SUBSIDIES_INDEBT: "Not possible to send subsidies due to $REASON$."
@@ -4807,11 +4807,11 @@
  CTPOS_NOTCORE: "$NAME$ is not our core, so we cannot create a trade post here."
  trade_post_modifier: "Trading Post"
  desc_trade_post_modifier: "This province has a Trading Post, aiding foreign merchants in their desire to control trade in the region."
- CTPOS_ALREADY: "We already have a Trading Post in $NODE|Y$, located in $NAME|Y$."
- CTPOS_NOT_OUR_PROVINCE: "You need to own and control $NAME|Y$ to create a Trading Post in it."
+ CTPOS_ALREADY: "We already have a Trading Post in $NODE
+ CTPOS_NOT_OUR_PROVINCE: "You need to own and control $NAME
  CONFIRCREATETRADEPOST: "Create Trading Post"
  CONFIRCREATETRADEPOSTTEXT: "Creating a Trading Post in $NAME$ will have the following effects there:\n$EFFECTS$"
- CONFIRCREATETRADEPOSTCOST: "This will cost $COST|Y$ $TYPE$ power."
+ CONFIRCREATETRADEPOSTCOST: "This will cost $COST
  CTPOS_DO: "Creating a Trading Post will cost §Y$COST$§! $TYPE$ power, and have the following effects there:\n$EFFECTS$"
  CTPOS_NOTMERCHREPUB: "Only a merchant republic can create a trading post."
  NOT_FOREIGN_HEIR: "Heir is NOT foreign"
@@ -4835,7 +4835,7 @@
  mr_aristocrats_FACTION_DESC: "Representing the aristocratic Patrician families that dominate the political life in the capital. Their main concern is ensuring that the Republic is victorious in war and achieves the glory that they view as their own."
  support_mr_aristocrats_title: "Encourage the Aristocrats"
  support_mr_aristocrats_desc: ""
- SPY_AGAIN_TICKS: "Until $WHEN|Y$ our network will decay.\n"
+ SPY_AGAIN_TICKS: "Until $WHEN
  CONVHEIR_ELECTIVE: "In an elective monarchy, as the heir changes constantly, it's not possible to make the heir into a commander."
  SUPPORT_HEIR: "Support Heir"
  SUPPORT_HEIRTITLE: "Support Heir"
@@ -4852,30 +4852,30 @@
  SOH_NONE: "We currently have no local noble to back as our heir."
  SOH_NOTELECTIVE: "We are not an elective monarchy"
  SOH_LACKPRESTIGE: "You need at least §Y$VAL$§! prestige to back a local noble as your heir."
- SOH_COST: "Increase support for $NAME|Y$ by $SUPPORT|Y$ as heir, by spending $COST|R$ prestige."
+ SOH_COST: "Increase support for $NAME
  danelaw: "Danelaw"
  SHA_IS_WRONG_RELIGION_GROUP: "$WHO$ is not $RELIGION$."
  dynasty_elected: "Same Dynasty after Election"
  dynasty_lost: "Dynasty lost Election"
- UPRISING_PROGRESS_TO_SHORT: "The uprising progress must be at least $AMOUNT|0$%."
+ UPRISING_PROGRESS_TO_SHORT: "The uprising progress must be at least $AMOUNT
  CANT_AFFORD_HARSH_TREATMENT: "You need $AMOUNT$ £mil£ to use harsh treatment on $NAME$."
- RELIGION_CANT_CONVERT: "We expect to be able to convert at $DATE|Y$.\n"
- RELIGION_CANT_CHANGE_SECONDARY: "We expect to be able to change our Syncretic Faith at $DATE|Y$.\n"
+ RELIGION_CANT_CONVERT: "We expect to be able to convert at $DATE
+ RELIGION_CANT_CHANGE_SECONDARY: "We expect to be able to change our Syncretic Faith at $DATE
  FLEET_BASING_RIGHT: "This will allow $ACTOR$ fleets to be based in $RECIPIENT$ ports and will also extend $ACTOR$ trading range."
  OFFER_FLEET_BASING_RIGHT: "This will allow $RECIPIENT$ fleets to be based in $ACTOR$ ports and will also extend $RECIPIENT$ trading range."
- LEADER_ASSIGNED_TO_UNIT: "This leader is already assigned to $NAME|Y$."
+ LEADER_ASSIGNED_TO_UNIT: "This leader is already assigned to $NAME
  ASSIGNED: "assigned"
  RENEW_TAXES_DIALOG_TITLE: "Renew War Taxes"
  RENEW_TAXES_TITLE_DIALOG_DESC: "We have stopped collecting War Taxes."
  RENEW_WAR_TAXES: "Would you like to renew the war taxes?"
  RENEW_INFLUENCE_NATION_DIALOG_TITLE: "Renew Influence Nation"
- RENEW_INFLUENCE_NATION_TITLE_DIALOG_DESC: "Our influence over $THEY|Y$ has expired."
- RENEW_INFLUENCE_NATION: "Should we continue to influence them, for another $MONTHS$ months?\nThis would cost us $COST|Y$¤."
+ RENEW_INFLUENCE_NATION_TITLE_DIALOG_DESC: "Our influence over $THEY
+ RENEW_INFLUENCE_NATION: "Should we continue to influence them, for another $MONTHS$ months?\nThis would cost us $COST
  NAVAL_UPGRADE_MOTHBALLING: "The fleet is mothballing and cannot be upgraded. It would cost $COST$¤ to upgrade $AMOUNT$ ships."
  DELETE_TEMPLATE_DIALOG_TITLE: "Delete Template"
- DELETE_TEMPLATE_DIALOG_DESC: "Do you wish to delete the template $NAME|Y$?"
- PRIVATEER_LOST_WAR:2 " You cannot send privateers to trade nodes that have nations you have a truce with where you lost the war. To send privateers the truce needs to expire or the nation's trade power needs to be less than $TRADEPOWER|%0$ in the trade node."
- PRIVATEER_LOST_WAR_NATION: "$NATION$ has $TRADEPOWER|%0R$ Trade Power and the truce expires on $DATE|Y$."
+ DELETE_TEMPLATE_DIALOG_DESC: "Do you wish to delete the template $NAME
+ PRIVATEER_LOST_WAR:2 " You cannot send privateers to trade nodes that have nations you have a truce with where you lost the war. To send privateers the truce needs to expire or the nation's trade power needs to be less than $TRADEPOWER
+ PRIVATEER_LOST_WAR_NATION: "$NATION$ has $TRADEPOWER
  NOCOLONISE_NO_SHIPS: "You can not build ships to reach it either."
  
  DISASTERS: "Disasters"
@@ -4930,7 +4930,7 @@
  totemism: "Spiritualist"
  pantheism: "Pantheist"
  midewiwin: "Midewiwin"
- mississippian: "Mississippian"
+ mississippian: "Woodland"
  sun_dance: "Great Plains"
  kachina: "Aridoamerica"
  northwestern: "Northwestern"
@@ -4964,7 +4964,7 @@
  taborite: "Taborite"
  nestorian: "Nestorian"
 
- PARLIAMENT_DEBATE_UNTIL: "The debate will continue until at least $DATE|Y$, after which it has a §Y$CHANCE$%§! chance of ending each month.\nLosing it will cost us $PRESTIGE|R$ prestige."
+ PARLIAMENT_DEBATE_UNTIL: "The debate will continue until at least $DATE
  DOOM_FROM_PROVINCES: "Number of owned provinces: $VAL$"
  DOOM_FROM_REFORMS: "\nNumber of Religious Reforms: $VAL$"
  AUTHORITY_TOOLTIP_INSTANT: "Authority changes by $CHANGE$ every year due to:\n"
@@ -4976,28 +4976,28 @@
  DOOM_TOOLTIP_EFFECTS: "§YEffects from our current Doom:§!\n"
  kizilirmak_estuary_modifier: "Kizilirmak Estuary"
  desc_kizilirmak_estuary_modifier: "Controlling the important river estuary of the Kizilirmak strengthens our hold of the trade in the region."
- USES_CHURCH_ASPECTS: "$COUNTRY|Y$ has church aspects."
- USES_NOT_CHURCH_ASPECTS: "$COUNTRY|Y$ has NOT church aspects."
- USES_FERVOR: "$COUNTRY|Y$ uses fervour."
- USES_NOT_FERVOR: "$COUNTRY|Y$ does NOT use fervour."
- USES_PATRIARCH_AUTHORITY: "$COUNTRY|Y$ uses Patriarch Authority."
- USES_NOT_PATRIARCH_AUTHORITY: "$COUNTRY|Y$ does NOT use Patriarch Authority."
- USES_PIETY: "$COUNTRY|Y$ uses Piety."
- USES_NOT_PIETY: "$COUNTRY|Y$ does NOT use Piety."
- USES_PAPACY: "$COUNTRY|Y$ uses Papacy."
- USES_NOT_PAPACY: "$COUNTRY|Y$ does NOT use Papacy."
- USES_BLESSINGS: "$COUNTRY|Y$ uses Blessings."
- USES_NOT_BLESSINGS: "$COUNTRY|Y$ does NOT use Blessings."
- USES_KARMA: "$COUNTRY|Y$ uses Karma."
- USES_NOT_KARMA: "$COUNTRY|Y$ does NOT use Karma."
- USES_SYNCRETIC_FAITHS: "$COUNTRY|Y$ uses Syncretic Faiths."
- USES_NOT_SYNCRETIC_FAITHS: "$COUNTRY|Y$ does NOT use Syncretic Faiths."
- USES_CULTS: "$COUNTRY|Y$ uses Cults."
- USES_NOT_CULTS: "$COUNTRY|Y$ does NOT use Cults."
- USES_PERSONAL_DEITIES: "$COUNTRY|Y$ uses Personal Deities."
- USES_NOT_PERSONAL_DEITIES: "$COUNTRY|Y$ does NOT use Personal Deities."
- USES_ORTHODOX_ICONS: "$COUNTRY|Y$ uses Icons."
- USES_NOT_ORTHODOX_ICONS: "$COUNTRY|Y$ does NOT use Icons."
+ USES_CHURCH_ASPECTS: "$COUNTRY
+ USES_NOT_CHURCH_ASPECTS: "$COUNTRY
+ USES_FERVOR: "$COUNTRY
+ USES_NOT_FERVOR: "$COUNTRY
+ USES_PATRIARCH_AUTHORITY: "$COUNTRY
+ USES_NOT_PATRIARCH_AUTHORITY: "$COUNTRY
+ USES_PIETY: "$COUNTRY
+ USES_NOT_PIETY: "$COUNTRY
+ USES_PAPACY: "$COUNTRY
+ USES_NOT_PAPACY: "$COUNTRY
+ USES_BLESSINGS: "$COUNTRY
+ USES_NOT_BLESSINGS: "$COUNTRY
+ USES_KARMA: "$COUNTRY
+ USES_NOT_KARMA: "$COUNTRY
+ USES_SYNCRETIC_FAITHS: "$COUNTRY
+ USES_NOT_SYNCRETIC_FAITHS: "$COUNTRY
+ USES_CULTS: "$COUNTRY
+ USES_NOT_CULTS: "$COUNTRY
+ USES_PERSONAL_DEITIES: "$COUNTRY
+ USES_NOT_PERSONAL_DEITIES: "$COUNTRY
+ USES_ORTHODOX_ICONS: "$COUNTRY
+ USES_NOT_ORTHODOX_ICONS: "$COUNTRY
  USES_NOT_DOOM: "§Y$COUNTRY$§! does NOT have Doom"
  USES_DOOM: "§Y$COUNTRY$§! has Doom"
  USES_NOT_AUTHORITY: "§Y$COUNTRY$§! does NOT have Authority"
@@ -5019,8 +5019,8 @@
  EXPLORES_IN_CONTINENT: "This explores in $CONTINENT$"
  HAS_MAY_EXPLORE: "You have §Y$NAME$§! and can explore everywhere."
  HAS_NOT_MAY_EXPLORE: "You don't yet have the idea §Y$NAME$§! and can't explore across the high seas."
- NUM_CUSTOM_NATIONS_LESS_THAN: "Number of Custom Nations is less than $VAL|Y$."
- NUM_CUSTOM_NATIONS_AT_LEAST: "Number of Custom Nations is at least $VAL|Y$."
+ NUM_CUSTOM_NATIONS_LESS_THAN: "Number of Custom Nations is less than $VAL
+ NUM_CUSTOM_NATIONS_AT_LEAST: "Number of Custom Nations is at least $VAL
  NO_RANDOM_SELECT_HOTJOIN: "§RCan't randomly select a country during hotjoin.§!"
  NO_RANDOM_SELECT_SAVE: "§RCannot randomly select a country when loading a savegame.§!"
  NO_RANDOM_SELECT_HISTORICAL: "§RMust use Normal or Historical setup to be able to randomly select a country.§!"
@@ -5052,11 +5052,11 @@
  FOR_NONACCEPTED_CULTURE: " (for non-accepted culture):\n"
  TRANSFERS_TP_ALREADY: "You are transferring trade power, which prevents demanding it."
  THERE_WOULD_BE_BATTLE: "§OThere will be a battle on $DATE$ if we move here.§!"
- THERE_WILL_BE_BATTLE: "A battle will begin here between @$ATK$$ATTACKER|Y$ and @$DEF$$DEFENDER|Y$ on $DATE$"
- BATTLE_DEFENDER_SWAP: " - Due to lack of control of the hostile fortress, the $WHO|Y$ army will be the attacker in this combat."
- BATTLE_TERRAIN_PENALTY: " - Due to $TERRAIN|Y$ terrain, the attacker gets a $VAL$ penalty to the diceroll."
- THERE_MAY_BE_CROSSING_MODIFIER: "@$ATK$$ATTACKER|Y$ may get crossing penalty: $VALUE$"
- THERE_WILL_BE_CROSSING_MODIFIER: "@$ATK$$ATTACKER|Y$ will get crossing penalty: $VALUE$"
+ THERE_WILL_BE_BATTLE: "A battle will begin here between @$ATK$$ATTACKER
+ BATTLE_DEFENDER_SWAP: " - Due to lack of control of the hostile fortress, the $WHO
+ BATTLE_TERRAIN_PENALTY: " - Due to $TERRAIN
+ THERE_MAY_BE_CROSSING_MODIFIER: "@$ATK$$ATTACKER
+ THERE_WILL_BE_CROSSING_MODIFIER: "@$ATK$$ATTACKER
  CROSSING_HIGH_MANEUVER: "If the attacking general has higher Manoeuvre than the defending general, the crossing penalty will be ignored."
  DECORATE_MODIFIED_PROVINCE_VALUE: "$NAME$: $VAL$"
  DECORATE_MODIFIED_PROVINCE_VALUE_EX: "If §R< $BAD$§!, else if §O< $QUITE_BAD$§!,\nelse if §Y< $NEUTRAL$§!, else §G>= $NEUTRAL$§!"
@@ -5068,7 +5068,7 @@
  ORIGINAL_CULTURE_OF: "Original culture of $X$"
  CULTURE_ADJACENT_TO: "Culture adjacent to $X$"
  CULTURE_SEA_ADJACENT_TO: "Culture adjacent by sea to $X$"
- COUNTRYS_LD_IS: "\n$COUNTRY$'s Liberty Desire is $LD|Y$."
+ COUNTRYS_LD_IS: "\n$COUNTRY$'s Liberty Desire is $LD
  TOOLTIP_TOGGLE_GO_HOME_WAR: "During war, will go to a friendly port. Any mission will resume when the war ends."
  TOOLTIP_TOGGLE_ALLOW_ATTACH_ARMY: "Allow friendly armies to attach to this army"
  TOOLTIP_TOGGLE_ALLOW_ATTACH_NAVY: "Allow friendly fleets to attach to this fleet"
@@ -5077,7 +5077,7 @@
  CAN_RELEASE_CN_WE_ARE_AT_WAR: "§R- We are at war§!"
  CONTINUE_GAME: "Continue Game"
  OPEN_SIEGE_VIEW: "Open Siege View"
- THIS_WILL_COST: "This will cost $VAL|Y$ $UNIT$."
+ THIS_WILL_COST: "This will cost $VAL
  CONFIRM_DECLARE_WAR_TITLE: "Confirm War Declaration"
  CONFIRM_DECLARE_WAR_DESC_PREPEND: "Declaring this war will have immediate severe negative effects.\n\nStability effects:\n"
  CANT_ABORT_EXPLORATION_MISSION: "This fleet cannot be assigned a new mission until they return from their exploration mission."
@@ -5111,7 +5111,7 @@
  REPAIR_MISSION_DESC: "Heading to port for repairs."
  REPAIR_MISSION_PORT_DESC: "Repairing in §Y$PORT$§!"
  REPAIR_MISSION_RETURNING_DESC: "Returning to §Y$FLEET$§!"
- PATROL_MISSION_DESC: "Patrolling $START|Y$ <-> $END|Y$"
+ PATROL_MISSION_DESC: "Patrolling $START
  PATROL_MISSION_REQUIRES_DESTINATION: "To start Patrolling, first right-click on a destination at least one sea zone away."
  EVADE_MISSION_REQUIRES_DESTINATION: "To Evade enemies, first right-click on a destination."
  HUNT_REBELS_MISSION_DESC: "Suppressing rebels"
@@ -5119,7 +5119,7 @@
  UPGRADE_SHIPS: "§YUpgrade Ships§!"
  MISSION_SETTINGS: "Mission Settings"
  REPAIR_THRESHOLD: "Repair Threshold:"
- SCORE_GAIN_MODIFIED_BY_DIFFICULTY: "Score is adjusted due to $DIFFICULTY|Y$ difficulty: $MOD$"
+ SCORE_GAIN_MODIFIED_BY_DIFFICULTY: "Score is adjusted due to $DIFFICULTY
  AGGRESSIVENESS: "Aggressiveness:"
  MISSION_SETTINGS_DESC: "Adjust the behaviour of this fleet when it is carrying out a mission."
  REPAIR_ANY_DAMAGE: "Any Damage"
@@ -5127,7 +5127,7 @@
  REPAIR_HIGH_DAMAGE: "Severely Damaged"
  REPAIR_NEVER: "Never"
  ALREADY_DEMANDED_UNLAWFUL: "Already demanded Unlawful Territory"
- MONOPOLIZATION_PRIVATEER_BONUS: "The largest Trade Power share in the node ($COUNTRY|Y$) makes privateers $VAL$ efficient here."
+ MONOPOLIZATION_PRIVATEER_BONUS: "The largest Trade Power share in the node ($COUNTRY
  MISSION_SETTINGS_REPAIR_DESC: "The Repair Threshold determines how much damage the fleet will take while before going to port for repairs."
  MISSION_SETTINGS_AGGRESSIVENESS_DESC: "Aggressiveness influences how the fleet will react to enemy ships while on a mission.\nThe higher the value, the stronger enemies the fleet will try to engage.\n\n(Exploration, Evade and 'Repair damaged ships' missions are not affected by this setting.)"
  MISSION_SETTINGS_AGGRESSIVENESS_DESC_CAUTIOUS: "On the Cautious setting, the fleet will generally try to avoid overwhelming enemy forces and cut their own losses, as well as avoid attrition.\n\n§YHunt Mission§!:\nAvoid strong enemy fleets and engage if there is a reasonable chance of winning.\n\n§YBlockade Mission§!:\nAvoid large engagements while blockading.\n\n§YIntercept Mission§!:\nIntercept reasonably sized enemy fleets near your coasts.\n\n§YEvade§!, §YExploration§!, §YRepair§!:\nNot affected."
@@ -5139,7 +5139,7 @@
  NAVAL_ENGAGEMENT_WIDTH_DESC: "Determines how many ships can engage the enemy this round."
  REQUIRED_COMBAT_WIDTH: "Engagement Width"
  LEADER_MANUEVER: "Leader Manoeuvre: $VAL$"
- NO_DEVASTATION_PROSP_MAP_TT: "All of $NAME|Y$ enjoys prosperity!"
+ NO_DEVASTATION_PROSP_MAP_TT: "All of $NAME
  CONFIRM_CORE_ALL_TITLE: "Core All Provinces in $NAME$"
  CONFIRM_CORE_ALL_TITLE_TEXT: "Are you sure you want to spend §Y$COST$§!£adm£ to make the following $COUNT$/$TOTAL$ provinces Cores?\n§Y$PROVS$§!"
  CORE_ALL_TOOLTIP: "Core as many Provinces here as you have £adm£ to afford."
@@ -5161,23 +5161,23 @@
  INSTITUTION_JUST_ONE_GROWING: "Only one Institution can grow in a province at a time."
  RELIGIOUS_FAITH: "$RELIGIOUS$ Faith"
  RNW_BLOCKED_BY_MOD: "§RRandom New World not allowed by Mod:§! §Y$NAME$§!"
- AGE_X_MONTHS_AFTER: "This age will start $MONTH|Y$ months after the following is true:"
- alert_age_ending_soon_instant: "$AGENAME|Y$ is ending in $MONTH|Y$ months!"
+ AGE_X_MONTHS_AFTER: "This age will start $MONTH
+ alert_age_ending_soon_instant: "$AGENAME
  alert_age_ending_soon_delayed: "The current age is about to end. All Splendour and abilities will be cleared, and a new set of objectives will be available."
  alert_age_can_spend_splendor_instant: "§YCan purchase an ability§!"
  alert_age_can_spend_splendor_delayed: "Your level of Splendour is currently high enough to be able to purchase an Ability."
  alert_can_enact_decree_instant: "§YCan enact a Decree!§!"
  alert_can_enact_decree_delayed: "Your level of Meritocracy is currently high enough to be able to enact a Decree."
  alert_can_use_russian_ability_instant: "§YCan use a Russian ability!§!"
- alert_can_use_russian_ability_delayed: "$POWERS|Y$ can currently be used."
+ alert_can_use_russian_ability_delayed: "$POWERS
  POSSIBLE_INCIDENTS: "Possible Incidents"
  ACTIVE_INCIDENTS: "Active Incidents"
  PAST_INCIDENTS: "Past Incidents"
  ISOLATIONISM: "Isolationism"
- ISOLATIONISM_LEVEL_TITLE: ""$ISOLATIONLEVELTITLE|Y$ (§YLevel $ISOLATIONLEVEL$§!)""
- ISOLATIONISM_MECHANIC_DESCRIPTION: "Isolationism represents a nation's willingness to adopt ideas and technologies from abroad. It can range from $FIRSTISOLATIONLEVELNAME|Y$ (§YLevel $FIRSTISOLATIONLEVELVALUE$§!) to $LASTISOLATIONLEVELNAME|Y$ (§YLevel $LASTISOLATIONLEVELVALUE$§!).\n\n§MIsolationism is changed through the way you react to Incidents that occur during the game. Each Incident lasts for more than 10 years and can end with your Isolationism moving towards Open, Closed or leaving it unchanged.§!"
- YOUR_CURRENT_ISOLATIONISM_INSTANT: "Your current Isolationism level is "$ISOLATIONLEVELTITLE|Y$ (§YLevel $ISOLATIONLEVEL$§!)"\n$ISOLATIONLEVELDESCRIPTION$"
- THEIR_CURRENT_ISOLATIONISM_INSTANT: "$ISOLATIONLEVELTITLE|Y$ (§Y$ISOLATIONLEVEL$§!)"
+ ISOLATIONISM_LEVEL_TITLE: ""$ISOLATIONLEVELTITLE
+ ISOLATIONISM_MECHANIC_DESCRIPTION: "Isolationism represents a nation's willingness to adopt ideas and technologies from abroad. It can range from $FIRSTISOLATIONLEVELNAME
+ YOUR_CURRENT_ISOLATIONISM_INSTANT: "Your current Isolationism level is "$ISOLATIONLEVELTITLE
+ THEIR_CURRENT_ISOLATIONISM_INSTANT: "$ISOLATIONLEVELTITLE
  CURRENT_ISOLATIONISM_DELAYED: "$ISOLATIONLEVELDESCRIPTION$"
  ISOLATIONISM_LEVELS_LIST: "If our Isolationism levels change, our nation would get the following effects:\n$ISOLATIONISMDESCRIPTIONLIST$"
  open_doors_isolation: "Open Doors"
@@ -5197,8 +5197,8 @@
  closed_doors_isolation_desc: ""
  PRESS_SAILORS_TITLE: "Press Sailors"
  pressed_sailors: "Pressed Sailors"
- CANT_PRESS_SAILORS_TOO_FEW: "You can't press sailors from a colonial nation if they have less than $NEED|Y$ of their sailors. They currently have $CURR|Y$."
- PRESS_SAILORS_TITLE_DESCRIPTION: "You will gain $SAILORS|Y$ sailors from them.\n"
+ CANT_PRESS_SAILORS_TOO_FEW: "You can't press sailors from a colonial nation if they have less than $NEED
+ PRESS_SAILORS_TITLE_DESCRIPTION: "You will gain $SAILORS
  MACRO_BUILDING_LIST_WINDOW_TITLE: "Build $BUILDINGNAME$ in provinces."
  MACRO_BUILDING_LIST_WINDOW_CLOSE: "Close province list."
  forest_flats: "Forest Flats"
@@ -5267,7 +5267,7 @@
  elections.800.e: "Elect a relative of [Root.Monarch.GetName]."
  STATE_MAINTENANCE_LABEL: "$OWNER$ Expenses:"
  MODIFIER_CENTER_OF_TRADE_UPGRADE_COST: "Commerce Production Inefficiency"
- DISMISS_ADVISOR_INFO: "Retiring this advisor will cost $COST|Y$¤ and free up their slot for a new advisor.\n\n§OWhen an advisor is retired, either manually or through natural means, a §M-25% Stability Point§! loss will follow the power vacuum they leave behind.§!"
+ DISMISS_ADVISOR_INFO: "Retiring this advisor will cost $COST
  flavor_hun.4.b: "Focus on Military Reforms"
  flavor_hun.20.t: "The Key of Hungary"
  flavor_hun.20.d: "[2612.GetName]'s position on the confluence of the Danube and its tributary, the Sava, makes it an ideal defensive position and a primary objective for anyone invading our country from the south. For this reason previous kings acquired the Banate of [2612.GetName] from the Serbian Despot Durad Brankovic. The fortress itself, however, grand, is in dire need of repair and upgrade.\nUnfortunately the Hungarian nobility is currently unwilling to contribute to the maintenance of the fortress in [2612.GetName], or any of the other border forts of our kingdom. They are unable to see the [threat_to_hungary.GetAdjective] threat and say this would weaken them and invite the crown to infringe on their rights. If we wish to see our defensive line properly maintained the [Root.Monarch.GetTitle] will need to pay for it directly out of the state coffers."

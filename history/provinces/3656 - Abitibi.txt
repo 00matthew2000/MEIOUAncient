@@ -1,2 +1,2 @@
 culture = laurel_complex
-religion = midewiwin
+religion = mississippian

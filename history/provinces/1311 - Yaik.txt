@@ -1,7 +1,7 @@
 capital = "Alabuga"
 trade_goods = wool
 culture = udmurt
-religion = shamanism
+religion = finno_ugric_religion
 hre = no
 base_tax = 4
 base_production = 0

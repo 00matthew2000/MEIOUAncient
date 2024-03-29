@@ -1,2 +1,2 @@
 culture = yukaghir
-religion = tengri
+religion = shamanism

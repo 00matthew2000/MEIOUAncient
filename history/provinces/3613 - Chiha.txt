@@ -1,7 +1,7 @@
 capital = "Chiha"
 trade_goods = unknown
 culture = copena
-religion = midewiwin
+religion = mississippian
 hre = no
 base_tax = 3
 base_production = 0

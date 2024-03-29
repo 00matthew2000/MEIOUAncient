@@ -1,6 +1,6 @@
 capital = "Tolohcan"
 trade_goods = maize
-culture = matlatzinca
+culture = olmec
 religion = nahuatl
 hre = no
 base_tax = 6

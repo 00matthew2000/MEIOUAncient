@@ -4,5 +4,5 @@ discovered_by = tibetan
 discovered_by = southeast_asian
 discovered_by = steppestech
 discovered_by = YUA
-culture = old_uyghur
-religion = mahayana
+culture = yuezhi
+religion = tocharian_religion

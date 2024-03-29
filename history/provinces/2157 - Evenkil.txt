@@ -1,7 +1,7 @@
 capital = "Sakhsary"
 trade_goods = unknown
 culture = yukaghir
-religion = tengri
+religion = shamanism
 hre = no
 base_tax = 1
 base_production = 0

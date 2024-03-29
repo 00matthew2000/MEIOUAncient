@@ -1,7 +1,7 @@
 capital = "Cuetlaxtlan"
 trade_goods = maize
 culture = huastec
-religion = cocijo
+religion = nahuatl
 hre = no
 base_tax = 4
 base_production = 0

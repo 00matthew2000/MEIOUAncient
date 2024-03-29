@@ -1,7 +1,7 @@
 capital = "Maskoutench"
 trade_goods = unknown
 culture = couture
-religion = midewiwin
+religion = mississippian
 hre = no
 base_tax = 3
 base_production = 0

@@ -1,7 +1,7 @@
 capital = "Batiscan"
 trade_goods = unknown
 culture = innu
-religion = midewiwin
+religion = mississippian
 hre = no
 base_tax = 3
 base_production = 0

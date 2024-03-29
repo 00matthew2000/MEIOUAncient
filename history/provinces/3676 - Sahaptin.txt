@@ -1,7 +1,7 @@
 capital = "Sahaptin"
 trade_goods = unknown
 culture = sahaptian
-religion = burmese_religion
+religion = kachina
 hre = no
 base_tax = 3
 base_production = 0

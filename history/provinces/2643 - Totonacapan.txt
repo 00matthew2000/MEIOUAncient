@@ -1,7 +1,7 @@
 capital = "Cempohuallan"
 trade_goods = cotton
 culture = huastec
-religion = cocijo
+religion = nahuatl
 hre = no
 base_tax = 5
 base_production = 0

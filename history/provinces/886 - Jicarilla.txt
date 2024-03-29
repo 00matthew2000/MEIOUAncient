@@ -1,7 +1,7 @@
 capital = "Jicarilla"
 trade_goods = unknown
 culture = anasazi
-religion = burmese_religion
+religion = kachina
 hre = no
 base_tax = 3
 native_size = 10

@@ -1,7 +1,7 @@
 capital = "Singgora"
 trade_goods = sandal
 culture = aslian
-religion = theravada
+religion = austronesian_religion
 hre = no
 base_tax = 4
 base_production = 0

@@ -1,7 +1,7 @@
 capital = "Pohogue"
 trade_goods = unknown
 culture = shoshone
-religion = burmese_religion
+religion = kachina
 hre = no
 base_tax = 3
 base_production = 0

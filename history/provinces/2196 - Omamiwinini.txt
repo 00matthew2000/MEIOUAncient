@@ -1,2 +1,2 @@
 culture = anishinabe
-religion = midewiwin
+religion = mississippian

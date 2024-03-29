@@ -1,7 +1,7 @@
 capital = "Stadacona"
 trade_goods = unknown
 culture = point_peninsula
-religion = midewiwin
+religion = mississippian
 hre = no
 base_tax = 2
 base_production = 0

@@ -1,7 +1,7 @@
 capital = "Anago"
 trade_goods = wheat
-culture = guanche
-religion = bantu_pagan
+culture = salathian
+religion = numidian_religion
 hre = no
 base_tax = 0
 base_production = 0

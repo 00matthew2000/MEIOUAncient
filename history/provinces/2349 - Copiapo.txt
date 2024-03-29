@@ -1,7 +1,7 @@
 capital = "Copiapo"
 trade_goods = unknown
 culture = diaguita
-religion = inti
+religion = ngenechen
 hre = no
 base_tax = 14
 base_production = 0

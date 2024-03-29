@@ -348,11 +348,11 @@
  MN_imp_U.46: "Strong Midewiwin Unrest"
  MN_max_U.46: "Important Midewiwin Unrest"
 
- MN_min_U.47: "Minimal Mississippian Totemist Unrest"
- MN_low_U.47: "Low Mississippian Totemist Unrest"
- MN_mid_U.47: "Mild Mississippian Totemist Unrest"
- MN_imp_U.47: "Strong Mississippian Totemist Unrest"
- MN_max_U.47: "Important Mississippian Totemist Unrest"
+ MN_min_U.47: "Minimal Woodland Totemist Unrest"
+ MN_low_U.47: "Low Woodland Totemist Unrest"
+ MN_mid_U.47: "Mild Woodland Totemist Unrest"
+ MN_imp_U.47: "Strong Woodland Totemist Unrest"
+ MN_max_U.47: "Important Woodland Totemist Unrest"
 
  MN_min_U.48: "Minimal Great Plains Totemist Unrest"
  MN_low_U.48: "Low  Great Plains Totemist Unrest"

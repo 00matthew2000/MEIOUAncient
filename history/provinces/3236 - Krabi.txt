@@ -1,7 +1,7 @@
 capital = "Krabi"
 trade_goods = fish
 culture = aslian
-religion = theravada
+religion = austronesian_religion
 hre = no
 base_tax = 1
 base_production = 0

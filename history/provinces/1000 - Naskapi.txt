@@ -1,2 +1,2 @@
 culture = innu
-religion = midewiwin
+religion = mississippian

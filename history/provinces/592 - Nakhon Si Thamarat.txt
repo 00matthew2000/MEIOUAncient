@@ -1,7 +1,7 @@
 capital = "Nakhon Si Thamarat"
 trade_goods = fish
 culture = aslian
-religion = theravada
+religion = austronesian_religion
 hre = no
 base_tax = 5
 base_production = 0

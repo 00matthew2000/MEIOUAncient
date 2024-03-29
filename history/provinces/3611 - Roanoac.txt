@@ -1,7 +1,7 @@
 capital = "Roanoac"
 trade_goods = unknown
-culture = powhatan
-religion = midewiwin
+culture = eastern_woodland
+religion = mississippian
 hre = no
 base_tax = 3
 base_production = 0
