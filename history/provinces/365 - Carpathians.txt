@@ -6,4 +6,4 @@ discovered_by = ottoman
 discovered_by = steppestech
 discovered_by = YUA
 culture = getean
-religion = dacian_religion
+religion = getic_religion

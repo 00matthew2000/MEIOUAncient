@@ -1,2 +1,4 @@
 \A[\s\S]+(?=capital)
 \|.*$
+
+Must reorder the regions in superregion.txt to change the colors; make it match IU
