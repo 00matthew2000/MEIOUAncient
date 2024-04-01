@@ -1772,7 +1772,6 @@ byz_slot_3_3 = {
 			OR = { 
 				region = belgii_region
 				superregion = germany_superregion
-				superregion = greater_austrian_circle_superregion
 				area = transdanubia_area
 			}
 			NOT = { 
@@ -1785,7 +1784,6 @@ byz_slot_3_3 = {
 				OR = { 
 					region = belgii_region
 					superregion = germany_superregion
-					superregion = greater_austrian_circle_superregion
 					area = transdanubia_area
 				}
 				OR = { 

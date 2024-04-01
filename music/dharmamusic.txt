@@ -47,12 +47,6 @@ song = {
 			}
 		}
 		modifier = { 
-			factor = 1.5
-			capital_scope = { 
-				superregion = west_india_superregion
-			}
-		}
-		modifier = { 
 			factor = 0
 			NOT = { 
 				has_dlc = "Dharma Music Pack"
@@ -76,12 +70,6 @@ song = {
 			factor = 2
 			capital_scope = { 
 				continent = indian_continent
-			}
-		}
-		modifier = { 
-			factor = 1.5
-			capital_scope = { 
-				superregion = rajputana_superregion
 			}
 		}
 		modifier = { 

@@ -517,7 +517,6 @@ dlc066 = {
 				OR = { 
 					superregion = north_china_superregion
 					superregion = east_china_superregion
-					superregion = southwest_china_superregion
 				}
 			}
 		}

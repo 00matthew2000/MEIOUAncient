@@ -362,9 +362,6 @@ men_towards_asia = {
 				east_china_superregion = { 
 					has_discovered = ROOT
 				}
-				southwest_china_superregion = { 
-					has_discovered = ROOT
-				}
 			}
 		}
 		effect = { 

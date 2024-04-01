@@ -5782,15 +5782,6 @@ country_event = {
 										value = 2
 									}
 								}
-								southwest_china_superregion = { 
-									limit = { 
-										owned_by = PREV
-									}
-									set_variable = { 
-										which = pye
-										value = 1
-									}
-								}
 								log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:East China sided with rebels:ChinaCollapse.020"
 								log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:South West China sided with warlords:ChinaCollapse.020"
 							}
@@ -5802,15 +5793,6 @@ country_event = {
 									set_variable = { 
 										which = pye
 										value = 1
-									}
-								}
-								southwest_china_superregion = { 
-									limit = { 
-										owned_by = PREV
-									}
-									set_variable = { 
-										which = pye
-										value = 2
 									}
 								}
 								log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:South West China sided with rebels:ChinaCollapse.020"
@@ -5851,15 +5833,6 @@ country_event = {
 										value = 2
 									}
 								}
-								southwest_china_superregion = { 
-									limit = { 
-										owned_by = PREV
-									}
-									set_variable = { 
-										which = pye
-										value = 1
-									}
-								}
 								log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:North China sided with rebels:ChinaCollapse.020"
 								log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:South West China sided with warlords:ChinaCollapse.020"
 							}
@@ -5873,30 +5846,11 @@ country_event = {
 										value = 1
 									}
 								}
-								southwest_china_superregion = { 
-									limit = { 
-										owned_by = PREV
-									}
-									set_variable = { 
-										which = pye
-										value = 2
-									}
-								}
 								log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:South West China sided with rebels:ChinaCollapse.020"
 								log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:North China sided with warlords:ChinaCollapse.020"
 							}
 						}
 						else = { 
-							southwest_china_superregion = { 
-								limit = { 
-									owned_by = PREV
-								}
-								set_variable = { 
-									which = pye
-									value = 0
-								}
-								log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:South West China sided with government:ChinaCollapse.020"
-							}
 							if = { 
 								limit = { 
 									AND = { 
@@ -5983,28 +5937,10 @@ country_event = {
 											}
 										}
 									}
-									southwest_china_superregion = { 
-										limit = { 
-											owned_by = PREV
-										}
-										set_variable = { 
-											which = pye
-											value = 2
-										}
-									}
-									log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:South West China sided with rebels:ChinaCollapse.020"
+																		log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:South West China sided with rebels:ChinaCollapse.020"
 								}
 								else = { 
-									southwest_china_superregion = { 
-										limit = { 
-											owned_by = PREV
-										}
-										set_variable = { 
-											which = pye
-											value = 1
-										}
-									}
-									log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:South West China sided with warlords:ChinaCollapse.020"
+																		log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:South West China sided with warlords:ChinaCollapse.020"
 								}
 							}
 							60 = { 
@@ -6037,28 +5973,10 @@ country_event = {
 											}
 										}
 									}
-									southwest_china_superregion = { 
-										limit = { 
-											owned_by = PREV
-										}
-										set_variable = { 
-											which = pye
-											value = 2
-										}
-									}
-									log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:South West China sided with rebels:ChinaCollapse.020"
+																		log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:South West China sided with rebels:ChinaCollapse.020"
 								}
 								else = { 
-									southwest_china_superregion = { 
-										limit = { 
-											owned_by = PREV
-										}
-										set_variable = { 
-											which = pye
-											value = 1
-										}
-									}
-									log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:South West China sided with warlords:ChinaCollapse.020"
+																		log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:South West China sided with warlords:ChinaCollapse.020"
 								}
 							}
 						}
@@ -6095,7 +6013,6 @@ country_event = {
 								limit = { 
 									OR = { 
 										superregion = east_china_superregion
-										superregion = southwest_china_superregion
 									}
 								}
 								set_variable = { 
@@ -6125,8 +6042,7 @@ country_event = {
 							every_owned_province = { 
 								limit = { 
 									OR = { 
-										superregion = north_china_superregion
-										superregion = southwest_china_superregion
+										superregion = north_china_superregion						
 									}
 								}
 								set_variable = { 
@@ -6138,32 +6054,6 @@ country_event = {
 							log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:East China sided with government:ChinaCollapse.020"
 							log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:South West China sided with rebels:ChinaCollapse.020"
 						}
-						else = { 
-							every_owned_province = { 
-								limit = { 
-									superregion = southwest_china_superregion
-								}
-								set_variable = { 
-									which = pye
-									value = 2
-								}
-							}
-							every_owned_province = { 
-								limit = { 
-									OR = { 
-										superregion = north_china_superregion
-										superregion = east_china_superregion
-									}
-								}
-								set_variable = { 
-									which = pye
-									value = 2
-								}
-							}
-							log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:North China sided with rebels:ChinaCollapse.020"
-							log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:East China sided with rebels:ChinaCollapse.020"
-							log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:South West China sided with government:ChinaCollapse.020"
-						}
 					}
 					else = { 
 						every_owned_province = { 
@@ -6171,7 +6061,6 @@ country_event = {
 								OR = { 
 									superregion = north_china_superregion
 									superregion = east_china_superregion
-									superregion = southwest_china_superregion
 								}
 							}
 							set_variable = { 
@@ -6199,7 +6088,6 @@ country_event = {
 						OR = { 
 							superregion = north_china_superregion
 							superregion = east_china_superregion
-							superregion = southwest_china_superregion
 						}
 					}
 					set_variable = { 
@@ -6283,30 +6171,6 @@ country_event = {
 						}
 					}
 				}
-				southwest_china_superregion = { 
-					limit = { 
-						owned_by = PREV
-					}
-					if = { 
-						limit = { 
-							PREV = { 
-								capital_scope = { 
-									superregion = north_china_superregion
-								}
-							}
-						}
-						set_variable = { 
-							which = pye
-							value = 0
-						}
-					}
-					else = { 
-						set_variable = { 
-							which = pye
-							value = 1
-						}
-					}
-				}
 			}
 			else = { 
 				every_owned_province = { 
@@ -6314,7 +6178,6 @@ country_event = {
 						OR = { 
 							superregion = north_china_superregion
 							superregion = east_china_superregion
-							superregion = southwest_china_superregion
 						}
 					}
 					set_variable = { 
@@ -6365,7 +6228,6 @@ country_event = {
 					OR = { 
 						superregion = north_china_superregion
 						superregion = east_china_superregion
-						superregion = southwest_china_superregion
 					}
 				}
 				set_province_flag = China_Collapse

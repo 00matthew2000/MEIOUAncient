@@ -598,7 +598,6 @@ is_possible_hre_province = {
 				continent = europe
 				OR = { 
 					superregion = germany_superregion
-					superregion = greater_austrian_circle_superregion
 					AND = { 
 						superregion = italy_superregion
 						OR = { 

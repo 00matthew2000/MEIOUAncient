@@ -953,9 +953,6 @@ bal_around_africa = {
 				east_china_superregion = { 
 					has_discovered = ROOT
 				}
-				southwest_china_superregion = { 
-					has_discovered = ROOT
-				}
 			}
 		}
 		effect = { 

@@ -857,15 +857,6 @@ Inst_Meritocracy_Inst_Init = {
 			value = 100
 		}
 	}
-	southwest_china_superregion = {
-		limit = {
-			Legalism = 100
-		}
-		add_institution_embracement = {
-			which = Meritocracy_Inst
-			value = 100
-		}
-	}
 	korea_region = {
 		limit = {
 			Legalism = 100

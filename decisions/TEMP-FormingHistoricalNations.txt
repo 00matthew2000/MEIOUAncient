@@ -5997,11 +5997,7 @@ country_decisions = {
 				AND = { 
 					continent = indian_continent
 					OR = { 
-						superregion = west_india_superregion
 						superregion = north_india_superregion
-						superregion = rajputana_superregion
-						superregion = east_india_superregion
-						superregion = central_india_superregion
 						superregion = south_india_superregion
 					}
 				}
@@ -6115,11 +6111,7 @@ country_decisions = {
 					AND = { 
 						continent = indian_continent
 						OR = { 
-							superregion = west_india_superregion
 							superregion = north_india_superregion
-							superregion = rajputana_superregion
-							superregion = east_india_superregion
-							superregion = central_india_superregion
 							superregion = south_india_superregion
 						}
 					}
@@ -6137,11 +6129,7 @@ country_decisions = {
 					AND = { 
 						continent = indian_continent
 						OR = { 
-							superregion = west_india_superregion
 							superregion = north_india_superregion
-							superregion = rajputana_superregion
-							superregion = east_india_superregion
-							superregion = central_india_superregion
 							superregion = south_india_superregion
 						}
 					}

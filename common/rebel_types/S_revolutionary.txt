@@ -93,40 +93,7 @@ revolutionary_rebels = {
 					technology_group = western
 				}
 				capital_scope = { 
-					superregion = west_india_superregion
-				}
-			}
-		}
-		modifier = { 
-			factor = 0.0
-			owner = { 
-				NOT = { 
-					technology_group = western
-				}
-				capital_scope = { 
 					superregion = north_india_superregion
-				}
-			}
-		}
-		modifier = { 
-			factor = 0.0
-			owner = { 
-				NOT = { 
-					technology_group = western
-				}
-				capital_scope = { 
-					superregion = rajputana_superregion
-				}
-			}
-		}
-		modifier = { 
-			factor = 0.0
-			owner = { 
-				NOT = { 
-					technology_group = western
-				}
-				capital_scope = { 
-					superregion = east_india_superregion
 				}
 			}
 		}

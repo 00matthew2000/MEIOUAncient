@@ -211,20 +211,12 @@ war_dynamism_trigger_safavids = {
 }
 #Hindustani or Afghani Muslims expansion into Hindustan
 war_dynamism_trigger_hindustani = {
-	OR = {
-		superregion = west_india_superregion
-		superregion = north_india_superregion
-		superregion = rajputana_superregion
-		superregion = east_india_superregion
-	}
+	superregion = north_india_superregion
 	controller = {
 		religion_group = muslim
 		
 		OR = {
-			capital_scope = { superregion = west_india_superregion }
 			capital_scope = { superregion = north_india_superregion }
-			capital_scope = { superregion = rajputana_superregion }
-			capital_scope = { superregion = east_india_superregion }
 			capital_scope = { region = sistan_region }
 		}
 	}

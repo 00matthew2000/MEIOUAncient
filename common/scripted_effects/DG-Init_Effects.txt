@@ -336,10 +336,6 @@ MN_Entrenchment_Shift_Helper = {
 					change_key = { lhs = DG_Tmp2 value = -0.30 }
 				}
 				else_if = {
-					limit = { superregion = greater_austrian_circle_superregion }
-					change_key = { lhs = DG_Tmp2 value = -0.05 }
-				}
-				else_if = {
 					limit = { superregion = balkan_superregion }
 					change_key = { lhs = DG_Tmp2 value = -0.25 }
 				}
@@ -389,10 +385,6 @@ MN_Entrenchment_Shift_Helper = {
 				else_if = {
 					limit = { superregion = germany_superregion }
 					change_key = { lhs = DG_Tmp2 value = -0.25 }
-				}
-				else_if = {
-					limit = { superregion = greater_austrian_circle_superregion }
-					change_key = { lhs = DG_Tmp2 value = -0.025 }
 				}
 				else_if = {
 					limit = { superregion = balkan_superregion }
@@ -446,10 +438,6 @@ MN_Entrenchment_Shift_Helper = {
 					change_key = { lhs = DG_Tmp2 value = -0.15 }
 				}
 				else_if = {
-					limit = { superregion = greater_austrian_circle_superregion }
-					change_key = { lhs = DG_Tmp2 value = -0.025 }
-				}
-				else_if = {
 					limit = { superregion = balkan_superregion }
 					change_key = { lhs = DG_Tmp2 value = -0.125 }
 				}
@@ -500,10 +488,6 @@ MN_Entrenchment_Shift_Helper = {
 			else_if = {
 				limit = { superregion = germany_superregion }
 				change_key = { lhs = DG_Tmp2 value = -0.015 }
-			}
-			else_if = {
-				limit = { superregion = greater_austrian_circle_superregion }
-				change_key = { lhs = DG_Tmp2 value = -0.05 }
 			}
 			else_if = {
 				limit = { superregion = balkan_superregion }

@@ -2823,10 +2823,6 @@ fra_eastern_europe = {
 			OR = { 
 				is_emperor = yes
 				AND = { 
-					greater_austrian_circle_superregion = { 
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
 					germany_superregion = { 
 						type = all
 						country_or_non_sovereign_subject_holds = ROOT

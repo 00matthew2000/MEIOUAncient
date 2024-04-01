@@ -659,9 +659,6 @@ waf_eastern_route = {
 				east_china_superregion = { 
 					has_discovered = ROOT
 				}
-				southwest_china_superregion = { 
-					has_discovered = ROOT
-				}
 			}
 		}
 		effect = { 

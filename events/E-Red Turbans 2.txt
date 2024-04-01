@@ -778,9 +778,6 @@ country_event = {
 		east_china_superregion = { 
 			remove_core = FROM
 		}
-		southwest_china_superregion = { 
-			remove_core = FROM
-		}
 	}
 	option = { 
 		ai_chance = { 

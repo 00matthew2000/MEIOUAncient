@@ -960,6 +960,9 @@ defined_text = {
 					superregion = near_east_superregion
 					superregion = anatolia_superregion
 					superregion = persia_superregion
+					superregion = syria_superregion
+					superregion = eastern_africa_superregion
+					superregion = parthia_superregion
 				}
 			}
 		}

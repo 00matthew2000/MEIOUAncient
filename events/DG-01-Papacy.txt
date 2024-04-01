@@ -2253,7 +2253,6 @@ country_event = {
 				limit = { 
 					OR = { 
 						superregion = germany_superregion
-						superregion = greater_austrian_circle_superregion
 					}
 					has_cardinal = yes
 					religion = ROOT

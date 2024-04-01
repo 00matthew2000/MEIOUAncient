@@ -600,7 +600,6 @@ dlc068 = {
 						superregion = japan_superregion
 						superregion = north_china_superregion
 						superregion = east_china_superregion
-						superregion = southwest_china_superregion
 					}
 				}
 				tag = KOR
@@ -647,7 +646,6 @@ dlc071 = {
 					superregion = japan_superregion
 					superregion = north_china_superregion
 					superregion = east_china_superregion
-					superregion = southwest_china_superregion
 					region = east_manchuria_region
 					region = west_manchuria_region
 					region = korea_region

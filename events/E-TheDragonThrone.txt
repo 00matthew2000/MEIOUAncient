@@ -2092,7 +2092,6 @@ country_event = {
 				capital_scope = { 
 					OR = { 
 						superregion = east_china_superregion
-						superregion = southwest_china_superregion
 					}
 				}
 			}
@@ -2443,7 +2442,6 @@ country_event = {
 				capital_scope = { 
 					OR = { 
 						superregion = east_china_superregion
-						superregion = southwest_china_superregion
 					}
 				}
 			}
@@ -2793,7 +2791,6 @@ country_event = {
 				capital_scope = { 
 					OR = { 
 						superregion = east_china_superregion
-						superregion = southwest_china_superregion
 					}
 				}
 			}
@@ -3143,7 +3140,6 @@ country_event = {
 				capital_scope = { 
 					OR = { 
 						superregion = east_china_superregion
-						superregion = southwest_china_superregion
 					}
 				}
 			}
@@ -3497,7 +3493,6 @@ country_event = {
 				capital_scope = { 
 					OR = { 
 						superregion = east_china_superregion
-						superregion = southwest_china_superregion
 					}
 				}
 			}
@@ -3847,7 +3842,6 @@ country_event = {
 				capital_scope = { 
 					OR = { 
 						superregion = east_china_superregion
-						superregion = southwest_china_superregion
 					}
 				}
 			}
@@ -4516,7 +4510,6 @@ country_event = {
 				capital_scope = { 
 					OR = { 
 						superregion = east_china_superregion
-						superregion = southwest_china_superregion
 					}
 				}
 			}
@@ -4866,7 +4859,6 @@ country_event = {
 				capital_scope = { 
 					OR = { 
 						superregion = east_china_superregion
-						superregion = southwest_china_superregion
 					}
 				}
 			}
@@ -5213,7 +5205,6 @@ country_event = {
 				capital_scope = { 
 					OR = { 
 						superregion = east_china_superregion
-						superregion = southwest_china_superregion
 					}
 				}
 			}
@@ -5901,7 +5892,6 @@ country_event = {
 				capital_scope = { 
 					OR = { 
 						superregion = east_china_superregion
-						superregion = southwest_china_superregion
 					}
 				}
 			}
@@ -6551,7 +6541,6 @@ country_event = {
 				capital_scope = { 
 					OR = { 
 						superregion = east_china_superregion
-						superregion = southwest_china_superregion
 					}
 				}
 			}
@@ -6881,7 +6870,6 @@ country_event = {
 				capital_scope = { 
 					OR = { 
 						superregion = east_china_superregion
-						superregion = southwest_china_superregion
 					}
 				}
 			}
@@ -7206,7 +7194,6 @@ country_event = {
 				capital_scope = { 
 					OR = { 
 						superregion = north_china_superregion
-						superregion = southwest_china_superregion
 					}
 				}
 			}
@@ -7531,7 +7518,6 @@ country_event = {
 				capital_scope = { 
 					OR = { 
 						superregion = east_china_superregion
-						superregion = southwest_china_superregion
 					}
 				}
 			}
@@ -7856,7 +7842,6 @@ country_event = {
 				capital_scope = { 
 					OR = { 
 						superregion = east_china_superregion
-						superregion = southwest_china_superregion
 					}
 				}
 			}
@@ -8181,7 +8166,6 @@ country_event = {
 				capital_scope = { 
 					OR = { 
 						superregion = east_china_superregion
-						superregion = southwest_china_superregion
 					}
 				}
 			}
@@ -8506,7 +8490,6 @@ country_event = {
 				capital_scope = { 
 					OR = { 
 						superregion = north_china_superregion
-						superregion = southwest_china_superregion
 					}
 				}
 			}
@@ -8831,7 +8814,6 @@ country_event = {
 				capital_scope = { 
 					OR = { 
 						superregion = east_china_superregion
-						superregion = southwest_china_superregion
 					}
 				}
 			}
@@ -9156,7 +9138,6 @@ country_event = {
 				capital_scope = { 
 					OR = { 
 						superregion = east_china_superregion
-						superregion = southwest_china_superregion
 					}
 				}
 			}

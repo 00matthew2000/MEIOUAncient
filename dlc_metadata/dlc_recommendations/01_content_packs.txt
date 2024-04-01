@@ -94,7 +94,6 @@ dlc009 = {
 					superregion = japan_superregion
 					superregion = north_china_superregion
 					superregion = east_china_superregion
-					superregion = southwest_china_superregion
 				}
 			}
 		}

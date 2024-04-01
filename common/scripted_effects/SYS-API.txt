@@ -6662,22 +6662,13 @@ Modi_DemandProvince = {
 			set_key = { lhs = Modi_ProdDesire9 value = 0.4 }
 			set_key = { lhs = Modi_ProdDesire10 value = 0.6 }
 		}
-		balkan_superregion = {
-			if = {
-				limit = {
-					region = greece_region
-				}
-				set_key = { lhs = Modi_ProdDesire9 value = 0.5 }
-				set_key = { lhs = Modi_ProdDesire10 value = 0.5 }
-			}
-			else = {
-				set_key = { lhs = Modi_ProdDesire9 value = 0.35 }
-				set_key = { lhs = Modi_ProdDesire10 value = 0.65 }
-			}
+		macedonia_superregion = {
+			set_key = { lhs = Modi_ProdDesire9 value = 0.5 }
+			set_key = { lhs = Modi_ProdDesire10 value = 0.5 }
 		}
-		greater_austrian_circle_superregion = {
-			set_key = { lhs = Modi_ProdDesire9 value = 0.45 }
-			set_key = { lhs = Modi_ProdDesire10 value = 0.55 }
+		balkan_superregion = {
+			set_key = { lhs = Modi_ProdDesire9 value = 0.35 }
+			set_key = { lhs = Modi_ProdDesire10 value = 0.65 }
 		}
 		greater_russia_superregion = {
 			set_key = { lhs = Modi_ProdDesire9 value = 0.6 }
@@ -6687,25 +6678,9 @@ Modi_DemandProvince = {
 			set_key = { lhs = Modi_ProdDesire9 value = 0.55 }
 			set_key = { lhs = Modi_ProdDesire10 value = 0.45 }
 		}
-		west_india_superregion = {
-			set_key = { lhs = Modi_ProdDesire9 value = 0.9 }
-			set_key = { lhs = Modi_ProdDesire10 value = 0.1 }
-		}
 		north_india_superregion = {
 			set_key = { lhs = Modi_ProdDesire9 value = 0.90 }
 			set_key = { lhs = Modi_ProdDesire10 value = 0.1 }
-		}
-		rajputana_superregion = {
-			set_key = { lhs = Modi_ProdDesire9 value = 0.9 }
-			set_key = { lhs = Modi_ProdDesire10 value = 0.1 }
-		}
-		east_india_superregion = {
-			set_key = { lhs = Modi_ProdDesire9 value = 0.92 }
-			set_key = { lhs = Modi_ProdDesire10 value = 0.08 }
-		}
-		central_india_superregion = {
-			set_key = { lhs = Modi_ProdDesire9 value = 0.92 }
-			set_key = { lhs = Modi_ProdDesire10 value = 0.08 }
 		}
 		south_india_superregion = {
 			set_key = { lhs = Modi_ProdDesire9 value = 0.95 }
@@ -6721,6 +6696,11 @@ Modi_DemandProvince = {
 			set_key = { lhs = Modi_ProdDesire10 value = 0.2 }
 			multiply_key = { lhs = Modi_ProdDesire10 which = Modi_Tmp0 }
 		}
+		parthia_superregion = {
+			set_key = { lhs = Modi_ProdDesire9 value = 0.8 }
+			set_key = { lhs = Modi_ProdDesire10 value = 0.2 }
+			multiply_key = { lhs = Modi_ProdDesire10 which = Modi_Tmp0 }
+		}
 		north_china_superregion = {
 			set_key = { lhs = Modi_ProdDesire9 value = 0.9 }
 			set_key = { lhs = Modi_ProdDesire10 value = 0.1 }
@@ -6728,11 +6708,6 @@ Modi_DemandProvince = {
 		}
 		east_china_superregion = {
 			set_key = { lhs = Modi_ProdDesire9 value = 0.90 }
-			set_key = { lhs = Modi_ProdDesire10 value = 0.1 }
-			multiply_key = { lhs = Modi_ProdDesire10 which = Modi_Tmp0 }
-		}
-		southwest_china_superregion = {
-			set_key = { lhs = Modi_ProdDesire9 value = 0.9 }
 			set_key = { lhs = Modi_ProdDesire10 value = 0.1 }
 			multiply_key = { lhs = Modi_ProdDesire10 which = Modi_Tmp0 }
 		}
@@ -6991,7 +6966,23 @@ Modi_DemandProvince = {
 			set_key = { lhs = Modi_ProdDesire9 value = 0.65 }
 			set_key = { lhs = Modi_ProdDesire10 value = 0.35 }
 		}
+		syria_superregion = {
+			set_key = { lhs = Modi_ProdDesire9 value = 0.65 }
+			set_key = { lhs = Modi_ProdDesire10 value = 0.35 }
+		}
+		eastern_africa_superregion = {
+			set_key = { lhs = Modi_ProdDesire9 value = 0.65 }
+			set_key = { lhs = Modi_ProdDesire10 value = 0.35 }
+		}
 		persia_superregion = {
+			set_key = { lhs = Modi_ProdDesire9 value = 0.75 }
+			set_key = { lhs = Modi_ProdDesire10 value = 0.25 }
+		}
+		arabia_superregion = {
+			set_key = { lhs = Modi_ProdDesire9 value = 0.75 }
+			set_key = { lhs = Modi_ProdDesire10 value = 0.25 }
+		}
+		armenia_superregion = {
 			set_key = { lhs = Modi_ProdDesire9 value = 0.75 }
 			set_key = { lhs = Modi_ProdDesire10 value = 0.25 }
 		}

@@ -237,6 +237,8 @@ StartUp_InitResource = {
 							continent = indian_continent
 							superregion = southeast_asia_superregion
 							superregion = near_east_superregion
+							superregion = arabia_superregion
+							superregion = syria_superregion
 							continent = north_america
 						}
 					}
@@ -259,7 +261,6 @@ StartUp_InitResource = {
 						OR = {
 							superregion = north_china_superregion
 							superregion = east_china_superregion
-							superregion = southwest_china_superregion
 						}
 					}
 					multiply_key = { lhs = Tmp_9 value = 1.05 }
@@ -311,6 +312,8 @@ StartUp_InitResource = {
 							continent = indian_continent
 							superregion = southeast_asia_superregion
 							superregion = near_east_superregion
+							superregion = syria_superregion
+							superregion = arabia_superregion
 							continent = north_america
 						}
 					}
@@ -347,7 +350,8 @@ StartUp_InitResource = {
 				else_if = {
 					limit = {
 						OR = {
-							superregion = east_india_superregion
+							region = west_bengal_region
+							region = east_bengal_region
 							superregion = east_china_superregion
 							superregion = north_china_superregion
 							region = mysore_region
@@ -397,7 +401,6 @@ StartUp_InitResource = {
 						OR = {
 							superregion = north_china_superregion
 							superregion = east_china_superregion
-							superregion = southwest_china_superregion
 						}
 					}
 					multiply_key = { lhs = Tmp_9 value = 1.05 }
@@ -495,7 +498,6 @@ StartUp_InitResource = {
 							OR = {
 								superregion = north_china_superregion
 								superregion = east_china_superregion
-								superregion = southwest_china_superregion
 							}
 						}
 						change_key = { lhs = Land_Resource value = 24 }
@@ -1953,7 +1955,6 @@ StartUp_InitProduce = {
 					OR = {
 						superregion = iberia_superregion
 						superregion = italy_superregion
-						superregion = southwest_china_superregion
 						superregion = south_africa_superregion
 						region = egypt_region
 					}

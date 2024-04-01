@@ -792,23 +792,6 @@ NumOfCardinals = {
 			}
 		}
 	}
-	if = {
-		limit = { is_emperor = yes }
-		if = {
-			limit = { religion = catholic }
-			every_province = {
-				limit = { OR = { superregion = germany_superregion AND = { superregion = greater_austrian_circle_superregion OR = { NOT = { exists = BOH } NOT = { region = bohemia_region } } } }   OR = { has_province_flag = MN_Archbishopric has_cardinal = yes } }
-				PAP = { change_key = { lhs = GERbishops value = 1 } }
-			}
-		}
-		else_if = {
-			limit = { religion = avignonist }
-			every_province = {
-				limit = { OR = { superregion = germany_superregion AND = { superregion = greater_austrian_circle_superregion OR = { NOT = { exists = BOH } NOT = { region = bohemia_region } } } }   OR = { has_province_flag = MN_Archbishopric has_cardinal = yes } }
-				AVI = { change_key = { lhs = GERbishops value = 1 } }
-			}
-		}
-	}
 }
 
 #Cardinals voting in the Conclave
@@ -1243,14 +1226,6 @@ CardinalChanceC = {
 				num_of_cities = 20
 				capital_scope = { superregion = scandinavian_superregion }
 				PAP = { capital_scope = { superregion = scandinavian_superregion } }
-			}
-			set_key = { lhs = MN_Cardinal value = 3 }
-		}
-		else_if = {
-			limit = {
-				num_of_cities = 20
-				capital_scope = { superregion = greater_austrian_circle_superregion }
-				PAP = { capital_scope = { superregion = greater_austrian_circle_superregion } }
 			}
 			set_key = { lhs = MN_Cardinal value = 3 }
 		}
@@ -1700,14 +1675,6 @@ DG_Papabile = {
 			change_key = { lhs = DG_Papability value = -1.0 }
 			if = {
 				limit = { PAP = { capital_scope = { superregion = scandinavian_superregion } } }
-				multiply_key = { lhs = DG_Papability value = 1.5 }
-			}
-		}
-		else_if = {
-			limit = { capital_scope = { superregion = greater_austrian_circle_superregion } }
-			change_key = { lhs = DG_Papability value = 1.0 }
-			if = {
-				limit = { PAP = { capital_scope = { superregion = greater_austrian_circle_superregion } } }
 				multiply_key = { lhs = DG_Papability value = 1.5 }
 			}
 		}

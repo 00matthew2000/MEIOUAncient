@@ -10701,9 +10701,6 @@ country_event = {
 			south_anatolia_region = { 
 				add_claim = TIM
 			}
-			west_india_superregion = { 
-				add_permanent_claim = TIM
-			}
 		}
 		hidden_effect = { 
 			set_country_flag = Timur_West
@@ -11330,9 +11327,6 @@ country_event = {
 				add_claim = TIM
 			}
 			south_caucasus_region = { 
-				add_claim = TIM
-			}
-			west_india_superregion = { 
 				add_claim = TIM
 			}
 		}
@@ -81299,12 +81293,6 @@ country_event = {
 			}
 			add_core = ROOT
 		}
-		southwest_china_superregion = { 
-			limit = { 
-				owned_by = ROOT
-			}
-			add_core = ROOT
-		}
 		if = { 
 			limit = { 
 				NOT = { 
@@ -81796,7 +81784,6 @@ country_event = {
 						OR = { 
 							superregion = north_china_superregion
 							superregion = east_china_superregion
-							superregion = southwest_china_superregion
 						}
 					}
 					add_core = YUA

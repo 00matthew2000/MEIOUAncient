@@ -4978,137 +4978,6 @@ country_event = {
 							}
 							if = { 
 								limit = { 
-									OR = { 
-										region = upper_rhenish_circle_region
-										region = low_countries_region
-									}
-								}
-								export_to_variable = { 
-									which = export
-									value = religion
-								}
-								set_variable = { 
-									which = adv
-									which = export
-								}
-								set_variable = { 
-									which = aeh
-									value = 0.98
-								}
-								set_variable = { 
-									which = aei
-									value = 0.90
-								}
-								set_variable = { 
-									which = adw
-									value = 0.90
-								}
-								set_variable = { 
-									which = adx
-									value = 38
-								}
-								set_variable = { 
-									which = aej
-									value = 0.02
-								}
-								set_variable = { 
-									which = aek
-									value = 0.10
-								}
-								set_variable = { 
-									which = ady
-									value = 0.10
-								}
-							}
-							else_if = { 
-								limit = { 
-									OR = { 
-										region = westphalian_circle_region
-										region = brandenburg_pommern_region
-									}
-								}
-								export_to_variable = { 
-									which = export
-									value = religion
-								}
-								set_variable = { 
-									which = adv
-									which = export
-								}
-								set_variable = { 
-									which = aeh
-									value = 0.99
-								}
-								set_variable = { 
-									which = aei
-									value = 0.95
-								}
-								set_variable = { 
-									which = adw
-									value = 0.95
-								}
-								set_variable = { 
-									which = adx
-									value = 38
-								}
-								set_variable = { 
-									which = aej
-									value = 0.01
-								}
-								set_variable = { 
-									which = aek
-									value = 0.05
-								}
-								set_variable = { 
-									which = ady
-									value = 0.05
-								}
-							}
-							else = { 
-								export_to_variable = { 
-									which = export
-									value = religion
-								}
-								set_variable = { 
-									which = adv
-									which = export
-								}
-								set_variable = { 
-									which = aeh
-									value = 1.00
-								}
-								set_variable = { 
-									which = aei
-									value = 0.98
-								}
-								set_variable = { 
-									which = adw
-									value = 0.90
-								}
-								set_variable = { 
-									which = adx
-									value = 38
-								}
-								set_variable = { 
-									which = aej
-									value = 0.00
-								}
-								set_variable = { 
-									which = aek
-									value = 0.08
-								}
-								set_variable = { 
-									which = ady
-									value = 0.10
-								}
-							}
-						}
-						else_if = { 
-							limit = { 
-								superregion = greater_austrian_circle_superregion
-							}
-							if = { 
-								limit = { 
 									region = bohemia_region
 								}
 								export_to_variable = { 
@@ -5195,6 +5064,94 @@ country_event = {
 										region = switzerland_region
 										province_id = 83
 										province_id = 1510
+									}
+								}
+								export_to_variable = { 
+									which = export
+									value = religion
+								}
+								set_variable = { 
+									which = adv
+									which = export
+								}
+								set_variable = { 
+									which = aeh
+									value = 0.99
+								}
+								set_variable = { 
+									which = aei
+									value = 0.95
+								}
+								set_variable = { 
+									which = adw
+									value = 0.95
+								}
+								set_variable = { 
+									which = adx
+									value = 38
+								}
+								set_variable = { 
+									which = aej
+									value = 0.01
+								}
+								set_variable = { 
+									which = aek
+									value = 0.05
+								}
+								set_variable = { 
+									which = ady
+									value = 0.05
+								}
+							}
+							else_if = { 
+								limit = { 
+									OR = { 
+										region = upper_rhenish_circle_region
+										region = low_countries_region
+									}
+								}
+								export_to_variable = { 
+									which = export
+									value = religion
+								}
+								set_variable = { 
+									which = adv
+									which = export
+								}
+								set_variable = { 
+									which = aeh
+									value = 0.98
+								}
+								set_variable = { 
+									which = aei
+									value = 0.90
+								}
+								set_variable = { 
+									which = adw
+									value = 0.90
+								}
+								set_variable = { 
+									which = adx
+									value = 38
+								}
+								set_variable = { 
+									which = aej
+									value = 0.02
+								}
+								set_variable = { 
+									which = aek
+									value = 0.10
+								}
+								set_variable = { 
+									which = ady
+									value = 0.10
+								}
+							}
+							else_if = { 
+								limit = { 
+									OR = { 
+										region = westphalian_circle_region
+										region = brandenburg_pommern_region
 									}
 								}
 								export_to_variable = { 
@@ -6495,7 +6452,7 @@ country_event = {
 						}
 						else_if = { 
 							limit = { 
-								superregion = near_east_superregion
+								superregion = syria_superregion
 							}
 							if = { 
 								limit = { 
@@ -12098,325 +12055,100 @@ country_event = {
 							}
 							if = { 
 								limit = { 
-									superregion = west_india_superregion
-								}
-								if = { 
-									limit = { 
-										religion = shiite
-									}
-									export_to_variable = { 
-										which = export
-										value = religion
-									}
-									set_variable = { 
-										which = adv
-										which = export
-									}
-									set_variable = { 
-										which = aeh
-										value = 0.53
-									}
-									set_variable = { 
-										which = aei
-										value = 0.30
-									}
-									set_variable = { 
-										which = adw
-										value = 0.10
-									}
-									set_variable = { 
-										which = adx
-										value = 19
-									}
-									set_variable = { 
-										which = aej
-										value = 0.30
-									}
-									set_variable = { 
-										which = aek
-										value = 0.60
-									}
-									set_variable = { 
-										which = ady
-										value = 0.84
-									}
-									set_variable = { 
-										which = adz
-										value = 32
-									}
-									set_variable = { 
-										which = ael
-										value = 0.10
-									}
-									set_variable = { 
-										which = aem
-										value = 0.10
-									}
-									set_variable = { 
-										which = aea
-										value = 0.01
-									}
-									set_variable = { 
-										which = aeb
-										value = 38
-									}
-									set_variable = { 
-										which = aen
-										value = 0.02
-									}
-									set_variable = { 
-										which = aeo
-										value = 0.05
-									}
-									set_variable = { 
-										which = aec
-										value = 0.05
+									OR = { 
+										area = maharashtra_area
+										area = north_kerala_area
 									}
 								}
-								else_if = { 
-									limit = { 
-										any_neighbor_province = { 
-											religion = hinduism
-										}
-									}
-									export_to_variable = { 
-										which = export
-										value = religion
-									}
-									set_variable = { 
-										which = adv
-										which = export
-									}
-									set_variable = { 
-										which = aeh
-										value = 0.68
-									}
-									set_variable = { 
-										which = aei
-										value = 0.80
-									}
-									set_variable = { 
-										which = adw
-										value = 0.90
-									}
-									set_variable = { 
-										which = adx
-										value = 32
-									}
-									set_variable = { 
-										which = aej
-										value = 0.20
-									}
-									set_variable = { 
-										which = aek
-										value = 0.10
-									}
-									set_variable = { 
-										which = ady
-										value = 0.05
-									}
-									set_variable = { 
-										which = adz
-										value = 34
-									}
-									set_variable = { 
-										which = ael
-										value = 0.10
-									}
-									set_variable = { 
-										which = aem
-										value = 0.05
-									}
-									set_variable = { 
-										which = aea
-										value = 0.00
-									}
-									set_variable = { 
-										which = aeb
-										value = 38
-									}
-									set_variable = { 
-										which = aen
-										value = 0.02
-									}
-									set_variable = { 
-										which = aeo
-										value = 0.05
-									}
-									set_variable = { 
-										which = aec
-										value = 0.05
-									}
+								export_to_variable = { 
+									which = export
+									value = religion
 								}
-								else = { 
-									export_to_variable = { 
-										which = export
-										value = religion
-									}
-									set_variable = { 
-										which = adv
-										which = export
-									}
-									set_variable = { 
-										which = aeh
-										value = 0.78
-									}
-									set_variable = { 
-										which = aei
-										value = 0.80
-									}
-									set_variable = { 
-										which = adw
-										value = 0.94
-									}
-									set_variable = { 
-										which = adx
-										value = 32
-									}
-									set_variable = { 
-										which = aej
-										value = 0.10
-									}
-									set_variable = { 
-										which = aek
-										value = 0.10
-									}
-									set_variable = { 
-										which = ady
-										value = 0.01
-									}
-									set_variable = { 
-										which = adz
-										value = 34
-									}
-									set_variable = { 
-										which = ael
-										value = 0.10
-									}
-									set_variable = { 
-										which = aem
-										value = 0.05
-									}
-									set_variable = { 
-										which = aea
-										value = 0.00
-									}
-									set_variable = { 
-										which = aeb
-										value = 38
-									}
-									set_variable = { 
-										which = aen
-										value = 0.02
-									}
-									set_variable = { 
-										which = aeo
-										value = 0.05
-									}
-									set_variable = { 
-										which = aec
-										value = 0.05
-									}
+								set_variable = { 
+									which = adv
+									which = export
+								}
+								set_variable = { 
+									which = aeh
+									value = 0.68
+								}
+								set_variable = { 
+									which = aei
+									value = 0.80
+								}
+								set_variable = { 
+									which = adw
+									value = 0.90
+								}
+								set_variable = { 
+									which = adx
+									value = 32
+								}
+								set_variable = { 
+									which = aej
+									value = 0.30
+								}
+								set_variable = { 
+									which = aek
+									value = 0.15
+								}
+								set_variable = { 
+									which = ady
+									value = 0.05
+								}
+								set_variable = { 
+									which = adz
+									value = 38
+								}
+								set_variable = { 
+									which = ael
+									value = 0.02
+								}
+								set_variable = { 
+									which = aem
+									value = 0.05
+								}
+								set_variable = { 
+									which = aea
+									value = 0.05
 								}
 							}
 							else = { 
-								if = { 
-									limit = { 
-										OR = { 
-											area = maharashtra_area
-											area = north_kerala_area
-										}
-									}
-									export_to_variable = { 
-										which = export
-										value = religion
-									}
-									set_variable = { 
-										which = adv
-										which = export
-									}
-									set_variable = { 
-										which = aeh
-										value = 0.68
-									}
-									set_variable = { 
-										which = aei
-										value = 0.80
-									}
-									set_variable = { 
-										which = adw
-										value = 0.90
-									}
-									set_variable = { 
-										which = adx
-										value = 32
-									}
-									set_variable = { 
-										which = aej
-										value = 0.30
-									}
-									set_variable = { 
-										which = aek
-										value = 0.15
-									}
-									set_variable = { 
-										which = ady
-										value = 0.05
-									}
-									set_variable = { 
-										which = adz
-										value = 38
-									}
-									set_variable = { 
-										which = ael
-										value = 0.02
-									}
-									set_variable = { 
-										which = aem
-										value = 0.05
-									}
-									set_variable = { 
-										which = aea
-										value = 0.05
-									}
+								export_to_variable = { 
+									which = export
+									value = religion
 								}
-								else = { 
-									export_to_variable = { 
-										which = export
-										value = religion
-									}
-									set_variable = { 
-										which = adv
-										which = export
-									}
-									set_variable = { 
-										which = aeh
-										value = 0.70
-									}
-									set_variable = { 
-										which = aei
-										value = 0.85
-									}
-									set_variable = { 
-										which = adw
-										value = 0.95
-									}
-									set_variable = { 
-										which = adx
-										value = 32
-									}
-									set_variable = { 
-										which = aej
-										value = 0.30
-									}
-									set_variable = { 
-										which = aek
-										value = 0.15
-									}
-									set_variable = { 
-										which = ady
-										value = 0.05
-									}
+								set_variable = { 
+									which = adv
+									which = export
+								}
+								set_variable = { 
+									which = aeh
+									value = 0.70
+								}
+								set_variable = { 
+									which = aei
+									value = 0.85
+								}
+								set_variable = { 
+									which = adw
+									value = 0.95
+								}
+								set_variable = { 
+									which = adx
+									value = 32
+								}
+								set_variable = { 
+									which = aej
+									value = 0.30
+								}
+								set_variable = { 
+									which = aek
+									value = 0.15
+								}
+								set_variable = { 
+									which = ady
+									value = 0.05
 								}
 							}
 						}
@@ -41013,30 +40745,6 @@ country_event = {
 				else_if = { 
 					limit = { 
 						capital_scope = { 
-							superregion = greater_austrian_circle_superregion
-						}
-					}
-					change_variable = { 
-						which = oou
-						value = 1.0
-					}
-					if = { 
-						limit = { 
-							PAP = { 
-								capital_scope = { 
-									superregion = greater_austrian_circle_superregion
-								}
-							}
-						}
-						multiply_variable = { 
-							which = oou
-							value = 1.5
-						}
-					}
-				}
-				else_if = { 
-					limit = { 
-						capital_scope = { 
 							superregion = balkan_superregion
 						}
 					}
@@ -64749,12 +64457,6 @@ country_event = {
 			}
 			modifier = { 
 				capital_scope = { 
-					superregion = greater_austrian_circle_superregion
-				}
-				factor = 0
-			}
-			modifier = { 
-				capital_scope = { 
 					superregion = balkan_superregion
 				}
 				factor = 1.1
@@ -64987,12 +64689,6 @@ country_event = {
 					superregion = germany_superregion
 				}
 				factor = 0.75
-			}
-			modifier = { 
-				capital_scope = { 
-					superregion = greater_austrian_circle_superregion
-				}
-				factor = 2.00
 			}
 			modifier = { 
 				capital_scope = { 

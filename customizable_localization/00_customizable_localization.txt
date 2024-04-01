@@ -30,7 +30,6 @@ defined_text = {
 				OR = { 
 					superregion = north_china_superregion
 					superregion = east_china_superregion
-					superregion = southwest_china_superregion
 				}
 			}
 		}
@@ -87,9 +86,6 @@ defined_text = {
 				}
 				NOT = { 
 					superregion = east_china_superregion
-				}
-				NOT = { 
-					superregion = southwest_china_superregion
 				}
 				NOT = { 
 					region = korea_region
@@ -553,7 +549,6 @@ defined_text = {
 			OR = { 
 				superregion = north_china_superregion
 				superregion = east_china_superregion
-				superregion = southwest_china_superregion
 				region = inner_mongolia_region
 			}
 		}
@@ -728,7 +723,6 @@ defined_text = {
 			OR = { 
 				superregion = north_china_superregion
 				superregion = east_china_superregion
-				superregion = southwest_china_superregion
 				region = inner_mongolia_region
 			}
 		}

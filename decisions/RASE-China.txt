@@ -225,32 +225,6 @@ country_decisions = {
 					}
 					add_permanent_claim = ROOT
 				}
-				southwest_china_superregion = { 
-					limit = { 
-						culture_group = chinese_group
-						NOT = { 
-							is_core = ROOT
-						}
-					}
-					add_core = ROOT
-				}
-				southwest_china_superregion = { 
-					limit = { 
-						NOT = { 
-							culture_group = chinese_group
-						}
-						NOT = { 
-							owned_by = ROOT
-						}
-						NOT = { 
-							is_permanent_claim = ROOT
-						}
-						NOT = { 
-							province_id = 5268
-						}
-					}
-					add_permanent_claim = ROOT
-				}
 			}
 			else_if = { 
 				limit = { 
@@ -298,29 +272,6 @@ country_decisions = {
 						}
 						NOT = { 
 							province_id = 5267
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-				southwest_china_superregion = { 
-					limit = { 
-						owned_by = ROOT
-						NOT = { 
-							is_core = ROOT
-						}
-					}
-					add_core = ROOT
-				}
-				southwest_china_superregion = { 
-					limit = { 
-						NOT = { 
-							owned_by = ROOT
-						}
-						NOT = { 
-							is_permanent_claim = ROOT
-						}
-						NOT = { 
-							province_id = 5268
 						}
 					}
 					add_permanent_claim = ROOT
@@ -546,12 +497,6 @@ country_decisions = {
 				}
 				add_core = ROOT
 			}
-			southwest_china_superregion = { 
-				limit = { 
-					owned_by = ROOT
-				}
-				add_core = ROOT
-			}
 		}
 		ai_will_do = { 
 			factor = 1
@@ -769,29 +714,6 @@ country_decisions = {
 					}
 					NOT = { 
 						province_id = 5267
-					}
-				}
-				add_permanent_claim = ROOT
-			}
-			southwest_china_superregion = { 
-				limit = { 
-					owned_by = ROOT
-					NOT = { 
-						is_core = ROOT
-					}
-				}
-				add_core = ROOT
-			}
-			southwest_china_superregion = { 
-				limit = { 
-					NOT = { 
-						owned_by = ROOT
-					}
-					NOT = { 
-						is_permanent_claim = ROOT
-					}
-					NOT = { 
-						province_id = 5268
 					}
 				}
 				add_permanent_claim = ROOT

@@ -35,11 +35,7 @@ indian_region_trigger = {
 	AND = {
 		continent = indian_continent
 		OR = {
-			superregion = west_india_superregion
 			superregion = north_india_superregion
-			superregion = rajputana_superregion
-			superregion = east_india_superregion
-			superregion = central_india_superregion
 			superregion = south_india_superregion
 		}
 	}
@@ -257,6 +253,8 @@ near_east_region_trigger = {
 		OR = {
 			superregion = near_east_superregion
 			superregion = anatolia_superregion
+			superregion = syria_superregion
+			superregion = eastern_africa_superregion
 		}
 	}
 }
@@ -264,7 +262,16 @@ near_east_region_trigger = {
 
 persia_region_trigger = {
 	AND = {
-		superregion = persia_superregion
+		OR = {
+			superregion = persia_superregion
+			superregion = parthia_superregion
+		}
+	}
+}
+
+armenia_region_trigger = {
+	AND = {
+		superregion = armenia_superregion
 	}
 }
 
@@ -465,10 +472,7 @@ serbia_region_trigger = {
 coromandel_region_trigger = {
 	AND = {
 		continent = indian_continent
-		OR = {
-			superregion = central_india_superregion
-			superregion = south_india_superregion
-		}
+		superregion = south_india_superregion
 		OR = {
 			area = madura_area
 			area = north_coromandel_area
@@ -533,7 +537,6 @@ holy_roman_empire_trigger = {
 		continent = europe
 		OR = {
 			superregion = germany_superregion
-			superregion = greater_austrian_circle_superregion
 			AND = {
 				superregion = italy_superregion
 				OR = {

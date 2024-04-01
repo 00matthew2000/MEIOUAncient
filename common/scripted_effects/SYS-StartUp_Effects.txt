@@ -217,7 +217,6 @@ Startup_LandSizeBoosts = {
 				province_id = 354
 				province_id = 4058
 				superregion = germany_superregion
-				superregion = greater_austrian_circle_superregion
 				region = horn_region
 				province_id = 3280
 				province_id = 5116

@@ -638,19 +638,19 @@ east_sicily_area = {
 }
 
 calabria_area = { # three provinces pending addition of Catanzaro
-	120 123 2534 
+	120 123 2534 2532
 }
 
 naples_area = {
-	2562 2531 121 2532 
+	2562 2531 121
 }
 
 apulia_area = {
-	2533 2856 3870 1285 
+	2856 3870 1285 
 }
 
 abruzzi_area = {
-	2858 119 2857 122
+	2858 119 2857 122 2533
 }
 
 emilia_romagna_area = {
@@ -969,8 +969,12 @@ morea_area = {
 	1425 3873 145 3384 3874 
 }
 
+europa_area = {
+	3876 3877 2501
+}
+
 thrace_area = {
-	3876 151 1402 2238 3877 2501
+	151 1402 2238
 }
 
 muntenia_area = {
@@ -1010,7 +1014,7 @@ dobrogea_area = {
 }
 
 east_slovakia_area = {
-	1406 3755 3754 
+	1406 3755 3754 3770
 }
 
 west_slovakia_area = {
@@ -1050,15 +1054,19 @@ north_serbia_area = {
 }
 
 bosnia_area = {
-	2392 139 2391 1268 1767 2389
+	2392 139 1767
 }
 
 croatia_area = {
-	131 152 2390 1450 1403 
+	131 152 2390 1450 2389 2391 1268
 }
 
 east_adriatic_coast_area = {
-	2571 2388 136 137 138 
+	137 138
+}
+
+west_adriatic_coast_area = {
+	136 2571 1403 2388
 }
 
 alfold_area = {
@@ -1070,7 +1078,7 @@ eszaki_area = {
 }
 
 kisalfold_area = {
-	1267 1270 1275 3770 3901 
+	1267 1270 1275 3901 
 }
 
 transdanubia_area = {
@@ -1130,7 +1138,11 @@ kujawy_area = {
 }
 
 red_ruthenia_area = {
-	258 260 1281 2507 2535 3792
+	258 260 3792
+}
+
+germano_scythia_area = {
+	1281 2507 2535
 }
 
 podolia_volhynia_area = {
@@ -1142,7 +1154,7 @@ polesie_area = {
 }
 
 black_ruthenia_area = {
-	283 1394 1395 3762 
+	1394 1395 
 }
 
 white_ruthenia_area = {
@@ -1154,7 +1166,7 @@ mazovia_area = {
 }
 
 podlasie_area = {
-	271 3759 3763 2506 
+	271 283 3759 3763 2506 3762
 }
 
 lithuania_area = {
@@ -1170,23 +1182,31 @@ east_dniepr_area = {
 }
 
 sloboda_ukraine_area = {
-	2545 1287 4110 4018 
+	2545 1287 4110
 }
 
 azov_area = {
-	285 1298 302 286
+	1298 302 4615 
+}
+
+maeotis_area = {
+	286 1299 3795
 }
 
 crimea_area = {
-	282 1299 1344 2274 2573 
+	282 1344 2274 2573 
+}
+
+hylaea_area = {
+	285 1431
 }
 
 zaporizhia_area = {
-	300 4615 4942 
+	300 4018 4942
 }
 
 cherson_area = {
-	284 1431 2537 3760 4019 4021 
+	284 2537 3760 4019 4021 
 }
 
 gomel_area = {
@@ -1235,7 +1255,7 @@ beloozero_area = {
 }
 
 astrakhan_area = {
-	1293 1309 1310 
+	1293 1309 1310 4114 303 
 }
 
 lower_don_area = {
@@ -1271,7 +1291,7 @@ briansk_area = {
 }
 
 majar_area = {
-	287 1304 303 4941 4114 1303
+	287 1304 4941
 }
 onega_area = {
 	3994 4017 3401
@@ -1286,7 +1306,7 @@ east_georgia_area = {
 }
 
 west_georgia_area = {
-	3799 1300 2549 3798 1301
+	3799 1300 3798 1301
 }
 
 meskheti_area = {
@@ -1302,15 +1322,15 @@ shemakha_area = {
 }
 
 west_circassia_area = {
-	3796 1302 999 3795 
+	3796 1302 999 3795 2549
 }
 
 east_circassia_area = {
-	3639 2578 995 
+	3639 2578 995 1303
 }
 
 west_armenia_area = {
-	2581 3804 419 3805 
+	2581 3804 419 3805 5073
 }
 
 east_armenia_area = {
@@ -1318,7 +1338,7 @@ east_armenia_area = {
 }
 
 van_area = {
-	418 3394 5073 1444 
+	418 3394 1444 
 }
 
 upper_armenia_area = {
@@ -1326,7 +1346,7 @@ upper_armenia_area = {
 }
 
 derbant_area = {
-	425 2579 2656  1009 
+	425 2579 2656 1009 
 }
 
 ########################################
@@ -1338,27 +1358,27 @@ rum_area = {
 }
 
 sophene_area = { # Erzurum and Trebizond
-	3884 5077 5078 
+	3884 5077 5078 3393 5080
 }
 
 malatya_area = { # 3 +Kayseri
-	1440 1443 2655 3393 5080 
+	1440 1443 2655 
 }
 
 diyar_bakir_area = {
-	2551 3093 5074 
+	2551 3093 3885 5074 
 }
 
 hakkari_area = {
-	4028 4029 3088 
+	4028 4029
 }
 
 diyar_mudar_area = {
-	2224 3091 3089 1319
+	2224 3091 1319
 }
 
 diyar_rabia_area = {
-	3885 1320 
+	1320 3088
 }
 
 trebizond_area = {
@@ -1370,18 +1390,22 @@ sinope_area = {
 }
 
 manisa_area = {
-	318 4066 317 
+	318 317 1325 1438 3390 4065 
 }
 
 karaman_area = {
-	3392 329 331 4061 
+	3392 329 4061 
+}
+
+chammanene_area = {
+	331 2540 4062
 }
 
 teke_area = {
 	4060 325 3391 
 }
 caria_area = {
-	4063 4064 1439
+	4064 1439
 }
 
 ankara_area = { # (Anatolia Eyalet except for Kastamonu and the future Aydin eyalet)
@@ -1389,19 +1413,19 @@ ankara_area = { # (Anatolia Eyalet except for Kastamonu and the future Aydin eya
 }
 
 iznik_area = {
-	316 1446 5081
+	1446 5081
 }
 
 prusa_area = {
-	2553 2552 4067 3387 3386
+	2552 3387 3386
 }
 
 aydin_area = {
-	1325 1438 3389 3390 4065 
+	3389 4063 4066 4067
 }
 
 aleppo_area = {
-	332 377 3886 1327 
+	332 377 1327 
 }
 
 badia_area = {
@@ -1409,15 +1433,15 @@ badia_area = {
 }
 
 lebanon_area = {
-	875 378 1334 4647 
+	378 1334 4647 3886
 }
 
 dimashq_area = {
-	1328 382 4057 
+	1328 382 875
 }
 
 palestine_area = {
-	364 379 1331 2634 2635 
+	364 379 1331 2634 2635 4057
 }
 
 jordan_area = {
@@ -1425,7 +1449,7 @@ jordan_area = {
 }
 
 cappadocia_area = {
-	1333 2540 3879 5079 
+	1333 3879 5079 
 }
 
 cilicia_area = {
@@ -1437,11 +1461,11 @@ cyprus_area = {
 }
 
 kastamonu_area = {
-	1437 1447 2541 
+	1437 1447 316 2541
 }
 
 kutahya_area = {
-	319 322 324 4062
+	319 322 324 2553
 }
 
 tairahan_area = {
@@ -1449,7 +1473,7 @@ tairahan_area = {
 }
 
 radhan_area = {
-	1322 410 2230 3900
+	1322 410 2230 3089 3900
 }
 
 sawad_area = {
@@ -1483,7 +1507,7 @@ yamamah_area = {
 }
 
 nejd_area = {
-	2810 2503 2808 
+	2810 2503 2808 3073
 }
 
 shammar_area = {
@@ -1519,7 +1543,7 @@ sanaa_area = {
 }
 
 jizzan_area = {
-	3028 3073 4095 4096 
+	3028 4095 4096 
 }
 
 asir_area = {
@@ -1547,7 +1571,11 @@ upper_egypt_area = {
 }
 
 libyan_desert_area = {
-	1210 2497 1212 2661 5107 
+	1212  5107 
+}
+
+oasis_area = {
+	2661 1210 2497
 }
 
 tripolitania_area = {
@@ -1695,7 +1723,7 @@ harar_area = {
 }
 
 ogaden_area = {
-	3060 3051 1203 3062 5064 3052
+	3060 3051 1203 3062 5064 3052 3054
 }
 
 kurdufan_area = {
@@ -1775,7 +1803,7 @@ majarteen_area = {
 }
 
 marehan_area = {
-	3036 3037 3038 3054 3055 
+	3036 3037 3038 3055 
 }
 
 hamasien_area = {
@@ -2019,15 +2047,15 @@ lekki_area = {
 }
 
 west_niger_area = {
-	1131 2880 2884 4990 4994 5092 
+	1131 2880 2884 4994 5092 2788
 }
 
 east_niger_area = {
-	1552 1561 2788 4986 4987  
+	1552 1561 4987 4990
 }
 
 niger_delta_area = {
-	1134 1549 2769 2776 2790 4985 
+	1134 1549 2769 2776 2790 4985 4986
 }
 
 niger_rapids_area = {
@@ -2051,11 +2079,11 @@ kano_area = {
 }
 
 daura_area = {
-	1546 2924 2929 1559 4992
+	1546 2924 2929 1559
 }
 
 west_chad_area = {
-	1133 2950 2948 1560 
+	1133 2950 2948 1560 4992
 }
 
 east_chad_area = {
@@ -2179,11 +2207,19 @@ baluchi_area = {
 }
 
 quetta_area = {
-	448 577 2715 3834 
+	448 2715 3834 5327
+}
+
+paradene_area = {
+	577 3098
+}
+
+parsiene_area = {
+	432 551
 }
 
 zahedan_area = {
-	3833 551 468 4584 
+	3833 468 4584 
 }
 
 ferghana_area = {
@@ -2217,7 +2253,7 @@ kish_area = {
 }
 
 vaxsh_area = {
-	3288 3289 3291 453 4594 4596
+	3288 3289 3291 453 4596
 }
 
 khiva_area = {
@@ -2229,11 +2265,11 @@ syrdarya_area = {
 }
 
 transcaspia_area = {
-	441 439 462 1083 
+	441 439 462 1083 5048
 }
 
 ahel_area = {
-	387 2220 3281 3657 
+	387 3281 3284 3657 3849
 }
 
 merv_area = {
@@ -2245,11 +2281,11 @@ herat_area = {
 }
 
 nishapur_area = {
-	3284 3840 3841 3849 4232 4234 
+	3840 3841 4232 4234 2220
 }
 
 khorasan_area = {
-	3092 433 3839 432 5116 5117 
+	3092 433 3839 5116 5117 
 }
 
 luristan_area = {
@@ -2257,11 +2293,11 @@ luristan_area = {
 }
 
 farsistan_area = {
-	3827 429 3836 3081 
+	3827 3081 2228 3828 3829
 }
 
 larestan_area = {
-	2228 2725 3828 3829 3830 
+	2725 3830 429 3836 
 }
 
 balkh_area = {
@@ -2281,7 +2317,7 @@ iraq_e_ajam_area = {
 }
 
 tehran_area = {
-	1313 3083 3078 4652 
+	1313 3078 4652 
 }
 
 isfahan_area = {
@@ -2301,7 +2337,7 @@ tabarestan_area = {
 }
 
 east_tabarestan_area = {
-	405 426 5048
+	3083 405 426
 }
 
 ########################################
@@ -2317,7 +2353,7 @@ lower_sindh_area = {
 }
 
 cholistan_area = {
-	3108 2556 3098 5327 
+	3108 2556
 }
 
 multan_area = {
@@ -2417,7 +2453,7 @@ konkan_area = {
 }
 
 desh_area = {	#Bijapur
-	530 1587 3148 
+	1587 3148 2212 2678 5303
 }
 
 kolhapur_area = {
@@ -2429,7 +2465,7 @@ rayalaseema_area = {	#Vijayanagar
 }
 
 tirupati_area = {
-	543 547 3155 
+	543 547 3155 2628 2672
 }
 
 rohilkhand_area = {
@@ -2472,12 +2508,16 @@ naga_hills_area = {
 	3194 2698 569 2699
 }
 
+kalay_area = {
+	580 2428 3903
+}
+
 dakka_area = {	#Dakka
-	2696 567 3189 5358
+	2696 567 3189 5358 3190 3191
 }
 
 chittagong_area = {	#Chittagong
-	568 3192 3190 3191
+	568 3192
 }
 
 north_bengal_area = {	#Barind
@@ -2493,7 +2533,7 @@ south_bihar_area = {	#Patna
 }
 
 purniah_area = {		#Purniah
-	3184 2689 3185 5354
+	3184 2689 5345
 }
 
 muzzaffarpur_area = {		#Muzzaffarpur
@@ -2501,11 +2541,11 @@ muzzaffarpur_area = {		#Muzzaffarpur
 }
 
 baghalpur_area = { #Tirhut
-	2690 5352 5353 5345
+	2690 5352 5353 5354 3185
 }
 
 jharkhand_area = {
-	3173 549 559 3179 3180 3181
+	549 559 3179 3180 3181
 }
 
 north_orissa_area = {	#Sambalpur
@@ -2525,7 +2565,7 @@ south_cuttack_area = {
 }
 
 andhra_area = {	#Andhra
-	507 2627 5304 2628 2672
+	507 2627 5304
 }
 
 godavari_area = {
@@ -2533,7 +2573,7 @@ godavari_area = {
 }
 
 hyderabad_area = {		#Hyderabad
-	545 3160 3161 5303 
+	545 3160 3161
 }
 
 nizamabab_area = {
@@ -2541,7 +2581,11 @@ nizamabab_area = {
 }
 
 north_kerala_area = {	#Malabar
-	533 534 2570 5296 5298 
+	534 2570 5296
+}
+
+mali_nadu_area = {
+	532 533 5298
 }
 
 south_kerala_area = {
@@ -2569,7 +2613,7 @@ madura_area = {
 }
 
 kanara_area = {
-	531 532 3150 3151 3152 
+	531 3150 3151 3152 
 }
 
 mysore_area = {
@@ -2585,7 +2629,7 @@ berar_area = {
 }
 
 raichur_area = {	#Bidar
-	2212 2678 3165 2681
+	3165 2681 530 
 }
 
 assam_area = {	#Assam
@@ -2612,6 +2656,10 @@ kashmir_area = {
 	3105 2115 2116 2226
 }
 
+pamir_area = {
+	2748 4594
+}
+
 east_lanka_area = {
 	2337 3201 5292 
 }
@@ -2633,7 +2681,7 @@ saurashtra_area = {
 }
 
 bastar_area = {
-	2682 2558 2683 3172 
+	2682 2558 2683 3172 3173
 }
 
 indore_area = {
@@ -2645,11 +2693,15 @@ indore_area = {
 ########################################
 
 upper_burma_area = {
-	3903 2429 584 2428 580 3217
+	2429 584 3217 581
 }
 
 central_burma_area = {
-	3905 3904 2427 2425 352 3216
+	3905 3904 2427
+}
+
+dakshina_airavati_area = {
+	2425 352 3216
 }
 
 lower_burma_area = {
@@ -2661,7 +2713,7 @@ arakan_area = {
 }
 
 kachin_area = {
-	582 581 2739 3197 3196 3195
+	582 2739 3197 3196 3195
 }
 
 shan_hill_area = {
@@ -2669,7 +2721,11 @@ shan_hill_area = {
 }
 
 kayin_area = {
-	2822 4046 590 3218 4043 
+	2822 4046 3218 
+}
+
+tanintharyi_area = {
+	4043 3221 590
 }
 
 malaya_area = {
@@ -2721,7 +2777,7 @@ mekong_area = {
 }
 
 tenasserim_area = {
-	3221 4049 591 3222
+	4049 591 3222
 }
 
 ligor_area = {
@@ -2777,7 +2833,11 @@ southern_thai_area = {
 }
 
 chonburi_area = {
-	2668 603 2820 3930 
+	603 2820
+}
+
+chonlapura_area = {
+	3930 2668
 }
 
 ########################################
@@ -2881,23 +2941,27 @@ south_sulawesi_area = {
 ########################################
 
 north_korea_area = {
-	730 733 1822 2801 5132
+	733 1822 2801 5132
 }
 
 donggye_area = {
-	732 2328 2800 3686
+	730 2800 3686 3241 3242
+}
+
+imdun_area = {
+	732 2806 734
 }
 
 central_korea_area = {
-	2806 734 2802 735 2803 2233 
+	2802 735 2803 2233 
 }
 
 south_korea_area = {
-	736 889 2461 2805 
+	736 2805 
 }
 
 jeolla_area = {
-	737 877 2276 2804
+	737 877 2276 2804 889 2461 
 }
 
 west_kansai_area = {
@@ -3021,7 +3085,7 @@ yrtesh_area = {
 }
 
 altai_krai_area = {
-	3308 3277 4968 5245 
+	3277 4968 5245 
 }
 
 iskier_area = {
@@ -3029,7 +3093,7 @@ iskier_area = {
 }
 
 ishim_area = {
-	472 2442 2465
+	472 2442 2465 3308 
 }
 
 ########################################
@@ -3042,7 +3106,7 @@ tarim_basin_area = {
 }
 
 yarkand_area = {
-	739 2740 2741 2745 2748
+	739 2740 2741 2745
 }
 
 zungaria_area = {
@@ -3070,40 +3134,42 @@ kham_area = {
 }
 
 utsang_area = {
-	2262 3207 2263 2120 3208 
+	3207 2263 2120 3208 
 }
 ngari_area = {
-	2261 509 3107 
+	2261 2262 509 3107 
 }
 
 yanyun_area = { 706 5377 5376 708 }
 yanghe_area = { 5375 5373 709 5484 }
-jizhou_area = { 5372 705 704 5374 }
-south_hebei_area = { 703 2560 5371 724 }
+jizhou_area = { 705 704 5374 }
+south_hebei_area = { 5371 5372 703 724 }
 north_shanxi_area = { 2247 5483 5482 2468 }
 fenshui_area = { 2476 2471 5478 5479 }
 south_shanxi_area = { 2467 2246 5480 5481 }
 
-luxinan_area = { 5385 5386 2491 }
+luxinan_area = { 5385 5386 2491 2560 }
 laizhou_bandao_area = { 2492 697 5378 5379  }
-south_shandong_area = { 2148 5384 698 5387 }
-north_shandong_area = { 5388 5389 1041 699 }
-ju_area = { 5380 5381 5382 5383 }
-liaoning_area = { 707 2249 4035 4037 4036 }
+south_shandong_area = { 698 5387 }
+north_shandong_area = { 5388 5389 1041 699 5380 }
+ju_area = { 5381 5382 5383 5384 }
+liaoning_area = { 2249 4035 4037 4036 }
 
-heluo_area = { 702 2605 5471 5476 }
-south_henan_area = { 5473 5474 5475 2472 2485 }
-north_henan_area = { 701 5469 5470 5472 700 }
+heluo_area = { 702 5471 5476 }
+south_henan_area = { 5474 5475 2472 }
+chenliu_area = { 701 2485 }
+yingchuan_area = { 2605 5473 }
+north_henan_area = { 5469 5470 5472 700 }
 huaibei_area = { 696 5390 5391 5392 }
-haozhou_area = { 689 5402 5403 5404 5405 }
+haozhou_area = { 689 5402 5403 5405 }
+pengcheng_area = { 2148 5404 }
 
-huaizuo_area = { 2607 5393 5394 5395 }
-jinling_area = { 2125 2150 5396 5397 }
+huaizuo_area = { 2607 5393 5394 5395 5396 }
+jinling_area = { 2125 2150 5397 }
 wu_area = { 1068 5398 2147 }
 songjiang_area = { 694 5399 5400 5401 }
 huizhou_area = { 691 695 2144 5407 5408 }
 anqing_area = { 690 2149 2613 5406 5118 }
-
 
 south_zhejiang_area = { 692 2142 5410 5411 }
 east_zhejiang_area = { 2141 2272 5412 5413 }
@@ -3128,7 +3194,8 @@ west_hubei_area = {	684 687 688 5462 5463 }
 east_hubei_area = { 1172 5464 5465 5466 5467 5468  }
 
 hanzhong_area = { 2170 5488 5121 }
-shaanbei_area = { 2251 2254 5491 5493 5119 }
+shaanbei_area = { 2251 5493 5119 }
+xiaojun_area = { 3275 2254 5491 }
 guanzhong_area = { 2252 5487 5489 5490 }
 longxi_area = { 2119 2257 5494 5133 }
 lintao_area = { 5492 2256 2162 5120 }
@@ -3154,11 +3221,11 @@ west_guangdong_area = { 673 674 675 2464 3939 }
 
 
 outer_liaoning_area = {
-	3240 2248 4038 
+	3240 2248 707 
 }
 
 west_jurcen_area = {
-	3241 3242 3243 
+	3243 2328
 }
 west_hulun_area = {
 	731 4031 3258 
@@ -3187,13 +3254,13 @@ zeya_area = {
 }
 
 east_tumed_area = {
-	3268 2253 5131
+	3268 2253 5131 2267 
 }
 ordos_area = {
-	3275 722 2267 
+	722
 }
 xinhai_area = {
-	3262 2266 3259
+	3262 2266 3259 4038 
 }
 nen_area = {
 	3261 3260 3257 726 

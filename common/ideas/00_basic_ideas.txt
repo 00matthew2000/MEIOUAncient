@@ -767,7 +767,6 @@ exploration_ideas = {
 			capital_scope = { 
 				OR = { 
 					superregion = italy_superregion
-					superregion = greater_austrian_circle_superregion
 					superregion = anatolia_superregion
 					superregion = balkan_superregion
 				}
@@ -1602,7 +1601,6 @@ naval_ideas = {
 				OR = { 
 					superregion = italy_superregion
 					superregion = scandinavian_superregion
-					superregion = greater_austrian_circle_superregion
 					superregion = germany_superregion
 				}
 			}

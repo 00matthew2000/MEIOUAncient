@@ -34896,7 +34896,6 @@ country_event = {
 					OR = { 
 						superregion = north_china_superregion
 						superregion = east_china_superregion
-						superregion = southwest_china_superregion
 					}
 					NOT = { 
 						area = liaoning_area

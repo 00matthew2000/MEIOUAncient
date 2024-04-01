@@ -159,21 +159,6 @@ country_event = {
 							tag = AAA
 						}
 					}
-					greater_austrian_circle_superregion = { 
-						owned_by = PREV
-						has_province_modifier = bohemian_estates
-					}
-				}
-				set_country_flag = Core_BOH
-			}
-			if = { 
-				limit = { 
-					AND = { 
-						num_of_cities = 1
-						NOT = { 
-							tag = AAA
-						}
-					}
 					OR = { 
 						commonwealth_superregion = { 
 							owned_by = PREV

@@ -134,13 +134,6 @@ country_event = {
 	option = { 
 		name = "red_turban.3a"
 		log = "FE-Red Turbans:[GetYear]:[Root.GetName]:lost southwest_china_superregion:red_turban.3"
-		southwest_china_superregion = { 
-			limit = { 
-				is_city = yes
-				is_core = YUA
-			}
-			remove_core = YUA
-		}
 		add_prestige = -15
 		add_legitimacy = -5
 		set_country_flag = yuan_loses_south
@@ -308,23 +301,6 @@ country_event = {
 				}
 				NOT = { 
 					province_id = 5267
-				}
-			}
-			add_permanent_claim = ROOT
-		}
-		southwest_china_superregion = { 
-			limit = { 
-				owned_by = ROOT
-			}
-			add_core = ROOT
-		}
-		southwest_china_superregion = { 
-			limit = { 
-				NOT = { 
-					owned_by = ROOT
-				}
-				NOT = { 
-					province_id = 5268
 				}
 			}
 			add_permanent_claim = ROOT
@@ -2577,17 +2553,6 @@ country_event = {
 					}
 				}
 				east_china_superregion = { 
-					limit = { 
-						country_or_vassal_holds = FROM
-					}
-					owner = { 
-						change_variable = { 
-							which = "Demesne_in_the_Mandate_of_Heaven"
-							value = 1
-						}
-					}
-				}
-				southwest_china_superregion = { 
 					limit = { 
 						country_or_vassal_holds = FROM
 					}
