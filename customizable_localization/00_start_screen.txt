@@ -2147,6 +2147,9 @@ defined_text = {
 						NOT = { 
 							region = egypt_region
 						}
+						NOT = {
+							region = darfur_region
+						}
 					}
 					continent = new_world
 					continent = north_america

@@ -486,6 +486,7 @@ dlc058 = {
 			capital_scope = { 
 				OR = { 
 					region = egypt_region
+					region = darfur_region
 					superregion = north_africa_superregion
 				}
 			}

@@ -604,6 +604,7 @@ defined_text = {
 		trigger = { 
 			OR = { 
 				region = egypt_region
+				region = darfur_region
 				region = arabia_region
 			}
 			trade_goods = cloth
@@ -778,6 +779,7 @@ defined_text = {
 		trigger = { 
 			OR = { 
 				region = egypt_region
+				region = darfur_region
 				region = arabia_region
 			}
 			trade_goods = cloth

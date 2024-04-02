@@ -270,7 +270,6 @@ south_africa_distrib = {
 }
 central_africa_distrib = {
 	OR = {
-		region = darfur_region
 		area = baggara_area
 		region = coastal_kongo_region
 		region = inland_kongo_region
@@ -599,7 +598,10 @@ anatolia_distrib = {
 	}
 }
 egypt_distrib = {
-	region = egypt_region
+	OR = {
+		region = egypt_region
+		region = darfur_region
+	}
 	NOT = {
 		province_id = 356
 	}

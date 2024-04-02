@@ -1918,7 +1918,12 @@ StartUp_InitProduce = {
 			else_if = {
 				limit = {
 					superregion = north_africa_superregion
-					NOT = { region = egypt_region }
+					NOT = {
+						OR = { 
+							region = egypt_region 
+							region = darfur_region
+						}
+					}
 				}
 				multiply_key = { lhs = Tmp_9 value = 0.333 }
 			}
@@ -1957,6 +1962,7 @@ StartUp_InitProduce = {
 						superregion = italy_superregion
 						superregion = south_africa_superregion
 						region = egypt_region
+						region = darfur_region
 					}
 				}
 				multiply_key = { lhs = Tmp_9 value = 0.2 }
@@ -2192,7 +2198,10 @@ StartUp_InitProduce = {
 							province_id = 2406
 							superregion = japan_superregion
 							AND = {
-								region = egypt_region
+								OR = {
+									region = egypt_region
+								region = darfur_region
+								}
 								has_terrain = floodplains
 							}
 							province_id = 2913
@@ -2394,7 +2403,10 @@ StartUp_InitProduce = {
 							province_id = 2406
 							superregion = japan_superregion
 							AND = {
-								region = egypt_region
+								OR = {
+									region = egypt_region
+								region = darfur_region
+								}
 								has_terrain = floodplains
 							}
 							province_id = 2913

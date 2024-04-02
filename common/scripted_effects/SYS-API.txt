@@ -2273,7 +2273,10 @@ Modi_ProdProvince = {
 	}
 	if = {
 		limit = {
-			region = egypt_region
+			OR = {
+				region = egypt_region
+				region = darfur_region
+			}
 			has_terrain = floodplains
 		}
 		change_key = { lhs = Modi_Prod1 value = 0.1 }

@@ -4256,6 +4256,7 @@ defined_text = {
 			}
 			OR = { 
 				region = egypt_region
+				region = darfur_region
 				superregion = north_africa_superregion
 			}
 		}
@@ -5683,6 +5684,7 @@ defined_text = {
 			}
 			OR = { 
 				region = egypt_region
+				region = darfur_region
 				superregion = north_africa_superregion
 			}
 		}
@@ -7110,6 +7112,7 @@ defined_text = {
 			}
 			OR = { 
 				region = egypt_region
+				region = darfur_region
 				superregion = north_africa_superregion
 			}
 		}
@@ -8537,6 +8540,7 @@ defined_text = {
 			}
 			OR = { 
 				region = egypt_region
+				region = darfur_region
 				superregion = north_africa_superregion
 			}
 		}
@@ -9964,6 +9968,7 @@ defined_text = {
 			}
 			OR = { 
 				region = egypt_region
+				region = darfur_region
 				superregion = north_africa_superregion
 			}
 		}
@@ -11391,6 +11396,7 @@ defined_text = {
 			}
 			OR = { 
 				region = egypt_region
+				region = darfur_region
 				superregion = north_africa_superregion
 			}
 		}

@@ -192,7 +192,10 @@ Startup_LandSizeBoosts = {
 				has_terrain = marsh
 				province_id = 2499
 			}
-			region = egypt_region
+			OR = {
+				region = egypt_region
+				region = darfur_region
+			}
 		}
 		multiply_key = { lhs = Land_Size value = 1.6 } # for now
 	}
@@ -238,6 +241,7 @@ Startup_LandSizeBoosts = {
 				area = wolof_area
 				region = hadhramaut_region
 				region = egypt_region
+				region = darfur_region
 				province_id = 2787
 				province_id = 2919
 				area = wolof_area

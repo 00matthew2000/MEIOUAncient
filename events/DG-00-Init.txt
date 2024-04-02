@@ -8088,7 +8088,10 @@ country_event = {
 							}
 							else_if = { 
 								limit = { 
-									region = egypt_region
+									OR = {
+region = egypt_region
+region = darfur_region
+}
 								}
 								if = { 
 									limit = { 

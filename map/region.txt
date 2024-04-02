@@ -1,133 +1,8 @@
 # A province can belong to several regions.
 
-# random_new_world_region is used for RNW. Must be first in this list.
-random_new_world_region = {
-}
-
 ########################################
 # EUROPE                               #
 ########################################
-
-east_france_region = {
-	areas = {
-		picardy_area
-		artois_area
-		ile_de_france_area
-		val_de_loire_area
-		normandy_area
-		brittany_area
-		anjou_poitou_area
-	}
-}
-
-ouest_france_region = { #Asia Minor
-	areas = {	
-		aydin_area
-		kutahya_area
-	}
-}
-
-aquitaine_region = {
-	areas = {
-		saintonge_area
-		guyenne_area
-		pyrenees_area
-	}
-}
-
-languedoc_region = { #Sarmatia Asiatica
-	areas = {
-		astrakhan_area
-	}
-}
-
-provence_region = {
-	areas = {
-		provence_area
-		savoy_dauphine_area
-		lyonnais_area
-		languedoc_area
-		toulouse_area
-		massif_central_area
-	}
-}
-
-high_countries_region = {
-	areas = {
-		bourgogne_area
-		franc_comte_area
-		lorraine_area
-		champagne_area
-		ardennes_area
-		upper_rhine_area
-		middle_rhine_area
-		alsace_area
-		lower_franconia_area
-	}
-}
-
-low_countries_region = { #Palaestina
-	areas = {
-		palestine_area
-	}
-}
-
-belgii_region = {
-	areas = {
-		wallonia_area
-		flanders_area
-		south_brabant_area
-	}
-}
-
-aragon_region = {
-	areas = {
-		valencia_area
-		murcia_area
-		toledo_area
-	}
-}
-
-andalucia_region = {
-	areas = {
-		upper_andalucia_area
-		lower_guadalquivir_area
-		upper_guadalquivir_area
-	}
-}
-
-castille_region = {
-	areas = {
-		euskal_area
-		extremadura_castilla_area
-		baleares_area
-		aragon_area
-		catalonia_area
-	}
-}
-
-leon_region = {
-	areas = {
-		leon_area
-		galicia_area
-		castille_area
-	}
-}
-
-portugal_region = {
-	areas = {
-		beieras_area
-		alentejo_area
-		macaronesia_area
-		extremadura_area
-	}
-}
-
-east_italy_region = {
-	areas = {
-		corsica_sardinia_area
-	}
-}
 
 west_italy_region = {
 	areas = {
@@ -152,6 +27,12 @@ central_italy_region = {
 	}
 }
 
+east_italy_region = {
+	areas = {
+		corsica_sardinia_area
+	}
+}
+
 naples_region = {
 	areas = {
 		apulia_area
@@ -161,119 +42,119 @@ naples_region = {
 	}
 }
 
-sicily_region = { #Phoenicia
+provence_region = {
 	areas = {
-		lebanon_area
+		provence_area
+		savoy_dauphine_area
+		lyonnais_area
+		languedoc_area
+		toulouse_area
 	}
 }
 
-south_england_region = {
+aquitaine_region = {
 	areas = {
-		wales_area
-		east_anglia_area
-		home_counties_area
-		west_country_area
+		guyenne_area
+		pyrenees_area
+		aquitania_prima_area
 	}
 }
 
-north_england_region = {
+east_france_region = {
 	areas = {
-		east_midlands_area
-		west_midlands_area
-		northumbria_area
+		ile_de_france_area
+		val_de_loire_area
+		normandy_area
+		brittany_area
+		anjou_poitou_area
+		saintonge_area
+		massif_central_area
+		bourgogne_area
+		champagne_area
+		cebenna_mons_area
 	}
 }
 
-scotland_region = {
+belgii_region = { #Belgium Check This
 	areas = {
-		lowlands_area
-		north_lowlands_area
-		highlands_area
-		isles_area
+		wallonia_area
+		flanders_area
+		south_brabant_area
+		picardy_area
+		artois_area
+		ardennes_area
+		lorraine_area
 	}
 }
 
-ireland_region = {
+andalucia_region = {
 	areas = {
-		leinster_area
-		munster_area
-		ulaid_area
-		connacht_area
+		upper_andalucia_area
+		lower_guadalquivir_area
+		upper_guadalquivir_area
 	}
 }
 
-scandinavia_region = { # was swedish_region - edited for compatibility with music dlcs
+portugal_region = {
 	areas = {
-		svealand_area
-		gotaland_area
-		denmark_area
-		eastern_norway_area
-		western_norway_area
+		beieras_area
+		alentejo_area
+		macaronesia_area
+		extremadura_area
+		vettonia_area
 	}
 }
 
-danish_region = { #Archipelagos
+aragon_region = {
 	areas = {
-		aegean_area
-		crete_area
+		valencia_area
+		murcia_area
+		toledo_area
+		carpetania_area
 	}
 }
 
-norwegian_region = { #Propontis
+castille_region = {
 	areas = {
-		prusa_area
-		iznik_area
-		thrace_area
+		euskal_area
+		extremadura_castilla_area
+		baleares_area
+		aragon_area
+		catalonia_area
+		tarraconensis_area
 	}
 }
 
-finland_region = {
+leon_region = {
 	areas = {
-		finland_coastal_area
-		finland_inland_area
-		karelia_area
-		northern_norway_area
-		subarctic_islands_area
-		norrland_area
+		leon_area
+		galicia_area
+		castille_area
+		transduriana_area
 	}
 }
 
-bohemia_region = { #Macedonia
-	areas = {
-		epirus_area
-		north_macedonia_area
-		albania_area
-		macedonia_area
-	}
-}
-
-austrian_circle_region = {
+austrian_circle_region = { #Raetia et Noricum
 	areas = {
 		tirol_area
 		austria_proper_area
 		inner_austria_area
-	}
-}
-
-switzerland_region = {
-	areas = {
-		switzerland_area
-		romandie_area
+		alpes_raetae_area
+		lower_bavaria_area
+		upper_bavaria_area
+		upper_swabia_area
 	}
 }
 
 lower_saxon_circle_region = {
 	areas = {
 		jutland_area
-		skaneland_area
 		holland_area
 		gelderland_area
 		frisia_area
-		north_brabant_area
 		holstein_area
 		eastphalia_area
 		northern_saxony_area
-		mecklenburg_area
 		weser_area
 		southern_saxony_area
 		east_thuringia_area
@@ -281,123 +162,39 @@ lower_saxon_circle_region = {
 		west_thuringia_area
 		ems_area
 		westphalia_area
-		lower_rhine_area
 		hesse_area
 		royal_bohemia_area
-		north_bohemia_area
-	}
-}
-
-upper_saxon_circle_region = { #Lycia
-	areas = {
-		taurus_area
-		teke_area
-	}
-}
-
-brandenburg_pommern_region = { #Bithynia
-	areas = {
-		kastamonu_area
-	}
-}
-
-westphalian_circle_region = { #Phrygia
-	areas = {
-		ankara_area
-		chammanene_area
-	}
-}
-
-upper_rhenish_circle_region = { #Cappadocia
-	areas = {
-		rum_area
-	}
-}
-
-swabia_bavarian_region = {
-	areas = {
-		lower_bavaria_area
-		upper_bavaria_area
-		palatinate_bavaria_area
+		sudeti_montes_area
+		denmark_area
 		upper_franconia_area
+		palatinate_bavaria_area
+		rhenus_area
+		lower_franconia_area
+	}
+}
+
+scandinavia_region = { ##Germania Scandza
+	areas = {
+		svealand_area
+		gotaland_area
+		eastern_norway_area
+		western_norway_area
+		skaneland_area
+	}
+}
+
+high_countries_region = { #Germania Minora
+	areas = {
+		franc_comte_area
+		upper_rhine_area
+		middle_rhine_area
+		alsace_area
+		switzerland_area
+		romandie_area
+		lower_rhine_area
+		north_brabant_area
 		lower_swabia_area
-		upper_swabia_area
-	}
-}
-
-north_carpathia_region = {
-	areas = {
-		east_slovakia_area
-		west_slovakia_area
-	}
-}
-
-magyar_plains_region = {
-	areas = {
-		transdanubia_area
-		kisalfold_area
-		croatia_area
-		west_serbia_area
-		#west_transdanubia_area
-	}
-}
-
-east_balkan_region = {
-	areas = {
-		north_bulgaria_area
-		south_bulgaria_area
-		dobrogea_area
-		south_serbia_area
-		north_serbia_area
-		east_serbia_area
-		europa_area
-	}
-}
-
-west_balkan_region = {
-	areas = {
-		bosnia_area
-		east_adriatic_coast_area
-		#slavonia_area
-		carinthia_area
-	}
-}
-
-central_balkan_region = { #Cyprus
-	areas = {
-		cyprus_area
-	}
-}
-
-greece_region = {
-	areas = {
-		morea_area
-		thessalia_area
-		aegean_area
-		#west_thrace_area
-	}
-}
-
-south_carpathia_region = {
-	areas = {
-		muntenia_area
-		oltenia_area
-		west_muntenia_area
-		alfold_area
-		eszaki_area
-		transylvania_area
-		north_transylvania_area
-		west_transylvania_area
-		rus_carpathian_area
-		red_ruthenia_area
-	}
-}
-
-baltic_region = {
-	areas = {
-		livonia_area
-		estonia_ingria_area
-		curonia_area
+		germania_superior_area
 	}
 }
 
@@ -419,10 +216,806 @@ polonia_major_region = {
 		vorpommern_area
 		hinterpommern_area
 		lusatia_area
+		polesie_area
+		lithuania_area
+		samogitia_area
+		curonia_area
+		east_slovakia_area
+		west_slovakia_area
+		mecklenburg_area
+		north_bohemia_area
 	}
 }
 
-polonia_minor_region = { #Jetisu
+north_england_region = {
+	areas = {
+		east_midlands_area
+		west_midlands_area
+		northumbria_area
+	}
+}
+
+south_england_region = {
+	areas = {
+		wales_area
+		east_anglia_area
+		home_counties_area
+		west_country_area
+	}
+}
+
+scotland_region = {
+	areas = {
+		lowlands_area
+		north_lowlands_area
+		highlands_area
+		isles_area
+	}
+}
+
+ireland_region = {
+	areas = {
+		leinster_area
+		munster_area
+		ulaid_area
+		connacht_area
+	}
+}
+
+west_balkan_region = {
+	areas = {
+		bosnia_area
+		east_adriatic_coast_area
+		#slavonia_area
+		carinthia_area
+		west_adriatic_coast_area
+		west_serbia_area
+	}
+}
+
+magyar_plains_region = {
+	areas = {
+		transdanubia_area
+		kisalfold_area
+		croatia_area
+		#west_transdanubia_area
+	}
+}
+
+east_balkan_region = {
+	areas = {
+		north_bulgaria_area
+		south_bulgaria_area
+		dobrogea_area
+		south_serbia_area
+		north_serbia_area
+		east_serbia_area
+		europa_area
+		paeonia_area
+	}
+}
+
+norwegian_region = { ##Propontis
+	areas = {
+		prusa_area
+		iznik_area
+		thrace_area
+	}
+}
+
+south_carpathia_region = { #Dacia
+	areas = {
+		muntenia_area
+		oltenia_area
+		west_muntenia_area
+		alfold_area
+		eszaki_area
+		transylvania_area
+		north_transylvania_area
+		west_transylvania_area
+		rus_carpathian_area
+		red_ruthenia_area
+	}
+}
+
+bohemia_region = { ##Macedonia
+	areas = {
+		epirus_area
+		north_macedonia_area
+		albania_area
+		macedonia_area
+	}
+}
+
+greece_region = {
+	areas = {
+		morea_area
+		thessalia_area
+		aegean_area
+		#west_thrace_area
+	}
+}
+
+danish_region = { ##Archipelagos
+	areas = {
+		aegean_area
+		crete_area
+	}
+}
+
+west_anatolia_region = {
+	areas = {
+		manisa_area
+		caria_area
+	}
+}
+
+central_balkan_region = { ##Cyprus
+	areas = {
+		cyprus_area
+	}
+}
+
+ouest_france_region = { ##Asia Minor
+	areas = {	
+		aydin_area
+		kutahya_area
+	}
+}
+
+upper_saxon_circle_region = { ##Lycia et Pamphylia
+	areas = {
+		taurus_area
+		teke_area
+	}
+}
+
+south_anatolia_region = {
+	areas = {
+		karaman_area
+		cilicia_area
+	}
+}
+
+westphalian_circle_region = { ##Phrygia
+	areas = {
+		ankara_area
+		chammanene_area
+	}
+}
+
+upper_rhenish_circle_region = { ##Cappadocia
+	areas = {
+		rum_area
+		cappadocia_area
+	}
+}
+
+north_anatolia_region = { ##Pontus
+	areas = {
+		trebizond_area
+		sinope_area
+	}
+}
+
+brandenburg_pommern_region = { ##Bithynia
+	areas = {
+		kastamonu_area
+	}
+}
+
+low_countries_region = { ##Palaestina
+	areas = {
+		palestine_area
+	}
+}
+
+sicily_region = { ##Phoenicia
+	areas = {
+		lebanon_area
+	}
+}
+
+syria_region = {
+	areas = {
+		dimashq_area
+		aleppo_area
+		badia_area
+		malatya_area
+	}
+}
+
+manding_region = { ##Ciseuphratia
+	areas = {
+		diyar_bakir_area
+		diyar_mudar_area
+	}
+}
+
+upper_mesopotamia_region = {
+	areas = {
+		hakkari_area
+		diyar_rabia_area
+		tairahan_area
+	}
+}
+
+lower_mesopotamia_region = {
+	areas = {
+		radhan_area
+		sawad_area
+	}
+}
+
+upper_volta_region = { ##Elam or Haltamti
+	areas = {
+		khuzestan_area
+		farsistan_area
+	}
+}
+
+egypt_region = {
+	areas = {
+		gharbia_area
+		central_egypt_area	
+	}
+}
+
+darfur_region = { ##Aegyptus Superior
+	areas = {
+		sinai_area
+		upper_egypt_area
+		oasis_area
+	}
+}
+
+sudan_region = { #Nubia
+	areas = {
+		lower_nubia_area
+	}
+}
+
+abyssinia_region = {
+	areas = {
+		semien_area
+		amhara_area
+		funj_area
+		white_nile_area
+		sidamo_area
+		hadiya_area
+		upper_nubia_area
+		guzai_area
+		shewa_area
+	}
+}
+
+horn_region = {
+	areas = {
+		somaliland_area
+		majarteen_area
+		marehan_area
+		mogadishu_area
+		pepper_area
+		ifat_area
+		afar_area
+		tigray_area
+		hamasien_area
+	}
+}
+
+chad_region = {
+	areas = {
+		west_chad_area
+		east_chad_area
+		chari_area
+		baggara_area
+		north_darfur_area
+		south_darfur_area
+		kurdufan_area
+	}
+}
+
+niger_bend_region = {
+	areas = {
+		masina_area
+		songhai_area
+		mali_area
+		bambuk_area
+		segou_area
+		borgu_area
+		ekiti_area
+		niger_rapids_area
+		kaduna_area
+		plateau_area
+	}
+}
+
+
+guinea_region = {
+	areas = {
+		guinea_area
+		leoa_area
+		ivory_coast_area
+		volta_delta_area
+		toro_area
+		wolof_area
+		lower_gambia_area
+		geba_area
+		dahomey_area
+		lekki_area
+		west_niger_area
+		niger_delta_area
+		dagbon_area
+	}
+}
+
+somalia_region = { #Arabia Petrea
+	areas = {
+		jordan_area
+		tabuk_area
+		te_mefkat_area
+	}
+}
+
+hadhramaut_region = {
+	areas = {
+		hadramut_area
+		dhufar_area
+		yemen_area
+		sanaa_area
+		jizzan_area
+		oman_area
+	}
+}
+
+arabia_region = {
+	areas = {
+		hejaz_area
+		yamamah_area
+		shammar_area
+		nejd_area
+		bahrain_area
+		qatif_area
+		asir_area
+	}
+}
+
+east_maghreb_region = { #Africa
+	areas = {
+		djerba_area
+		kairwan_area
+		tunis_area
+		aures_area
+		kabylia_area
+	}
+}
+
+central_maghreb_region = { #Libya
+	areas = {
+		tripolitania_area
+		cyrenaica_area
+		libyan_desert_area
+	}
+}
+
+east_sahara_region = { #Sahara Deserta
+	areas = {
+		fezzan_area
+		azbin_area
+		djado_area
+		north_saharan_area
+		western_sahara_area
+		arguin_area
+		tafilalt_area
+		sus_area
+	}
+}
+
+west_maghreb_region = { #Mauretania
+	areas = {
+		algiers_area
+		tlemcen_area
+		atlas_area
+		marrekesh_area
+		fez_area
+		deserta_mauretania_area
+		elrif_area
+		anfa_area
+		tanja_area
+	}
+}
+
+kazakh_region = { #Extra Sarmatia
+	areas = {
+		kazakhstan_area
+		nogai_area
+	}
+}
+
+north_caucasus_region = {
+	areas = {
+		east_circassia_area
+		west_circassia_area
+		#north_circassia_area
+		#abazin_area
+		#south_circassia_area
+		#central_circassia_area
+		#eastern_caucasus_area
+		#alania_area
+		#nakhchuvan_area
+		derbant_area
+	}
+}
+
+steppes_region = { #Maeotis
+	areas = {
+		majar_area
+		maeotis_area
+		#sarkel_area
+	}
+}
+
+languedoc_region = { ##Sarmatia Asiatica or Asian Sarmatia
+	areas = {
+		astrakhan_area
+	}
+}
+
+south_caucasus_region = { #Armenia
+	areas = {
+		meskheti_area
+		west_armenia_area
+	}
+}
+
+switzerland_region = { ##Corduene
+	areas = {
+		van_area
+	}
+}
+
+harar_region = { ##Sophene
+	areas = {
+		upper_armenia_area
+		sophene_area
+	}
+}
+
+swabia_bavarian_region = { ##Colchis
+	areas = {
+		moschi_area
+		west_georgia_area
+	}
+}
+
+north_carpathia_region = { ##Iberia Caucasus
+	areas = {
+		east_georgia_area
+		cambysene_area
+	}
+}
+
+lithuania_region = { ##Albania
+	areas = {
+		east_armenia_area
+		shirvan_area
+		shemakha_area
+	}
+}
+
+halych_volhynia_region = { ##Sarmatia Europaea
+	areas = {
+		podolia_volhynia_area
+		germano_scythia_area
+		black_ruthenia_area
+		moldavia_area
+		basarabia_area
+		north_moldavia_area
+		hypania_area
+		east_dniepr_area
+		budinia_area
+		#volodymyr_area
+	}
+}
+
+east_carpathia_region = { ##Cimmeria
+	areas = {
+		crimea_area
+		hylaea_area
+	}
+}
+
+volga_region = { #Tanaica
+	areas = {
+		lower_don_area
+		azov_area
+		#volga_area
+		#samara_area
+		#chuvash_area
+		#upper_don_area
+		#bashkoristan_area
+	}
+}
+
+crimea_region = { ##Borysthenia NOT Crimea
+	areas = {
+		sloboda_ukraine_area
+		zaporizhia_area
+		cherson_area
+		west_dniepr_area
+		#odesa_area
+		#donets_area
+		#kryvbas_area
+	}
+}
+
+iran_region = { #Media
+	areas = {
+		south_kurdistan_area
+		luristan_area
+		iraq_e_ajam_area
+		azerbaijan_area
+		isfahan_area
+		tabarestan_area
+		tehran_area
+		urmia_area
+	}
+}
+fars_region = { #Persis
+	areas = {
+		larestan_area
+		kerman_area
+		hormuz_area
+	}
+}
+
+lower_volta_region = { ##Parthia
+	areas = {
+		khorasan_area
+		nishapur_area
+		east_tabarestan_area
+	}
+}
+
+amodarya_region = { #Bactria
+	areas = {
+		balkh_area
+		kish_area
+		vaxsh_area
+	}
+}
+
+khorasani_region = { #Margiana
+	areas = {
+		ahel_area
+		herat_area
+		kabulistan_area
+		merv_area
+	}
+}
+
+upper_niger_region = { ##Drangiana-Arachosia
+	areas = {
+		sistan_area
+		kabulistan_area
+		paradene_area
+		parsiene_area
+	}
+}
+
+sistan_region = { ##Gedrosia
+	areas = {
+		zahedan_area
+		baluchi_area
+		quetta_area
+		sistan_area
+	}
+}
+
+belarus_region = { ##Transoxiana
+	areas = {
+		transoxiana_area
+		oxiane_inferior_area
+	}
+}
+
+niger_benue_region = { ##Chorasmia
+	areas = {
+		khiva_area
+	}
+}
+
+punjab_region = {
+	areas = {
+		shahpur_area
+		lahore_area
+		multan_area
+		sirhind_area
+		khybyr_area
+		bikaner_area
+		patiala_area
+	}
+}
+
+hindusthan_region = {
+	areas = {
+		lower_sindh_area
+		upper_sindh_area
+		cholistan_area
+	}
+}
+
+bihar_region = {
+	areas = {
+		south_bihar_area
+		muzzaffarpur_area
+		awadh_area
+		varanasi_area
+		purvanchal_area
+		bundelkhand_area
+		jharkhand_area
+	}
+}
+
+upper_doab_region = {
+	areas = {
+		upper_doab_area
+		delhi_area
+		oudh_area
+		rohilkhand_area
+		gwalior_area
+		kalpi_area
+		jaipur_area
+		central_doab_area
+	}
+}
+
+east_bengal_region = {
+	areas = {
+		jalpaiguri_area
+		north_bengal_area
+		baghalpur_area
+		assam_area
+		koch_area
+		himalayan_hills_area
+	}
+}
+
+west_deccan_region = {
+	areas = {
+		daulatabad_area
+		berar_area
+		raichur_area
+		malwa_area
+		indore_area
+		gondwana_area
+		nagpur_area
+		hadoti_area
+	}
+}
+
+konkan_region = {
+	areas = {
+		kanara_area
+		maharashtra_area
+		konkan_area
+		gujarat_area
+	}
+}
+
+gujarat_region = { #Saurashtra
+	areas = {
+		patan_area
+		saurashtra_area
+		ajmer_area
+		mewar_area
+		marwar_area
+	}
+}
+
+mysore_region = { #Dravida
+	areas = {
+		rayalaseema_area
+		tirupati_area
+		kolhapur_area
+		desh_area
+	}
+}
+
+carnatic_region = { #Tamilakam
+	areas = {
+		north_coromandel_area
+		south_coromandel_area
+		madura_area
+		north_carnatic_area
+		south_carnatic_area
+		mysore_area
+		north_kerala_area
+		south_kerala_area
+		mali_nadu_area
+	}
+}
+
+indian_ocean_islands_region = { ##Lanka
+	areas = {
+		indian_ocean_islands_area
+		east_lanka_area
+		west_lanka_area
+	}
+}
+
+orissa_region = {
+	areas = {
+		north_orissa_area
+		south_orissa_area
+		north_cuttack_area
+		south_cuttack_area
+		bastar_area
+		godavari_area
+		nizamabab_area
+		andhra_area
+		hyderabad_area
+	}
+}
+
+west_bengal_region = { #Vanga
+	areas = {
+		jessor_area
+		bengal_area
+		bardwan_area
+		dakka_area
+		purniah_area
+	}
+}
+
+himalaya_region = {
+	areas = {
+		east_nepalese_area
+		west_nepalese_area
+		garhwal_area
+		kangra_area
+		kashmir_area
+		ngari_area
+		pamir_area
+	}
+}
+
+tibet_region = {
+	areas = {
+		utsang_area
+		amdo_area
+		kham_area
+	}
+}
+
+zungaria_region = { #Tarim Basin
+	areas = {
+		tarim_basin_area
+		yarkand_area
+		hami_area
+	}
+}
+
+outer_mongolia_region = { #Northern Steppe
+	areas = {
+		north_mongolia_area
+		east_mongolia_area
+		khangai_area
+		west_mongolia_area
+		east_altai_area
+		#chita_area
+		argun_area
+	}
+}
+
+prussia_region = { ##Altai
+	areas = {
+		altai_krai_area
+		zungaria_area
+	}
+}
+
+polonia_minor_region = { ##Jetisu
 	areas = {
 		torghay_area
 		balchasj_area
@@ -431,24 +1024,144 @@ polonia_minor_region = { #Jetisu
 	}
 }
 
-prussia_region = { #Altai
+########################### SEA REGIONS ##################################################
+
+arctic_ocean_region = {
 	areas = {
-		altai_krai_area
-		zungaria_area
+		barents_sea_area
+		davis_strait_area
+		hudson_bay_sea_area
+		hudson_strait_area
+		icelandic_sea_area
+		norwegian_sea_area
+		nw_passage_area
 	}
 }
 
-east_carpathia_region = { #Cimmeria
+baltic_sea_region = {
 	areas = {
-		crimea_area
-		hylaea_area
+		baltic_area
+		sound_area
 	}
 }
 
-lithuania_region = {
+indian_ocean_region = {
 	areas = {
-		lithuania_area
-		samogitia_area
+		andaman_sea_area
+		arabian_sea_area
+		australian_indian_coast_area
+		bay_of_bengal_area
+		cape_of_storms_area
+		eastern_indian_ocean_area
+		gulf_of_aden_sea_area
+		indonesian_indian_ocean_area
+		laquedives_sea_area
+		mozambique_strait_area
+		persian_gulf_area
+		red_sea_area
+		south_indian_ocean_area
+		swahili_coast_sea_area
+		western_indian_ocean_area
+	}
+}
+
+mediterranean_region = {
+	areas = {
+		adriatic_sea_area
+		black_sea_area
+		eastern_mediterranean_area
+		ionian_sea_area
+		libyan_sea_area
+		tyrrhenian_sea_area
+		western_mediterranean_area
+	}
+}
+
+north_atlantic_region = {
+	areas = {
+		atlantic_antilles_area
+		bay_of_biscay_area
+		british_coasts_area
+		caribbean_sea_area
+		coast_of_guyana_area
+		english_channel_area
+		gulf_of_guinea_sea_area
+		gulf_of_mexico_area
+		gulf_of_st_lawrence_area
+		gulf_stream_area
+		iberian_atlantic_area
+		irminger_sea_area
+		north_african_coast_sea_area
+		north_atlantic_area
+		north_central_atlantic_area
+		north_sea_area
+		sargasso_sea_area
+		sea_of_labrador_area
+		west_african_coast_sea_area
+	}
+}
+
+north_pacific_region = {
+	areas = {
+		bering_sea_area
+		east_china_sea_area
+		gulf_of_alaska_area
+		mesoamerica_pacific_area
+		north_east_pacific_area
+		north_east_central_pacific_area
+		north_pacific_coast_area
+		north_west_pacific_area
+		north_west_central_pacific_area
+		philipine_sea_area
+		sea_of_japan_area
+		sea_of_okhotsk_area
+		south_china_sea_area
+		yellow_sea_area
+	}
+}
+
+south_atlantic_region = {
+	areas = {
+		argentine_sea_area
+		coast_of_brazil_sea_area
+		scotia_sea_area
+		skeleton_coast_area
+		south_atlantic_area
+		south_central_atlantic_area
+	}
+}
+
+south_pacific_region = {
+	areas = {
+		chilean_sea_area
+		coral_sea_area
+		indonesian_east_seas_area
+		indonesian_west_seas_area
+		melanesian_coast_area
+		sea_of_grau_area
+		south_east_pacific_area
+		south_east_central_pacific_area
+		south_west_pacific_area
+		south_west_central_pacific_area
+		tasman_sea_area
+	}
+}
+
+finland_region = {
+	areas = {
+		finland_coastal_area
+		finland_inland_area
+		karelia_area
+		northern_norway_area
+		subarctic_islands_area
+		norrland_area
+	}
+}
+
+baltic_region = {
+	areas = {
+		livonia_area
+		estonia_ingria_area
 	}
 }
 
@@ -463,30 +1176,12 @@ north_russia_region = {
 
 ruthenia_region = {
 	areas = {
-		west_dniepr_area
-		east_dniepr_area
 		#podolia_area
 		briansk_area
-	}
-}
-
-halych_volhynia_region = {
-	areas = {
-		podolia_volhynia_area
-		germano_scythia_area
-		black_ruthenia_area
-		moldavia_area
-		basarabia_area
-		north_moldavia_area
-		#volodymyr_area
-	}
-}
-
-steppes_region = {
-	areas = {
-		majar_area
-		maeotis_area
-		#sarkel_area
+		white_ruthenia_area
+		#minsk_area
+		gomel_area
+		smolensk_area
 	}
 }
 
@@ -513,418 +1208,39 @@ east_russia_region = {
 	}
 }
 
-volga_region = {
-	areas = {
-		lower_don_area
-		azov_area
-		#volga_area
-		#samara_area
-		#chuvash_area
-		#upper_don_area
-		#bashkoristan_area
-	}
-}
-
-belarus_region = {
-	areas = {
-		white_ruthenia_area
-		#minsk_area
-		gomel_area
-		smolensk_area
-		polesie_area
-	}
-}
-
-crimea_region = {
-	areas = {
-		sloboda_ukraine_area
-		zaporizhia_area
-		cherson_area
-		#odesa_area
-		#donets_area
-		#kryvbas_area
-	}
-}
-
-##########################
-# MIDDLE EAST            #
-##########################
-
-iran_region = {
-	areas = {
-		south_kurdistan_area
-		luristan_area
-		iraq_e_ajam_area
-		azerbaijan_area
-		isfahan_area
-		tabarestan_area
-		tehran_area
-		urmia_area
-	}
-}
-fars_region = {
-	areas = {
-		larestan_area
-		kerman_area
-		hormuz_area
-	}
-}
-
-khorasani_region = {
-	areas = {
-		ahel_area
-		herat_area
-		kabulistan_area
-		merv_area
-	}
-}
-
-sistan_region = {
-	areas = {
-		zahedan_area
-		baluchi_area
-		quetta_area
-		sistan_area
-	}
-}
-
-north_anatolia_region = {
-	areas = {
-		trebizond_area
-		sinope_area
-	}
-}
-
-south_anatolia_region = {
-	areas = {
-		karaman_area
-		cilicia_area
-		cappadocia_area
-	}
-}
-
-west_anatolia_region = {
-	areas = {
-		manisa_area
-		caria_area
-	}
-}
-
-arabia_region = {
-	areas = {
-		hejaz_area
-		yamamah_area
-		shammar_area
-		nejd_area
-		bahrain_area
-		qatif_area
-		asir_area
-	}
-}
-
-hadhramaut_region = {
-	areas = {
-		hadramut_area
-		dhufar_area
-		yemen_area
-		sanaa_area
-		jizzan_area
-		oman_area
-	}
-}
-
-syria_region = {
-	areas = {
-		dimashq_area
-		aleppo_area
-		badia_area
-		malatya_area
-	}
-}
-
-upper_mesopotamia_region = {
-	areas = {
-		hakkari_area
-		diyar_rabia_area
-		tairahan_area
-	}
-}
-
-lower_mesopotamia_region = {
-	areas = {
-		radhan_area
-		sawad_area
-	}
-}
-
-south_caucasus_region = {
-	areas = {
-		east_georgia_area
-		west_georgia_area
-		meskheti_area
-		shirvan_area
-		shemakha_area
-		east_armenia_area
-		west_armenia_area
-		van_area
-	}
-}
-
-north_caucasus_region = {
-	areas = {
-		east_circassia_area
-		west_circassia_area
-		#north_circassia_area
-		#abazin_area
-		#south_circassia_area
-		#central_circassia_area
-		#eastern_caucasus_area
-		#alania_area
-		#nakhchuvan_area
-		derbant_area
-	}
-}
-
-##########################
-# AFRICA                 #
-##########################
-
-egypt_region = {
-	areas = {
-		gharbia_area
-		sinai_area
-		central_egypt_area
-		upper_egypt_area
-		oasis_area
-	}
-}
-
-east_sahara_region = {
-	areas = {
-		fezzan_area
-		azbin_area
-		djado_area
-		north_saharan_area
-		western_sahara_area
-		arguin_area
-		tafilalt_area
-		sus_area
-	}
-}
-
 west_sahara_region = {
 	areas = {
 	}
 }
 
-west_maghreb_region = {
+senegambia_region = { #Non-Provs Africa
 	areas = {
-		algiers_area
-		tlemcen_area
-		atlas_area
-		marrekesh_area
-		fez_area
-		elrif_area
-		anfa_area
-		tanja_area
-	}
-}
-
-central_maghreb_region = {
-	areas = {
-		tripolitania_area
-		cyrenaica_area
-		libyan_desert_area
-	}
-}
-
-east_maghreb_region = {
-	areas = {
-		djerba_area
-		kairwan_area
-		tunis_area
-		aures_area
-		kabylia_area
-	}
-}
-
-senegambia_region = {
-	areas = {
-	}
-}
-
-manding_region = { #Ciseuphratia
-	areas = {
-		diyar_bakir_area
-		diyar_mudar_area
-	}
-}
-
-niger_bend_region = {
-	areas = {
-		masina_area
-		songhai_area
-		haayre_area
-		saharan_bend_area
-		mali_area
-		bambuk_area
-		ghana_area
-		diara_area
-		segou_area
-		senufo_area
-		lobi_area
-		west_mossi_area
-		east_mossi_area
-		yatenga_area
-		dagbon_area
-		denkyira_area
-		ife_area
-		oyo_area
-		borgu_area
-		kwande_area
-		ekiti_area
 		east_niger_area
-		niger_rapids_area
-		kaduna_area
-		plateau_area
 		sokoto_area
 		kano_area
 		daura_area
-	}
-}
-
-
-guinea_region = {
-	areas = {
-		guinea_area
-		leoa_area
-		ivory_coast_area
-		volta_delta_area
-		toro_area
-		jallon_area
-		tooro_area
-		wolof_area
-		lower_gambia_area
-		upper_gambia_area
-		geba_area
+		saharan_bend_area
+		east_mossi_area
+		kwande_area
 		ketu_area
-		dahomey_area
-		lekki_area
-		west_niger_area
-		niger_delta_area
+		ife_area
+		oyo_area
+		denkyira_area
+		senufo_area
+		lobi_area
+		yatenga_area
+		ghana_area
+		upper_gambia_area
+		diara_area
+		jallon_area
+		haayre_area
+		west_mossi_area
 	}
 }
 
-lower_volta_region = { #Parthia
+monomotapa_region = {
 	areas = {
-		khorasan_area
-		nishapur_area
-		east_tabarestan_area
-	}
-}
-upper_volta_region = { #Elam
-	areas = {
-		khuzestan_area
-		farsistan_area
-	}
-}
-
-upper_niger_region = { #Drangiana-Arachosia
-	areas = {
-		sistan_area
-		kabulistan_area
-		paradene_area
-		parsiene_area
-	}
-}
-
-lower_niger_region = { #Dahaestan
-	areas = {
-		transcaspia_area
-	}
-}
-
-niger_benue_region = { #Chorasmia
-	areas = {
-		khiva_area
-	}
-}
-
-hausa_region = { #Jaxartia
-	areas = {
-		syrdarya_area
-	}
-}
-
-chad_region = {
-	areas = {
-		west_chad_area
-		east_chad_area
-		chari_area
-		baggara_area
-		north_darfur_area
-		south_darfur_area
-		kurdufan_area
-	}
-}
-
-darfur_region = {
-	areas = {
-	}
-}
-
-sudan_region = {
-	areas = {
-		lower_nubia_area
-	}
-}
-
-somalia_region = { #Arabia Petraea
-	areas = {
-		jordan_area
-		tabuk_area
-	}
-}
-
-horn_region = {
-	areas = {
-		somaliland_area
-		ogaden_area
-		majarteen_area
-		marehan_area
-		ajuuran_area
-		mogadishu_area
-		galjal_area
-		shabeele_area
-		pepper_area
-		oromo_area
-		awlihan_area
-		ifat_area
-		afar_area
-		tigray_area
-		hamasien_area
-	}
-}
-
-harar_region = { #Sophene
-	areas = {
-		upper_armenia_area
-		sophene_area
-	}
-}
-
-abyssinia_region = {
-	areas = {
-		semien_area
-		amhara_area
-		funj_area
-		white_nile_area
-		harar_area
-		sidamo_area
-		hadiya_area
-		upper_nubia_area
-		guzai_area
-		shewa_area
+		
 	}
 }
 
@@ -935,16 +1251,6 @@ east_africa_region = {
 		south_swahili_coast_area
 		mozambique_area
 		sofala_area
-	}
-}
-
-monomotapa_region = {
-	areas = {
-		zambezi_area
-		zimbabwe_area
-		manyika_area
-		malawi_area
-		batua_area
 	}
 }
 
@@ -975,6 +1281,13 @@ middle_africa_region = {
 		katanga_area
 		great_lakes_area
 		kitari_area
+		oromo_area
+		galjal_area
+		awlihan_area
+		ajuuran_area
+		ogaden_area
+		shabeele_area
+		harar_area
 	}
 }
 
@@ -994,37 +1307,420 @@ south_africa_region = {
 		cape_of_good_hope_area
 		south_africa_plateau_area
 		kwazulu_area
+		zambezi_area
+		zimbabwe_area
+		manyika_area
+		malawi_area
+		batua_area
 	}
 }
+
+australia_region = {
+	areas = {
+		western_australia_area
+		northern_australia_area
+		eastern_australia_area
+		southern_australia_area
+		southeast_australia_area
+		inland_australia_area
+	}
+}
+
+##########################
+# END OF RANDOM REGIONS FOR COLORS        #
+##########################
 
 ##########################
 # CENTRAL ASIA           #
 ##########################
 
+shaangan_region = { #Si Zhou
+	areas = {
+		guanzhong_area
+		north_henan_area
+		heluo_area
+	}
+}
 
-syrdarya_region = {
+shanxi_region = { #Bing Zhou
+	areas = {
+		north_shanxi_area
+		fenshui_area
+		south_shanxi_area
+	}
+}
+
+central_doab_region = { ##Yan Zhou
+	areas = {	
+		luxinan_area
+		chenliu_area
+		north_shandong_area
+	}
+}
+
+zhongyuan_region = { #Yu Zhou
+	areas = {
+		haozhou_area
+		south_henan_area
+		yingchuan_area
+		pengcheng_area
+	}
+}
+
+huguang_region = { #Jing Zhou
+	areas = {
+		north_hunan_area
+		east_hunan_area
+		west_hunan_area
+		west_hubei_area
+		east_hubei_area
+	}
+}
+
+jiangxi_region = { #Yang Zhou
+	areas = {
+		nw_jiangxi_area
+		south_jiangxi_area
+		central_jiangxi_area
+		east_jiangxi_area
+		huizhou_area
+		anqing_area
+		jinling_area
+		wu_area
+		songjiang_area
+		south_zhejiang_area
+		east_zhejiang_area
+		west_zhejiang_area
+		hangzhou_area
+		central_zhejiang_area
+		minnan_area
+		west_fujian_area
+		north_fujian_area
+	}
+}
+
+fujian_region = { ##Yan Zhou
+	areas = {
+		taiwan_area
+	}
+}
+
+zhejiang_region = { #Ji Zhou
+	areas = {
+		south_hebei_area
+	}
+}
+
+jiaoliao_region = { #Qing Zhou
+	areas = {
+		laizhou_bandao_area
+		south_shandong_area
+	}
+}
+
+jiangnan_region = { #Xu Zhou
+	areas = {
+		huaizuo_area
+		huaibei_area
+		ju_area
+	}
+}
+
+sichuan_region = { #Yi Zhou
+	areas = {
+		southwest_sichuan_area
+		northeast_sichuan_area
+		xishu_area
+		ba_area
+		guizhou_area
+		buzhou_area
+		east_yunnan_area
+		west_yunnan_area
+		central_yunnan_area
+		hanzhong_area
+	}
+}
+
+yunnan_region = { #Liang Zhou
+	areas = {
+		longxi_area
+		lintao_area
+		xiaojun_area
+	}
+}
+
+guangxi_region = { ##Shuo Zhou
+	areas = {
+		shaanbei_area
+		ordos_area
+	}
+}
+
+hebei_region = { #You Zhou
+	areas = {
+		yanyun_area
+		yanghe_area
+		jizhou_area
+		outer_liaoning_area
+	}
+}
+
+kashmir_region = { ##Yemaek
+	areas = {
+		donggye_area
+	}
+}
+
+west_manchuria_region = { #Buyeo
+	areas = {
+		#east_jurcen_area
+		west_hulun_area
+		#east_hulun_area
+		#hu_lan_area
+		xinhai_area
+		#yanshan_area
+		#dalian_area
+		west_jurcen_area
+	}
+}
+
+east_manchuria_region = { #Sushen
+	areas = {
+		wakra_area
+		songhua_area
+		#upper_amur_area
+		nen_area
+		udege_area
+	}
+}
+
+awadh_region = { ##Joseon
+	areas = {
+		liaoning_area
+	}
+}
+
+central_india_region = { ##Nakrang
+	areas = {
+		north_korea_area
+	}
+}
+
+west_india_region = { ##Dongye
+	areas = {
+		imdun_area
+	}
+}
+
+korea_region = { ##Mahan
+	areas = {
+		central_korea_area
+	}
+}
+
+east_deccan_region = { ##Jinhan
+	areas = {
+		south_korea_area
+	}
+}
+
+gondwana_region = { ##Byeonhan
+	areas = {
+		jeolla_area
+	}
+}
+
+west_japan_region = { #Okinawa for color purposes
+	areas = {
+		sanin_area
+		sanyo_area
+		north_kyushu_area
+		south_kyushu_area
+		shikoku_area
+		ryukyu_area
+	}
+}
+
+central_japan_region = { #Saikaido for color purposes
+	areas = {
+		hokuriku_area
+		chubu_area
+		east_kansai_area
+		west_kansai_area
+	}
+}
+
+guangdong_region = { #Jiao Zhou
+	areas = {
+		east_guangdong_area
+		north_guangdong_area
+		south_guangdong_area
+		west_guangdong_area
+		west_guangxi_area
+		east_guangxi_area
+		south_guangxi_area
+	}
+}
+
+western_ghats_region = { ##Sakastan
+	areas = {
+		issykkol_area
+		arys_area
+		syrdarya_area
+	}
+}
+
+hausa_region = { ##Jaxartia
+	areas = {
+		syrdarya_area
+	}
+}
+
+syrdarya_region = { #Fergana
 	areas = {
 		ferghana_area
 		tashkent_area
 	}
 }
 
-amodarya_region = {
+lower_niger_region = { ##Dahaestan
 	areas = {
-		balkh_area
-		transoxiana_area
-		kish_area
-		vaxsh_area
+		transcaspia_area
 	}
 }
 
-kazakh_region = {
+philippines_region = { #Lusong for color
 	areas = {
-		kazakhstan_area
-		nogai_area
+		mindanao_area
+		visayas_area
+		luzon_area
 	}
 }
 
+java_region = { #Here for color
+	areas = {
+		east_java_area
+		central_java_area
+		west_java_area
+		southwest_java_area
+		north_java_area
+	}
+}
+
+borneo_region = { #Here for color
+	areas = {
+		kutai_area
+		brunei_area
+		kalimantan_area
+		sulu_area
+	}
+}
+
+coastal_burma_region = {
+	areas = {
+		lower_burma_area
+		arakan_area
+		chittagong_area
+		dakshina_airavati_area
+	}
+}
+
+inland_burma_region = {
+	areas = {
+		upper_burma_area
+		central_burma_area
+	}
+}
+
+assam_region = {
+	areas = {
+		naga_hills_area
+		kalay_area
+		kachin_area
+	}
+}
+
+coastal_siam_region = { ##Champa
+	areas = {
+		mekong_area
+		champa_area
+	}
+}
+
+cochinchina_region = { #Funan
+	areas = {
+		cambodia_area
+		chaktomuk_area
+		angkor_area
+		indrapura_area
+		khorat_area
+		south_laos_area
+		chonlapura_area
+	}
+}
+
+inland_siam_region = { #Dvaravati
+	areas = {
+		central_thai_area
+		lampang_area
+		suktho_thai_area
+		southern_thai_area
+		chonburi_area
+		kayin_area
+		tanintharyi_area
+	}
+}
+
+lan_xang_region = { #Dronakarattha
+	areas = {
+		north_laos_area
+		nongkhai_area
+		viang_chan_area
+		shan_hill_area
+		northern_thai_area
+	}
+}
+
+vietnam_region = { #Lac Viet
+	areas = {
+		song_hong_area
+		northwest_vietnam_area
+		northeast_vietnam_area
+		annam_area
+	}
+}
+
+malaya_region = { #Malayadvipa
+	areas = {
+		malaya_area
+		singapura_area
+		kelantan_area
+		kedah_area
+		ligor_area
+		tenasserim_area
+	}
+}
+
+indonesia_region = { #Here for color
+	areas = {
+		lesser_sunda_islands_area
+		banda_islands_area
+		north_sulawesi_area
+		south_sulawesi_area
+		molluca_area
+	}
+}
+
+sumatra_region = { #Suvarnabhumi
+	areas = {
+		north_sumatra_area
+		central_sumatra_area
+		south_sumatra_area
+		west_sumatra_area
+		inland_sumatra_area
+		pasai_area
+	}
+}
 
 ##########################
 # ASIA                   #
@@ -1049,6 +1745,10 @@ east_siberia_region = {
 		kamchatka_area
 		tunguska_area
 		katun_area
+		sakhalin_area
+		amgun_area
+		zeya_area
+		lower_amur_area
 	}
 }
 
@@ -1064,225 +1764,7 @@ inner_mongolia_region = {
 	}
 }
 
-outer_mongolia_region = {
-	areas = {
-		north_mongolia_area
-		east_mongolia_area
-		khangai_area
-		west_mongolia_area
-		east_altai_area
-		#chita_area
-		argun_area
-	}
-}
-
-west_manchuria_region = {
-	areas = {
-		#east_jurcen_area
-		west_hulun_area
-		#east_hulun_area
-		#hu_lan_area
-		xinhai_area
-		#yanshan_area
-		#dalian_area
-		west_jurcen_area
-	}
-}
-
-east_manchuria_region = {
-	areas = {
-		lower_amur_area
-		udege_area
-		sakhalin_area
-		amgun_area
-		zeya_area
-		wakra_area
-		songhua_area
-		#upper_amur_area
-		nen_area
-	}
-}
-
-tibet_region = {
-	areas = {
-		utsang_area
-		amdo_area
-		kham_area
-	}
-}
-
-zungaria_region = {
-	areas = {
-		tarim_basin_area
-		yarkand_area
-		hami_area
-	}
-}
-
-shaangan_region = {
-	areas = {
-		guanzhong_area
-		north_henan_area
-		heluo_area
-	}
-}
-
-central_doab_region = { #Yan Zhou
-	areas = {	
-		luxinan_area
-		chenliu_area
-		north_shandong_area
-	}
-}
-
-sichuan_region = {
-	areas = {
-		southwest_sichuan_area
-		northeast_sichuan_area
-		xishu_area
-		ba_area
-		guizhou_area
-		buzhou_area
-		east_yunnan_area
-		west_yunnan_area
-		central_yunnan_area
-		hanzhong_area
-	}
-}
-
-yunnan_region = { #Liang Zhou
-	areas = {
-		longxi_area
-		lintao_area
-		xiaojun_area
-	}
-}
-
-guangxi_region = { #Shuo Zhou
-	areas = {
-		shaanbei_area
-		ordos_area
-	}
-}
-
-guangdong_region = {
-	areas = {
-		east_guangdong_area
-		north_guangdong_area
-		south_guangdong_area
-		west_guangdong_area
-		west_guangxi_area
-		east_guangxi_area
-		south_guangxi_area
-	}
-}
-
-huguang_region = {
-	areas = {
-		north_hunan_area
-		east_hunan_area
-		west_hunan_area
-		west_hubei_area
-		east_hubei_area
-	}
-}
-
-jiangxi_region = {
-	areas = {
-		nw_jiangxi_area
-		south_jiangxi_area
-		central_jiangxi_area
-		east_jiangxi_area
-		huizhou_area
-		anqing_area
-		jinling_area
-		wu_area
-		songjiang_area
-		south_zhejiang_area
-		east_zhejiang_area
-		west_zhejiang_area
-		hangzhou_area
-		central_zhejiang_area
-		minnan_area
-		west_fujian_area
-		north_fujian_area
-	}
-}
-
-fujian_region = { #Yan Zhou
-	areas = {
-		taiwan_area
-	}
-}
-
-zhejiang_region = { #Ji Zhou
-	areas = {
-		south_hebei_area
-	}
-}
-
-jiangnan_region = { #Xu Zhou
-	areas = {
-		huaizuo_area
-		huaibei_area
-		ju_area
-	}
-}
-
-zhongyuan_region = {
-	areas = {
-		haozhou_area
-		south_henan_area
-		yingchuan_area
-		pengcheng_area
-	}
-}
-
-jiaoliao_region = {
-	areas = {
-		laizhou_bandao_area
-		south_shandong_area
-	}
-}
-
-hebei_region = {
-	areas = {
-		yanyun_area
-		yanghe_area
-		jizhou_area
-		outer_liaoning_area
-	}
-}
-
-shanxi_region = {
-	areas = {
-		north_shanxi_area
-		fenshui_area
-		south_shanxi_area
-	}
-}
-
-west_japan_region = {
-	areas = {
-		sanin_area
-		sanyo_area
-		north_kyushu_area
-		south_kyushu_area
-		shikoku_area
-		ryukyu_area
-	}
-}
-
-central_japan_region = {
-	areas = {
-		hokuriku_area
-		chubu_area
-		east_kansai_area
-		west_kansai_area
-	}
-}
-
-east_japan_region = {
+east_japan_region = { #Here for color
 	areas = {
 		hokkaido_area
 		tohoku_area
@@ -1293,289 +1775,11 @@ east_japan_region = {
 	}
 }
 
-korea_region = {
-	areas = {
-		central_korea_area
-	}
-}
-
-awadh_region = { #Joseon
-	areas = {
-		liaoning_area
-	}
-}
-
-kashmir_region = { #Yemaek
-	areas = {
-		donggye_area
-	}
-}
-
-west_india_region = { #Dongye
-	areas = {
-		imdun_area
-	}
-}
-
-central_india_region = { #Nakrang
-	areas = {
-		north_korea_area
-	}
-}
-
-gondwana_region = { #Byeonhan
-	areas = {
-		jeolla_area
-	}
-}
-
-east_deccan_region = { #Jinhan
-	areas = {
-		south_korea_area
-	}
-}
-
 ##########################
 # INDIA                  #
 ##########################
 
-himalaya_region = {
-	areas = {
-		east_nepalese_area
-		west_nepalese_area
-		garhwal_area
-		kangra_area
-		kashmir_area
-		ngari_area
-		pamir_area
-	}
-}
-
-assam_region = {
-	areas = {
-		naga_hills_area
-		kalay_area
-		kachin_area
-	}
-}
-
-east_bengal_region = {
-	areas = {
-		jalpaiguri_area
-		north_bengal_area
-		baghalpur_area
-		assam_area
-		koch_area
-		himalayan_hills_area
-	}
-}
-
-west_bengal_region = {
-	areas = {
-		jessor_area
-		bengal_area
-		bardwan_area
-		dakka_area
-		purniah_area
-	}
-}
-
-
-upper_doab_region = {
-	areas = {
-		upper_doab_area
-		delhi_area
-		oudh_area
-		rohilkhand_area
-		gwalior_area
-		kalpi_area
-		jaipur_area
-		central_doab_area
-	}
-}
-
-hindusthan_region = {
-	areas = {
-		lower_sindh_area
-		upper_sindh_area
-		cholistan_area
-	}
-}
-
-punjab_region = {
-	areas = {
-		shahpur_area
-		lahore_area
-		multan_area
-		sirhind_area
-		khybyr_area
-		bikaner_area
-		patiala_area
-	}
-}
-
-bihar_region = {
-	areas = {
-		south_bihar_area
-		muzzaffarpur_area
-		awadh_area
-		varanasi_area
-		purvanchal_area
-		bundelkhand_area
-		jharkhand_area
-	}
-}
-
-gujarat_region = {
-	areas = {
-		patan_area
-		saurashtra_area
-		ajmer_area
-		mewar_area
-		marwar_area
-	}
-}
-
-orissa_region = {
-	areas = {
-		north_orissa_area
-		south_orissa_area
-		north_cuttack_area
-		south_cuttack_area
-		bastar_area
-		godavari_area
-		nizamabab_area
-		andhra_area
-		hyderabad_area
-	}
-}
-
-west_deccan_region = {
-	areas = {
-		daulatabad_area
-		berar_area
-		raichur_area
-		malwa_area
-		indore_area
-		gondwana_area
-		nagpur_area
-		hadoti_area
-	}
-}
-
-konkan_region = {
-	areas = {
-		kanara_area
-		maharashtra_area
-		konkan_area
-		gujarat_area
-	}
-}
-
-western_ghats_region = { #Sakastan
-	areas = {
-		issykkol_area
-		arys_area
-		syrdarya_area
-	}
-}
-
-mysore_region = {
-	areas = {
-		rayalaseema_area
-		tirupati_area
-		kolhapur_area
-		desh_area
-	}
-}
-
-carnatic_region = {
-	areas = {
-		north_coromandel_area
-		south_coromandel_area
-		madura_area
-		north_carnatic_area
-		south_carnatic_area
-		mysore_area
-		north_kerala_area
-		south_kerala_area
-		mali_nadu_area
-	}
-}
-
-inland_burma_region = {
-	areas = {
-		upper_burma_area
-		central_burma_area
-	}
-}
-
-coastal_burma_region = {
-	areas = {
-		lower_burma_area
-		arakan_area
-		chittagong_area
-		dakshina_airavati_area
-	}
-}
-
-indian_ocean_islands_region = {
-	areas = {
-		indian_ocean_islands_area
-		east_lanka_area
-		west_lanka_area
-	}
-}
-
 ########################## SOUTH EAST ASIA ################################################
-
-sumatra_region = {
-	areas = {
-		north_sumatra_area
-		central_sumatra_area
-		south_sumatra_area
-		west_sumatra_area
-		inland_sumatra_area
-		pasai_area
-	}
-}
-
-philippines_region = {
-	areas = {
-		mindanao_area
-		visayas_area
-		luzon_area
-	}
-}
-
-java_region = {
-	areas = {
-		east_java_area
-		central_java_area
-		west_java_area
-		southwest_java_area
-		north_java_area
-	}
-}
-
-borneo_region = {
-	areas = {
-		kutai_area
-		brunei_area
-		kalimantan_area
-		sulu_area
-	}
-}
-
-indonesia_region = {
-	areas = {
-		lesser_sunda_islands_area
-		banda_islands_area
-		north_sulawesi_area
-		south_sulawesi_area
-		molluca_area
-	}
-}
 
 papua_region = {
 	areas = {
@@ -1600,79 +1804,6 @@ north_oceanea_region = {
 		west_micronesia_area
 		melanesia_area
 		hawai_area
-	}
-}
-
-vietnam_region = {
-	areas = {
-		song_hong_area
-		northwest_vietnam_area
-		northeast_vietnam_area
-		annam_area
-	}
-}
-
-
-lan_xang_region = {
-	areas = {
-		north_laos_area
-		nongkhai_area
-		viang_chan_area
-		shan_hill_area
-		northern_thai_area
-	}
-}
-
-cochinchina_region = {
-	areas = {
-		cambodia_area
-		chaktomuk_area
-		angkor_area
-		indrapura_area
-		khorat_area
-		south_laos_area
-		chonlapura_area
-	}
-}
-
-inland_siam_region = {
-	areas = {
-		central_thai_area
-		lampang_area
-		suktho_thai_area
-		southern_thai_area
-		chonburi_area
-		kayin_area
-		tanintharyi_area
-	}
-}
-
-coastal_siam_region = { #Champa
-	areas = {
-		mekong_area
-		champa_area
-	}
-}
-
-malaya_region = {
-	areas = {
-		malaya_area
-		singapura_area
-		kelantan_area
-		kedah_area
-		ligor_area
-		tenasserim_area
-	}
-}
-
-australia_region = {
-	areas = {
-		western_australia_area
-		northern_australia_area
-		eastern_australia_area
-		southern_australia_area
-		southeast_australia_area
-		inland_australia_area
 	}
 }
 
@@ -1951,129 +2082,6 @@ carribeans_region = {
 	}
 }
 
-########################### SEA REGIONS ##################################################
-
-arctic_ocean_region = {
-	areas = {
-		barents_sea_area
-		davis_strait_area
-		hudson_bay_sea_area
-		hudson_strait_area
-		icelandic_sea_area
-		norwegian_sea_area
-		nw_passage_area
-	}
-}
-
-baltic_sea_region = {
-	areas = {
-		baltic_area
-		sound_area
-	}
-}
-
-indian_ocean_region = {
-	areas = {
-		andaman_sea_area
-		arabian_sea_area
-		australian_indian_coast_area
-		bay_of_bengal_area
-		cape_of_storms_area
-		eastern_indian_ocean_area
-		gulf_of_aden_sea_area
-		indonesian_indian_ocean_area
-		laquedives_sea_area
-		mozambique_strait_area
-		persian_gulf_area
-		red_sea_area
-		south_indian_ocean_area
-		swahili_coast_sea_area
-		western_indian_ocean_area
-	}
-}
-
-mediterranean_region = {
-	areas = {
-		adriatic_sea_area
-		black_sea_area
-		eastern_mediterranean_area
-		ionian_sea_area
-		libyan_sea_area
-		tyrrhenian_sea_area
-		western_mediterranean_area
-	}
-}
-
-north_atlantic_region = {
-	areas = {
-		atlantic_antilles_area
-		bay_of_biscay_area
-		british_coasts_area
-		caribbean_sea_area
-		coast_of_guyana_area
-		english_channel_area
-		gulf_of_guinea_sea_area
-		gulf_of_mexico_area
-		gulf_of_st_lawrence_area
-		gulf_stream_area
-		iberian_atlantic_area
-		irminger_sea_area
-		north_african_coast_sea_area
-		north_atlantic_area
-		north_central_atlantic_area
-		north_sea_area
-		sargasso_sea_area
-		sea_of_labrador_area
-		west_african_coast_sea_area
-	}
-}
-
-north_pacific_region = {
-	areas = {
-		bering_sea_area
-		east_china_sea_area
-		gulf_of_alaska_area
-		mesoamerica_pacific_area
-		north_east_pacific_area
-		north_east_central_pacific_area
-		north_pacific_coast_area
-		north_west_pacific_area
-		north_west_central_pacific_area
-		philipine_sea_area
-		sea_of_japan_area
-		sea_of_okhotsk_area
-		south_china_sea_area
-		yellow_sea_area
-	}
-}
-
-south_atlantic_region = {
-	areas = {
-		argentine_sea_area
-		coast_of_brazil_sea_area
-		scotia_sea_area
-		skeleton_coast_area
-		south_atlantic_area
-		south_central_atlantic_area
-	}
-}
-
-south_pacific_region = {
-	areas = {
-		chilean_sea_area
-		coral_sea_area
-		indonesian_east_seas_area
-		indonesian_west_seas_area
-		melanesian_coast_area
-		sea_of_grau_area
-		south_east_pacific_area
-		south_east_central_pacific_area
-		south_west_pacific_area
-		south_west_central_pacific_area
-		tasman_sea_area
-	}
-}
-
 valhalla_region = {
 	areas = {
 		valhalla_area
@@ -2084,4 +2092,8 @@ adventure_region = {
 	areas = {
 		adventure_area
 	}
+}
+ 
+# random_new_world_region is used for RNW. Must be first in this list. Removing this -Matthew
+random_new_world_region = {
 }

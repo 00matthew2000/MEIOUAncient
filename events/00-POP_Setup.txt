@@ -22901,7 +22901,10 @@ country_event = {
 					}
 				}
 				AND = { 
-					region = egypt_region
+					OR = {
+						region = egypt_region
+						region = darfur_region
+					}
 					NOT = { 
 						province_id = 356
 					}
@@ -23313,7 +23316,10 @@ country_event = {
 					}
 				}
 				AND = { 
-					region = egypt_region
+					OR = {
+						region = egypt_region
+						region = darfur_region
+					}
 					NOT = { 
 						province_id = 356
 					}
@@ -56890,7 +56896,10 @@ country_event = {
 					}
 				}
 				AND = { 
-					region = egypt_region
+					OR = {
+						region = egypt_region
+						region = darfur_region
+					}
 					NOT = { 
 						province_id = 356
 					}
@@ -57302,7 +57311,10 @@ country_event = {
 					}
 				}
 				AND = { 
-					region = egypt_region
+					OR = {
+						region = egypt_region
+						region = darfur_region
+					}
 					NOT = { 
 						province_id = 356
 					}

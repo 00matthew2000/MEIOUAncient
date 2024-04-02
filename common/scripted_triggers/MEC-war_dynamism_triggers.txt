@@ -129,6 +129,7 @@ war_dynamism_trigger_ottoman = {
 		region = south_anatolia_region
 		region = greece_region
 		region = egypt_region
+		region = darfur_region
 		region = syria_region
 		
 		area = cilicia_area

@@ -189,7 +189,10 @@ north_africa_region_trigger = {
 				NOT = { area = western_sahara_area }
 				NOT = { area = arguin_area }
 			}
-			region = egypt_region
+			OR = {
+				region = egypt_region
+				region = darfur_region
+			}
 		}
 	}
 }
@@ -430,6 +433,7 @@ africa_continent_trigger = {
 			superregion = west_africa_superregion
 			superregion = north_africa_superregion
 			region = egypt_region
+			region = darfur_region
 		}
 	}
 }

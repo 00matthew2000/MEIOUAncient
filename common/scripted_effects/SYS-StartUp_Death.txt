@@ -491,6 +491,9 @@ StartUp_SetDeath = {
 	egypt_region = {
 		set_key = { lhs = POP_DeathFactor value = 0.89 }
 	}
+	darfur_region = {
+		set_key = { lhs = POP_DeathFactor value = 0.89 }
+	}
 	358 = {
 		set_key = { lhs = POP_DeathFactor value = 0.86 }
 	}

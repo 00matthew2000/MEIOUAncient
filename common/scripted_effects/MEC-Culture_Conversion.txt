@@ -1276,7 +1276,10 @@ cv_change_culture = {
 		else_if = { 
 			limit = {
 				owner = { culture_group = greek_group }
-				region = egypt_region
+				OR = {
+					region = egypt_region
+					region = darfur_region
+				}
 			}
 			change_culture = aigyptioi
 		}
