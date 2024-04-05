@@ -64,14 +64,15 @@ east_france_region = {
 	areas = {
 		ile_de_france_area
 		val_de_loire_area
-		normandy_area
-		brittany_area
-		anjou_poitou_area
+		venellica_area
+		armorica_area
+		liger_area
 		saintonge_area
 		massif_central_area
 		bourgogne_area
 		champagne_area
 		cebenna_mons_area
+		pictonica_area
 	}
 }
 
@@ -148,7 +149,7 @@ austrian_circle_region = { #Raetia et Noricum
 
 lower_saxon_circle_region = {
 	areas = {
-		jutland_area
+		cimbricus_chersonesus
 		holland_area
 		gelderland_area
 		frisia_area
@@ -165,7 +166,6 @@ lower_saxon_circle_region = {
 		hesse_area
 		royal_bohemia_area
 		sudeti_montes_area
-		denmark_area
 		upper_franconia_area
 		palatinate_bavaria_area
 		rhenus_area
@@ -175,11 +175,14 @@ lower_saxon_circle_region = {
 
 scandinavia_region = { ##Germania Scandza
 	areas = {
-		svealand_area
-		gotaland_area
-		eastern_norway_area
-		western_norway_area
-		skaneland_area
+		suehonia_area
+		ostrogothica_area
+		raumaricia_area
+		aetelrugia_area
+		scandza_area
+		scandiae_insulae_area
+		visigothica_area
+		gothica_insulae_area
 	}
 }
 
@@ -229,36 +232,45 @@ polonia_major_region = {
 
 north_england_region = {
 	areas = {
-		east_midlands_area
-		west_midlands_area
-		northumbria_area
+		corieltauvorum_area
+		cornoviorum_area
+		brigantum_area
+		britannia_maxima_area
 	}
 }
 
 south_england_region = {
 	areas = {
-		wales_area
-		east_anglia_area
-		home_counties_area
-		west_country_area
+		ordovicum_area
+		silurum_area
+		londinium_area
+		durotrigum_area
+		dummoniorum_area
+		reginorum_area
+		dubunnorum_area
+		cantiacorum_area
+		icenorum_area
 	}
 }
 
 scotland_region = {
 	areas = {
-		lowlands_area
-		north_lowlands_area
-		highlands_area
-		isles_area
+		caledonia_inferior
+		graupius_mons
+		caledonia_superior
+		britannae_insulae
+		caledonia_ulterior
+		valentia_area
 	}
 }
 
 ireland_region = {
 	areas = {
-		leinster_area
-		munster_area
-		ulaid_area
-		connacht_area
+		hibernia_east
+		hibernia_citerior
+		hibernia_borealis
+		hibernia_west
+		hibernia_inferior
 	}
 }
 
@@ -270,6 +282,7 @@ west_balkan_region = {
 		carinthia_area
 		west_adriatic_coast_area
 		west_serbia_area
+		south_serbia_area
 	}
 }
 
@@ -287,7 +300,6 @@ east_balkan_region = {
 		north_bulgaria_area
 		south_bulgaria_area
 		dobrogea_area
-		south_serbia_area
 		north_serbia_area
 		east_serbia_area
 		europa_area
@@ -789,17 +801,16 @@ khorasani_region = { #Margiana
 	areas = {
 		ahel_area
 		herat_area
-		kabulistan_area
 		merv_area
 	}
 }
 
 upper_niger_region = { ##Drangiana-Arachosia
 	areas = {
-		sistan_area
 		kabulistan_area
 		paradene_area
 		parsiene_area
+		sistan_area
 	}
 }
 
@@ -808,7 +819,6 @@ sistan_region = { ##Gedrosia
 		zahedan_area
 		baluchi_area
 		quetta_area
-		sistan_area
 	}
 }
 
@@ -1235,6 +1245,7 @@ senegambia_region = { #Non-Provs Africa
 		jallon_area
 		haayre_area
 		west_mossi_area
+		tooro_area
 	}
 }
 
@@ -1354,7 +1365,6 @@ central_doab_region = { ##Yan Zhou
 	areas = {	
 		luxinan_area
 		chenliu_area
-		north_shandong_area
 	}
 }
 
@@ -1399,7 +1409,7 @@ jiangxi_region = { #Yang Zhou
 	}
 }
 
-fujian_region = { ##Yan Zhou
+fujian_region = { ##Taiyuan
 	areas = {
 		taiwan_area
 	}
@@ -1414,7 +1424,7 @@ zhejiang_region = { #Ji Zhou
 jiaoliao_region = { #Qing Zhou
 	areas = {
 		laizhou_bandao_area
-		south_shandong_area
+		north_shandong_area
 	}
 }
 
@@ -1423,6 +1433,7 @@ jiangnan_region = { #Xu Zhou
 		huaizuo_area
 		huaibei_area
 		ju_area
+		south_shandong_area
 	}
 }
 
@@ -1566,7 +1577,6 @@ western_ghats_region = { ##Sakastan
 	areas = {
 		issykkol_area
 		arys_area
-		syrdarya_area
 	}
 }
 

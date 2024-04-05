@@ -1859,7 +1859,6 @@ StartUp_InitProduce = {
 					OR = {
 						region = high_countries_region
 						region = belgii_region
-						region = norwegian_region
 						region = scandinavia_region
 						region = west_japan_region
 						region = central_japan_region

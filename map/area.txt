@@ -405,20 +405,24 @@ ardennes_area = {
 	3815 2331 5137 
 }
 
-normandy_area = {
-	1386 2240 168 3374 2330 
+venellica_area = {
+	2240 168 169
 }
 
-brittany_area = {
-	169 4008 2329 170 171 1388 
+armorica_area = {
+	4008 2329 170 171 
 }
 
 val_de_loire_area = {
-	195 2362 391 184 
+	2362 391 184 
 }
 
-anjou_poitou_area = {
-	178 2234 180 177 
+liger_area = {
+	178 177 1388 195
+}
+
+pictonica_area = {
+	2234 180
 }
 
 picardy_area = {
@@ -430,7 +434,7 @@ artois_area = {
 }
 
 ile_de_france_area = {
-	2356 183 1335 1387 4186 
+	2356 183 1335 1387 4186 3374 2330 1386
 }
 
 lorraine_area = {
@@ -693,88 +697,132 @@ marche_area = {
 # British Isles #
 ########################################
 
-leinster_area = {
-	373 3327 3328 3329
+hibernia_east = {
+	373 3328 3329
 }
 
-munster_area = {
-	375 2529 3330 3331 
+hibernia_citerior = {
+	375 2529 3331 
 }
 
-ulaid_area = {
-	372 374 3334 3335 
+hibernia_borealis = {
+	372 3334 3335 
 }
 
-connacht_area = {
+hibernia_west = {
 	376 3332 3333 
 }
 
-isles_area = {
+hibernia_inferior = {
+	3330 3327 374
+}
+
+britannae_insulae = {
 	369 1250 1417 1514
 }
 
-highlands_area = {
-	252 253 2512 3338
+valentia_area = {
+	248 1416
 }
 
-lowlands_area = {
-	248 249 1416 3337 3719
+caledonia_ulterior = {
+	253 3338
 }
 
-north_lowlands_area = {
+caledonia_superior = {
+	252 2512
+}
+
+caledonia_inferior = {
+	249 3337 3719
+}
+
+graupius_mons = {
 	250 251 3005 3336
 }
 
-east_anglia_area = {
-	2386 3859 399 1283 237 
+londinium_area = {
+	236 2386 237 
 }
 
-east_midlands_area = {
-	243 245 3324 4991 5156
+britannia_maxima_area = {
+	409 244 5156
 }
 
-west_midlands_area = {
-	240 244 427 
+corieltauvorum_area = {
+	243 245
 }
 
-northumbria_area = {
-	238 246 409 
+cornoviorum_area = {
+	240 427 3324
 }
 
-home_counties_area = {
-	235 236 1410 234 3325
+brigantum_area = {
+	238 246 4991
 }
 
-wales_area = {
-	247 242 1412 241 3323 
+durotrigum_area = {
+	234 3325 3326
 }
 
-west_country_area = {
-	233 1411 3326 239
+ordovicum_area = {
+	242 3323 
+}
+
+silurum_area = {
+	1412 241
+}
+
+dubunnorum_area = {
+	247 239
+}
+
+dummoniorum_area = {
+	233 1411
+}
+
+reginorum_area = {
+	1410
+}
+
+cantiacorum_area = {
+	235
+}
+
+icenorum_area = {
+	3859 399 1283
 }
 
 ########################################
 # Scandinavia# # #  # # ## #
 ########################################
 
-denmark_area = {
+scandiae_insulae_area = {
 	14 1428 2755 12 
 }
 
-jutland_area = {
-	3720 15 67 13 3721 2754 
+cimbricus_chersonesus = {
+	3720 15 67 2754 
 }
 
-skaneland_area = {
-	26 6 18 2515 
+scandza_area = {
+	6 18
 }
 
-gotaland_area = {
-	1257 3 2 8 7 25 
+gothica_insulae_area = {
+	25 1257 2515 1354
 }
 
-svealand_area = {
+ostrogothica_area = {
+	3 2
+}
+
+suehonia_area = {
 	9 1 1258 1259 5 
+}
+
+visigothica_area = {
+	7 8 26
 }
 
 norrland_area = {
@@ -797,11 +845,11 @@ northern_norway_area = {
 	22 1266 1255 10 
 }
 
-eastern_norway_area = {
+raumaricia_area = {
 	21 17 16 1256 
 }
 
-western_norway_area = {
+aetelrugia_area = {
 	20 23 24 3998 
 }
 
@@ -934,7 +982,7 @@ palatinate_bavaria_area = {
 }
 
 holstein_area = {
-	44 45 977 1252 3722 
+	44 45 977 1252 3722 13 3721
 }
 
 mecklenburg_area = {
@@ -970,11 +1018,11 @@ carinthia_area = {
 }
 
 switzerland_area = {
-	165 1254 1448 2624
+	165 1254 1448
 }
 
 alpes_raetae_area = {
-	166 2611 185
+	166 2611 185 2624
 }
 
 romandie_area = {
@@ -986,7 +1034,7 @@ romandie_area = {
 ########################################
 
 macedonia_area = {
-	3871 2387 147 155
+	3871 2387 147
 }
 
 north_macedonia_area = {
@@ -998,7 +1046,7 @@ paeonia_area = {
 }
 
 albania_area = {
-	1424 2374 2373 3778 805 5142
+	2374 2373 3778 805
 }
 
 thessalia_area = {
@@ -1014,7 +1062,7 @@ morea_area = {
 }
 
 europa_area = {
-	3876 3877 2501
+	3876 3877 2501 155
 }
 
 thrace_area = {
@@ -1082,11 +1130,11 @@ west_transylvania_area = {
 }
 
 south_serbia_area = {
-	140 3777 3775 
+	140 3777 
 }
 
 west_serbia_area = {
-	1397 1392 1396 2237 
+	1397 1396 1424 2237 5142
 }
 
 east_serbia_area = {
@@ -1094,7 +1142,7 @@ east_serbia_area = {
 }
 
 north_serbia_area = {
-	141 2612 3773 4520 4524 
+	141 2612 3773 4520 4524 3775
 }
 
 bosnia_area = {
@@ -1106,7 +1154,7 @@ croatia_area = {
 }
 
 east_adriatic_coast_area = {
-	137 138
+	137 138 1392
 }
 
 west_adriatic_coast_area = {
@@ -1154,7 +1202,7 @@ livonia_area = {
 }
 
 curonia_area = {
-	38 39 1264 1432 1354 
+	38 39 1264 1432 
 }
 
 east_prussia_area = {
@@ -2127,7 +2175,7 @@ niger_delta_area = {
 }
 
 niger_rapids_area = {
-	2794 2895
+	2794 2895 1135
 }
 
 kaduna_area = {
@@ -2139,7 +2187,7 @@ plateau_area = {
 }
 
 sokoto_area = {
-	1135 1555 2921 1132 5108 5260 1122
+	1555 2921 1132 5108 5260 1122
 }
 
 kano_area = {
@@ -3053,7 +3101,7 @@ west_kanto_area = {
 }
 
 hokkaido_area = {
-	2299 2300 1025 1019 2302
+	2299 2300 1025 1019
 }
 
 hokuriku_area = {
@@ -3105,7 +3153,7 @@ ryukyu_area = {
 ########################################
 
 kamchatka_area = {
-	1034 1035 1036 1037 
+	1034 1035 1036 1037 2302
 }
 
 magadan_area = {
@@ -3220,9 +3268,9 @@ north_shanxi_area = { 2247 5483 5482 2468 }
 fenshui_area = { 2476 2471 5478 5479 }
 south_shanxi_area = { 2467 2246 5480 5481 }
 
-luxinan_area = { 5385 5386 2491 2560 }
+luxinan_area = { 5385 5386 2491 2560 5387 }
 laizhou_bandao_area = { 2492 697 5378 5379  }
-south_shandong_area = { 698 5387 }
+south_shandong_area = { 698 }
 north_shandong_area = { 5388 5389 1041 699 5380 }
 ju_area = { 5381 5382 5383 5384 }
 liaoning_area = { 2249 4035 4037 4036 }

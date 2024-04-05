@@ -3,3 +3,4 @@
 
 Must reorder the regions in superregion.txt to change the colors; make it match IU
 Haozhou needs to be redrawn
+Need to fix SYS-RightsInit

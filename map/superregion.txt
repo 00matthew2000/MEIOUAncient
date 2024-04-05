@@ -3,34 +3,25 @@
 north_india_superregion = {
 	upper_doab_region
 	bihar_region
-	himalaya_region
-	awadh_region
 	punjab_region
 	hindusthan_region
-	kashmir_region
-	assam_region
 	east_bengal_region
 	west_bengal_region
 	gujarat_region
-	west_india_region
-	central_doab_region
 }
 
 south_india_superregion = {
 	mysore_region
 	carnatic_region
-	western_ghats_region
 	indian_ocean_islands_region
 	orissa_region
-	gondwana_region
 	west_deccan_region
-	east_deccan_region
 	konkan_region
-	central_india_region
 }
 
 tibet_superregion = {
 	tibet_region
+	himalaya_region
 }
 
 southeast_asia_superregion = {
@@ -42,16 +33,15 @@ southeast_asia_superregion = {
 	inland_siam_region
 	coastal_siam_region
 	malaya_region
+	assam_region
 }
 
 italy_superregion = {
 	naples_region
-	sicily_region
 	central_italy_region
 	west_italy_region
 	east_italy_region
 	austrian_circle_region
-	swabia_bavarian_region
 }
 
 iberia_superregion = {
@@ -65,28 +55,15 @@ iberia_superregion = {
 france_superregion = {
 	east_france_region
 	provence_region
-	languedoc_region
 	aquitaine_region
-	ouest_france_region
 	belgii_region
 }
 
 germany_superregion = {
 	lower_saxon_circle_region
-	upper_saxon_circle_region
-	brandenburg_pommern_region
-	westphalian_circle_region
-	upper_rhenish_circle_region
-	low_countries_region
-	bohemia_region
-	switzerland_region
 	high_countries_region
 	scandinavia_region
-	danish_region
-	norwegian_region
 	polonia_major_region
-	polonia_minor_region
-	prussia_region
 }
 
 british_isles_superregion = {
@@ -99,15 +76,14 @@ british_isles_superregion = {
 balkan_superregion = {
 	west_balkan_region
 	east_balkan_region
-	central_balkan_region
 	magyar_plains_region
-	north_carpathia_region
 	south_carpathia_region
-	east_carpathia_region
 }
 
 macedonia_superregion = { #Greece
 	greece_region
+	danish_region
+	bohemia_region
 }
 
 european_steppe_superregion = {
@@ -116,7 +92,9 @@ european_steppe_superregion = {
 	north_caucasus_region
 	volga_region
 	halych_volhynia_region
-	ruthenia_region
+	east_carpathia_region
+	languedoc_region
+	kazakh_region
 }
 
 north_china_superregion = {
@@ -134,19 +112,27 @@ north_china_superregion = {
 	jiangnan_region
 	huguang_region
 	jiangxi_region
+	central_doab_region
 }
 
 eastern_steppe_superregion = {
 	inner_mongolia_region
 	outer_mongolia_region
 	zungaria_region
-	kazakh_region
+	polonia_minor_region
+	prussia_region
 }
 
 korea_superregion = {
 	korea_region
 	east_manchuria_region
 	west_manchuria_region
+	west_india_region
+	awadh_region
+	central_india_region
+	east_deccan_region
+	gondwana_region
+	kashmir_region
 }
 
 japan_superregion = {
@@ -178,9 +164,7 @@ eastern_africa_superregion = { #Egypt
 }
 
 east_africa_superregion = {
-	somalia_region
 	horn_region
-	harar_region
 	abyssinia_region
 }
 
@@ -188,39 +172,63 @@ persia_superregion = {
 	iran_region
 	fars_region
 	sistan_region
+	upper_niger_region
 }
 
 anatolia_superregion = {
 	west_anatolia_region
 	north_anatolia_region
 	south_anatolia_region
+	brandenburg_pommern_region
+	westphalian_circle_region
+	upper_rhenish_circle_region
+	ouest_france_region
+	upper_saxon_circle_region
+	norwegian_region
 }
 
 armenia_superregion = { #Armenia
 	south_caucasus_region
+	north_carpathia_region
+	lithuania_region
+	swabia_bavarian_region
+	harar_region
+	switzerland_region
 }
 
 arabia_superregion = { #Arabia
 	arabia_region
 	hadhramaut_region
+	somalia_region
 }
 
 central_asia_superregion = {
 	syrdarya_region
 	amodarya_region
+	western_ghats_region
+	hausa_region
+	belarus_region
 }
 
 parthia_superregion = { #Parthia
 	khorasani_region
+	lower_volta_region
+	lower_niger_region
+	niger_benue_region
 }
 
 near_east_superregion = { #Mesopotamia
 	lower_mesopotamia_region
 	upper_mesopotamia_region
+	upper_volta_region
+	manding_region
 }
 
 syria_superregion = { #Syria
 	syria_region
+	sicily_region
+	low_countries_region
+	central_balkan_region
 }
 
 scandinavian_superregion = {
@@ -233,24 +241,16 @@ greater_russia_superregion = {
 	north_russia_region
 	russia_region
 	east_russia_region
-	belarus_region
 	baltic_region
-	lithuania_region
 	finland_region
+	ruthenia_region
 }
 ##########################
 
 west_africa_superregion = {
 	senegambia_region
-	manding_region
 	niger_bend_region
 	guinea_region
-	lower_volta_region
-	upper_volta_region
-	upper_niger_region
-	lower_niger_region
-	niger_benue_region
-	hausa_region
 	chad_region
 }
 

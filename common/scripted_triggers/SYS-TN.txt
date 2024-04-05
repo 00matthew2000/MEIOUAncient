@@ -570,7 +570,7 @@ Prod_Can_42 = { # Sericulture
 			continent = asia
 			superregion = japan_superregion
 			superregion = central_asia_superregion
-			region = assam_region
+			region = east_bengal_region
 			region = vietnam_region
 			region = cochinchina_region
 		}
@@ -660,7 +660,6 @@ Prod_Millet = {
 			region = ruthenia_region
 			region = halych_volhynia_region
 			superregion = balkan_superregion
-			region = bohemia_region
 		}
 	}
 }
