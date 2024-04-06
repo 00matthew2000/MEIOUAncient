@@ -6,30 +6,44 @@
 
 west_italy_region = {
 	areas = {
-		lombardy_area
-		piedmont_area
+		transpadana_area
+		alpes_cottiae
+		liguria_septentrionalis_area
 		liguria_area
-		padan_area
+		cenomania_area
 		venetia_area
-		emilia_romagna_area
-		friuli_area
+		gallia_cispadana
+		aemilia_area
 	}
 }
 
 central_italy_region = {
 	areas = {
-		tuscany_area
-		siena_area
-		lazio_area
-		marche_area
-		abruzzi_area
-		naples_area
+		etruria_west
+		etruria_maritima_area
+		etruria_centralis_area
+		etruria_east
+		latium_area
+		latium_novum_area
+		picenum_area
+		frentania_area
+		campania_area
+		umbria_area
+		marsium_area
+		samnium_area
+		daunia_area
+		sabinia_area
 	}
 }
 
 east_italy_region = {
 	areas = {
-		corsica_sardinia_area
+		west_corsica_area
+		east_corsica_area
+		sardinia_caralitana_area
+		sardinia_noritana_area
+		sardinia_turritana_area
+		sardinia_falisca_area
 	}
 }
 
@@ -37,40 +51,49 @@ naples_region = {
 	areas = {
 		apulia_area
 		calabria_area
-		west_sicily_area
-		east_sicily_area
+		sicani_area
+		sicilia_west
+		syracuse_area
+		lucania_area
+		bruttium_area
+		salento_area
+		sicelia_area
+		sicilia_est
 	}
 }
 
 provence_region = {
 	areas = {
-		provence_area
-		savoy_dauphine_area
-		lyonnais_area
-		languedoc_area
-		toulouse_area
+		massalia_area
+		arelate_area
+		alpes_maritimae
+		vocontiorum_area
+		rhodanus_area
+		arecomicia_area
+		tectosagia_area
+		alsace_area
 	}
 }
 
 aquitaine_region = {
 	areas = {
-		guyenne_area
-		pyrenees_area
+		burdigala_area
+		aquitania_tertia
 		aquitania_prima_area
 	}
 }
 
 east_france_region = {
 	areas = {
-		ile_de_france_area
-		val_de_loire_area
+		lutetia_area
+		avaricum_area
 		venellica_area
 		armorica_area
 		liger_area
-		saintonge_area
-		massif_central_area
-		bourgogne_area
-		champagne_area
+		santonica_area
+		arvernica_area
+		haeduica_area
+		senonia_area
 		cebenna_mons_area
 		pictonica_area
 	}
@@ -78,72 +101,97 @@ east_france_region = {
 
 belgii_region = { #Belgium Check This
 	areas = {
-		wallonia_area
-		flanders_area
-		south_brabant_area
-		picardy_area
-		artois_area
+		remorum_area
+		belgica_prima
+		belgica_secunda
+		belgica_maritimae
 		ardennes_area
-		lorraine_area
+		lingonum_area
 	}
 }
 
 andalucia_region = {
 	areas = {
-		upper_andalucia_area
+		malaca_area
 		lower_guadalquivir_area
-		upper_guadalquivir_area
+		corduba_area
+		solorius_mons
+		regina_turdulorum_area
+		gades_area
+		hispalensis_area
+		astigitanus_area
+		tugiensis_saltus_area
+		baetis_area
 	}
 }
 
 portugal_region = {
 	areas = {
-		beieras_area
-		alentejo_area
+		oestriminis_inferior
+		lusitania_south_area
+		lassira_area
+		lusitania_west
+		scallabitanus_area
+		pacensis_area
 		macaronesia_area
-		extremadura_area
+		emeritanus_area
 		vettonia_area
 	}
 }
 
 aragon_region = {
 	areas = {
-		valencia_area
-		murcia_area
-		toledo_area
+		hispania_citerior_area
+		deitania_area
+		carthaginensis_area
+		hispania_ulterior_area
 		carpetania_area
+		edetania_area
 	}
 }
 
 castille_region = {
 	areas = {
-		euskal_area
-		extremadura_castilla_area
+		vasconensis_sea_area
+		vasconensis_area
+		cluniensis_area
 		baleares_area
-		aragon_area
-		catalonia_area
+		lacetania_area
+		pyrenaei_mons
+		etobesa_area
+		caesaraugustanus_area
+		numantia_area
+		emporia_area
+		iberus_area
 		tarraconensis_area
 	}
 }
 
 leon_region = {
 	areas = {
-		leon_area
-		galicia_area
-		castille_area
+		caesarobriga_area
+		avia_area
+		lucensis_area
+		bracarensis_area
+		gallaecia_east_area
+		gallaecia_west_area
+		segovia_area
+		cantabria_area
+		cantabria_sea_area
 		transduriana_area
 	}
 }
 
 austrian_circle_region = { #Raetia et Noricum
 	areas = {
-		tirol_area
-		austria_proper_area
-		inner_austria_area
+		alpes_tridentinus
+		vindobona_area
+		alpes_noricae
+		alpes_carnae
 		alpes_raetae_area
-		lower_bavaria_area
-		upper_bavaria_area
-		upper_swabia_area
+		raetia_secunda
+		noricum_area
+		raetia_prima
 	}
 }
 
@@ -153,23 +201,24 @@ lower_saxon_circle_region = {
 		holland_area
 		gelderland_area
 		frisia_area
-		holstein_area
-		eastphalia_area
+		treva_area
+		cheruscia_area
 		northern_saxony_area
-		weser_area
-		southern_saxony_area
-		east_thuringia_area
-		central_thuringia_area
+		caucia_major
+		dandutica_area
+		sudeti_montes
+		dandutica_occidentalis_area
 		west_thuringia_area
-		ems_area
-		westphalia_area
-		hesse_area
-		royal_bohemia_area
-		sudeti_montes_area
-		upper_franconia_area
+		caucia_minor
+		cattica_area
+		nertereansis_area
+		gabreta_hyle
+		boiohemum_area
+		nariscia_area
 		palatinate_bavaria_area
 		rhenus_area
-		lower_franconia_area
+		moenus_area
+		deserta_boiorum
 	}
 }
 
@@ -188,16 +237,15 @@ scandinavia_region = { ##Germania Scandza
 
 high_countries_region = { #Germania Minora
 	areas = {
-		franc_comte_area
-		upper_rhine_area
-		middle_rhine_area
-		alsace_area
-		switzerland_area
-		romandie_area
-		lower_rhine_area
-		north_brabant_area
-		lower_swabia_area
+		sequania_area
+		agri_decumates
+		treverorum_area
+		helvetica_area
+		alpes_graiae
+		germania_inferior
+		batavorum_area
 		germania_superior_area
+		mogontiacum_area
 	}
 }
 
@@ -206,7 +254,7 @@ polonia_major_region = {
 		wielkopolska_area
 		kujawy_area
 		central_poland_area
-		moravia_area
+		medoslanum_area
 		lower_silesia_area
 		upper_silesia_area
 		malopolska_area
@@ -215,18 +263,18 @@ polonia_major_region = {
 		podlasie_area
 		west_prussia_area
 		east_prussia_area
-		brandenburg_area
+		suebia_west
 		vorpommern_area
 		hinterpommern_area
-		lusatia_area
+		viadrus_area
 		polesie_area
 		lithuania_area
 		samogitia_area
 		curonia_area
 		east_slovakia_area
 		west_slovakia_area
-		mecklenburg_area
-		north_bohemia_area
+		rugia_area
+		asciburgius_mons
 	}
 }
 
@@ -283,6 +331,7 @@ west_balkan_region = {
 		west_adriatic_coast_area
 		west_serbia_area
 		south_serbia_area
+		istria_area
 	}
 }
 
@@ -291,6 +340,7 @@ magyar_plains_region = {
 		transdanubia_area
 		kisalfold_area
 		croatia_area
+		pannonia_superior
 		#west_transdanubia_area
 	}
 }

@@ -397,12 +397,11 @@ tasman_sea_area = {
 # France #
 ########################################
 
-champagne_area = {
-	2354 186 
+senonia_area = {
+	2354 186 1335
 }
 
-ardennes_area = {
-	3815 2331 5137 
+ardennes_area = { 
 }
 
 venellica_area = {
@@ -413,80 +412,88 @@ armorica_area = {
 	4008 2329 170 171 
 }
 
-val_de_loire_area = {
-	2362 391 184 
+avaricum_area = {
+	391 195 190 1384
 }
 
 liger_area = {
-	178 177 1388 195
+	178 177 1388 2362
 }
 
 pictonica_area = {
 	2234 180
 }
 
-picardy_area = {
-	89 167 3375 
+belgica_secunda = {
+	3375 1387 4186 2353 88
 }
 
-artois_area = {
-	88 63 2307 2353 
+belgica_maritimae = {
+	63 2307 89 167 87 2363
 }
 
-ile_de_france_area = {
-	2356 183 1335 1387 4186 3374 2330 1386
+lutetia_area = {
+	2356 183 3374 2330 1386 184
 }
 
-lorraine_area = {
+lingonum_area = {
 	187 188 189 2812 3376
 }
 
-bourgogne_area = {
+haeduica_area = {
 	191 192 2332 2365 5138 
 }
 
-franc_comte_area = {
-	193 2366 4228 5654 
+sequania_area = {
+	193 2366 4228 5654 1389
 }
 
-saintonge_area = {
-	172 2239 173 194 
+santonica_area = {
+	172 2239 173 194 357
 }
 
-guyenne_area = {
+burdigala_area = {
 	176 1381 175
 }
 
-pyrenees_area = {
-	179 3371 1385 1375 
+aquitania_tertia = {
+	179 3371 1385 2514
 }
 
-languedoc_area = {
-	3861 2361 200 5639 
+arecomicia_area = {
+	2361 200
 }
 
 cebenna_mons_area = {
-	203 1383 1323
+	1383 1323
 }
 
-provence_area = {
-	201 3377 3860 1512 202 
+massalia_area = {
+	201 3377
 }
 
-massif_central_area = {
-	190 199 1384 357 5139 
+arelate_area = {
+	202 1512
 }
 
-savoy_dauphine_area = {
-	2335 1382 204 205 5640 
+alpes_maritimae = {
+	3860 102
 }
 
-lyonnais_area = {
-	976 2385 
+arvernica_area = {
+	199 5139 203
 }
 
-toulouse_area = {
-	3862 196
+vocontiorum_area = {
+	2335 1382 205 5640 
+}
+
+rhodanus_area = {
+	976 2385 204 5639
+}
+
+tectosagia_area = {
+	3862 196 1375 3861
 }
 
 aquitania_prima_area = {
@@ -497,116 +504,219 @@ aquitania_prima_area = {
 # Low Countries #
 ########################################
 
-wallonia_area = {
-	91 93 1511 2364 
+remorum_area = {
+	1511 2364 3815 2331 5137
 }
 
-flanders_area = {
-	87 90 2363 
+belgica_prima = {
+	90 92 2360 2367 2451 91 93
 }
 
-south_brabant_area = {
-	92 2360 2367 2451 
+mogontiacum_area = {
+	78 2756 4005 4006
 }
 
-north_brabant_area = {
-	95 2449 2795 2370 96
+batavorum_area = {
+	95 2370 96
 }
 
 holland_area = {
-	97 98
+	
 }
 
 gelderland_area = {
-	99 1372 4004 
 }
 
 frisia_area = {
-	100 1371 2450 3863 
+	1371 99 1372 97 98
 }
 
 ########################################
 # Iberia #
 ########################################
 
-aragon_area = {
-	3368 211 3369 214 2473 1408 
+lacetania_area = {
+	3368
 }
 
-catalonia_area = {
-	1420 2369 197 212 2368
+numantia_area = {
+	2473 2566
+}
+
+caesaraugustanus_area = {
+	3369
+}
+
+iberus_area = {
+	214
+}
+
+pyrenaei_mons = {
+	1420 2368 211
+}
+
+emporia_area = {
+	197 212
 }
 
 tarraconensis_area = {
-	1284 181 213
+	181 213 2369
 }
 
-valencia_area = {
-	220 2565 3366 1845 
+etobesa_area = {
+	1284 1408
+}
+
+hispania_citerior_area = {
+	2565 3366
+}
+
+olcadia_area = {
+	2567 3365 3364
+}
+
+edetania_area = {
+	220
 }
 
 baleares_area = {
 	3367 333 2358 
 }
 
-euskal_area = {
-	3370 209 210 2514 2550 1421  
+vasconensis_sea_area = {
+	210 2550 1421
 }
 
-murcia_area = {
-	3363 3361 221 
+vasconensis_area = {
+	209 3370
+}
+
+cantabria_area = {
+	198
+}
+
+deitania_area = {
+	3363 3361 
+}
+
+carthaginensis_area = {
+	221 1845
 }
 
 lower_guadalquivir_area = {
-	3357 2311 224 2310 
+	224 
 }
 
-upper_guadalquivir_area = {
-	3358 225 3360 227 
+baetis_area = {
+	2311
 }
 
-upper_andalucia_area = {
-	222 3359 223 226 2314 1407 
+hispalensis_area = {
+	3357
 }
 
-castille_area = {
-	198 3354 215 1409 
+astigitanus_area = {
+	3358
 }
 
-extremadura_castilla_area = {
-	2566 2313 
+tugiensis_saltus_area = {
+	3360 227
+}
+
+regina_turdulorum_area = {
+	2310
+}
+
+corduba_area = {
+	225 3355
+}
+
+malaca_area = {
+	222 226
+}
+
+gades_area = {
+	2314 1407
+}
+
+solorius_mons = {
+	3359 223
+}
+
+segovia_area = {
+	3354 
+}
+
+cantabria_sea_area = {
+	1409
+}
+
+cluniensis_area = {
+	2313 215
 }
 
 carpetania_area = {
-	2567 217
+	217 2312
 }
 
-toledo_area = {
-	219 3362 3365 3364 2312 
+hispania_ulterior_area = {
+	3362 219
 }
 
-leon_area = {
-	208 3353 207 3352 
+caesarobriga_area = {
+	208 3353 
 }
 
-extremadura_area = {
-	3865 182 2448 3356 218 3355 
+avia_area = {
+	207 3352
 }
 
-galicia_area = {
-	2454 3351 143 206 3350 
+emeritanus_area = {
+	2448 3356 218 
 }
 
-alentejo_area = {
-	3347 229 3348 1423 2309 3346 228 
+bracarensis_area = {
+	3350 232
 }
 
-beieras_area = {
-	230 1508 231 2308 
+gallaecia_east_area = {
+	3351
+}
+
+gallaecia_west_area = {
+	206 143
+}
+
+lucensis_area = {
+	2454
+}
+
+pacensis_area = {
+	3348 2309
+}
+
+lassira_area = {
+	1423 3347 182
+}
+
+lusitania_south_area = {
+	3346 228
+}
+
+oestriminis_inferior = {
+	230 231 2308 
+}
+
+scallabitanus_area = {
+	2308 229
+}
+
+lusitania_west = {
+	1508
 }
 
 transduriana_area = {
-	232  3349 1422
+	3349 1422
 }
 
 macaronesia_area = {
@@ -614,7 +724,7 @@ macaronesia_area = {
 }
 
 vettonia_area = {
-	216 3864
+	216 3864 3865
 }
 
 ########################################
@@ -622,75 +732,159 @@ vettonia_area = {
 ########################################
 
 venetia_area = {
-	108 1858 107 112 1348 3382 
+	107 112 1348 3382 111 1355
 }
 
-friuli_area = {
-	111 1355 2452
+istria_area = {
+	2452 130 129
 }
 
-padan_area = {
-	109 2372 1345 1346 3866 
+cenomania_area = {
+	109 2372 1345 3381 108
 }
 
-lombardy_area = {
-	1390 104 1347 3381
+aemilia_area = {
+	1346 3866 106 113
 }
 
-piedmont_area = {
-	1376 103 1377 3703 68 5140 
+transpadana_area = {
+	1390 104 1347
 }
 
-tuscany_area = {
-	115 116 2563 1380 
+alpes_cottiae = {
+	1376 103 68
 }
 
-siena_area = {
-	117 3698 3697 3868 
+liguria_septentrionalis_area = {
+	1377 3703 5140
+}
+
+etruria_west = {
+	116 1380 3697
+}
+
+etruria_maritima_area = {
+	3698 3868 
+}
+
+etruria_centralis_area = {
+	117 2563
 }
 
 liguria_area = {
-	102 1513 101 2564 
+	1513 101 2564 115
 }
 
-corsica_sardinia_area = {
-	1247 2851 2852 127 2241 2242 
+west_corsica_area = {
+	2851 2852
 }
 
-west_sicily_area = {
-	125 2357 2853 2854
+east_corsica_area = {
+	1247
 }
 
-east_sicily_area = {
-	124 126 1413 2855 
+sardinia_caralitana_area = {
+	2242
+}
+
+sardinia_noritana_area = {
+	2241
+}
+
+sardinia_turritana_area = {
+	127
+}
+
+sardinia_falisca_area = {
+	2852
+}
+
+sicani_area = {
+	125 2357
+}
+
+sicelia_area = {
+	2854
+}
+
+sicilia_west = {
+	2853
+}
+
+syracuse_area = {
+	126 1413 2855 
+}
+
+sicilia_est = {
+	124
 }
 
 calabria_area = { # three provinces pending addition of Catanzaro
-	120 123 2534 2532
+	120 2534
 }
 
-naples_area = {
-	2562 2531 121
+bruttium_area = {
+	123
+}
+
+lucania_area = {
+	2532
+}
+
+campania_area = {
+	2562 2531
+}
+
+samnium_area = {
+	121
 }
 
 apulia_area = {
-	2856 3870 1285 
+	2856
 }
 
-abruzzi_area = {
-	2858 119 2857 122 2533
+salento_area = {
+	3870 1285
 }
 
-emilia_romagna_area = {
-	106 1378 113 114 3867 2453 
+frentania_area = {
+	2857 122
 }
 
-lazio_area = {
-	3869 2530 118 3699 1379 5641
+daunia_area = {
+	2533
 }
 
-marche_area = {
-	3702 105 1414 3700 3701 
+marsium_area = {
+	119
+}
+
+gallia_cispadana = {
+	1378 3867 2453 
+}
+
+latium_area = {
+	2530 5641
+}
+
+latium_novum_area = {
+	3869
+}
+
+sabinia_area = {
+	1379 
+}
+
+etruria_east = {
+	118
+}
+
+picenum_area = {
+	3702 105 3700 3701 2858
+}
+
+umbria_area = {
+	3699 1414 114
 }
 
 ########################################
@@ -802,7 +996,7 @@ scandiae_insulae_area = {
 }
 
 cimbricus_chersonesus = {
-	3720 15 67 2754 
+	3720 15 67
 }
 
 scandza_area = {
@@ -861,88 +1055,86 @@ subarctic_islands_area = {
 # Germany# # #  # # # ## #
 ########################################
 
-weser_area = {
-	54 55 1352 1357 1364 
+caucia_major = {
+	55 1352 1357 1364 3724 56
 }
 
-ems_area = {
-	56 973 3724 3725 3726 
+caucia_minor = {
+	973 3726 100 4004 2450 3863 86
 }
 
-westphalia_area = {
-	86 1369 2159 2187 2637 3813 
+cattica_area = {
+	1369 2187 3813 3730 2757 3725 3812 3731
 }
 
-lower_rhine_area = {
-	85 1253 1368 4009
+germania_inferior = {
+	85 1253 1368 4009 2795 2449
 }
 
-eastphalia_area = {
-	53 3729 61 49 3727 3728 2618 
+cheruscia_area = {
+	3729 61 49 3727 3728 3740
 }
 
-upper_franconia_area = {
-	3736 70 81 974 1360
+nariscia_area = {
+	3736 81 974 1361 3858 70
 }
 
-hesse_area = {
-	79 3730 3731 3812 2757
+nertereansis_area = {
+	3822 3738 2618 3741 71 79
 }
 
-lower_franconia_area = {
-	1366 58 3733 1365 3732 2616 1373 3735
+moenus_area = {
+	1366 58 3733 3734 2616 1373 3735 1365
 }
 
-middle_rhine_area = {
-	2756 1362 1363 78 1370 94 3854 
+treverorum_area = {
+	1362 1363 1370 94 3854 
 }
 
-upper_rhine_area = {
-	3378 1349 74 3654 3723 
+agri_decumates = {
+	3378 1349 74 3654 3723 77 2615
 }
 
 rhenus_area = {
-	51 2623 1367
+	51 2623 1367 2637 2159 3732
 }
 
 germania_superior_area = {
-	2622 69 2615
+	2622 69 75 1356 4007
 }
 
 alsace_area = {
-	75 4005 4006 1356 4007
 }
 
-lower_swabia_area = {
-	4010 3734 1358 80 77
+deserta_boiorum = {
+	4010 1358 80 1509 1360
 }
 
-upper_swabia_area = {
-	82 2614 3379 3814 
+raetia_prima = {
+	2614 3379 3814 65
 }
 
 northern_saxony_area = {
-	66 1350 52 3738 3740 
+	66 54 53 1350
 }
 
-west_thuringia_area = {
-	71 3737 3741 3822  
+west_thuringia_area = {  
 }
 
-central_thuringia_area = {
-	2813 3380 3739 3855 
+dandutica_occidentalis_area = {
+	2813 3380 3739 3737
 }
 
-east_thuringia_area = {
-	2619 3744 3850 3853 3768 
+sudeti_montes = {
+	2619 3850 3853 3851 3852 266 3855
 }
 
-southern_saxony_area = {
-	59 2617 3743 3851 3852 
+dandutica_area = {
+	59 2617 52 3744 3768 3743
 }
 
-lusatia_area = {
-	2620 60 4002 4003 
+viadrus_area = {
+	2620 60 4002 4003 72 2835 50 2844
 }
 
 lower_silesia_area = {
@@ -953,80 +1145,86 @@ upper_silesia_area = {
 	269 1278 3999 4000 
 }
 
-royal_bohemia_area = {
-	267 1277 4983 3858
+gabreta_hyle = {
+	267 1277
 }
 
-sudeti_montes_area = {
-	266 268 3749 3748
+boiohemum_area = {
+	268 3749 3748 4983
 }
 
-north_bohemia_area = {
+asciburgius_mons = {
 	270 2831 3750
 }
 
-moravia_area = {
+medoslanum_area = {
 	3752 84 265 3751 1510 
 }
 
-lower_bavaria_area = {
-	64 1351 3746 1006 3856 
+raetia_secunda = {
+	64 1351 1006 3856 82
 }
 
-upper_bavaria_area = {
-	65 76 3857 4011 
+noricum_area = {
+	3746 4011
 }
 
 palatinate_bavaria_area = {
-	1509 1361
 }
 
-holstein_area = {
-	44 45 977 1252 3722 13 3721
+treva_area = {
+	44 45 977 1252 3722 13 3721 2754
 }
 
-mecklenburg_area = {
-	46 3819 3818 57 3820
+rugia_area = {
+	46 3818 57 3817 2843 47 3821
 }
 
 vorpommern_area = {
-	3817 2843 47 3821 72
 }
 
 hinterpommern_area = {
-	2844 2847 2849 2850 48 264 
+	2847 2849 2850 48 264 
 }
 
-brandenburg_area = {
-	2835 50 3745 4015 2621 1353
+suebia_west = {
+	3745 4015 2621 1353 3820 3819
 }
 
-tirol_area = {
-	62 73 110 2625 3322 
+alpes_tridentinus = {
+	62 73 110 2625 3322 1858 3857
 }
 
-austria_proper_area = {
+vindobona_area = {
 	83 134
 }
 
-inner_austria_area = {
-	128 132 2383 2384 3747
+pannonia_superior = {
+	132 2384
+}
+
+alpes_carnae = {
+	62 128 3747
+}
+
+alpes_noricae = {
+	76 2383
 }
 
 carinthia_area = {
-	129 130 4034
+	4034
 }
 
-switzerland_area = {
-	165 1254 1448
+helvetica_area = {
+	165 1254 1448 1374 2359
 }
 
 alpes_raetae_area = {
 	166 2611 185 2624
 }
 
-romandie_area = {
-	1374 1389 2334 2359 
+alpes_graiae = {
+	205 2334
 }
 
 ########################################
