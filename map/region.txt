@@ -143,6 +143,7 @@ aragon_region = {
 	areas = {
 		hispania_citerior_area
 		deitania_area
+		olcadia_area
 		carthaginensis_area
 		hispania_ulterior_area
 		carpetania_area
@@ -251,28 +252,25 @@ high_countries_region = { #Germania Minora
 
 polonia_major_region = {
 	areas = {
-		wielkopolska_area
-		kujawy_area
-		central_poland_area
+		burgundica_area
+		vistula_area
+		suebia_east
 		medoslanum_area
 		lower_silesia_area
 		upper_silesia_area
-		malopolska_area
-		sandomierskie_area
+		carrodumum_area
 		mazovia_area
-		podlasie_area
 		west_prussia_area
-		east_prussia_area
+		transvistuliana_area
 		suebia_west
 		vorpommern_area
-		hinterpommern_area
+		gothiscandza
 		viadrus_area
-		polesie_area
-		lithuania_area
-		samogitia_area
+		hyperborea_area
+		glaesum_area
 		curonia_area
-		east_slovakia_area
-		west_slovakia_area
+		sarmatici_mons
+		suebia_transdanuvia
 		rugia_area
 		asciburgius_mons
 	}
@@ -324,36 +322,55 @@ ireland_region = {
 
 west_balkan_region = {
 	areas = {
-		bosnia_area
-		east_adriatic_coast_area
+		daesitiatia_area
+		praevalitana_area
+		praevalitana_interior
 		#slavonia_area
 		carinthia_area
-		west_adriatic_coast_area
-		west_serbia_area
-		south_serbia_area
+		liburnia_area
+		praevalitana_interior
 		istria_area
+		dalmatia_area
+		dalmatia_interior
+		alpes_dalmatia
+		alpes_dinaricae
+		sarmates_area
 	}
 }
 
 magyar_plains_region = {
 	areas = {
-		transdanubia_area
-		kisalfold_area
-		croatia_area
+		pannonia_inferior
+		pannonia_prima
+		pannonia_transdanubia
+		pannonia_secunda
+		scordiscia_area
 		pannonia_superior
-		#west_transdanubia_area
+		pannonia_savia
+		#west_pannonia_inferior
 	}
 }
 
 east_balkan_region = {
 	areas = {
-		north_bulgaria_area
-		south_bulgaria_area
-		dobrogea_area
-		north_serbia_area
-		east_serbia_area
+		dacia_ripensis
+		thracia_area
+		thracia_east_area
+		rhodope_mons_area
+		scythia_minor
+		pontus_sinistrus_area
+		peucinitis_area
+		ister_area
+		moesia_inferior
+		moesia_superior
+		dardania_area
+		odryssia_area
 		europa_area
 		paeonia_area
+		oldenoi_area
+		rhodope_area
+		dacia_mediterranea
+		haemus_mons
 	}
 }
 
@@ -362,46 +379,74 @@ norwegian_region = { ##Propontis
 		prusa_area
 		iznik_area
 		thrace_area
+		hellespont_area
 	}
 }
 
 south_carpathia_region = { #Dacia
 	areas = {
-		muntenia_area
-		oltenia_area
-		west_muntenia_area
-		alfold_area
-		eszaki_area
-		transylvania_area
-		north_transylvania_area
-		west_transylvania_area
+		dacia_maluensis
+		dacia_inferior
+		montes_serrorum
+		tisia_area
+		dacia_porolissensis
+		dacia_superior
+		dacia_apulensis
+		north_dacia_superior
+		dacia_alutensis_area
 		rus_carpathian_area
-		red_ruthenia_area
+		biessia_area
+		dacia_superior
+		carpatae_area
+		alpes_bastarnicae
 	}
 }
 
 bohemia_region = { ##Macedonia
 	areas = {
-		epirus_area
-		north_macedonia_area
-		albania_area
-		macedonia_area
+		macedonia_interior_area
+		mollosia_area
+		epirus_nova
+		chaonia_area
+		pelagonia_area
+		mygdonia_macedonia_area
+		chalcidice_area
+		macedonia_secunda
+		thesprotia_area
 	}
 }
 
 greece_region = {
 	areas = {
-		morea_area
+		laconica_area
 		thessalia_area
-		aegean_area
+		kos_area
+		perrhaebia_area
+		magnesia_area
+		aetolia_area
+		acarnania_area
+		ionian_islands
+		boeotia_area
+		phocis_area
+		euboea_inferior
+		attica_area
+		corinthia_area
+		argolis_area
+		achaea_area
+		messenia_area
 		#west_thrace_area
 	}
 }
 
 danish_region = { ##Archipelagos
 	areas = {
-		aegean_area
-		crete_area
+		kos_area
+		gortyn_area
+		knossos_area
+		lesbos_area
+		rhodiorum_area
+		lesbos_et_chios
+		archipelagos_area
 	}
 }
 
@@ -767,23 +812,37 @@ lithuania_region = { ##Albania
 
 halych_volhynia_region = { ##Sarmatia Europaea
 	areas = {
-		podolia_volhynia_area
-		germano_scythia_area
-		black_ruthenia_area
-		moldavia_area
-		basarabia_area
-		north_moldavia_area
-		hypania_area
-		east_dniepr_area
+		rhodes_area
+		germano_sarmatia
+		scythia_harpitis_area
+		pyretus_area
+		tyras_area
+		macroremnus_area
+		scythia_thissamatica
+		borysthenes_superior
+		sarmatia_deserta_area
+		stavanica_area
 		budinia_area
+		daco_sarmatia
+		tiarantus_area
+		scythia_aroteria_area
+		bodenica_area
+		axiaces_area
+		getarum_solitudo_area
+		hypania_area
+		neuri_area
 		#volodymyr_area
 	}
 }
 
 east_carpathia_region = { ##Cimmeria
 	areas = {
-		crimea_area
+		tauroscythia_area
+		chersonesus_heracle
+		chersonesus_taurica
+		chersonesus_zenonis
 		hylaea_area
+		cimmero_scythia
 	}
 }
 
@@ -802,9 +861,15 @@ volga_region = { #Tanaica
 crimea_region = { ##Borysthenia NOT Crimea
 	areas = {
 		sloboda_ukraine_area
-		zaporizhia_area
-		cherson_area
-		west_dniepr_area
+		acesinus_area
+		sarmatia_maritima_area
+		borysthenes_inferior
+		borysthenes_superior
+		hypacaris_area
+		panticapes_area
+		gerrhae_area
+		transborysthenia_area
+		gelonia_area
 		#odesa_area
 		#donets_area
 		#kryvbas_area

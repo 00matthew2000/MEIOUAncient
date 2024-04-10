@@ -1134,15 +1134,13 @@ dandutica_area = {
 }
 
 viadrus_area = {
-	2620 60 4002 4003 72 2835 50 2844
+	2620 60 72 2835 50 2844
 }
 
-lower_silesia_area = {
-	2561 2633 1359 4001 
+lower_silesia_area = { 
 }
 
 upper_silesia_area = {
-	269 1278 3999 4000 
 }
 
 gabreta_hyle = {
@@ -1154,11 +1152,11 @@ boiohemum_area = {
 }
 
 asciburgius_mons = {
-	270 2831 3750
+	269 270 2831 3750 3752 84
 }
 
 medoslanum_area = {
-	3752 84 265 3751 1510 
+	265 3751 1510 
 }
 
 raetia_secunda = {
@@ -1177,18 +1175,18 @@ treva_area = {
 }
 
 rugia_area = {
-	46 3818 57 3817 2843 47 3821
+	46 3818 57 3817 2843 47 3820
 }
 
 vorpommern_area = {
 }
 
-hinterpommern_area = {
-	2847 2849 2850 48 264 
+gothiscandza = {
+	2847 2849 48 2355 2845 4025 43
 }
 
 suebia_west = {
-	3745 4015 2621 1353 3820 3819
+	3745 4015 2621 1353 3819 3821
 }
 
 alpes_tridentinus = {
@@ -1212,7 +1210,6 @@ alpes_noricae = {
 }
 
 carinthia_area = {
-	4034
 }
 
 helvetica_area = {
@@ -1231,156 +1228,334 @@ alpes_graiae = {
 # South Eastern Europe # # # ## #
 ########################################
 
-macedonia_area = {
-	3871 2387 147
+mygdonia_macedonia_area = {
+	147
 }
 
-north_macedonia_area = {
-	148 1401 
+macedonia_secunda = {
+	2387
+}
+
+macedonia_interior_area = {
+	1401 
+}
+
+pelagonia_area = {
+	148
 }
 
 paeonia_area = {
-	2137 2124 3779
+	2137 2124
 }
 
-albania_area = {
-	2374 2373 3778 805
+oldenoi_area = {
+	3779
+}
+
+mollosia_area = {
+	3778
+}
+
+chaonia_area = {
+	805
+}
+
+epirus_nova = {
+	2373 2374
 }
 
 thessalia_area = {
-	146 3872 149 1434 3383 3385 
+	149 
 }
 
-epirus_area = {
-	142 154 1399 1436 144
+attica_area = {
+	146 
 }
 
-morea_area = {
-	1425 3873 145 3384 3874 
+euboea_inferior = {
+	1434
 }
 
-europa_area = {
-	3876 3877 2501 155
+boeotia_area = {
+	3383
+}
+
+phocis_area = {
+	3872
+}
+
+magnesia_area = {
+	3385
+}
+
+ionian_islands = {
+	142 1436
+}
+
+thesprotia_area = {
+	144
+}
+
+acarnania_area = {
+	154
+}
+
+aetolia_area = {
+	1399
+}
+
+laconica_area = {
+	145 
+}
+
+achaea_area = {
+	1425
+}
+
+messenia_area = {
+	3873
+}
+
+corinthia_area = {
+	3874
+}
+
+argolis_area = {
+	3384
+}
+
+odryssia_area = {
+	3876 4806
+}
+
+rhodope_area = {
+	2501
+}
+
+chalcidice_area = {
+	155
 }
 
 thrace_area = {
-	151 1402 2238
+	151 1402 
 }
 
-muntenia_area = {
-	3785 3786 3783 3784 2378 
+hellespont_area = {
+	2238 3877
 }
 
-west_muntenia_area = {
-	2377 161 1398
+dacia_maluensis = {
+	3785 3783 3784 2378 161
 }
 
-oltenia_area = {
+carpatae_area = {
+	2377 3786
+}
+
+montes_serrorum = {
+	1398
+}
+
+dacia_inferior = {
 	2376 3787
 }
 
-moldavia_area = {
-	2379 3791 1269 
+pyretus_area = {
+	1269 
 }
 
-north_moldavia_area = {
-	2236 3793
+alpes_bastarnicae = {
+	3792 3791
 }
 
-basarabia_area = {
-	3794 160 1400 2626 
+macroremnus_area = {
+	2236
 }
 
-north_bulgaria_area = {
-	157 2382 150 1848 3781
+tyras_area = {
+	3794 2626 
 }
 
-south_bulgaria_area = {
-	1426 1591 5143 3780 1427 4806 
+getarum_solitudo_area = {
+	1400
 }
 
-dobrogea_area = {
-	2381 159 3782 2380 
+dacia_ripensis = {
+	2382
 }
 
-east_slovakia_area = {
-	1406 3755 3754 3770
+moesia_inferior = {
+	3781
 }
 
-west_slovakia_area = {
-	1276 1272 3753 1274 5135 
+ister_area = {
+	157 150
+}
+
+haemus_mons = {
+	1848
+}
+
+thracia_area = {
+	1591 3780 
+}
+
+rhodope_mons_area = {
+	5143
+}
+
+thracia_east_area = {
+	1427
+}
+
+dacia_mediterranea = {
+	1426
+}
+
+scythia_minor = {
+	159 3782 
+}
+
+peucinitis_area = {
+	2380
+}
+
+pontus_sinistrus_area = {
+	2381
+}
+
+sarmatici_mons = {
+	3755 3754 2536 262 1276 3753
+}
+
+suebia_transdanuvia = {
+	1272 1274 5135 3770
 }
 
 rus_carpathian_area = {
-	1282 162
 }
 
-transylvania_area = {
-	2375 158 
+dacia_superior = {
+	2375 1405 3790
 }
 
-north_transylvania_area = {
-	1405 3790 
+dacia_apulensis = {
+	158 3788
 }
 
-west_transylvania_area = {
-	3788 1404 3789 4513
+north_carpatae_area = { 
 }
 
-south_serbia_area = {
-	140 3777 
+dacia_alutensis_area = {
+	1404 4513
 }
 
-west_serbia_area = {
-	1397 1396 1424 2237 5142
+perrhaebia_area = {
+	3871
 }
 
-east_serbia_area = {
-	156 3774 3776 4532 
+praevalitana_interior = {
+	5142 140 3777
 }
 
-north_serbia_area = {
-	141 2612 3773 4520 4524 3775
+sarmates_area = {
+	1397 3773
 }
 
-bosnia_area = {
-	2392 139 1767
+dardania_area = {
+	156 3775
 }
 
-croatia_area = {
-	131 152 2390 1450 2389 2391 1268
+moesia_superior = {
+	141 4524 3774 3776 4532
 }
 
-east_adriatic_coast_area = {
-	137 138 1392
+daesitiatia_area = {
+	139
 }
 
-west_adriatic_coast_area = {
-	136 2571 1403 2388
+alpes_dinaricae = {
+	2392 1392 1396
 }
 
-alfold_area = {
-	1859 2846 4510 
+scordiscia_area = {
+	1450 2391 4520 2612
 }
 
-eszaki_area = {
-	1271 1273 2275 3771 3772 
+dalmatia_interior = {
+	1268 1767
 }
 
-kisalfold_area = {
+pannonia_savia = {
+	152 2389
+}
+
+alpes_dalmatia = {
+	131
+}
+
+praevalitana_area = {
+	137 138 2237 1424
+}
+
+liburnia_area = {
+	2571 1403 4034
+}
+
+dalmatia_area = {
+	136 2388
+}
+
+tisia_area = {
+	1859 2846 4510 3771 3772 1273
+}
+
+dacia_porolissensis = {
+	2275 1282 162 1271 3789
+}
+
+pannonia_transdanubia = {
 	1267 1270 1275 3901 
 }
 
-transdanubia_area = {
-	135 2436 133 3769 153 
+pannonia_inferior = {
+	133 3769 
 }
 
-aegean_area = {
-	164 320 2572 1435 3875
+pannonia_secunda = {
+	153 2390
 }
 
-crete_area = {
-	163 2749 
+pannonia_prima = {
+	2436 135
+}
+
+kos_area = {
+	2572
+}
+
+archipelagos_area = {
+	164
+}
+
+lesbos_et_chios = {
+	1435
+}
+
+rhodiorum_area = {
+	320
+}
+
+lesbos_area = {
+	3875
+}
+
+gortyn_area = {
+	163 
+}
+
+knossos_area = {
+	2749
 }
 
 ########################################
@@ -1391,60 +1566,62 @@ estonia_ingria_area = {
 	36 3400 3766 3767 
 }
 
-central_poland_area = {
-	263 1531 2399 2400 
+suebia_east = {
+	1531 2399 2561 2633 1359 4001 4002 4003
 }
 
 livonia_area = {
 	37 273 1263 1430 3399 3765 
 }
 
-curonia_area = {
-	38 39 1264 1432 
+burgundica_area = {
+	254 2401 2834 3756 264 2850
 }
 
-east_prussia_area = {
-	40 41 42 4024
+curonia_area = {
+}
+
+transvistuliana_area = {
+	42 1391 271 283 3759 2506 3762 2535
 }
 
 west_prussia_area = {
-	43 1391 1844 2355 2845 4025
 }
 
-wielkopolska_area = {
-	254 2401 2834 3756
+carrodumum_area = {
+	2832 3757 1279 1278 3999 4000 263 2400
 }
 
-malopolska_area = {
-	262 2536 2832 3757
+tiarantus_area = {
+	3793
 }
 
-sandomierskie_area = {
-	259 1279 2833 
+vistula_area = {
+	2814 255 2815 2398 1844 3758 257 256 259 4026 2816
 }
 
-kujawy_area = {
-	2814 255 2815 2398 
+biessia_area = {
+	258 2833 1406
 }
 
-red_ruthenia_area = {
-	258 260 3792
+germano_sarmatia = {
+	1281 2507 1429 3761
 }
 
-germano_scythia_area = {
-	1281 2507 2535
+stavanica_area = {
+	2838
 }
 
-podolia_volhynia_area = {
-	1429 1433 2838 3761
+rhodes_area = {
+	1433 260
 }
 
-polesie_area = {
-	2836 2837 2839 3764 
+daco_sarmatia = {
+	2626
 }
 
-black_ruthenia_area = {
-	1394 1395 
+scythia_harpitis_area = { 
+	2379 160
 }
 
 white_ruthenia_area = {
@@ -1452,27 +1629,42 @@ white_ruthenia_area = {
 }
 
 mazovia_area = {
-	256 257 2816 3758 4026 
 }
 
-podlasie_area = {
-	271 283 3759 3763 2506 3762
+scythia_aroteria_area = {
+	261
 }
 
-lithuania_area = {
-	272 296 3398 1280 
+hyperborea_area = {
+	272 296 3398 1280 3763 3764 2836 2837 1264 3397 1395 4024
 }
 
-west_dniepr_area = {
-	2848 4943 299 311
+hypania_area = {
+	2848 311
 }
 
-east_dniepr_area = {
-	261 280 4944 
+gelonia_area = {
+	4943
+}
+
+borysthenes_inferior = {
+	299
+}
+
+borysthenes_superior = {
+	280 
+}
+
+neuri_area = {
+	4944
 }
 
 budinia_area = {
-	289 2840
+	289 2840 2839
+}
+
+sarmatia_deserta_area = {
+	1394
 }
 
 sloboda_ukraine_area = {
@@ -1487,32 +1679,72 @@ maeotis_area = {
 	286 1299 3795
 }
 
-crimea_area = {
-	282 1344 2274 2573 
+tauroscythia_area = {
+	282 2573 
+}
+
+chersonesus_heracle = {
+	2274
+}
+
+chersonesus_taurica = {
+	1344
+}
+
+chersonesus_zenonis = {
+	2573
 }
 
 hylaea_area = {
-	285 1431
+	1431
 }
 
-zaporizhia_area = {
-	300 4018 4942
+cimmero_scythia = {
+	285
 }
 
-cherson_area = {
-	2537 4019 4021 
+acesinus_area = {
+	4942
 }
 
-hypania_area = {
-	3760 284 276
+transborysthenia_area = {
+	4018
+}
+
+gerrhae_area = {
+	300
+}
+
+sarmatia_maritima_area = {
+	4019 
+}
+
+panticapes_area = {
+	2537
+}
+
+hypacaris_area = {
+	4021
+}
+
+scythia_thissamatica = {
+	284
+}
+
+axiaces_area = {
+	3760
+}
+
+bodenica_area = {
+	276
 }
 
 gomel_area = {
 	381 297
 }
 
-samogitia_area = {
-	1265 3397
+glaesum_area = {
+	1265 38 39 1432 40 41
 }
 #Opolye
 
