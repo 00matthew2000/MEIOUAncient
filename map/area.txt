@@ -812,7 +812,11 @@ sicilia_west = {
 }
 
 syracuse_area = {
-	126 1413 2855 
+	1413 2855 
+}
+
+mediterranea_insulae = {
+	2528 126
 }
 
 sicilia_est = {
@@ -1571,7 +1575,7 @@ suebia_east = {
 }
 
 livonia_area = {
-	37 273 1263 1430 3399 3765 
+	37 273 1263 1430 3399 3765 1264
 }
 
 burgundica_area = {
@@ -1625,7 +1629,7 @@ scythia_harpitis_area = {
 }
 
 white_ruthenia_area = {
-	275 1393 2841 2842 
+	275 1393 2841 2842 2837
 }
 
 mazovia_area = {
@@ -1636,7 +1640,7 @@ scythia_aroteria_area = {
 }
 
 hyperborea_area = {
-	272 296 3398 1280 3763 3764 2836 2837 1264 3397 1395 4024
+	272 296 3398 1280 3763 3764 2836 3397 1395 4024
 }
 
 hypania_area = {
@@ -1644,7 +1648,7 @@ hypania_area = {
 }
 
 gelonia_area = {
-	4943
+	289
 }
 
 borysthenes_inferior = {
@@ -1660,23 +1664,51 @@ neuri_area = {
 }
 
 budinia_area = {
-	289 2840 2839
+	311 298
+}
+
+amadocia_area = {
+	4943
 }
 
 sarmatia_deserta_area = {
-	1394
+	1394 2840 2839
 }
 
-sloboda_ukraine_area = {
-	2545 4110
+melanchlenia_area = {
+	2545
 }
 
-azov_area = {
-	1298 302 4615 
+sarmatia_east = {
+	1287
 }
 
-maeotis_area = {
-	286 1299 3795
+sarmatia_west = {
+	4110
+}
+
+exobygica_area = {
+	4615 
+}
+
+lower_tanais = {
+	1298
+}
+
+aspamithareia_area = {
+	302
+}
+
+cimmerian_bosporus = {
+	1299
+}
+
+sindica_area = {
+	3795
+}
+
+coretus_area = { 
+	286
 }
 
 tauroscythia_area = {
@@ -1784,12 +1816,40 @@ beloozero_area = {
 	291 312 3992 
 }
 
-astrakhan_area = {
-	1293 1309 1310 4114 303 
+hippicia_area = {
+	1293 
 }
 
-lower_don_area = {
-	1287 1296 1297 4020 4111
+ptestianica_area = {
+	4114
+}
+
+mithridatis_regio = {
+	303
+}
+
+valica_area = {
+	1309
+}
+
+scythia_confluentia_area = {
+	1310
+}
+
+upper_tanais = {
+	1297
+}
+
+idraeium_area = {
+	1296
+}
+
+stumica_area = {
+	4111
+}
+
+sargatica_area = {
+	4020
 }
 
 kazan_area = {
@@ -1805,7 +1865,11 @@ galich_area = {
 }
 
 nogai_area = {
-	3287 2443 2444 
+	3287 2444 
+}
+
+nesietis_regio = {
+	2443
 }
 
 perm_area = {
@@ -1817,12 +1881,29 @@ pomor_area = {
 }
 
 briansk_area = {
-	298 313 1194 1305 305 
+	313 1305 
 }
 
-majar_area = {
-	287 1304 4941
+thyssagetae_area = {
+	1194
 }
+
+scythia_therion_area = {
+	305
+}
+
+sarmatia_jaxamatica = {
+	1304
+}
+
+tyrambica_area = {
+	287
+}
+
+sarmatia_maeotica = {
+	4941
+}
+
 onega_area = {
 	3994 4017 3401
 }
@@ -1836,7 +1917,7 @@ cambysene_area = {
 }
 
 east_georgia_area = {
-	422 423 2576 3797 5075 5076 
+	422 423 2576 5075 5076 
 }
 
 west_georgia_area = {
@@ -1852,19 +1933,35 @@ meskheti_area = {
 }
 
 shirvan_area = {
-	3811 424 3810 3090 3823
+	3811 3810 3090 3823
+}
+
+caucasus_east = {
+	424
 }
 
 shemakha_area = {
 	1317 3809 
 }
 
-west_circassia_area = {
-	3796 1302 999 3795 2549
+zychia_area = {
+	3796 999 2549
 }
 
-east_circassia_area = {
-	3639 2578 995 1303
+siracia_area = {
+	1302
+}
+
+asian_sarmatia = {
+	1303
+}
+
+gerrus_area = {
+	2578
+}
+
+sarmatia_hyrcania_area = {
+	3639
 }
 
 west_armenia_area = {
@@ -1883,8 +1980,20 @@ upper_armenia_area = {
 	1442 3803 3395 
 }
 
-derbant_area = {
-	425 2579 2656 1009 
+scythia_caspica = {
+	425
+}
+
+ceraunian_mons_area = {
+	2579 1009 3797
+}
+
+caucasus_mons = {
+	995
+}
+
+olondaeica_area = {
+	2656
 }
 
 ########################################
@@ -2120,8 +2229,12 @@ oasis_area = {
 	2661 1210 2497
 }
 
-tripolitania_area = {
-	355 2662 354 2859 
+tripolitania_east = {
+	2662 354 
+}
+
+syrtica_area = {
+	355
 }
 
 cyrenaica_area = {
@@ -2129,43 +2242,79 @@ cyrenaica_area = {
 }
 
 fezzan_area = {
-	2937 2938 2939 1524 1148 2657 1543 
+	2938 2939 1524 1148 2657 1543 
 }
 
-djerba_area = {
-	2528 2663 2999 4068 
+deserta_numidia = {
+	2937
 }
 
-kairwan_area = {
-	2315 2867 2868 353 
+emporia_area = {
+	4068 2867
 }
 
-tunis_area = {
-	2862 341 351 2860 1415 
+tripolitania_west = {
+	2663 2859
 }
 
-kabylia_area = {
-	339 2863 2935 4119 
+militiana_area = {
+	2999
 }
 
-aures_area = {
-	340 1515 2861 2934 
+byzacium_area = {
+	2315 2868 353 
 }
 
-algiers_area = {
-	350 338 2864 2933 
+carthago_area = {
+	2862 341 
 }
 
-tlemcen_area = {
-	337 1522 2865 2866 5101 
+zeugitana_area = {
+	1415
 }
 
-atlas_area = {
-	1516 1523 2932 5102 5103 3742 
+bagrada_area = {
+	2860 351
+}
+
+numidia_maritimae = {
+	2863 2861 340
+}
+
+cirta_area = {
+	1515 4119
+}
+
+thevestis_area = {
+	2934
+}
+
+cartenna_area = {
+	350 338 
+}
+
+mauretania_sitifensis = {
+	2864 339 2935
+}
+
+caesariensis_east = {
+	5101 2933
+}
+
+madethubadus_area = {
+	1516 1523 5102 5103 3742 
+}
+
+caesariensis_west = {
+	2932 337
 }
 
 north_saharan_area = {
-	2936 2658 2659 5106 
+	2658 2659 5106 
+}
+
+gaetulia = {
+	2936
 }
 
 tafilalt_area = {
@@ -2173,31 +2322,43 @@ tafilalt_area = {
 }
 
 sus_area = {
-	1340 1585 2896 2943 5105 2371
+	2943 5105 2371
 }
 
-anfa_area = {
-	2944 2940 2869 1532 4073 2962 
+lixiane_area = {
+	1340 1585
 }
 
-tanja_area = {
+mauretania_ulterior = {
+	2944 1532 2962 2896
+}
+
+mauretania_superior = {
+	4073 2962 2869 4072
+}
+
+tingitana_west = {
 	2942 334 1533 2971 
 }
 
-marrekesh_area = {
-	4075 347 4072 344 4074 
+tingitana_east = {
+	344 2940 4070 336
 }
 
-fez_area = {
-	343 336 2941
+atlas_mons = {
+	4075 4074 347
+}
+
+siga_area = {
+	4655 1534 2866 2865 1522
 }
 
 deserta_mauretania_area = {
-	5104 2972 4070
+	5104 2972 336 
 }
 
-elrif_area = {
-	335 1534 4069 4071 4655 
+diur_mons = {
+	4069 4071 2941 335
 }
 
 arguin_area = {
@@ -2220,7 +2381,7 @@ menabe_area = {
 	3893 1228 1521 3895 3894 5049 
 }
 
-taomasina_area = {
+taodendebre_area = {
 	1519 1227 3898 3897 3896 5656 
 }
 
@@ -2457,7 +2618,11 @@ tooro_area = {
 }
 
 wolof_area = {
-	1499 2882 1114 2194 2871 2904
+	1114 2194 2871
+}
+
+daradae_area = {
+	2904 1499 2882
 }
 
 lower_gambia_area = {
@@ -2473,11 +2638,15 @@ geba_area = {
 }
 
 mali_area = {
-	1525 2766 2910 5014 1121
+	1525 2766 5014 1121
 }
 
-bambuk_area = {
-	2909 5030 2774
+gurma_area = {
+	2910 1498 5030
+}
+
+acha_area = {
+	2774
 }
 
 ghana_area = {
@@ -2485,27 +2654,47 @@ ghana_area = {
 }
 
 diara_area = {
-	348 2965 1498 5032 5096 5251 2964
+	348 5032 5096 5251 2964
 }
 
-segou_area = {
-	2764 1541 2763
+tegazza_area = {
+	2965 2909
 }
 
-masina_area = {
-	2913 5082 1223 1119 1497 2908
+aukar_area = {
+	2764 2763
+}
+
+dendebre_area = {
+	1119 1497
+}
+
+stachirae_area = {
+	2913 1541
+}
+
+zanfara_area = {
+	5082 1223
 }
 
 saharan_bend_area = {
 	2918 2920 5256 5496 5094
 }
 
-songhai_area = {
-	1117 2922 2917 2919 1544
+casena_area = {
+	1117 2922 2919
+}
+
+dogo_area = {
+	1544 2917 2908
 }
 
 haayre_area = {
-	2907 2959 5254 
+	2907 2959 
+}
+
+hausa_area = {
+	5254
 }
 
 jallon_area = {
@@ -2560,12 +2749,12 @@ east_mossi_area = {
 	1105 2902 2956 2903 5088 1127 5087
 }
 
-borgu_area = {
-	2780 2960 2961 5262 
+kainji_area = {
+	2780 2960 5262 
 }
 
 kwande_area = {
-	1129 2781 2963 5272 2890 2891
+	1129 2781 2963 5272 2890 2891 2961
 }
 
 dahomey_area = {
@@ -2585,35 +2774,35 @@ ife_area = {
 }
 
 ekiti_area = {
-	2887 5258 5259 5261 2888
+	2887 5259 2888
 }
 
 lekki_area = {
 	2885 4995 4996 4994
 }
 
-west_niger_area = {
-	2880 5092 2788
+nigir_area = {
+	5092 2788 4986 1561
 }
 
 east_niger_area = {
-	1552 1561 4987 4990
+	1552 4987 4990
 }
 
 niger_delta_area = {
-	1134 1549 2769 2776 2790 4985 4986
+	1134 1549 2769 2776 2790 4985
 }
 
-niger_rapids_area = {
-	2794 2895 1135
+nok_area = {
+	2895 1135
 }
 
-kaduna_area = {
-	1551 1502 2884
+adamawa_area = {
+	1551 1502 2880 2794 5258 5261
 }
 
-plateau_area = {
-	2927 2926 1556 2789 1557 
+gobir_area = {
+	1556 2789 1557 2884
 }
 
 sokoto_area = {
@@ -2621,15 +2810,19 @@ sokoto_area = {
 }
 
 kano_area = {
-	1554 5091 2925 1553 5093 1137
+	1554 5091 2925 1553 5093 1137 2926
 }
 
 daura_area = {
-	1546 2924 2929 1559
+	1546 2929 1559
+}
+
+biram_area = {
+	2924
 }
 
 west_chad_area = {
-	1133 2950 2948 1560 4992
+	1133 2950 2948 1560 4992 2927
 }
 
 east_chad_area = {
@@ -2653,7 +2846,11 @@ south_darfur_area = {
 }
 
 western_sahara_area = {
-	1547 2504 1115 4115 1116 2923  
+	1547 2504 1115 4115 2923  
+}
+
+memea_area = {
+	1116
 }
 
 azbin_area = {
@@ -2732,7 +2929,7 @@ cape_of_good_hope_area = {
 	1163 2881 1161 1582 5231 
 }
 
-south_africa_plateau_area = {
+south_africa_gobir_area = {
 	1167 1173 1584 1171 1160 
 }
 

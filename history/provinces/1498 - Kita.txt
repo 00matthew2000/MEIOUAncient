@@ -1,13 +1,14 @@
 capital = "Kita"
 trade_goods = cotton
-culture = maninka
-religion = sunni
+culture = bura
+religion = west_african_religion
 base_tax = 2
 base_production = 0
 base_manpower = 0
 native_size = 70
 native_ferocity = 5
 native_hostileness = 9
+is_city = yes
 discovered_by = soudantech
 discovered_by = sub_saharan
 200.1.1 = { 

@@ -72,6 +72,7 @@ provence_region = {
 		arecomicia_area
 		tectosagia_area
 		alsace_area
+		alpes_graiae
 	}
 }
 
@@ -242,7 +243,6 @@ high_countries_region = { #Germania Minora
 		agri_decumates
 		treverorum_area
 		helvetica_area
-		alpes_graiae
 		germania_inferior
 		batavorum_area
 		germania_superior_area
@@ -624,16 +624,22 @@ chad_region = {
 
 niger_bend_region = {
 	areas = {
-		masina_area
-		songhai_area
-		mali_area
-		bambuk_area
-		segou_area
-		borgu_area
-		ekiti_area
-		niger_rapids_area
-		kaduna_area
-		plateau_area
+		gobir_area
+		acha_area
+		tegazza_area
+		adamawa_area
+		nok_area
+		casena_area
+		dogo_area
+		kainji_area
+		hausa_area
+		dendebre_area
+		memea_area
+		zanfara_area
+		aukar_area
+		gurma_area
+		biram_area
+		stachirae_area
 	}
 }
 
@@ -650,9 +656,10 @@ guinea_region = {
 		geba_area
 		dahomey_area
 		lekki_area
-		west_niger_area
+		nigir_area
 		niger_delta_area
 		dagbon_area
+		daradae_area
 	}
 }
 
@@ -689,19 +696,29 @@ arabia_region = {
 
 east_maghreb_region = { #Africa
 	areas = {
-		djerba_area
-		kairwan_area
-		tunis_area
-		aures_area
-		kabylia_area
+		emporia_area
+		byzacium_area
+		carthago_area
+		cirta_area
+		numidia_maritimae
+		thevestis_area
+		mauretania_sitifensis
+		militiana_area
+		gaetulia
+		bagrada_area
+		zeugitana_area
+		mediterranea_insulae
 	}
 }
 
 central_maghreb_region = { #Libya
 	areas = {
-		tripolitania_area
+		tripolitania_east
 		cyrenaica_area
 		libyan_desert_area
+		tripolitania_west
+		syrtica_area
+		deserta_numidia
 	}
 }
 
@@ -720,15 +737,19 @@ east_sahara_region = { #Sahara Deserta
 
 west_maghreb_region = { #Mauretania
 	areas = {
-		algiers_area
-		tlemcen_area
-		atlas_area
-		marrekesh_area
-		fez_area
+		cartenna_area
+		caesariensis_east
+		madethubadus_area
+		tingitana_east
+		siga_area
 		deserta_mauretania_area
-		elrif_area
-		anfa_area
-		tanja_area
+		diur_mons
+		mauretania_ulterior
+		mauretania_superior
+		tingitana_west
+		lixiane_area
+		atlas_mons
+		caesariensis_west
 	}
 }
 
@@ -736,13 +757,19 @@ kazakh_region = { #Extra Sarmatia
 	areas = {
 		kazakhstan_area
 		nogai_area
+		nesietis_regio
 	}
 }
 
 north_caucasus_region = {
 	areas = {
-		east_circassia_area
-		west_circassia_area
+		asian_sarmatia
+		zychia_area
+		olondaeica_area
+		sarmatia_hyrcania_area
+		gerrus_area
+		caucasus_mons
+		ceraunian_mons_area
 		#north_circassia_area
 		#abazin_area
 		#south_circassia_area
@@ -750,21 +777,30 @@ north_caucasus_region = {
 		#eastern_caucasus_area
 		#alania_area
 		#nakhchuvan_area
-		derbant_area
+		scythia_caspica
 	}
 }
 
 steppes_region = { #Maeotis
 	areas = {
-		majar_area
-		maeotis_area
+		tyrambica_area
+		cimmerian_bosporus
+		sarmatia_jaxamatica
+		sindica_area
+		coretus_area
+		sarmatia_maeotica
+		siracia_area
 		#sarkel_area
 	}
 }
 
 languedoc_region = { ##Sarmatia Asiatica or Asian Sarmatia
 	areas = {
-		astrakhan_area
+		hippicia_area
+		valica_area
+		scythia_confluentia_area
+		mithridatis_regio
+		ptestianica_area
 	}
 }
 
@@ -807,6 +843,7 @@ lithuania_region = { ##Albania
 		east_armenia_area
 		shirvan_area
 		shemakha_area
+		caucasus_east
 	}
 }
 
@@ -822,7 +859,6 @@ halych_volhynia_region = { ##Sarmatia Europaea
 		borysthenes_superior
 		sarmatia_deserta_area
 		stavanica_area
-		budinia_area
 		daco_sarmatia
 		tiarantus_area
 		scythia_aroteria_area
@@ -848,8 +884,15 @@ east_carpathia_region = { ##Cimmeria
 
 volga_region = { #Tanaica
 	areas = {
-		lower_don_area
-		azov_area
+		upper_tanais
+		exobygica_area
+		aspamithareia_area
+		lower_tanais
+		sargatica_area
+		sarmatia_east
+		stumica_area
+		idraeium_area
+		thyssagetae_area
 		#volga_area
 		#samara_area
 		#chuvash_area
@@ -860,7 +903,7 @@ volga_region = { #Tanaica
 
 crimea_region = { ##Borysthenia NOT Crimea
 	areas = {
-		sloboda_ukraine_area
+		melanchlenia_area
 		acesinus_area
 		sarmatia_maritima_area
 		borysthenes_inferior
@@ -870,6 +913,10 @@ crimea_region = { ##Borysthenia NOT Crimea
 		gerrhae_area
 		transborysthenia_area
 		gelonia_area
+		amadocia_area
+		scythia_therion_area
+		sarmatia_west
+		budinia_area
 		#odesa_area
 		#donets_area
 		#kryvbas_area
@@ -1341,6 +1388,7 @@ west_sahara_region = {
 senegambia_region = { #Non-Provs Africa
 	areas = {
 		east_niger_area
+		mali_area
 		sokoto_area
 		kano_area
 		daura_area
@@ -1361,6 +1409,7 @@ senegambia_region = { #Non-Provs Africa
 		haayre_area
 		west_mossi_area
 		tooro_area
+		ekiti_area
 	}
 }
 
@@ -1384,7 +1433,7 @@ madagascar_region = {
 	areas = {
 		merina_area
 		menabe_area
-		taomasina_area
+		taodendebre_area
 		mascarenes_area
 	}
 }
@@ -1431,7 +1480,7 @@ south_africa_region = {
 		namibia_area
 		xhosa_area
 		cape_of_good_hope_area
-		south_africa_plateau_area
+		south_africa_gobir_area
 		kwazulu_area
 		zambezi_area
 		zimbabwe_area
