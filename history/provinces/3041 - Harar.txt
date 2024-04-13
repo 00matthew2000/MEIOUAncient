@@ -1,6 +1,6 @@
 capital = "Deker"
 trade_goods = wool
-culture = afar
+culture = somali
 religion = awsan_religion
 hre = no
 base_tax = 4

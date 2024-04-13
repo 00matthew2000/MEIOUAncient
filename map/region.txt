@@ -564,61 +564,115 @@ upper_volta_region = { ##Elam or Haltamti
 egypt_region = {
 	areas = {
 		gharbia_area
-		central_egypt_area	
+		central_egypt_area
 	}
 }
 
 darfur_region = { ##Aegyptus Superior
 	areas = {
 		sinai_area
-		upper_egypt_area
-		oasis_area
+		waset_area
+		oasis_magna_prima
+		ta_seti
+		oasis_magna_secunda
+		desertum_aegypticum
 	}
 }
 
 sudan_region = { #Nubia
 	areas = {
-		lower_nubia_area
+		cataracta_quarta
+		memnones_area
+		troglodytica_area
+		alodia_area
+		nubia_ulterior
+		meroe_insula_area
+		nubian_desert
+		attiroia_area
+		cataracta_tertia
+		cataracta_secunda
+		meroe_area
+		blemmyorum_area
+		nubia_citerior
 	}
 }
 
 abyssinia_region = {
 	areas = {
-		semien_area
-		amhara_area
-		funj_area
-		white_nile_area
-		sidamo_area
-		hadiya_area
-		upper_nubia_area
-		guzai_area
-		shewa_area
+		sembobitis_area
+		ssasu_area
+		gambala_area
+		athagai_area
+		astapus_area
+		sesca_area
+		cinnamomifera_regio
+		aethiopia_inferior
+		bega_area
+		axum_area
+		semene_area
+		aethiopii_mons
+		ubi_area
+		melanorum_area
+		sannar_area
+		atalmo_area
+		tziamo_area
+		astasobas_area
+		cadupi_area
+		golaissae_area
+		tiami_area
+		bangenia_area
+		aroteria_area
 	}
 }
 
 horn_region = {
 	areas = {
-		somaliland_area
-		majarteen_area
+		avalites_sinus
+		elephas_area
 		marehan_area
-		mogadishu_area
+		barbaria_area
 		pepper_area
-		ifat_area
-		afar_area
-		tigray_area
-		hamasien_area
+		rhausae_area
+		metine_area
+		daamat
+		deserta_aethiopia
+		akridophagia_area
+		annine_area
+		asayta_area
+		punt_area
+		aethiopia_maritima_area
+		adoulis_area
+		agame_area
+		tangiatae_area
 	}
 }
 
-chad_region = {
+chad_region = { #Aethiopia Interior
 	areas = {
-		west_chad_area
-		east_chad_area
-		chari_area
-		baggara_area
-		north_darfur_area
-		south_darfur_area
-		kurdufan_area
+		xylinces_area
+		alitampi_area
+		agisymba_ulterior
+		panagra_area
+		agriophagium_area
+		artabatitia_area
+		zankor_area
+		thala_mons_area
+		solventii_area
+		chuaritae_area
+		melano_gaetulia
+		tagama_area
+		agisymba_citerior
+		orphes_area
+		pyrrhaei_area
+		odrangidi_area
+		astacuri_area
+		armiae_area
+		afsaracae_area
+		cyeneum_area
+		aethiopia_superior
+		tralitae_area
+		rhypaei_area
+		syrbotae_area
 	}
 }
 
@@ -646,20 +700,22 @@ niger_bend_region = {
 
 guinea_region = {
 	areas = {
-		guinea_area
-		leoa_area
-		ivory_coast_area
-		volta_delta_area
-		toro_area
-		wolof_area
+		massitholus_area
+		accra_area
+		manneh_area
+		mima_area
+		akan_area
+		sinus_hespericus_area
 		lower_gambia_area
-		geba_area
-		dahomey_area
-		lekki_area
+		mandori_area
+		edo_area
+		owo_area
 		nigir_area
-		niger_delta_area
-		dagbon_area
+		kwahu_area
 		daradae_area
+		hesperia_aethiopia
+		dangra_area
+		gyaaman_area
 	}
 }
 
@@ -1388,7 +1444,7 @@ west_sahara_region = {
 senegambia_region = { #Non-Provs Africa
 	areas = {
 		east_niger_area
-		mali_area
+		dangra_area
 		sokoto_area
 		kano_area
 		daura_area

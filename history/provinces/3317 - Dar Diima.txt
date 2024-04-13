@@ -1,6 +1,6 @@
 capital = "Garsila"
 trade_goods = wool
-culture = daza
+culture = bagirmi
 religion = east_african_religion
 hre = no
 base_tax = 4

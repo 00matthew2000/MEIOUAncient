@@ -1,6 +1,6 @@
 capital = "Ali Sabieh"
 trade_goods = livestock
-culture = afar
+culture = blemmyes
 religion = awsan_religion
 native_size = 50
 native_ferocity = 5

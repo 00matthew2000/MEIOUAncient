@@ -2143,6 +2143,9 @@ POP_GetProvMain = {
 												if = { limit = { check_key = { lhs = S_ID value = 4594 } }
 													4594 = { save_event_target_as = GetProvOut }
 												}
+												else_if = { limit = { check_key = { lhs = S_ID value = 4589 } }
+													4589 = { save_event_target_as = GetProvOut }
+												}
 												else = {
 													4584 = { save_event_target_as = GetProvOut }
 												}

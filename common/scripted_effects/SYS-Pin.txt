@@ -2143,6 +2143,9 @@ POP_ChangePin = {
 												if = { limit = { check_key = { lhs = $inp$ value = 4594 } }
 													$action$_ambient_object = pin_4594
 												}
+												else_if = { limit = { check_key = { lhs = $inp$ value = 4589 } }
+													$action$_ambient_object = pin_4589
+												}
 												else = {
 													$action$_ambient_object = pin_4584
 												}

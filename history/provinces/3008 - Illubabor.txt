@@ -1,6 +1,6 @@
 capital = "Inarya"
 trade_goods = livestock
-culture = surmic
+culture = nilotic
 religion = east_african_religion
 base_tax = 4
 base_production = 0

@@ -3597,6 +3597,7 @@ SYS_SetRugged = {
     4565 = { set_key = { lhs = Land_Rugged value = 8.641 } }
     4577 = { set_key = { lhs = Land_Rugged value = 0.757 } }
     4584 = { set_key = { lhs = Land_Rugged value = 11.341 } }
+	4589 = { set_key = { lhs = Land_Rugged value = 11.131 } }
     4594 = { set_key = { lhs = Land_Rugged value = 17.312 } }
     4595 = { set_key = { lhs = Land_Rugged value = 26.256 } }
     4596 = { set_key = { lhs = Land_Rugged value = 11.068 } }

@@ -2210,23 +2210,39 @@ gharbia_area = {
 }
 
 sinai_area = {
-	3004 1211 1208 
+	3004 1211 
+}
+
+blemmyorum_area = {
+	1208
 }
 
 central_egypt_area = {
 	361 1338 2498 2543 4093 2499 
 }
 
-upper_egypt_area = {
-	1213 360 1214 4094 3003 
+waset_area = {
+	1213 360 4094 3003 
+}
+
+ta_seti = {
+	1214
+}
+
+desertum_aegypticum = {
+	4589
 }
 
 libyan_desert_area = {
 	1212  5107 
 }
 
-oasis_area = {
-	2661 1210 2497
+oasis_magna_prima = {
+	1210 2497
+}
+
+oasis_magna_secunda = {
+	2661
 }
 
 tripolitania_east = {
@@ -2426,67 +2442,166 @@ northern_swahili_coast_area = {
 }
 
 harar_area = {
-	1205 1576 3021 3041 3063 3067 
+	1205 1576 3021 3067 
 }
 
 ogaden_area = {
-	3060 3051 1203 3062 5064 3052 3054
+	3060 3051 1203 3062 5064 3052 3054 3055
 }
 
-kurdufan_area = {
-	1182 1218 2500 2953 
+zankor_area = {
+	1182 
 }
 
-lower_nubia_area = {
-	2649 3888 2544 2660 2951 
+rhypaei_area = {
+	2500 3031
 }
 
-upper_nubia_area = {
-	1209 1216 1572 1573 2952 
+tralitae_area = {
+	1218
 }
 
-tigray_area = {
-	3890 3693 1570 3891 3043 3023 
+cataracta_quarta = {
+	2660 
 }
 
-ifat_area = {
-	1575 3042 3040 1574 3046 
+meroe_area = {
+	2951
 }
 
-afar_area = {
-	3006 3015 3018 1202
+nubia_citerior = {
+	2649
 }
 
-somaliland_area = {
-	3047 3048 3049 1201 3044 
+cataracta_secunda = {
+	3888
 }
 
-funj_area = {
-	3001 3002 3007 3045 3692 
+cataracta_tertia = {
+	2544
 }
 
-hadiya_area = {
-	1567 3008 1568 1207 
+aethiopia_inferior = {
+	1216 1572 
 }
 
-sidamo_area = {
-	3013 3020 3064 3066 
+alodia_area = {
+	2952 1209
 }
 
-shewa_area = {
-	1206 3017 3019 3014 
+sannar_area = {
+	1573
 }
 
-amhara_area = {
-	3892 3012 3011 1577 
+daamat = {
+	3890 3693 
 }
 
-mogadishu_area = {
-	1199 3034 3035 5070
+axum_area = {
+	1570 3065
 }
 
-pepper_area = {
-	1198 1566 3032 3033 5053 
+bega_area = {
+	3023
+}
+
+agame_area = {
+	3891
+}
+
+aethiopia_maritima_area = {
+	3043
+}
+
+rhausae_area = {
+	1575 3042 3046 3041 3063
+}
+
+memnones_area = {
+	3040
+}
+
+metine_area = {
+	1202
+}
+
+punt_area = {
+	3006
+}
+
+asayta_area = {
+	3015
+}
+
+annine_area = {
+	3018
+}
+
+avalites_sinus = {
+	3047 1201 3044 3050 1574
+}
+
+deserta_aethiopia = {
+	3048 3049
+}
+
+athagai_area = {
+	3002 
+}
+
+tiami_area = {
+	3045
+}
+
+cadupi_area = {
+	3001
+}
+
+astasobas_area = {
+	3692
+}
+
+cinnamomifera_regio = {
+	1567 
+}
+
+sesca_area = {
+	3020 3066
+}
+
+melanorum_area = {
+	3064 1568
+}
+
+ubi_area = {
+	3013 3019
+}
+
+gambala_area = {
+	3017 1207
+}
+
+tziamo_area = {
+	3008
+}
+
+akridophagia_area = {
+	3014
+}
+
+ssasu_area = {
+	3892 3012 
+}
+
+semene_area = {
+	3011
+}
+
+barbaria_area = {
+	1199 3034 3035 5070 1198 1566 3032 3033 5053
+}
+
+pepper_area = { 
 }
 
 galjal_area = {
@@ -2497,32 +2612,76 @@ shabeele_area = {
 	3057 5065 5066 3056 3061
 }
 
-white_nile_area = {
-	2496 3030 3029 3031 
+astapus_area = {
+	3030 
+}
+
+golaissae_area = {
+	3029 3007
+}
+
+syrbotae_area = {
+	2496 2953
 }
 
 ajuuran_area = {
 	3058 5061 5062 5059 5060
 }
 
-majarteen_area = {
-	3039 3053 1200 3050 
+elephas_area = {
+	1200 
 }
 
 marehan_area = {
-	3036 3037 3038 3055 
+	3036 3037 3038 3039 3053
 }
 
-hamasien_area = {
-	3024 3022 2650 1571 
+nubian_desert = {
+	3024 
 }
 
-semien_area = {
-	1569 3010 3016 3065 3694 
+troglodytica_area = {
+	2650
 }
 
-guzai_area = {
-	3025 3026 2792 3009 
+tangiatae_area = {
+	3022
+}
+
+adoulis_area = {
+	1571
+}
+
+sembobitis_area = {
+	3010 1577
+}
+
+aroteria_area = {
+	3016
+}
+
+atalmo_area = {
+	3694
+}
+
+aethiopii_mons = {
+	1569 1206
+}
+
+attiroia_area = {
+	3009 
+}
+
+nubia_ulterior = {
+	3026
+}
+
+meroe_insula_area = {
+	2792
+}
+
+bangenia_area = {
+	3025
 }
 
 oromo_area = {
@@ -2617,8 +2776,8 @@ tooro_area = {
 	1096 1112 5031
 }
 
-wolof_area = {
-	1114 2194 2871
+sinus_hespericus_area = {
+	1114 2194 2871 2218 979 1110
 }
 
 daradae_area = {
@@ -2626,19 +2785,18 @@ daradae_area = {
 }
 
 lower_gambia_area = {
-	2218 979 1110 2883 5134 
 }
 
 upper_gambia_area = {
 	2893 2905 1542 5029 1124
 }
 
-geba_area = {
-	3671 2767 2773 2872 2192 5028 2770
+mandori_area = {
+	3671 2767 2773 2872 5028 2770 2883 5134
 }
 
-mali_area = {
-	1525 2766 5014 1121
+dangra_area = {
+	1525 2766 5014 1121 5015
 }
 
 gurma_area = {
@@ -2698,39 +2856,47 @@ hausa_area = {
 }
 
 jallon_area = {
-	2899 2765 2966
+	2899 2765
 }
 
-guinea_area = {
-	2906 1120 2768 2873 2894 5016 5018 1113 5015
+massitholus_area = {
+	2906 1120 2966 2192
 }
 
-leoa_area = {
-	5017 5019 5021
+hesperia_aethiopia = {
+	1113 2768 5016 2873 5017 5018
 }
 
-ivory_coast_area = {
-	1123 1125 2892 5025 5027 
+accra_area = {
+	5021 2894
 }
 
-toro_area = {
-	2911 2874 2758 2875 
+manneh_area = {
+	1123 1125 5025 
 }
 
-volta_delta_area = {
-	1126 1128 1503 2876 2878 2912 
+akan_area = {
+	2911 2874 2875 2892
+}
+
+mima_area = {
+	1126 1128 1503 2876 2878 2877 5269 5090 
 }
 
 denkyira_area = {
-	2759 2760 2762 5005 
+	2759 2760 2762 5005 2758 2912
 }
 
-dagbon_area = {
+kwahu_area = {
 	1229 5006 5007
 }
 
 senufo_area = {
-	2914 2898 2897 5011 5013 2957 5023 5024 5020 5026
+	2914 2898 5011 5013 2957 5023 5024 5020 5026 5019 5027
+}
+
+gyaaman_area = {
+	2897
 }
 
 lobi_area = {
@@ -2754,11 +2920,10 @@ kainji_area = {
 }
 
 kwande_area = {
-	1129 2781 2963 5272 2890 2891 2961
+	1129 2781 2963 5272 2890 2891 2961 5089
 }
 
 dahomey_area = {
-	2877 5089 5090 5269 5267 5268
 }
 
 ketu_area = {
@@ -2777,11 +2942,11 @@ ekiti_area = {
 	2887 5259 2888
 }
 
-lekki_area = {
-	2885 4995 4996 4994
+edo_area = {
+	2885 4995 4996 4994 5267 5268 1134 2769 2790
 }
 
-nigir_area = {
+owo_area = {
 	5092 2788 4986 1561
 }
 
@@ -2789,8 +2954,8 @@ east_niger_area = {
 	1552 4987 4990
 }
 
-niger_delta_area = {
-	1134 1549 2769 2776 2790 4985
+nigir_area = {
+	1549 2776 4985 1138
 }
 
 nok_area = {
@@ -2810,7 +2975,11 @@ sokoto_area = {
 }
 
 kano_area = {
-	1554 5091 2925 1553 5093 1137 2926
+	1554 5091 1553 5093 1137
+}
+
+chuaritae_area = {
+	2926
 }
 
 daura_area = {
@@ -2821,28 +2990,80 @@ biram_area = {
 	2924
 }
 
-west_chad_area = {
-	1133 2950 2948 1560 4992 2927
+xylinces_area = {
+	2927
 }
 
-east_chad_area = {
-	1221 1563 1225 2945 
+orphes_area = {
+	1560
 }
 
-chari_area = {
-	2946 2947 1222 2777 
+agisymba_citerior = {
+	1133
 }
 
-baggara_area = {
-	1149 1224 1220 
+melano_gaetulia = {
+	2950 4992
 }
 
-north_darfur_area = {
-	3317 3319 3320 1215 
+solventii_area = {
+	2948 2925
 }
 
-south_darfur_area = {
-	3316 1219 3318 
+alitampi_area = {
+	1221 1225 
+}
+
+pyrrhaei_area = {
+	2945 1222
+}
+
+tagama_area = {
+	1563
+}
+
+agisymba_ulterior = {
+	2947 
+}
+
+astacuri_area = {
+	2777
+}
+
+thala_mons_area = {
+	2946
+}
+
+panagra_area = {
+	1149 1220 
+}
+
+armiae_area = {
+	1224
+}
+
+agriophagium_area = {
+	3319 
+}
+
+aethiopia_superior = {
+	3320
+}
+
+cyeneum_area = {
+	1215 3318
+}
+
+afsaracae_area = {
+	3317
+}
+
+artabatitia_area = {
+	1219 
+}
+
+odrangidi_area = {
+	3316
 }
 
 western_sahara_area = {
@@ -2862,7 +3083,7 @@ djado_area = {
 }
 
 south_atlantic_islands_area = {
-	1138 3816 2520 1098
+	3816 2520 1098
 }
 
 kongo_area = {
