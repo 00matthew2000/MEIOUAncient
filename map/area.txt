@@ -484,7 +484,7 @@ arvernica_area = {
 	199 5139 203
 }
 
-vocontiorum_area = {
+vocontiocappadocia_area = {
 	2335 1382 205 5640 
 }
 
@@ -504,7 +504,7 @@ aquitania_prima_area = {
 # Low Countries #
 ########################################
 
-remorum_area = {
+remocappadocia_area = {
 	1511 2364 3815 2331 5137
 }
 
@@ -516,7 +516,7 @@ mogontiacum_area = {
 	78 2756 4005 4006
 }
 
-batavorum_area = {
+batavocappadocia_area = {
 	95 2370 96
 }
 
@@ -623,7 +623,7 @@ tugiensis_saltus_area = {
 	3360 227
 }
 
-regina_turdulorum_area = {
+regina_turdulocappadocia_area = {
 	2310
 }
 
@@ -947,11 +947,11 @@ britannia_maxima_area = {
 	409 244 5156
 }
 
-corieltauvorum_area = {
+corieltauvocappadocia_area = {
 	243 245
 }
 
-cornoviorum_area = {
+cornoviocappadocia_area = {
 	240 427 3324
 }
 
@@ -967,27 +967,27 @@ ordovicum_area = {
 	242 3323 
 }
 
-silurum_area = {
+silucappadocia_area = {
 	1412 241
 }
 
-dubunnorum_area = {
+dubunnocappadocia_area = {
 	247 239
 }
 
-dummoniorum_area = {
+dummoniocappadocia_area = {
 	233 1411
 }
 
-reginorum_area = {
+reginocappadocia_area = {
 	1410
 }
 
-cantiacorum_area = {
+cantiacocappadocia_area = {
 	235
 }
 
-icenorum_area = {
+icenocappadocia_area = {
 	3859 399 1283
 }
 
@@ -1091,7 +1091,7 @@ moenus_area = {
 	1366 58 3733 3734 2616 1373 3735 1365
 }
 
-treverorum_area = {
+treverocappadocia_area = {
 	1362 1363 1370 94 3854 
 }
 
@@ -1546,7 +1546,7 @@ lesbos_et_chios = {
 	1435
 }
 
-rhodiorum_area = {
+rhodiocappadocia_area = {
 	320
 }
 
@@ -2000,201 +2000,576 @@ olondaeica_area = {
 # Anatolia, The Levant & Mesopotamia   #
 ########################################
 
-rum_area = {
-	2664 3883 1441 3882
+cappadocia_area = {
+	3883
+}
+
+cataonia_area = {
+	2664
+}
+
+pontus_cappadocicus_area = {
+	3882
+}
+
+pontus_area = {
+	1441
 }
 
 sophene_area = { # Erzurum and Trebizond
 	3884 5077 5078 3393 5080
 }
 
-malatya_area = { # 3 +Kayseri
-	1440 1443 2655 
+commagene_area = { # 3 +Kayseri
+	1440 
 }
 
-diyar_bakir_area = {
-	2551 3093 3885 5074 
+amanus_mons_area = {
+	1443
 }
 
-hakkari_area = {
-	4028 4029
+chalcidene_area = {
+	2655
 }
 
-diyar_mudar_area = {
-	2224 3091 1319
+sophanene_area = {
+	2551 
 }
 
-diyar_rabia_area = {
-	1320 3088
+barbarene_area = {
+	5074
 }
 
-trebizond_area = {
-	330 5045 
+hanigalbat_area = {
+	3093
+}
+
+resainitis_area = {
+	3885
+}
+
+gordyene_area = {
+	4028
+}
+
+gauzonitis_area = {
+	4029
+}
+
+osroene_area = {
+	2224
+}
+
+ciseuphratia_area = {
+	3091
+}
+
+tingene_area = {
+	1319
+}
+
+assyria_area = {
+	1320
+}
+
+arbelitis_area = {
+	3088
+}
+
+tibarenia_area = {
+	5045 
+}
+
+lyeus_area = {
+	330
 }
 
 sinope_area = {
-	328 3881 1326 2574
+	328
 }
 
-manisa_area = {
-	318 317 1325 1438 3390 4065 
+pontus_maritimae = {
+	2574
 }
 
-karaman_area = {
-	3392 329 4061 3879
+paryadres_area = {
+	3881
+}
+
+chaldea_anatolia_area = {
+	1326
+}
+
+aeolia_area = {
+	318 
+}
+
+heraclea_pontica = {
+	3390
+}
+
+bithynia_superior_area = {
+	4065
+}
+
+pergamos_area = {
+	317
+}
+
+ionia_area = {
+	1325 1438
+}
+
+tyanitys_area = {
+	3879
+}
+
+cilicia_trachea = {
+	3392
+}
+
+isauria_area= {
+	329
+}
+
+pisidia_west_area = {
+	4061
 }
 
 chammanene_area = {
-	331 2540 4062
+	2540
 }
 
-teke_area = {
-	4060 325 3391 
+obizene_area = {
+	331
 }
+
+phrygia_minor_area = {
+	4062
+}
+
+pamphylia_area = {
+	4060 
+}
+
+lycia_area = {
+	325
+}
+
+patara_area = {
+	3391
+}
+
+rodion_peraia = {
+	4064
+}
+
+doris_area = {
+	1439
+}
+
+phrygia_area = { # (Anatolia Eyalet except for Kastamonu and the future Aydin eyalet)
+	3388
+}
+
+saravene_area = {
+	3878
+}
+
+galatia_area = {
+	323
+}
+
+bithynia_area = {
+	5081
+}
+
+bosporos_area = {
+	1446
+}
+
+propontis_area = {
+	2552
+}
+
+troad_area = {
+	3386
+}
+
+asian_hellospont_area = {
+	3387
+}
+
+caria_chrysaoron_area = {
+	4063
+}
+
+lydia_area = {
+	4066
+}
+
 caria_area = {
-	4064 1439
+	3389
 }
 
-ankara_area = { # (Anatolia Eyalet except for Kastamonu and the future Aydin eyalet)
-	3388 323 3878
+mysia_area = {
+	4067
 }
 
-iznik_area = {
-	1446 5081
+pieria_area = {
+	332
 }
 
-prusa_area = {
-	2552 3387 3386
+beroiaitis_area = {
+	377
 }
 
-aydin_area = {
-	3389 4063 4066 4067
+casiotis_area = {
+	1327
 }
 
-aleppo_area = {
-	332 377 1327 
+apamene_area = {
+	4618 
 }
 
-badia_area = {
-	415 4058 1330 4618 
+trachonitis_area = {
+	1330
 }
 
-lebanon_area = {
-	378 1334 4647 3886
+palmyrene_area = {
+	4058
 }
 
-dimashq_area = {
-	1328 382 875
+euphratensis_area = {
+	415
 }
 
-palestine_area = {
-	364 379 1331 2634 2635 4057
+phoenicia_area = {
+	1334
 }
 
-jordan_area = {
-	2575 2636 4540 4645 4646 
+akko_area = {
+	4647
 }
 
-cappadocia_area = {
-	1333 5079 
+north_phoenicia = {
+	378
 }
 
-cilicia_area = {
-	4059 327 1755 
+aradus_area = {
+	3886
 }
 
-cyprus_area = {
-	321 2750 
+abilene_area = {
+	382
 }
 
-kastamonu_area = {
-	1437 1447 316 2541
+anti_lebanon = {
+	875
 }
 
-kutahya_area = {
-	319 322 324 2553
+emesaitis_area = {
+	1328
 }
 
-tairahan_area = {
-	2654 411 1329 3087 
+philistaeia_area = {
+	2634
 }
 
-radhan_area = {
-	1322 410 2230 3089 3900
+idumaea_area = {
+	1331
 }
 
-sawad_area = {
-	3085 3084 3086 3902 398 
+judaea_area = {
+	379
+}
+
+ascalonitis_area = {
+	2635
+}
+
+samaria_area = {
+	364
+}
+
+ituraea_area = {
+	4057
+}
+
+galaaditis_area = {
+	4540 
+}
+
+arabia_petraea_area = {
+	4645
+}
+
+nabatene_west = {
+	2575
+}
+
+moab_area = {
+	2636
+}
+
+auranitis_area = {
+	4646
+}
+
+sargarausene_area = {
+	1333 
+}
+
+sacoene_area = {
+	5079
+}
+
+mallotis_area = {
+	4059 
+}
+
+issotis_area = {
+	1755
+}
+
+cilicia_pedias = {
+	327
+}
+
+cyprus_west = {
+	321 
+}
+
+cyprus_east = {
+	2750
+}
+
+pontus_galaticus_area = {
+	2541
+}
+
+paphlagonia_maritima_area = {
+	1437
+}
+
+paphlagonia_area = {
+	1447
+}
+
+maryandinia_area = {
+	316
+}
+
+phrygia_ripensis_area = {
+	322
+}
+
+abrettene_area = {
+	2553
+}
+
+katakekaumene_area = {
+	324
+}
+
+salbakene_area = {
+	319
+}
+
+adiabene_superior = {
+	2654 
+}
+
+sagartia_area = {
+	3087
+}
+
+adiabene_area = {
+	411
+}
+
+acabene_area = {
+	1329
+}
+
+babylonia_area = {
+	410
+}
+
+mesene_area = {
+	1322
+}
+
+arabia_scenitae = {
+	2230
+}
+
+ancobaritis_area = {
+	3900
+}
+
+euphrates_area = {
+	3089
+}
+
+satrapene_area = {
+	3084 
+}
+
+akkad_area = {
+	3085
+}
+
+upper_chaldea = {
+	3086
+}
+
+sealand_mesopotamia = {
+	398
+}
+
+chaldea_exterior = {
+	3902
 }
 
 khuzestan_area = {
-	392 3826 2726
+	392 3826 2726 2470
 }
 
 south_kurdistan_area = {
-	3825 412 2559 2724  
+	412 2559  
 }
-taurus_area = {
-	2542 326 
+
+madaktu_area = {
+	2724
 }
+
+chalonitis_area = {
+	3825
+}
+
+phrygia_pargrea_area = {
+	2542 
+}
+
+pisidia_area = {
+	326
+}
+
 ########################################
 # Arabia #
 ########################################
 
-bahrain_area = {
-	396 395 467 3070 2539 
+gerrah_area = {
+	396 395 469
 }
 
-qatif_area = {
-	393 394 397 3072 
+ichtyophagitis_area = {
+	3069 467 2539
 }
 
-yamamah_area = {
-	2809 2807 2652 4609 469 
+omanitis_area = {
+	3070 2538
+}
+
+arabia_east = {
+	394 397
+}
+
+deserta_arabia = {
+	3072 393
+}
+
+arabia_felix_area = {
+	2652 4609 2808
 }
 
 nejd_area = {
-	2810 2503 2808 3073
+	2810 2503
 }
 
-shammar_area = {
-	403 2651 2811 3071 4562 
+arabia_magna = {
+	403 2651 3071 2807 2809
 }
 
-hejaz_area = {
-	3076 3077 385 384 
+nabatene_maritimae = {
+	4562
 }
 
-tabuk_area = {
-	380 470 1332 2665 
+cinaedocolpitis = {
+	3076 3077 4565
 }
 
-yemen_area = {
-	2653 388 4098 5242 3074 
+macoraba_area = {
+	385 3076 4606
 }
 
-dhufar_area = {
-	401 402 465 1099
+sidenica_area = {
+	384
 }
 
-hadramut_area = {
-	389 404 2666 3075 
+dumatha_area = {
+	2811
 }
 
-oman_area = {
-	3069 466 2538 400 3068 
+iathrippa_area = {
+	380 
 }
 
-sanaa_area = {
-	383 428 474 4097 
+hegra_area = {
+	470
 }
 
-jizzan_area = {
-	3028 4095 4096 
+lihyan_area = {
+	2665
 }
 
-asir_area = {
-	473 4565 4606 
+nabatene_east = {	
+	1332
+}
+
+mapharitis_area = {
+	388 3074 
+}
+
+libanotophoros_regio = {
+	401 402
+}
+
+awsan_area = {
+	3075 
+}
+
+myrrhifera_exterior = {
+	389 465
+}
+
+hadramaut_area = {
+	404
+}
+
+qataban_area = {
+	2666 2653
+}
+
+makan_area = {
+	466 2538 400 3068 
+}
+
+saba_area = {
+	383 428 
+}
+
+himyar_area = {
+	4097 4098 5242
+}
+
+myrrhifera_interior = {
+	3028 4095 474
+}
+
+main_area = {
+	473 3073 4096
 }
 
 te_mefkat_area = {
@@ -2206,23 +2581,71 @@ te_mefkat_area = {
 ########################################
 
 gharbia_area = {
-	362 358 363 4092 359
+	358 2499
 }
 
-sinai_area = {
-	3004 1211 
+qadesh_area = {
+	359
 }
 
-blemmyorum_area = {
+khaset = {
+	362
+}
+
+khent_abt = {
+	363
+}
+
+saracena_area = {
+	4092
+}
+
+porphyrites_mons = {
+	3004 
+}
+
+berenike_area = {
+	1211
+}
+
+blemmyocappadocia_area = {
 	1208
 }
 
-central_egypt_area = {
-	361 1338 2498 2543 4093 2499 
+aneb_hetch = {
+	1338 
+}
+
+sep_area = {
+	4093
+}
+
+atef_pehu = {
+	2543
+}
+
+sap_meh = {
+	2498
+}
+
+heq_at = {
+	361
 }
 
 waset_area = {
-	1213 360 4094 3003 
+	4094 
+}
+
+iqer = {
+	360
+}
+
+wadjet_area = {
+	1213
+}
+
+ma_hedj = {
+	3003
 }
 
 ta_seti = {
@@ -2233,8 +2656,12 @@ desertum_aegypticum = {
 	4589
 }
 
-libyan_desert_area = {
-	1212  5107 
+augila_area = {
+	5107 
+}
+
+ammonium_area = {
+	1212
 }
 
 oasis_magna_prima = {
@@ -2253,12 +2680,28 @@ syrtica_area = {
 	355
 }
 
-cyrenaica_area = {
-	1526 356 1339 
+cyrenaica_west = {
+	356 
 }
 
-fezzan_area = {
-	2938 2939 1524 1148 2657 1543 
+marmarica_west = {
+	1526
+}
+
+marmarica_east = {
+	1339
+}
+
+garamantum_area = {
+	1524 1148 2657 
+}
+
+garamantum_ulterior = {
+	1543 2949 2923
+}
+
+desertum_africanum = {
+	2938
 }
 
 deserta_numidia = {
@@ -2306,7 +2749,7 @@ thevestis_area = {
 }
 
 cartenna_area = {
-	350 338 
+	350 338
 }
 
 mauretania_sitifensis = {
@@ -2326,7 +2769,15 @@ caesariensis_west = {
 }
 
 north_saharan_area = {
-	2658 2659 5106 
+	5106 
+}
+
+deserta_syrtica = {
+	2659
+}
+
+deserta_tripolitania = {
+	2658
 }
 
 gaetulia = {
@@ -2338,7 +2789,7 @@ tafilalt_area = {
 }
 
 sus_area = {
-	2943 5105 2371
+	2943 2371
 }
 
 lixiane_area = {
@@ -2377,8 +2828,8 @@ diur_mons = {
 	4069 4071 2941 335
 }
 
-arguin_area = {
-	345 342 1500 2870 4116 4117 4122 
+cerne_area = {
+	345 342 1500 2870 4116 4122 
 }
 
 ########################################
@@ -2569,7 +3020,7 @@ sesca_area = {
 	3020 3066
 }
 
-melanorum_area = {
+melanocappadocia_area = {
 	3064 1568
 }
 
@@ -2629,7 +3080,7 @@ ajuuran_area = {
 }
 
 elephas_area = {
-	1200 
+	1200 1099
 }
 
 marehan_area = {
@@ -2804,7 +3255,7 @@ gurma_area = {
 }
 
 acha_area = {
-	2774
+	2774 4117
 }
 
 ghana_area = {
@@ -2987,7 +3438,7 @@ daura_area = {
 }
 
 biram_area = {
-	2924
+	2924 2316
 }
 
 xylinces_area = {
@@ -3066,8 +3517,8 @@ odrangidi_area = {
 	3316
 }
 
-western_sahara_area = {
-	1547 2504 1115 4115 2923  
+libya_west = {
+	1547 2504 5105 1115 4115  
 }
 
 memea_area = {
@@ -3075,11 +3526,15 @@ memea_area = {
 }
 
 azbin_area = {
-	2316 2928 2949 5257 
+	2928 5257 
 }
 
-djado_area = {
-	1147 2915 2931 1545 2930 2771
+libya_interior = {
+	2915 2931 1545 2930 2771 2939
+}
+
+nasamonia_area = {
+	1147
 }
 
 south_atlantic_islands_area = {
@@ -3257,7 +3712,7 @@ khorasan_area = {
 }
 
 luristan_area = {
-	413 2470 3080 
+	413 3080 
 }
 
 farsistan_area = {

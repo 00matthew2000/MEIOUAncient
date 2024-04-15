@@ -67,7 +67,7 @@ provence_region = {
 		massalia_area
 		arelate_area
 		alpes_maritimae
-		vocontiorum_area
+		vocontiocappadocia_area
 		rhodanus_area
 		arecomicia_area
 		tectosagia_area
@@ -102,7 +102,7 @@ east_france_region = {
 
 belgii_region = { #Belgium Check This
 	areas = {
-		remorum_area
+		remocappadocia_area
 		belgica_prima
 		belgica_secunda
 		belgica_maritimae
@@ -117,7 +117,7 @@ andalucia_region = {
 		lower_guadalquivir_area
 		corduba_area
 		solorius_mons
-		regina_turdulorum_area
+		regina_turdulocappadocia_area
 		gades_area
 		hispalensis_area
 		astigitanus_area
@@ -241,10 +241,10 @@ high_countries_region = { #Germania Minora
 	areas = {
 		sequania_area
 		agri_decumates
-		treverorum_area
+		treverocappadocia_area
 		helvetica_area
 		germania_inferior
-		batavorum_area
+		batavocappadocia_area
 		germania_superior_area
 		mogontiacum_area
 	}
@@ -278,8 +278,8 @@ polonia_major_region = {
 
 north_england_region = {
 	areas = {
-		corieltauvorum_area
-		cornoviorum_area
+		corieltauvocappadocia_area
+		cornoviocappadocia_area
 		brigantum_area
 		britannia_maxima_area
 	}
@@ -288,14 +288,14 @@ north_england_region = {
 south_england_region = {
 	areas = {
 		ordovicum_area
-		silurum_area
+		silucappadocia_area
 		londinium_area
 		durotrigum_area
-		dummoniorum_area
-		reginorum_area
-		dubunnorum_area
-		cantiacorum_area
-		icenorum_area
+		dummoniocappadocia_area
+		reginocappadocia_area
+		dubunnocappadocia_area
+		cantiacocappadocia_area
+		icenocappadocia_area
 	}
 }
 
@@ -365,7 +365,6 @@ east_balkan_region = {
 		moesia_superior
 		dardania_area
 		odryssia_area
-		europa_area
 		paeonia_area
 		oldenoi_area
 		rhodope_area
@@ -376,10 +375,12 @@ east_balkan_region = {
 
 norwegian_region = { ##Propontis
 	areas = {
-		prusa_area
-		iznik_area
+		europa_area
+		propontis_area
 		thrace_area
 		hellespont_area
+		bosporos_area
+		asian_hellospont_area
 	}
 }
 
@@ -444,7 +445,7 @@ danish_region = { ##Archipelagos
 		gortyn_area
 		knossos_area
 		lesbos_area
-		rhodiorum_area
+		rhodiocappadocia_area
 		lesbos_et_chios
 		archipelagos_area
 	}
@@ -452,105 +453,181 @@ danish_region = { ##Archipelagos
 
 west_anatolia_region = {
 	areas = {
-		manisa_area
-		caria_area
+		aeolia_area
+		rodion_peraia
+		troad_area
+		ionia_area
+		doris_area
 	}
 }
 
 central_balkan_region = { ##Cyprus
 	areas = {
-		cyprus_area
+		cyprus_west
+		cyprus_east
 	}
 }
 
 ouest_france_region = { ##Asia Minor
 	areas = {	
-		aydin_area
-		kutahya_area
+		caria_chrysaoron_area
+		phrygia_ripensis_area
+		mysia_area
+		pergamos_area
+		lydia_area
+		caria_area
+		katakekaumene_area
+		salbakene_area
+		abrettene_area
 	}
 }
 
 upper_saxon_circle_region = { ##Lycia et Pamphylia
 	areas = {
-		taurus_area
-		teke_area
+		pamphylia_area
+		patara_area
+		lycia_area
+		pisidia_area
+		pisidia_west_area
 	}
 }
 
 south_anatolia_region = {
 	areas = {
-		karaman_area
-		cilicia_area
+		tyanitys_area
+		mallotis_area
+		isauria_area
+		cilicia_trachea
+		cilicia_pedias
+		issotis_area
 	}
 }
 
 westphalian_circle_region = { ##Phrygia
 	areas = {
-		ankara_area
+		phrygia_area
 		chammanene_area
+		phrygia_pargrea_area
+		phrygia_minor_area
+		obizene_area
+		galatia_area
 	}
 }
 
 upper_rhenish_circle_region = { ##Cappadocia
 	areas = {
-		rum_area
 		cappadocia_area
+		sargarausene_area
+		pontus_galaticus_area
+		saravene_area
+		sacoene_area
+		cataonia_area
 	}
 }
 
 north_anatolia_region = { ##Pontus
 	areas = {
-		trebizond_area
+		tibarenia_area
 		sinope_area
+		pontus_area
+		chaldea_anatolia_area
+		pontus_cappadocicus_area
+		paryadres_area
+		lyeus_area
+		pontus_maritimae
 	}
 }
 
 brandenburg_pommern_region = { ##Bithynia
 	areas = {
-		kastamonu_area
+		heraclea_pontica
+		bithynia_superior_area
+		maryandinia_area
+		paphlagonia_maritima_area
+		paphlagonia_area
+		bithynia_area
 	}
 }
 
 low_countries_region = { ##Palaestina
 	areas = {
-		palestine_area
+		philistaeia_area
+		qadesh_area
+		ituraea_area
+		auranitis_area
+		samaria_area
+		ascalonitis_area
+		judaea_area
+		idumaea_area
 	}
 }
 
 sicily_region = { ##Phoenicia
 	areas = {
-		lebanon_area
+		phoenicia_area
+		aradus_area
+		north_phoenicia
+		akko_area
 	}
 }
 
 syria_region = {
 	areas = {
-		dimashq_area
-		aleppo_area
-		badia_area
-		malatya_area
+		pieria_area
+		abilene_area
+		apamene_area
+		commagene_area
+		amanus_mons_area
+		chalcidene_area
+		casiotis_area
+		beroiaitis_area
+		euphratensis_area
+		palmyrene_area
+		trachonitis_area
+		emesaitis_area
+		anti_lebanon
 	}
 }
 
 manding_region = { ##Ciseuphratia
 	areas = {
-		diyar_bakir_area
-		diyar_mudar_area
+		sophanene_area
+		osroene_area
+		ciseuphratia_area
+		tingene_area
+		resainitis_area
+		hanigalbat_area
+		barbarene_area
 	}
 }
 
-upper_mesopotamia_region = {
+upper_mesopotamia_region = { #Assyria
 	areas = {
-		hakkari_area
-		diyar_rabia_area
-		tairahan_area
+		gordyene_area
+		assyria_area
+		adiabene_superior
+		acabene_area
+		chalonitis_area
+		adiabene_area
+		sagartia_area
+		arbelitis_area
+		gauzonitis_area
 	}
 }
 
-lower_mesopotamia_region = {
+lower_mesopotamia_region = { #Babylonia
 	areas = {
-		radhan_area
-		sawad_area
+		babylonia_area
+		satrapene_area
+		euphrates_area
+		ancobaritis_area
+		arabia_scenitae
+		chaldea_exterior
+		mesene_area
+		madaktu_area
+		sealand_mesopotamia
+		upper_chaldea
+		akkad_area
 	}
 }
 
@@ -564,18 +641,29 @@ upper_volta_region = { ##Elam or Haltamti
 egypt_region = {
 	areas = {
 		gharbia_area
-		central_egypt_area
+		aneb_hetch
+		saracena_area
+		khent_abt
+		heq_at
+		khaset
+		sap_meh
+		atef_pehu
+		sep_area
 	}
 }
 
 darfur_region = { ##Aegyptus Superior
 	areas = {
-		sinai_area
+		porphyrites_mons
+		desertum_aegypticum
+		berenike_area
 		waset_area
 		oasis_magna_prima
-		ta_seti
 		oasis_magna_secunda
-		desertum_aegypticum
+		ta_seti
+		ma_hedj
+		iqer
+		wadjet_area
 	}
 }
 
@@ -592,7 +680,7 @@ sudan_region = { #Nubia
 		cataracta_tertia
 		cataracta_secunda
 		meroe_area
-		blemmyorum_area
+		blemmyocappadocia_area
 		nubia_citerior
 	}
 }
@@ -612,7 +700,7 @@ abyssinia_region = {
 		semene_area
 		aethiopii_mons
 		ubi_area
-		melanorum_area
+		melanocappadocia_area
 		sannar_area
 		atalmo_area
 		tziamo_area
@@ -721,32 +809,49 @@ guinea_region = {
 
 somalia_region = { #Arabia Petrea
 	areas = {
-		jordan_area
-		tabuk_area
+		galaaditis_area
+		iathrippa_area
 		te_mefkat_area
+		moab_area
+		nabatene_west
+		arabia_petraea_area
+		nabatene_east
+		lihyan_area
+		hegra_area
+		sidenica_area
+		nabatene_maritimae
 	}
 }
 
 hadhramaut_region = {
 	areas = {
-		hadramut_area
-		dhufar_area
-		yemen_area
-		sanaa_area
-		jizzan_area
-		oman_area
+		awsan_area
+		libanotophoros_regio
+		mapharitis_area
+		saba_area
+		myrrhifera_interior
+		makan_area
+		himyar_area
+		qataban_area
+		hadramaut_area
+		myrrhifera_exterior
+		omanitis_area
+		ichtyophagitis_area
 	}
 }
 
 arabia_region = {
 	areas = {
-		hejaz_area
-		yamamah_area
-		shammar_area
+		cinaedocolpitis
+		arabia_felix_area
+		arabia_magna
 		nejd_area
-		bahrain_area
-		qatif_area
-		asir_area
+		gerrah_area
+		arabia_east
+		main_area
+		dumatha_area
+		macoraba_area
+		deserta_arabia
 	}
 }
 
@@ -770,24 +875,33 @@ east_maghreb_region = { #Africa
 central_maghreb_region = { #Libya
 	areas = {
 		tripolitania_east
-		cyrenaica_area
-		libyan_desert_area
+		cyrenaica_west
+		augila_area
 		tripolitania_west
 		syrtica_area
 		deserta_numidia
+		nasamonia_area
+		ammonium_area
+		marmarica_east
+		marmarica_west
+		deserta_tripolitania
+		deserta_syrtica
 	}
 }
 
 east_sahara_region = { #Sahara Deserta
 	areas = {
-		fezzan_area
+		garamantum_area
 		azbin_area
-		djado_area
+		libya_interior
 		north_saharan_area
-		western_sahara_area
-		arguin_area
+		libya_west
+		cerne_area
 		tafilalt_area
 		sus_area
+		desertum_africanum
+		lixiane_area
+		garamantum_ulterior
 	}
 }
 
@@ -803,7 +917,6 @@ west_maghreb_region = { #Mauretania
 		mauretania_ulterior
 		mauretania_superior
 		tingitana_west
-		lixiane_area
 		atlas_mons
 		caesariensis_west
 	}

@@ -1,6 +1,6 @@
 capital = "Uyo"
 trade_goods = slaves
-culture = bozo
+culture = nok
 religion = west_african_religion
 hre = no
 base_tax = 1

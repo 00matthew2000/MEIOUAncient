@@ -1,7 +1,7 @@
 capital = "Yao"
 trade_goods = livestock
 culture = daza
-religion = sunni
+religion = east_african_religion
 hre = no
 base_tax = 3
 base_production = 0

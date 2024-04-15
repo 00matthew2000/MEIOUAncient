@@ -1,7 +1,7 @@
 capital = "Alkalawa"
 trade_goods = cotton
-culture = haussa
-religion = sunni
+culture = nok
+religion = west_african_religion
 hre = no
 base_tax = 3
 base_production = 1

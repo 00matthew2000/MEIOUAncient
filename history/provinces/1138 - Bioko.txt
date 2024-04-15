@@ -1,7 +1,7 @@
 capital = "Bioko"
 trade_goods = sugar
-culture = bakongo
-religion = bantu_pagan
+culture = nok
+religion = west_african_religion
 hre = no
 base_tax = 3
 base_production = 0

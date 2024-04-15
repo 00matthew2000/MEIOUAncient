@@ -1,6 +1,6 @@
 capital = "Ghat"
 trade_goods = palm_date
-culture = troglodytian
+culture = garamantes
 religion = numidian_religion
 base_tax = 1
 base_production = 0

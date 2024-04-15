@@ -1,7 +1,7 @@
 capital = "Tindouf"
 trade_goods = palm_date
-culture = sanhaja
-religion = sunni
+culture = mauretanian
+religion = numidian_religion
 hre = no
 base_tax = 1
 base_production = 0
