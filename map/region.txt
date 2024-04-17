@@ -633,8 +633,15 @@ lower_mesopotamia_region = { #Babylonia
 
 upper_volta_region = { ##Elam or Haltamti
 	areas = {
-		khuzestan_area
-		farsistan_area
+		characene_area
+		taorene_area
+		susiane_area
+		cabandene_area
+		elymais_area
+		cissiane_area
+		mardiene_area
+		sakrone_area
+		taocene_area
 	}
 }
 
@@ -945,7 +952,7 @@ north_caucasus_region = {
 		#central_circassia_area
 		#eastern_caucasus_area
 		#alania_area
-		#nakhchuvan_area
+		#nakhchutospites_area
 		scythia_caspica
 	}
 }
@@ -975,44 +982,73 @@ languedoc_region = { ##Sarmatia Asiatica or Asian Sarmatia
 
 south_caucasus_region = { #Armenia
 	areas = {
-		meskheti_area
-		west_armenia_area
+		syspiritis_area
+		armenia_maior
+		colthene_area
+		syracene_area
+		soducene_area
+		catarzene_area
+		moxoene_area
+		astianene_area
 	}
 }
 
 switzerland_region = { ##Corduene
 	areas = {
-		van_area
+		tospites_area
+		corduene_area
+		araxene_area
+		arrhene_area
 	}
 }
 
 harar_region = { ##Sophene
 	areas = {
-		upper_armenia_area
+		acilisene_area
 		sophene_area
+		armenia_minor
+		melitene_area
+		bolbene_area
+		basilisene_area
+		orbalisene_area
+		chorzene_area
 	}
 }
 
 swabia_bavarian_region = { ##Colchis
 	areas = {
 		moschi_area
-		west_georgia_area
+		ecrecticene_area
+		heniochi_area
+		colchis_inferior
+		colchis_superior
+		phasis_area
 	}
 }
 
 north_carpathia_region = { ##Iberia Caucasus
 	areas = {
-		east_georgia_area
+		iberia_east
 		cambysene_area
+		gogarene_area
+		lynitis_area
+		triarene_area
+		iberia_west
+		sapiri_area
 	}
 }
 
 lithuania_region = { ##Albania
 	areas = {
-		east_armenia_area
-		shirvan_area
-		shemakha_area
+		obarene_area
+		phaitakarene_area
+		utia_armenia_area
 		caucasus_east
+		albania_west
+		albania_east
+		media_caspica
+		ardabilitis_area
+		sacasene_area
 	}
 }
 
@@ -1094,21 +1130,34 @@ crimea_region = { ##Borysthenia NOT Crimea
 
 iran_region = { #Media
 	areas = {
-		south_kurdistan_area
-		luristan_area
+		kossiane_area
+		charbanus_mons
 		iraq_e_ajam_area
-		azerbaijan_area
-		isfahan_area
-		tabarestan_area
-		tehran_area
-		urmia_area
+		upper_atropatene
+		gabiene_area
+		amardiene_area
+		choarene_area
+		lower_atropatene
+		siggrane_area
+		artacene_area
+		massabatene_area
+		caspius_mons
+		choromithrene_area
+		parskahayk_area
+		otene_area
 	}
 }
 fars_region = { #Persis
 	areas = {
-		larestan_area
-		kerman_area
-		hormuz_area
+		persepolis_area
+		carmania_deserta
+		agdinitis_area
+		rudiane_area
+		utia_area
+		paraepaphitis_area
+		temisdia_area
+		paraetacene_area
+		sagartia_east
 	}
 }
 
@@ -1116,7 +1165,7 @@ lower_volta_region = { ##Parthia
 	areas = {
 		khorasan_area
 		nishapur_area
-		east_tabarestan_area
+		east_amardiene_area
 	}
 }
 

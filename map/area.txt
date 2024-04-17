@@ -1913,35 +1913,83 @@ onega_area = {
 ########################################
 
 cambysene_area = {
-	3807 3808
+	3807
 }
 
-east_georgia_area = {
-	422 423 2576 5075 5076 
+albania_west = {
+	1317
 }
 
-west_georgia_area = {
-	3799 1300 3798 1301
+iberia_east = {
+	2576 
+}
+
+sapiri_area = {
+	422
+}
+
+iberia_west = {
+	5075
+}
+
+lynitis_area = {
+	5076
+}
+
+ecrecticene_area = {
+	1300 3798
+}
+
+phasis_area = {
+	3799
+}
+
+colchis_superior = {
+	1301
 }
 
 moschi_area = {
-	1449 3800 3396
+	1449
 }
 
-meskheti_area = {
-	3802 4027 3801 
+colchis_inferior = {
+	3800
 }
 
-shirvan_area = {
-	3811 3810 3090 3823
+heniochi_area = {
+	3396
+}
+
+syspiritis_area = {
+	3802 
+}
+
+gogarene_area = {
+	4027
+}
+
+triarene_area = {
+	423
+}
+
+phaitakarene_area = {
+	3810 3090
+}
+
+media_caspica = {
+	3823
+}
+
+albania_east = {
+	3811
 }
 
 caucasus_east = {
 	424
 }
 
-shemakha_area = {
-	1317 3809 
+utia_armenia_area = {
+	3809 
 }
 
 zychia_area = {
@@ -1964,20 +2012,72 @@ sarmatia_hyrcania_area = {
 	3639
 }
 
-west_armenia_area = {
-	2581 3804 419 3805 5073 1316
+armenia_maior = {
+	2581
 }
 
-east_armenia_area = {
-	2577 3806 1318 1315
+astianene_area = {
+	3804
 }
 
-van_area = {
-	418 3394 1444 
+moxoene_area = {
+	3801
 }
 
-upper_armenia_area = {
-	1442 3803 3395 
+catarzene_area = {
+	5073
+}
+
+soducene_area = {
+	419
+}
+
+syracene_area = {
+	3805
+}
+
+colthene_area = {
+	1316
+}
+
+obarene_area = {
+	2577 3806
+}
+
+sacasene_area = {
+	1315
+}
+
+ardabilitis_area = {
+	1318
+}
+
+tospites_area = {
+	418 
+}
+
+araxene_area = {
+	3394
+}
+
+corduene_area = {
+	1444
+}
+
+arrhene_area = {
+	3808
+}
+
+acilisene_area = {
+	3803 
+}
+
+chorzene_area = {
+	1442
+}
+
+orbalisene_area = {
+	3395
 }
 
 scythia_caspica = {
@@ -2017,7 +2117,23 @@ pontus_area = {
 }
 
 sophene_area = { # Erzurum and Trebizond
-	3884 5077 5078 3393 5080
+	5077
+}
+
+basilisene_area = {
+	3884
+}
+
+bolbene_area = {
+	5078
+}
+
+melitene_area = {
+	3393
+}
+
+armenia_minor = {
+	5080
 }
 
 commagene_area = { # 3 +Kayseri
@@ -2432,12 +2548,28 @@ chaldea_exterior = {
 	3902
 }
 
-khuzestan_area = {
-	392 3826 2726 2470
+characene_area = {
+	392
 }
 
-south_kurdistan_area = {
-	412 2559  
+cissiane_area = {
+	3826
+}
+
+elymais_area = {
+	2726
+}
+
+cabandene_area = {
+	2470
+}
+
+kossiane_area = {
+	2559 2227
+}
+
+massabatene_area = {
+	412
 }
 
 madaktu_area = {
@@ -2553,7 +2685,11 @@ qataban_area = {
 }
 
 makan_area = {
-	466 2538 400 3068 
+	2538 400 3068 
+}
+
+siggrane_area = {
+	466
 }
 
 saba_area = {
@@ -3711,55 +3847,115 @@ khorasan_area = {
 	3092 433 3839 5116 5117 
 }
 
-luristan_area = {
-	413 3080 
+charbanus_mons = {
+	413 
 }
 
-farsistan_area = {
-	3827 3081 2228 3828 3829
+taorene_area = {
+	3829
 }
 
-larestan_area = {
-	2725 3830 429 3836 
+taocene_area = {
+	3081
+}
+
+sakrone_area = {
+	2228
+}
+
+mardiene_area = {
+	3827
+}
+
+susiane_area = {
+	3828
+}
+
+persepolis_area = {
+	2725 429 
+}
+
+temisdia_area = {
+	3836 4653
+}
+
+utia_area = {
+	3830
 }
 
 balkh_area = {
 	3843 450 5113 3299 3844 
 }
 
-kerman_area = {
-	435 464 3831 3832 390 3099 4653
+carmania_deserta = {
+	464 3831
 }
 
-hormuz_area = {
-	2229 2235 431 430 480 
+sagartia_east = {
+	435
+}
+
+paraetacene_area = {
+	390
+}
+
+paraepaphitis_area = {
+	3832 3099
+}
+
+agdinitis_area = {
+	2229 431 
+}
+
+rudiane_area = {
+	2235 430 480
 }
 
 iraq_e_ajam_area = {
-	1314 2227 463 4651 
+	463 4651 
 }
 
-tehran_area = {
-	1313 3078 4652 
+choromithrene_area = {
+	1314 3078
 }
 
-isfahan_area = {
-	3079 2225 3082 414 446
+choarene_area = {
+	1313 4652
 }
 
-azerbaijan_area = {
-	1321 4660
+gabiene_area = {
+	3079 414 446 3080
 }
 
-urmia_area = {
-	1445 416 2219
+artacene_area = {
+	3082 2225 
 }
 
-tabarestan_area = {
-	417 3824 
+upper_atropatene = {
+	4660 4651
 }
 
-east_tabarestan_area = {
+lower_atropatene = {
+	416 1321
+}
+
+parskahayk_area = {
+	2219
+}
+
+otene_area = {
+	1445
+}
+
+amardiene_area = {
+	417 
+}
+
+caspius_mons = {
+	3824
+}
+
+east_amardiene_area = {
 	3083 405 426
 }
 
