@@ -843,7 +843,7 @@ hadhramaut_region = {
 		hadramaut_area
 		myrrhifera_exterior
 		omanitis_area
-		ichtyophagitis_area
+		makarene_area
 	}
 }
 
@@ -1163,55 +1163,106 @@ fars_region = { #Persis
 
 lower_volta_region = { ##Parthia
 	areas = {
-		khorasan_area
-		nishapur_area
-		east_amardiene_area
+		comisene_area
+		sipharene_area
+		parthyene_area
+		desertum_salinum_area
+		tabiene_area
+		arcticene_area
+		astauene_area
+		traxiene_area
+		hyrcania_area
 	}
 }
 
 amodarya_region = { #Bactria
 	areas = {
-		balkh_area
-		kish_area
-		vaxsh_area
+		zariaspa_area
+		cabolitana_area
+		oxiane_superior
+		zaviaspa_area
+		charracarta_area
+		bactria_upper
+		tambyzia_area
+		candara_area
+		drapsaka_area
+		astakana_area
+		cholbisina_area
+		oskobara_area
+		tarmita_area
 	}
 }
 
 khorasani_region = { #Margiana
 	areas = {
-		ahel_area
-		herat_area
-		merv_area
+		maxerane_area
+		guriana_area
+		margiana_superior
+		margiana_inferior
+		comiana_area
+		sarmagana_area
+		chomaria_inferior_area
+		sirakene_area
+		aria_area
+		paracanacene_area
+		cotacene_area
+		haomana_area
+		asiani_area
+		aratha_area
 	}
 }
 
 upper_niger_region = { ##Drangiana-Arachosia
 	areas = {
-		kabulistan_area
-		paradene_area
+		cophene_area
 		parsiene_area
-		sistan_area
+		arachosia_area
+		tatacene_area
+		sattagydia_area
+		india_alba
+		opiane_area
+		sakastan_arachosia_area
+		drangiana_area
+		orbetane_area
+		paropamisus_area
+		anabonitis_area
+		pactyene_area
 	}
 }
 
 sistan_region = { ##Gedrosia
 	areas = {
-		zahedan_area
-		baluchi_area
-		quetta_area
+		cabadene_area
+		ichtyophagitis_area
+		chantonicene_area
+		carmania_area
+		gedrosia_area
+		makarene_area
+		paricania_area
+		saranga_area
+		pardene_area
+		parifene_area
 	}
 }
 
 belarus_region = { ##Transoxiana
 	areas = {
-		transoxiana_area
+		marakanda_area
 		oxiane_inferior_area
+		tigraxauda_area
+		sogdia_deserta_area
+		sogdia_area
+		sisimithrena_area
+		nautaca_area
 	}
 }
 
 niger_benue_region = { ##Chorasmia
 	areas = {
-		khiva_area
+		chorasamia_ostia_area
+		chorasamia_inferior_area
+		chorasamia_media_area
+		chorasamia_area
 	}
 }
 
@@ -1227,11 +1278,14 @@ punjab_region = {
 	}
 }
 
-hindusthan_region = {
+hindusthan_region = { #Sindhu
 	areas = {
-		lower_sindh_area
-		upper_sindh_area
-		cholistan_area
+		west_patalene
+		prasiane_area
+		sauvira_area
+		sindhu_area
+		aporapa_area
+		patalene_area
 	}
 }
 
@@ -1383,6 +1437,7 @@ zungaria_region = { #Tarim Basin
 		tarim_basin_area
 		yarkand_area
 		hami_area
+		imaus_mons_area
 	}
 }
 
@@ -1957,27 +2012,47 @@ guangdong_region = { #Jiao Zhou
 
 western_ghats_region = { ##Sakastan
 	areas = {
-		issykkol_area
-		arys_area
+		chach_area
+		tachkent_area
+		lower_kangju_area
+		kangju_area
+		isbijab_area
+		talas_area
+		chui_area
+		upper_chui_area
 	}
 }
 
 hausa_region = { ##Jaxartia
 	areas = {
-		syrdarya_area
+		jaxartes_inferior_area
+		jaxartes_superior_area
+		sakastan_proper_area
+		massagetica_area
 	}
 }
 
 syrdarya_region = { #Fergana
 	areas = {
-		ferghana_area
-		tashkent_area
+		fergana_media_area
+		dayuan_area
+		south_sakastan_proper_area
+		west_dayuan_area
+		fergana_lower_area
+		fergana_area
 	}
 }
 
 lower_niger_region = { ##Dahaestan
 	areas = {
-		transcaspia_area
+		parnia_area
+		apauartikene_area
+		chorasmia_deserta_area
+		scythia_ultima_area
+		scythia_pontica_area
+		oxiana_caspica_area
+		dahaestan_area
+		mardastan_proper_area
 	}
 }
 

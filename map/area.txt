@@ -2596,7 +2596,7 @@ gerrah_area = {
 	396 395 469
 }
 
-ichtyophagitis_area = {
+makarene_area = {
 	3069 467 2539
 }
 
@@ -3757,94 +3757,352 @@ kwazulu_area = {
 # Greater Persia #
 ########################################
 
-baluchi_area = {
-	576 575 434 437 3100 
+ichtyophagitis_area = {
+	3100 
 }
 
-quetta_area = {
-	448 2715 3834 5327
+saranga_area = {
+	576
 }
 
-paradene_area = {
-	577 3098
+makarene_area = {
+	575
+}
+
+gedrosia_area = {
+	437
+}
+
+tatacene_area = {
+	3834
+}
+
+parifene_area = {
+	5327
+}
+
+pardene_area = {
+	2715
+}
+
+paricania_area = {
+	448
+}
+
+india_alba = {
+	577
+}
+
+sattagydia_area = {
+	3098
+}
+
+pactyene_area = {
+	3842
 }
 
 parsiene_area = {
-	432 551
+	551
 }
 
-zahedan_area = {
-	3833 468 4584 
+orbetane_area = {
+	432
 }
 
-ferghana_area = {
-	458 3292 3300 476 3301 4597 
+cabadene_area = {
+	3833 
 }
 
-tashkent_area = {
-	454 4598 3293 2232 386 
+carmania_area = {
+	468
+}
+	
+chantonicene_area = {
+	4584 434
 }
 
-arys_area = {
-	3297 3847 3311 471 4955   
+fergana_media_area = {
+	476 3301 
 }
 
-kabulistan_area = {
-	451 578 3842 449 3276 
+fergana_area = {
+	458 3300
 }
 
-sistan_area = {
-	452 3097 3094 3095 
-	# CA
-	4563 
+fergana_lower_area = {
+	3292 4597
 }
 
-transoxiana_area = {
-	436 457 3290 3286 
+dayuan_area = {
+	3293
 }
 
-kish_area = {
-	4607 456
+west_dayuan_area = {
+	454
+}
+
+south_sakastan_proper_area = {
+	4598
+}
+
+sakastan_proper_area = {
+	3297
+}
+
+tachkent_area = {
+	2232
+}
+
+chach_area = {
+	4955   
+}
+
+talas_area = {
+	3311
+}
+
+isbijab_area = {
+	471
+}
+
+lower_kangju_area = {
+	3847
+}
+
+cophene_area = {
+	578 
+}
+
+zaviaspa_area = {
+	451
+}
+
+paropamisus_area = {
+	449 3276
+}
+
+opiane_area = {
+	452
+}
+
+arachosia_area = {
+	3097  
+}
+
+anabonitis_area = {
+	3095
+}
+
+drangiana_area = {
+	3094
+}
+
+sakastan_arachosia_area = {
+	4563
+}
+
+marakanda_area = {
+	457 
+}
+
+sogdia_area = {
+	3286
+}
+
+sogdia_deserta_area = {
+	3290
+}
+
+tigraxauda_area = {
+	436
+}
+
+cabolitana_area = {
+	4607
+}
+
+charracarta_area = {
+	456
 }
 
 oxiane_inferior_area = {
-	455 444 3280
+	455
 }
 
-vaxsh_area = {
-	3288 3289 3291 453 4596
+nautaca_area = {
+	444
 }
 
-khiva_area = {
-	440 442 3278 3279 4577 
+sisimithrena_area = {
+	3280
 }
 
-syrdarya_area = {
-	3285 3296 3298
+oxiane_superior = {
+	3291
 }
 
-transcaspia_area = {
-	441 439 462 1083 5048
+tarmita_area = {
+	3288
 }
 
-ahel_area = {
-	387 3281 3284 3657 3849
+oskobara_area = {
+	3289
 }
 
-merv_area = {
-	445 5114 2231 5112 
+cholbisina_area = {
+	453
 }
 
-herat_area = {
-	447 3838 3294 5111 4030 
+astakana_area = {
+	4596
 }
 
-nishapur_area = {
-	3840 3841 4232 4234 2220
+chorasamia_ostia_area = {
+	440 
 }
 
-khorasan_area = {
-	3092 433 3839 5116 5117 
+chorasamia_area = {
+	4577
+}
+
+chorasamia_inferior_area = {
+	442
+}
+
+chorasamia_media_area = {
+	3278
+}
+
+chorasmia_deserta_area = {
+	3279
+}
+
+jaxartes_inferior_area = {
+	3285
+}
+
+massagetica_area = {
+	386
+}
+
+kangju_area = {
+	3298
+}
+
+chui_area = {
+	4551
+}
+
+jaxartes_superior_area = {
+	3296
+}
+
+mardastan_proper_area = {
+	462
+}
+
+scythia_ultima_area = {
+	439
+}
+
+scythia_pontica_area = {
+	3841
+}
+
+oxiana_caspica_area = {
+	1083
+}
+
+parnia_area = {
+	5048
+}
+
+dahaestan_area = {
+	441
+}
+
+maxerane_area = {
+	3284
+}
+
+aratha_area = {
+	3657
+}
+
+asiani_area = {
+	3849
+}
+
+haomana_area = {
+	387
+}
+
+margiana_inferior = {
+	3281
+}
+
+margiana_superior = {
+	445
+}
+
+sirakene_area = {
+	5114
+}
+
+chomaria_inferior_area = {
+	5112
+}
+
+sarmagana_area = {
+	2231
+}
+
+aria_area = {
+	3294
+}
+
+paracanacene_area = {
+	5111
+}
+
+cotacene_area = {
+	4030
+}
+
+guriana_area = {
+	447 5111 
+}
+
+comiana_area = {
+	3838
+}
+
+sipharene_area = {
+	4234
+}
+
+traxiene_area = {
+	4232
+}
+
+astauene_area = {
+	2220
+}
+
+comisene_area = {
+	433 3840
+}
+
+arcticene_area = {
+	3839
+}
+
+tabiene_area = {
+	5116
+}
+
+desertum_salinum_area = {
+	5117
 }
 
 charbanus_mons = {
@@ -3883,8 +4141,24 @@ utia_area = {
 	3830
 }
 
-balkh_area = {
-	3843 450 5113 3299 3844 
+zariaspa_area = {
+	3843 
+}
+
+drapsaka_area = {
+	450
+}
+
+candara_area = {
+	3299
+}
+
+tambyzia_area = {
+	5113
+}
+
+bactria_upper = {
+	3844
 }
 
 carmania_deserta = {
@@ -3955,24 +4229,44 @@ caspius_mons = {
 	3824
 }
 
-east_amardiene_area = {
-	3083 405 426
+parthyene_area = {
+	3083 3092
+}
+
+hyrcania_area = {
+	426
+}
+
+apauartikene_area = {
+	405
 }
 
 ########################################
 # India #
 ########################################
 
-upper_sindh_area = {
-	2584 2717 3101 
+prasiane_area = {
+	2584 
 }
 
-lower_sindh_area = {
-	504 505 2716 5243 
+aporapa_area = {
+	2717 504
 }
 
-cholistan_area = {
-	3108 2556
+west_patalene = {
+	2716 5243 
+}
+
+patalene_area = {
+	505
+}
+
+sauvira_area = {
+	3108 3101
+}
+
+sindhu_area = {
+	2556
 }
 
 multan_area = {
@@ -3988,7 +4282,7 @@ shahpur_area = {
 }
 
 khybyr_area = {
-	508 2114 3096 4595 
+	2114 3096 4595 
 }
 
 kangra_area = {
@@ -4272,7 +4566,7 @@ west_nepalese_area = {
 }
 
 kashmir_area = {
-	3105 2115 2116 2226
+	3105 2115 2116 2226 508
 }
 
 pamir_area = {
@@ -4740,8 +5034,12 @@ jetysuu_area = {
 	460 461 477 459 2221 3306 
 }
 
-issykkol_area = {
-	3302 3303 3848 4599 
+upper_chui_area = {
+	3303 
+}
+
+imaus_mons_area = {
+	4599 3848 3302
 }
 
 amdo_area = {

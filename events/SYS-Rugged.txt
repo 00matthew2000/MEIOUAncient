@@ -21564,6 +21564,12 @@ country_event = {
 				value = 1.787
 			}
 		}
+		4551 = { 
+			set_variable = { 
+				which = ozm
+				value = 11.749
+			}
+		}
 		4562 = { 
 			set_variable = { 
 				which = ozm
