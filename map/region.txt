@@ -552,7 +552,7 @@ brandenburg_pommern_region = { ##Bithynia
 low_countries_region = { ##Palaestina
 	areas = {
 		philistaeia_area
-		qadesh_area
+		qakuntala_area
 		ituraea_area
 		auranitis_area
 		samaria_area
@@ -843,7 +843,6 @@ hadhramaut_region = {
 		hadramaut_area
 		myrrhifera_exterior
 		omanitis_area
-		makarene_area
 	}
 }
 
@@ -859,6 +858,7 @@ arabia_region = {
 		dumatha_area
 		macoraba_area
 		deserta_arabia
+		ichtyophagorum_sinus
 	}
 }
 
@@ -931,9 +931,14 @@ west_maghreb_region = { #Mauretania
 
 kazakh_region = { #Extra Sarmatia
 	areas = {
-		kazakhstan_area
-		nogai_area
+		deserta_scythia
+		araxes_area
 		nesietis_regio
+		atara_area
+		upper_aorsia
+		aorsia
+		scythia_magna_area
+		riphaean_mons_area
 	}
 }
 
@@ -1237,11 +1242,11 @@ sistan_region = { ##Gedrosia
 		chantonicene_area
 		carmania_area
 		gedrosia_area
-		makarene_area
 		paricania_area
 		saranga_area
 		pardene_area
 		parifene_area
+		makarene_area
 	}
 }
 
@@ -1266,15 +1271,29 @@ niger_benue_region = { ##Chorasmia
 	}
 }
 
-punjab_region = {
+punjab_region = { #Gandhara
 	areas = {
-		shahpur_area
-		lahore_area
-		multan_area
-		sirhind_area
-		khybyr_area
+		kekaya_area
+		madra_area
+		malloi_area
+		katocha_area
+		takshasila_area
 		bikaner_area
-		patiala_area
+		kamboja_area
+		gandhara_area
+		purushapura_area
+		apritas_area
+		upper_sindhu
+		hydaspes_area
+		kekaya_lower
+		sivi_area
+		shorkot_area
+		amvastha_area
+		parusni_area
+		vatadhana_area
+		trigarta_area
+		bahlika_area
+		sagala_area
 	}
 }
 
@@ -1289,155 +1308,308 @@ hindusthan_region = { #Sindhu
 	}
 }
 
-bihar_region = {
+bihar_region = { #Madhyadesa
 	areas = {
-		south_bihar_area
-		muzzaffarpur_area
-		awadh_area
-		varanasi_area
-		purvanchal_area
-		bundelkhand_area
-		jharkhand_area
+		magadha_area
+		malla_area
+		jalachandram_area
+		kosambana_area
+		kotsala_area
+		pasubhumi_area
+		south_kikata_area
+		vatsa_south
+		vatsa_area
+		kapilavastu_area
+		kosala_west
+		malla_south
+		gopala_area
+		kikata_area
+		suparsa_area
+		south_suparsa_area
+		dasarna_area
+		upper_kashi
+		kashi_area
+		bhargz_area
+		magadha_east
 	}
 }
 
-upper_doab_region = {
+upper_doab_region = { #Kururattha
 	areas = {
-		upper_doab_area
-		delhi_area
-		oudh_area
-		rohilkhand_area
-		gwalior_area
-		kalpi_area
-		jaipur_area
-		central_doab_area
+		kuru_north
+		somakas_area
+		krivi_area
+		keshin_area
+		chedi_area
+		south_nishadha_area
+		matsya_area
+		surasena_area
+		kamyaka_area
+		panchala_south
+		panchala_area
+		panchala_central
+		hastinapura_area
+		kurukshetra_area
+		kuru_west
+		kuru_east
+		virata_area
+		karusha_north
+		nishadha_area
+		kanyakubja_area
+		srinjaya_area
 	}
 }
 
-east_bengal_region = {
+east_bengal_region = { #Kamarupa
 	areas = {
-		jalpaiguri_area
-		north_bengal_area
-		baghalpur_area
-		assam_area
-		koch_area
-		himalayan_hills_area
+		pundra_east
+		pundra_area
+		videha_area
+		lauhitya_area
+		kamarupa_area
+		upper_lauhitya
+		north_vrji_area
+		vrji_area
+		vajji_area
+		saharsa_area
+		kamata_area
+		vardhamana_area
+		kamarupa_proper
+		prakjyotisha_area
 	}
 }
 
 west_deccan_region = {
 	areas = {
-		daulatabad_area
-		berar_area
-		raichur_area
-		malwa_area
-		indore_area
-		gondwana_area
-		nagpur_area
-		hadoti_area
+		asmaka_east
+		orugallu_area
+		asmaka_south
+		avanti_east
+		vakataka_north
+		vidarbha_north
+		vindhya_area
+		gurala_area
+		avanti_area
+		heyaya_area
+		heyaya_east
+		besnagara_area
+		karusha_area
+		erakinadesa_area
+		anupa_area
+		janasthana_area
+		dandaka_area
+		uparichara_area
+		pulinda_north
+		pulinda_area
+		vakataka_area
+		kutas_area
+		asmaka_west
+		mulaka_area
+		sahyadri_area
 	}
 }
 
 konkan_region = {
 	areas = {
-		kanara_area
-		maharashtra_area
-		konkan_area
-		gujarat_area
+		gomanta_area
+		surparaka_area
+		anupa_west
+		barukaccha_area
+		aparanta_area
+		konkana_area
 	}
 }
 
 gujarat_region = { #Saurashtra
 	areas = {
-		patan_area
+		upper_saraswata
+		anarta_area
+		aberia_area
+		sarmista_area
+		deserta_indica_area
+		kachcha_area
+		gurjara_area
+		anarta_east
+		kathiawar_area
 		saurashtra_area
-		ajmer_area
-		mewar_area
-		marwar_area
+		upper_saurashtra
+		nishada_area
+		kunti_area
+		south_kunti_area
+		abhira_area
+		abhiradesa_area
+		malava_area
+		saraswata_area
 	}
 }
 
 mysore_region = { #Dravida
 	areas = {
-		rayalaseema_area
-		tirupati_area
-		kolhapur_area
-		desh_area
+		araiya_nadu_area
+		mahismandala_area
+		asika_area
+		kuntala_area
+		karavira_area
+		kolhapuri_area
+		kadamba_nadu_area
+		idaichehura_nadu_area
+		karanataka_area
+		kuttuva_nadu_area
+		athigan_nadu_area
+		moargur_area
+		dravida_east
+		oaymaan_nadu_area
+		mukaaval_nadu_area
+		kanchi_area
+		pulli_nadu_area
+		vaengada_nadu_area
+		vellmalai_area
+		andhraka_north
+		payalanadu_area
+		dravida_west
+		upper_krishnaveni_area
+		kishkindha_area
+		pungi_nadu_area
 	}
 }
 
 carnatic_region = { #Tamilakam
 	areas = {
-		north_coromandel_area
-		south_coromandel_area
-		madura_area
-		north_carnatic_area
-		south_carnatic_area
-		mysore_area
-		north_kerala_area
-		south_kerala_area
+		kaankezhu_nadu_area
+		needur_mizhalai_area
+		ay_area
+		koli_malai_nadu_area
+		karuvoor_nadu_area
+		parampu_malai_area
+		cera_payaal_malai_area
+		kakkanadu_area
 		mali_nadu_area
+		mushika_area
+		kuda_nadu_area
+		coleyas_area
+		thoatti_malai_area
+		thondai_nadu_area
+		kongu_nadu_area
+		mullur_nadu_area
+		punnaadu_area
+		chola_area
+		mahishaka_south
+		chera_nadu_area
+		kaandhal_kura_nadu_area
+		venadu_area
+		pothigai_nadu_area
+		pandya_area
+		aruva_nadu_area
 	}
 }
 
 indian_ocean_islands_region = { ##Lanka
 	areas = {
 		indian_ocean_islands_area
-		east_lanka_area
-		west_lanka_area
+		polonnaruwa_area
+		uttaradesa_ceylon_area
+		tamraparni_area
+		dakshinadesa_ceylon_area
+		pacina_desa_area
+		dakkina_area
 	}
 }
 
 orissa_region = {
 	areas = {
-		north_orissa_area
-		south_orissa_area
-		north_cuttack_area
-		south_cuttack_area
-		bastar_area
-		godavari_area
-		nizamabab_area
-		andhra_area
-		hyderabad_area
+		south_odra
+		mahendra_proper_area
+		mahanadi_area
+		kalinga_area
+		vidarbha_area
+		telinga_area
+		sabara_area
+		krishnaveni_area
+		musika_area
+		korounkala_area
+		mahendragiri_area
+		kalinga_south
+		sabara_north
+		kalinga_interior
+		taitilaka_area
+		utkala_area
+		utkala_south_area
+		amarakandaka_area
+		south_kosala
+		rajapuram_area
+		vanga_area
+		odra_area
 	}
 }
 
 west_bengal_region = { #Vanga
 	areas = {
-		jessor_area
-		bengal_area
-		bardwan_area
-		dakka_area
-		purniah_area
+		suhma_area
+		gangaridia_area
+		tamralipi_area
+		samatata_area
+		anga_area
+		south_samatata
+		tripuri_vanga_area
+		harikela_area
+		wari_bateshwar_area
+		lower_suhma
+		kalajangla_area
+		anga_south
+		south_kalajangla_area
+		east_vanga_area
+		prasuhma_area
+		shabara_area
+		agartala_vanga_area
 	}
 }
 
 himalaya_region = {
 	areas = {
-		east_nepalese_area
-		west_nepalese_area
-		garhwal_area
-		kangra_area
-		kashmir_area
-		ngari_area
+		himalaya_area
+		jangtang_area
+		savarna_gotra
+		sthanisvara_area
+		kasmira_area
+		chomolangma_area
 		pamir_area
+		north_pamir_area
+		puli_area
+		ladakh_area
+		darada_area
+		zhanzhung_area
+		chomolangma_north
 	}
 }
 
 tibet_region = {
 	areas = {
-		utsang_area
-		amdo_area
+		tsang_north
+		qiang_area
 		kham_area
+		tsang_area
+		lhasa_area
+		yarlung_area
+		sumpa_area
+		nangqen_area
+		kirata_area
 	}
 }
 
 zungaria_region = { #Tarim Basin
 	areas = {
-		tarim_basin_area
+		arsi_area
 		yarkand_area
-		hami_area
 		imaus_mons_area
+		tarim_area
+		qiuci_area
+		eastern_tarim_area
+		cadota_area
+		shanshan_area
+		turfan_area
+		loulan_area
+		khotan_area
+		iron_gate_area
 	}
 }
 
@@ -1450,22 +1622,41 @@ outer_mongolia_region = { #Northern Steppe
 		east_altai_area
 		#chita_area
 		argun_area
+		tarvagatai_area
 	}
 }
 
 prussia_region = { ##Altai
 	areas = {
-		altai_krai_area
-		zungaria_area
+		sayan_area
+		north_dzungaria_area
+		irtysh_area
+		lower_irtysh_area
+		western_dzungaria_area
+		central_dzungaria_area
+		danhuan_area
+		south_dzungaria_area
+		altai_gobi_area
+		tangdy_ula_area
+		yenisei_area
+		altai_area
+		khovd_area
 	}
 }
 
 polonia_minor_region = { ##Jetisu
 	areas = {
-		torghay_area
-		balchasj_area
-		ishim_area
-		jetysuu_area
+		argippaeia_area
+		hujie_area
+		ugria_area
+		southern_jetisu_area
+		issedonia_area
+		alanliao_area
+		eastern_jetisu_area
+		northern_jetisu_area
+		sacasene_eschate_area
+		issyk_kul_area
+		balkhash_area
 	}
 }
 
@@ -1495,7 +1686,7 @@ indian_ocean_region = {
 		andaman_sea_area
 		arabian_sea_area
 		australian_indian_coast_area
-		bay_of_bengal_area
+		bay_of_gangaridia_area
 		cape_of_storms_area
 		eastern_indian_ocean_area
 		gulf_of_aden_sea_area
@@ -2087,7 +2278,6 @@ coastal_burma_region = {
 	areas = {
 		lower_burma_area
 		arakan_area
-		chittagong_area
 		dakshina_airavati_area
 	}
 }

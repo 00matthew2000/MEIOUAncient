@@ -94,7 +94,7 @@ australian_indian_coast_area = {
 	1660 1661 1849 2021 2022
 }
 
-bay_of_bengal_area = {
+bay_of_gangaridia_area = {
 	1713 1716 1935 1936 1937 1938 1940 1943
 }
 
@@ -1864,8 +1864,12 @@ galich_area = {
 	290 1291 1865 2440
 }
 
-nogai_area = {
-	3287 2444 
+araxes_area = {
+	3287 
+}
+
+upper_aorsia = {
+	2444
 }
 
 nesietis_regio = {
@@ -2596,7 +2600,7 @@ gerrah_area = {
 	396 395 469
 }
 
-makarene_area = {
+ichtyophagorum_sinus = {
 	3069 467 2539
 }
 
@@ -4269,336 +4273,936 @@ sindhu_area = {
 	2556
 }
 
-multan_area = {
-	2112 2721 5312 5313 
+malloi_area = {
+	2112 
 }
 
-lahore_area = {
-	2113 3102 3109 
+shorkot_area = {
+	2721
 }
 
-shahpur_area = {
-	3104 2722 3103 3704 
+sivi_area = {
+	5313
 }
 
-khybyr_area = {
-	2114 3096 4595 
+kekaya_lower = {
+	5312
 }
 
-kangra_area = {
-	2700 3110 3113 
+madra_area = {
+	2113 
 }
 
-garhwal_area = {
-	3112 2701 523 
+bahlika_area = {
+	3102
 }
 
-sirhind_area = {
-	510 3106 5328 
+kekaya_area = {
+	3103 
 }
 
-patiala_area = {
-	511 564 3111 5329 
+hydaspes_area = {
+	3104 3110
 }
 
-upper_doab_area = {		#Panipat
-	3114 5330 521 522
+upper_sindhu = {
+	2722
 }
 
-delhi_area = {		#Delhi
-	2163 3115 3123 3126 2705
+apritas_area = {
+	3704
+}
+
+takshasila_area = {
+	4595 
+}
+
+gandhara_area = {
+	2114
+}
+
+kamboja_area = {
+	3096
+}
+
+purushapura_area = {
+	2700
+}
+
+sthanisvara_area = {
+	2701 523 3113
+}
+
+zhanzhung_area = {
+	3112
+}
+
+katocha_area = {
+	5328 
+}
+
+trigarta_area = {
+	510 3109
+}
+
+kamyaka_area = {
+	511 3111 
+}
+
+vatadhana_area = {
+	5329 3106
+}
+
+parusni_area = {
+	564
+}
+
+kuru_north = {		#Panipat
+	5330 522
+}
+
+kurukshetra_area = {
+	3114 521
+}
+
+somakas_area = {		#Delhi
+	3126 5316
+}
+
+kuru_west = {
+	3123 3115
 }
 
 bikaner_area = {
-	5314 5315 2719 2720
+	5314 2719 2720
 }
 
-central_doab_area = {	#Agra
-	524 3120 5316 5317 
+amvastha_area = {
+	5315
 }
 
-gwalior_area = {	#Fatehpur
-	3131 5318 3133 3132 
+surasena_area = {	#Agra
+	3120 
 }
 
-kalpi_area = {
-	550 2702 3118 3119 
+panchala_central = {
+	524 2555
 }
 
-jaipur_area = {
-	2704 2631 2706 528
+chedi_area = {	#Fatehpur
+	3133 
 }
 
-marwar_area = {
-	2718 512 5310 5311 
+kanyakubja_area = {
+	5318
 }
 
-ajmer_area = {
-	514 519 525 3122 
+vatsa_south = {
+	3132
 }
 
-mewar_area = {
-	518 2707 2708 
+south_nishadha_area = {
+	3118 
 }
 
-hadoti_area = {
-	520 2703 3117 3137 3138 
+nishadha_area = {
+	3119 5317
 }
 
-malwa_area = {
-	526 3116 3140 
+karusha_north = {
+	550
 }
 
-gondwana_area = {
-	2685 3139 3169
+matsya_area = {
+	2704 2705
 }
 
-nagpur_area = {
-	2554 2684 3170 3167 
+virata_area = {
+	2706 528
 }
 
-maharashtra_area = {	#Ahmadnagar
-	2680 2243 3146 
+kuru_east = {
+	2631
 }
 
-konkan_area = {
-	529 2569 3144 3145 4056 
+deserta_indica_area = {
+	2718 512 5311 
 }
 
-desh_area = {	#Bijapur
-	1587 3148 2212 2678 5303
+aberia_area = {
+	514 
 }
 
-kolhapur_area = {
-	2679 3147 3149 
+abhiradesa_area = {
+	525
 }
 
-rayalaseema_area = {	#Vijayanagar
-	544 2677 3153 4079 
+abhira_area = {
+	519
 }
 
-tirupati_area = {
-	543 547 3155 2628 2672
+sarmista_area = {
+	518 
 }
 
-rohilkhand_area = {
-	3127 5332 5333 2555 5331
+upper_saurashtra = {
+	2708 3142
 }
 
-purvanchal_area = {
-	3134 5336 3129 5338 5339
+vindhya_area = {
+	2703
 }
 
-oudh_area = {	#Lucknow
-	555 3128 5335 5334
+uparichara_area = {
+	3138
 }
 
-awadh_area = {
-	2557 3130 5337 3135 
+karusha_area = {
+	3137
 }
 
-varanasi_area = {
-	2632 2210 5320 5341
+besnagara_area = {
+	2702 2686
 }
 
-bundelkhand_area = {
-	556 2687 3171 2686 5319
+kunti_area = {
+	520
 }
 
-jessor_area = {		#Jessore
-	1588 5347 5348 5357
+nishada_area = {
+	3117
 }
 
-bengal_area = {
-	561 563 5244 5349 
+avanti_east = {
+	3140 
 }
 
-bardwan_area = {	#Bardwan
-	3183 3176 5325 3182 5326
+south_kunti_area = {
+	3116
+}
+
+avanti_area = {
+	526 3141
+}
+
+vakataka_north = {
+	2685
+}
+
+pulinda_north = {
+	3169
+}
+
+erakinadesa_area = {
+	3139
+}
+
+vidarbha_north = {
+	2554 
+}
+
+vakataka_area = {
+	2684
+}
+
+pulinda_area = {
+	3170
+}
+
+gurala_area = {	#Ahmadnagar
+	2243 
+}
+
+sahyadri_area = {
+	2680
+}
+
+surparaka_area = {
+	529 2569 3144 4056 
+}
+
+konkana_area = {
+	3145 3150
+}
+
+kuntala_area = {	#Bijapur
+	2212
+}
+
+payalanadu_area = {
+	2678
+}
+
+vellmalai_area = {
+	1587
+}
+
+oaymaan_nadu_area = {
+	5303
+}
+
+kolhapuri_area = {
+	3148
+}
+
+asika_area = {
+	530
+}
+
+idaichehura_nadu_area = {
+	3149
+}
+
+kadamba_nadu_area = {
+	2679
+}
+
+karavira_area = {
+	3147
+}
+
+araiya_nadu_area = {	#Vijayanagar
+	3153
+}
+
+kishkindha_area = {
+	544
+}
+
+vaengada_nadu_area = {
+	2677
+}
+
+kuttuva_nadu_area = {
+	4079
+}
+
+karanataka_area = {
+	3152
+}
+
+mahismandala_area = {
+	543
+}
+
+pulli_nadu_area = {
+	2628
+}
+
+kanchi_area = {
+	2672
+}
+
+dravida_east = {
+	547
+}
+
+athigan_nadu_area = {
+	3155
+}
+
+keshin_area = {
+	5332 5331
+}
+
+hastinapura_area = {
+	3127 2163
+}
+
+panchala_area = {
+	5333
+}
+
+kotsala_area = {
+	5338 5339
+}
+
+kosala_west = {
+	3134
+}
+
+kapilavastu_area = {
+	5336
+}
+
+panchala_south = {
+	3129 5334
+}
+
+krivi_area = {	#Lucknow
+	3128 5335
+}
+
+srinjaya_area = {
+	555 3131
+}
+
+jalachandram_area = {
+	3130 
+}
+
+kashi_area = {
+	3135
+}
+
+upper_kashi = {
+	5337
+}
+
+vatsa_area = {
+	2557 5320
+}
+
+kosambana_area = {
+	2632
+}
+
+bhargz_area = {
+	2210
+}
+
+pasubhumi_area = {
+	2687 5319 549
+}
+
+dasarna_area = {
+	3171 556
+}
+
+suhma_area = {		#Jessore
+	5347
+}
+
+kalajangla_area = {
+	1588
+}
+
+lower_suhma = {
+	5357 5348
+}
+
+gangaridia_area = {
+	563 5349 
+}
+
+east_vanga_area = {
+	5244 561
+}
+
+tamralipi_area = {	#Bardwan
+	3182 5326
+}
+
+south_kalajangla_area = {
+	3183 3180
+}
+
+shabara_area = {
+	3176 5325
 }
 
 naga_hills_area = {
-	3194 2698 569 2699
+	3194 2698 569
+}
+
+tripuri_vanga_area = {
+	2699
 }
 
 kalay_area = {
 	580 2428 3903
 }
 
-dakka_area = {	#Dakka
-	2696 567 3189 5358 3190 3191
+samatata_area = {	#Dakka
+	2696 3189
 }
 
-chittagong_area = {	#Chittagong
-	568 3192
+wari_bateshwar_area = {
+	5358
 }
 
-north_bengal_area = {	#Barind
-	2693 3203 5356
+harikela_area = {
+	567
 }
 
-jalpaiguri_area = { #Rangpur
-	3187 3188 5355 
+south_samatata = {
+	3190 3191
 }
 
-south_bihar_area = {	#Patna
-	2688 3202 558 5344 
+agartala_vanga_area = {	#Chittagong
+	3192
 }
 
-purniah_area = {		#Purniah
-	3184 2689 5345 5346
+pundra_area = {	#Barind
+	2693 5355
 }
 
-muzzaffarpur_area = {		#Muzzaffarpur
-	3136 5340 5342 5343   
+pundra_east = { #Rangpur
+	5356 3203
 }
 
-baghalpur_area = { #Tirhut
-	2690 5352 5353 5354 3185
+kamarupa_proper = {
+	3188 565
 }
 
-jharkhand_area = {
-	549 559 3179 3180 3181
+vardhamana_area = {
+	3187
 }
 
-north_orissa_area = {	#Sambalpur
-	548 3177 5321 
+magadha_area = {	#Patna
+	558 
 }
 
-south_orissa_area = {
-	552 3200 5322 
+magadha_east = {
+	2688
 }
 
-north_cuttack_area = {
-	560 3178 5324 
+suparsa_area = {
+	3202
 }
 
-south_cuttack_area = {
-	3175 3204 5323 
+kikata_area = {
+	5344
 }
 
-andhra_area = {	#Andhra
-	507 2627 5304
+anga_area = {		#Purniah
+	2689 5345
 }
 
-godavari_area = {
-	2630 3174 553 5305 5309
+anga_south = {
+	3184
 }
 
-hyderabad_area = {		#Hyderabad
-	545 3160 3161
+prasuhma_area = {
+	5346
 }
 
-nizamabab_area = {
-	546 3162 5306 
+malla_area = {		#Muzzaffarpur
+	3136
 }
 
-north_kerala_area = {	#Malabar
-	534 2570 5296
+gopala_area = {
+	5342 5341
+}
+
+malla_south = {
+	5340
+}
+
+north_vrji_area = {
+	5343
+}
+
+videha_area = { #Tirhut
+	5352 5354
+}
+
+saharsa_area = {
+	3185
+}
+
+vajji_area = {
+	5353
+}
+
+vrji_area = {
+	2690
+}
+
+south_kikata_area = {
+	3179 3181
+}
+
+south_suparsa_area = {
+	559
+}
+
+south_odra = {	#Sambalpur
+	5321 3178
+}
+
+rajapuram_area = {
+	3177 3204
+}
+
+south_kosala = {
+	548
+}
+
+mahendra_proper_area = {
+	552 
+}
+
+taitilaka_area = {
+	5322
+}
+
+kalinga_interior = {
+	3200
+}
+
+mahanadi_area = {
+	560 
+}
+
+vanga_area = {
+	5324
+}
+
+kalinga_area = {
+	3175 5323 
+}
+
+krishnaveni_area = {	#Andhra
+	2627 5304
+}
+
+andhraka_north = {
+	507
+}
+
+odra_area = {
+	3174
+}
+
+telinga_area = {
+	553 5305
+}
+
+kalinga_south = {
+	2630 5309
+}
+
+musika_area = {		#Hyderabad
+	3161 5306
+}
+
+korounkala_area = {
+	3160
+}
+
+upper_krishnaveni_area = {
+	545
+}
+
+sabara_area = {
+	546 
+}
+
+mahendragiri_area = {
+	3162
+}
+
+cera_payaal_malai_area = {	#Malabar
+	534 2570
+}
+
+chera_nadu_area = {
+	5296
 }
 
 mali_nadu_area = {
-	532 533 5298
+	532
 }
 
-south_kerala_area = {
-	3157 535 5293 3156 
+mushika_area = {
+	533 5298
 }
 
-north_carnatic_area = {	#Arcot
-	541 4078 5301 5302 
+kakkanadu_area = {
+	3157 3156 
 }
 
-south_carnatic_area = {
-	5295 5297 1520 539 2674 
+venadu_area = {
+	5293
 }
 
-north_coromandel_area = {
-	3159 542 2629 2245 
+kaandhal_kura_nadu_area = {
+	535
 }
 
-south_coromandel_area = {
-	537 2673 5300 
+koli_malai_nadu_area = {	#Arcot
+	5301 
 }
 
-madura_area = {
-	538 3158 536 5294 
+thondai_nadu_area = {
+	4078 542
 }
 
-kanara_area = {
-	531 3150 3151 3152 
+pungi_nadu_area = {
+	541
 }
 
-mysore_area = {
-	540 2676 3154 2675 5299 
+mukaaval_nadu_area = {
+	5302
 }
 
-daulatabad_area = {	#Daulatabad
-	3164 5307 5308 
+karuvoor_nadu_area = {
+	1520 
 }
 
-berar_area = {
-	2244 3163 3166 
+punnaadu_area = {
+	539
 }
 
-raichur_area = {	#Bidar
-	3165 2681 530 
+mullur_nadu_area = {
+	2674
 }
 
-assam_area = {	#Assam
-	566 570 571 3193 
+dravida_west = {
+	5295
 }
 
-koch_area = {
-	2694 2695 3186 
+kaankezhu_nadu_area = {
+	2629 2245 
 }
 
-himalayan_hills_area = {	#Himalayan Foothills
-	562 565 3205 3206
+needur_mizhalai_area = {
+	2673 
 }
 
-east_nepalese_area = {		#Nepal
+mahishaka_south = {
+	5300
+}
+
+chola_area = {
+	537
+}
+
+ay_area = {
+	536 
+}
+
+aruva_nadu_area = {
+	3158
+}
+
+pandya_area = {
+	538
+}
+
+pothigai_nadu_area = {
+	5294
+}
+
+gomanta_area = {
+	531 3151
+}
+
+parampu_malai_area = {
+	3159
+}
+
+kongu_nadu_area = {
+	3154
+}
+
+thoatti_malai_area = {
+	540 5297
+}
+
+coleyas_area = {
+	5299
+}
+
+kuda_nadu_area = {
+	2676
+}
+
+moargur_area = {
+	2675
+}
+
+asmaka_east = {	#Daulatabad
+	5307 
+}
+
+asmaka_west = {
+	5308
+}
+
+dandaka_area = {
+	3164
+}
+
+orugallu_area = {
+	2244 3163 
+}
+
+kutas_area = {
+	3166
+}
+
+asmaka_south = {	#Bidar
+	2681 
+}
+
+mulaka_area = {
+	3165
+}
+
+lauhitya_area = {	#Assam
+	571 3205
+}
+
+prakjyotisha_area = {
+	566 570
+}
+
+kamarupa_area = {
+	2694 2695 
+}
+
+upper_lauhitya = {	#Himalayan Foothills
+	3206 3193
+}
+
+kamata_area = {
+	562 3186
+}
+
+kirata_area = {		#Nepal
 	557 2692 4124 4125 
 }
 
-west_nepalese_area = {
-	554 2691 3198 
+himalaya_area = {
+	554 2691 
 }
 
-kashmir_area = {
-	3105 2115 2116 2226 508
+chomolangma_north = {
+	3198
+}
+
+kasmira_area = {
+	3105 2115
+}
+
+darada_area = {
+	508
+}
+
+ladakh_area = {
+	2116
+}
+
+sagala_area = {
+	2226
 }
 
 pamir_area = {
-	2748 4594
+	4594
 }
 
-east_lanka_area = {
-	2337 3201 5292 
+north_pamir_area = {
+	2748
 }
 
-west_lanka_area = {
-	572 573 2336
+polonnaruwa_area = {
+	3201 
 }
 
-gujarat_area = {
-	515 3125 2709 2568 517 
+dakshinadesa_ceylon_area = {
+	5292
 }
 
-patan_area = {
-	2723 3124 2714 516 2710
+pacina_desa_area = {
+	2337
+}
+
+uttaradesa_ceylon_area = {
+	572
+}
+
+dakkina_area = {
+	573
+}
+
+tamraparni_area = {
+	2336
+}
+
+anupa_west = {
+	2709
+}
+
+aparanta_area = {
+	3146
+}
+
+barukaccha_area = {
+	2568 517
+}
+
+heyaya_area = {
+	3125
+}
+
+upper_saraswata = {
+	2723 2714 
 }
 
 saurashtra_area = {
-	2711 3238 2712 3199 2713 503
+	516 515
 }
 
-bastar_area = {
-	2682 2558 2683 3172 3173
+saraswata_area = {
+	2710
 }
 
-indore_area = {
-	3142 2211 3141 3143 527 3168
+gurjara_area = {
+	3124 5310 3122
+}
+
+anarta_area = {
+	2712 2713
+}
+
+kathiawar_area = {
+	2711 3238
+}
+
+anarta_east = {
+	3199
+}
+
+kachcha_area = {
+	503
+}
+
+vidarbha_area = {
+	3172
+}
+
+amarakandaka_area = {
+	3173
+}
+
+utkala_south_area = {
+	2558
+}
+
+utkala_area = {
+	2683
+}
+
+sabara_north = {
+	2682
+}
+
+malava_area = {
+	2211 2707
+}
+
+heyaya_east = {
+	3143 3167
+}
+
+janasthana_area = {
+	3168
+}
+
+anupa_area = {
+	527
 }
 
 ########################################
@@ -4622,7 +5226,7 @@ lower_burma_area = {
 }
 
 arakan_area = {
-	4219 585 3214 579 
+	4219 585 3214 579 568
 }
 
 kachin_area = {
@@ -4970,7 +5574,11 @@ lower_ob_area = {
 }
 
 upper_ob_area = {
-	1069 4966 4964 4965 4967 
+	1069 4966 4964 
+}
+
+tarvagatai_area = {
+	4967
 }
 
 irkutsk_area = {
@@ -4981,32 +5589,68 @@ ural_area = {
 	281 1306 4205 4206 4208 1082 
 }
 
-balchasj_area = {
-	479 5033 3643 3309 
+hujie_area = {
+	3643 3309 
 }
 
-kazakhstan_area = {
-	1081 1073 3310 4113 5046 
+balkhash_area = {
+	5033 479
 }
 
-torghay_area = {
-	 475 1076 3304 3312 
+deserta_scythia = {
+	1081 
+}
+
+riphaean_mons_area = {
+	1073
+}
+
+scythia_magna_area = {
+	5046
+}	
+
+aorsia = {
+	4113
+}
+
+atara_area = {
+	3310
+}
+
+argippaeia_area = {
+	 475 1076 3312 
 }
 
 yrtesh_area = {
 	1070 1071 4201 4204 2446 1529 
 }
 
-altai_krai_area = {
-	3277 4968 5245 
+sayan_area = {
+	3277 
+}
+
+tangdy_ula_area = {
+	5245
+}
+
+irtysh_area = {
+	4965 4968
 }
 
 iskier_area = {
 	1077 1079 1080 
 }
 
-ishim_area = {
-	472 2442 2465 3308 
+ugria_area = {
+	472 3308 
+}
+
+alanliao_area = {
+	2465
+}
+
+issedonia_area = {
+	2442 3304
 }
 
 ########################################
@@ -5014,24 +5658,96 @@ ishim_area = {
 ########################################
 
 
-tarim_basin_area = {
-	717 2118 2746 3210 3211 4705 
+arsi_area = {
+	4705 2118
+}
+
+loulan_area = {
+	717
+}
+
+shanshan_area = {
+	2746 1336
+}
+
+iron_gate_area = {
+	3210
+}
+
+eastern_tarim_area = {
+	3211
 }
 
 yarkand_area = {
-	739 2740 2741 2745
+	2740 2745
 }
 
-zungaria_area = {
-	2273 478 2742 3305 926 978 4816 
+khotan_area = {
+	2741
 }
 
-hami_area = {
-	2743 1336 3213 4958 4818 4819 
+tarim_area = {
+	739
 }
 
-jetysuu_area = {
-	460 461 477 459 2221 3306 
+north_dzungaria_area = {
+	2273 978 
+}
+
+central_dzungaria_area = {
+	478
+}
+
+danhuan_area = {
+	2742
+}
+
+lower_irtysh_area = {
+	926
+}
+
+cadota_area = {
+	4819
+}
+
+altai_area = {
+	4816
+}
+
+altai_gobi_area = {
+	2743
+}
+
+south_dzungaria_area = {
+	4958
+}
+
+turfan_area = {
+	3213
+}
+
+qiuci_area = {
+	4818
+}
+
+southern_jetisu_area = {
+	461 
+}
+
+western_dzungaria_area = {
+	3306 3305
+}
+
+sacasene_eschate_area = {
+	460
+}
+
+northern_jetisu_area = {
+	477
+}
+
+eastern_jetisu_area = {
+	459
 }
 
 upper_chui_area = {
@@ -5039,22 +5755,59 @@ upper_chui_area = {
 }
 
 imaus_mons_area = {
-	4599 3848 3302
+	4599 3848
 }
 
-amdo_area = {
-	2258 2259 3209 2260 2463 
+issyk_kul_area = {
+	3302 2221
+}
+
+qiang_area = {
+	2260 2463 5120
+}
+
+tsang_area = {
+	2259
 }
 
 kham_area = {
-	666 2264 2122 4054
+	666 2264 4054
 }
 
-utsang_area = {
-	3207 2263 2120 3208 
+lhasa_area = {
+	2122
 }
-ngari_area = {
-	2261 2262 509 3107 
+
+tsang_north = {
+	3207 
+}
+
+nangqen_area = {
+	3208 2258
+}
+
+sumpa_area = {
+	2120 2255
+}
+
+yarlung_area = {
+	2263 3209
+}
+
+chomolangma_area = {
+	2262 
+}
+
+jangtang_area = {
+	2261
+}
+
+savarna_gotra = {
+	3107
+}
+
+puli_area = {
+	509
 }
 
 yanyun_area = { 706 5377 5376 708 }
@@ -5115,13 +5868,13 @@ shaanbei_area = { 2251 5493 5119 }
 xiaojun_area = { 3275 2254 5491 }
 guanzhong_area = { 2252 5487 5489 5490 }
 longxi_area = { 2119 2257 5494 5133 }
-lintao_area = { 5492 2256 2162 5120 }
+lintao_area = { 5492 2256 2162 }
 
 east_yunnan_area = { 662 1759 2753 5497 5498 }
 west_yunnan_area = { 660 661 2326 2083 5501 4055 }
 central_yunnan_area = { 663 1758 5499 5500 }
 
-xishu_area = {	1337 2255 5450 5505 5506 }
+xishu_area = {	1337 5450 5505 5506 }
 northeast_sichuan_area = {	665 2797 5449 5451 }
 southwest_sichuan_area = {	664 2510 2793 5446 5122 5123 }
 ba_area = { 685 1143 }
@@ -5204,10 +5957,16 @@ khangai_area = {
 	3272 3273
 }
 west_mongolia_area = {
-	4198 2271 
+	4198 
+}
+yenisei_area = {
+	2271
 }
 east_altai_area = {
-	715 2270 
+	715 
+}
+khovd_area = {
+	2270
 }
 katun_area = {
 	1054 3255 1052 1044 4196
