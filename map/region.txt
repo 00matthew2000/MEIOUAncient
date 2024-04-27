@@ -1615,14 +1615,22 @@ zungaria_region = { #Tarim Basin
 
 outer_mongolia_region = { #Northern Steppe
 	areas = {
-		north_mongolia_area
-		east_mongolia_area
+		tuul_area
+		kerulen_area
 		khangai_area
-		west_mongolia_area
-		east_altai_area
-		#chita_area
-		argun_area
+		khovsgol_area
 		tarvagatai_area
+		sha_mo_area
+		zavkhan_area
+		orkhon_area
+		western_xiongnu
+		hentey_area
+		hanhai_area
+		onon_area
+		eastern_xiongnu
+		north_wuhuan_area
+		xianbei_steppe_area
+		southern_wuhuan_area
 	}
 }
 
@@ -1983,9 +1991,20 @@ shaangan_region = { #Si Zhou
 
 shanxi_region = { #Bing Zhou
 	areas = {
-		north_shanxi_area
-		fenshui_area
-		south_shanxi_area
+		yanmen_area
+		yanmen_area_northern
+		pingyang_area
+		pingyang_area_northern
+		shangdang_area
+		shangdang_area_eastern
+		south_shangdang_area
+		dai_area_northern
+		dai_area
+		taiyuan_area
+		north_taiyuan_area
+		taiyuan_area_eastern
+		hedong_area
+		hedong_area_western
 	}
 }
 
@@ -2082,16 +2101,26 @@ sichuan_region = { #Yi Zhou
 
 yunnan_region = { #Liang Zhou
 	areas = {
+		west_hexi_area
+		central_hexi_area
+		east_hexi_area
+		tianshui_area_eastern
+		tianshui_area
+		anding_area_western
+		anding_area
 		longxi_area
-		lintao_area
-		xiaojun_area
 	}
 }
 
 guangxi_region = { ##Shuo Zhou
 	areas = {
-		shaanbei_area
-		ordos_area
+		shang_area
+		xihe_area
+		yunzhong_area_southern
+		beidi_area_northern
+		jiuyuan_area_northern
+		beidi_area
+		xihe_area_eastern
 	}
 }
 
@@ -2100,72 +2129,95 @@ hebei_region = { #You Zhou
 		yanyun_area
 		yanghe_area
 		jizhou_area
-		outer_liaoning_area
+		outer_liaodong_area
 	}
 }
 
 kashmir_region = { ##Yemaek
 	areas = {
-		donggye_area
+		xuantu_area
+		maek_area
+		biryu_area
+		upper_yalu_area
+		puri_area
+		kugwonson_area
+		bukokjeo_area
 	}
 }
 
 west_manchuria_region = { #Buyeo
 	areas = {
-		#east_jurcen_area
-		west_hulun_area
-		#east_hulun_area
-		#hu_lan_area
-		xinhai_area
-		#yanshan_area
-		#dalian_area
-		west_jurcen_area
+		seobuyeo_area
+		toge_area
+		dongbuyeo_area
+		miylson_area
+		buyeo_area
+		bukbuyeo_area
 	}
 }
 
 east_manchuria_region = { #Sushen
 	areas = {
-		wakra_area
+		yilou_area
 		songhua_area
-		#upper_amur_area
-		nen_area
+		inbollo_area
 		udege_area
+		western_sushen_area
+		chha_hol_area
+		sushen_area
 	}
 }
 
 awadh_region = { ##Joseon
 	areas = {
-		liaoning_area
+		liaodong_area
+		syuantu_area
+		ului_area
+		liaodong_area_northern
 	}
 }
 
 central_india_region = { ##Nakrang
 	areas = {
-		north_korea_area
+		lelang_area
+		sulchhon_area
+		daifang_chan_area
+		zhenfan_area
 	}
 }
 
 west_india_region = { ##Dongye
 	areas = {
-		imdun_area
+		lintun_area
+		kugwonseong_area
+		ki_area
 	}
 }
 
 korea_region = { ##Mahan
 	areas = {
-		central_korea_area
+		mahan_area
+		temogak_paek_area
+		ungjin_area
+		baekje_area
+		geonma_area
 	}
 }
 
 east_deccan_region = { ##Jinhan
 	areas = {
-		south_korea_area
+		nannan_area
+		silla_area
 	}
 }
 
 gondwana_region = { ##Byeonhan
 	areas = {
-		jeolla_area
+		tai_area
+		sollim_paek_area
+		hyesong_area
+		jeju_area
+		yecheon_area
 	}
 }
 
@@ -2401,7 +2453,6 @@ east_siberia_region = {
 		magadan_area
 		kamchatka_area
 		tunguska_area
-		katun_area
 		sakhalin_area
 		amgun_area
 		zeya_area
@@ -2411,13 +2462,8 @@ east_siberia_region = {
 
 inner_mongolia_region = {
 	areas = {
-		#ulanqab_area
-		#west_tumed_area
-		east_tumed_area
-		#hulunbuir_area
-		gobi_desert_area
-		south_hinggan_area
-		north_hinggan_area
+		argun_area
+		katun_area
 	}
 }
 

@@ -5457,28 +5457,104 @@ south_sulawesi_area = {
 # Korea & Japan# # # # # # #
 ########################################
 
-north_korea_area = {
-	733 1822 2801 5132
+lelang_area = {
+	1822
 }
 
-donggye_area = {
-	730 2800 3686 3241 3242
+zhenfan_area = {
+	733
 }
 
-imdun_area = {
-	732 2806 734
+daifang_chan_area = {
+	2801
 }
 
-central_korea_area = {
-	2802 735 2803 2233 
+sulchhon_area = {
+	5132
 }
 
-south_korea_area = {
-	736 2805 
+xuantu_area = {
+	730
 }
 
-jeolla_area = {
-	737 877 2276 2804 889 2461 
+kugwonson_area = {
+	3242
+}
+
+bukokjeo_area = {
+	3248
+}
+
+puri_area = {
+	3686
+}
+
+upper_yalu_area = {
+	2800
+}
+
+biryu_area = {
+	3241
+}
+
+lintun_area = {
+	732
+}
+
+ki_area = {
+	2806
+}
+
+kugwonseong_area = {
+	734
+}
+
+mahan_area = {
+	735 
+}
+
+ungjin_area = {
+	2803
+}
+
+temogak_paek_area = {
+	2233
+}
+
+baekje_area = {
+	2802
+}
+
+geonma_area = {
+	737
+}
+
+nannan_area = {
+	736 
+}
+
+silla_area = {
+	2805
+}
+
+tai_area = {
+	2461 
+}
+
+yecheon_area = {
+	889
+}
+
+jeju_area = {
+	2276
+}
+
+hyesong_area = {
+	877
+}
+
+sollim_paek_area = {
+	2804
 }
 
 west_kansai_area = {
@@ -5811,19 +5887,33 @@ puli_area = {
 }
 
 yanyun_area = { 706 5377 5376 708 }
-yanghe_area = { 5375 5373 709 5484 }
+yanghe_area = { 5375 5373 709 }
+dai_area_northern = { 5484 }
+dai_area = { 5483 }
 jizhou_area = { 705 704 5374 }
 south_hebei_area = { 5371 5372 703 724 }
-north_shanxi_area = { 2247 5483 5482 2468 }
-fenshui_area = { 2476 2471 5478 5479 }
-south_shanxi_area = { 2467 2246 5480 5481 }
+yanmen_area = { 2247 }
+taiyuan_area = { 2468 }
+north_taiyuan_area = { 5482 }
+taiyuan_area_eastern = { 2476 }
+pingyang_area = { 5479 }
+hedong_area_western = { 5478 }
+pingyang_area_northern = { 2471 }
+shangdang_area = { 5480 }
+hedong_area = { 2246 }
+south_shangdang_area = { 2467 }
+shangdang_area_eastern = { 5481 }
 
 luxinan_area = { 5385 5386 2491 2560 5387 }
 laizhou_bandao_area = { 2492 697 5378 5379  }
 south_shandong_area = { 698 }
 north_shandong_area = { 5388 5389 1041 699 5380 }
 ju_area = { 5381 5382 5383 5384 }
-liaoning_area = { 2249 4035 4037 4036 }
+liaodong_area = { 2249 }
+maek_area = { 4037 }
+liaodong_area_northern = { 4035 }
+ului_area = { 4036 }
+syuantu_area = { 4032 }
 
 heluo_area = { 702 5471 5476 }
 south_henan_area = { 5474 5475 2472 }
@@ -5864,11 +5954,20 @@ west_hubei_area = {	684 687 688 5462 5463 }
 east_hubei_area = { 1172 5464 5465 5466 5467 5468  }
 
 hanzhong_area = { 2170 5488 5121 }
-shaanbei_area = { 2251 5493 5119 }
-xiaojun_area = { 3275 2254 5491 }
+shang_area = { 2251 }
+xihe_area_eastern = { 5119 }
+beidi_area = { 5493 }
+anding_area_western = { 5491 }
+beidi_area_northern = { 2254 }
+jiuyuan_area_northern = { 3275 }
 guanzhong_area = { 2252 5487 5489 5490 }
-longxi_area = { 2119 2257 5494 5133 }
-lintao_area = { 5492 2256 2162 }
+west_hexi_area = { 2119 }
+anding_area = { 5494 }
+east_hexi_area = { 5133 }
+central_hexi_area = { 2257 }
+tianshui_area_eastern = { 2256 }
+tianshui_area = { 5492 }
+longxi_area = { 2162 }
 
 east_yunnan_area = { 662 1759 2753 5497 5498 }
 west_yunnan_area = { 660 661 2326 2083 5501 4055 }
@@ -5890,25 +5989,33 @@ south_guangdong_area = { 676 677 2121 5440 5441 }
 west_guangdong_area = { 673 674 675 2464 3939 }
 
 
-outer_liaoning_area = {
+outer_liaodong_area = {
 	3240 2248 707 
 }
 
-west_jurcen_area = {
-	3243 2328
+dongbuyeo_area = {
+	2328
 }
-west_hulun_area = {
-	731 4031 3258 
+seobuyeo_area = {
+	3258 
 }
-wakra_area = {
+buyeo_area = {
+	4031
+}
+chha_hol_area = {
+	731
+}
+yilou_area = {
 	3245 3244 3246 
 }
 songhua_area = {
-	3256 723 725 728 
+	3256 723 728 
 }
-
+sushen_area = {
+	725 3243
+}
 udege_area = {
-	4032 729 3248 3247 
+	729 3247 
 }
 lower_amur_area = {
 	1048 1050 1049 3249 1047 3250 
@@ -5922,54 +6029,89 @@ amgun_area = {
 zeya_area = {
 	3254 3253 727 
 }
-
-east_tumed_area = {
-	3268 2253 5131 2267 
+southern_wuhuan_area = {
+	2253 720
 }
-ordos_area = {
+yanmen_area_northern = {
+	3268
+}
+yunzhong_area_southern = {
+	2267
+}
+xihe_area = {
 	722
 }
-xinhai_area = {
-	3262 2266 3259 4038 
+toge_area = {
+	3262 2266 
 }
-nen_area = {
-	3261 3260 3257 726 
+miylson_area = {
+	4038
+}
+bukbuyeo_area = {
+	3259
+}
+inbollo_area = {
+	3260 3257 726 
+}
+western_sushen_area = {
+	3261
 }
 south_hinggan_area = {
 	3263 2265 713
 }
-north_hinggan_area = {
-	720 3264
+xianbei_steppe_area = {
+	3264 719
 }
 argun_area = {
-	3269 1056 721 1058 
+	3269 1056 721 1058
 }
-north_mongolia_area = {
-	3271 1059 4197 
+tuul_area = {
+	1059 
 }
-east_mongolia_area = {
-	3267 1061 719 3266 3270
+hanhai_area = {
+	3271
 }
-gobi_desert_area = {
-	2268 4039 3265 1057
+kerulen_area = {
+	3267
+}
+onon_area = {
+	3270
+}
+hentey_area = {
+	1061
+}
+western_xiongnu = {
+	3266
+}
+north_wuhuan_area = {
+	3265 5131
+}
+eastern_xiongnu = {
+	1057 715
+}
+zavkhan_area = {
+	2268
+}
+sha_mo_area = {
+	4039
 }
 khangai_area = {
-	3272 3273
+	3272
 }
-west_mongolia_area = {
+orkhon_area = {
+	3273
+}
+khovsgol_area = {
 	4198 
 }
 yenisei_area = {
 	2271
 }
-east_altai_area = {
-	715 
-}
 khovd_area = {
 	2270
 }
 katun_area = {
-	1054 3255 1052 1044 4196
+	1054 3255 1052 1044 4196 4197
 }
 
 ########################################
