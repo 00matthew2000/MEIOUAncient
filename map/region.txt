@@ -115,7 +115,7 @@ andalucia_region = {
 	areas = {
 		malaca_area
 		lower_guadalquivir_area
-		corduba_area
+		cordubaxi_area
 		solorius_mons
 		regina_turdulocappadocia_area
 		gades_area
@@ -163,7 +163,7 @@ castille_region = {
 		etobesa_area
 		caesaraugustanus_area
 		numantia_area
-		emporia_area
+		rhoda_area
 		iberus_area
 		tarraconensis_area
 	}
@@ -559,6 +559,7 @@ low_countries_region = { ##Palaestina
 		ascalonitis_area
 		judaea_area
 		idumaea_area
+		qadesh_area
 	}
 }
 
@@ -835,7 +836,7 @@ hadhramaut_region = {
 		awsan_area
 		libanotophoros_regio
 		mapharitis_area
-		saba_area
+		sabaxi_area
 		myrrhifera_interior
 		makan_area
 		himyar_area
@@ -856,7 +857,7 @@ arabia_region = {
 		arabia_east
 		main_area
 		dumatha_area
-		macoraba_area
+		macorabaxi_area
 		deserta_arabia
 		ichtyophagorum_sinus
 	}
@@ -1941,7 +1942,7 @@ middle_africa_region = {
 inland_kongo_region = {
 	areas = {
 		ndongo_area
-		mpemba_area
+		mpembaxi_area
 		ngola_area
 		east_congo_area
 	}
@@ -1983,9 +1984,18 @@ australia_region = {
 
 shaangan_region = { #Si Zhou
 	areas = {
-		guanzhong_area
-		north_henan_area
-		heluo_area
+		jingzhao_area
+		hongnong_area_east
+		hongnong_area_south
+		hongnong_area
+		north_henei_area
+		henei_area_east
+		henei_area
+		henan_area_west
+		fufeng_area
+		west_pingyi_area_western
+		east_pingyi_area
+		henan_area
 	}
 }
 
@@ -2010,17 +2020,27 @@ shanxi_region = { #Bing Zhou
 
 central_doab_region = { ##Yan Zhou
 	areas = {	
-		luxinan_area
+		dong_area
 		chenliu_area
+		taishan_area
+		jiyin_area_south
+		dang_area_north
+		dang_area
+		jiyin_area
+		xue_area_north
 	}
 }
 
 zhongyuan_region = { #Yu Zhou
 	areas = {
-		haozhou_area
-		south_henan_area
+		sishui_area
+		huaiyang_area_south
+		sishui_area_north
 		yingchuan_area
-		pengcheng_area
+		runan_area_south
+		runan_area
+		huaiyang_area
+		yingchuan_area_north
 	}
 }
 
@@ -2031,71 +2051,94 @@ huguang_region = { #Jing Zhou
 		west_hunan_area
 		west_hubei_area
 		east_hubei_area
+		nanyang_area
+		wuling_area_south
 	}
 }
 
 jiangxi_region = { #Yang Zhou
 	areas = {
-		nw_jiangxi_area
-		south_jiangxi_area
-		central_jiangxi_area
-		east_jiangxi_area
-		huizhou_area
-		anqing_area
-		jinling_area
+		yuzhang_area
+		yuzhang_area_south
+		lujiang_area
+		danyang_area
+		jiujiang_area_west
+		piling_area
+		piling_area_south
 		wu_area
-		songjiang_area
-		south_zhejiang_area
-		east_zhejiang_area
-		west_zhejiang_area
-		hangzhou_area
-		central_zhejiang_area
-		minnan_area
-		west_fujian_area
-		north_fujian_area
+		linhai_area
+		kuaiji_area
+		kuaiji_area_west
+		minzhong_area_north
+		minzhong_area
+		jiujiang_area
+		hengshan_area_north
+		hengshan_area
+		danyang_area_south
 	}
 }
 
-fujian_region = { ##Taiyuan
+fujian_region = { ##Tai Zhou or Taiyuan maybe
 	areas = {
-		taiwan_area
+		yizhou_taiwan_area
+		taizhou_taiwan_area
 	}
 }
 
 zhejiang_region = { #Ji Zhou
 	areas = {
-		south_hebei_area
+		wei_area
+		changshan_area
+		julu_area
+		handan_area_northern
+		qinghe_area
+		changshan_area_southern
 	}
 }
 
 jiaoliao_region = { #Qing Zhou
 	areas = {
-		laizhou_bandao_area
-		north_shandong_area
+		jiaodong_area
+		linzi_area
+		jimo_area
+		beihai_area
+		linzi_area_north
+		jibei_area
+		jibei_area_south
+		jinan_area
 	}
 }
 
 jiangnan_region = { #Xu Zhou
 	areas = {
-		huaizuo_area
-		huaibei_area
-		ju_area
-		south_shandong_area
+		linhuai_area_south
+		donghai_area_south
+		langya_area
+		chengyang_area
+		xue_area
+		donghai_area
+		donghai_area_north
+		linhuai_area
 	}
 }
 
 sichuan_region = { #Yi Zhou
 	areas = {
-		southwest_sichuan_area
-		northeast_sichuan_area
-		xishu_area
+		yuesui_area
+		guanghan_area
+		shu_area
+		baxi_area
+		zangke_area
 		ba_area
-		guizhou_area
-		buzhou_area
-		east_yunnan_area
-		west_yunnan_area
-		central_yunnan_area
+		south_zangke_area
+		ailao_area
+		yizhou_area
 		hanzhong_area
+		hanzhong_area_north
+		shu_area_south
+		guanghan_area_west
+		wudu_area
+		badong_area
 	}
 }
 
@@ -2126,10 +2169,17 @@ guangxi_region = { ##Shuo Zhou
 
 hebei_region = { #You Zhou
 	areas = {
-		yanyun_area
-		yanghe_area
-		jizhou_area
-		outer_liaodong_area
+		liaoxi_area_western
+		shanggu_area
+		youbeiping_area
+		liaoxi_area
+		hejian_area_eastern
+		yuyang_area
+		shanggu_area_northern
+		yuyang_area_southern
+		guangyang_area
+		guangyang_area_western
+		hejian_area
 	}
 }
 
@@ -2216,7 +2266,7 @@ gondwana_region = { ##Byeonhan
 		tai_area
 		sollim_paek_area
 		hyesong_area
-		jeju_area
+		jelangya_area
 		yecheon_area
 	}
 }
@@ -2243,13 +2293,11 @@ central_japan_region = { #Saikaido for color purposes
 
 guangdong_region = { #Jiao Zhou
 	areas = {
-		east_guangdong_area
-		north_guangdong_area
-		south_guangdong_area
-		west_guangdong_area
-		west_guangxi_area
-		east_guangxi_area
-		south_guangxi_area
+		hepu_area
+		guilin_area
+		guilin_area_west
+		nanhai_area	
+		nanhai_area_north
 	}
 }
 
@@ -2257,8 +2305,8 @@ western_ghats_region = { ##Sakastan
 	areas = {
 		chach_area
 		tachkent_area
-		lower_kangju_area
-		kangju_area
+		lower_kanglangya_area
+		kanglangya_area
 		isbijab_area
 		talas_area
 		chui_area
@@ -2768,7 +2816,7 @@ central_america_region = {
 		nicaragua_area
 		yucatan_area
 		mayapan_area
-		hocaba_area
+		hocabaxi_area
 		belize_area
 		campeche_area
 		panama_area
@@ -2777,7 +2825,7 @@ central_america_region = {
 
 carribeans_region = {
 	areas = {
-		cuba_area
+		cubaxi_area
 		hispaniola_area
 		greater_antilles_area
 		leeward_islands_area

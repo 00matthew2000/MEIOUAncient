@@ -627,7 +627,7 @@ regina_turdulocappadocia_area = {
 	2310
 }
 
-corduba_area = {
+cordubaxi_area = {
 	225 3355
 }
 
@@ -2636,7 +2636,7 @@ cinaedocolpitis = {
 	3076 3077 4565
 }
 
-macoraba_area = {
+macorabaxi_area = {
 	385 3076 4606
 }
 
@@ -2696,7 +2696,7 @@ siggrane_area = {
 	466
 }
 
-saba_area = {
+sabaxi_area = {
 	383 428 
 }
 
@@ -2949,7 +2949,7 @@ tingitana_west = {
 }
 
 tingitana_east = {
-	344 2940 4070 336
+	343 344 2940 4070 336
 }
 
 atlas_mons = {
@@ -3733,7 +3733,7 @@ ngola_area = {
 	1157 1159 2979 2980 
 }
 
-mpemba_area = {
+mpembaxi_area = {
 	1146 2977 2976 1145 1142 
 }
 
@@ -3869,7 +3869,7 @@ isbijab_area = {
 	471
 }
 
-lower_kangju_area = {
+lower_kanglangya_area = {
 	3847
 }
 
@@ -3989,7 +3989,7 @@ massagetica_area = {
 	386
 }
 
-kangju_area = {
+kanglangya_area = {
 	3298
 }
 
@@ -5545,7 +5545,7 @@ yecheon_area = {
 	889
 }
 
-jeju_area = {
+jelangya_area = {
 	2276
 }
 
@@ -5654,7 +5654,7 @@ upper_ob_area = {
 }
 
 tarvagatai_area = {
-	4967
+	715
 }
 
 irkutsk_area = {
@@ -5886,12 +5886,21 @@ puli_area = {
 	509
 }
 
-yanyun_area = { 706 5377 5376 708 }
-yanghe_area = { 5375 5373 709 }
+liaoxi_area_western = { 706 2265 }
+guangyang_area = { 708 }
+yuyang_area_southern = { 5376 }
+shanggu_area = { 5373 }
+shanggu_area_northern = { 709 }
+yuyang_area = { 5375 }
 dai_area_northern = { 5484 }
 dai_area = { 5483 }
-jizhou_area = { 705 704 5374 }
-south_hebei_area = { 5371 5372 703 724 }
+changshan_area = { 704 }
+hejian_area = { 705 }
+guangyang_area_western = { 5374 }
+wei_area = { 5371 }
+handan_area_northern = { 703 }
+qinghe_area = { 5372 }
+julu_area = { 724 }
 yanmen_area = { 2247 }
 taiyuan_area = { 2468 }
 north_taiyuan_area = { 5482 }
@@ -5904,63 +5913,95 @@ hedong_area = { 2246 }
 south_shangdang_area = { 2467 }
 shangdang_area_eastern = { 5481 }
 
-luxinan_area = { 5385 5386 2491 2560 5387 }
-laizhou_bandao_area = { 2492 697 5378 5379  }
-south_shandong_area = { 698 }
-north_shandong_area = { 5388 5389 1041 699 5380 }
-ju_area = { 5381 5382 5383 5384 }
+dong_area = { 2491 }
+jiyin_area = { 2560 }
+dang_area_north = { 5385 }
+jiyin_area_south = { 5386 }
+taishan_area = { 5387 }
+jiaodong_area = { 5378 }
+beihai_area = { 2492 }
+jimo_area = { 697 }
+changshan_area_southern = { 5379 }
+xue_area_north = { 698 }
+linzi_area = { 699 }
+jinan_area = { 5380 }
+jibei_area_south = { 1041 }
+jibei_area = { 5388 }
+linzi_area_north = { 5389 }
+langya_area = { 5381 }
+xue_area = { 5384 }
+chengyang_area = { 5382 5383 }
 liaodong_area = { 2249 }
 maek_area = { 4037 }
 liaodong_area_northern = { 4035 }
 ului_area = { 4036 }
 syuantu_area = { 4032 }
 
-heluo_area = { 702 5471 5476 }
-south_henan_area = { 5474 5475 2472 }
-chenliu_area = { 701 2485 }
-yingchuan_area = { 2605 5473 }
-north_henan_area = { 5469 5470 5472 700 }
-huaibei_area = { 696 5390 5391 5392 }
-haozhou_area = { 689 5402 5403 5405 }
-pengcheng_area = { 2148 5404 }
+hongnong_area_east = { 5476 }
+hongnong_area = { 5471 }
+huaiyang_area_south = { 2472 }
+runan_area = { 5474 689 }
+runan_area_south = { 5475 }
+chenliu_area = { 701 }
+dang_area = { 2485 }
+nanyang_area = { 2605 }
+yingchuan_area_north = { 5473 }
+henei_area_east = { 5469 }
+henan_area = { 5472 }
+henei_area = { 5470 }
+north_henei_area = { 700 }
+henan_area_west = { 702 }
+donghai_area_south = { 696 }
+donghai_area = { 5390 5395 }
+donghai_area_north = { 5391 5396 }
+sishui_area = { 5403 5405 }
+huaiyang_area = { 5402 }
+sishui_area_north = { 2148 }
+yingchuan_area = { 5404 }
+linhuai_area_south = { 2607 5394 }
+linhuai_area = { 5392 5393 }
+piling_area = { 2125 }
+piling_area_south = { 5398 2147 5415 3977 }
+wu_area = { 694 1046 1068 5399 5400 5401 5416 }
+danyang_area = { 2144 5407 5397 2150 }
+danyang_area_south = { 691 695 2493 5408 }
+jiujiang_area_west = { 690 }
+hengshan_area = { 5118 }
+hengshan_area_north = { 2613 }
+jiujiang_area = { 2149 5406 }
 
-huaizuo_area = { 2607 5393 5394 5395 5396 }
-jinling_area = { 2125 2150 5397 }
-wu_area = { 1068 5398 2147 }
-songjiang_area = { 694 5399 5400 5401 }
-huizhou_area = { 691 695 2144 5407 5408 }
-anqing_area = { 690 2149 2613 5406 5118 }
+linhai_area = { 692 2141 2142 5410 5411 5412 }
+kuaiji_area = { 1089 5417 2145 2272 5413 }
+kuaiji_area_west = { 693 2494 5409 5414 }
 
-south_zhejiang_area = { 692 2142 5410 5411 }
-east_zhejiang_area = { 2141 2272 5412 5413 }
-west_zhejiang_area = { 693 5417 2493 5415 }
-hangzhou_area = { 1046 1089 5416 3977 }
-central_zhejiang_area = { 2494 2145 5409 5414 }
+yuzhang_area = { 2477 5422 5426 5427 5428 5432 5433 5434 }
+yuzhang_area_south = { 681 682 2478 5429 5430 5431 }
+lujiang_area = { 712 2480 5424 5425 5435 }
 
-nw_jiangxi_area = { 2478 5432 5433 5434 }
-south_jiangxi_area = { 681 682 5429 5430 5431 }
-central_jiangxi_area = { 2477 5426 5427 5428 }
-east_jiangxi_area = { 712 2480 5424 5425 5435 }
-
-north_fujian_area = { 680 2484 2490 2606 }
-west_fujian_area = { 2488 5420 5421 5422 5423 }
-minnan_area = { 1053 5418 5419 679 }
-taiwan_area = { 2304 2305 2303 }
-
+minzhong_area = { 680 1053 2484 2490 5418 5419 }
+minzhong_area_north = { 2484 2488 2606 5420 5421 5423 }
+yizhou_taiwan_area = { 2304 2305 }
+taizhou_taiwan_area = { 2303 }
 north_hunan_area = { 686 5455 5460 5461 }
 east_hunan_area = { 670 683 5458 5459 }
 west_hunan_area = { 669 2250 5456 5457 }
-west_hubei_area = {	684 687 688 5462 5463 }
+west_hubei_area = {	684 688 5462 5463 }
 east_hubei_area = { 1172 5464 5465 5466 5467 5468  }
 
-hanzhong_area = { 2170 5488 5121 }
+hanzhong_area = { 687 }
+hanzhong_area_north = { 2170 }
+wudu_area = { 5121 }
 shang_area = { 2251 }
 xihe_area_eastern = { 5119 }
 beidi_area = { 5493 }
 anding_area_western = { 5491 }
 beidi_area_northern = { 2254 }
 jiuyuan_area_northern = { 3275 }
-guanzhong_area = { 2252 5487 5489 5490 }
+jingzhao_area = { 2252 }
+east_pingyi_area = { 5487 }
+west_pingyi_area_western = { 5489 }
+fufeng_area = { 5490 }
+hongnong_area_south = { 5488 }
 west_hexi_area = { 2119 }
 anding_area = { 5494 }
 east_hexi_area = { 5133 }
@@ -5969,28 +6010,35 @@ tianshui_area_eastern = { 2256 }
 tianshui_area = { 5492 }
 longxi_area = { 2162 }
 
-east_yunnan_area = { 662 1759 2753 5497 5498 }
-west_yunnan_area = { 660 661 2326 2083 5501 4055 }
-central_yunnan_area = { 663 1758 5499 5500 }
+south_zangke_area = { 662 1758 1759 5446 5497 5498 }
+ailao_area = { 661 2326 2753 4055 }
+yizhou_area = { 663 2083 5499 5500 5501 }
 
-xishu_area = {	1337 5450 5505 5506 }
-northeast_sichuan_area = {	665 2797 5449 5451 }
-southwest_sichuan_area = {	664 2510 2793 5446 5122 5123 }
-ba_area = { 685 1143 }
-buzhou_area = { 5124 5447 5448  }
-guizhou_area = { 668 667 2085 1043 5444 5445 }
+shu_area = { 1337 2793 5506 }
+guanghan_area_west = { 5450 }
+guanghan_area = { 5449 5451 }
+badong_area = { 665 }
+yuesui_area = {	660 664 }
+shu_area_south = { 5122 5123 }
+baxi_area = { 1143 2510 2797 5124 5505 }
+ba_area = { 685 5448 }
+zangke_area = { 667 668 5444 5445 5447 }
 
-west_guangxi_area = { 2078 2082 5442 5443 5125 }
-east_guangxi_area = { 672 710 1760 2086 5126 }
-south_guangxi_area = { 671 2073 2117 }
-east_guangdong_area = { 678 2486 5436 5437 }
-north_guangdong_area = { 711 2462 5438 5439 }
-south_guangdong_area = { 676 677 2121 5440 5441 }
-west_guangdong_area = { 673 674 675 2464 3939 }
+wuling_area_south = { 2085 1043 }
+
+guilin_area_west = { 671 2078 2082 5442 5443 }
+guilin_area = { 672 2086 5125 1760 710 }
+nanhai_area_north = { 711 2462 5436 5437 5438 5439 }
+nanhai_area = { 676 677 678 679 2121 2486 5440 5441 }
+hepu_area = { 673 674 675 2464 3939 2073 2117 5126 }
 
 
-outer_liaodong_area = {
-	3240 2248 707 
+youbeiping_area = {
+	3240 5377
+}
+
+hejian_area_eastern = {
+	2248
 }
 
 dongbuyeo_area = {
@@ -6030,7 +6078,7 @@ zeya_area = {
 	3254 3253 727 
 }
 southern_wuhuan_area = {
-	2253 720
+	2253 720 3263
 }
 yanmen_area_northern = {
 	3268
@@ -6056,8 +6104,8 @@ inbollo_area = {
 western_sushen_area = {
 	3261
 }
-south_hinggan_area = {
-	3263 2265 713
+liaoxi_area = {
+	713 707
 }
 xianbei_steppe_area = {
 	3264 719
@@ -6087,7 +6135,7 @@ north_wuhuan_area = {
 	3265 5131
 }
 eastern_xiongnu = {
-	1057 715
+	1057 4967
 }
 zavkhan_area = {
 	2268
@@ -6658,7 +6706,7 @@ mayapan_area = {
 	845 2415 5276 5522
 }
 
-hocaba_area = {
+hocabaxi_area = {
 	3514 5274 5275 5521 
 }
 
@@ -6706,7 +6754,7 @@ panama_area = {
 	3507 835 836 
 }
 
-cuba_area = {
+cubaxi_area = {
 	484 2591 1540 485 3546 1539 486 
 }
 
