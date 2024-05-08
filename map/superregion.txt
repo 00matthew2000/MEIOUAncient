@@ -147,6 +147,8 @@ east_indies_superregion = {
 	borneo_region
 	indonesia_region
 	philippines_region
+	visayas_region 
+	maguindanao_region 
 }
 
 north_africa_superregion = {

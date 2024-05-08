@@ -555,7 +555,7 @@ pyrenaei_mons = {
 	1420 2368 211
 }
 
-emporia_area = {
+rhoda_area = {
 	197 212
 }
 
@@ -4701,16 +4701,24 @@ shabara_area = {
 	3176 5325
 }
 
-naga_hills_area = {
-	3194 2698 569
+myedu_area = {
+	2698 569
+}
+
+kalay_area = {
+	3194
 }
 
 tripuri_vanga_area = {
 	2699
 }
 
-kalay_area = {
-	580 2428 3903
+tamote_area = {
+	580
+}
+
+middle_irrawady_area = {
+	2428 3903
 }
 
 samatata_area = {	#Dakka
@@ -5065,7 +5073,7 @@ kirata_area = {		#Nepal
 	557 2692 4124 4125 
 }
 
-himalaya_area = {
+hisemai_area = {
 	554 2691 
 }
 
@@ -5209,147 +5217,355 @@ anupa_area = {
 # Indo-China #
 ########################################
 
-upper_burma_area = {
-	2429 584 3217 581
+nyaungyan_area = {
+	584
 }
 
-central_burma_area = {
-	3905 3904 2427
+maingmaw_area = {
+	581
 }
 
-dakshina_airavati_area = {
-	2425 352 3216
+tagaung_area = {
+	3906
 }
 
-lower_burma_area = {
-	2823 2426 586 3215 5360 
+fudandulu_area = {
+	3217
+}
+
+halin_area = {
+	2429
+}
+
+beikthano_area = {
+	3904
+}
+
+binnaka_area = {
+	587
+}
+
+pagan_area = {
+	3905
+}
+
+sri_ksetra_area = {
+	2427
+}
+
+dala_area = {
+	2425 3216
+}
+
+bassein_area = {
+	2823 5360 
+}
+
+yilumo_area = {
+	352 3215
+}
+
+dagon_area = {
+	2426
+}
+
+zhanli_area = {
+	579 586
+}
+
+dhannavati_area = {
+	4219 568
 }
 
 arakan_area = {
-	4219 585 3214 579 568
+	585 3214
 }
 
-kachin_area = {
-	582 2739 3197 3196 3195
+putao_area = {
+	3197
 }
 
-shan_hill_area = {
-	583 3906 587 588 2424 2728 2727 
+mogaung_area = {
+	582 2739
 }
 
-kayin_area = {
-	2822 4046 3218 
+thaungdut_area = {
+	3195 3196
+}
+
+mongnawn_area = {
+	588 2424 
+}
+
+umongasela_area = {
+	2324 2727
+}
+
+karenni_area = {
+	2728
+}
+
+manglon_area = {
+	583
+}
+
+thaton_area = {
+	2822 4046 590
 }
 
 tanintharyi_area = {
-	4043 3221 590
+	4043 3221
 }
 
-malaya_area = {
-	595 596 3239 2830 
+semai_area = {
+	595 
 }
 
-singapura_area = {
-	4047 407 597 3910 4048
+gangganagara_area = {
+	596 2830
 }
 
-kelantan_area = {
-	598 3315 599 2828 2735 2824 
+temuan_area = {
+	3239
 }
 
-kedah_area = {
-	3237 2736 2737 4216 
+oranglaut_area = {
+	4047 407 4048
 }
 
-khorat_area = {
-	612 2732 2669 2319 3231 
+jakun_area = {
+	3910
 }
 
-nongkhai_area = {
-	3225 2817 3935 2818 4213 
+gelanggi_area = {
+	597
+}
+
+langkasuka_area = {
+	598 2828 
+}
+
+cahaya_area = {
+	2738 2824
+}
+
+jahai_area = {
+	599
+}
+
+semaq_area = {
+	3315
+}
+
+panpan_area = {
+	2735 2736 2737 
+}
+
+lingapura_area = {
+	2732 4215 
+}
+
+sresthapura_area = {
+	408 3231
+}
+
+phimai_area = {
+	2319
+}
+
+prasatvihara_area = {
+	2669 2733
+}
+
+sabarapura_area = {
+	602 612
+}
+
+khanthapura_area = {
+	3935 4213 2818 
+}
+
+chamotchieng_area = {
+	2817 2818
 }
 
 champa_area = {
-	606 2317 607 2318 2397
+	2318 2397
+}
+
+champa_central_area = {
+	607 2317
+}
+
+champa_south_area = {
+	606
+}
+
+kratie_area = {
+	4214 3229
 }
 
 indrapura_area = {
-	3230 4214 3229 2826 608
+	608
 }
 
-cambodia_area = {
-	2734 3313 3227 3931
+ratanagiri_area = {
+	2829 3230
 }
 
-chaktomuk_area = {
-	604 609 3933 3228
+kracheh_area = {
+	2826 2827
+}
+
+bayang_area = {
+	2734 3313
+}
+
+water_chenla_area = {
+	3227 3228
+}
+
+funan_area = {
+	604 3933
 }
 
 angkor_area = {
-	3226 2733 2819 4215
+	3226 2819
 }
 
-mekong_area = {
-	2417 3932 605 2827 5657 
+ou_kaev_area = {
+	5657 3931
 }
 
-tenasserim_area = {
+kambojadesa_area = {
+	3932 605
+}
+
+mekong_delta_area = {
+	2417
+}
+
+myeik_area = {
 	4049 591 3222
 }
 
-ligor_area = {
-	3236 594 593 592 2738
+tambralinga_area = {
+	3237 4216 594 3236 592
 }
 
-northwest_vietnam_area = {
-	2325 2731 2730 3937
+namxam_area = {
+	2731 2730
 }
 
-northeast_vietnam_area = {
-	616 2393 2394 3938 3314
+lixian_area = {
+	2325 3937
 }
 
-song_hong_area = {
-	610 613 2395 3936
+au_lac_area = {
+	616 2393
 }
 
-annam_area = {
-	2418 2419 2396 4211
+giao_chi_area = {
+	3938
 }
 
-south_laos_area = {
-	2829 3232 3934 408
+lac_viet_area = {
+	3314 2395
 }
 
-viang_chan_area = {
-	611 614 3233 4212 5225
+cuu_chan_area = {
+	613 2394 3936
 }
 
-north_laos_area = {
-	2320 2729 615 3235 3234 
+nhat_nam_area = {
+	2418 2419
 }
 
-central_thai_area = {
-	600 602 2421 2825 2821 3909 
+cuu_duc_area = {
+	610 2396 4211
 }
 
-suktho_thai_area = {
-	2321 601 2422 3908 2670 3224 
+savaka_area = {
+	611 3934
 }
 
-northern_thai_area = {
-	2323 3907 2423 4217 4218
+chenla_area = {
+	609 3232
 }
 
-lampang_area = {
-	2324 3219 2322 3220 589 
+candanagara_area = {
+	614 4212
 }
 
-southern_thai_area = {
-	4050 2420 3223 2306 
+srigotapura_area = {
+	3233 5225
 }
 
-chonburi_area = {
+muangsua_area = {
+	2729 615 
+}
+
+singhanavati_area = {
+	2320 4218
+}
+
+namha_area = {
+	3234
+}
+
+upper_mekong_area = {
+	3235
+}
+
+suvarnapura_area = {
+	600 2825 
+}
+
+nakhon_sawan_area = {
+	2421 2670
+}
+
+lavapura_area = {
+	2821 3909
+}
+
+vishnuloka_area = {
+	2422 3908 589 
+}
+
+malapradesa_area = {
+	3224 3225
+}
+
+tak_area = {
+	2321 3218
+}
+
+chiangrai_area = {
+	2423 4217
+}
+
+kengtung_area = {
+	3907 2323
+}
+
+haripunjaya_area = {
+	3219 2322 
+}
+
+sukhothai_area = {
+	3220 601
+}
+
+rajapura_area = {
+	3223 2306 
+}
+
+aksajapura_area = {
+	593 2420 4050
+}
+
+jalapura_area = {
 	603 2820
 }
 
@@ -5361,40 +5577,92 @@ chonlapura_area = {
 # Indonesia #
 ########################################
 
-mindanao_area = {
-	652 2213 653 2586 4984 
+zamboanga_area = {
+	2213 
 }
 
-visayas_area = {
-	654 655 656 2214 4945 4982 
+davao_area = {
+	653
 }
 
-luzon_area = {
-	2215 658 2216 657 2217 
+maguindanao_area = {
+	652 2586
 }
 
-pasai_area = {
-	2094 618 3917 3911 2093 3912
+butuan_area = {
+	4984
 }
 
-north_sumatra_area = {
-	2101 3913 617 2098 2097
+samar_area = {
+	654 
 }
 
-central_sumatra_area = {
-	2095 3916 2099 3915 3940
+palawan_area = {
+	655
+}
+
+simsiman_area = {
+	2214
+}
+
+buglas_area = {
+	4945
+}
+
+cebu_area = {
+	656
+}
+
+bohol_area = {
+	4982
+}
+
+east_bikol_area = {
+	658 
+}
+
+north_luzon_area = {
+	657
+}
+
+east_luzon_area = {
+	2217
+}
+
+maynila_area = {
+	2216
+}
+
+mindoro_area = {
+	2215
+}
+
+aceh_area = {
+	617 3911 2093 3912
+}
+
+batak_area = {
+	2098 2094 618 3917
+}
+
+panai_area = {
+	2095 3915 3940
+}
+
+suvarnagiri_area = {
+	2099 3920
 }
 
 south_sumatra_area = {
 	621 3919 622 623 3918
 }
 
-west_sumatra_area = {
-	2096 619 2102 2103 3914
+barus_area = {
+	2096 619 2102 2103 3914 2097 2101 3913
 }
 
-inland_sumatra_area = {
-	3920 2100 620 3921 659
+melayu_area = {
+	2100 620 3921 659 3916
 }
 
 east_java_area = {
@@ -5617,8 +5885,16 @@ south_kyushu_area = {
 	1015 1016 1017 3972
 }
 
-ryukyu_area = {
-	1012 1013 1014 
+north_okinawa_area = {
+	1014 
+}
+
+central_okinawa_area = {
+	1013
+}
+
+south_okinawa_area = { 
+	1012
 }
 
 ########################################
@@ -5982,11 +6258,20 @@ minzhong_area = { 680 1053 2484 2490 5418 5419 }
 minzhong_area_north = { 2484 2488 2606 5420 5421 5423 }
 yizhou_taiwan_area = { 2304 2305 }
 taizhou_taiwan_area = { 2303 }
-north_hunan_area = { 686 5455 5460 5461 }
-east_hunan_area = { 670 683 5458 5459 }
-west_hunan_area = { 669 2250 5456 5457 }
-west_hubei_area = {	684 688 5462 5463 }
-east_hubei_area = { 1172 5464 5465 5466 5467 5468  }
+wuling_area = { 686 5460 5461 }
+changsha_area = { 5459 5464 }
+changsha_area_south = { 670 683 }
+guiyang_area_west = { 672 5457 }
+north_nan_area_west = { 5463 }
+nan_area_east = { 5462 }
+nan_area = { 684 }
+west_nanyang_area = { 688 }
+nan_area_south = { 5466 }
+jiangxia_area = { 5467 }
+jiangxia_area_south = { 1172 }
+north_nan_area = { 5465 }
+south_nanyang_area = { 5468 }
+guiyang_area = { 2250 5439 5458 }
 
 hanzhong_area = { 687 }
 hanzhong_area_north = { 2170 }
@@ -6024,11 +6309,11 @@ baxi_area = { 1143 2510 2797 5124 5505 }
 ba_area = { 685 5448 }
 zangke_area = { 667 668 5444 5445 5447 }
 
-wuling_area_south = { 2085 1043 }
+wuling_area_south = { 669 2085 1043 5455 5456 }
 
 guilin_area_west = { 671 2078 2082 5442 5443 }
-guilin_area = { 672 2086 5125 1760 710 }
-nanhai_area_north = { 711 2462 5436 5437 5438 5439 }
+guilin_area = { 2086 5125 1760 710 }
+nanhai_area_north = { 711 2462 5436 5437 5438 }
 nanhai_area = { 676 677 678 679 2121 2486 5440 5441 }
 hepu_area = { 673 674 675 2464 3939 2073 2117 5126 }
 

@@ -1567,7 +1567,7 @@ west_bengal_region = { #Vanga
 
 himalaya_region = {
 	areas = {
-		himalaya_area
+		hisemai_area
 		jangtang_area
 		savarna_gotra
 		sthanisvara_area
@@ -2046,13 +2046,22 @@ zhongyuan_region = { #Yu Zhou
 
 huguang_region = { #Jing Zhou
 	areas = {
-		north_hunan_area
-		east_hunan_area
-		west_hunan_area
-		west_hubei_area
-		east_hubei_area
+		wuling_area
+		changsha_area
+		guiyang_area_west
+		north_nan_area_west
+		west_nanyang_area
+		south_nanyang_area
+		jiangxia_area
+		jiangxia_area_south
 		nanyang_area
 		wuling_area_south
+		north_nan_area
+		nan_area
+		nan_area_east
+		nan_area_south
+		changsha_area_south
+		guiyang_area
 	}
 }
 
@@ -2278,7 +2287,9 @@ west_japan_region = { #Okinawa for color purposes
 		north_kyushu_area
 		south_kyushu_area
 		shikoku_area
-		ryukyu_area
+		north_okinawa_area
+		central_okinawa_area
+		south_okinawa_area
 	}
 }
 
@@ -2349,9 +2360,169 @@ lower_niger_region = { ##Dahaestan
 
 philippines_region = { #Lusong for color
 	areas = {
-		mindanao_area
-		visayas_area
-		luzon_area
+		east_bikol_area
+		mindoro_area
+		maynila_area
+		east_luzon_area
+		north_luzon_area
+	}
+}
+
+visayas_region = {  #9
+	areas = {
+		samar_area
+		bohol_area
+		cebu_area
+		buglas_area
+		simsiman_area
+		palawan_area
+	}
+}
+
+maguindanao_region = {  #9
+	areas = {
+		zamboanga_area
+		maguindanao_area
+		butuan_area
+		davao_area
+	}
+}
+
+coastal_burma_region = {
+	areas = {
+		sri_ksetra_area
+		bassein_area
+		zhanli_area
+		dagon_area
+		dala_area
+		yilumo_area
+		arakan_area
+		dhannavati_area
+	}
+}
+
+inland_burma_region = {
+	areas = {
+		maingmaw_area
+		tagaung_area
+		fudandulu_area
+		halin_area
+		nyaungyan_area
+		binnaka_area
+		pagan_area
+		beikthano_area
+	}
+}
+
+assam_region = {
+	areas = {
+		thaungdut_area
+		putao_area
+		mogaung_area
+		kalay_area
+		myedu_area
+		tamote_area
+		middle_irrawady_area
+	}
+}
+
+coastal_siam_region = { ##Champa
+	areas = {
+		champa_area
+		champa_south_area
+		champa_central_area
+		ou_kaev_area
+		mekong_delta_area
+		kambojadesa_area
+	}
+}
+
+cochinchina_region = { #Funan
+	areas = {
+		bayang_area
+		funan_area
+		angkor_area
+		kratie_area
+		lingapura_area
+		chonlapura_area
+		water_chenla_area
+		chenla_area
+		kracheh_area
+		ratanagiri_area
+		indrapura_area
+		prasatvihara_area
+		phimai_area
+		sresthapura_area
+	}
+}
+
+inland_siam_region = { #Dvaravati
+	areas = {
+		suvarnapura_area
+		haripunjaya_area
+		vishnuloka_area
+		rajapura_area
+		jalapura_area
+		thaton_area
+		tanintharyi_area
+		sabarapura_area
+		lavapura_area
+		nakhon_sawan_area
+		sukhothai_area
+		tak_area
+	}
+}
+
+lan_xang_region = { #Dronakarattha
+	areas = {
+		candanagara_area
+		srigotapura_area
+		savaka_area
+		khanthapura_area
+		malapradesa_area
+		chamotchieng_area
+		chiangrai_area
+		kengtung_area
+		mongnawn_area
+		manglon_area
+		karenni_area
+		muangsua_area
+		namha_area
+		upper_mekong_area
+		singhanavati_area
+		umongasela_area
+	}
+}
+
+vietnam_region = { #Lac Viet
+	areas = {
+		giao_chi_area
+		au_lac_area
+		cuu_chan_area
+		cuu_duc_area
+		nhat_nam_area
+		namxam_area
+		lac_viet_area
+		lixian_area
+	}
+}
+
+malaya_region = { #Malayadvipa
+	areas = {
+		semai_area
+		oranglaut_area
+		langkasuka_area
+		panpan_area
+		tambralinga_area
+		myeik_area
+		gelanggi_area
+		jakun_area
+		temuan_area
+		gangganagara_area
+		semaq_area
+		jahai_area
+		cahaya_area
+		aksajapura_area
 	}
 }
 
@@ -2374,90 +2545,6 @@ borneo_region = { #Here for color
 	}
 }
 
-coastal_burma_region = {
-	areas = {
-		lower_burma_area
-		arakan_area
-		dakshina_airavati_area
-	}
-}
-
-inland_burma_region = {
-	areas = {
-		upper_burma_area
-		central_burma_area
-	}
-}
-
-assam_region = {
-	areas = {
-		naga_hills_area
-		kalay_area
-		kachin_area
-	}
-}
-
-coastal_siam_region = { ##Champa
-	areas = {
-		mekong_area
-		champa_area
-	}
-}
-
-cochinchina_region = { #Funan
-	areas = {
-		cambodia_area
-		chaktomuk_area
-		angkor_area
-		indrapura_area
-		khorat_area
-		south_laos_area
-		chonlapura_area
-	}
-}
-
-inland_siam_region = { #Dvaravati
-	areas = {
-		central_thai_area
-		lampang_area
-		suktho_thai_area
-		southern_thai_area
-		chonburi_area
-		kayin_area
-		tanintharyi_area
-	}
-}
-
-lan_xang_region = { #Dronakarattha
-	areas = {
-		north_laos_area
-		nongkhai_area
-		viang_chan_area
-		shan_hill_area
-		northern_thai_area
-	}
-}
-
-vietnam_region = { #Lac Viet
-	areas = {
-		song_hong_area
-		northwest_vietnam_area
-		northeast_vietnam_area
-		annam_area
-	}
-}
-
-malaya_region = { #Malayadvipa
-	areas = {
-		malaya_area
-		singapura_area
-		kelantan_area
-		kedah_area
-		ligor_area
-		tenasserim_area
-	}
-}
-
 indonesia_region = { #Here for color
 	areas = {
 		lesser_sunda_islands_area
@@ -2470,12 +2557,13 @@ indonesia_region = { #Here for color
 
 sumatra_region = { #Suvarnabhumi
 	areas = {
-		north_sumatra_area
-		central_sumatra_area
+		batak_area
+		panai_area
+		barus_area
+		melayu_area
+		aceh_area
+		suvarnagiri_area
 		south_sumatra_area
-		west_sumatra_area
-		inland_sumatra_area
-		pasai_area
 	}
 }
 
