@@ -183,7 +183,7 @@ PixelShader =
 				vData.r * COLOR_TINT[3] + vData.g * COLOR_TINT[4] + vData.b * COLOR_TINT[5], vData.a ).rgb;
 			vColor.a *= lerp( COLOR_TINT[0].a, COLOR_TINT[3].a, vData.a );
 			
-			float vGlowFactor = smoothstep( 0.0f, 0.6f, 
+			float vGlowFactor = smoothstep( 0.0f, 1.0f, 
 					GLOW_AMOUNT
 					- abs( Input.uv.x - 0.5f ) //Fade out on edges
 					) 

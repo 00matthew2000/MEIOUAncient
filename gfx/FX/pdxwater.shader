@@ -277,7 +277,7 @@ PixelShader =
 			float noiseScale = 12.0f;
 			float3 noiseNormal1 = tex2D( WaterNoise, uv1 * noiseScale + time1 * 3.0f ).rgb - 0.5f;
 			float3 noiseNormal2 = tex2D( WaterNoise, uv2 * noiseScale + time2 * 3.0f ).rgb - 0.5f;		
-			float3 normalNoise = noiseNormal1 + noiseNormal2 + float3( 0.0f, 0.0f, 5.5f );
+			float3 normalNoise = noiseNormal1 + noiseNormal2 + float3( 0.0f, 0.0f, 1.5f );
 			return normalize( normalNoise ).xzy;
 		}
 

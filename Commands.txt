@@ -5,3 +5,5 @@ Must reorder the regions in superregion.txt to change the colors; make it match 
 Haozhou needs to be redrawn
 Need to fix SYS-RightsInit
 Check SYS-Distribution both effects and triggers (also need to set the nomad percent in startup_class?)
+
+For terrain, use "guides" in gimp and you can move boxes around to fit terrains, may need to fit terrains from IU to MEIOU
