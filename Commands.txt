@@ -7,3 +7,5 @@ Need to fix SYS-RightsInit
 Check SYS-Distribution both effects and triggers (also need to set the nomad percent in startup_class?)
 
 For terrain, use "guides" in gimp and you can move boxes around to fit terrains, may need to fit terrains from IU to MEIOU
+
+To help map terrain, make a version of provinces.bmp where you annex provs into their region-sized versions and then have that as a layer on top of the terrain map
