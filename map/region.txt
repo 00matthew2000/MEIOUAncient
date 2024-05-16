@@ -788,8 +788,8 @@ niger_bend_region = {
 		zanfara_area
 		aukar_area
 		gurma_area
-		biram_area
 		stachirae_area
+		biram_area
 	}
 }
 
@@ -1090,6 +1090,7 @@ east_carpathia_region = { ##Cimmeria
 		chersonesus_zenonis
 		hylaea_area
 		cimmero_scythia
+		sarmatia_maritima_area
 	}
 }
 
@@ -1116,7 +1117,6 @@ crimea_region = { ##Borysthenia NOT Crimea
 	areas = {
 		melanchlenia_area
 		acesinus_area
-		sarmatia_maritima_area
 		borysthenes_inferior
 		borysthenes_superior
 		hypacaris_area
@@ -1861,7 +1861,6 @@ west_sahara_region = {
 senegambia_region = { #Non-Provs Africa
 	areas = {
 		east_niger_area
-		dangra_area
 		sokoto_area
 		kano_area
 		daura_area

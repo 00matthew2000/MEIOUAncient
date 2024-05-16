@@ -5970,7 +5970,7 @@ atara_area = {
 }
 
 argippaeia_area = {
-	 475 1076 3312 
+	1076 3312 
 }
 
 yrtesh_area = {
@@ -5990,7 +5990,7 @@ irtysh_area = {
 }
 
 iskier_area = {
-	1077 1079 1080 
+	475 1077 1079 1080 
 }
 
 ugria_area = {
