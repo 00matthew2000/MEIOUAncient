@@ -1607,7 +1607,7 @@ categories = {
  ###
 
 terrain = {
-	grass_flats		= { type = grass_flats				color = { 	0	 } }
+	grass_flats			= { type = grass_flats			color = { 	0	 } }
 	grass_hills			= { type = grass_hills			color = { 	1	 } }
 	desert_mountains	= { type = desert_mountains		color = { 	2	 } }
 	desert_flats		= { type = desert_flats			color = { 	3	 } }
