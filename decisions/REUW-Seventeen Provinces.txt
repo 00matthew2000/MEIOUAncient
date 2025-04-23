@@ -9,7 +9,7 @@ country_decisions = {
 					capital_scope = { 
 						OR = { 
 							region = low_countries_region
-							region = belgii_region
+							region = belgica_region
 						}
 					}
 				}
@@ -32,7 +32,7 @@ country_decisions = {
 			NOT = { 
 				capital_scope = { 
 					region = low_countries_region
-					region = belgii_region
+					region = belgica_region
 					province_id = 94
 				}
 			}
@@ -71,7 +71,7 @@ country_decisions = {
 						any_owned_province = { 
 							OR = { 
 								region = low_countries_region
-								region = belgii_region
+								region = belgica_region
 							}
 						}
 					}
@@ -113,7 +113,7 @@ country_decisions = {
 						capital_scope = { 
 							OR = { 
 								region = low_countries_region
-								region = belgii_region
+								region = belgica_region
 							}
 						}
 					}
@@ -123,7 +123,7 @@ country_decisions = {
 						capital_scope = { 
 							OR = { 
 								region = low_countries_region
-								region = belgii_region
+								region = belgica_region
 							}
 						}
 					}
@@ -543,7 +543,7 @@ country_decisions = {
 					limit = { 
 						OR = { 
 							region = low_countries_region
-							region = belgii_region
+							region = belgica_region
 						}
 					}
 					add_core = SVP
@@ -554,7 +554,7 @@ country_decisions = {
 				limit = { 
 					OR = { 
 						region = low_countries_region
-						region = belgii_region
+						region = belgica_region
 					}
 				}
 				add_core = SVP
@@ -566,7 +566,7 @@ country_decisions = {
 						NOT = { 
 							OR = { 
 								region = low_countries_region
-								region = belgii_region
+								region = belgica_region
 							}
 						}
 					}
@@ -613,7 +613,7 @@ country_decisions = {
 							region = low_countries_region
 						}
 						NOT = { 
-							region = belgii_region
+							region = belgica_region
 						}
 					}
 					remove_core = SVP
@@ -628,7 +628,7 @@ country_decisions = {
 				}
 				add_permanent_claim = SVP
 			}
-			belgii_region = { 
+			belgica_region = { 
 				limit = { 
 					NOT = { 
 						owned_by = SVP

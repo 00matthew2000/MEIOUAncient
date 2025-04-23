@@ -803,7 +803,7 @@ Rights_RegionInitReforms = {
 		}
 	}
 
-	belgii_region = {
+	belgica_region = {
 		if = {
 			limit = {
 				area = wallonia_area
@@ -17747,7 +17747,7 @@ Rights_RegionInitData = {
 		}
 	}
 
-	belgii_region = {
+	belgica_region = {
 		set_key = { lhs = Prov_NOPow value = 70 }
 		set_key = { lhs = Prov_BUPow value = 5 }
 		set_key = { lhs = SF_Freedom value = 70 }

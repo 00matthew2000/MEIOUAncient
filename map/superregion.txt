@@ -56,7 +56,7 @@ france_superregion = {
 	east_france_region
 	provence_region
 	aquitaine_region
-	belgii_region
+	belgica_region
 }
 
 germany_superregion = {

@@ -1743,7 +1743,7 @@ byz_slot_3_3 = {
 		provinces_to_highlight = { 
 			superregion = france_superregion
 			NOT = { 
-				region = belgii_region
+				region = belgica_region
 			}
 			NOT = { 
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1754,7 +1754,7 @@ byz_slot_3_3 = {
 				type = all
 				OR = { 
 					country_or_non_sovereign_subject_holds = ROOT
-					region = belgii_region
+					region = belgica_region
 					is_city = no
 				}
 			}
@@ -1770,7 +1770,7 @@ byz_slot_3_3 = {
 		provinces_to_highlight = { 
 			province_group = roman_dejure_group
 			OR = { 
-				region = belgii_region
+				region = belgica_region
 				superregion = germany_superregion
 				area = transdanubia_area
 			}
@@ -1782,7 +1782,7 @@ byz_slot_3_3 = {
 			roman_dejure_group = { 
 				type = all
 				OR = { 
-					region = belgii_region
+					region = belgica_region
 					superregion = germany_superregion
 					area = transdanubia_area
 				}

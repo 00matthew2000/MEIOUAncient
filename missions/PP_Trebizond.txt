@@ -915,7 +915,7 @@ tre_slot_6 = {
 		provinces_to_highlight = { 
 			superregion = france_superregion
 			NOT = { 
-				region = belgii_region
+				region = belgica_region
 			}
 			NOT = { 
 				region = low_countries_region
@@ -929,7 +929,7 @@ tre_slot_6 = {
 				type = all
 				OR = { 
 					country_or_non_sovereign_subject_holds = ROOT
-					region = belgii_region
+					region = belgica_region
 					region = low_countries_region
 					is_city = no
 				}

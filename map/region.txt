@@ -100,7 +100,7 @@ east_france_region = {
 	}
 }
 
-belgii_region = { #Belgium Check This
+belgica_region = { #Belgium Check This
 	areas = {
 		remocappadocia_area
 		belgica_prima
@@ -328,7 +328,6 @@ west_balkan_region = {
 		#slavonia_area
 		carinthia_area
 		liburnia_area
-		praevalitana_interior
 		istria_area
 		dalmatia_area
 		dalmatia_interior
@@ -386,20 +385,18 @@ norwegian_region = { ##Propontis
 
 south_carpathia_region = { #Dacia
 	areas = {
-		dacia_maluensis
+		alpes_bastarnicae
+		biessia_area
+		carpatae_area
+		dacia_alutensis_area
+		dacia_apulensis
 		dacia_inferior
-		montes_serrorum
-		tisia_area
+		dacia_maluensis
 		dacia_porolissensis
 		dacia_superior
-		dacia_apulensis
-		north_dacia_superior
-		dacia_alutensis_area
+		montes_serrorum
 		rus_carpathian_area
-		biessia_area
-		dacia_superior
-		carpatae_area
-		alpes_bastarnicae
+		tisia_area
 	}
 }
 
@@ -414,6 +411,8 @@ bohemia_region = { ##Macedonia
 		chalcidice_area
 		macedonia_secunda
 		thesprotia_area
+		perrhaebia_area
+		acarnania_area
 	}
 }
 
@@ -422,10 +421,8 @@ greece_region = {
 		laconica_area
 		thessalia_area
 		kos_area
-		perrhaebia_area
 		magnesia_area
 		aetolia_area
-		acarnania_area
 		ionian_islands
 		boeotia_area
 		phocis_area
@@ -458,6 +455,9 @@ west_anatolia_region = {
 		troad_area
 		ionia_area
 		doris_area
+		heraclea_pontica
+		bithynia_superior_area
+		pergamos_area
 	}
 }
 
@@ -473,7 +473,6 @@ ouest_france_region = { ##Asia Minor
 		caria_chrysaoron_area
 		phrygia_ripensis_area
 		mysia_area
-		pergamos_area
 		lydia_area
 		caria_area
 		katakekaumene_area
@@ -540,8 +539,6 @@ north_anatolia_region = { ##Pontus
 
 brandenburg_pommern_region = { ##Bithynia
 	areas = {
-		heraclea_pontica
-		bithynia_superior_area
 		maryandinia_area
 		paphlagonia_maritima_area
 		paphlagonia_area

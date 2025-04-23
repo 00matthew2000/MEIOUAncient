@@ -1,6 +1,10 @@
 \A[\s\S]+(?=capital)
 \|.*$
 
+(.*0).*           so replace 0 to make it whatever you want, this removes everything **after** a char
+
+(?<=\breligion =\s)(\w+)      replace religion with whatever word to match everything after that word and replace all at once
+
 Must reorder the regions in superregion.txt to change the colors; make it match IU
 Haozhou needs to be redrawn
 Need to fix SYS-RightsInit

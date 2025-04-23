@@ -155,7 +155,7 @@ swi_missions_5 = {
 			}
 		}
 		effect = { 
-			belgii_region = { 
+			belgica_region = { 
 				limit = { 
 					NOT = { 
 						is_core = ROOT
@@ -172,13 +172,13 @@ swi_missions_5 = {
 		icon = mission_european_fort
 		required_missions = { swi_low_countries}
 		provinces_to_highlight = { 
-			region = belgii_region
+			region = belgica_region
 			NOT = { 
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = { 
-			belgii_region = { 
+			belgica_region = { 
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

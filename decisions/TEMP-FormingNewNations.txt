@@ -1584,7 +1584,7 @@
 #			OR = { 
 #				region = high_countries_region
 #				region = low_countries_region
-#				region = belgii_region
+#				region = belgica_region
 #			}
 #		}
 #		allow = { 
@@ -1648,7 +1648,7 @@
 #				}
 #				add_permanent_claim = LOT
 #			}
-#			belgii_region = { 
+#			belgica_region = { 
 #				limit = { 
 #					owned_by = ROOT
 #				}
@@ -1657,7 +1657,7 @@
 #				}
 #				add_core = LOT
 #			}
-#			belgii_region = { 
+#			belgica_region = { 
 #				limit = { 
 #					NOT = { 
 #						owned_by = ROOT

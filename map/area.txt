@@ -704,7 +704,7 @@ lusitania_south_area = {
 }
 
 oestriminis_inferior = {
-	230 231 2308 
+	230 231 
 }
 
 scallabitanus_area = {
@@ -1194,7 +1194,7 @@ suebia_west = {
 }
 
 alpes_tridentinus = {
-	62 73 110 2625 3322 1858 3857
+	73 110 2625 3322 1858 3857
 }
 
 vindobona_area = {
@@ -2301,11 +2301,10 @@ galatia_area = {
 }
 
 bithynia_area = {
-	5081
 }
 
 bosporos_area = {
-	1446
+	1446 5081
 }
 
 propontis_area = {
@@ -2633,7 +2632,7 @@ nabatene_maritimae = {
 }
 
 cinaedocolpitis = {
-	3076 3077 4565
+	3077 4565
 }
 
 macorabaxi_area = {
@@ -2937,7 +2936,7 @@ lixiane_area = {
 }
 
 mauretania_ulterior = {
-	2944 1532 2962 2896
+	2944 1532 2896
 }
 
 mauretania_superior = {
@@ -2949,7 +2948,7 @@ tingitana_west = {
 }
 
 tingitana_east = {
-	343 344 2940 4070 336
+	343 344 2940 4070
 }
 
 atlas_mons = {
@@ -6254,7 +6253,7 @@ yuzhang_area = { 2477 5422 5426 5427 5428 5432 5433 5434 }
 yuzhang_area_south = { 681 682 2478 5429 5430 5431 }
 lujiang_area = { 712 2480 5424 5425 5435 }
 
-minzhong_area = { 680 1053 2484 2490 5418 5419 }
+minzhong_area = { 680 1053 2490 5418 5419 }
 minzhong_area_north = { 2484 2488 2606 5420 5421 5423 }
 yizhou_taiwan_area = { 2304 2305 }
 taizhou_taiwan_area = { 2303 }

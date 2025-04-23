@@ -56,7 +56,7 @@ wes_missions_5 = {
 			}
 		}
 		effect = { 
-			belgii_region = { 
+			belgica_region = { 
 				limit = { 
 					NOT = { 
 						is_core = ROOT
@@ -87,13 +87,13 @@ wes_missions_5 = {
 		required_missions = { wes_low_countries}
 		position = 4
 		provinces_to_highlight = { 
-			region = belgii_region
+			region = belgica_region
 			NOT = { 
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = { 
-			belgii_region = { 
+			belgica_region = { 
 				type = all
 				OR = { 
 					owner = { 

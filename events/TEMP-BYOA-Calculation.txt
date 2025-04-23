@@ -1069,7 +1069,7 @@
 #											}
 #										}
 #									}
-#									belgii_region = { 
+#									belgica_region = { 
 #										owner = { 
 #											change_variable = { 
 #												which = "Demesne_in_the_Netherlands"

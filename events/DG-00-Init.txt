@@ -4841,7 +4841,7 @@ country_event = {
 									OR = { 
 										area = anjou_poitou_area
 										area = guyenne_area
-										region = belgii_region
+										region = belgica_region
 									}
 								}
 								export_to_variable = { 

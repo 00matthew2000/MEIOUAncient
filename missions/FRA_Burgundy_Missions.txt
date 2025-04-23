@@ -262,7 +262,7 @@ bur_conquest_two = {
 			2332 = { 
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			belgii_region = { 
+			belgica_region = { 
 				NOT = { 
 					country_or_non_sovereign_subject_holds = AMG
 				}

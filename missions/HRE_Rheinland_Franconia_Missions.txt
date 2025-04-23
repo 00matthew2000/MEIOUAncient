@@ -114,13 +114,13 @@ pal_missions_5 = {
 		required_missions = { pal_control_rhine}
 		position = 5
 		provinces_to_highlight = { 
-			region = belgii_region
+			region = belgica_region
 			NOT = { 
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = { 
-			belgii_region = { 
+			belgica_region = { 
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -341,7 +341,7 @@ pal_missions_6 = {
 			}
 		}
 		effect = { 
-			belgii_region = { 
+			belgica_region = { 
 				limit = { 
 					NOT = { 
 						is_core = ROOT

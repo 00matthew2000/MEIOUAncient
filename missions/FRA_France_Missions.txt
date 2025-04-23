@@ -1409,7 +1409,7 @@ fra_to_the_rhine = {
 		provinces_to_highlight = { 
 			OR = { 
 				region = low_countries_region
-				region = belgii_region
+				region = belgica_region
 			}
 			NOT = { 
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1425,7 +1425,7 @@ fra_to_the_rhine = {
 							nationalism = 1
 						}
 					}
-					belgii_region = { 
+					belgica_region = { 
 						type = all
 						has_province_modifier = estates_general_3
 						NOT = { 
@@ -1446,7 +1446,7 @@ fra_to_the_rhine = {
 							nationalism = 1
 						}
 					}
-					belgii_region = { 
+					belgica_region = { 
 						type = all
 						NOT = { 
 							nationalism = 1

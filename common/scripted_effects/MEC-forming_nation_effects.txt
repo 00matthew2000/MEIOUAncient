@@ -1041,8 +1041,8 @@
 #	high_countries_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = ROOT }
 #	low_countries_region = { limit = { owned_by = ROOT } hidden_effect = { remove_core = ROOT } add_core = ROOT }
 #	low_countries_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = ROOT }
-#	belgii_region = { limit = { owned_by = ROOT } hidden_effect = { remove_core = ROOT } add_core = ROOT }
-#	belgii_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = ROOT }
+#	belgica_region = { limit = { owned_by = ROOT } hidden_effect = { remove_core = ROOT } add_core = ROOT }
+#	belgica_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = ROOT }
 #	if = {
 #		limit = { government = monarchy NOT = { has_country_modifier = title_5 has_country_modifier = title_6 } }
 #		change_title_5 = yes
@@ -1527,8 +1527,8 @@
 #}
 #
 #form_NED_effect = {
-#	belgii_region = { limit = { owned_by = ROOT } hidden_effect = { remove_core = ROOT } add_core = ROOT }
-#	belgii_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = ROOT }
+#	belgica_region = { limit = { owned_by = ROOT } hidden_effect = { remove_core = ROOT } add_core = ROOT }
+#	belgica_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = ROOT }
 #	low_countries_region = { limit = { owned_by = ROOT } hidden_effect = { remove_core = ROOT } add_core = ROOT }
 #	low_countries_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = ROOT }
 #	if = {
@@ -1571,8 +1571,8 @@
 #}
 #
 #form_EBU_effect = {
-#	belgii_region = { limit = { owned_by = ROOT } hidden_effect = { remove_core = ROOT } add_core = ROOT }
-#	belgii_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = ROOT }
+#	belgica_region = { limit = { owned_by = ROOT } hidden_effect = { remove_core = ROOT } add_core = ROOT }
+#	belgica_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = ROOT }
 #	low_countries_region = { limit = { owned_by = ROOT } hidden_effect = { remove_core = ROOT } add_core = ROOT }
 #	low_countries_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = ROOT }
 #	if = {

@@ -250,7 +250,7 @@ bra_missions_5 = {
 		provinces_to_highlight = { 
 			OR = { 
 				region = low_countries_region
-				region = belgii_region
+				region = belgica_region
 			}
 			NOT = { 
 				country_or_non_sovereign_subject_holds = ROOT
@@ -769,7 +769,7 @@ bra_missions_6 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			belgii_region = { 
+			belgica_region = { 
 				limit = { 
 					NOT = { 
 						is_core = ROOT
