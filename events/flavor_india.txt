@@ -1,0 +1,1305 @@
+namespace = india
+
+########################################################################################
+# invasion of sri lanka
+########################################################################################
+province_event = {
+	id = india.1
+	title = "india.1.t"
+	desc = "india.1.d"
+	picture = invasion
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		area = tamraparni_area
+		has_port = yes
+		is_year = 210
+		NOT = { started_in = 211.1.1 }
+		NOT = { exists = SMV }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			province_id = 6438
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			owner = { save_event_target_as = tamraparni_original_owner }
+			tamraparni_area = {
+				remove_core = event_target:tamraparni_original_owner
+				change_culture = sinhala
+				change_religion = brahmin
+				add_core = SMV
+				cede_province = SMV
+			}
+		}
+	}
+
+	option = {
+		name = "india.1.a"
+		ai_chance = {
+			factor = 1
+		}
+		tooltip = { cede_province = SMV }
+		event_target:tamraparni_original_owner = {
+			declare_war_with_cb = {
+				who = SMV
+				casus_belli = cb_vassalize_mission
+			}
+		}
+		hidden_effect = {
+			SMV = {
+				every_neighbor_country = {
+					limit = { NOT = { tag = event_target:tamraparni_original_owner } }
+					add_truce_with = PREV
+				}
+			}
+		}
+	}
+	option = {
+		name = "india.1.b"
+		tooltip = { cede_province = SMV }
+		ai_chance = {
+			factor = 99
+		}
+		hidden_effect = {
+			SMV = { every_neighbor_country = { add_truce_with = PREV } }
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			SMV = {
+				change_government = tribal
+				add_government_reform = vedic_kingdom_reform
+				change_government_reform_progress = 100
+				change_government_reform_progress = 100
+				change_government_reform_progress = 100
+				set_government_rank = 2
+				add_stability = 2
+				add_mil_power = 100
+				add_dip_power = 100
+				add_adm_power = 100
+				add_treasury = 400
+				add_manpower = 10
+				add_yearly_sailors = 8
+				add_prestige = 10
+				add_absolutism = 10
+				define_ruler = {
+					name = "Vijaya"
+					dynasty = "Mahavijaya"
+					male = yes
+					dip = 4
+					adm = 4
+					mil = 5
+				}
+				add_ruler_modifier = {
+					name = vijaya_king_modifier
+				}
+				capital_scope = { build_to_forcelimit = {} }
+			}
+		}
+	}
+}
+
+########################################################################################
+# council comes together
+########################################################################################
+#country_event = {
+#id = india.2
+#title = "india.2.t"
+#desc = "india.2.d"
+#picture = death
+#is_triggered_only = yes
+
+#trigger = {
+#has_reform = vedic_kingdom_reform
+#has_consort_regency = no
+#has_regency = no
+#ruler_age = 20
+#}
+
+#mean_time_to_happen = {
+#days = 1
+#}
+
+#immediate = {
+#set_country_flag = vedic_succession_flag
+#hidden_effect = {
+#random = {
+#chance = 50
+#random_owned_province = {
+#spawn_rebels = {
+#type = pretender_rebels
+#size = 2
+#}
+#}
+#}
+#}
+#}
+
+#option = {
+#name = "india.2.a"
+#custom_tooltip = india.2.tt
+#}
+#}
+########################################################################################
+# council aproves
+########################################################################################
+country_event = {
+	id = india.3
+	title = "india.3.t"
+	desc = "india.3.d"
+	picture = culture
+
+	trigger = {
+		has_country_flag = vedic_succession_flag
+	}
+
+	mean_time_to_happen = {
+		months = 4
+		modifier = {
+			factor = 0.7
+			ADM = 5
+		}
+		modifier = {
+			factor = 0.7
+			DIP = 5
+		}
+		modifier = {
+			factor = 0.7
+			MIL = 5
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { ADM = 3 }
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { DIP = 3 }
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { MIL = 3 }
+		}
+		modifier = {
+			factor = 0.75
+			legitimacy = 95
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { legitimacy = 65 }
+		}
+	}
+
+	immediate = {
+		clr_country_flag = vedic_succession_flag
+	}
+
+	option = {
+		name = "india.3.a"
+		add_mil_power = 100
+	}
+}
+########################################################################################
+# council disaproves
+########################################################################################
+country_event = {
+	id = india.4
+	title = "india.4.t"
+	desc = "india.4.d"
+	picture = battle
+
+	trigger = {
+		has_country_flag = vedic_succession_flag
+	}
+
+	mean_time_to_happen = {
+		months = 4
+
+		modifier = {
+			factor = 1.1
+			ADM = 5
+		}
+		modifier = {
+			factor = 1.1
+			DIP = 5
+		}
+		modifier = {
+			factor = 1.1
+			MIL = 5
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { ADM = 3 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { DIP = 3 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { MIL = 3 }
+		}
+
+		modifier = {
+			factor = 1.2
+			legitimacy = 95
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { legitimacy = 65 }
+		}
+	}
+
+	immediate = {
+		clr_country_flag = vedic_succession_flag
+	}
+
+	option = {
+		name = "india.4.a"
+		add_mil_power = 100
+		define_ruler = {
+			adm = 1
+			dip = 1
+			mil = 2
+			claim = 50
+		}
+	}
+	option = {
+		name = "india.4.b"
+		add_mil_power = -100
+	}
+}
+########################################################################################
+# the caste system
+########################################################################################
+#country_event = {
+#id = india.5
+#title = "india.5.t"
+#desc = "india.5.d"
+#picture = culture
+#is_triggered_only = yes
+
+#trigger = {
+#religion = brahmin
+#NOT = { has_country_modifier = varna_system }
+#always = no
+#}
+
+#mean_time_to_happen = {
+#days = 1
+#}
+
+#option = {
+#name = "india.5.a"
+#ai_chance = { factor = 96 }
+#add_country_modifier = {
+#name = varna_system
+#duration = -1
+#}
+
+#}
+#option = {
+#name = "india.5.b"
+#add_stability = 1
+#}
+#}
+########################################################################################
+# chariot race
+########################################################################################
+country_event = {
+	id = india.6
+	title = "india.6.t"
+	desc = "india.6.d"
+	picture = horserace
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_reform = vedic_kingdom_reform
+	}
+
+	option = {
+		name = "india.6.a"
+		ai_chance = { factor = 100 }
+		trigger = { ruler_has_personality = horse_lover_personality }
+		highlight = yes
+		add_prestige = 10
+		add_legitimacy = 10
+		add_years_of_income = -0.5
+	}
+	option = {
+		name = "india.6.b"
+		ai_chance = { factor = 55 }
+		add_legitimacy = 10
+		add_years_of_income = -0.5
+	}
+	option = {
+		name = "india.6.c"
+		ai_chance = { factor = 0 }
+		add_legitimacy = -5
+	}
+}
+########################################################################################
+# gift from the clans
+########################################################################################
+country_event = {
+	id = india.7
+	title = "india.7.t"
+	desc = "india.7.d"
+	picture = ritual_feast
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_reform = vedic_kingdom_reform
+	}
+
+	option = {
+		name = "india.7.a"
+		ai_chance = { factor = 65 }
+		trigger = { ruler_has_personality = greedy_personality 	}
+		highlight = yes
+		add_years_of_income = 0.6
+		add_legitimacy = -5
+	}
+	option = {
+		name = "india.7.b"
+		ai_chance = { factor = 55 }
+		add_years_of_income = 0.3
+	}
+	option = {
+		name = "india.7.c"
+		ai_chance = { factor = 0 }
+		add_legitimacy = 5
+	}
+}
+########################################################################################
+# no tributes
+########################################################################################
+country_event = {
+	id = india.8
+	title = "india.8.t"
+	desc = "india.8.d"
+	picture = forum_picture
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_reform = vedic_kingdom_reform
+	}
+
+	option = {
+		name = "india.8.a"
+		ai_chance = { factor = 100 }
+		trigger = { ruler_has_personality = midas_touched_personality }
+		highlight = yes
+		add_years_of_income = 0.25
+	}
+	option = {
+		name = "india.8.b"
+		ai_chance = { factor = 50 }
+		add_legitimacy = -5
+	}
+	option = {
+		name = "india.8.c"
+		ai_chance = { factor = 50 }
+		add_years_of_income = -0.4
+		add_legitimacy = 5
+	}
+}
+########################################################################################
+# ashvamedha_ritual horse attacked
+########################################################################################
+province_event = {
+	id = india.9
+	title = "india.9.t"
+	desc = "india.9.d"
+	picture = battle
+
+	trigger = {
+		owner = { has_ruler_flag = ashvamedha_ruler_flag }
+		OR = {
+			is_capital = yes
+			any_neighbor_province = {
+				is_capital = yes
+				owned_by = ROOT
+			}
+		}
+		NOT = { has_province_flag = ashvamedha_ritual_flag }
+	}
+
+	mean_time_to_happen = {
+		months = 9
+		modifier = {
+			factor = 0.8
+			owner = { NOT = { legitimacy = 70 } }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { legitimacy = 90 }
+		}
+	}
+
+	immediate = {
+		set_province_flag = ashvamedha_ritual_flag
+	}
+
+	option = {
+		name = "india.9.a"
+		ai_chance = { factor = 80 }
+		spawn_rebels = {
+			type = noble_rebels
+			size = 1
+		}
+		random_list = {
+			90 = {
+				custom_tooltip = india.9.tta
+				owner = { add_mil_power = 50 }
+			}
+			10 = {
+				custom_tooltip = india.9.ttb
+				hidden_effect = {
+					owner = {
+						country_event = {
+							id = india.12
+							days = 1
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "india.9.b"
+		ai_chance = { factor = 20 }
+		random_list = {
+			60 = {
+				custom_tooltip = india.9.tta
+				owner = { add_mil_power = 50 }
+			}
+			40 = {
+				custom_tooltip = india.9.ttb
+				owner = {
+					hidden_effect = {
+						country_event = {
+							id = india.12
+							days = 1
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+########################################################################################
+# ashvamedha_ritual clans give tribute
+########################################################################################
+province_event = {
+	id = india.10
+	title = "india.10.t"
+	desc = "india.10.d"
+	picture = harvest
+
+	trigger = {
+		owner = { has_ruler_flag = ashvamedha_ruler_flag }
+		OR = {
+			is_capital = yes
+			any_neighbor_province = {
+				is_capital = yes
+				owned_by = ROOT
+			}
+		}
+		NOT = { has_province_flag = ashvamedha_ritual_flag }
+	}
+
+	mean_time_to_happen = {
+		months = 9
+		modifier = {
+			factor = 1.3
+			owner = { NOT = { legitimacy = 70 } }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { legitimacy = 90 }
+		}
+	}
+
+	immediate = {
+		set_province_flag = ashvamedha_ritual_flag
+	}
+
+	option = {
+		name = "india.10.a"
+		owner = {
+			add_mil_power = 50
+			add_years_of_income = 0.1
+		}
+	}
+}
+########################################################################################
+# ashvamedha_ritual ends
+########################################################################################
+country_event = {
+	id = india.11
+	title = "india.11.t"
+	desc = "india.11.d"
+	picture = culture
+
+	trigger = {
+		has_ruler_flag = ashvamedha_ritual_flag
+		had_ruler_flag = { flag = ashvamedha_ruler_flag days = 365 }
+		NOT = { has_ruler_modifier = ashvamedha_ritual_failed }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		clr_ruler_flag = ashvamedha_ritual_flag
+		hidden_effect = {
+			every_owned_province = {
+				limit = { has_province_flag = ashvamedha_ritual_flag }
+				clr_province_flag = ashvamedha_ritual_flag
+			}
+		}
+	}
+
+	option = {
+		name = "india.11.a"
+		add_mil_power = 100
+		add_legitimacy = 10
+		add_ruler_modifier = {
+			name = ashvamedha_ritual_success
+		}
+	}
+}
+########################################################################################
+# ashvamedha_ritual fails
+########################################################################################
+country_event = {
+	id = india.12
+	title = "india.12.t"
+	desc = "india.12.d"
+	picture = forum_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_ruler_flag = ashvamedha_ritual_flag
+			every_owned_province = {
+				limit = { has_province_flag = ashvamedha_ritual_flag }
+				clr_province_flag = ashvamedha_ritual_flag
+			}
+		}
+	}
+
+	option = {
+		name = "india.12.a"
+		add_mil_power = -250
+		add_legitimacy = -25
+		add_ruler_modifier = {
+			name = ashvamedha_ritual_failed
+		}
+	}
+}
+########################################################################################
+# change school of thought 
+########################################################################################
+country_event = {
+	id = india.13
+	title = "india.13.t"
+	desc = "india.13.d"
+	picture = forum_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "india.13.a"
+		trigger = { religion = ajivika }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = tala_school
+		}
+	}
+	option = {
+		name = "india.13.b"
+		trigger = { religion = ajivika }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = talapralamba_school
+		}
+	}
+	option = {
+		name = "india.13.c"
+		trigger = { religion = ajivika }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = udvidha_school
+		}
+	}
+	option = {
+		name = "india.13.dd"
+		trigger = { religion = ajivika }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn 
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = samvidha_school
+		}
+	}
+	option = {
+		name = "india.13.e"
+		trigger = { religion = ajivika }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn 
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = avavidha_school
+		}
+	}
+	option = {
+		name = "india.13.f"
+		trigger = { religion = ajivika }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = udaya_school
+		}
+	}
+	option = {
+		name = "india.13.g"
+		trigger = { religion = ajivika }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = namodaya_school
+		}
+	}
+	option = {
+		name = "india.13.h"
+		trigger = { religion = ajivika }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn 
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = narmodaya_school
+		}
+	}
+	option = {
+		name = "india.13.i"
+		trigger = { religion = ajivika }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = anupalaka_school
+		}
+	}
+	option = {
+		name = "india.13.j"
+		trigger = { religion = ajivika }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = sankhapalaka_school
+		}
+	}
+	option = {
+		name = "india.13.k"
+		trigger = { religion = ajivika }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = ayambula_school
+		}
+	}
+	option = {
+		name = "india.13.l"
+		trigger = { religion = ajivika }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = katara_school
+		}
+	}
+	
+	#Jain
+	option = {
+		name = "india.13.m"
+		trigger = { religion = jain }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = svetambara_school
+		}
+	}
+	option = {
+		name = "india.13.n"
+		trigger = { religion = jain }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = digambara_school
+		}
+	}
+
+	#Brahmic and Hindu
+	option = {
+		name = "india.13.o"
+		trigger = { is_orthodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = shakala_school
+		}
+	}
+	option = {
+		name = "india.13.p"
+		trigger = { is_orthodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = bashkala_school
+		}
+	}
+	option = {
+		name = "india.13.q"
+		trigger = { is_orthodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = shakala_school
+		}
+	}
+	option = {
+		name = "india.13.r"
+		trigger = { is_orthodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn 
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = asvalayana_school
+		}
+	}
+	option = {
+		name = "india.13.s"
+		trigger = { is_orthodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = madhyandina_school
+		}
+	}
+	option = {
+		name = "india.13.tt"
+		trigger = { is_orthodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = kanva_school
+		}
+	}
+	option = {
+		name = "india.13.u"
+		trigger = { is_orthodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn 
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = taittiriya_school
+		}
+	}
+	option = {
+		name = "india.13.v"
+		trigger = { is_orthodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = maitrayani_school
+		}
+	}
+	option = {
+		name = "india.13.w"
+		trigger = { is_orthodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn 
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = caraka_katha_school
+		}
+	}
+	option = {
+		name = "india.13.x"
+		trigger = { is_orthodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = kapishthala_school
+		}
+	}
+	option = {
+		name = "india.13.y"
+		trigger = { is_orthodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = kauthuma_school
+		}
+	}
+	option = {
+		name = "india.13.z"
+		trigger = { is_orthodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = ranayaniya_school
+		}
+	}
+	option = {
+		name = "india.13.ab"
+		trigger = { is_orthodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn 
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = jaiminiya_school
+		}
+	}
+	option = {
+		name = "india.13.ac"
+		trigger = { is_orthodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = shaunaka_school
+		}
+	}
+	option = {
+		name = "india.13.ad"
+		trigger = { is_orthodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = paippalada_school
+		}
+	}
+	
+	#Hetrodox (Sramana, Buddhism, Ajivika, OR jain)
+	option = {
+		name = "india.13.ae"
+		trigger = { is_heterodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn 
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = amoralism_school
+		}
+	}
+	option = {
+		name = "india.13.af"
+		trigger = { is_heterodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn 
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = determinism_school
+		}
+	}
+	option = {
+		name = "india.13.ag"
+		trigger = { is_heterodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = fatalism_school
+		}
+	}
+	option = {
+		name = "india.13.ah"
+		trigger = { is_heterodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = materialism_school
+		}
+	}
+	option = {
+		name = "india.13.ai"
+		trigger = { is_heterodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = atomism_school
+		}
+	}
+	option = {
+		name = "india.13.aj"
+		trigger = { is_heterodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = restraint_school
+		}
+	}
+	option = {
+		name = "india.13.ak"
+		trigger = { is_heterodox_trigger = yes }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn 
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = agnosticism_school
+		}
+	}
+	
+	#Buddhism
+	option = {
+		name = "india.13.al"
+		trigger = { religion = buddhism }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn 
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = mahasamghika_school
+		}
+	}
+	option = {
+		name = "india.13.am"
+		trigger = { religion = buddhism }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn 
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = sthavira_school
+		}
+	}
+	option = {
+		name = "india.13.an"
+		trigger = { religion = buddhism }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = sammatiyah_school
+		}
+	}
+	option = {
+		name = "india.13.ao"
+		trigger = { religion = buddhism }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = sarvastivada_school
+		}
+	}
+	option = {
+		name = "india.13.ap"
+		trigger = { religion = buddhism }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = vibhajyavada_school
+		}
+	}
+	option = {
+		name = "india.13.aq"
+		trigger = { religion = buddhism }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn 
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = pudgalavada_school
+		}
+	}
+	option = {
+		name = "india.13.ar"
+		trigger = { religion = buddhism }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = ekavyavaharika_school
+		}
+	}
+	option = {
+		name = "india.13.as"
+		trigger = { religion = buddhism }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn 
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = lokottaravada_school
+		}
+	}
+	option = {
+		name = "india.13.at"
+		trigger = { religion = buddhism }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn 
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = kukkutika_school
+		}
+	}
+	
+	#Hinduism
+	option = {
+		name = "india.13.au"
+		trigger = { religion = hinduism }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = nyaya_school
+		}
+	}
+	option = {
+		name = "india.13.av"
+		trigger = { religion = hinduism }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn 
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = vaishesika_school
+		}
+	}
+	option = {
+		name = "india.13.aw"
+		trigger = { religion = hinduism }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn 
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = samkhya_school
+		}
+	}
+	option = {
+		name = "india.13.ax"
+		trigger = { religion = hinduism }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn 
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = yoga_school
+		}
+	}
+	option = {
+		name = "india.13.ay"
+		trigger = { religion = hinduism }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn 
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = mimamsa_school
+		}
+	}
+	option = {
+		name = "india.13.az"
+		trigger = { religion = hinduism }
+		add_adm_power = -60 
+		add_dip_power = -60
+		add_stability = -2
+		clr_country_flag = india_picking_new_school_rn 
+		clr_country_flag = picking_first_school_india 
+		set_religious_school = {
+			group = brahmin_group
+			school = vedanta_school
+		}
+	}
+	option = {
+		name = "india.13.NVM"
+		trigger = { NOT = { has_country_flag = picking_first_school_india } }
+		clr_country_flag = india_picking_new_school_rn
+	}
+}

@@ -1,0 +1,2439 @@
+namespace = jin_partition
+
+########################################################################################
+# Duke of Jin is assassinated, start of the partition
+########################################################################################
+country_event = {
+	id = jin_partition.1
+	title = "jin_partition.1.t"
+	desc = "jin_partition.1.d"
+	picture = arrested_person
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = JIN
+		is_year = 147
+		NOT = {
+			has_global_flag = jin_partition_started
+		}
+		NOT = {
+			started_in = 148.1.1
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = jin_ruler_lord_yigao
+			set_variable = {
+				which = minister_resisting_var
+				value = 15
+			}
+			kill_heir = { allow_new_heir = no }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "jin_partition.1.a"
+		set_global_flag = jin_partition_started
+		custom_tooltip = jin_partition_tooltip_one
+		define_heir = {
+			name = "HeiTun"
+			dynasty = "Ji"
+			age = 22
+			claim = 85
+			adm = 3
+			dip = 3
+			mil = 2
+			max_random_adm = 3
+			max_random_dip = 3
+			max_random_mil = 2
+		}
+		kill_ruler = yes
+		set_emperor = yes
+	}
+}
+
+########################################################################################
+# Assassination Attempt when Resistance is too low
+########################################################################################
+country_event = {
+	id = jin_partition.5
+	title = "jin_partition.5.t"
+	desc = "jin_partition.5.d"
+	picture = assassination
+
+	trigger = {
+		tag = JIN
+		has_global_flag = jin_partition_started
+		NOT = {
+			check_variable = {
+				which = minister_resisting_var
+				value = 11
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 280
+		modifier = {
+			factor = 0.8
+			OR = {
+				ruler_has_personality = cruel_personality
+				ruler_has_personality = malevolent_personality
+				ruler_has_personality = arbitrarily_personality
+			}
+		}
+		modifier = {
+			factor = 1.2
+			OR = {
+				ruler_has_personality = inspiring_leader_personality
+				ruler_has_personality = benevolent_personality
+				ruler_has_personality = careful_personality
+				ruler_has_personality = kind_hearted_personality
+			}
+		}
+		modifier = {
+			factor = 1.1
+			legitimacy = 99
+		}
+		modifier = {
+			factor = 1.1
+			manpower_percentage = 0.95
+		}
+		modifier = {
+			factor = 1.1
+			stability = 1
+		}
+		modifier = {
+			factor = 1.2
+			stability = 2
+		}
+		modifier = {
+			factor = 1.5
+			stability = 3
+		}
+		modifier = {
+			factor = 0.85
+			is_emperor = no
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				legitimacy = 85
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				legitimacy = 70
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				legitimacy = 50
+			}
+		}
+		modifier = {
+			factor = 0.75
+			ai = yes
+		}
+		modifier = {
+			factor = 0.9
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.75
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 0.5
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 1
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 2
+		}
+		modifier = {
+			factor = 0.75
+			war_exhaustion = 5
+		}
+		modifier = {
+			factor = 0.9
+			corruption = 1
+		}
+		modifier = {
+			factor = 0.8
+			corruption = 2
+		}
+		modifier = {
+			factor = 0.7
+			corruption = 3
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				months_of_ruling = 24
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				manpower_percentage = 0.6
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				manpower_percentage = 0.25
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -1
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -2
+			}
+		}
+	}
+
+	option = {
+		name = "jin_partition.5.a"
+		random = {
+			chance = 33
+
+			if = {
+				limit = {
+					NOT = {
+						heir_age = 15
+					}
+				}
+				kill_heir = { allow_new_heir = no }
+				define_heir = {
+					dynasty = "Ji"
+					claim = 80
+					age = 16
+					max_random_adm = 2
+					max_random_dip = 3
+					max_random_mil = 1
+				}
+			}
+			kill_ruler = yes
+			change_variable = {
+				which = minister_resisting_var
+				value = 3
+			}
+		}
+	}
+}
+
+########################################################################################
+# End of the Clans (fires after influence war OR if jin somehow beats ministers after they try to partition)
+########################################################################################
+country_event = {
+	id = jin_partition.6
+	title = "jin_partition.6.t"
+	desc = "jin_partition.6.d"
+	picture = ritual_feast
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "jin_partition.6.a"
+		custom_tooltip = jin_partition_tooltip_two
+		add_adm_power = 250
+		add_dip_power = 250
+		add_mil_power = 250
+		add_stability = 6
+		remove_country_modifier = jin_min_war_debuff
+		remove_country_modifier = jin_min_war_debuff_less
+		add_country_modifier = {
+			name = jin_minister_victory_buff
+			duration = 10950
+		}
+		if = {
+			limit = {
+				has_won_war_against = {
+					who = WEI
+					max_years_since = 1
+				}
+			}
+			inherit = WEI
+		}
+		if = {
+			limit = {
+				has_won_war_against = {
+					who = ZHA
+					max_years_since = 1
+				}
+			}
+			inherit = ZHA
+		}
+		if = {
+			limit = {
+				has_won_war_against = {
+					who = HAN
+					max_years_since = 1
+				}
+			}
+			inherit = HAN
+		}
+		if = {
+			limit = {
+				has_won_war_against = {
+					who = FAN
+					max_years_since = 1
+				}
+			}
+			inherit = FAN
+		}
+		if = {
+			limit = {
+				has_won_war_against = {
+					who = CZH
+					max_years_since = 1
+				}
+			}
+			inherit = CZH
+		}
+		if = {
+			limit = {
+				has_won_war_against = {
+					who = ZHI
+					max_years_since = 1
+				}
+			}
+			inherit = ZHI
+		}
+	}
+}
+
+########################################################################################
+# Jin can sell province to Wei (Wei refuses)
+########################################################################################
+country_event = {
+	id = jin_partition.10
+	title = "jin_partition.10.t"
+	desc = "jin_partition.10.d"
+	picture = deligation
+	is_triggered_only = yes
+
+	option = {
+		name = "jin_partition.10.a"
+		4121 = {
+			cede_province = HAN
+			add_core = HAN
+		}
+	}
+}
+
+########################################################################################
+# Jin can sell province to Wei (Wei gets this event)
+########################################################################################
+country_event = {
+	id = jin_partition.9
+	title = "jin_partition.9.t"
+	desc = "jin_partition.9.d"
+	picture = deligation
+	is_triggered_only = yes
+
+	option = {
+		name = "jin_partition.9.a"
+		add_treasury = -75
+		add_mil_power = -25
+		JIN = {
+			add_treasury = 75
+			add_mil_power = 25
+		}
+		4121 = {
+			cede_province = WEY
+		}
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0.3
+				NOT = {
+					treasury = 75
+				}
+			}
+		}
+	}
+	option = {
+		name = "jin_partition.9.b"
+		JIN = {
+			country_event = { id = jin_partition.10 }
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+########################################################################################
+# Jin can sell province to Wei
+########################################################################################
+country_event = {
+	id = jin_partition.7
+	title = "jin_partition.7.t"
+	desc = "jin_partition.7.d"
+	fire_only_once = yes
+	picture = deligation
+
+	trigger = {
+		tag = JIN
+		has_global_flag = jin_partition_started
+		owns = 4121
+		NOT = {
+			num_of_cities = 16
+		}
+		exists = WEY
+		exists = HAN
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "jin_partition.7.a"
+		WEY = {
+			country_event = { id = jin_partition.9 }
+		}
+		ai_chance = {
+			factor = 95
+		}
+	}
+	option = {
+		name = "jin_partition.7.b"
+		4121 = {
+			cede_province = HAN
+			add_core = HAN
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+
+########################################################################################
+# Jin is weak, so 3 clans decide to try to partition (zhou tells jin it agrees, if jin is player they can resist)
+########################################################################################
+country_event = {
+	id = jin_partition.12
+	title = "jin_partition.12.t"
+	desc = "jin_partition.12.d"
+	picture = deligation
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = jin_annexing_ministers_war
+		hidden_effect = {
+			random_subject_country = {
+				limit = {
+					is_subject_of_type = ministerial_clan
+				}
+				save_global_event_target_as = minister_target_pick
+			}
+		}
+	}
+
+	option = {
+		name = "jin_partition.12.a"
+		release_all_subjects = yes
+		4070 = {
+			cede_province = event_target:minister_target_pick
+			add_core = event_target:minister_target_pick
+		}
+		4071 = {
+			cede_province = event_target:minister_target_pick
+			add_core = event_target:minister_target_pick
+		}
+	}
+	option = {
+		name = "jin_partition.12.b" #fight despite zhou accepting the ministers
+		trigger = { ai = no }
+
+		set_country_flag = jin_annexing_ministers_war
+
+		hidden_effect = {
+			every_known_country = {
+				limit = {
+					alliance_with = ROOT
+				}
+				break_alliance = ROOT
+			}
+		}
+
+		custom_tooltip = jin_partition_tooltip_three
+		hidden_effect = {
+			event_target:minister_target_pick = {
+				every_war_enemy_country = {
+					white_peace = THIS
+				}
+				every_known_country = {
+					limit = {
+						is_subject_of_type = ministerial_clan
+						NOT = {
+							tag = PREV
+						}
+					}
+					grant_independence = yes
+					country_event = { id = jin_partition.32 days = 1 }
+				}
+			}
+		}
+		release_all_subjects = yes
+		declare_war_with_cb = {
+			who = event_target:minister_target_pick
+			casus_belli = jinpartition_cb
+		}
+	}
+}
+
+########################################################################################
+# Jin is weak, so 3 clans decide to try to partition (zhou decides)
+########################################################################################
+country_event = {
+	id = jin_partition.11
+	title = "jin_partition.11.t"
+	desc = "jin_partition.11.d"
+	picture = deligation
+	is_triggered_only = yes
+
+	option = {
+		name = "jin_partition.11.a"
+		JIN = {
+			country_event = { id = jin_partition.12 }
+		}
+		ai_chance = {
+			factor = 95
+		}
+	}
+	option = {
+		name = "jin_partition.11.b"
+		trigger = {
+			OR = {
+				ai = no
+				JIN = {
+					ai = no
+				}
+			}
+		}
+		create_alliance = JIN
+		add_trust = {
+			who = JIN
+			value = 50
+			mutual = yes
+		}
+		hidden_effect = {
+			event_target:minister_target_pick = {
+				every_war_enemy_country = {
+					white_peace = THIS
+				}
+				every_known_country = {
+					limit = {
+						is_subject_of_type = ministerial_clan
+						NOT = {
+							tag = PREV
+						}
+					}
+					grant_independence = yes
+					country_event = { id = jin_partition.32 days = 1 }
+				}
+			}
+		}
+		JIN = {
+			release_all_subjects = yes
+			set_country_flag = jin_annexing_ministers_war
+		}
+		ZHO = {
+			declare_war_with_cb = {
+				who = event_target:minister_target_pick
+				casus_belli = jinpartition_cb
+			}
+		}
+		JIN = {
+			join_all_offensive_wars_of = ZHO
+		}
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = JIN
+					value = 190
+				}
+			}
+			modifier = {
+				factor = 5
+				trust = {
+					who = JIN
+					value = 95
+				}
+			}
+		}
+	}
+}
+
+########################################################################################
+# Jin is weak, so 3 clans decide to try to partition
+########################################################################################
+country_event = {
+	id = jin_partition.8
+	title = "jin_partition.8.t"
+	desc = "jin_partition.8.d"
+	picture = ritual_feast
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = JIN
+		has_global_flag = jin_partition_started
+		NOT = {
+			num_of_cities = 3
+		}
+	}
+
+	immediate = {
+		clr_global_flag = jin_partition_started
+		set_country_flag = jin_annexing_ministers_war
+		hidden_effect = {
+			random_subject_country = {
+				limit = {
+					is_subject_of_type = ministerial_clan
+				}
+				save_global_event_target_as = minister_target_pick
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "jin_partition.8.a" #see what zhou wants to do if they exist, zhou may help jin
+		trigger = { exists = ZHO }
+		ZHO = {
+			country_event = { id = jin_partition.11 }
+		}
+	}
+	option = {
+		name = "jin_partition.8.b" #accept partition
+		release_all_subjects = yes
+		4070 = {
+			cede_province = event_target:minister_target_pick
+			add_core = event_target:minister_target_pick
+		}
+		4071 = {
+			cede_province = event_target:minister_target_pick
+			add_core = event_target:minister_target_pick
+		}
+	}
+	option = {
+		name = "jin_partition.8.c" #can try to fight without zhous help or in case zhou doesnt exist
+		trigger = { ai = no }
+
+		set_country_flag = jin_annexing_ministers_war
+
+		hidden_effect = {
+			every_known_country = {
+				limit = {
+					alliance_with = ROOT
+				}
+				break_alliance = ROOT
+			}
+		}
+
+		custom_tooltip = jin_partition_tooltip_three
+		hidden_effect = {
+			event_target:minister_target_pick = {
+				every_war_enemy_country = {
+					white_peace = THIS
+				}
+				every_known_country = {
+					limit = {
+						is_subject_of_type = ministerial_clan
+						NOT = {
+							tag = PREV
+						}
+					}
+					grant_independence = yes
+					country_event = { id = jin_partition.32 days = 1 }
+				}
+			}
+		}
+		release_all_subjects = yes
+		declare_war_with_cb = {
+			who = event_target:minister_target_pick
+			casus_belli = jinpartition_cb
+		}
+	}
+}
+
+########################################################################################
+# Jin-Zhao partition war (Zhou-Jin victory)
+########################################################################################
+country_event = {
+	id = jin_partition.13
+	title = "jin_partition.13.t"
+	desc = "jin_partition.13.d"
+	fire_only_once = yes
+	picture = military_parade
+	is_triggered_only = yes
+
+	option = {
+		name = "jin_partition.13.a"
+		JIN = {
+			if = {
+				limit = {
+					has_won_war_against = {
+						who = WEI
+						max_years_since = 1
+					}
+				}
+				inherit = WEI
+			}
+			if = {
+				limit = {
+					has_won_war_against = {
+						who = ZHA
+						max_years_since = 1
+					}
+				}
+				inherit = ZHA
+			}
+			if = {
+				limit = {
+					has_won_war_against = {
+						who = HAN
+						max_years_since = 1
+					}
+				}
+				inherit = HAN
+			}
+			if = {
+				limit = {
+					has_won_war_against = {
+						who = FAN
+						max_years_since = 1
+					}
+				}
+				inherit = FAN
+			}
+			if = {
+				limit = {
+					has_won_war_against = {
+						who = CZH
+						max_years_since = 1
+					}
+				}
+				inherit = CZH
+			}
+			if = {
+				limit = {
+					has_won_war_against = {
+						who = ZHI
+						max_years_since = 1
+					}
+				}
+				inherit = ZHI
+			}
+			if = {
+				limit = {
+					NOT = {
+						exists = GUO
+					}
+				}
+				release = GUO
+				GUO = {
+					set_dynasty = "Ji"
+				}
+				set_country_flag = jin_released_guo_for_zho
+			}
+			if = {
+				limit = {
+					NOT = {
+						exists = YUA
+					}
+				}
+				release = YUA
+				YUA = {
+					set_dynasty = "Ji"
+				}
+				set_country_flag = jin_released_yua_for_zho
+			}
+			if = {
+				limit = {
+					NOT = {
+						exists = YOG
+					}
+				}
+				release = YOG
+				YOG = {
+					set_dynasty = "Ji"
+				}
+				set_country_flag = jin_released_yog_for_zho
+			}
+		}
+		if = {
+			limit = {
+				4127 = {
+					OR = {
+						owned_by = JIN
+						AND = {
+							owned_by = CXA
+							CXA = {
+								ai = yes
+							}
+						}
+					}
+				}
+			}
+			4127 = {
+				cede_province = ZHO
+				remove_core = JIN
+				add_core = ZHO
+			}
+		}
+		if = {
+			limit = {
+				4123 = {
+					owned_by = JIN
+				}
+			}
+			4123 = {
+				cede_province = ZHO
+				remove_core = JIN
+				add_core = ZHO
+			}
+		}
+		if = {
+			limit = {
+				4130 = {
+					owned_by = JIN
+				}
+			}
+			4130 = {
+				cede_province = ZHO
+				remove_core = JIN
+				add_core = ZHO
+			}
+		}
+		ZHO = {
+			if = {
+				limit = {
+					JIN = {
+						has_country_flag = jin_released_guo_for_zho
+					}
+				}
+				vassalize = GUO
+			}
+			if = {
+				limit = {
+					JIN = {
+						has_country_flag = jin_released_yua_for_zho
+					}
+				}
+				vassalize = YUA
+			}
+			if = {
+				limit = {
+					JIN = {
+						has_country_flag = jin_released_yog_for_zho
+					}
+				}
+				vassalize = YOG
+			}
+		}
+	}
+}
+
+########################################################################################
+# Jin-Zhao partition war (Minister victory)
+########################################################################################
+country_event = {
+	id = jin_partition.14
+	title = "jin_partition.14.t"
+	desc = "jin_partition.14.d"
+	fire_only_once = yes
+	picture = military_parade
+	is_triggered_only = yes
+
+	option = {
+		name = "jin_partition.14.a"
+		if = { #jin resists after ministers attempt partition
+			limit = {
+				check_variable = {
+					which = minister_resisting_var
+					value = 1
+				}
+			}
+			JIN = {
+				release_all_subjects = yes
+			}
+			4070 = {
+				cede_province = event_target:minister_target_pick
+				add_core = event_target:minister_target_pick
+			}
+			4071 = {
+				cede_province = event_target:minister_target_pick
+				add_core = event_target:minister_target_pick
+			}
+		}
+		else = {#war for when jin gets 0 influence and tries to reign in ministers
+			JIN = {
+				release_all_subjects = yes
+			}
+			custom_tooltip = jin_partition_tooltip_four
+			while = {
+				limit = {
+					JIN = {
+						num_of_cities = 1
+					}
+				}
+				random_province = { #war leader isnt included in the random country calculation
+					limit = {
+						owned_by = JIN
+					}
+					cede_province = ROOT
+					add_core = ROOT
+				}
+				random_country = {
+					limit = {
+						OR = {
+							tag = ZHI
+							tag = FAN
+							tag = WEI
+							tag = HAN
+							tag = ZHA
+							tag = CZH
+						}
+						has_country_flag = jin_partition_participant
+					}
+					random_province = {
+						limit = {
+							owned_by = JIN
+						}
+						cede_province = PREV
+						add_core = PREV
+					}
+				}
+			}
+		}
+	}
+}
+
+########################################################################################
+# end clan events if jin has no ministers left somehow
+########################################################################################
+country_event = {
+	id = jin_partition.17
+	title = "jin_partition.17.t"
+	desc = "jin_partition.17.d"
+	picture = ritual_feast
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = JIN
+		has_global_flag = jin_partition_started
+		NOT = {
+			has_subject_of_type = ministerial_clan
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		clr_global_flag = jin_partition_started
+	}
+
+	option = {
+		name = "jin_partition.17.a"
+		custom_tooltip = jin_partition_tooltip_two
+	}
+}
+
+########################################################################################
+# ministers become hou if not subject
+########################################################################################
+country_event = {
+	id = jin_partition.19
+	title = "jin_partition.19.t"
+	desc = "jin_partition.19.d"
+	picture = ritual_feast
+	#fire_only_once = yes
+
+	trigger = {
+		OR = {
+				tag = ZHA
+				tag = WEI
+				tag = HAN
+				tag = FAN
+				tag = CZH
+				tag = ZHI
+		}
+		is_at_war = no
+		is_subject = no
+		AND = {
+			NOT = {
+				has_country_flag = zhuxiatouxian_Hou
+			}
+			NOT = {
+				has_country_flag = zhuxiatouxian_wang
+			}
+			NOT = {
+				has_country_flag = zhuxiatouxian_di
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "jin_partition.19.a"
+		set_country_flag = zhuxiatouxian_Hou
+		add_prestige = 5
+	}
+}
+
+## REWORK
+
+########################################################################################
+# minister selection
+########################################################################################
+country_event = {
+	id = jin_partition.23
+	title = "jin_partition.23.t"
+	desc = "jin_partition.23.d"
+	picture = deligation
+	is_triggered_only = yes
+
+	#demand land
+	option = {
+		trigger = {
+			mil_power = 100
+			is_at_war = no
+			JIN = {
+				is_at_war = no
+				any_owned_province = {
+					owned_by = JIN
+					controlled_by = JIN
+					NOT = {
+						province_id = 4070
+					}
+					NOT = {
+						province_id = 4071
+					}
+				}
+			}
+		}
+		add_mil_power = -100
+		name = "jin_partition.23.a"
+		clr_country_flag = selecting_minister_event
+		JIN = {
+			country_event = { id = jin_partition.24 }
+		}
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 1.5
+				ruler_has_personality = expansionist_personality
+			}
+			modifier = {
+				factor = 0.9
+				dip = 6
+			}
+		}
+	}
+	#demand military power
+	option = {
+		name = "jin_partition.23.b"
+		clr_country_flag = selecting_minister_event
+		trigger = {
+			mil_power = 100
+			JIN = {
+				NOT = {
+					has_country_modifier = jin_min_mil_debuff
+				}
+				NOT = {
+					has_country_flag = jin_getting_mil_request_one
+				}
+			}
+		}
+		add_mil_power = -100
+		JIN = {
+			set_country_flag = jin_getting_mil_request_one
+			country_event = { id = jin_partition.25 }
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1.5
+				mil = 5
+			}
+			modifier = {
+				factor = 2
+				mil = 6
+			}
+			modifier = {
+				factor = 2
+				ruler_has_personality = inspiring_leader_personality
+			}
+			modifier = {
+				factor = 2
+				ruler_has_personality = bold_fighter_personality
+			}
+		}
+	}
+	#demand economic power
+	option = {
+		name = "jin_partition.23.c"
+		clr_country_flag = selecting_minister_event
+		trigger = {
+			dip_power = 100
+			JIN = {
+				NOT = {
+					has_country_modifier = jin_min_eco_debuff
+				}
+				NOT = {
+					has_country_flag = jin_getting_mil_request_two
+				}
+			}
+		}
+		add_dip_power = -100
+		JIN = {
+			set_country_flag = jin_getting_mil_request_two
+			country_event = { id = jin_partition.26 }
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				adm = 5
+			}
+		}
+	}
+	#demand reform progress
+	option = {
+		name = "jin_partition.23.dd"
+		clr_country_flag = selecting_minister_event
+		trigger = {
+			adm_power = 100
+			JIN = {
+				NOT = {
+					has_country_modifier = jin_min_reform_debuff
+				}
+				NOT = {
+					has_country_flag = jin_getting_mil_request_three
+				}
+			}
+		}
+		add_adm_power = -100
+		JIN = {
+			set_country_flag = jin_getting_mil_request_three
+			country_event = { id = jin_partition.27 }
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 9
+				ruler_has_personality = reformist_personality
+			}
+			modifier = {
+				factor = 4
+				JIN = {
+					tech_difference = 2
+				}
+			}
+		}
+	}
+	#demand prestige
+	option = {
+		name = "jin_partition.23.e"
+		clr_country_flag = selecting_minister_event
+		trigger = {
+			dip_power = 100
+			JIN = {
+				NOT = {
+					has_country_modifier = jin_min_prestige_debuff
+				}
+				NOT = {
+					has_country_flag = jin_getting_mil_request_four
+				}
+			}
+		}
+		add_dip_power = -100
+		JIN = {
+			set_country_flag = jin_getting_mil_request_four
+			country_event = { id = jin_partition.28 }
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				ruler_has_personality = greedy_personality
+			}
+			modifier = {
+				factor = 4
+				NOT = {
+					prestige = -1
+				}
+			}
+			modifier = {
+				factor = 6
+				NOT = {
+					prestige = -20
+				}
+			}
+		}
+	}
+	#go back
+	option = {
+		name = "jin_partition.23.f"
+		clr_country_flag = selecting_minister_event
+		clr_country_flag = minister_recently_asked_for_land
+		trigger = {
+			ai = no
+		}
+	}
+}
+
+########################################################################################
+# minister demands land
+########################################################################################
+country_event = {
+	id = jin_partition.24
+	title = "jin_partition.24.t"
+	desc = "jin_partition.24.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	#jin accepts
+	option = {
+		name = "jin_partition.24.a"
+		if = {
+			limit = {
+				FROM = {
+					tag = ZHA
+				}
+				any_owned_province = {
+					controlled_by = ROOT
+					NOT = {
+						province_id = 4071
+						province_id = 4070
+					}
+					OR = {
+						area = pingyang_area_northern
+						area = south_shangdang_area
+						area = shangdang_area
+						area = taiyuan_area
+						area = shangdang_area_eastern
+						area = taiyuan_area_eastern
+						area = north_taiyuan_area
+						area = changshan_area
+						area = changshan_area_southern
+						area = yanmen_area
+						area = dai_area
+						area = dai_area_northern
+						area = yanmen_area_northern
+						region = shuofang_china
+						region = youzhou_china
+						province_id = 4068
+						province_id = 4069
+						province_id = 4126
+						province_id = 1699
+					}
+				}
+			}
+			random_owned_province = {
+				limit = {
+					controlled_by = ROOT
+					NOT = {
+						province_id = 4071
+						province_id = 4070
+					}
+					OR = {
+						area = pingyang_area_northern
+						area = south_shangdang_area
+						area = shangdang_area
+						area = taiyuan_area
+						area = shangdang_area_eastern
+						area = taiyuan_area_eastern
+						area = north_taiyuan_area
+						area = changshan_area
+						area = changshan_area_southern
+						area = yanmen_area
+						area = dai_area
+						area = dai_area_northern
+						area = yanmen_area_northern
+						region = shuofang_china
+						region = youzhou_china
+						province_id = 4068
+						province_id = 4069
+						province_id = 4126
+						province_id = 1699
+					}
+				}
+				cede_province = ZHA
+				add_core = ZHA
+				remove_core = ROOT
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					tag = WEI
+				}
+				any_owned_province = {
+					controlled_by = ROOT
+					NOT = {
+						province_id = 4071
+						province_id = 4070
+					}
+					OR = {
+						area = hongnong_area
+						area = jingzhao_area_eastern
+						area = hedong_area
+						area = hongnong_area_east
+						area = yingchuan_area_north
+						area = henan_area
+						area = west_pingyi_area
+						area = jingzhao_area
+						area = west_pingyi_area_western
+						area = fufeng_area_eastern
+						area = fufeng_area
+						area = hongnong_area_south
+						area = henan_area_west
+						region = liangzhou_china
+						region = jingzhou_china
+						region = yuzhou_china
+						region = yanzhou_china
+						region = yizhou_china
+						region = xuzhou_china
+						province_id = 4123
+						province_id = 4074
+						province_id = 4127
+						province_id = 4214
+						province_id = 4201
+						province_id = 4077
+						province_id = 4075
+						province_id = 4200
+						province_id = 4213
+					}
+				}
+			}
+			random_owned_province = {
+				limit = {
+					controlled_by = ROOT
+					NOT = {
+						province_id = 4071
+						province_id = 4070
+					}
+					OR = {
+						area = hongnong_area
+						area = jingzhao_area_eastern
+						area = hedong_area
+						area = hongnong_area_east
+						area = yingchuan_area_north
+						area = henan_area
+						area = west_pingyi_area
+						area = jingzhao_area
+						area = west_pingyi_area_western
+						area = fufeng_area_eastern
+						area = fufeng_area
+						area = hongnong_area_south
+						area = henan_area_west
+						region = liangzhou_china
+						region = jingzhou_china
+						region = yuzhou_china
+						region = yanzhou_china
+						region = yizhou_china
+						region = xuzhou_china
+						province_id = 4123
+						province_id = 4074
+						province_id = 4127
+						province_id = 4214
+						province_id = 4201
+						province_id = 4077
+						province_id = 4075
+						province_id = 4200
+						province_id = 4213
+					}
+				}
+				cede_province = WEI
+				add_core = WEI
+				remove_core = ROOT
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					tag = HAN
+				}
+				any_owned_province = {
+					controlled_by = ROOT
+					NOT = {
+						province_id = 4071
+						province_id = 4070
+					}
+					OR = {
+						area = east_pingyi_area_northern
+						area = shang_area
+						area = henei_area_east
+						area = north_henei_area
+						area = handan_area
+						area = handan_area_northern
+						area = dong_area
+						area = julu_area
+						area = qinghe_area
+						region = qingzhou_china
+						province_id = 4199
+						province_id = 4072
+						province_id = 4358
+						province_id = 4116
+						province_id = 4125
+						province_id = 4113
+					}
+				}
+			}
+			random_owned_province = {
+				limit = {
+					controlled_by = ROOT
+					NOT = {
+						province_id = 4071
+						province_id = 4070
+					}
+					OR = {
+						area = east_pingyi_area_northern
+						area = shang_area
+						area = henei_area_east
+						area = north_henei_area
+						area = handan_area
+						area = handan_area_northern
+						area = dong_area
+						area = julu_area
+						area = qinghe_area
+						region = qingzhou_china
+						province_id = 4199
+						province_id = 4072
+						province_id = 4358
+						province_id = 4116
+						province_id = 4125
+						province_id = 4113
+					}
+				}
+				cede_province = HAN
+				add_core = HAN
+				remove_core = ROOT
+			}
+		}
+		#if FROM is a non-major minister, OR if jin doesnt own any preferred land to a major minister
+		else = {
+			random_owned_province = {
+				limit = {
+					controlled_by = ROOT
+					NOT = {
+						province_id = 4071
+						province_id = 4070
+					}
+				}
+				cede_province = FROM
+				add_core = FROM
+				remove_core = ROOT
+			}
+		}
+		subtract_variable = {
+			which = minister_resisting_var
+			value = 1
+		}
+		FROM = {
+			country_event = { id = jin_partition.30 }
+		}
+		ai_chance = {
+			factor = 48
+			modifier = {
+				factor = 1.1
+				ruler_has_personality = babbling_buffoon_personality
+			}
+			modifier = {
+				factor = 1.1
+				ruler_has_personality = craven_personality
+			}
+			modifier = {
+				factor = 1.3
+				num_of_cities = 18
+			}
+			modifier = {
+				factor = 1.2
+				num_of_cities = 14
+			}
+			modifier = {
+				factor = 1.1
+				num_of_cities = 10
+			}
+			modifier = {
+				factor = 1.1
+				owes_favors = { who = FROM value = 10 }
+			}
+			modifier = {
+				factor = 1.1
+				has_opinion = { who = FROM value = 199 }
+			}
+			modifier = {
+				factor = 1.1
+				is_year = 175
+			}
+			modifier = {
+				factor = 1.4
+				is_year = 205
+			}
+			modifier = {
+				factor = 1.6
+				is_year = 225
+			}
+			modifier = {
+				factor = 2
+				is_year = 255
+			}
+			modifier = {
+				factor = 2
+				is_year = 225
+				any_subject_country = {
+					total_development = JIN
+				}
+			}
+			modifier = {
+				factor = 1.25
+				total_development = 120
+			}
+		}
+	}
+	#jin declines
+	option = {
+		name = "jin_partition.24.b"
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = minister_resisting_var
+						value = 15
+					}
+				}
+			}
+			change_variable = {
+				which = minister_resisting_var
+				value = 1
+			}
+		}
+		FROM = {
+			country_event = { id = jin_partition.29 }
+		}
+		ai_chance = {
+			factor = 52
+			modifier = {
+				factor = 1.5
+				NOT = { is_year = 190 }
+				NOT = { ruler_has_personality = bold_fighter_personality }
+				NOT = { ruler_has_personality = inspiring_leader_personality }
+				NOT = {
+					check_variable = {
+						which = minister_resisting_var
+						value = 5
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { is_year = 210 }
+				NOT = { ruler_has_personality = bold_fighter_personality }
+				NOT = { ruler_has_personality = inspiring_leader_personality }
+				NOT = {
+					check_variable = {
+						which = minister_resisting_var
+						value = 2
+					}
+				}
+			}
+			modifier = {
+				factor = 1.1
+				mil = 6
+			}
+			modifier = {
+				factor = 1.1
+				ruler_has_personality = administrator_personality
+			}
+			modifier = {
+				factor = 1.25
+				NOT = {
+					is_year = 180
+				}
+				NOT = {
+					num_of_cities = 10
+				}
+			}
+			modifier = {
+				factor = 1.5
+				NOT = {
+					is_year = 190
+				}
+				NOT = {
+					num_of_cities = 8
+				}
+			}
+			modifier = {
+				factor = 1.75
+				NOT = {
+					is_year = 200
+				}
+				NOT = {
+					num_of_cities = 6
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					is_year = 220
+				}
+				NOT = {
+					num_of_cities = 4
+				}
+			}
+		}
+	}
+}
+
+########################################################################################
+# minister demands mil stuff
+########################################################################################
+country_event = {
+	id = jin_partition.25
+	title = "jin_partition.25.t"
+	desc = "jin_partition.25.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	#jin accepts
+	option = {
+		name = "jin_partition.24.a"
+		clr_country_flag = jin_getting_mil_request_one
+		FROM = {
+			add_country_modifier = {
+				name = jin_min_mil_buff
+				duration = 2555
+			}
+		}
+		add_country_modifier = {
+			name = jin_min_mil_debuff
+			duration = 2555
+		}
+		random = {
+			chance = 50
+			subtract_variable = {
+				which = minister_resisting_var
+				value = 1
+			}
+		}
+		FROM = {
+			country_event = { id = jin_partition.30 }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.25
+				ruler_has_personality = craven_personality
+			}
+			modifier = {
+				factor = 1.25
+				has_opinion = { who = FROM value = 190 }
+			}
+			modifier = {
+				factor = 1.3
+				check_variable = {
+					which = minister_resisting_var
+					value = 12
+				}
+			}
+			modifier = {
+				factor = 1.1
+				has_opinion = { who = FROM value 199 }
+			}
+			modifier = {
+				factor = 1.3
+				is_year = 175
+			}
+			modifier = {
+				factor = 1.6
+				is_year = 195
+			}
+			modifier = {
+				factor = 1.9
+				is_year = 215
+			}
+			modifier = {
+				factor = 2
+				is_year = 250
+			}
+		}
+	}
+	#jin declines
+	option = {
+		name = "jin_partition.24.b"
+		clr_country_flag = jin_getting_mil_request_one
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = minister_resisting_var
+						value = 14
+					}
+				}
+			}
+			change_variable = {
+				which = minister_resisting_var
+				value = 2
+			}
+		}
+		FROM = {
+			country_event = { id = jin_partition.29 }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.25
+				ruler_has_personality = strict_personality
+			}
+			modifier = {
+				factor = 1.25
+				mil = 6
+			}
+		}
+	}
+}
+
+########################################################################################
+# minister demands money stuff
+########################################################################################
+country_event = {
+	id = jin_partition.26
+	title = "jin_partition.26.t"
+	desc = "jin_partition.26.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	#jin accepts
+	option = {
+		name = "jin_partition.24.a"
+		clr_country_flag = jin_getting_mil_request_two
+		FROM = {
+			add_country_modifier = {
+				name = jin_min_eco_buff
+				duration = 2555
+			}
+		}
+		add_country_modifier = {
+			name = jin_min_eco_debuff
+			duration = 2555
+		}
+		random = {
+			chance = 50
+			subtract_variable = {
+				which = minister_resisting_var
+				value = 1
+			}
+		}
+		FROM = {
+			country_event = { id = jin_partition.30 }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.25
+				ruler_has_personality = craven_personality
+			}
+			modifier = {
+				factor = 1.25
+				has_opinion = { who = FROM value = 190 }
+			}
+			modifier = {
+				factor = 1.3
+				check_variable = {
+					which = minister_resisting_var
+					value = 12
+				}
+			}
+			modifier = {
+				factor = 1.1
+				has_opinion = { who = FROM value 199 }
+			}
+			modifier = {
+				factor = 1.3
+				is_year = 175
+			}
+			modifier = {
+				factor = 1.6
+				is_year = 195
+			}
+			modifier = {
+				factor = 1.9
+				is_year = 215
+			}
+			modifier = {
+				factor = 2
+				is_year = 250
+			}
+		}
+	}
+	#jin declines
+	option = {
+		name = "jin_partition.24.b"
+		clr_country_flag = jin_getting_mil_request_two
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = minister_resisting_var
+						value = 14
+					}
+				}
+			}
+			change_variable = {
+				which = minister_resisting_var
+				value = 2
+			}
+		}
+		FROM = {
+			country_event = { id = jin_partition.29 }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.3
+				ruler_has_personality = entrepreneur_personality
+			}
+			modifier = {
+				factor = 1.2
+				ruler_has_personality = embezzler_personality
+			}
+			modifier = {
+				factor = 1.2
+				adm = 6
+			}
+		}
+	}
+}
+
+########################################################################################
+# minister demands reform
+########################################################################################
+country_event = {
+	id = jin_partition.27
+	title = "jin_partition.27.t"
+	desc = "jin_partition.27.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	#jin accepts
+	option = {
+		name = "jin_partition.24.a"
+		clr_country_flag = jin_getting_mil_request_three
+		FROM = {
+			add_country_modifier = {
+				name = jin_min_reform_buff
+				duration = 2555
+			}
+		}
+		add_country_modifier = {
+			name = jin_min_reform_debuff
+			duration = 2555
+		}
+		random = {
+			chance = 50
+			subtract_variable = {
+				which = minister_resisting_var
+				value = 1
+			}
+		}
+		FROM = {
+			country_event = { id = jin_partition.30 }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.25
+				ruler_has_personality = craven_personality
+			}
+			modifier = {
+				factor = 1.25
+				has_opinion = { who = FROM value = 190 }
+			}
+			modifier = {
+				factor = 1.3
+				check_variable = {
+					which = minister_resisting_var
+					value = 12
+				}
+			}
+			modifier = {
+				factor = 1.1
+				has_opinion = { who = FROM value 199 }
+			}
+			modifier = {
+				factor = 1.3
+				is_year = 175
+			}
+			modifier = {
+				factor = 1.6
+				is_year = 195
+			}
+			modifier = {
+				factor = 1.9
+				is_year = 215
+			}
+			modifier = {
+				factor = 2
+				is_year = 250
+			}
+		}
+	}
+	#jin declines
+	option = {
+		name = "jin_partition.24.b"
+		clr_country_flag = jin_getting_mil_request_three
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = minister_resisting_var
+						value = 14
+					}
+				}
+			}
+			change_variable = {
+				which = minister_resisting_var
+				value = 2
+			}
+		}
+		FROM = {
+			country_event = { id = jin_partition.29 }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.3
+				ruler_has_personality = reformist_personality
+			}
+			modifier = {
+				factor = 1.5
+				FROM = { tech_difference = 1 }
+			}
+		}
+	}
+}
+
+########################################################################################
+# minister demands prestige
+########################################################################################
+country_event = {
+	id = jin_partition.28
+	title = "jin_partition.28.t"
+	desc = "jin_partition.28.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	#jin accepts
+	option = {
+		name = "jin_partition.24.a"
+		clr_country_flag = jin_getting_mil_request_four
+		FROM = {
+			add_country_modifier = {
+				name = jin_min_prestige_buff
+				duration = 2555
+			}
+		}
+		add_country_modifier = {
+			name = jin_min_prestige_debuff
+			duration = 2555
+		}
+		random = {
+			chance = 50
+			subtract_variable = {
+				which = minister_resisting_var
+				value = 1
+			}
+		}
+		FROM = {
+			country_event = { id = jin_partition.30 }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.25
+				ruler_has_personality = craven_personality
+			}
+			modifier = {
+				factor = 1.25
+				has_opinion = { who = FROM value = 190 }
+			}
+			modifier = {
+				factor = 1.3
+				check_variable = {
+					which = minister_resisting_var
+					value = 12
+				}
+			}
+			modifier = {
+				factor = 1.1
+				has_opinion = { who = FROM value 199 }
+			}
+			modifier = {
+				factor = 1.3
+				is_year = 175
+			}
+			modifier = {
+				factor = 1.6
+				is_year = 195
+			}
+			modifier = {
+				factor = 1.9
+				is_year = 215
+			}
+			modifier = {
+				factor = 2
+				is_year = 250
+			}
+		}
+	}
+	#jin declines
+	option = {
+		name = "jin_partition.24.b"
+		clr_country_flag = jin_getting_mil_request_four
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = minister_resisting_var
+						value = 14
+					}
+				}
+			}
+			change_variable = {
+				which = minister_resisting_var
+				value = 2
+			}
+		}
+		FROM = {
+			country_event = { id = jin_partition.29 }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.2
+				ruler_has_personality = stubborn_personality
+			}
+			modifier = {
+				factor = 1.2
+				dip = 5
+			}
+		}
+	}
+}
+
+########################################################################################
+# minister receives notification of denied request
+########################################################################################
+country_event = {
+	id = jin_partition.29
+	title = "jin_partition.29.t"
+	desc = "jin_partition.29.d"
+	picture = deligation
+	is_triggered_only = yes
+
+	option = {
+		name = "jin_partition.29.a"
+
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+########################################################################################
+# minister receives notification of accepted request
+########################################################################################
+country_event = {
+	id = jin_partition.30
+	title = "jin_partition.30.t"
+	desc = "jin_partition.30.d"
+	picture = deligation
+	is_triggered_only = yes
+
+	option = {
+		name = "jin_partition.30.a"
+
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+########################################################################################
+# war once jin gets 0 influence
+########################################################################################
+country_event = {
+	id = jin_partition.31
+	title = "jin_partition.31.t"
+	desc = "jin_partition.31.d"
+	picture = guard
+	major = yes
+
+	trigger = {
+		tag = JIN
+		has_global_flag = jin_partition_started
+		NOT = {
+			check_variable = {
+				which = minister_resisting_var
+				value = 1
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		clr_global_flag = jin_partition_started
+		set_country_flag = jin_annexing_ministers_war
+		hidden_effect = {
+			random_subject_country = {
+				limit = {
+					is_subject_of_type = ministerial_clan
+				}
+				save_global_event_target_as = minister_target_pick
+			}
+		}
+	}
+
+	option = {
+		name = "jin_partition.31.a"
+		custom_tooltip = jin_partition_tooltip_three
+		hidden_effect = {
+			event_target:minister_target_pick = {
+				every_war_enemy_country = {
+					white_peace = THIS
+				}
+				every_known_country = {
+					limit = {
+						is_subject_of_type = ministerial_clan
+						NOT = {
+							tag = PREV
+						}
+					}
+					grant_independence = yes
+					country_event = { id = jin_partition.32 days = 1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				is_emperor = yes
+			}
+			add_country_modifier = {
+				name = jin_min_war_debuff
+				duration = -1
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = jin_min_war_debuff_less
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			every_known_country = {
+				limit = {
+					alliance_with = ROOT
+				}
+				break_alliance = ROOT
+			}
+		}
+		declare_war_with_cb = {
+			who = event_target:minister_target_pick
+			casus_belli = jinpartition_cb
+		}
+	}
+}
+
+########################################################################################
+# needed for event above to ministers join war (this system is in case one of the ususal ministers somehow breaks free and thus shouldnt be included in the fight)
+########################################################################################
+country_event = {
+	id = jin_partition.32
+	title = "jin_partition.32.t"
+	desc = "jin_partition.32.d"
+	picture = army_construction
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		join_all_defensive_wars_of = event_target:minister_target_pick
+		join_all_offensive_wars_of = event_target:minister_target_pick
+		set_country_flag = jin_partition_participant
+	}
+	option = {
+		name = "jin_partition.32.a"
+	}
+}
+
+########################################################################################
+# minister embezzling money
+########################################################################################
+country_event = {
+	id = jin_partition.33
+	title = "jin_partition.33.t"
+	desc = "jin_partition.33.d"
+	picture = caravan
+
+	trigger = {
+		tag = JIN
+		has_subject_of_type = ministerial_clan
+		check_variable = {
+			which = minister_resisting_var
+			value = 1
+		}
+		NOT = {
+			check_variable = {
+				which = minister_resisting_var
+				value = 14
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 0.8
+			num_of_cities = 12
+		}
+		modifier = {
+			factor = 0.75
+			num_of_cities = 18
+		}
+		modifier = {
+			factor = 1.1
+			is_year = 170
+		}
+		modifier = {
+			factor = 1.2
+			is_year = 180
+		}
+		modifier = {
+			factor = 1.3
+			is_year = 190
+		}
+		modifier = {
+			factor = 1.4
+			is_year = 200
+		}
+		modifier = {
+			factor = 1.5
+			is_year = 225
+		}
+	}
+
+	option = {
+		name = "jin_partition.33.a"
+		add_years_of_income = -0.5
+		add_corruption = 1
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 1.1
+				ruler_has_personality = careful_personality
+			}
+			modifier = {
+				factor = 1.1
+				ruler_has_personality = secretive_personality
+			}
+			modifier = {
+				factor = 0.9
+				ruler_has_personality = righteous_personality
+			}
+			modifier = {
+				factor = 1.1
+				corruption = 1
+			}
+			modifier = {
+				factor = 1.3
+				corruption = 2
+			}
+		}
+	}
+	option = {
+		name = "jin_partition.33.b"
+		add_years_of_income = -0.5
+		change_variable = {
+			which = minister_resisting_var
+			value = 1
+		}
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 1.3
+				ruler_has_personality = loose_lips_personality
+			}
+		}
+	}
+	option = {
+		name = "jin_partition.33.c"
+		change_variable = {
+			which = minister_resisting_var
+			value = 2
+		}
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 1.1
+				NOT = {
+					years_of_income = 1
+				}
+			}
+			modifier = {
+				factor = 1.5
+				NOT = {
+					years_of_income = 0.5
+				}
+			}
+			modifier = {
+				factor = 50
+				is_bankrupt = yes
+			}
+			modifier = {
+				factor = 2.5
+				ruler_has_personality = greedy_personality
+			}
+			modifier = {
+				factor = 1.2
+				ruler_has_personality = righteous_personality
+			}
+			modifier = {
+				factor = 1.2
+				ruler_has_personality = strict_personality
+			}
+		}
+	}
+}
+
+########################################################################################
+# if minister after field war has less than 4 provs (meaning it got annexed somehow during war), dont give away any further but give alt. reward
+########################################################################################
+country_event = {
+	id = jin_partition.34
+	title = "jin_partition.34.t"
+	desc = "jin_partition.34.d"
+	picture = battle_lost
+	is_triggered_only = yes
+
+	option = {
+		name = "jin_partition.34.a"
+		add_treasury = 200
+	}
+}
+
+########################################################################################
+# remove minister buff if they lose status
+########################################################################################
+country_event = {
+	id = jin_partition.35
+	title = "jin_partition.34.t"
+	desc = "jin_partition.34.d"
+	picture = battle_lost
+	hidden = yes
+
+	trigger = {
+		has_country_modifier = min_base_buff
+		NOT = {
+			is_subject_of_type = ministerial_clan
+		}
+	}
+
+	immediate = {
+		remove_country_modifier = min_base_buff
+	}
+
+	option = {
+		name = "jin_partition.34.a"
+	}
+}
+
+########################################################################################
+# if yigao dies early
+########################################################################################
+country_event = {
+	id = jin_partition.36
+	title = "jin_partition.1.t"
+	desc = "jin_partition.1.d"
+	picture = arrested_person
+	major = yes
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = jin_ruler_lord_yigao
+			set_variable = {
+				which = minister_resisting_var
+				value = 15
+			}
+			kill_heir = { allow_new_heir = no }
+		}
+	}
+
+	option = {
+		name = "jin_partition.1.a"
+		set_global_flag = jin_partition_started
+		custom_tooltip = jin_partition_tooltip_one
+		define_heir = {
+			name = "HeiTun"
+			dynasty = "Ji"
+			age = 22
+			claim = 85
+			adm = 3
+			dip = 3
+			mil = 2
+			max_random_adm = 3
+			max_random_dip = 3
+			max_random_mil = 2
+		}
+		kill_ruler = yes
+		set_emperor = yes
+	}
+}

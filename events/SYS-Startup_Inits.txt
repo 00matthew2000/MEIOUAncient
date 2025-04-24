@@ -1,9 +1,0 @@
-namespace = POP_StartInit
-country_event = { 
-	id = POP_StartInit.001
-	title = no_localisation
-	desc = no_localisation
-	picture = CITY_DEVELOPMENT_eventPicture
-	hidden = yes
-	is_triggered_only = yes
-}
