@@ -207,9 +207,7 @@ lower_saxon_circle_region = {
 		cheruscia_area
 		northern_saxony_area
 		caucia_major
-		dandutica_area
 		sudeti_montes
-		dandutica_occidentalis_area
 		west_thuringia_area
 		caucia_minor
 		cattica_area
@@ -217,10 +215,10 @@ lower_saxon_circle_region = {
 		gabreta_hyle
 		boiohemum_area
 		nariscia_area
+		deserta_boiorum
 		palatinate_bavaria_area
 		rhenus_area
 		moenus_area
-		deserta_boiorum
 	}
 }
 
@@ -273,6 +271,8 @@ polonia_major_region = {
 		suebia_transdanuvia
 		rugia_area
 		asciburgius_mons
+		dandutica_area
+		dandutica_occidentalis_area
 	}
 }
 
