@@ -933,17 +933,9 @@ country_event = {
 						culture = silesian
 					}
 					set_province_flag = CV_SC_german_ostsiedlung
-					set_variable = { 
-						which = azn
-						value = 3
-					}
 					set_province_flag = CV_nopreset
 					clr_province_flag = CV_nopreset
 					set_province_flag = german_silesian
-					set_variable = { 
-						which = azm
-						value = 20
-					}
 					set_province_flag = ostsiedlung_province_effect
 				}
 				else_if = { 
@@ -951,17 +943,9 @@ country_event = {
 						culture = sorbs
 					}
 					set_province_flag = CV_SC_german_ostsiedlung
-					set_variable = { 
-						which = azn
-						value = 2
-					}
 					set_province_flag = CV_nopreset
 					clr_province_flag = CV_nopreset
 					set_province_flag = high_saxon
-					set_variable = { 
-						which = azm
-						value = 20
-					}
 					set_province_flag = ostsiedlung_province_effect
 				}
 				else_if = { 
@@ -969,30 +953,14 @@ country_event = {
 						culture = polabian
 					}
 					set_province_flag = CV_SC_german_ostsiedlung
-					set_variable = { 
-						which = azn
-						value = 2
-					}
 					set_province_flag = CV_nopreset
 					clr_province_flag = CV_nopreset
 					set_province_flag = low_saxon
-					set_variable = { 
-						which = azm
-						value = 20
-					}
 					set_province_flag = ostsiedlung_province_effect
 				}
 				else = { 
 					set_province_flag = CV_SC_german_ostsiedlung
-					set_variable = { 
-						which = azn
-						value = 5
-					}
 					set_province_flag = CV_nopreset
-					set_variable = { 
-						which = azm
-						value = 40
-					}
 					set_province_flag = ostsiedlung_province_effect
 				}
 			}
@@ -1012,17 +980,9 @@ country_event = {
 						culture = silesian
 					}
 					set_province_flag = CV_SC_german_ostsiedlung
-					set_variable = { 
-						which = azn
-						value = 3
-					}
 					set_province_flag = CV_nopreset
 					clr_province_flag = CV_nopreset
 					set_province_flag = german_silesian
-					set_variable = { 
-						which = azm
-						value = 10
-					}
 					set_province_flag = ostsiedlung_province_effect
 				}
 				else_if = { 
@@ -1030,17 +990,9 @@ country_event = {
 						culture = sorbs
 					}
 					set_province_flag = CV_SC_german_ostsiedlung
-					set_variable = { 
-						which = azn
-						value = 2
-					}
 					set_province_flag = CV_nopreset
 					clr_province_flag = CV_nopreset
 					set_province_flag = high_saxon
-					set_variable = { 
-						which = azm
-						value = 5
-					}
 					set_province_flag = ostsiedlung_province_effect
 				}
 				else_if = { 
@@ -1048,17 +1000,9 @@ country_event = {
 						culture = polabian
 					}
 					set_province_flag = CV_SC_german_ostsiedlung
-					set_variable = { 
-						which = azn
-						value = 4
-					}
 					set_province_flag = CV_nopreset
 					clr_province_flag = CV_nopreset
 					set_province_flag = low_saxon
-					set_variable = { 
-						which = azm
-						value = 15
-					}
 					set_province_flag = ostsiedlung_province_effect
 				}
 				else_if = { 
@@ -1066,30 +1010,14 @@ country_event = {
 						culture = kashubian
 					}
 					set_province_flag = CV_SC_german_ostsiedlung
-					set_variable = { 
-						which = azn
-						value = 4
-					}
 					set_province_flag = CV_nopreset
 					clr_province_flag = CV_nopreset
 					set_province_flag = pommeranian
-					set_variable = { 
-						which = azm
-						value = 15
-					}
 					set_province_flag = ostsiedlung_province_effect
 				}
 				else = { 
 					set_province_flag = CV_SC_german_ostsiedlung
-					set_variable = { 
-						which = azn
-						value = 4
-					}
 					set_province_flag = CV_nopreset
-					set_variable = { 
-						which = azm
-						value = 30
-					}
 					set_province_flag = ostsiedlung_province_effect
 				}
 			}
@@ -1109,17 +1037,9 @@ country_event = {
 						culture = silesian
 					}
 					set_province_flag = CV_SC_german_ostsiedlung
-					set_variable = { 
-						which = azn
-						value = 2
-					}
 					set_province_flag = CV_nopreset
 					clr_province_flag = CV_nopreset
 					set_province_flag = german_silesian
-					set_variable = { 
-						which = azm
-						value = 5
-					}
 					set_province_flag = ostsiedlung_province_effect
 				}
 				else_if = { 
@@ -1127,17 +1047,9 @@ country_event = {
 						culture = sorbs
 					}
 					set_province_flag = CV_SC_german_ostsiedlung
-					set_variable = { 
-						which = azn
-						value = 2
-					}
 					set_province_flag = CV_nopreset
 					clr_province_flag = CV_nopreset
 					set_province_flag = low_saxon
-					set_variable = { 
-						which = azm
-						value = 5
-					}
 					set_province_flag = ostsiedlung_province_effect
 				}
 				else_if = { 
@@ -1145,17 +1057,9 @@ country_event = {
 						culture = polabian
 					}
 					set_province_flag = CV_SC_german_ostsiedlung
-					set_variable = { 
-						which = azn
-						value = 2
-					}
 					set_province_flag = CV_nopreset
 					clr_province_flag = CV_nopreset
 					set_province_flag = high_saxon
-					set_variable = { 
-						which = azm
-						value = 15
-					}
 					set_province_flag = ostsiedlung_province_effect
 				}
 				else_if = { 
@@ -1163,30 +1067,14 @@ country_event = {
 						culture = kashubian
 					}
 					set_province_flag = CV_SC_german_ostsiedlung
-					set_variable = { 
-						which = azn
-						value = 2
-					}
 					set_province_flag = CV_nopreset
 					clr_province_flag = CV_nopreset
 					set_province_flag = pommeranian
-					set_variable = { 
-						which = azm
-						value = 15
-					}
 					set_province_flag = ostsiedlung_province_effect
 				}
 				else = { 
 					set_province_flag = CV_SC_german_ostsiedlung
-					set_variable = { 
-						which = azn
-						value = 4
-					}
 					set_province_flag = CV_nopreset
-					set_variable = { 
-						which = azm
-						value = 20
-					}
 					set_province_flag = ostsiedlung_province_effect
 				}
 			}
