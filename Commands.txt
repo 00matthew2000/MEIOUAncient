@@ -20,7 +20,15 @@ NOTE: Maybe change event modifiers to fit what you want (new great projects, non
 
 Replacements List:
 -Most Decisions
+-Events
+-Map (but need new provs)
 -Missions?
--Music/Sound
--Cultures/Religions/regions
+-Music
+-Sound
 -Common up to B + CB Types
+	Cultures
+	Religions
+	Regions
+-Customizable Loc
+-GFX: Loading Screens
+-Tutorial
