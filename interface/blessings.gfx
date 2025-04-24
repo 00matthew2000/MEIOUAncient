@@ -1,45 +1,38 @@
 spriteTypes = {
 	spriteType = {
 		name = "GFX_holy_site_default"
-		texturefile = "gfx//interface//holy_sites//aksum.dds"
+		texturefile = "gfx//interface//holy_sites//delphi.dds"
 	}
 
 	spriteType = {
-		name = "GFX_holy_site_3693"
-		texturefile = "gfx//interface//holy_sites//aksum.dds"
+		name = "GFX_holy_site_2828"
+		texturefile = "gfx//interface//holy_sites//baktra.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_holy_site_2876"
+		texturefile = "gfx//interface//holy_sites//chorasmia.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_holy_site_2835"
+		texturefile = "gfx//interface//holy_sites//merw.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_holy_site_2682"
+		texturefile = "gfx//interface//holy_sites//parsa.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_holy_site_2397"
+		texturefile = "gfx//interface//holy_sites//asnavant.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_holy_site_2702"
+		texturefile = "gfx//interface//holy_sites//alborz.dds"
 		loadType = "INGAME"
 	}
 
-	spriteType = {
-		name = "GFX_holy_site_358"
-		texturefile = "gfx//interface//holy_sites//alexandria.dds"
-		loadType = "INGAME"
-	}
-
-	spriteType = {
-		name = "GFX_holy_site_332"
-		texturefile = "gfx//interface//holy_sites//antioch.dds"
-		loadType = "INGAME"
-	}
-
-	spriteType = {
-		name = "GFX_holy_site_2649"
-		texturefile = "gfx//interface//holy_sites//qasr_ibrim.dds"
-		loadType = "INGAME"
-	}
-
-	spriteType = {
-		name = "GFX_holy_site_419"
-		texturefile = "gfx//interface//holy_sites//yerevan.dds"
-		loadType = "INGAME"
-	}
-	
-	# now only useful here
-	spriteType = {
-		name = "GFX_province_view_religion"
-		texturefile = "gfx//interface//icon_religion.tga"
-		noOfFrames = 64 #DEI GRATIA
-		loadType = "INGAME"
-		# scale= 0.5
-	}
 }

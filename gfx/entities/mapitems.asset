@@ -42,13 +42,6 @@ entity = {
 	state = { name = "idle" 		animation = "idle" }
 }
 
-entity = {
-	name = "siege"
-	pdxmesh = "siege"
-	state = { name = "idle"
-		animation = "idle" 	event = { time = 0.0	node = "cannon_muzzle"	particle = "siege_cannon" }
-	}
-}
 
 entity = {
 	name = "christian_missionary"
@@ -57,30 +50,21 @@ entity = {
 }
 
 entity = {
-	name = "taoic_missionary"
+	name = "eastern_missionary"
 	pdxmesh = "asian_missionary_mesh"
 	state = { name = "idle" 		animation = "idle" }
+}
+
+entity = {
+	name = "dharmic_missionary"
+	clone = "eastern_missionary"
 }
 
 entity = {
 	name = "muslim_missionary"
 	pdxmesh = "muslim_missionary_mesh"
 	state = { name = "idle" 		animation = "idle" }
-	
-}
 
-entity = {
-	name = "dharmic_missionary"
-	pdxmesh = "muslim_missionary_mesh"
-	state = { name = "idle" 		animation = "idle" }
-	
-}
-
-entity = {
-	name = "judaic_missionary"
-	pdxmesh = "muslim_missionary_mesh"
-	state = { name = "idle" 		animation = "idle" }
-	
 }
 
 entity = {
@@ -90,8 +74,14 @@ entity = {
 }
 
 entity = {
-	name = "new_world_pagan_missionary"
-	pdxmesh = "pagan_missionary_mesh"
+	name = "jewish_group_missionary"
+	pdxmesh = "muslim_missionary_mesh"
+	state = { name = "idle" 		animation = "idle" }
+}
+
+entity = {
+	name = "zoroastrian_group_missionary"
+	pdxmesh = "muslim_missionary_mesh"
 	state = { name = "idle" 		animation = "idle" }
 }
 
@@ -111,7 +101,7 @@ entity = {
 	name = "muslimgfx_magistrate"
 	pdxmesh = "muslim_magistrate_mesh"
 	state = { name = "idle" 		animation = "idle" }
-	
+
 }
 
 entity = {
@@ -222,4 +212,11 @@ entity = {
 entity = {
 	name = "frame_top_right_entity"
 	pdxmesh = "frame_top_right_mesh"
+}
+
+entity = {
+	name = "combat_result_background_entity"
+	pdxmesh = "combat_result_background_mesh"
+	default_state = "idle"
+	scale = 4.3
 }

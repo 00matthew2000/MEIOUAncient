@@ -2,38 +2,36 @@ guiTypes = {
 
 	windowType = {
 		name = "hre_window"
-		position = { x=-625 y=-370}
-		size = { x=750 y=750 }
+		position = { x = -315 y = -370 }
+		size = { x = 750 y = 750 }
 		moveable = 1
 		dontRender = ""
-		horizontalBorder= ""
-		verticalBorder= ""
+		horizontalBorder = ""
+		verticalBorder = ""
 		fullScreen = no
 		Orientation = "CENTER"
 
 		upsound = hre
 		downsound = ""
 
-		iconType =
-		{
-			name ="hre_bg_extended"
+		iconType = {
+			name = "hre_bg_extended"
 			spriteType = "GFX_hre_bg_extended"
-			position = { x= 66 y = 18 }
+			position = { x = -21 y = 17 }
 		}
 
-		iconType =
-		{
-			name ="hre_bg"
+		iconType = {
+			name = "hre_bg"
 			spriteType = "GFX_hre_bg"
-			position = { x= 66 y = 18 }
+			position = { x = 66 y = 18 }
 		}
 
 		guiButtonType = {
 			name = "join_league_button"
-			position = { x= 121 y = 124 }
-			quadTextureSprite ="GFX_join_league_button"
+			position = { x = 21 y = 98 }
+			quadTextureSprite = "GFX_join_league_button"
 			tooltip = ""
-			tooltipText =""
+			tooltipText = ""
 			delayedTooltipText = ""
 			buttonFont = "vic_18"
 			clicksound = close_window
@@ -42,136 +40,106 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "join_heretic_league_button"
-			position = { x= 905 y = 124 }
-			quadTextureSprite ="GFX_join_heretic_league_button"
+			position = { x = 804 y = 98 }
+			quadTextureSprite = "GFX_join_heretic_league_button"
 			tooltip = ""
-			tooltipText =""
+			tooltipText = ""
 			delayedTooltipText = ""
 			buttonFont = "vic_18"
 			clicksound = close_window
 			frame = 1
 		}
 
-		iconType =
-		{
-			name ="hre_religion_icon"
-			spriteType = "GFX_province_view_religion"
-			position = { x= 132 y = 134 }
+		iconType = {
+			name = "hre_religion_icon"
+			spriteType = "GFX_icon_religion_small"
+			position = { x = 42 y = 115 }
 			hint_tag = "hint_religion"
 			alwaystransparent = yes
-			scale = 0.8
 		}
 
-		iconType =
-		{
-			name ="hre_status_icon"
-			spriteType = "GFX_province_view_religion"
-			position = { x= 100 y = 115 }
+		iconType = {
+			name = "hre_status_icon"
+			spriteType = "GFX_icon_religion_small"
+			position = { x = 100 y = 115 }
 		}
 
 
-		iconType =
-		{
-			name ="hre_heretic_religion_icon"
-			spriteType = "GFX_province_view_religion"
-			position = { x= 916 y = 133 }
+		iconType = {
+			name = "hre_heretic_religion_icon"
+			spriteType = "GFX_icon_religion_small"
+			position = { x = 825 y = 115 }
 			hint_tag = "hint_religion"
 			alwaystransparent = yes
-			scale = 0.8
 		}
 
-		
+
 		instantTextBoxType = {
 			name = "dominantfaith_label"
-			position = { x = 275 y = 286 }
+			position = { x = 644 y = 113 }
 			textureFile = ""
 			font = "vic_18"
-			borderSize = {x = 4 y = 0}
+			borderSize = { x = 4 y = 0 }
 			text = "HRE_DOMINANTFAITH"
 			maxWidth = 122
 			maxHeight = 32
 			format = left
 		}
 
-		iconType =
-		{
-			name ="domiantfaith_background"
+
+		iconType = {
+			name = "hre_official_religion_icon"
 			spriteType = "GFX_join_league_button"
-			position = { x= 365 y = 260 }
+			position = { x = 577 y = 98 }
 			hint_tag = "hint_religion"
 			frame = 3
 		}
 
-		iconType =
-		{
-			name ="hre_official_religion_icon"
-			spriteType = "GFX_join_league_button"
-			position = { x= 365 y = 260 }
-			hint_tag = "hint_religion"
-			frame = 3
-		}
-
-		iconType =
-		{
-			name ="hre_imperial_authority_icon"
+		iconType = {
+			name = "hre_imperial_authority_icon"
 			spriteType = "GFX_imperial_authority"
-			position = { x= -9999 y = 110 }
+			position = { x = 355 y = 110 }
 			scale = 0.7
 		}
 
-		
 
-		iconType =
-		{
-			name ="hre_war_peace_icon"
+
+		iconType = {
+			name = "hre_war_peace_icon"
 			spriteType = "GFX_hre_war_peace_strip"
-			position = { x= 246 y = 278 }
+			position = { x = 592 y = 110 }
 			hint_tag = "hint_religion"
 			frame = 1
-			scale = 0.6
+			scale = 0.8
 		}
 
-		iconType =
-		{
-			name ="hre_religion_icon_2"
-			spriteType = "GFX_province_view_religion"
-			position = { x= 383 y = 274 }
+		iconType = {
+			name = "hre_religion_icon_2"
+			spriteType = "GFX_icon_religion_small"
+			position = { x = 597 y = 114 }
 			hint_tag = "hint_religion"
 			alwaystransparent = yes
-			scale = 0.58
 		}
 
 		instantTextBoxType = {
 			name = "hre_label"
-			position = { x = -9999 y = 58 }
+			position = { x = 142 y = 58 }
 			format = centre
 			textureFile = ""
 			font = "vic_29"
-			borderSize = {x = 4 y = 4}
+			borderSize = { x = 4 y = 4 }
 			text = "HRE_HRE"
 			maxWidth = 584
 			maxHeight = 32
 		}
 
 		instantTextBoxType = {
-			name = "imperial_estates"
-			position = { x = 446 y = 498 }
-			format = centre
-			textureFile = ""
-			font = "vic_22"
-			borderSize = {x = 4 y = 4}
-			text = "Imperial Estates"
-			maxWidth = 584
-			maxHeight = 32
-		}
-
-		instantTextBoxType = {
 			name = "imperialdiet_label"
-			position = { x = -9999 y = 386 }
+			position = { x = 494 y = 386 }
 			format = centre
 			textureFile = ""
 			font = "vic_18"
-			borderSize = {x = 4 y = 4}
+			borderSize = { x = 4 y = 4 }
 			text = "HRE_IMPERIALDIET"
 			maxWidth = 120
 			maxHeight = 32
@@ -179,21 +147,21 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "permanent_diet_location"
-			position = { x = -9999 y = 386 }
+			position = { x = 654 y = 386 }
 			format = centre
 			textureFile = ""
 			font = "vic_18"
-			borderSize = {x = 4 y = 4}
+			borderSize = { x = 4 y = 4 }
 			maxWidth = 120
 			maxHeight = 32
 		}
 
 		instantTextBoxType = {
 			name = "electors_label"
-			position = { x = 275 y = 335 }
+			position = { x = 147 y = 235 }
 			textureFile = ""
-			font = "vic_22"
-			borderSize = {x = 4 y = 4}
+			font = "vic_29"
+			borderSize = { x = 4 y = 4 }
 			text = "HRE_ELECTORS"
 			maxWidth = 140
 			maxHeight = 32
@@ -202,11 +170,11 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "reforms_label"
-			position = { x = 695 y = 128 }
+			position = { x = 494 y = 162 }
 			format = centre
 			textureFile = ""
-			font = "vic_29"
-			borderSize = {x = 4 y = 4}
+			font = "vic_18"
+			borderSize = { x = 4 y = 4 }
 			text = "HRE_REFORMS"
 			maxWidth = 120
 			maxHeight = 32
@@ -214,11 +182,11 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "left_branch_label"
-			position = { x = -9999 y = 253 }
+			position = { x = 390 y = 253 }
 			format = centre
 			textureFile = ""
 			font = "vic_18"
-			borderSize = {x = 4 y = 4}
+			borderSize = { x = 4 y = 4 }
 			text = "HRE_LEFTBRANCH"
 			maxWidth = 120
 			maxHeight = 25
@@ -226,11 +194,11 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "right_branch_label"
-			position = { x = -9999 y = 253 }
+			position = { x = 618 y = 253 }
 			format = centre
 			textureFile = ""
 			font = "vic_18"
-			borderSize = {x = 4 y = 4}
+			borderSize = { x = 4 y = 4 }
 			text = "HRE_RIGHTBRANCH"
 			maxWidth = 120
 			maxHeight = 25
@@ -238,10 +206,10 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "freecity_label"
-			position = { x = 233 y = 522 }
+			position = { x = 344 y = 522 }
 			textureFile = ""
 			font = "vic_18"
-			borderSize = {x = 4 y = 4}
+			borderSize = { x = 4 y = 4 }
 			maxWidth = 140
 			maxHeight = 32
 			format = centre
@@ -249,10 +217,10 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "members_label"
-			position = { x = 530 y = 522 }
+			position = { x = 560 y = 522 }
 			textureFile = ""
 			font = "vic_18"
-			borderSize = {x = 4 y = 4}
+			borderSize = { x = 4 y = 4 }
 			text = "HRE_MEMBER_STAT"
 			maxWidth = 140
 			maxHeight = 32
@@ -260,39 +228,39 @@ guiTypes = {
 		}
 
 		#### AUTHORITY
-	
+
 
 		instantTextBoxType = {
 			name = "imperialauthority_label"
-			position = { x = 256 y = 140 }
+			position = { x = 403 y = 113 }
 			textureFile = ""
-			font = "vic_22"
-			borderSize = {x = 4 y = 0}
+			font = "vic_18"
+			borderSize = { x = 4 y = 0 }
 			text = "HRE_IMPERIALAUTHORITY"
-			maxWidth = 200
+			maxWidth = 130
 			maxHeight = 32
 			format = left
 		}
 
 		instantTextBoxType = {
 			name = "influence_value"
-			position = { x = 272 y = 158 }
+			position = { x = 403 y = 128 }
 			textureFile = ""
-			font = "vic_29"
-			borderSize = {x = 4 y = 4}
+			font = "vic_18"
+			borderSize = { x = 4 y = 4 }
 			text = ""
-			maxWidth = 80
+			maxWidth = 50
 			maxHeight = 32
-			format = centre
+			format = left
 			hint_tag = "hint_imperialauthority"
 		}
 
 		instantTextBoxType = {
 			name = "influence_growth"
-			position = { x = 315 y = 160 }
+			position = { x = 450 y = 128 }
 			textureFile = ""
-			font = "vic_22"
-			borderSize = {x = 4 y = 4}
+			font = "vic_18"
+			borderSize = { x = 4 y = 4 }
 			text = "+0.20"
 			maxWidth = 70
 			maxHeight = 32
@@ -300,31 +268,28 @@ guiTypes = {
 			hint_tag = "hint_imperialauthority"
 		}
 
-		guiButtonType =
-		{
-			name ="emperor_shield"
-			quadTextureSprite = "GFX_shield_HRE"
-			position = { x= 420 y = 100 }
+		guiButtonType = {
+			name = "emperor_shield"
+			quadTextureSprite = "GFX_shield_thin"
+			position = { x = 172 y = 130 }
 			tooltip = ""
-			tooltipText =""
+			tooltipText = ""
 			delayedTooltipText = ""
 			buttonFont = "vic_18_black"
 			hint_tag = "hint_emperor"
 		}
 
-		iconType =
-		{
-			name ="benefits_icon"
+		iconType = {
+			name = "benefits_icon"
 			spriteType = "GFX_hre_emp_benefits_icon"
-			position = { x= 326 y = 186 }
+			position = { x = 246 y = 202 }
 			Orientation = "UPPER_LEFT"
 		}
 
-		iconType =
-		{
-			name ="diplomatic_actions_icon"
+		iconType = {
+			name = "diplomatic_actions_icon"
 			spriteType = "GFX_more_dip_actions_icon"
-			position = { x= 276 y = 186 }
+			position = { x = 160 y = 202 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -333,10 +298,10 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "incident_label"
-				position = { x = -9999 y = 421 }
+				position = { x = 361 y = 421 }
 				textureFile = ""
 				font = "vic_18"
-				borderSize = {x = 4 y = 0}
+				borderSize = { x = 4 y = 0 }
 				text = ""
 				maxWidth = 245
 				maxHeight = 32
@@ -345,18 +310,18 @@ guiTypes = {
 
 			OverlappingElementsBoxType = {
 				name = "incident_options"
-				position = { x = -9999 y = 439 }
-				size = { x = 268 y = 100}
+				position = { x = 354 y = 439 }
+				size = { x = 268 y = 100 }
 				format = center
 				spacing = 72
 			}
 
 			instantTextBoxType = {
 				name = "no_incidents_label"
-				position = { x = -9999 y = 451 }
+				position = { x = 361 y = 451 }
 				textureFile = ""
 				font = "vic_22s"
-				borderSize = {x = 4 y = 0}
+				borderSize = { x = 4 y = 0 }
 				text = "NO_CURRENT_INCIDENT"
 				maxWidth = 245
 				maxHeight = 32
@@ -365,10 +330,10 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "past_incidents_label"
-				position = { x = -9999 y = 421 }
+				position = { x = 626 y = 421 }
 				textureFile = ""
 				font = "vic_18"
-				borderSize = {x = 4 y = 0}
+				borderSize = { x = 4 y = 0 }
 				text = "HRE_PAST4INCIDENTS"
 				maxWidth = 133
 				maxHeight = 32
@@ -377,22 +342,22 @@ guiTypes = {
 
 			listboxType = {
 				name = "previous_incidents_container"
-				position = { x = -9999 y = 439 }
+				position = { x = 629 y = 439 }
 				size = { x = 130 y = 70 }
 				scrollbartype = "standardlistbox_slider"
 			}
 
 			gridBoxType = {
 				name = "reform_container_mainline"
-				position = { x = 665 y = 150 }
-				size = { width = 350 height = 300 }
-				slotsize = { width = 59 height = 42 }
-				max_slots_horizontal = 3
+				position = { x = 360 y = 189 }
+				size = { width = 434 height = 62 }
+				slotsize = { width = 59 height = 62 }
+				max_slots_horizontal = 7
 				format = "UPPER_LEFT"
 			}
 			gridBoxType = {
 				name = "reform_container_left_branch"
-				position = { x = -9999 y = 277 }
+				position = { x = 362 y = 277 }
 				size = { width = 186 height = 124 }
 				slotsize = { width = 59 height = 45 }
 				max_slots_horizontal = 3
@@ -400,7 +365,7 @@ guiTypes = {
 			}
 			gridBoxType = {
 				name = "reform_container_right_branch"
-				position = { x = -9999 y = 277 }
+				position = { x = 593 y = 277 }
 				size = { width = 186 height = 124 }
 				slotsize = { width = 59 height = 45 }
 				max_slots_horizontal = 3
@@ -414,17 +379,17 @@ guiTypes = {
 			iconType = {
 				name = "background"
 				spriteType = "GFX_hre_feature_no_emperor_bg"
-				position = { x= 330 y = 156 }
+				position = { x = 330 y = 156 }
 				Orientation = "UPPER_LEFT"
 			}
 
 			instantTextBoxType = {
 				name = "reforms_label"
-				position = { x = 650 y = 110 }
+				position = { x = 494 y = 215 }
 				format = centre
 				textureFile = ""
-				font = "vic_29"
-				borderSize = {x = 4 y = 4}
+				font = "vic_18"
+				borderSize = { x = 4 y = 4 }
 				text = "HRE_REFORMS"
 				maxWidth = 120
 				maxHeight = 32
@@ -445,114 +410,116 @@ guiTypes = {
 
 		smoothListboxType = {
 			name = "hre_free_cities"
-			position = { x=244 y =552 }
-			backGround=""
-			size = { x=110 y=229 }
+			position = { x = 354 y = 562 }
+			backGround = ""
+			size = { x = 110 y = 110 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 0
 			scrollbartype = "standardlistbox_slider"
-			borderSize = {x = 0 y = 0}
+			borderSize = { x = 0 y = 0 }
 		}
 
 		smoothListboxType = {
 			name = "hre_members"
-			position = { x=371 y =552 }
-			backGround=""
-			size = { x=450 y=229 }
+			position = { x = 491 y = 562 }
+			backGround = ""
+			size = { x = 262 y = 116 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 0
 			scrollbartype = "standardlistbox_slider"
-			borderSize = {x = 0 y = 0}
+			borderSize = { x = 0 y = 0 }
 		}
 
 		gridBoxType = {
 			name = "hre_electors"
-			position = { x = 255 y = 365 }
-			size = { width = 1000 height = 125 }
-			slotsize = { width = 83 height = 96 }
-			max_slots_horizontal = 8
+			position = { x = 128 y = 293 }
+			size = { width = 200 height = 600 }
+			slotsize = { width = 88 height = 96 }
+			max_slots_horizontal = 2
 			format = "UPPER_LEFT"
 		}
 
 		smoothListboxType = {
 			name = "hre_league"
-			position = { x=90 y =210 }
-			backGround=""
-			size = { x=110 y=500 }
+			position = { x = 15 y = 173 }
+			backGround = ""
+			size = { x = 69 y = 500 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 0
 			scrollbartype = "standardlistbox_slider"
-			borderSize = {x = 0 y = 0}
+			borderSize = { x = 0 y = 0 }
 		}
 
 		smoothListboxType = {
 			name = "hre_heretic_league"
-			position = { x=875 y =210 }
-			backGround=""
-			size = { x=110 y=500 }
+			position = { x = 798 y = 173 }
+			backGround = ""
+			size = { x = 69 y = 500 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 0
 			scrollbartype = "standardlistbox_slider"
-			borderSize = {x = 0 y = 0}
+			borderSize = { x = 0 y = 0 }
+		}
+
+		guiButtonType = {
+			name = "close_button"
+			position = { x = 620 y = 686 }
+			quadTextureSprite = "button_type_1"
+			tooltip = ""
+			tooltipText = ""
+			delayedTooltipText = ""
+			buttonText = "HRE_CLOSE"
+			buttonFont = "vic_18"
+			clicksound = close_window
+			shortcut = "ESCAPE"
 		}
 
 		guiButtonType = {
 			name = "vote_button"
-			position = { x=680 y =345 }
-			quadTextureSprite ="button_type_1"
+			position = { x = 150 y = 266 }
+			quadTextureSprite = "button_type_1"
 			tooltip = ""
-			tooltipText =""
+			tooltipText = ""
 			delayedTooltipText = ""
 			buttonText = "HRE_VOTE"
 			buttonFont = "vic_18"
 		}
 
+
+		guiButtonType = {
+			name = "dismantel_button"
+			position = { x = 417 y = 686 }
+			quadTextureSprite = "button_type_1"
+			buttonText = "HRE_DISMANTLE"
+			buttonFont = "vic_18"
+		}
+
 		guiButtonType = {
 			name = "leave_button"
-			position = { x= 250 y = 800 }
-			quadTextureSprite ="button_type_1"
+			position = { x = 119 y = 686 }
+			quadTextureSprite = "button_type_1"
 			buttonText = "HRE_LEAVE"
 			buttonFont = "vic_18"
 		}
 
 		guiButtonType = {
 			name = "join_button"
-			position = { x= 250 y = 800 }
-			quadTextureSprite ="button_type_1"
+			position = { x = 119 y = 686 }
+			quadTextureSprite = "button_type_1"
 			buttonText = "HRE_JOIN"
 			buttonFont = "vic_18"
 		}
 
 		guiButtonType = {
 			name = "add_all_button"
-			position = { x= 400 y = 800 }
-			quadTextureSprite ="button_type_1"
+			position = { x = 268 y = 686 }
+			quadTextureSprite = "button_type_1"
 			buttonText = "HRE_ADD_ALL"
 			buttonFont = "vic_18"
-		}
-		guiButtonType = {
-			name = "dismantel_button"
-			position = { x= 545 y = 800 }
-			quadTextureSprite ="button_type_1"
-			buttonText = "HRE_DISMANTLE"
-			buttonFont = "vic_18"
-		}
-		
-		guiButtonType = {
-			name = "close_button"
-			position = { x=700 y = 800 }
-			quadTextureSprite ="button_type_1"
-			tooltip = ""
-			tooltipText =""
-			delayedTooltipText = ""
-			buttonText = "HRE_CLOSE"
-			buttonFont = "vic_18"
-			clicksound = close_window
-			shortcut = "ESCAPE"
 		}
 	}
 
@@ -580,40 +547,40 @@ guiTypes = {
 	windowType = {
 		name = "hre_elector"
 		backGround = ""
-		position = { x=0 y=0 }
-		size = { x=36 y=36 }
+		position = { x = 0 y = 0 }
+		size = { x = 36 y = 36 }
 
 		guiButtonType = {
-			name ="elector_shield"
-			quadTextureSprite = "GFX_shield_HRE_elector3"
-			position = { x= 0 y = 0 }
+			name = "elector_shield"
+			quadTextureSprite = "GFX_shield_thin"
+			position = { x = 0 y = 0 }
 			tooltip = ""
-			tooltipText =""
+			tooltipText = ""
 			delayedTooltipText = ""
 			buttonFont = "vic_18_black"
 			hint_tag = "hint_elector"
 		}
 
 		guiButtonType = {
-			name ="elector_vote_shield"
+			name = "elector_vote_shield"
 			quadTextureSprite = "GFX_shield_small"
-			position = { x= 28 y = 88 }
+			position = { x = 22 y = 65 }
 			tooltip = ""
-			tooltipText =""
+			tooltipText = ""
 			delayedTooltipText = ""
 			buttonFont = "vic_18_black"
 		}
 
 		instantTextBoxType = {
 			name = "relation"
-			position = { x = 16 y = 116 }
+			position = { x = 50 y = 75 }
 			textureFile = ""
 			font = "vic_18"
-			borderSize = {x = 4 y = 4}
+			borderSize = { x = 4 y = 4 }
 			text = "+27"
 			maxWidth = 48
 			maxHeight = 32
-			format = centre
+			format = left
 		}
 	}
 
@@ -621,15 +588,15 @@ guiTypes = {
 	windowType = {
 		name = "hre_empty_elector"
 		backGround = ""
-		position = { x=0 y=0 }
-		size = { x=96 y=96 }
+		position = { x = 0 y = 0 }
+		size = { x = 96 y = 96 }
 
 		guiButtonType = {
-			name ="elector_shield"
-			quadTextureSprite = "GFX_shield_HRE_elector3"
-			position = { x= 0 y = 0 }
+			name = "elector_shield"
+			quadTextureSprite = "GFX_shield_thin"
+			position = { x = 0 y = 0 }
 			tooltip = ""
-			tooltipText =""
+			tooltipText = ""
 			delayedTooltipText = ""
 			buttonFont = "vic_18_black"
 			hint_tag = "hint_elector"
@@ -639,9 +606,9 @@ guiTypes = {
 	### REFORMS ENTRY
 	windowType = {
 		name = "hre_reform_entry"
-		backGround= ""
-		position = { x=0 y=0 }
-		size = { x=200 y=62 }
+		backGround = ""
+		position = { x = 0 y = 0 }
+		size = { x = 200 y = 62 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
@@ -650,28 +617,28 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "reform_button"
-			position = { x=0 y=10 }
-			quadTextureSprite ="government_reform_soldiers_6"
+			position = { x = 0 y = 10 }
+			quadTextureSprite = "government_reform_soldiers_6"
 			tooltip = ""
-			tooltipText =""
+			tooltipText = ""
 			delayedTooltipText = ""
 			buttonFont = "vic_18"
 			scale = 0.7
 		}
 
 		iconType = {
-			name ="reform_selected_frame"
+			name = "reform_selected_frame"
 			spriteType = "GFX_imperial_reform_selected_frame"
-			position = { x=0 y=8 }
+			position = { x = 0 y = 8 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
         guiButtonType = {
 			name = "reform_checkbox"
-			position = { x=39 y=35}
-			quadTextureSprite ="GFX_checkbox_gold_32"
+			position = { x = 39 y = 35 }
+			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
-			tooltipText =""
+			tooltipText = ""
 			delayedTooltipText = ""
 			buttonFont = "vic_18"
 			scale = 0.5
@@ -679,10 +646,10 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "name"
-			position = { x = 55 y = 10}
+			position = { x = 55 y = 10 }
 			textureFile = ""
 			font = "vic_18"
-			borderSize = {x = 4 y = 4}
+			borderSize = { x = 4 y = 4 }
 			text = ""
 			maxWidth = 120
 			maxHeight = 32
@@ -693,9 +660,9 @@ guiTypes = {
 	### REFORMS ENTRY
 	windowType = {
 		name = "hre_reform_entry_emperor"
-		backGround= ""
-		position = { x=0 y=0 }
-		size = { x=62 y=62 }
+		backGround = ""
+		position = { x = 0 y = 0 }
+		size = { x = 62 y = 62 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
@@ -704,28 +671,28 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "reform_button"
-			position = { x=0 y=10 }
-			quadTextureSprite ="government_reform_soldiers_6"
+			position = { x = 0 y = 10 }
+			quadTextureSprite = "government_reform_soldiers_6"
 			tooltip = ""
-			tooltipText =""
+			tooltipText = ""
 			delayedTooltipText = ""
 			buttonFont = "vic_18"
 			scale = 0.7
 		}
 
 		iconType = {
-			name ="reform_selected_frame"
+			name = "reform_selected_frame"
 			spriteType = "GFX_imperial_reform_selected_frame"
-			position = { x=0 y=8 }
+			position = { x = 0 y = 8 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
         guiButtonType = {
 			name = "reform_checkbox"
-			position = { x=35 y=33}
-			quadTextureSprite ="GFX_checkbox_gold_32"
+			position = { x = 35 y = 33 }
+			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
-			tooltipText =""
+			tooltipText = ""
 			delayedTooltipText = ""
 			buttonFont = "vic_18"
 			scale = 0.6
@@ -736,42 +703,41 @@ guiTypes = {
 	windowType = {
 		name = "hre_member"
 		backGround = ""
-		position = { x=0 y=0 }
-		size = { x=36 y=36 }
+		position = { x = 0 y = 0 }
+		size = { x = 36 y = 36 }
 
-		guiButtonType =
-		{
-			name ="member_shield"
+		guiButtonType = {
+			name = "member_shield"
 			quadTextureSprite = "GFX_shield_small"
-			position = { x= 6 y = 0 }
+			position = { x = 6 y = 0 }
 			tooltip = ""
-			tooltipText =""
+			tooltipText = ""
 			delayedTooltipText = ""
 			buttonFont = "vic_18_black"
 		}
 
 		iconType = {
 			name = "free_city_outliner"
-			spriteType ="GFX_outliner_free_city"
-			position = { x= 11 y = -6 }
+			spriteType = "GFX_outliner_free_city"
+			position = { x = 11 y = -6 }
 		}
 
 		iconType = {
 			name = "elector_outliner"
-			spriteType ="GFX_outliner_elector"
-			position = { x= 0 y = -6 }
+			spriteType = "GFX_outliner_elector"
+			position = { x = 11 y = -6 }
 		}
 	}
 
 	windowType = {
 		name = "incident_option_entry"
-		backGround=""
-		position = { x=0 y=0 }
+		backGround = ""
+		position = { x = 0 y = 0 }
 		size = { x = 18 y = 48 }
 		moveable = 0
 		dontRender = ""
-		horizontalBorder= ""
-		verticalBorder= ""
+		horizontalBorder = ""
+		verticalBorder = ""
 		fullScreen = no
 
 		guiButtonType = {
@@ -785,10 +751,10 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "checkbox"
-			position = { x=57 y=51}
-			quadTextureSprite ="GFX_checkbox_gold_32"
+			position = { x = 57 y = 51 }
+			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
-			tooltipText =""
+			tooltipText = ""
 			delayedTooltipText = ""
 			buttonFont = "vic_18"
 			scale = 0.6
@@ -796,10 +762,10 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "support"
-			position = { x = 8 y = 34}
+			position = { x = 8 y = 34 }
 			textureFile = ""
 			font = "vic_18"
-			borderSize = {x = 4 y = 4}
+			borderSize = { x = 4 y = 4 }
 			text = ""
 			maxWidth = 64
 			maxHeight = 30
@@ -809,9 +775,9 @@ guiTypes = {
 
 	windowType = {
 		name = "hre_previous_incident"
-		backGround= ""
-		position = { x=0 y=0 }
-		size = { x=150 y=34 }
+		backGround = ""
+		position = { x = 0 y = 0 }
+		size = { x = 150 y = 34 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
@@ -820,8 +786,8 @@ guiTypes = {
 
 		iconType = {
 			name = "incident_icon"
-			position = { x=0 y=2 }
-			spriteType ="GFX_imperial_past_incident_button"
+			position = { x = 0 y = 2 }
+			spriteType = "GFX_imperial_past_incident_button"
 		}
 
 		instantTextBoxType = {
@@ -836,8 +802,8 @@ guiTypes = {
 
 	windowType = {
 		name = "hre_free_cities_grid"
-		position = { x=0 y=0 }
-		size = { x=100 y=240 }
+		position = { x = 0 y = 0 }
+		size = { x = 100 y = 120 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
@@ -856,8 +822,8 @@ guiTypes = {
 
 	windowType = {
 		name = "hre_members_grid"
-		position = { x=0 y=0 }
-		size = { x=600 y=240 }
+		position = { x = 0 y = 0 }
+		size = { x = 319 y = 120 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
@@ -867,17 +833,17 @@ guiTypes = {
 		gridBoxType = {
 			name = "gridbox"
 			position = { x = 0 y = 0 }
-			size = { width = 600 height = 400 }
+			size = { width = 250 height = 200 }
 			slotsize = { width = 32 height = 38 }
-			max_slots_horizontal = 16
+			max_slots_horizontal = 8
 			format = "UPPER_LEFT"
 		}
 	}
 
 	windowType = {
 		name = "hre_league_grid"
-		position = { x=0 y=0 }
-		size = { x=319 y=120 }
+		position = { x = 0 y = 0 }
+		size = { x = 319 y = 120 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
@@ -889,7 +855,7 @@ guiTypes = {
 			position = { x = 0 y = 0 }
 			size = { width = 200 height = 600 }
 			slotsize = { width = 34 height = 36 }
-			max_slots_horizontal = 3
+			max_slots_horizontal = 2
 			format = "UPPER_LEFT"
 		}
 	}

@@ -7,7 +7,7 @@ guiTypes = {
 		name ="countrydecisionsview_scaling_large_min_inc"
 		position = { x= 900 y = 144 }
 	}
-	
+
 	#x is minimum resolution height for this country view to increase to huge size
 	#y is the size increase for lists and distance to move for buttons at the bottom of the country view
 	positionType = {
@@ -18,18 +18,17 @@ guiTypes = {
 	windowType = {
 		name = "countrydecisionsview"
 		#position = { x=0 y=140 }
-		position = { x=-600 y=140 }	
+		position = { x=-600 y=140 }
 		show_position = { x=0 y =140 }
-		hide_position = { x=-600 y =140 }	
+		hide_position = { x=-600 y =140 }
 		animation_type = "decelerated"
-		animation_time = 300		
+		animation_time = 300
 		size = { x=1024 y=100 }
 		moveable = 0
 		Orientation = "UPPER_LEFT"
 		upsound = tab_decisions
-		
-		iconType =
-		{
+
+		iconType = {
 			name ="domesticpanel_bg"
 			if_resolution = {
 				max_height = 867
@@ -43,28 +42,28 @@ guiTypes = {
 			if_resolution = {
 				min_height = 1048
 				spriteType = "GFX_country_decision_view_bg_huge"
-			}	
+			}
 			position = { x= -7 y = -10 }
 			Orientation = "UPPER_LEFT"
 
 		}
-		
+
 		guiButtonType = {
 			name = "close_button"
 			position = { x = 514 y = -1 }
-			quadTextureSprite ="GFX_closebutton2"	
+			quadTextureSprite ="GFX_closebutton2"
 			shortcut = "ESCAPE"
 			Orientation = "UPPER_LEFT"
 			clicksound = close_window
-		}		
-		
+		}
+
 		instantTextBoxType = {
 			name = "window_title"
 			position = { x = 15 y =78 }
 			textureFile = ""
 			font = "vic_29s"
-			borderSize = {x = 4 y = 4}	
-			text = "HEADER_DECISIONS"	
+			borderSize = {x = 4 y = 4}
+			text = "HEADER_DECISIONS"
 			maxWidth = 512
 			maxHeight = 32
 			format = centre
@@ -80,7 +79,7 @@ guiTypes = {
 			horizontalBorder= ""
 			verticalBorder= ""
 			fullScreen = no
-			
+
 			instantTextBoxType = {
 				name = "decisions_label"
 				position = { x = 174 y = 2 }
@@ -88,9 +87,9 @@ guiTypes = {
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 0}
-				text = "COUNTRY_POLICIES"	
+				text = "COUNTRY_POLICIES"
 				maxWidth = 200
-				maxHeight = 16	
+				maxHeight = 16
 				Orientation = "UPPER_LEFT"
 			}
 
@@ -152,7 +151,7 @@ guiTypes = {
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 0}
-				text = "-2"	
+				text = "-2"
 				maxWidth = 30
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
@@ -165,7 +164,7 @@ guiTypes = {
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 0}
-				text = "-2"	
+				text = "-2"
 				maxWidth = 30
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
@@ -178,7 +177,7 @@ guiTypes = {
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 0}
-				text = "-2"	
+				text = "-2"
 				maxWidth = 30
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
@@ -191,7 +190,7 @@ guiTypes = {
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 0}
-				text = "-2"	
+				text = "-2"
 				maxWidth = 30
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
@@ -204,7 +203,7 @@ guiTypes = {
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 0}
-				text = "-2"	
+				text = "-2"
 				maxWidth = 30
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
@@ -217,29 +216,29 @@ guiTypes = {
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 0}
-				text = "-2"	
+				text = "-2"
 				maxWidth = 30
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
 			}
-			
-			OverlappingElementsBoxType = {									#Edited By SAM
+
+			OverlappingElementsBoxType = {
 				name = "adminstrative_policies"
-				position = { x = 83 y = 18 }
+				position = { x = 77 y = 18 }
 				size = { x = 485 y = 64 }
 				format = center
 				spacing = 50
 			}
-			OverlappingElementsBoxType = {									#Edited By SAM
+			OverlappingElementsBoxType = {
 				name = "diplomacy_policies"
-				position = { x = 83 y = 64 }
+				position = { x = 77 y = 64 }
 				size = { x = 485 y = 64 }
 				format = center
 				spacing = 50
 			}
-			OverlappingElementsBoxType = {									#Edited By SAM
+			OverlappingElementsBoxType = {
 				name = "military_policies"
-				position = { x = 83 y = 110 }
+				position = { x = 77 y = 110 }
 				size = { x = 485 y = 64 }
 				format = center
 				spacing = 50
@@ -252,10 +251,10 @@ guiTypes = {
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 0}
-				text = "-2"	
+				text = "-2"
 				maxWidth = 300
 				maxHeight = 24
-				text = "COUNTRY_POLICIES_EFFECT"	
+				text = "COUNTRY_POLICIES_EFFECT"
 				Orientation = "UPPER_LEFT"
 			}
 
@@ -270,20 +269,20 @@ guiTypes = {
 				borderSize = {x = 5 y = 5}
 				scrollbartype = "standardlistbox_slider"
 			}
-		}	
+		}
 
 
 		windowType = {
 			name = "decisions_window"
 			backGround=""
-			position = { x = 12 y = 380 }
-			size = { x = 1024 y = 100 }
+			position = { x=12 y=380 }
+			size = { x=1024 y=100 }
 			moveable = 0
 			dontRender = ""
 			horizontalBorder= ""
 			verticalBorder= ""
 			fullScreen = no
-			
+
 			instantTextBoxType = {
 				name = "decisions_label"
 				position = { x = 159 y = 28 }
@@ -291,18 +290,17 @@ guiTypes = {
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 0}
-				text = "COUNTRY_DECISIONS"	
+				text = "COUNTRY_DECISIONS"
 				maxWidth = 200
-				maxHeight = 16	
+				maxHeight = 16
 				Orientation = "UPPER_LEFT"
 			}
-			
-			listboxType = 
-			{
+
+			listboxType = {
 				name ="decisions_listbox"
-				position = { x=37 y=53}									#Edited By SAM
+				position = { x=37 y =56}
 				backGround=""
-				
+
 				if_resolution = {
 				max_height = 867
 				size = { x=450 y =120}
@@ -314,25 +312,271 @@ guiTypes = {
 				}
 				if_resolution = {
 				min_height = 1048
-				size = { x=450 y =455}									#Edited By SAM
-				}					
-				
+				size = { x=450 y =434}
+				}
+
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 1
 				scrollbartype = "standardlistbox_slider"
 				borderSize = {x = 10 y = 10}
-			}	
-		}	
+			}
+		}
+
+		guiButtonType = {
+			name = "IU_show_settings_panel_button"
+			scripted = yes
+			quadTextureSprite = "GFX_IU_show_settings_panel_button"
+
+			position = { x = 11 y = 397 }
+		}
+
+
+		iconType = {
+			name = "IU_settings_menu_bg"
+			scripted = yes
+			quadTextureSprite = "GFX_IU_settings_menu_bg"
+
+			position = { x = 39 y = 395 }
+		}
+
+		guiButtonType = {
+			name = "IU_color_toggle"
+			quadTextureSprite = "GFX_IU_coloured_1_enable"
+			scripted = yes
+
+			if_resolution = {
+				max_height = 867
+				position = { x = 67 y = 230 } #?
+			}
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				position = { x = 67 y = 280 } #?
+			}
+			if_resolution = {
+				min_height = 1048
+				position = { x = 67 y = 420 } #535
+			}
+		}
+
+		guiButtonType = {
+			name = "IU_color_toggle2"
+			quadTextureSprite = "GFX_IU_coloured_2_enable"
+			scripted = yes
+
+			if_resolution = {
+				max_height = 867
+				position = { x = 67 y = 230 } #?
+			}
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				position = { x = 67 y = 280 } #?
+			}
+			if_resolution = {
+				min_height = 1048
+				position = { x = 67 y = 460 } #535
+			}
+		}
+
+		guiButtonType = {
+			name = "IU_color_toggle3"
+			quadTextureSprite = "GFX_IU_coloured_3_enable"
+			scripted = yes
+
+			if_resolution = {
+				max_height = 867
+				position = { x = 67 y = 230 } #?
+			}
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				position = { x = 67 y = 280 } #?
+			}
+			if_resolution = {
+				min_height = 1048
+				position = { x = 67 y = 500 } #535
+			}
+		}
+
+		guiButtonType = {
+			name = "IU_endonyms_open"
+			quadTextureSprite = "GFX_IU_endonyms_button"
+			scripted = yes
+
+			if_resolution = {
+				max_height = 867
+				position = { x = 67 y = 230 } #?
+			}
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				position = { x = 67 y = 280 } #?
+			}
+			if_resolution = {
+				min_height = 1048
+				position = { x = 67 y = 540 } #535
+			}
+		}
+
+		guiButtonType = {
+			name = "IU_popsettings_open"
+			quadTextureSprite = "GFX_IU_popsettings_button"
+			scripted = yes
+
+			if_resolution = {
+				max_height = 867
+				position = { x = 67 y = 230 } #?
+			}
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				position = { x = 67 y = 280 } #?
+			}
+			if_resolution = {
+				min_height = 1048
+				position = { x = 67 y = 580 } #535
+			}
+		}
+
+		guiButtonType = {
+			name = "IU_disable_subcontinents_open"
+			quadTextureSprite = "GFX_IU_disable_subcontinents_button"
+			scripted = yes
+
+			if_resolution = {
+				max_height = 867
+				position = { x = 67 y = 230 } #?
+			}
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				position = { x = 67 y = 280 } #?
+			}
+			if_resolution = {
+				min_height = 1048
+				position = { x = 107 y = 420 } #535
+			}
+		}
+
+		guiButtonType = {
+			name = "IU_disable_railroading_open"
+			quadTextureSprite = "GFX_IU_disable_railroading_button"
+			scripted = yes
+
+			if_resolution = {
+				max_height = 867
+				position = { x = 67 y = 230 } #?
+			}
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				position = { x = 67 y = 280 } #?
+			}
+			if_resolution = {
+				min_height = 1048
+				position = { x = 107 y = 460 } #535
+			}
+		}
+
+		guiButtonType = {
+			name = "IU_disable_balance_open"
+			quadTextureSprite = "GFX_IU_disable_balance_button"
+			scripted = yes
+
+			if_resolution = {
+				max_height = 867
+				position = { x = 67 y = 230 } #?
+			}
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				position = { x = 67 y = 280 } #?
+			}
+			if_resolution = {
+				min_height = 1048
+				position = { x = 107 y = 500 } #535
+			}
+		}
+
+		guiButtonType = {
+			name = "IU_siege_settings_open"
+			quadTextureSprite = "GFX_IU_siege_settings_button"
+			scripted = yes
+
+			if_resolution = {
+				max_height = 867
+				position = { x = 67 y = 230 } #?
+			}
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				position = { x = 67 y = 280 } #?
+			}
+			if_resolution = {
+				min_height = 1048
+				position = { x = 107 y = 540 } #535
+			}
+		}
+
+		guiButtonType = {
+			name = "IU_open_census_button"
+			scripted = yes
+			quadTextureSprite = "GFX_IU_open_census_button"
+
+			position = { x = 11 y = 437 }
+		}
+
+		guiButtonType = {
+			name = "IU_buildtools_button"
+			scripted = yes
+			quadTextureSprite = "GFX_IU_buildtools_button"
+
+			position = { x = 11 y = 477 }
+		}
+
+
+		guiButtonType = {
+			name = "IU_open_help_event_button"
+			scripted = yes
+			quadTextureSprite = "GFX_IU_open_help_event_button"
+
+			position = { x = 502 y = 396 }
+		}
+
+		guiButtonType = {
+			name = "IU_slave_add_button"
+			scripted = yes
+			quadTextureSprite = "GFX_IU_slave_add_button"
+
+			position = { x = 508 y = 437 }
+		}
+
+		guiButtonType = {
+			name = "IU_slave_repeat_button"
+			scripted = yes
+			quadTextureSprite = "GFX_IU_slave_repeat_button"
+
+			position = { x = 508 y = 477 }
+		}
+
+		guiButtonType = {
+			name = "IU_slave_sell_button"
+			scripted = yes
+			quadTextureSprite = "GFX_IU_slave_sell_button"
+
+			position = { x = 508 y = 517 }
+		}
 
 		### Select new policy window.
 		windowType = {
 			name = "new_policy_window"
-			position = { x=-8 y=-9 }									#Edited By SAM
+			position = { x=0 y=-9 }
 			size = { x=300 y=400 }
 			moveable = 0
 			Orientation = "UPPER_LEFT"
-		
+
 			iconType =
 			{
 				name ="bg"
@@ -342,116 +586,116 @@ guiTypes = {
 			}
 
 			instantTextBoxType= {
-				position = { x=382 y =45}									#Edited By SAM
+				position = { x=342 y =45}
 				name = "policy_title"
 				font = "vic_29"
-				borderSize = {x = 0 y = 0}	
+				borderSize = {x = 0 y = 0}
 				maxWidth = 340
 				maxHeight = 20
-				text = "POLICYVIEW_TITLE"	
+				text = "POLICYVIEW_TITLE"
 				orientation = "UPPER_LEFT"
 				format = center
-			}			
-			
+			}
+
 			instantTextBoxType= {
-				position = { x=46 y =88}									#Edited By SAM
+				position = { x=28 y =88}
 				name = "adm_title"
 				font = "vic_18"
-				borderSize = {x = 0 y = 0}	
+				borderSize = {x = 0 y = 0}
 				maxWidth = 300
 				maxHeight = 20
-				text = "POLICYVIEW_ADMINISTRATIVE"	
+				text = "POLICYVIEW_ADMINISTRATIVE"
 				orientation = "UPPER_LEFT"
 				format = center
-			}	
+			}
 
 			instantTextBoxType= {
-				position = { x=315 y =88}									#Edited By SAM
+				position = { x=286 y =88}
 				name = "adm_count"
 				font = "vic_18"
-				borderSize = {x = 0 y = 0}	
+				borderSize = {x = 0 y = 0}
 				maxWidth = 60
 				maxHeight = 20
-				text = ""	
+				text = ""
 				orientation = "UPPER_LEFT"
 				format = left
-			}				
+			}
 
 			instantTextBoxType= {
-				position = { x=404 y =88}									#Edited By SAM
+				position = { x=352 y =88}
 				name = "dip_title"
 				font = "vic_18"
-				borderSize = {x = 0 y = 0}	
+				borderSize = {x = 0 y = 0}
 				maxWidth = 300
 				maxHeight = 20
-				text = "POLICYVIEW_DIPLOMATIC"	
+				text = "POLICYVIEW_DIPLOMATIC"
 				orientation = "UPPER_LEFT"
 				format = center
 			}
-			
-			instantTextBoxType= {
-				position = { x=669 y =88}									#Edited By SAM
-				name = "dip_count"
-				font = "vic_18"
-				borderSize = {x = 0 y = 0}	
-				maxWidth = 60
-				maxHeight = 20
-				text = ""	
-				orientation = "UPPER_LEFT"
-				format = left
-			}		
 
 			instantTextBoxType= {
-				position = { x=760 y =88}									#Edited By SAM
+				position = { x=611 y =88}
+				name = "dip_count"
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				maxWidth = 60
+				maxHeight = 20
+				text = ""
+				orientation = "UPPER_LEFT"
+				format = left
+			}
+
+			instantTextBoxType= {
+				position = { x=675 y =88}
 				name = "mil_title"
 				font = "vic_18"
-				borderSize = {x = 0 y = 0}	
+				borderSize = {x = 0 y = 0}
 				maxWidth = 300
 				maxHeight = 20
-				text = "POLICYVIEW_MILITARY"	
+				text = "POLICYVIEW_MILITARY"
 				orientation = "UPPER_LEFT"
 				format = center
 			}
-			
+
 			instantTextBoxType= {
-				position = { x=1025 y =88}									#Edited By SAM
+				position = { x=931 y =88}
 				name = "mil_count"
 				font = "vic_18"
-				borderSize = {x = 0 y = 0}	
+				borderSize = {x = 0 y = 0}
 				maxWidth = 60
 				maxHeight = 20
-				text = ""	
+				text = ""
 				orientation = "UPPER_LEFT"
 				format = left
-			}		
-			
+			}
+
 			iconType =
 			{
 				name ="adm_cost"
 				spriteType = "GFX_icon_powers_administrative"
-				position = { x= 45 y = 80}									#Edited By SAM
+				position = { x= 36 y = 80}
 				Orientation = "UPPER_LEFT"
-			}	
+			}
 			iconType =
 			{
 				name ="dip_cost"
 				spriteType = "GFX_icon_powers_diplomatic"
-				position = { x= 400 y = 80 }									#Edited By SAM
+				position = { x= 360 y = 80 }
 				Orientation = "UPPER_LEFT"
 			}
 			iconType =
 			{
 				name ="mil_cost"
 				spriteType = "GFX_icon_powers_military"
-				position = { x= 757 y = 80 }									#Edited By SAM
+				position = { x= 683 y = 80 }
 				Orientation = "UPPER_LEFT"
 			}
 
-					
-			listboxType = 
+
+			listboxType =
 			{
 				name ="adm_list"
-				position = { x = 35 y = 115 }									#Edited By SAM
+				position = { x = 18 y = 115 }
 				backGround=""
 				size = { x=313 y = 420}
 				Orientation = "UPPER_LEFT"
@@ -460,10 +704,10 @@ guiTypes = {
 				scrollbartype = "standardlistbox_slider"
 				borderSize = {x = 0 y = 0}
 			}
-			listboxType = 
+			listboxType =
 			{
 				name ="dip_list"
-				position = { x = 390 y = 115 }									#Edited By SAM
+				position = { x = 342 y = 115 }
 				backGround=""
 				size = { x=313 y = 420}
 				Orientation = "UPPER_LEFT"
@@ -472,10 +716,10 @@ guiTypes = {
 				scrollbartype = "standardlistbox_slider"
 				borderSize = {x = 0 y = 0}
 			}
-			listboxType = 
+			listboxType =
 			{
 				name ="mil_list"
-				position = { x = 745 y = 115 }									#Edited By SAM
+				position = { x = 665 y = 115 }
 				backGround=""
 				size = { x=313 y = 420}
 				Orientation = "UPPER_LEFT"
@@ -488,160 +732,173 @@ guiTypes = {
 			instantTextBoxType={
 				position = { x = 18 y = 115 }
 				name = "no_policy_explanation"
-				borderSize = {x = 0 y = 0 }	
+				borderSize = {x = 0 y = 0 }
 				maxWidth = 700
 				maxHeight = 20
 				orientation = "CENTER"
 				format = center
 				font = "vic_18"
 			}
-			
+
 			guiButtonType = {
 				name = "back"
 				position = { x= 450 y = 537 }
-				quadTextureSprite ="GFX_button_straight_87_32"	
+				quadTextureSprite ="GFX_button_straight_87_32"
 				buttonText = "BACK"
 				buttonFont = "vic_18"
-				shortcut = "z"			
+				shortcut = "z"
 				extra_shortcut = "ESCAPE"
 				clicksound = back_click
 			}
 		}
-			
 	}
 
 	windowType = {
 		name = "countrydecisionsview_decision_entry"
 		backGround=""
-		position = { x = 0 y = 0 }
-		size = { x = 260 y = 50 }													#Edited by SAM - For changing Major Banner distance from each other
+		position = { x=0 y=0 }
+		size = { x=300 y= 28 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
 		verticalBorder= ""
 		fullScreen = no
-		
+
+		iconType = {
+			name = "decisions_banner_outline"
+			spriteType ="GFX_nation_decisions_banner_outline"
+			position = { x= -15 y = -17 }
+			orientation = "UPPER_LEFT"
+		}
+
 		iconType = {
 			name = "decisions_banner"
-			spriteType ="GFX_nation_decisions_banner"	
-			position = { x = -15 y = -9 }											#Edited by SAM - Moves Location of banner comapred to icon
+			spriteType ="GFX_nation_decisions_banner"
+			position = { x= -15 y = -17 }
 			orientation = "UPPER_LEFT"
 		}
-		
+
 		iconType = {
 			name = "decision_icon"
-			spriteType ="GFX_info_decision"	
-			position = { x=0 y = 0}
+			spriteType ="GFX_info_decision"
+			position = { x=0 y = -17}
 			orientation = "UPPER_LEFT"
 		}
-		
-		instantTextBoxType= {														#Edited by SAM - Changes Text Variables.
-			position = { x = -10 y = 11}
+
+		instantTextBoxType= {
+			position = { x=24 y = -6}
 			name = "title"
-			font = "vic_22"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 345
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 280
 			maxHeight = 20
-			text = ""	
+			text = ""
 			orientation = "UPPER_LEFT"
 			format = left
 		}
 		guiButtonType = {
 			name = "decision_checkbox"
-			position = { x = 310  y = 15 }											#Edited by SAM - Changes Location of notification toggle
-			quadTextureSprite ="GFX_checkbox_small"	
+			position = { x = 330  y = -5 }
+			quadTextureSprite ="GFX_checkbox_small"
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
 			buttonFont = ""
-		}		
+		}
 		iconType = {
 			name = "info_icon"
-			spriteType ="GFX_info_decision"	
-			position = { x = 330 y = 10}											#Edited by SAM - Changes Location of ? icon Icon
+			spriteType ="GFX_info_decision"
+			position = { x=348 y = -11}
 			orientation = "UPPER_LEFT"
 		}
 		guiButtonType = {
 			name = "select_button"
-			position = { x = 365 y = 7}												#Edited by SAM - Changes Location of Confirmation Button
-			quadTextureSprite ="GFX_execute_decision"	
+			position = { x=375 y = -12}
+			quadTextureSprite ="GFX_execute_decision"
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
 			buttonFont = ""
 			clicksound = decision
 		}
-	}	
-	
+	}
+
 	windowType = {
 		name = "countrydecisionsview_major_decision_entry"
-		backGround = ""
-		position = { x = 0 y = 0 }
-		size = { x = 260 y = 50 }													#Edited by SAM - For changing Major Banner distance from each other
+		backGround=""
+		position = { x=0 y= 21 }
+		size = { x=300 y= 28 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
 		verticalBorder= ""
 		fullScreen = no
-		
+
+		iconType = {
+			name = "decisions_banner_outline"
+			spriteType ="GFX_nation_decisions_banner_outline"
+			position = { x= -15 y = -17 }
+			orientation = "UPPER_LEFT"
+		}
+
 		iconType = {
 			name = "decisions_banner"
-			spriteType ="GFX_nation_major_decisions_banner"	
-			position = { x = -15 y = -9 }											#Edited by SAM - Moves Location of banner comapred to icon
+			spriteType ="GFX_nation_major_decisions_banner"
+			position = { x= -15 y = -17 }
 			orientation = "UPPER_LEFT"
 		}
-		
+
 		iconType = {
 			name = "decision_icon"
-			spriteType ="GFX_info_decision"	
-			position = { x = 0 y = 0 }
+			spriteType ="GFX_info_decision"
+			position = { x=0 y = -17 }
 			orientation = "UPPER_LEFT"
 		}
-		
-		instantTextBoxType= {														#Edited by SAM - Changes Text Variables.
-			position = { x = -10 y = 11}
+
+		instantTextBoxType= {
+			position = { x=24 y = -6}
 			name = "title"
-			font = "vic_22"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 345
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 280
 			maxHeight = 20
-			text = ""	
+			text = ""
 			orientation = "UPPER_LEFT"
 			format = left
 		}
 		guiButtonType = {
 			name = "decision_checkbox"
-			position = { x = 310  y = 15 }											#Edited by SAM - Changes Location of notification toggle
-			quadTextureSprite ="GFX_checkbox_small"	
+			position = { x = 330  y = -5 }
+			quadTextureSprite ="GFX_checkbox_small"
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
 			buttonFont = ""
-		}			
+		}
 		iconType = {
 			name = "info_icon"
-			spriteType ="GFX_info_decision"	
-			position = { x = 330 y = 10}											#Edited by SAM - Changes Location of ? icon Icon
+			spriteType ="GFX_info_decision"
+			position = { x=348 y =-11}
 			orientation = "UPPER_LEFT"
-		}		
+		}
 		guiButtonType = {
 			name = "select_button"
-			position = { x = 365 y = 7}												#Edited by SAM - Changes Location of Confirmation Button
-			quadTextureSprite ="GFX_execute_decision"	
+			position = { x=375 y =-12}
+			quadTextureSprite ="GFX_execute_decision"
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
 			buttonFont = ""
 			clicksound = decision
 		}
-	}	
+	}
 
 	###
-	
+
 	windowType = {
 		name = "countrydecisionsview_activepolicy"
 		backGround =""
-		position = { x=0 y=0 }	
+		position = { x=0 y=0 }
 		size = { x=100  y=32 }
 		moveable = 0
 		dontRender = ""
@@ -650,8 +907,8 @@ guiTypes = {
 		guiButtonType =
 		{
 			name ="button1"
-			quadTextureSprite = "GFX_idea_economic_ideas"							#Edited by SAM - Changes Location of policy gfx inside active policies
-			position = { x= -12 y = 10 }
+			quadTextureSprite = "GFX_idea_financial_ideas"
+			position = { x= -25 y = 0 }
 			Orientation = "UPPER_LEFT"
 			clicksound = close_window
 		}
@@ -659,12 +916,12 @@ guiTypes = {
 		guiButtonType =
 		{
 			name ="button2"
-			quadTextureSprite = "GFX_idea_economic_ideas"							#Edited by SAM - Changes Location of policy gfx inside active policies
-			position = { x= 28 y = 10 }
+			quadTextureSprite = "GFX_idea_financial_ideas"
+			position = { x= 21 y = 0 }
 			Orientation = "UPPER_LEFT"
 			clicksound = close_window
 		}
-		
+
 		iconType = {
 			name ="policy_icon_frame"
 			spriteType = "GFX_policy_icon_frame"
@@ -672,20 +929,20 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
-		
-		
+
+
 	}
 
 	windowType = {
 		name = "countrydecisionsview_possiblepolicy"
 		backGround =""
-		position = { x=0 y=0 }	
+		position = { x=0 y=0 }
 		size = { x=100  y=32 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
 
-		
+
 		guiButtonType = {
 			name ="button"
 			quadTextureSprite = "GFX_policy_icon_frame_empty"
@@ -693,8 +950,8 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			clicksound = close_window
 		}
-		
-	
+
+
 	}
 
 	windowType = {
@@ -722,7 +979,7 @@ guiTypes = {
 	windowType = {
 		name = "countrydecisionsview_policymodifier"
 		backGround =""
-		position = { x=0 y=0 }	
+		position = { x=0 y=0 }
 		size = { x=100  y=20 }
 		moveable = 0
 		dontRender = ""
@@ -741,19 +998,19 @@ guiTypes = {
 			position = { x=35 y =10}
 			name = "modifier_value"
 			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
+			borderSize = {x = 0 y = 0}
 			maxWidth = 65
 			maxHeight = 20
 			text = "HELLO"
 			orientation = "UPPER_LEFT"
 			format = left
-		}	
+		}
 	}
-	
+
 	windowType = {
 		name = "countrydecisionsview_pickpolicy"
 		backGround =""
-		position = { x=0 y=0 }	
+		position = { x=0 y=0 }
 		size = { x=24 y=70 }
 		moveable = 0
 		dontRender = ""
@@ -765,37 +1022,37 @@ guiTypes = {
 			spriteType = "GFX_policy_entry_bg"
 			position = { x= 6 y = -4 }
 			Orientation = "UPPER_LEFT"
-		}		
-		
+		}
+
 		iconType =
 		{
 			name ="policy_icon"
 			spriteType = "GFX_idea_empty"
 			position = { x= 249 y = 1 }
 			Orientation = "UPPER_LEFT"
-			alwaystransparent = yes		
+			alwaystransparent = yes
 		}
-		
+
 		instantTextBoxType= {
 			position = { x=13 y =2}
 			name = "title"
 			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
+			borderSize = {x = 0 y = 0}
 			maxWidth = 340
 			maxHeight = 20
-			text = ""	
+			text = ""
 			orientation = "UPPER_LEFT"
 			format = left
 			alwaystransparent = yes
-		}	
+		}
 		instantTextBoxType= {
 			position = { x=16 y =24}
 			name = "effect"
 			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
+			borderSize = {x = 0 y = 0}
 			maxWidth = 245
 			maxHeight = 38
-			text = ""	
+			text = ""
 			orientation = "UPPER_LEFT"
 			format = left
 			fixedsize = yes

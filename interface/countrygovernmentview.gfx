@@ -1,6 +1,6 @@
 spriteTypes = {
 
-	progressbartype = {
+progressbartype = {
 		name = "reform_progress"
 		color = { 0.0 0.5 0.0 }
 		colortwo = { 1.0 0.0 0.0 }
@@ -19,11 +19,6 @@ spriteTypes = {
 		name = "GFX_reform_placeholder"
 		texturefile = "gfx/interface/reform_placeholder.dds"
 	}
-	
-	spriteType = {
-		name = "government_reform_soldiers_7"
-		texturefile = "gfx//interface//government_reform_icons//soldiers_7.dds"
-	}
 
 	spriteType = {
 		name = "GFX_reform_selected_frame"
@@ -33,7 +28,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_government_upgrade_strip"
 		texturefile = "gfx/interface/government_upgrade_strip.dds"
-		noOfFrames = 6
+		noOfFrames = 5
 	}
 
 	spriteType = {
@@ -51,8 +46,8 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_icon_revolutionary_zeal"
 		texturefile = "gfx/interface/ideas_EU4/icon_revolutionary_zeal.dds"
-	}		
-	
+	}
+
 	spriteType = {
 		name = "GFX_icon_max_revolutionary_zeal"
 		texturefile = "gfx/interface/ideas_EU4/icon_max_revolutionary_zeal.dds"
@@ -124,7 +119,7 @@ spriteTypes = {
 		name = "GFX_tech_group_strip"
 		texturefile = "gfx//interface//tech_group_strip.dds"
 		transparencecheck = yes
-		noOfFrames = 26
+		noOfFrames = 36
 	}
 
 	spriteType = {
@@ -205,12 +200,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/country_diplomacy_view_bg_top.dds"
 		alwaystransparent = yes
 	}
-	
-	spriteType = {
-		name = "GFX_country_gov_view_mod_banner"
-		texturefile = "gfx/interface/country_local_government_view_modifiers_banner.dds"
-		alwaystransparent = yes
-	}
 
 	spriteType = {
 		name = "GFX_single_government_power_bar_frame"
@@ -227,10 +216,6 @@ spriteTypes = {
 		size = { x = 230 y = 17 }
 		effectFile = "gfx/FX/progress.lua"
 	}
-
-
-
-
 
 	spriteType = {
 		name = "GFX_government_power_bar_frame"

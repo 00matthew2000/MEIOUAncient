@@ -496,7 +496,7 @@ guiTypes = {
 
 			iconType = {
 				name = "harsh_cardinal_icon"
-				position = { x=87 y =95 }
+				position = { x=77 y =95 }
 				quadTextureSprite ="GFX_cardinal_icon"
 			}
 
@@ -539,7 +539,7 @@ guiTypes = {
 
 			iconType = {
 				name = "concilatory_cardinal_icon"
-				position = { x=430 y =95 }
+				position = { x=435 y =95 }
 				quadTextureSprite ="GFX_cardinal_icon"
 			}
 

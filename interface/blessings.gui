@@ -6,28 +6,27 @@ guiTypes = {
 		size = { x = 750 y = 750 }
 		moveable = 1
 		dontRender = ""
-		horizontalBorder= ""
-		verticalBorder= ""
+		horizontalBorder = ""
+		verticalBorder = ""
 		fullScreen = no
 		Orientation = "CENTER"
-		
+
 		upsound = coptic_blessings
 		downsound = ""
-	
+
 #		iconType =
 #		{
-#			name ="hre_bg_extended"
+#			name = "hre_bg_extended"
 #			spriteType = "GFX_hre_bg_extended"
 #			position = { x = 0 y = 0 }
 #		}
-		
-		iconType =
-		{
-			name ="copts_bg"
+
+		iconType = {
+			name = "copts_bg"
 			spriteType = "GFX_copts_bg"
 			position = { x = 66 y = 18 }
 		}
-		
+
 		instantTextBoxType = {
 			name = "header_label"
 			position = { x = 76 y = 58 }
@@ -40,7 +39,7 @@ guiTypes = {
 			maxHeight = 32
 			alwaystransparent = yes
 		}
-		
+
 		instantTextBoxType = {
 			name = "blessings_label"
 			position = { x = 76 y = 66 }
@@ -48,12 +47,12 @@ guiTypes = {
 			textureFile = ""
 			font = "vic_22s"
 			borderSize = { x = 4 y = 40 }
-			text = "PATRIARCHAL_BLESSINGS"
+			text = "OLYMPIC_BLESSINGS"
 			maxWidth = 584
 			maxHeight = 32
 			alwaystransparent = yes
 		}
-		
+
 		OverlappingElementsBoxType = {
 			name = "blessings"
 			position = { x = 146 y = 166 }
@@ -62,7 +61,7 @@ guiTypes = {
 			format = center
 			spacing = 60
 		}
-		
+
 		instantTextBoxType = {
 			name = "holy_site_label"
 			position = { x = 76 y = 188 }
@@ -75,7 +74,7 @@ guiTypes = {
 			maxHeight = 32
 			alwaystransparent = yes
 		}
-		
+
 		instantTextBoxType = {
 			name = "holy_site_num"
 			position = { x = 476 y = 188 }
@@ -88,11 +87,11 @@ guiTypes = {
 			maxHeight = 32
 			alwaystransparent = yes
 		}
-			
+
 		listboxType =  {
-			name ="holy_site_listbox"
+			name = "holy_site_listbox"
 			position = { x = 110 y = 242 }
-			backGround=""
+			backGround = ""
 			size = { x = 498 y = 480 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
@@ -100,38 +99,37 @@ guiTypes = {
 			scrollbartype = "standardlistbox_slider"
 			borderSize = { x = 10 y = 10 }
 		}
-			
+
 		guiButtonType = {
 			name = "close_button"
-			position = { x = 296 y = 660 }
-			quadTextureSprite ="button_type_1"
+			position = { x = 296 y = 780 }
+			quadTextureSprite = "button_type_1"
 			tooltip = ""
-			tooltipText =""
+			tooltipText = ""
 			delayedTooltipText = ""
 			buttonText = "HRE_CLOSE"
 			buttonFont = "vic_18"
 			clicksound = close_window
 			shortcut = "ESCAPE"
 		}
-		
+
 		windowType = {
 			name = "blessing_selection"
 			position = { x = 0 y = 0 }
 			size = { x = 750 y = 750 }
 			moveable = 1
 			dontRender = ""
-			horizontalBorder= ""
-			verticalBorder= ""
+			horizontalBorder = ""
+			verticalBorder = ""
 			fullScreen = no
 			Orientation = "UPPER_LEFT"
-			
-			iconType =
-			{
-				name ="copts_list_bg"
+
+			iconType = {
+				name = "copts_list_bg"
 				spriteType = "GFX_copts_list_bg"
 				position = { x = 66 y = 18 }
 			}
-			
+
 			instantTextBoxType = {
 				name = "label"
 				position = { x = 76 y = 66 }
@@ -143,11 +141,11 @@ guiTypes = {
 				maxWidth = 584
 				maxHeight = 32
 			}
-			
+
 			listboxType =  {
-				name ="blessing_listbox"
+				name = "blessing_listbox"
 				position = { x = 115 y = 128 }
-				backGround=""
+				backGround = ""
 				size = { x = 498 y = 580 }
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
@@ -155,13 +153,13 @@ guiTypes = {
 				scrollbartype = "standardlistbox_slider"
 				borderSize = { x = 10 y = 10 }
 			}
-			
+
 			guiButtonType = {
 				name = "cancel_button"
-				position = { x = 296 y = 660 }
-				quadTextureSprite ="button_type_1"
+				position = { x = 296 y = 780 }
+				quadTextureSprite = "button_type_1"
 				tooltip = ""
-				tooltipText =""
+				tooltipText = ""
 				delayedTooltipText = ""
 				buttonText = "BACK"
 				buttonFont = "vic_18"
@@ -171,40 +169,37 @@ guiTypes = {
 		}
 	}
 
-	######dont do drugs m'kay######
-
 	windowType = {
 		name = "holy_site_entry"
-		backGround=""
+		backGround = ""
 		position = { x = 0 y = 0 }
 		size = { x = 490 y = 76 }
 		moveable = 0
 		dontRender = ""
-		horizontalBorder= ""
-		verticalBorder= ""
+		horizontalBorder = ""
+		verticalBorder = ""
 		fullScreen = no
 
 		iconType = {
 			name = "copts_site_title_banner"
-			spriteType ="GFX_copts_site_title_banner"
+			spriteType = "GFX_copts_site_title_banner"
 			position = { x = 180 y = 5 }
 		}
-		
+
 		iconType = {
 			name = "cross_icon"
-			spriteType ="GFX_province_view_religion"
-			# position = { x = -4 y = 16 }
-			position = { x = -7 y = 13 }
+			spriteType = "GFX_province_view_religion"
+			position = { x = -4 y = 16 }
 		}
-		
+
 		iconType = {
 			name = "site_icon"
 			spriteType = "GFX_holy_site_default"
 			position = { x = 42 y = 6 }
 			frame = 1
 		}
-		
-		instantTextBoxType= {
+
+		instantTextBoxType = {
 			position = { x = 218 y = 7 }
 			name = "title"
 			font = "vic_22s"
@@ -214,8 +209,8 @@ guiTypes = {
 			text = ""
 			format = left
 		}
-		
-		instantTextBoxType= {
+
+		instantTextBoxType = {
 			position = { x = 218 y = 32 }
 			name = "control"
 			font = "vic_18"
@@ -225,8 +220,8 @@ guiTypes = {
 			text = "Controlled by Polandball"
 			format = left
 		}
-		
-		instantTextBoxType= {
+
+		instantTextBoxType = {
 			position = { x = 218 y = 52 }
 			name = "religion"
 			font = "vic_18"
@@ -236,50 +231,48 @@ guiTypes = {
 			text = "Pastafarian"
 			format = left
 		}
-		
+
 		iconType = {
 			name = "control_matches_icon"
-			spriteType ="GFX_enacted_reform_icon"
+			spriteType = "GFX_enacted_reform_icon"
 			position = { x = 186 y = 34 }
 			frame = 1
 		}
-		
+
 		iconType = {
 			name = "religion_matches_icon"
-			spriteType ="GFX_enacted_reform_icon"
+			spriteType = "GFX_enacted_reform_icon"
 			position = { x = 186 y = 54 }
 			frame = 1
 		}
-		
+
 		guiButtonType = {
 			name = "goto_button"
 			position = { x = 400 y = 43 }
-			quadTextureSprite ="GFX_standard_button_71"
+			quadTextureSprite = "GFX_standard_button_71"
 			buttonText = "GOTO"
 			buttonFont = "vic_18"
 		}
-		
-		guiButtonType =
-		{
-			name ="countryshield"
+
+		guiButtonType = {
+			name = "countryshield"
 			quadTextureSprite = "GFX_shield_small"
 			position = { x = 424 y = 2 }
 			Orientation = "UPPER_LEFT"
 			clicksound = click
 		}
 	}
-	
+
 	windowType = {
 		name = "blessingitem"
-		backGround =""
+		backGround = ""
 		position = { x = 0 y = 0 }
 		size = { x = 24 y = 24 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
-		
-		iconType =
-		{
+
+		iconType = {
 			name = "blessing_icon_slot"
 			spriteType = "GFX_copts_blessing_slot"
 			position = { x = -3 y = -24 }
@@ -289,12 +282,11 @@ guiTypes = {
 		guiButtonType = {
 			name = "blessing_button"
 			position = { x = -5 y = -26 }
-			quadTextureSprite ="GFX_coptic_blessing_select"
+			quadTextureSprite = "GFX_coptic_blessing_select"
 			buttonFont = "vic_18"
 		}
-		
-		iconType =
-		{
+
+		iconType = {
 			name = "blessing_icon"
 			spriteType = "GFX_idea_unknown"
 			position = { x = -6 y = -27 }
@@ -302,30 +294,29 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 	}
-	
+
 	windowType = {
 		name = "blessing_entry"
-		backGround =""
+		backGround = ""
 		position = { x = 0 y = 0 }
 		size = { x = 490 y = 92 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
-		
+
 		iconType = {
 			name = "copts_blessing_title_banner"
-			spriteType ="GFX_copts_blessing_title_banner"
+			spriteType = "GFX_copts_blessing_title_banner"
 			position = { x = -5 y = 5 }
 		}
-		
-		iconType =
-		{
+
+		iconType = {
 			name = "blessing_icon"
 			spriteType = "GFX_idea_unknown"
 			position = { x = 0 y = 32 }
 			Orientation = "UPPER_LEFT"
 		}
-		
+
 		instantTextBoxType = {
 			position = { x = 28 y = 7 }
 			name = "title"
@@ -336,7 +327,7 @@ guiTypes = {
 			text = "Da Blessing"
 			format = left
 		}
-		
+
 		instantTextBoxType = {
 			name = "mod_desc"
 			position = { x = 64 y = 32 }
@@ -347,11 +338,11 @@ guiTypes = {
 			maxWidth = 320
 			maxHeight = 60
 		}
-		
+
 		guiButtonType = {
 			name = "select_button"
 			position = { x = 410 y = 4 }
-			quadTextureSprite ="GFX_standard_button_71"
+			quadTextureSprite = "GFX_standard_button_71"
 			buttonText = "SELECT"
 			buttonFont = "vic_18"
 		}

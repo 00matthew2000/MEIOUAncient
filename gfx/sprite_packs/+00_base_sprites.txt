@@ -1,36 +1,68 @@
-africangfx_sprite_pack = {
+base_berbergfx_sprite_pack = {
 	# Tests against every tag in game
 	country_trigger = {
 		always = no
 	}
 
 	graphical_cultures = {
-		africangfx
+		berbergfx
 	}
 
 	sprite_infantry = {
-		0 = africangfx_INFANTRY_1
-		1 = africangfx_INFANTRY_2
-		2 = africangfx_INFANTRY_3
-		3 = africangfx_INFANTRY_4
+		0 = berbergfx_INFANTRY_1
+		1 = berbergfx_INFANTRY_1
+		2 = berbergfx_INFANTRY_1
+		3 = berbergfx_INFANTRY_1
 	}
 
 	sprite_cavalry = {
-		0 = africangfx_CAVALRY_1
-		1 = africangfx_CAVALRY_2
-		2 = africangfx_CAVALRY_3
-		3 = africangfx_CAVALRY_4
+		0 = berbergfx_CAVALRY_1
+		1 = berbergfx_CAVALRY_1
+		2 = berbergfx_CAVALRY_1
+		3 = berbergfx_CAVALRY_1
 	}
-	
+
 	sprite_artillery = {
-		0 = africangfx_ARTILLERY_1
-		1 = africangfx_ARTILLERY_2
-		2 = africangfx_ARTILLERY_3
-		3 = africangfx_ARTILLERY_4
+		0 = berbergfx_ARTILLERY_1
+		1 = berbergfx_ARTILLERY_1
+		2 = berbergfx_ARTILLERY_1
+		3 = berbergfx_ARTILLERY_1
 	}
 }
 
-asiangfx_sprite_pack = {
+base_eastasiangfx_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		always = no
+	}
+
+	graphical_cultures = {
+		eastasiangfx
+	}
+
+	sprite_infantry = {
+		0 = custom_asiangfx_INFANTRY_1
+		1 = custom_asiangfx_INFANTRY_1
+		2 = custom_asiangfx_INFANTRY_1
+		3 = custom_asiangfx_INFANTRY_1
+	}
+
+	sprite_cavalry = {
+		0 = custom_asiangfx_CAVALRY_1
+		1 = custom_asiangfx_CAVALRY_1
+		2 = custom_asiangfx_CAVALRY_1
+		3 = custom_asiangfx_CAVALRY_1
+	}
+
+	sprite_artillery = {
+		0 = custom_asiangfx_ARTILLERY_1
+		1 = custom_asiangfx_ARTILLERY_1
+		2 = custom_asiangfx_ARTILLERY_1
+		3 = custom_asiangfx_ARTILLERY_1
+	}
+}
+
+base_asiangfx_sprite_pack = {
 	# Tests against every tag in game
 	country_trigger = {
 		always = no
@@ -41,60 +73,60 @@ asiangfx_sprite_pack = {
 	}
 
 	sprite_infantry = {
-		0 = asiangfx_INFANTRY_1
-		1 = asiangfx_INFANTRY_2
-		2 = asiangfx_INFANTRY_3
-		3 = asiangfx_INFANTRY_4
+		0 = custom_asiangfx_INFANTRY_1
+		1 = custom_asiangfx_INFANTRY_1
+		2 = custom_asiangfx_INFANTRY_1
+		3 = custom_asiangfx_INFANTRY_1
 	}
 
 	sprite_cavalry = {
-		0 = asiangfx_CAVALRY_1
-		1 = asiangfx_CAVALRY_2
-		2 = asiangfx_CAVALRY_3
-		3 = asiangfx_CAVALRY_3
+		0 = custom_asiangfx_CAVALRY_1
+		1 = custom_asiangfx_CAVALRY_1
+		2 = custom_asiangfx_CAVALRY_1
+		3 = custom_asiangfx_CAVALRY_1
 	}
-	
+
 	sprite_artillery = {
-		0 = asiangfx_ARTILLERY_1
-		1 = asiangfx_ARTILLERY_2
-		2 = asiangfx_ARTILLERY_3
-		3 = asiangfx_ARTILLERY_4
+		0 = custom_asiangfx_ARTILLERY_1
+		1 = custom_asiangfx_ARTILLERY_1
+		2 = custom_asiangfx_ARTILLERY_1
+		3 = custom_asiangfx_ARTILLERY_1
 	}
 }
 
-easterngfx_sprite_pack = {
+base_hellenicgfx_sprite_pack = {
 	# Tests against every tag in game
 	country_trigger = {
 		always = no
 	}
 
 	graphical_cultures = {
-		easterngfx
+		hellenicgfx
 	}
 
 	sprite_infantry = {
-		0 = easterngfx_INFANTRY_1
-		1 = easterngfx_INFANTRY_2
-		2 = easterngfx_INFANTRY_3
-		3 = easterngfx_INFANTRY_4
+		0 = hellenicgfx_INFANTRY_1
+		1 = hellenicgfx_INFANTRY_2
+		2 = hellenicgfx_INFANTRY_3
+		3 = hellenicgfx_INFANTRY_4
 	}
 
 	sprite_cavalry = {
-		0 = easterngfx_CAVALRY_1
-		1 = easterngfx_CAVALRY_2
-		2 = easterngfx_CAVALRY_3
-		3 = easterngfx_CAVALRY_4
+		0 = hellenicgfx_CAVALRY_1
+		1 = hellenicgfx_CAVALRY_2
+		2 = hellenicgfx_CAVALRY_3
+		3 = hellenicgfx_CAVALRY_4
 	}
-	
+
 	sprite_artillery = {
-		0 = easterngfx_ARTILLERY_1
-		1 = easterngfx_ARTILLERY_2
-		2 = easterngfx_ARTILLERY_3
-		3 = easterngfx_ARTILLERY_4
+		0 = hellenicgfx_ARTILLERY_1
+		1 = hellenicgfx_ARTILLERY_2
+		2 = hellenicgfx_ARTILLERY_3
+		3 = hellenicgfx_ARTILLERY_4
 	}
 }
 
-indiangfx_sprite_pack = {
+base_indiangfx_sprite_pack = {
 	# Tests against every tag in game
 	country_trigger = {
 		always = no
@@ -105,152 +137,280 @@ indiangfx_sprite_pack = {
 	}
 
 	sprite_infantry = {
-		0 = indiangfx_INFANTRY_1
-		1 = indiangfx_INFANTRY_2
-		2 = indiangfx_INFANTRY_3
-		3 = indiangfx_INFANTRY_4
+		0 = custom_indiangfx_INFANTRY_1
+		1 = custom_indiangfx_INFANTRY_1
+		2 = custom_indiangfx_INFANTRY_1
+		3 = custom_indiangfx_INFANTRY_1
 	}
 
 	sprite_cavalry = {
-		0 = indiangfx_CAVALRY_1
-		1 = indiangfx_CAVALRY_2
-		2 = indiangfx_CAVALRY_3
-		3 = indiangfx_CAVALRY_3
+		0 = custom_indiangfx_CAVALRY_1
+		1 = custom_indiangfx_CAVALRY_1
+		2 = custom_indiangfx_CAVALRY_1
+		3 = custom_indiangfx_CAVALRY_1
 	}
-	
+
 	sprite_artillery = {
-		0 = indiangfx_ARTILLERY_1
-		1 = indiangfx_ARTILLERY_2
-		2 = indiangfx_ARTILLERY_3
-		3 = indiangfx_ARTILLERY_4
+		0 = custom_indiangfx_ARTILLERY_1
+		1 = custom_indiangfx_ARTILLERY_1
+		2 = custom_indiangfx_ARTILLERY_1
+		3 = custom_indiangfx_ARTILLERY_1
 	}
 }
 
-inuitgfx_sprite_pack = {
+base_celticgfx_sprite_pack = {
 	# Tests against every tag in game
 	country_trigger = {
 		always = no
 	}
 
 	graphical_cultures = {
-		inuitgfx
+		celticgfx
 	}
 
 	sprite_infantry = {
-		0 = inuitgfx_INFANTRY_1
-		1 = inuitgfx_INFANTRY_2
-		2 = inuitgfx_INFANTRY_3
-		3 = inuitgfx_INFANTRY_4
+		0 = celticgfx_INFANTRY_1
+		1 = celticgfx_INFANTRY_2
+		2 = celticgfx_INFANTRY_3
+		3 = celticgfx_INFANTRY_4
 	}
 
 	sprite_cavalry = {
-		0 = inuitgfx_CAVALRY_1
-		1 = inuitgfx_CAVALRY_2
-		2 = inuitgfx_CAVALRY_3
-		3 = inuitgfx_CAVALRY_4
+		0 = celticgfx_CAVALRY_1
+		1 = celticgfx_CAVALRY_2
+		2 = celticgfx_CAVALRY_3
+		3 = celticgfx_CAVALRY_4
 	}
-	
+
 	sprite_artillery = {
-		0 = inuitgfx_ARTILLERY_1
-		1 = inuitgfx_ARTILLERY_2
-		2 = inuitgfx_ARTILLERY_3
-		3 = inuitgfx_ARTILLERY_4
+		0 = celticgfx_ARTILLERY_1
+		1 = celticgfx_ARTILLERY_2
+		2 = celticgfx_ARTILLERY_3
+		3 = celticgfx_ARTILLERY_4
 	}
 }
 
-muslimgfx_sprite_pack = {
+base_punicgfx_sprite_pack = {
 	# Tests against every tag in game
 	country_trigger = {
 		always = no
 	}
 
 	graphical_cultures = {
-		muslimgfx
+		punicgfx
 	}
 
 	sprite_infantry = {
-		0 = muslimgfx_INFANTRY_1
-		1 = muslimgfx_INFANTRY_2
-		2 = muslimgfx_INFANTRY_3
-		3 = muslimgfx_INFANTRY_4
+		0 = punicgfx_INFANTRY_1
+		1 = punicgfx_INFANTRY_1
+		2 = punicgfx_INFANTRY_1
+		3 = punicgfx_INFANTRY_1
 	}
 
 	sprite_cavalry = {
-		0 = muslimgfx_CAVALRY_1
-		1 = muslimgfx_CAVALRY_2
-		2 = muslimgfx_CAVALRY_3
-		3 = muslimgfx_CAVALRY_4
+		0 = punicgfx_CAVALRY_1
+		1 = punicgfx_CAVALRY_1
+		2 = punicgfx_CAVALRY_1
+		3 = punicgfx_CAVALRY_1
 	}
-	
+
 	sprite_artillery = {
-		0 = muslimgfx_ARTILLERY_1
-		1 = muslimgfx_ARTILLERY_2
-		2 = muslimgfx_ARTILLERY_3
-		3 = muslimgfx_ARTILLERY_4
+		0 = punicgfx_ARTILLERY_1
+		1 = punicgfx_ARTILLERY_1
+		2 = punicgfx_ARTILLERY_1
+		3 = punicgfx_ARTILLERY_1
 	}
 }
 
-northamericagfx_sprite_pack = {
+base_scythiangfx_sprite_pack = {
 	# Tests against every tag in game
 	country_trigger = {
 		always = no
 	}
 
 	graphical_cultures = {
-		northamericagfx
+		scythiangfx
 	}
 
 	sprite_infantry = {
-		0 = northamericagfx_INFANTRY_1
-		1 = northamericagfx_INFANTRY_2
-		2 = northamericagfx_INFANTRY_3
-		3 = northamericagfx_INFANTRY_4
+		0 = scythiangfx_INFANTRY_1
+		1 = scythiangfx_INFANTRY_1
+		2 = scythiangfx_INFANTRY_1
+		3 = scythiangfx_INFANTRY_1
 	}
 
 	sprite_cavalry = {
-		0 = northamericagfx_CAVALRY_1
-		1 = northamericagfx_CAVALRY_2
-		2 = northamericagfx_CAVALRY_3
-		3 = northamericagfx_CAVALRY_4
+		0 = scythiangfx_CAVALRY_1
+		1 = scythiangfx_CAVALRY_1
+		2 = scythiangfx_CAVALRY_1
+		3 = scythiangfx_CAVALRY_1
 	}
-	
+
 	sprite_artillery = {
-		0 = northamericagfx_ARTILLERY_1
-		1 = northamericagfx_ARTILLERY_2
-		2 = northamericagfx_ARTILLERY_3
-		3 = northamericagfx_ARTILLERY_3
+		0 = scythiangfx_ARTILLERY_1
+		1 = scythiangfx_ARTILLERY_1
+		2 = scythiangfx_ARTILLERY_1
+		3 = scythiangfx_ARTILLERY_1
 	}
 }
 
-southamericagfx_sprite_pack = {
+base_iberiangfx_sprite_pack = {
 	# Tests against every tag in game
 	country_trigger = {
 		always = no
 	}
 
 	graphical_cultures = {
-		southamericagfx
+		iberiangfx
 	}
 
 	sprite_infantry = {
-		0 = southamericagfx_INFANTRY_1
-		1 = southamericagfx_INFANTRY_2
-		2 = southamericagfx_INFANTRY_3
-		3 = southamericagfx_INFANTRY_4
+		0 = iberiangfx_INFANTRY_1
+		1 = iberiangfx_INFANTRY_1
+		2 = iberiangfx_INFANTRY_1
+		3 = iberiangfx_INFANTRY_1
 	}
 
 	sprite_cavalry = {
-		0 = southamericagfx_CAVALRY_1
-		1 = southamericagfx_CAVALRY_2
-		2 = southamericagfx_CAVALRY_3
-		3 = southamericagfx_CAVALRY_4
+		0 = iberiangfx_CAVALRY_1
+		1 = iberiangfx_CAVALRY_1
+		2 = iberiangfx_CAVALRY_1
+		3 = iberiangfx_CAVALRY_1
 	}
-	
+
 	sprite_artillery = {
-		0 = southamericagfx_ARTILLERY_1
-		1 = southamericagfx_ARTILLERY_2
-		2 = southamericagfx_ARTILLERY_3
-		3 = southamericagfx_ARTILLERY_4
+		0 = iberiangfx_ARTILLERY_1
+		1 = iberiangfx_ARTILLERY_1
+		2 = iberiangfx_ARTILLERY_1
+		3 = iberiangfx_ARTILLERY_1
+	}
+}
+
+base_thraciangfx_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		always = no
+	}
+
+	graphical_cultures = {
+		thraciangfx
+	}
+
+	sprite_infantry = {
+		0 = thraciangfx_INFANTRY_1
+		1 = thraciangfx_INFANTRY_1
+		2 = thraciangfx_INFANTRY_1
+		3 = thraciangfx_INFANTRY_1
+	}
+
+	sprite_cavalry = {
+		0 = thraciangfx_CAVALRY_1
+		1 = thraciangfx_CAVALRY_1
+		2 = thraciangfx_CAVALRY_1
+		3 = thraciangfx_CAVALRY_1
+	}
+
+	sprite_artillery = {
+		0 = thraciangfx_ARTILLERY_1
+		1 = thraciangfx_ARTILLERY_1
+		2 = thraciangfx_ARTILLERY_1
+		3 = thraciangfx_ARTILLERY_1
+	}
+}
+
+base_iraniangfx_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		always = no
+	}
+
+	graphical_cultures = {
+		iraniangfx
+	}
+
+	sprite_infantry = {
+		0 = iraniangfx_INFANTRY_1
+		1 = iraniangfx_INFANTRY_1
+		2 = iraniangfx_INFANTRY_1
+		3 = iraniangfx_INFANTRY_1
+	}
+
+	sprite_cavalry = {
+		0 = iraniangfx_CAVALRY_1
+		1 = iraniangfx_CAVALRY_1
+		2 = iraniangfx_CAVALRY_1
+		3 = iraniangfx_CAVALRY_1
+	}
+
+	sprite_artillery = {
+		0 = iraniangfx_ARTILLERY_1
+		1 = iraniangfx_ARTILLERY_1
+		2 = iraniangfx_ARTILLERY_1
+		3 = iraniangfx_ARTILLERY_1
+	}
+}
+
+base_egyptgfx_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		always = no
+	}
+
+	graphical_cultures = {
+		egyptgfx
+	}
+
+	sprite_infantry = {
+		0 = egyptgfx_INFANTRY_1
+		1 = egyptgfx_INFANTRY_1
+		2 = egyptgfx_INFANTRY_1
+		3 = egyptgfx_INFANTRY_1
+	}
+
+	sprite_cavalry = {
+		0 = egyptgfx_CAVALRY_1
+		1 = egyptgfx_CAVALRY_1
+		2 = egyptgfx_CAVALRY_1
+		3 = egyptgfx_CAVALRY_1
+	}
+
+	sprite_artillery = {
+		0 = egyptgfx_ARTILLERY_1
+		1 = egyptgfx_ARTILLERY_1
+		2 = egyptgfx_ARTILLERY_1
+		3 = egyptgfx_ARTILLERY_1
+	}
+}
+
+base_italicgfx_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		always = no
+	}
+
+	graphical_cultures = {
+		italicgfx
+	}
+
+	sprite_infantry = {
+		0 = italicgfx_INFANTRY_1
+		1 = italicgfx_INFANTRY_1
+		2 = italicgfx_INFANTRY_1
+		3 = italicgfx_INFANTRY_1
+	}
+
+	sprite_cavalry = {
+		0 = italicgfx_CAVALRY_1
+		1 = italicgfx_CAVALRY_1
+		2 = italicgfx_CAVALRY_1
+		3 = italicgfx_CAVALRY_1
+	}
+
+	sprite_artillery = {
+		0 = italicgfx_ARTILLERY_1
+		1 = italicgfx_ARTILLERY_1
+		2 = italicgfx_ARTILLERY_1
+		3 = italicgfx_ARTILLERY_1
 	}
 }
 
@@ -277,7 +437,7 @@ westerngfx_sprite_pack = {
 		2 = westerngfx_CAVALRY_3
 		3 = westerngfx_CAVALRY_4
 	}
-	
+
 	sprite_artillery = {
 		0 = westerngfx_ARTILLERY_1
 		1 = westerngfx_ARTILLERY_2
