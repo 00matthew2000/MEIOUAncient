@@ -1739,7 +1739,6 @@ country_event = {
 								}
 								OR = { 
 									region = austrian_circle_region
-									region = switzerland_region
 									region = swabia_bavarian_region
 								}
 							}

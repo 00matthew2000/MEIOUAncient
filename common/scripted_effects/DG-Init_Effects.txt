@@ -513,10 +513,6 @@ MN_Entrenchment_Shift_Helper = {
 				change_key = { lhs = DG_Tmp2 value = -0.01 }
 			}
 			else_if = {
-				limit = { region = switzerland_region }
-				change_key = { lhs = DG_Tmp2 value = -0.01 }
-			}
-			else_if = {
 				limit = { region = south_england_region }
 				change_key = { lhs = DG_Tmp2 value = -0.025 }
 			}

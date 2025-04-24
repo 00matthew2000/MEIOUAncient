@@ -4,16 +4,18 @@
 # EUROPE                               #
 ########################################
 
-west_italy_region = {
+naples_region = {
 	areas = {
-		transpadana_area
-		alpes_cottiae
-		liguria_septentrionalis_area
-		liguria_area
-		cenomania_area
-		venetia_area
-		gallia_cispadana
-		aemilia_area
+		apulia_area
+		calabria_area
+		sicani_area
+		sicilia_west
+		syracuse_area
+		lucania_area
+		bruttium_area
+		salento_area
+		sicelia_area
+		sicilia_est
 	}
 }
 
@@ -36,6 +38,19 @@ central_italy_region = {
 	}
 }
 
+west_italy_region = {
+	areas = {
+		transpadana_area
+		alpes_cottiae
+		liguria_septentrionalis_area
+		liguria_area
+		cenomania_area
+		venetia_area
+		gallia_cispadana
+		aemilia_area
+	}
+}
+
 east_italy_region = {
 	areas = {
 		west_corsica_area
@@ -44,21 +59,6 @@ east_italy_region = {
 		sardinia_noritana_area
 		sardinia_turritana_area
 		sardinia_falisca_area
-	}
-}
-
-naples_region = {
-	areas = {
-		apulia_area
-		calabria_area
-		sicani_area
-		sicilia_west
-		syracuse_area
-		lucania_area
-		bruttium_area
-		salento_area
-		sicelia_area
-		sicilia_est
 	}
 }
 
@@ -207,15 +207,10 @@ lower_saxon_circle_region = {
 		cheruscia_area
 		northern_saxony_area
 		caucia_major
-		sudeti_montes
 		west_thuringia_area
 		caucia_minor
 		cattica_area
 		nertereansis_area
-		gabreta_hyle
-		boiohemum_area
-		nariscia_area
-		deserta_boiorum
 		palatinate_bavaria_area
 		rhenus_area
 		moenus_area
@@ -251,28 +246,50 @@ high_countries_region = { #Germania Minora
 polonia_major_region = {
 	areas = {
 		burgundica_area
-		vistula_area
 		suebia_east
-		medoslanum_area
 		lower_silesia_area
 		upper_silesia_area
-		carrodumum_area
 		mazovia_area
 		west_prussia_area
-		transvistuliana_area
 		suebia_west
 		vorpommern_area
 		gothiscandza
 		viadrus_area
-		hyperborea_area
-		glaesum_area
 		curonia_area
-		sarmatici_mons
-		suebia_transdanuvia
 		rugia_area
-		asciburgius_mons
 		dandutica_area
 		dandutica_occidentalis_area
+	}
+}
+
+hercynia_region = {
+	areas = {
+		asciburgius_mons
+		medoslanum_area
+		suebia_transdanuvia
+		deserta_boiorum
+		nariscia_area
+		gabreta_hyle
+		boiohemum_area
+		sudeti_montes
+	}
+}
+
+baltic_region = {
+	areas = {
+		glaesum_area
+		transvistuliana_area
+		hyperborea_area
+	}
+}
+
+lugia_region = {
+	areas = {
+		vistula_area
+		carrodumum_area
+		sarmatici_mons
+		biessia_area
+		lugia_area
 	}
 }
 
@@ -386,7 +403,6 @@ norwegian_region = { ##Propontis
 south_carpathia_region = { #Dacia
 	areas = {
 		alpes_bastarnicae
-		biessia_area
 		carpatae_area
 		dacia_alutensis_area
 		dacia_apulensis
@@ -993,11 +1009,6 @@ south_caucasus_region = { #Armenia
 		catarzene_area
 		moxoene_area
 		astianene_area
-	}
-}
-
-switzerland_region = { ##Corduene
-	areas = {
 		tospites_area
 		corduene_area
 		araxene_area
@@ -1150,6 +1161,7 @@ iran_region = { #Media
 		otene_area
 	}
 }
+
 fars_region = { #Persis
 	areas = {
 		persepolis_area
@@ -1797,12 +1809,6 @@ finland_region = {
 		northern_norway_area
 		subarctic_islands_area
 		norrland_area
-	}
-}
-
-baltic_region = {
-	areas = {
-		livonia_area
 		estonia_ingria_area
 	}
 }
@@ -1813,6 +1819,7 @@ north_russia_region = {
 		pskov_area
 		beloozero_area
 		onega_area
+		livonia_area
 	}
 }
 
@@ -1967,6 +1974,13 @@ australia_region = {
 		southern_australia_area
 		southeast_australia_area
 		inland_australia_area
+	}
+}
+
+inner_mongolia_region = { #Here for color
+	areas = {
+		argun_area
+		katun_area
 	}
 }
 
@@ -2298,6 +2312,17 @@ central_japan_region = { #Saikaido for color purposes
 	}
 }
 
+east_japan_region = { #Here for color
+	areas = {
+		hokkaido_area
+		tohoku_area
+		east_kanto_area
+		west_kanto_area
+		tokai_area
+		koshinetsu_area
+	}
+}
+
 guangdong_region = { #Jiao Zhou
 	areas = {
 		hepu_area
@@ -2589,24 +2614,6 @@ east_siberia_region = {
 		amgun_area
 		zeya_area
 		lower_amur_area
-	}
-}
-
-inner_mongolia_region = {
-	areas = {
-		argun_area
-		katun_area
-	}
-}
-
-east_japan_region = { #Here for color
-	areas = {
-		hokkaido_area
-		tohoku_area
-		east_kanto_area
-		west_kanto_area
-		tokai_area
-		koshinetsu_area
 	}
 }
 

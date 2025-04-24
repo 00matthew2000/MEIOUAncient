@@ -5061,7 +5061,6 @@ country_event = {
 							else_if = { 
 								limit = { 
 									OR = { 
-										region = switzerland_region
 										province_id = 83
 										province_id = 1510
 									}

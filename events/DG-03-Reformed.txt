@@ -8000,14 +8000,6 @@ province_event = {
 				factor = 2.0
 			}
 			modifier = { 
-				owner = { 
-					capital_scope = { 
-						region = switzerland_region
-					}
-				}
-				factor = 2.0
-			}
-			modifier = { 
 				factor = 2.75
 				owner = { 
 					capital_scope = { 
@@ -10536,14 +10528,6 @@ province_event = {
 			modifier = { 
 				owner = { 
 					capital_scope = { 
-						region = switzerland_region
-					}
-				}
-				factor = 0.0
-			}
-			modifier = { 
-				owner = { 
-					capital_scope = { 
 						superregion = iberia_superregion
 					}
 				}
@@ -10815,7 +10799,6 @@ province_event = {
 							superregion = france_superregion
 							superregion = iberia_superregion
 							region = low_countries_region
-							region = switzerland_region
 						}
 						OR = { 
 							AND = { 
@@ -16749,14 +16732,6 @@ province_event = {
 				factor = 0.0
 			}
 			modifier = { 
-				owner = { 
-					capital_scope = { 
-						region = switzerland_region
-					}
-				}
-				factor = 0.0
-			}
-			modifier = { 
 				factor = 0.05
 				owner = { 
 					capital_scope = { 
@@ -17049,7 +17024,6 @@ province_event = {
 							superregion = france_superregion
 							superregion = iberia_superregion
 							region = low_countries_region
-							region = switzerland_region
 						}
 						OR = { 
 							AND = { 
@@ -23127,12 +23101,6 @@ country_event = {
 			modifier = { 
 				capital_scope = { 
 					region = low_countries_region
-				}
-				factor = 5.0
-			}
-			modifier = { 
-				capital_scope = { 
-					region = switzerland_region
 				}
 				factor = 5.0
 			}
@@ -29294,12 +29262,6 @@ country_event = {
 				factor = 0.0
 			}
 			modifier = { 
-				capital_scope = { 
-					region = switzerland_region
-				}
-				factor = 0.0
-			}
-			modifier = { 
 				factor = 2.75
 				capital_scope = { 
 					superregion = british_isles_superregion
@@ -29622,7 +29584,6 @@ country_event = {
 						superregion = france_superregion
 						superregion = iberia_superregion
 						region = low_countries_region
-						region = switzerland_region
 						superregion = germany_superregion
 						superregion = balkan_superregion
 					}
@@ -35505,12 +35466,6 @@ country_event = {
 				factor = 0.0
 			}
 			modifier = { 
-				capital_scope = { 
-					region = switzerland_region
-				}
-				factor = 0.0
-			}
-			modifier = { 
 				factor = 0.05
 				capital_scope = { 
 					superregion = british_isles_superregion
@@ -35795,7 +35750,6 @@ country_event = {
 						superregion = france_superregion
 						superregion = iberia_superregion
 						region = low_countries_region
-						region = switzerland_region
 						superregion = germany_superregion
 						superregion = balkan_superregion
 					}

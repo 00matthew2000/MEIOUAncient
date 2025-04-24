@@ -1575,7 +1575,7 @@ suebia_east = {
 }
 
 livonia_area = {
-	37 273 1263 1430 3399 3765 1264
+	37 38 273 1263 1264 1430 3399 3765
 }
 
 burgundica_area = {
@@ -1606,6 +1606,9 @@ vistula_area = {
 
 biessia_area = {
 	258 2833 1406
+}
+
+lugia_area = {
 }
 
 germano_sarmatia = {
@@ -1776,7 +1779,7 @@ gomel_area = {
 }
 
 glaesum_area = {
-	1265 38 39 1432 40 41
+	1265 39 1432 40 41
 }
 #Opolye
 

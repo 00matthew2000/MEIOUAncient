@@ -168,7 +168,7 @@ wes_missions_5 = {
 			}
 		}
 		effect = { 
-			switzerland_region = { 
+			austrian_circle_region = { 
 				limit = { 
 					NOT = { 
 						is_core = ROOT
@@ -199,13 +199,13 @@ wes_missions_5 = {
 		required_missions = { wes_high_countries wes_swabia_bavaria}
 		position = 6
 		provinces_to_highlight = { 
-			region = switzerland_region
+			region = austrian_circle_region
 			NOT = { 
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = { 
-			switzerland_region = { 
+			austrian_circle_region = { 
 				type = all
 				OR = { 
 					owner = { 

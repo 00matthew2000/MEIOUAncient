@@ -5,7 +5,7 @@
 
 (?<=\breligion =\s)(\w+)      replace religion with whatever word to match everything after that word and replace all at once
 
-Must reorder the regions in superregion.txt to change the colors; make it match IU
+Must reorder the regions in superregion.txt AND regions.txt to change the colors; make it match IU
 Haozhou needs to be redrawn
 Need to fix SYS-RightsInit
 Check SYS-Distribution both effects and triggers (also need to set the nomad percent in startup_class?)

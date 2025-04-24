@@ -50185,7 +50185,6 @@ on_five_year_pulse_4 = {
 				capital_scope = { 
 					OR = { 
 						region = low_countries_region
-						region = switzerland_region
 						superregion = france_superregion
 						AND = { 
 							superregion = british_isles_superregion

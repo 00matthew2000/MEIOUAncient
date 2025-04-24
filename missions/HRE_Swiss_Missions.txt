@@ -202,13 +202,13 @@ swi_missions_6 = {
 		icon = mission_european_fort
 		required_missions = { }
 		provinces_to_highlight = { 
-			region = switzerland_region
+			region = austrian_circle_region
 			NOT = { 
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = { 
-			switzerland_region = { 
+			austrian_circle_region = { 
 				type = all
 				OR = { 
 					owner = { 

@@ -37,10 +37,10 @@ southeast_asia_superregion = {
 }
 
 italy_superregion = {
-	naples_region
-	central_italy_region
 	west_italy_region
+	central_italy_region
 	east_italy_region
+	naples_region
 	austrian_circle_region
 }
 
@@ -64,6 +64,8 @@ germany_superregion = {
 	high_countries_region
 	scandinavia_region
 	polonia_major_region
+	hercynia_region
+	lugia_region
 }
 
 british_isles_superregion = {
@@ -81,20 +83,20 @@ balkan_superregion = {
 }
 
 macedonia_superregion = { #Greece
+	bohemia_region
 	greece_region
 	danish_region
-	bohemia_region
 }
 
 european_steppe_superregion = {
-	crimea_region
-	steppes_region
-	north_caucasus_region
-	volga_region
 	halych_volhynia_region
-	east_carpathia_region
 	languedoc_region
+	north_caucasus_region
+	steppes_region
 	kazakh_region
+	volga_region
+	crimea_region
+	east_carpathia_region
 }
 
 north_china_superregion = {
@@ -195,7 +197,6 @@ armenia_superregion = { #Armenia
 	lithuania_region
 	swabia_bavarian_region
 	harar_region
-	switzerland_region
 }
 
 arabia_superregion = { #Arabia
@@ -213,8 +214,8 @@ central_asia_superregion = {
 }
 
 parthia_superregion = { #Parthia
-	khorasani_region
 	lower_volta_region
+	khorasani_region
 	lower_niger_region
 	niger_benue_region
 }
