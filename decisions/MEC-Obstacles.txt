@@ -1,0 +1,377 @@
+country_decisions = { 
+	overcome_magnates = { 
+		major = yes
+		potential = { 
+			has_country_modifier = obstacle_magnates
+			had_global_flag = { 
+				flag = meiou_and_taxes_mod_start
+				days = 30
+			}
+		}
+		allow = { 
+			has_regency = no
+			stability = 1
+			is_at_war = no
+			NOT = { 
+				num_of_revolts = 1
+			}
+			OR = { 
+				adm_tech = 44
+				full_idea_group = administrative_ideas
+				full_idea_group = bureaucracy_ideas
+				NOT = { 
+					average_autonomy = 75
+				}
+			}
+			OR = { 
+				ADM = 5
+				OR = { 
+					advisor = statesman_BG
+					advisor = statesman_BU
+					advisor = statesman_CL
+					advisor = statesman_NO
+					advisor = statesman_TR
+				}
+				AND = { 
+					legitimacy = 90
+					prestige = 50
+				}
+				AND = { 
+					republican_tradition = 90
+					prestige = 50
+				}
+			}
+		}
+		effect = { 
+			if = { 
+				limit = { 
+					OR = { 
+						statesman_BG = 3
+						statesman_BU = 3
+						statesman_CL = 3
+						statesman_NO = 3
+						statesman_TR = 3
+						ADM = 5
+					}
+				}
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						add_stability = -1
+					}
+				}
+				tooltip = { 
+					add_stability = -1
+				}
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -5
+				}
+				add_legitimacy = -20
+				add_republican_tradition = -20
+				add_prestige = -10
+			}
+			if = { 
+				limit = { 
+					NOT = { 
+						statesman_BG = 3
+						statesman_BU = 3
+						statesman_CL = 3
+						statesman_NO = 3
+						statesman_TR = 3
+						ADM = 5
+					}
+					OR = { 
+						statesman_BG = 2
+						statesman_BU = 2
+						statesman_CL = 2
+						statesman_NO = 2
+						statesman_TR = 2
+						ADM = 4
+					}
+				}
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						add_stability = -1
+					}
+				}
+				tooltip = { 
+					add_stability = -1
+				}
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -5
+				}
+				add_legitimacy = -30
+				add_republican_tradition = -30
+				add_prestige = -15
+			}
+			if = { 
+				limit = { 
+					NOT = { 
+						statesman_BG = 2
+						statesman_BU = 2
+						statesman_CL = 2
+						statesman_NO = 2
+						statesman_TR = 2
+						ADM = 4
+					}
+					OR = { 
+						statesman_BG = 1
+						statesman_BU = 1
+						statesman_CL = 1
+						statesman_NO = 1
+						statesman_TR = 1
+						ADM = 3
+					}
+				}
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						add_stability = -2
+					}
+				}
+				tooltip = { 
+					add_stability = -2
+				}
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -10
+				}
+				add_legitimacy = -40
+				add_republican_tradition = -40
+				add_prestige = -20
+			}
+			if = { 
+				limit = { 
+					NOT = { 
+						statesman_BG = 1
+						statesman_BU = 1
+						statesman_CL = 1
+						statesman_NO = 1
+						statesman_TR = 1
+						ADM = 3
+					}
+				}
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						add_stability = -2
+					}
+				}
+				tooltip = { 
+					add_stability = -2
+				}
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -10
+				}
+				add_legitimacy = -50
+				add_republican_tradition = -50
+				add_prestige = -25
+			}
+			remove_country_modifier = obstacle_magnates
+			log = "MEC-Obstacles:[GetYear]:[This.GetName]:overcame magnates:overcome_magnates"
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	obstacle_end_family_feud = { 
+		major = yes
+		potential = { 
+			has_country_modifier = obstacle_feuding
+			had_global_flag = { 
+				flag = meiou_and_taxes_mod_start
+				days = 30
+			}
+		}
+		allow = { 
+			has_regency = no
+			stability = 2
+			adm_power = 100
+			is_at_war = no
+			NOT = { 
+				num_of_revolts = 1
+			}
+			has_any_disaster = no
+			OR = { 
+				has_new_dynasty = yes
+				NOT = { 
+					government = monarchy
+				}
+				absolutism = 25
+				adm_tech = 26
+			}
+		}
+		effect = { 
+			add_adm_power = -100
+			if = { 
+				limit = { 
+					ADM = 5
+				}
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						add_stability = -1
+					}
+				}
+				tooltip = { 
+					add_stability = -1
+				}
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -5
+				}
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -5
+				}
+				add_legitimacy = -10
+				add_republican_tradition = -10
+			}
+			if = { 
+				limit = { 
+					NOT = { 
+						ADM = 5
+					}
+					ADM = 4
+				}
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							NOT = { 
+								stability = -2
+							}
+						}
+						set_variable = { 
+							which = ahf
+							value = 0
+						}
+					}
+					else = { 
+						add_stability = -2
+					}
+				}
+				tooltip = { 
+					add_stability = -2
+				}
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -10
+				}
+				if = { 
+					limit = { 
+						is_emperor_of_china = yes
+					}
+					add_mandate = -10
+				}
+				add_legitimacy = -20
+				add_republican_tradition = -20
+			}
+			remove_country_modifier = obstacle_feuding
+			log = "MEC-Obstacles:[GetYear]:[This.GetName]:ended Family Feud obstacle:obstacle_end_family_feud"
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	establish_succession = { 
+		major = yes
+		potential = { 
+			has_reform = Pol_Succession3
+			NOT = { 
+				tag = BYZ
+				tag = TRE
+			}
+		}
+		allow = { 
+			stability = 2
+			is_at_war = no
+			NOT = { 
+				average_home_autonomy = 65
+			}
+			NOT = { 
+				average_effective_unrest = 5
+			}
+			num_of_cities = 25
+			prestige = 20
+			legitimacy_equivalent = 75
+			has_heir = yes
+			has_any_disaster = no
+		}
+		effect = { 
+			remove_government_reform = Pol_Succession3
+			add_government_reform = Pol_Succession1
+			add_prestige = 10
+			add_legitimacy = 10
+			add_heir_claim = 25
+			log = "MEC-Obstacles:[GetYear]:[This.GetName]:estabilished rules of succession:establish_succession"
+		}
+	}
+}
