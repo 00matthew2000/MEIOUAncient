@@ -1,0 +1,171 @@
+country_decisions = { 
+	negociate_freedom_jean = { 
+		potential = { 
+			tag = FRA
+			war_with = ENG
+			has_country_flag = ruler_prisonner_of_war
+			has_global_flag = hundred_years_war
+		}
+		allow = { 
+			tag = FRA
+			war_with = ENG
+			is_year = 1358
+			has_country_flag = ruler_prisonner_of_war
+			OR = { 
+				NOT = { 
+					has_country_flag = negociating_release_jean
+				}
+				had_country_flag = { 
+					flag = negociating_release_jean
+					days = 365
+				}
+			}
+		}
+		effect = { 
+			ENG = { 
+				country_event = { 
+					id = prisonner_of_war.501
+					days = 0
+				}
+			}
+			set_country_flag = negociating_release_jean
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	generate_new_male_heir = { 
+		potential = { 
+			tag = FRA
+			is_vassal = no
+			government = monarchy
+			OR = { 
+				dynasty = "de Bourgogne"
+				dynasty = "de Navarre"
+				dynasty = "de Dreux"
+				dynasty = "de Valois-Bourgogne"
+				dynasty = "de Valois-Anjou"
+				dynasty = "d'Anjou"
+				dynasty = "de Montfort"
+				dynasty = "de Bourbon"
+				dynasty = "de Valois"
+				dynasty = "d'Évreux"
+				dynasty = "Capet"
+			}
+			has_reform = salic_law_reform
+		}
+		allow = { 
+			has_regency = no
+			OR = { 
+				heir_has_ruler_dynasty = no
+				has_female_heir = yes
+			}
+		}
+		effect = { 
+			define_heir = { 
+				male = yes
+				dynasty = ROOT
+				claim = 100
+			}
+		}
+		ai_will_do = { 
+			factor = 100
+		}
+	}
+	subdue_burgundy = { 
+		potential = { 
+			tag = FRA
+			OR = { 
+				dynasty = "de Bourgogne"
+				dynasty = "de Navarre"
+				dynasty = "de Dreux"
+				dynasty = "de Valois-Bourgogne"
+				dynasty = "de Valois-Anjou"
+				dynasty = "d'Anjou"
+				dynasty = "de Montfort"
+				dynasty = "de Bourbon"
+				dynasty = "de Valois"
+				dynasty = "d'Évreux"
+				dynasty = "Capet"
+			}
+			BUR = { 
+				is_subject_of = FRA
+				is_subject_of_type = nominal_subject
+			}
+			NOT = { 
+				has_country_flag = subdue_burgundy
+			}
+		}
+		allow = { 
+			adm = 4
+			adm_tech = 28
+			OR = { 
+				custom_trigger_tooltip = { 
+					tooltip = Privilege_BUStructure2Has
+					AND = { 
+						is_variable_equal = { 
+							which = noq
+							value = 2
+						}
+					}
+				}
+				custom_trigger_tooltip = { 
+					tooltip = Privilege_BUStructure3Has
+					AND = { 
+						is_variable_equal = { 
+							which = noq
+							value = 3
+						}
+					}
+				}
+			}
+			OR = { 
+				custom_trigger_tooltip = { 
+					tooltip = Privilege_BUHierarchy1Has
+					AND = { 
+						is_variable_equal = { 
+							which = nol
+							value = 1
+						}
+					}
+				}
+				custom_trigger_tooltip = { 
+					tooltip = Privilege_BUHierarchy2Has
+					AND = { 
+						is_variable_equal = { 
+							which = nol
+							value = 2
+						}
+					}
+				}
+			}
+			faction_influence = { 
+				faction = FC_BU
+				influence = 40
+			}
+		}
+		effect = { 
+			set_country_flag = subdue_burgundy
+			if = { 
+				limit = { 
+					BUR = { 
+						liberty_desire = 50
+					}
+				}
+				BUR = { 
+					grant_independence = yes
+				}
+				declare_war_with_cb = { 
+					who = BUR
+					casus_belli = cb_claim_throne
+				}
+			}
+			else = { 
+				inherit = BUR
+			}
+		}
+		ai_will_do = { 
+			factor = 100
+		}
+	}
+}
