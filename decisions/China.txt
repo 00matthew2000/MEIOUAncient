@@ -1,0 +1,2346 @@
+country_decisions = {
+
+	standardized_weight_and_measure = {
+		potential = {
+			culture_group = chinese_group
+			NOT = { has_country_modifier = standardized_weight_and_measure_modifier }
+		}
+		allow = {
+			dip_tech = 16
+			is_at_war =  no
+			government = monarchy
+			dip_power = 100
+		}
+		effect = {
+			add_dip_power = -100
+			add_country_modifier = {
+				name = standardized_weight_and_measure_modifier
+				duration = -1
+			}
+		}
+		ai_importance = 50
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#this will almost certainly be removed once Zhou's mission tree is made by Zhuge
+	zhou_free_guo = {
+		potential = {
+			tag = ZHO
+			is_year = 9999
+			NOT = {
+				start_date = 87.1.1
+			}
+			NOT = {
+				exists = GUO
+			}
+			NOT = {
+				march_of = JIN
+			}
+			is_vassal = no
+			4348 = {
+				owned_by = JIN
+			}
+			NOT = {
+				has_country_flag = zho_freed_guo_flag
+			}
+		}
+		allow = {
+			alliance_with = JIN
+			JIN = {
+				trust = {
+					WHO = ZHO
+					value = 80
+				}
+				owes_favors = {
+					WHO = ZHO
+					value = 75
+				}
+			}
+			is_at_war = no
+		}
+		effect = {
+			set_country_flag = zho_freed_guo_flag
+			add_favors = {
+				WHO = JIN
+				amount = -25
+			}
+			JIN = {
+				add_trust = {
+					WHO = ZHO
+					value = -30
+				}
+				release = GUO
+			}
+			create_alliance = GUO
+			add_historical_friend = GUO
+			GUO = {
+				add_historical_friend = ZHO
+			}
+			add_trust = {
+				who = GUO
+				value = 100
+				mutual = yes
+			}
+			add_favors = {
+				who = GUO
+				amount = 25
+			}
+		}
+	}
+
+	lio_revives = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			tag = LIO
+			NOT = {
+				has_country_flag = lio_took_back_stuff
+			}
+			NOT = {
+				religion = chinese_religion
+			}
+			NOT = {
+				start_date = 87.1.1
+			}
+		}
+		allow = {
+			4114 = {
+				owned_by = LIO
+			}
+			4081 = {
+				owned_by = LIO
+			}
+			is_at_war = no
+		}
+		effect = {
+			set_country_flag = lio_took_back_stuff
+			change_technology_group = far_eastern
+			change_unit_type = far_eastern
+			change_primary_culture = yinyi
+			change_religion = chinese_religion
+			country_event = {
+				id = chinese_school_events.1
+				days = 1
+			}
+			4081 = {
+				change_culture = yinyi
+				change_religion = chinese_religion
+			}
+			4114 = {
+				change_culture = yinyi
+				change_religion = chinese_religion
+			}
+			set_capital = 4114
+			set_in_empire = yes
+			add_stability = 1
+		}
+		ai_importance = 500
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	shangxia_restore_wuism = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			OR = {
+				tag = XIA
+				tag = YSG
+			}
+			NOT = {
+				has_country_flag = took_shangxia_restore_wuism_flag
+			}
+			NOT = {
+				has_country_flag = originally_guzhu
+			}
+		}
+		allow = {
+			is_at_war = no
+			stability = 1
+			legitimacy = 95
+		}
+		effect = {
+			set_country_flag = took_shangxia_restore_wuism_flag
+			country_event = { id = china.74 }
+		}
+		ai_importance = 500
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	lai_retake_shandong = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			tag = LAI
+			NOT = {
+				has_country_flag = lai_retook_shandong_flag
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4285
+				province_id = 4284
+				province_id = 4280
+				province_id = 4277
+				province_id = 4275
+				province_id = 4278
+				province_id = 4276
+				province_id = 4270
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns = 4285
+			owns = 4284
+			owns = 4280
+			owns = 4277
+			owns = 4275
+			owns = 4278
+			owns = 4276
+			owns = 4270
+
+		}
+		effect = {
+			set_country_flag = lai_retook_shandong_flag
+			add_prestige = 50
+			add_country_modifier = {
+				name = lai_retook_shandong_mod
+				duration = 3650
+			}
+			4285 = {
+				add_core = LAI
+				change_culture = laiyi
+				change_religion = wuism
+			}
+			4284 = {
+				add_core = LAI
+				change_culture = laiyi
+				change_religion = wuism
+			}
+			4280 = {
+				add_core = LAI
+				change_culture = laiyi
+				change_religion = wuism
+			}
+			4277 = {
+				add_core = LAI
+				change_culture = laiyi
+				change_religion = wuism
+			}
+			4275 = {
+				add_core = LAI
+				change_culture = laiyi
+				change_religion = wuism
+			}
+			4278 = {
+				add_core = LAI
+				change_culture = laiyi
+				change_religion = wuism
+			}
+			4276 = {
+				add_core = LAI
+				change_culture = laiyi
+				change_religion = wuism
+			}
+			4270 = {
+				add_core = LAI
+				change_culture = laiyi
+				change_religion = wuism
+			}
+			every_province = {
+				limit = {
+					culture = laiyi
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_claim = LAI
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 500
+	}
+
+	jig_qi_revenge = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			tag = JIG
+			owns_core_province = 4270
+			NOT = {
+				has_country_flag = jig_revenged_qi
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4263
+				province_id = 4265
+				province_id = 4264
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 4263
+			owns_core_province = 4265
+			owns_core_province = 4264
+			OR = {
+				NOT = {
+					exists = QII
+				}
+				total_development = QII
+			}
+		}
+		effect = {
+			set_country_flag = jig_revenged_qi
+			add_prestige = 50
+			elector = yes
+			QII = {
+				add_prestige = -50
+				elector = no
+				every_owned_province = {
+					add_claim = JIG
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 500
+	}
+
+	xirong_hre_state_rename = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			OR = {
+				tag = LSS
+				tag = BOG
+				tag = PXS
+			}
+			NOT = {
+				has_country_flag = xirong_took_sino_guanzhong
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			OR = {
+				primary_culture = guanzhong
+				is_part_of_hre = yes
+				AND = {
+					ai = yes
+					accepted_culture = guanzhong
+					dip_power = 200
+				}
+			}
+			OR = {
+				emperor = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+				ZHO = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+				is_part_of_hre = yes
+			}
+			treasury = 100
+		}
+		effect = {
+			add_treasury = -100
+			if = {
+				limit = {
+					tag = BOG
+				}
+				override_country_name = XIRONG_GUANZHONG_BO
+			}
+			else_if = {
+				limit = {
+					tag = LSS
+				}
+				override_country_name = XIRONG_GUANZHONG_TONG
+			}
+			else_if = {
+				limit = {
+					tag = PXS
+				}
+				override_country_name = XIRONG_GUANZHONG_PENG
+			}
+			change_technology_group = far_eastern
+			change_unit_type = far_eastern
+			change_government = monarchy
+			add_government_reform = chinese_feudalism_reform
+			change_religion = chinese_religion
+			change_primary_culture = guanzhong
+			capital_scope = {
+				change_religion = chinese_religion
+			}
+			set_in_empire = yes
+			swap_non_generic_missions = yes
+			swap_free_idea_group = yes
+			country_event = {
+				id = chinese_school_events.1
+				days = 1
+			}
+			set_country_flag = xirong_took_sino_guanzhong
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				personality = ai_militarist
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					treasury = 140
+				}
+			}
+		}
+		ai_importance = 500
+	}
+
+	kua_restore_state = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			tag = KUA
+			NOT = {
+				has_country_flag = kua_restored_state_flag
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4354
+				province_id = 4355
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns = 4354
+			owns = 4355
+		}
+		effect = {
+			set_country_flag = kua_restored_state_flag
+			add_prestige = 20
+			4354 = {
+				add_core = ROOT
+			}
+			4355 = {
+				add_core = ROOT
+			}
+			4353 = {
+				add_permanent_claim = KUA
+			}
+			4367 = {
+				add_permanent_claim = KUA
+			}
+			4366 = {
+				add_permanent_claim = KUA
+			}
+			4363 = {
+				add_permanent_claim = KUA
+			}
+			every_owned_province = {
+				limit = {
+					is_core = ZHE
+				}
+				remove_core = ZHE
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 500
+	}
+
+	xgo_restore_state = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			tag = XGO
+			NOT = {
+				has_country_flag = xgo_restored_state_flag
+			}
+			NOT = { start_date = 87.1.1 }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4111
+				province_id = 4119
+				province_id = 4117
+				province_id = 4112
+				province_id = 4099
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 4111
+			owns_core_province = 4119
+			owns_core_province = 4117
+			owns_core_province = 4112
+			owns_core_province = 4099
+		}
+		effect = {
+			set_country_flag = xgo_restored_state_flag
+			add_prestige = 10
+			4112 = {
+				change_culture = hebei
+				change_religion = chinese_religion
+			}
+			4117 = {
+				change_culture = hebei
+				change_religion = chinese_religion
+			}
+			4098 = {
+				add_permanent_claim = XGO
+			}
+			4093 = {
+				add_permanent_claim = XGO
+			}
+			4095 = {
+				add_permanent_claim = XGO
+			}
+			4096 = {
+				add_permanent_claim = XGO
+			}
+			4094 = {
+				add_permanent_claim = XGO
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 500
+	}
+
+	xgo_expand_north = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			tag = XGO
+			OR = {
+				has_country_flag = xgo_restored_state_flag
+				start_date = 87.1.1
+			}
+			NOT = {
+				has_country_flag = xgo_expanded_north_flag
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4098
+				province_id = 4093
+				province_id = 4095
+				province_id = 4096
+				province_id = 4094
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 4098
+			owns_core_province = 4093
+			owns_core_province = 4095
+			owns_core_province = 4096
+			owns_core_province = 4094
+		}
+		effect = {
+			set_country_flag = xgo_expanded_north_flag
+			4099 = {
+				change_culture = hebei
+				change_religion = chinese_religion
+			}
+			add_prestige = 25
+			every_province = {
+				limit = {
+					area = handan_area
+					owner = {
+						NOT = {
+							culture_group = chinese_group
+						}
+					}
+				}
+				add_core = THIS
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 500
+	}
+
+	china_minor_south_liyue = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			NOT = {
+				has_country_flag = china_minor_returned_liyue
+			}
+			OR = {
+				tag = HEN
+				tag = NNM
+				tag = QUG
+				tag = YUN
+			}
+			religion = liyuebadao
+		}
+
+		allow = {
+			is_subject = no
+			stability = 1
+			dip_power = 25
+			NOT = {
+				alliance_with = CHU
+			}
+		}
+		effect = {
+			add_dip_power = -25
+			set_country_flag = china_minor_returned_liyue
+			change_religion = chinese_religion
+			country_event = { id = chinese_school_events.1 }
+			capital_scope = {
+				change_religion = chinese_religion
+			}
+			emperor = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_became_liyue
+				}
+			}
+		}
+	}
+
+	xgo_purchase_electorate = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			tag = XGO
+			ai = no
+			has_country_flag = xgo_expanded_north_flag
+			NOT = {
+				has_country_flag = xgo_purchased_electorate_flag
+			}
+		}
+
+		allow = {
+			ai = no
+			is_subject = no
+			is_at_war = no
+			treasury = 500
+			OR = {
+				AND = {
+					exists = CAI
+					total_development = CAI
+					CAI = {
+						is_elector = yes
+					}
+				}
+				AND = {
+					exists = CHN
+					total_development = CHN
+					CHN = {
+						is_elector = yes
+					}
+				}
+			}
+		}
+		effect = {
+			set_country_flag = xgo_purchased_electorate_flag
+			set_government_rank = 3
+			add_treasury = -500
+			emperor = {
+				add_treasury = 400
+			}
+			add_curia_treasury = 100
+			if = {
+				limit = {
+					exists = CAI
+					total_development = CAI
+					CAI = {
+						is_elector = yes
+					}
+				}
+				elector = yes
+				CAI = {
+					elector = no
+				}
+			}
+			else_if = {
+				limit = {
+					exists = CHN
+					total_development = CHN
+					CHN = {
+						is_elector = yes
+					}
+				}
+				elector = yes
+				CHN = {
+					elector = no
+				}
+			}
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 500
+	}
+
+	restore_changdi = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			tag = CAD
+			NOT = {
+				has_country_flag = cad_took_back_stuff
+			}
+			NOT = {
+				start_date = 87.1.1
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4104
+				province_id = 4105
+				province_id = 4106
+				province_id = 4272
+				province_id = 4120
+				province_id = 4105
+				province_id = 4109
+				province_id = 4113
+				province_id = 4118
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			4104 = {
+				owned_by = CAD
+			}
+			4106 = {
+				owned_by = CAD
+			}
+			4272 = {
+				owned_by = CAD
+			}
+			4105 = {
+				owned_by = CAD
+			}
+			4120 = {
+				owned_by = CAD
+			}
+			4105 = {
+				owned_by = CAD
+			}
+			4109 = {
+				owned_by = CAD
+			}
+			4113 = {
+				owned_by = CAD
+			}
+			4118 = {
+				owned_by = CAD
+			}
+			is_subject = no
+			is_at_war = no
+		}
+		effect = {
+			set_country_flag = cad_took_back_stuff
+			add_prestige = 50
+			set_government_rank = 3
+			4104 = {
+				change_culture = changdi
+				change_religion = tengri
+			}
+			4106 = {
+				change_culture = changdi
+				change_religion = tengri
+			}
+			4272 = {
+				change_culture = changdi
+				change_religion = tengri
+			}
+			4105 = {
+				change_culture = changdi
+				change_religion = tengri
+			}
+			4120 = {
+				change_culture = changdi
+				change_religion = tengri
+			}
+			4105 = {
+				change_culture = changdi
+				change_religion = tengri
+			}
+			4113 = {
+				change_culture = changdi
+				change_religion = tengri
+			}
+			4118 = {
+				change_culture = changdi
+				change_religion = tengri
+			}
+			4261 = {
+				add_core = CAD
+			}
+			4256 = {
+				add_core = CAD
+			}
+			4255 = {
+				add_core = CAD
+			}
+			4253 = {
+				add_core = CAD
+			}
+			4107 = {
+				add_core = CAD
+			}
+		}
+		ai_importance = 500
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	restore_jiuli_tribes = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			tag = MIO
+			NOT = {
+				has_country_flag = united_former_jiu_mio
+			}
+		}
+		allow = {
+			is_at_war = no
+		    has_adopted_cult = chiyou_cult
+			owns = 4328
+			owns = 4292
+			owns = 4330
+		}
+		effect = {
+			set_country_flag = united_former_jiu_mio
+			override_country_name = jiuli_united_name
+			country_event = {
+				id = new_ideas.1
+			}
+			add_prestige = 100
+			qingzhou_china = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hejian_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			qinghe_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hejian_area_eastern = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			yuyang_area_southern = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			guangyang_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			guangyang_area_western = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	china_purchase_rank = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			is_part_of_hre = yes
+			religion = chinese_religion
+			is_year = 140
+			NOT = { has_global_flag = zhanguokaishi }
+			OR = {
+				is_subject = no
+				is_subject_of_type = tributary_state
+			}
+			exists = ZHO
+			NOT = {
+				tag = CHU
+			}
+			NOT = {
+				has_country_modifier = china_rejected_rank_modifier
+			}
+			NOT = {
+				tag = ZHO
+			}
+			NOT = {
+				tag = ZHG
+			}
+			NOT = {
+				tag = ZHA
+			}
+			NOT = {
+				tag = WEI
+			}
+			NOT = {
+				tag = HAN
+			}
+			NOT = {
+				is_emperor = yes
+			}
+			NOT = {
+				OR = {
+					has_country_flag = zhuxiatouxian_di
+					has_country_flag = zhuxiatouxian_wang
+					has_country_flag = zhuxiatouxian_Gong
+					has_country_flag = zhuxiatouxian_Hou
+					has_country_flag = zhuxiatouxian_Bo
+					has_country_flag = zhuxiatouxian_Nan
+					has_country_flag = got_jun_to_zi
+				}
+			}
+		}
+		allow = {
+			treasury = 100
+			culture_group = chinese_group
+			reverse_has_opinion = {
+				who = ZHO
+				value = 175
+			}
+		}
+		effect = {
+			ZHO = {
+				country_event = {
+					id = china.19
+				}
+			}
+		}
+		ai_importance = 350
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_flag = zhuxiatouxian_Zi
+				NOT = { treasury = 250 }
+			}
+		}
+	}
+
+	qin_new_religion = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			tag = QIN
+			religion = wuism
+		}
+		allow = {
+			OR = {
+				stability = 2
+				AND = {
+					ai = yes
+					stability = 1
+				}
+			}
+			legitimacy = 80
+			is_at_war = no
+
+		}
+		effect = {
+			country_event = { id = china.94 }
+		}
+		ai_importance = 600
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	juu_new_religion = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			tag = JUU
+			religion = wuism
+			NOT = {
+				has_ruler_flag = cant_convert_from_wu
+			}
+		}
+		allow = {
+			stability = 1
+			legitimacy = 90
+			is_at_war = no
+			is_subject = no
+			OR = {
+				emperor = {
+					has_opinion = {
+						who = ROOT
+						value = 75
+					}
+				}
+				ZHO = {
+					has_opinion = {
+						who = ROOT
+						value = 75
+					}
+				}
+			}
+		}
+		effect = {
+			change_religion = chinese_religion
+			country_event = { id = chinese_school_events.1 }
+			add_stability = -1
+			capital_scope = {
+				change_religion = chinese_religion
+			}
+		}
+		ai_importance = 600
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	qin_player_scripted_peace = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			tag = QIN
+			is_in_league_war = yes
+			in_league = liyuebadao
+			ai = no
+			is_league_leader = no
+			NOT = {
+				has_country_flag = qin_did_scripted_LW_peace
+			}
+		}
+		allow = {
+			calc_true_if = {
+				all_owned_province = {
+					NOT = {
+						controlled_by = ROOT
+					}
+				}
+				amount = 5
+			}
+		}
+		effect = {
+			white_peace = JIN
+			set_country_flag = qin_did_scripted_LW_peace
+			if = {
+				limit = {
+					owns = 4212
+					NOT = { exists = GUO }
+				}
+				4212 = {
+					cede_province = JIN
+					remove_core = QIN
+				}
+			}
+			else_if = {
+				limit = {
+					exists = GUO
+					owns = 4212
+				}
+				4212 = {
+					cede_province = GUO
+					remove_core = QIN
+				}
+			}
+			if = {
+				limit = {
+					religion = liyuebadao
+				}
+				change_religion = chinese_religion
+			}
+			add_treasury = -100
+			JIN = {
+				add_treasury = 100
+			}
+			every_neighbor_country = {
+				limit = {
+					NOT = {
+						tag = JIN
+					}
+					NOT = {
+						tag = CHU
+					}
+					OR = {
+						is_subject = no
+						is_subject_of_type = tributary_state
+					}
+				}
+				add_truce_with = ROOT
+			}
+		}
+		ai_importance = 600
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	zhk_restore_ren_surname = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			tag = ZHK
+			dynasty = "Jiang"
+		}
+		allow = {
+			is_subject = no
+			OR = {
+				NOT = {
+					exists = QII
+				}
+				alliance_with = QII
+				QII = {
+					NOT = {
+						owns = 4269
+					}
+					NOT = {
+						owns = 4309
+					}
+				}
+			}
+		}
+		effect = {
+			add_prestige = 10
+			set_dynasty = "Ren"
+		}
+		ai_importance = 400
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ying_attack_rong_first = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			tag = YIN
+			NOT = {
+				start_date = 87.1.1
+			}
+			NOT = {
+				has_country_flag = ying_took_rong_thingone
+			}
+		}
+		allow = {
+			OR = {
+				stability = 2
+				AND = {
+					ai = yes
+					stability = 1
+				}
+			}
+			army_size_percentage = 1
+			YLR = {
+				owns = 4371
+			}
+			CMS = {
+				owns = 4365
+				owns = 6012
+			}
+
+		}
+		effect = {
+			add_core = 4371
+			add_core = 4365
+			add_core = 6012
+			add_manpower = 5
+			add_army_tradition = 10
+			set_country_flag = ying_took_rong_thingone
+		}
+		ai_importance = 400
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ying_attack_rong_second = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			tag = YIN
+			exists = JIN
+			exists = LHR
+			LHR = {
+				is_subject_of = JIN
+			}
+			NOT = {
+				has_country_flag = ying_took_rong_thingtwo
+			}
+			has_country_flag = ying_took_rong_thingone
+		}
+		allow = {
+			LHR = {
+				is_subject_of = JIN
+			}
+			owns_core_province = 4371
+			owns_core_province = 6012
+			owns_core_province = 4365
+			alliance_with = JIN
+			dip_power = 100
+			reverse_has_opinion = {
+				who = ZHO
+				value = 100
+			}
+			JIN = {
+				trust = { who = YIN value = 70 }
+				owes_favors = {
+					who = YIN
+					value = 50
+				}
+			}
+		}
+		effect = {
+			inherit = LHR
+			add_dip_power = -100
+			set_country_flag = ying_took_rong_thingtwo
+			4370 = {
+				add_core = YIN
+				add_province_modifier = {
+					name = ying_culture_boost
+					duration = 7300
+				}
+			}
+			4364 = {
+				add_core = YIN
+				add_province_modifier = {
+					name = ying_culture_boost
+					duration = 7300
+				}
+			}
+			4601 = {
+				add_core = YIN
+				add_province_modifier = {
+					name = ying_culture_boost
+					duration = 7300
+				}
+			}
+			4365 = {
+				add_province_modifier = {
+					name = ying_culture_boost
+					duration = 7300
+				}
+			}
+			4371 = {
+				add_province_modifier = {
+					name = ying_culture_boost
+					duration = 7300
+				}
+			}
+
+		}
+		ai_importance = 500
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	qin_unique_king = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			tag = QIN
+			religion = liyuebadao
+			NOT = {
+				has_country_flag = zhuxiatouxian_wang
+			}
+		}
+		allow = {
+			stability = 3
+			legitimacy = 95
+			army_size_percentage = 1
+			is_at_war = no
+			has_global_flag = zhanguokaishi
+		}
+		effect = {
+			set_country_flag = zhuxiatouxian_wang
+			add_prestige = 25
+			add_splendor = 100
+			add_country_modifier = {
+				name = qin_declared_king
+				duration = 5475
+			}
+		}
+		ai_importance = 600
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	kui_claims_wang = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			tag = KUI
+			NOT = {
+				has_country_flag = zhuxiatouxian_wang
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			total_development = 50
+		}
+		effect = {
+			set_country_flag = zhuxiatouxian_wang
+			add_prestige = 25
+		}
+		ai_importance = 400
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	chu_reclaims_wang = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			tag = CHU
+			NOT = {
+				has_country_flag = zhuxiatouxian_wang
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			total_development = 350
+			prestige = 20
+		}
+		effect = {
+			set_country_flag = zhuxiatouxian_wang
+			add_prestige = 30
+			add_legitimacy = 30
+		}
+		ai_importance = 400
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#this may possibly be removed once Zhou's mission tree is made by Zhuge
+	zhou_free_yuan = {
+		potential = {
+			tag = ZHO
+			is_year = 9999
+			NOT = {
+				exists = YUA
+			}
+			NOT = {
+				start_date = 87.1.1
+			}
+			exists = JIN
+			NOT = {
+				march_of = JIN
+			}
+			is_vassal = no
+			NOT = {
+				has_country_flag = zho_freed_yuan_flag
+			}
+		}
+		allow = {
+			alliance_with = JIN
+			JIN = {
+				trust = {
+					WHO = ZHO
+					value = 99
+				}
+				owes_favors = {
+					WHO = ZHO
+					value = 99
+				}
+			}
+			is_at_war = no
+			4126 = {
+				owned_by = JIN
+			}
+		}
+		effect = {
+			set_country_flag = zho_freed_yuan_flag
+			add_favors = {
+				WHO = JIN
+				amount = -50
+			}
+			JIN = {
+				add_trust = {
+					WHO = ZHO
+					value = -45
+				}
+				release = YUA
+			}
+			vassalize = YUA
+			add_historical_friend = YUA
+			YUA = {
+				add_historical_friend = ZHO
+			}
+			add_trust = {
+				who = YUA
+				value = 75
+				mutual = yes
+			}
+		}
+	}
+
+	zhulou_to_zhu = {
+		potential = {
+			tag = ZHU
+			ai = no
+			NOT = {
+				is_year = 143
+			}
+			NOT = {
+				has_country_flag = set_new_zhulou_name
+			}
+		}
+		allow = {
+
+		}
+		effect = {
+			set_country_flag = set_new_zhulou_name
+			override_country_name = zhulou_to_zhu
+		}
+	}
+
+	RD_badao_convert = {
+		major = yes
+		color = { 246 59 59 }
+		potential = {
+			is_council_enabled = yes
+			is_all_concessions_in_council_taken = no
+			religion = chinese_religion
+			is_emperor = no
+			is_papal_controller = no
+			NOT = {
+				tag = ZHO
+			}
+			NOT = {
+				tag = ZHG
+			}
+		}
+		allow = {
+			years_of_income = 1
+			total_development = 250
+			prestige = ZHO
+			is_subject = no
+			emperor = {
+				NOT = {
+					prestige = ROOT
+				}
+			}
+			hidden_trigger = {
+				if = {
+					limit = {
+						ai = yes
+					}
+					personality = ai_militarist
+				}
+			}
+			if = {
+				limit = {
+					ai = no
+				}
+				emperor = {
+					war_with = ROOT
+					NOT = {
+						war_score_against = {
+							who = ROOT
+							value = -10
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			change_religion = liyuebadao
+			capital_scope = {
+				change_religion = liyuebadao
+			}
+			country_event = {
+				id = chinese_school_events.1
+				days = 1
+			}
+			add_legitimacy = -20
+		}
+
+		ai_importance = 400
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				emperor = {
+					alliance_with = ROOT
+				}
+			}
+		}
+	}
+
+	clear_yunmeng_dec = {
+		potential = {
+			any_owned_province = {
+				has_province_modifier = yunmeng_marsh_mod
+			}
+			NOT = {
+				has_country_flag = yunmeng_deciding_decision
+			}
+		}
+		allow = {
+			manpower = 5
+			treasury = 150
+		}
+		effect = {
+			set_country_flag = yunmeng_deciding_decision
+			country_event = { id = china.113 }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					manpower = 25
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					treasury = 550
+				}
+			}
+		}
+	}
+
+	zhu_to_zhulou = {
+		potential = {
+			tag = ZHU
+			ai = no
+			has_country_flag = set_new_zhulou_name
+		}
+		allow = {
+
+		}
+		effect = {
+			clr_country_flag = set_new_zhulou_name
+			restore_country_name = yes
+		}
+	}
+
+	huaiyi_states_restore_culture = {
+		potential = {
+			NOT = {
+				has_country_flag = huaiyi_states_restore_culture_flag
+			}
+			OR = {
+				tag = LIU
+				tag = LAO
+				tag = YIC
+			}
+			primary_culture = huaiyi
+			NOT = {
+				start_date = 87.1.1
+			}
+		}
+		allow = {
+			dip_power = 100
+			stability = 1
+			is_at_war = no
+			is_subject = no
+		}
+		effect = {
+			add_dip_power = -100
+			set_country_flag = huaiyi_states_restore_culture_flag
+			change_primary_culture = jianghan
+			change_religion = chinese_religion #in case they flip to wu
+			#swap_free_idea_group = yes
+			set_in_empire = yes
+			if = {
+				limit = {
+					NOT = {
+						has_reform = free_city
+					}
+				}
+				add_government_reform = chinese_feudalism_reform
+			}
+			capital_scope = {
+				change_culture = jianghan
+			}
+		}
+
+		ai_importance = 250
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	luo_take_neighbor_prov = {
+		potential = {
+			tag = LUO
+			NOT = {
+				owns = 7946
+			}
+			NOT = {
+				has_country_flag = luo_did_take_neigh_prov
+			}
+		}
+		allow = {
+			stability = 1
+			is_subject = no
+			is_at_war = no
+			dip_power = 20
+		}
+		effect = {
+			add_dip_power = -20
+			set_country_flag = luo_did_take_neigh_prov
+			7946 = {
+				add_core = LUO
+			}
+		}
+
+		ai_importance = 400
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bii_uncolonized_expand = {
+		potential = {
+			tag = BII
+			NOT = {
+				owns = 4486
+			}
+			NOT = {
+				owns = 7983
+			}
+			CHU = {
+				NOT = {
+					has_won_war_against = {
+						who = ROOT
+						max_years_since = 5
+					}
+				}
+			}
+			NOT = {
+				has_country_flag = bii_took_uncolonized
+			}
+			NOT = { start_date = 87.1.1 } #for 87 start date, use new decision
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			mil_power = 50
+			4486 = {
+				is_empty = yes
+			}
+			7983 = {
+				is_empty = yes
+			}
+		}
+		effect = {
+			add_mil_power = -50
+			set_country_flag = bii_took_uncolonized
+			7983 = {
+				cede_province = BII
+				add_core = BII
+				add_local_autonomy = 25
+			}
+			4486 = {
+				cede_province = BII
+				add_core = BII
+				add_local_autonomy = 25
+			}
+		}
+
+		ai_importance = 400
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bii_cores_north = {
+		potential = {
+			tag = BII
+			NOT = {
+				has_country_flag = bii_got_cores
+			}
+			NOT = {
+				owns_core_province = 4464
+			}
+			NOT = {
+				alliance_with = CHU
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4463
+				province_id = 4464
+				province_id = 5923
+				province_id = 5952
+				province_id = 4482
+				province_id = 4484
+				province_id = 4490
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			dip_power = 100
+		}
+		effect = {
+			add_dip_power = -100
+			set_country_flag = bii_got_cores
+			4463 = {
+				add_core = BII
+			}
+			5923 = {
+				add_core = BII
+			}
+			5952 = {
+				add_core = BII
+			}
+			4464 = {
+				add_core = BII
+			}
+			4482 = {
+				add_core = BII
+			}
+			4484 = {
+				add_core = BII
+			}
+			4490 = {
+				add_core = BII
+			}
+		}
+
+		ai_importance = 400
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bii_culture_north = {
+		potential = {
+			tag = BII
+			NOT = {
+				has_country_flag = bii_got_culture
+			}
+			OR = {
+				has_country_flag = bii_got_cores
+				owns = 4464
+			}
+			primary_culture = jingman
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4463
+				province_id = 4464
+				province_id = 5923
+				province_id = 4482
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			dip_power = 250
+			stability = 2
+			4464 = {
+				is_prosperous = yes
+			}
+			owns_core_province = 4463
+			owns_core_province = 4464
+			owns_core_province = 5923
+			owns_core_province = 4482
+		}
+		effect = {
+			add_dip_power = -250
+			set_country_flag = bii_got_culture
+			4463 = {
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			4464 = {
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			5923 = {
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			4482 = {
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			4484 = {
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			set_government_rank = 3
+		}
+
+		ai_importance = 400
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	minister_request_land = {
+		major = yes
+		color = { 144 14 183 }
+		potential = {
+			has_global_flag = jin_partition_started
+			is_subject_of_type = ministerial_clan
+			OR = {
+				NOT = {
+					has_country_flag = minister_recently_asked_for_land
+				}
+				OR = {
+					had_country_flag = {
+						flag = minister_recently_asked_for_land
+						days = 1825
+					}
+					AND = {
+						is_year = 194
+						had_country_flag = {
+							flag = minister_recently_asked_for_land
+							days = 1460
+						}
+					}
+					AND = {
+						is_year = 269
+						had_country_flag = {
+							flag = minister_recently_asked_for_land
+							days = 1095
+						}
+					}
+				}
+			}
+			JIN = {
+				check_variable = {
+					which = minister_resisting_var
+					value = 1
+				}
+			}
+		}
+		allow = {
+			stability = 1
+			mil_power = 100
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = selecting_minister_event
+				}
+			}
+		}
+		effect = {
+			set_country_flag = selecting_minister_event
+			country_event = { id = jin_partition.23 }
+			set_country_flag = minister_recently_asked_for_land
+		}
+
+		ai_importance = 280
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				JIN = {
+					is_in_league_war = yes
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { ruler_has_personality = conqueror_personality }
+					NOT = { mil = 6 }
+				}
+				NOT = {
+					mil_power = 200
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { ruler_has_personality = conqueror_personality }
+					NOT = { mil = 6 }
+				}
+				NOT = {
+					dip_power = 200
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { ruler_has_personality = conqueror_personality }
+					NOT = { mil = 6 }
+				}
+				NOT = {
+					adm_power = 200
+				}
+			}
+			modifier = {
+				factor = 0
+				JIN = {
+					is_at_war = yes
+				}
+				has_opinion = {
+					who = JIN
+					value = 199
+				}
+			}
+			modifier = {
+				factor = 0
+				JIN = {
+					tech_difference = 2
+				}
+			}
+		}
+	}
+
+	jin_reduce_minister_value = {
+		major = yes
+		color = { 144 14 183 }
+		potential = {
+			tag = JIN
+			has_global_flag = jin_partition_started
+			check_variable = {
+				which = minister_resisting_var
+				value = 1
+			}
+		}
+		allow = {
+			stability = 1
+			mil_power = 100
+		}
+		effect = {
+			add_mil_power = -100
+
+			subtract_variable = {
+				which = minister_resisting_var
+				value = 1
+			}
+		}
+
+		ai_importance = 225
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { mil_power = 175 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { mil_power = 300 }
+				NOT = { is_year = 250 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { mil = 6 }
+				NOT = { mil_power = 450 }
+				NOT = { is_year = 190 }
+			}
+		}
+	}
+
+	chu_obtain_zheng_help = {
+		major = yes
+		#color = { 144 14 183 }
+		potential = {
+			tag = CHU
+			NOT = { has_country_flag = chu_got_zheng_help }
+			hre_leagues_enabled = yes
+			is_in_league_war = no
+			NOT = {
+				is_year = 155
+			}
+			NOT = {
+				ZHE = {
+					in_league = liyuebadao
+				}
+			}
+			NOT = {
+				has_country_flag = chu_got_zhe_help
+			}
+		}
+		allow = {
+			owns_core_province = 4372
+			treasury = 100
+			dip_power = 150
+			reverse_has_opinion = {
+				who = ZHE
+				value = 180
+			}
+			army_size = 40
+			NOT = {
+				is_year = 155
+			}
+		}
+		effect = {
+			add_treasury = -100
+			add_dip_power = -150
+			custom_tooltip = chu_get_zheng_league
+			hidden_effect = {
+				every_known_country = {
+					limit = {
+						culture_group = chinese_group
+					}
+					add_aggressive_expansion = {
+						who = ROOT
+						value = 20
+						apply_calc = no
+					}
+				}
+			}
+			set_country_flag = chu_got_zheng_help
+			ZHE = {
+				join_league = liyuebadao
+			}
+		}
+
+		ai_importance = 100
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				ZHE = { ai = no }
+			}
+			modifier = {
+				factor = 0
+				coalition_target = ROOT
+			}
+		}
+	}
+
+	min_increase_minister_value = {
+		major = yes
+		color = { 144 14 183 }
+		potential = {
+			is_subject_of_type = ministerial_clan
+			ai = no
+			has_global_flag = jin_partition_started
+			JIN = {
+				check_variable = {
+					which = minister_resisting_var
+					value = 1
+				}
+			}
+		}
+		allow = {
+			stability = 2
+			dip_power = 200
+			JIN = {
+				NOT = {
+					check_variable = {
+						which = minister_resisting_var
+						value = 15
+					}
+				}
+			}
+		}
+		effect = {
+			add_dip_power = -200
+
+			JIN = {
+				change_variable = {
+					which = minister_resisting_var
+					value = 1
+				}
+			}
+		}
+
+		ai_importance = 200
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	xnc_become_liyue = {
+		potential = {
+			tag = XNC
+			NOT = {
+				religion = chinese_religion
+			}
+			NOT = {
+				has_global_flag = zhanguokaishi
+			}
+			NOT = {
+				has_country_flag = xnc_became_liyue
+			}
+		}
+		allow = {
+			OR = {
+				is_subject = no
+				emperor = {
+					ROOT = {
+						is_subject_of = PREV
+					}
+				}
+			}
+			dip_power = 250
+			adm_power = 100
+			stability = 1
+			4474 = {
+				is_prosperous = yes
+			}
+			OR = {
+				emperor = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+				ZHO = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+		}
+		effect = {
+			add_dip_power = -250
+			add_adm_power = -100
+			set_country_flag = xnc_became_liyue
+			change_primary_culture = nanchu
+			change_religion = chinese_religion
+			country_event = {
+				id = chinese_school_events.1
+				days = 1
+			}
+			change_technology_group = far_eastern
+			change_unit_type = far_eastern
+			capital_scope = {
+				change_culture = nanchu
+				change_religion = chinese_religion
+			}
+			set_in_empire = yes
+		}
+
+		ai_importance = 500
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	xnc_get_yufang = {
+		potential = {
+			tag = XNC
+			religion = chinese_religion
+			NOT = {
+				has_global_flag = zhanguokaishi
+			}
+			NOT = {
+				has_country_flag = xnc_got_yufang
+			}
+		}
+		allow = {
+			is_at_war = no
+			OR = {
+				emperor = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+				ZHO = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+			}
+			owns = 4476
+			OR = {
+				owns = 4417
+				alliance_with = SYG
+			}
+			OR = {
+				owns = 4413
+				alliance_with = SJG
+			}
+			OR = {
+				AND = {
+					owns = 8700
+					owns = 4424
+				}
+				alliance_with = SLG
+			}
+			OR = {
+				AND = {
+					owns = 4414
+					owns = 4416
+					owns = 4415
+				}
+				alliance_with = SHK
+			}
+			NOT = {
+				owns = 4410
+			}
+			NOT = {
+				owns = 8699
+			}
+			NOT = {
+				owns = 4400
+			}
+			NOT = {
+				owns = 4421
+			}
+			NOT = {
+				owns = 4384
+			}
+			NOT = {
+				owns = 4470
+			}
+			NOT = {
+				owns = 4402
+			}
+		}
+		effect = {
+			clr_country_flag = zhuxiatouxian_Zi
+			set_country_flag = zhuxiatouxian_YuFang
+			set_country_flag = xnc_got_yufang
+			add_prestige = 10
+			set_government_rank = 3
+			add_country_modifier = {
+				name = xnc_yufang_mod
+				duration = -1
+			}
+		}
+
+		ai_importance = 500
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	gujiao_restore_culture = {
+		potential = {
+			tag = JIO
+			primary_culture = jingman
+			NOT = {
+				has_country_flag = guwjio_did_culture
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			mil_power = 50
+		}
+		effect = {
+			add_mil_power = -50
+			change_primary_culture = jingman
+			change_religion = wuism
+			capital_scope = {
+				change_culture = jingman
+				change_religion = wuism
+			}
+			add_prestige = 10
+			set_country_flag = guwjio_did_culture
+		}
+
+		ai_importance = 400
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	luo_take_old_homeland = {
+		potential = {
+			tag = LUO
+			owns_core_province = 7946
+			NOT = {
+				owns = 4460
+			}
+			NOT = {
+				has_country_flag = luo_did_take_old_homeland
+			}
+		}
+		allow = {
+			prestige = 10
+			is_subject = no
+			is_at_war = no
+		}
+		effect = {
+			add_manpower = 2
+			add_army_tradition = 5
+			set_country_flag = luo_did_take_old_homeland
+			4460 = {
+				add_core = LUO
+			}
+		}
+
+		ai_importance = 400
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
