@@ -10,38 +10,12 @@ base_tax = 15
 base_production = 1
 base_manpower = 1
 is_city = yes
-set_variable = { 
-	which = gcj
-	value = 1
-}
 discovered_by = indian
 discovered_by = muslim
 discovered_by = steppestech
 discovered_by = YUA
 discovered_by = ottoman
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 40.000
-	}
 }
 450.1.1 = { 
-	set_province_flag = TN_Minor
-	set_province_flag = TN_Port
-	set_variable = { 
-		which = baf
-		value = 64
-	}
-	set_variable = { 
-		which = acp
-		value = 6
-	}
-	add_permanent_province_modifier = { 
-		name = rajpipla_state
-		duration = -1
-	}
-	add_permanent_province_modifier = { 
-		name = urban_goods_metalwork
-		duration = -1
-	}
 }

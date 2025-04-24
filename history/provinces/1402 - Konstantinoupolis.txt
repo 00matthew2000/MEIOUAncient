@@ -10,33 +10,8 @@ base_tax = 7
 base_production = 10
 base_manpower = 2
 is_city = yes
-set_province_flag = small_university
 fort_15th = yes
 theodosian_walls_b = yes
-set_variable = { 
-	which = gcn
-	value = 2
-}
-set_variable = { 
-	which = gcj
-	value = 2
-}
-set_variable = { 
-	which = gcl
-	value = 1
-}
-set_variable = { 
-	which = gci
-	value = 2
-}
-set_variable = { 
-	which = gch
-	value = 2
-}
-set_variable = { 
-	which = gck
-	value = 2
-}
 discovered_by = western
 discovered_by = eastern
 discovered_by = byzantine
@@ -45,25 +20,6 @@ discovered_by = ottoman
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 102.047
-	}
-	set_province_flag = orthodox_patriarchate
-	set_variable = { 
-		which = pza
-		value = 100
-	}
-	set_province_flag = TN_Major
-	set_province_flag = TN_Port
-	set_province_flag = TN_Golden
-	set_province_flag = TN_Harbour_Major
-	set_province_flag = TN_Natural_Major
-	set_province_flag = TN_Silk
-	set_variable = { 
-		which = acp
-		value = 6
-	}
 	add_claim = BUL
 }
 500.1.1 = { 
@@ -72,8 +28,4 @@ discovered_by = YUA
 	add_province_triggered_modifier = theodosian_walls_3cannons
 	add_province_triggered_modifier = theodosian_walls_4cannons
 	add_province_triggered_modifier = theodosian_walls_5cannons
-	add_permanent_province_modifier = { 
-		name = urban_goods_cloth
-		duration = -1
-	}
 }

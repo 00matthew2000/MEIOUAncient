@@ -13,14 +13,7 @@ is_city = yes
 discovered_by = indian
 discovered_by = muslim
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 5
-	}
-	set_province_flag = vanilla
 }
 1356.1.1 = { 
 	add_core = BIJ
-	set_province_flag = add_local_autonomy_25
-	set_province_flag = iron
 }

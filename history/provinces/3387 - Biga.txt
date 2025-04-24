@@ -10,22 +10,6 @@ base_tax = 4
 base_production = 0
 base_manpower = 0
 is_city = yes
-set_variable = { 
-	which = gci
-	value = 1
-}
-set_variable = { 
-	which = gch
-	value = 2
-}
-set_variable = { 
-	which = gcn
-	value = 2
-}
-set_variable = { 
-	which = gck
-	value = 1
-}
 discovered_by = western
 discovered_by = eastern
 discovered_by = byzantine
@@ -34,21 +18,7 @@ discovered_by = ottoman
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 3.417
-	}
-	set_province_flag = TN_Silk
-	set_province_flag = TN_Minor
-	set_variable = { 
-		which = acp
-		value = 4
-	}
-	set_province_flag = mined_goods
-	set_province_flag = marble
-	set_province_flag = wine
 }
 1356.1.1 = { 
 	add_claim = OTT
-	set_province_flag = add_local_autonomy_15
 }

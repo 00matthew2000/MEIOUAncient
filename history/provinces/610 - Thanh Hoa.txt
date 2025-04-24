@@ -16,14 +16,4 @@ discovered_by = southeast_asian
 discovered_by = indian
 discovered_by = muslim
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 3.500
-	}
-	set_province_flag = TN_Minor
-	set_variable = { 
-		which = acp
-		value = 3
-	}
-	set_province_flag = tin
 }

@@ -6,26 +6,6 @@ hre = no
 base_tax = 5
 base_production = 0
 base_manpower = 0
-set_variable = { 
-	which = gch
-	value = 1
-}
-set_variable = { 
-	which = gck
-	value = 1
-}
 discovered_by = mesoamerican
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 2.500
-	}
-	set_province_flag = TN_Minor
-	set_province_flag = TN_Port
-	set_variable = { 
-		which = acp
-		value = 3.5
-	}
-	set_province_flag = cacao
-	set_province_flag = gems
 }

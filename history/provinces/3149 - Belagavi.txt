@@ -10,21 +10,9 @@ base_tax = 30
 base_production = 0
 base_manpower = 3
 is_city = yes
-set_variable = { 
-	which = gcn
-	value = 1
-}
-set_variable = { 
-	which = gck
-	value = 1
-}
 discovered_by = indian
 discovered_by = muslim
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 6
-	}
 }
 1356.1.1 = { 
 	add_core = BIJ

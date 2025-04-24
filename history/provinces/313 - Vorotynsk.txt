@@ -6,25 +6,8 @@ hre = no
 base_tax = 13
 base_production = 0
 base_manpower = 1
-set_variable = { 
-	which = gcn
-	value = 1
-}
-set_variable = { 
-	which = gch
-	value = 1
-}
 native_size = 20
 native_ferocity = 1
 native_hostileness = 8
 450.1.1 = { 
-	set_province_flag = TN_Minor
-	set_variable = { 
-		which = ami
-		value = 2.500
-	}
-	set_variable = { 
-		which = acp
-		value = 4
-	}
 }

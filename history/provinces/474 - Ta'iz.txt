@@ -19,23 +19,8 @@ discovered_by = ottoman
 discovered_by = indian
 discovered_by = east_african
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 60.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 1.500
-	}
-	set_province_flag = TN_Minor
-	set_variable = { 
-		which = acp
-		value = 4.5
-	}
-	set_province_flag = coffee
-	set_province_flag = seasalt
 }
 1356.1.1 = { 
 	discovered_by = ADA

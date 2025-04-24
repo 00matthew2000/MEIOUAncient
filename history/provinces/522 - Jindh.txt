@@ -10,32 +10,10 @@ base_tax = 49
 base_production = 3
 base_manpower = 5
 is_city = yes
-set_variable = { 
-	which = gcj
-	value = 2
-}
-set_variable = { 
-	which = gcn
-	value = 1
-}
-set_variable = { 
-	which = gck
-	value = 2
-}
 discovered_by = indian
 discovered_by = muslim
 discovered_by = steppestech
 discovered_by = YUA
 discovered_by = ottoman
 450.1.1 = { 
-	set_province_flag = TN_Important
-	set_variable = { 
-		which = baf
-		value = 70
-	}
-	set_variable = { 
-		which = acp
-		value = 7
-	}
-	set_province_flag = sugar
 }

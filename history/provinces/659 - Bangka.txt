@@ -17,17 +17,6 @@ discovered_by = southeast_asian
 discovered_by = indian
 discovered_by = austranesian
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 1.500
-	}
-	set_province_flag = TN_Minor
-	set_variable = { 
-		which = acp
-		value = 2.5
-	}
 }
 1356.1.1 = { 
-	set_province_flag = mined_goods
-	set_province_flag = tin
 }

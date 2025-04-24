@@ -10,32 +10,11 @@ base_tax = 2
 base_production = 0
 base_manpower = 0
 is_city = yes
-set_variable = { 
-	which = gcn
-	value = 1
-}
-set_variable = { 
-	which = gck
-	value = 1
-}
 discovered_by = eastern
 discovered_by = byzantine
 discovered_by = western
 discovered_by = muslim
 450.1.1 = { 
-	set_variable = { 
-		which = baf
-		value = 1
-	}
-	add_permanent_province_modifier = { 
-		name = Teuton_Commandery_High
-		duration = -1
-	}
-	add_permanent_province_modifier = { 
-		name = Knights_Commandery_Low
-		duration = -1
-	}
-	set_province_flag = wine
 }
 1324.1.1 = { 
 	owner = HAB
@@ -43,100 +22,4 @@ discovered_by = muslim
 	add_core = HAB
 }
 100.1.1 = { 
-	set_variable = { 
-		which = amj
-		value = 29.998
-	}
-	set_variable = { 
-		which = amk
-		value = 0.000
-	}
-	set_variable = { 
-		which = amh
-		value = 29.998
-	}
-	set_variable = { 
-		which = ami
-		value = 0.000
-	}
-	set_variable = { 
-		which = amf
-		value = 20.624
-	}
-	set_variable = { 
-		which = amg
-		value = 0.000
-	}
-	set_variable = { 
-		which = amd
-		value = 24.373
-	}
-	set_variable = { 
-		which = ame
-		value = 0.000
-	}
-	set_variable = { 
-		which = amb
-		value = 27.123
-	}
-	set_variable = { 
-		which = amc
-		value = 1.000
-	}
-	set_variable = { 
-		which = alz
-		value = 29.435
-	}
-	set_variable = { 
-		which = ama
-		value = 1.500
-	}
-	set_variable = { 
-		which = alx
-		value = 32.685
-	}
-	set_variable = { 
-		which = aly
-		value = 2.000
-	}
-	set_variable = { 
-		which = alv
-		value = 36.872
-	}
-	set_variable = { 
-		which = alw
-		value = 2.500
-	}
-	set_variable = { 
-		which = alt
-		value = 38.247
-	}
-	set_variable = { 
-		which = alu
-		value = 3.000
-	}
-	set_variable = { 
-		which = alr
-		value = 60.211
-	}
-	set_variable = { 
-		which = als
-		value = 3.500
-	}
-	set_variable = { 
-		which = alp
-		value = 95.598
-	}
-	set_variable = { 
-		which = alq
-		value = 4.000
-	}
-	set_variable = { 
-		which = aho
-		value = 156.506
-	}
-	set_variable = { 
-		which = ahp
-		value = 8.000
-	}
 }

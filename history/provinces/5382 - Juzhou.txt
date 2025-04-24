@@ -9,18 +9,6 @@ base_tax = 50
 base_production = 0
 base_manpower = 2
 is_city = yes
-set_variable = { 
-	which = gci
-	value = 1
-}
-set_variable = { 
-	which = gch
-	value = 2
-}
-set_variable = { 
-	which = gck
-	value = 3
-}
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -28,14 +16,6 @@ discovered_by = southeast_asian
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_variable = { 
-		which = baf
-		value = 101
-	}
-	set_variable = { 
-		which = acp
-		value = 6.5
-	}
 }
 1276.1.1 = { 
 	owner = YUA

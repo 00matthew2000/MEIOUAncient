@@ -9,19 +9,9 @@ base_tax = 20
 base_production = 0
 base_manpower = 1
 is_city = yes
-set_variable = { 
-	which = gcn
-	value = 1
-}
 discovered_by = indian
 discovered_by = muslim
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 5.5
-	}
-	set_province_flag = mined_goods
-	set_province_flag = gold
 }
 1336.1.1 = { 
 	owner = VIJ

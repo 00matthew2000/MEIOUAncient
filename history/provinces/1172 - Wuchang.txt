@@ -9,27 +9,6 @@ base_tax = 28
 base_production = 9
 base_manpower = 3
 is_city = yes
-set_variable = { 
-	which = gci
-	value = 2
-}
-set_variable = { 
-	which = gch
-	value = 3
-}
-set_variable = { 
-	which = gcj
-	value = 3
-}
-set_variable = { 
-	which = gck
-	value = 3
-}
-set_variable = { 
-	which = gcl
-	value = 1
-}
-set_province_flag = small_university
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -37,27 +16,6 @@ discovered_by = southeast_asian
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_province_flag = iron
-	set_province_flag = TN_Major
-	set_variable = { 
-		which = baf
-		value = 87
-	}
-	set_province_flag = TN_Natural_Important
-	set_variable = { 
-		which = acp
-		value = 5.5
-	}
-	set_province_flag = salt
-	add_permanent_province_modifier = { 
-		name = urban_goods_silk
-		duration = -1
-	}
-	add_permanent_province_modifier = { 
-		name = urban_goods_metalwork
-		duration = -1
-	}
-	set_province_flag = TN_RiverJumpB
 }
 1231.1.1 = { 
 	owner = YUA

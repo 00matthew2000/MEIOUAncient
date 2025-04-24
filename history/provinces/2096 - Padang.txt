@@ -10,14 +10,6 @@ base_tax = 7
 base_production = 2
 base_manpower = 1
 is_city = yes
-set_variable = { 
-	which = gci
-	value = 2
-}
-set_variable = { 
-	which = gcj
-	value = 2
-}
 fort_14th = yes
 discovered_by = chinese
 discovered_by = japanese
@@ -26,21 +18,8 @@ discovered_by = southeast_asian
 discovered_by = indian
 discovered_by = austranesian
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 60.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 3
-	}
-	set_province_flag = TN_Harbour_Minor
-	set_province_flag = TN_Natural_Important
 }
 1111.1.1 = { 
-	set_province_flag = mined_goods
-	set_province_flag = gold
-	set_province_flag = spices
 }

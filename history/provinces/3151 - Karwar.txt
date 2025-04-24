@@ -14,11 +14,6 @@ fort_14th = yes
 discovered_by = indian
 discovered_by = muslim
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 5
-	}
-	set_province_flag = vanilla
 }
 1356.1.1 = { 
 	add_core = BIJ

@@ -16,15 +16,6 @@ discovered_by = southeast_asian
 discovered_by = indian
 discovered_by = austranesian
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 100.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 1.5
-	}
-	set_province_flag = spices
 }

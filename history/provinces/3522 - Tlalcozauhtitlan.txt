@@ -10,14 +10,6 @@ native_size = 55
 native_ferocity = 5
 native_hostileness = 8
 is_city = yes
-set_variable = { 
-	which = gck
-	value = 1
-}
 discovered_by = mesoamerican
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 5.5
-	}
 }

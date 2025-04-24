@@ -16,8 +16,4 @@ discovered_by = southeast_asian
 discovered_by = indian
 discovered_by = austranesian
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 2.5
-	}
 }

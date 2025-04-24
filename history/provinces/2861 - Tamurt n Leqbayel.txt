@@ -18,26 +18,8 @@ discovered_by = ottoman
 discovered_by = soudantech
 discovered_by = MAL
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 30.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 3.000
-	}
-	set_province_flag = TN_Minor
-	set_variable = { 
-		which = acp
-		value = 3.5
-	}
-	set_variable = { 
-		which = atc
-		value = 10.000
-	}
-	set_province_flag = olive
 }
 1337.1.1 = { 
 	owner = FEZ

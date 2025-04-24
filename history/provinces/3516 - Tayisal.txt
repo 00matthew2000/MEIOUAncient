@@ -10,34 +10,6 @@ base_tax = 12
 base_production = 0
 base_manpower = 0
 is_city = yes
-set_variable = { 
-	which = gcj
-	value = 1
-}
-set_variable = { 
-	which = gch
-	value = 2
-}
 discovered_by = mesoamerican
 450.1.1 = { 
-	set_province_flag = TN_Minor
-	set_province_flag = TN_Natural_Minor
-	set_province_flag = TN_RiverNat
-	set_variable = { 
-		which = ami
-		value = 6.000
-	}
-	set_variable = { 
-		which = amh
-		value = 24.000
-	}
-	set_variable = { 
-		which = baf
-		value = 45
-	}
-	set_variable = { 
-		which = acp
-		value = 4.5
-	}
-	set_province_flag = cacao
 }

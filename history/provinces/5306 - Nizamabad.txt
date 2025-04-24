@@ -10,17 +10,9 @@ base_tax = 20
 base_production = 0
 base_manpower = 1
 is_city = yes
-set_variable = { 
-	which = gck
-	value = 2
-}
 discovered_by = indian
 discovered_by = muslim
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 6.5
-	}
 }
 1356.1.1 = { 
 	add_core = GOC

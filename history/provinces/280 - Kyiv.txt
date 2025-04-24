@@ -10,26 +10,6 @@ base_tax = 6
 base_production = 1
 base_manpower = 1
 is_city = yes
-set_variable = { 
-	which = gcj
-	value = 1
-}
-set_variable = { 
-	which = gch
-	value = 2
-}
-set_variable = { 
-	which = gcn
-	value = 2
-}
-set_variable = { 
-	which = gci
-	value = 1
-}
-set_variable = { 
-	which = gck
-	value = 1
-}
 discovered_by = eastern
 discovered_by = byzantine
 discovered_by = western
@@ -38,22 +18,6 @@ discovered_by = YUA
 discovered_by = ottoman
 discovered_by = muslim
 450.1.1 = { 
-	set_province_flag = orthodox_metropolitan
-	set_variable = { 
-		which = pza
-		value = 35
-	}
-	set_province_flag = TN_Major
-	set_province_flag = TN_Port
-	set_variable = { 
-		which = baf
-		value = 12
-	}
-	set_province_flag = TN_Natural_Important
-	set_variable = { 
-		which = acp
-		value = 5
-	}
 }
 1356.1.1 = { 
 	add_permanent_claim = LIT

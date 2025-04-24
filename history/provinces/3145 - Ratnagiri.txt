@@ -14,20 +14,7 @@ fort_14th = yes
 discovered_by = indian
 discovered_by = muslim
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 2.500
-	}
-	set_province_flag = TN_Minor
-	set_variable = { 
-		which = acp
-		value = 5.5
-	}
-	set_province_flag = iron
-	set_province_flag = sugar
-	set_province_flag = spices
 }
 1356.1.1 = { 
 	add_core = BIJ
-	set_province_flag = add_local_autonomy_25
 }

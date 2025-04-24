@@ -10,10 +10,6 @@ base_tax = 1
 base_production = 0
 base_manpower = 0
 is_city = yes
-set_variable = { 
-	which = gci
-	value = 1
-}
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -22,17 +18,6 @@ discovered_by = indian
 discovered_by = muslim
 discovered_by = austranesian
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 5.000
-	}
-	set_province_flag = TN_Important
-	set_province_flag = TN_Port
-	set_variable = { 
-		which = acp
-		value = 3
-	}
-	set_province_flag = fruits
 }
 1356.1.1 = { 
 	add_core = MLC

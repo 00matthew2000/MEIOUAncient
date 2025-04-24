@@ -10,23 +10,6 @@ base_tax = 16
 base_production = 0
 base_manpower = 1
 is_city = yes
-set_variable = { 
-	which = gci
-	value = 1
-}
-set_variable = { 
-	which = gck
-	value = 6
-}
 discovered_by = south_american
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 4
-	}
-	set_province_flag = cotton
-	set_variable = { 
-		which = ami
-		value = 5.000
-	}
 }

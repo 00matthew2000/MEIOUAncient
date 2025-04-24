@@ -17,19 +17,8 @@ discovered_by = southeast_asian
 discovered_by = steppestech
 discovered_by = YUA
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 80.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 4
-	}
-	set_province_flag = mined_goods
-	set_province_flag = iron
-	set_province_flag = spices
 }
 967.1.1 = { 
 	owner = SNG
@@ -45,8 +34,6 @@ discovered_by = YUA
 	controller = YUA
 	add_core = YUA
 	remove_core = SNG
-	set_province_flag = mined_goods
-	set_province_flag = silver
 }
 1274.1.1 = { 
 	owner = LNG

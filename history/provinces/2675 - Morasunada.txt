@@ -13,20 +13,9 @@ is_city = yes
 discovered_by = indian
 discovered_by = muslim
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 20.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 5.5
-	}
-	set_province_flag = mined_goods
-	set_province_flag = iron
 }
 1356.1.1 = { 
 	add_core = MYS
-	set_province_flag = add_local_autonomy_25
 }

@@ -10,10 +10,6 @@ base_tax = 69
 base_production = 0
 base_manpower = 3
 is_city = yes
-set_variable = { 
-	which = gck
-	value = 2
-}
 discovered_by = indian
 discovered_by = muslim
 discovered_by = chinese
@@ -23,15 +19,6 @@ discovered_by = southeast_asian
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_variable = { 
-		which = baf
-		value = 66
-	}
-	set_variable = { 
-		which = acp
-		value = 8
-	}
-	set_province_flag = fruits
 }
 1338.1.1 = { 
 	add_core = DLH

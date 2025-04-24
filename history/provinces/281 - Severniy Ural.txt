@@ -7,22 +7,6 @@ base_tax = 1
 base_production = 0
 base_manpower = 0
 200.1.1 = { 
-	set_variable = { 
-		which = abb
-		value = 80.000
-	}
-	set_variable = { 
-		which = atc
-		value = 100.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 1.5
-	}
-	set_variable = { 
-		which = baf
-		value = 114
-	}
 }

@@ -9,18 +9,6 @@ base_tax = 24
 base_production = 0
 base_manpower = 1
 is_city = yes
-set_variable = { 
-	which = gcj
-	value = 2
-}
-set_variable = { 
-	which = gci
-	value = 1
-}
-set_variable = { 
-	which = gck
-	value = 2
-}
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -28,18 +16,6 @@ discovered_by = southeast_asian
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_province_flag = TN_Minor
-	set_variable = { 
-		which = baf
-		value = 104
-	}
-	set_province_flag = TN_RiverSea
-	set_province_flag = TN_Natural_Minor
-	set_variable = { 
-		which = acp
-		value = 7
-	}
-	set_province_flag = saltmarsh
 }
 1276.1.1 = { 
 	owner = YUA

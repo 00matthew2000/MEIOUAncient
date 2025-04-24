@@ -12,15 +12,5 @@ native_hostileness = 6
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 5.500
-	}
-	set_province_flag = TN_Important
-	set_variable = { 
-		which = acp
-		value = 3.5
-	}
-	set_province_flag = honey
 }
 

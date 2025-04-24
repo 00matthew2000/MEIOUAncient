@@ -12,12 +12,4 @@ base_manpower = 2
 is_city = yes
 discovered_by = mesoamerican
 450.1.1 = { 
-	set_variable = { 
-		which = amh
-		value = 90.000
-	}
-	set_variable = { 
-		which = ami
-		value = 10.000
-	}
 }

@@ -9,34 +9,7 @@ base_tax = 2
 base_production = 0
 base_manpower = 1
 is_city = yes
-set_variable = { 
-	which = gci
-	value = 1
-}
-set_variable = { 
-	which = gcj
-	value = 1
-}
-set_variable = { 
-	which = gcn
-	value = 1
-}
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_province_flag = TN_Minor
-	set_province_flag = TN_Port
-	set_variable = { 
-		which = ami
-		value = 5.000
-	}
-	set_variable = { 
-		which = baf
-		value = 12
-	}
-	set_province_flag = TN_RiverJoint
-	set_variable = { 
-		which = acp
-		value = 3.5
-	}
 }

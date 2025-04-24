@@ -16,16 +16,6 @@ discovered_by = tibetan
 discovered_by = southeast_asian
 discovered_by = indian
 450.1.1 = { 
-	set_variable = { 
-		which = baf
-		value = 79
-	}
-	set_variable = { 
-		which = acp
-		value = 3.5
-	}
-	set_province_flag = TN_Important
-	set_province_flag = fruits
 }
 1313.2.7 = { 
 	owner = PIN

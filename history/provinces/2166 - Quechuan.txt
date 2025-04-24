@@ -8,9 +8,4 @@ native_size = 5
 native_ferocity = 4
 native_hostileness = 8
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 2.5
-	}
-	set_province_flag = copper
 }

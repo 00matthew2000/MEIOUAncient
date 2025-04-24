@@ -9,8 +9,4 @@ base_manpower = 0
 discovered_by = indian
 discovered_by = muslim
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 6.5
-	}
 }

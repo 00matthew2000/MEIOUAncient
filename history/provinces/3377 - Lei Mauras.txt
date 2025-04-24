@@ -10,30 +10,12 @@ base_tax = 15
 base_production = 0
 base_manpower = 0
 is_city = yes
-set_variable = { 
-	which = gcn
-	value = 1
-}
-set_variable = { 
-	which = gcj
-	value = 1
-}
-set_variable = { 
-	which = gch
-	value = 2
-}
 discovered_by = eastern
 discovered_by = byzantine
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 450.1.1 = { 
-	set_province_flag = TN_Important
-	set_province_flag = TN_Port
-	set_province_flag = TN_Harbour_Major
-	set_province_flag = TN_Natural_Minor
-	set_province_flag = olive
-	set_province_flag = saltmarsh
 }
 1356.1.1 = { 
 	add_permanent_claim = ANJ
@@ -41,100 +23,4 @@ discovered_by = ottoman
 	add_permanent_claim = ARA
 }
 100.1.1 = { 
-	set_variable = { 
-		which = amj
-		value = 153.951
-	}
-	set_variable = { 
-		which = amk
-		value = 9.000
-	}
-	set_variable = { 
-		which = amh
-		value = 153.701
-	}
-	set_variable = { 
-		which = ami
-		value = 9.250
-	}
-	set_variable = { 
-		which = amf
-		value = 102.529
-	}
-	set_variable = { 
-		which = amg
-		value = 9.500
-	}
-	set_variable = { 
-		which = amd
-		value = 121.648
-	}
-	set_variable = { 
-		which = ame
-		value = 10.750
-	}
-	set_variable = { 
-		which = amb
-		value = 140.767
-	}
-	set_variable = { 
-		which = amc
-		value = 12.000
-	}
-	set_variable = { 
-		which = alz
-		value = 151.294
-	}
-	set_variable = { 
-		which = ama
-		value = 16.750
-	}
-	set_variable = { 
-		which = alx
-		value = 166.913
-	}
-	set_variable = { 
-		which = aly
-		value = 21.500
-	}
-	set_variable = { 
-		which = alv
-		value = 181.124
-	}
-	set_variable = { 
-		which = alw
-		value = 32.750
-	}
-	set_variable = { 
-		which = alt
-		value = 164.058
-	}
-	set_variable = { 
-		which = alu
-		value = 60.000
-	}
-	set_variable = { 
-		which = alr
-		value = 160.187
-	}
-	set_variable = { 
-		which = als
-		value = 57.000
-	}
-	set_variable = { 
-		which = alp
-		value = 157.519
-	}
-	set_variable = { 
-		which = alq
-		value = 72.000
-	}
-	set_variable = { 
-		which = aho
-		value = 160.596
-	}
-	set_variable = { 
-		which = ahp
-		value = 126.000
-	}
 }

@@ -14,17 +14,6 @@ discovered_by = japanese
 discovered_by = tibetan
 discovered_by = southeast_asian
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 100.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 3
-	}
-	set_province_flag = gold
-	set_province_flag = game
-	set_province_flag = spices
 }

@@ -10,47 +10,12 @@ base_tax = 15
 base_production = 0
 base_manpower = 1
 is_city = yes
-set_variable = { 
-	which = gcj
-	value = 1
-}
-set_variable = { 
-	which = gci
-	value = 1
-}
-set_variable = { 
-	which = gck
-	value = 1
-}
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
 discovered_by = southeast_asian
 450.1.1 = { 
-	set_province_flag = TN_Important
-	set_province_flag = TN_Port
-	set_variable = { 
-		which = ami
-		value = 5.500
-	}
-	set_variable = { 
-		which = acp
-		value = 4.5
-	}
-	set_province_flag = copper
-	add_permanent_province_modifier = { 
-		name = urban_goods_metalwork
-		duration = -1
-	}
-	add_permanent_province_modifier = { 
-		name = urban_goods_naval_supplies
-		duration = -1
-	}
 }
 1356.1.1 = { 
 	add_core = KKZ
-	add_permanent_province_modifier = { 
-		name = kakizaki_daimyo
-		duration = -1
-	}
 }

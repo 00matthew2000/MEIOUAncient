@@ -10,19 +10,9 @@ base_tax = 21
 base_production = 0
 base_manpower = 2
 is_city = yes
-set_variable = { 
-	which = gcn
-	value = 1
-}
 discovered_by = indian
 discovered_by = muslim
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 5
-	}
-	set_province_flag = iron
-	set_province_flag = coal
 }

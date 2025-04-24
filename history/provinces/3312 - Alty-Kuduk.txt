@@ -15,18 +15,6 @@ discovered_by = steppestech
 discovered_by = YUA
 discovered_by = muslim
 200.1.1 = { 
-	set_variable = { 
-		which = abb
-		value = 100.000
-	}
-	set_variable = { 
-		which = atc
-		value = 100.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 1
-	}
 }

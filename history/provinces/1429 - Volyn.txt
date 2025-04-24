@@ -12,14 +12,6 @@ native_hostileness = 6
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 3
-	}
 }
 1356.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 2.000
-	}
 }

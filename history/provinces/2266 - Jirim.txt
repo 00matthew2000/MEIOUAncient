@@ -17,25 +17,8 @@ discovered_by = southeast_asian
 discovered_by = steppestech
 discovered_by = YUA
 200.1.1 = { 
-	set_variable = { 
-		which = abb
-		value = 10.000
-	}
-	set_variable = { 
-		which = atc
-		value = 80.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = baf
-		value = 105
-	}
-	set_variable = { 
-		which = acp
-		value = 4.5
-	}
-	set_province_flag = coal
 }
 1356.1.1 = { 
 	add_core = MXI

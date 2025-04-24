@@ -11,22 +11,5 @@ native_ferocity = 7
 native_hostileness = 7
 is_city = yes
 discovered_by = mesoamerican
-set_variable = { 
-	which = gcj
-	value = 1
-}
-set_variable = { 
-	which = gck
-	value = 1
-}
 450.1.1 = { 
-	set_province_flag = TN_Important
-	set_variable = { 
-		which = acp
-		value = 5.5
-	}
-	add_permanent_province_modifier = { 
-		name = urban_goods_metalwork
-		duration = -1
-	}
 }

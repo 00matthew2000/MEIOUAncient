@@ -12,9 +12,4 @@ base_manpower = 0
 is_city = yes
 discovered_by = south_american
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 3.5
-	}
-	set_province_flag = cotton
 }

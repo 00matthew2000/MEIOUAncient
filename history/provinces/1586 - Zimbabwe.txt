@@ -9,34 +9,11 @@ base_manpower = 0
 native_size = 35
 native_ferocity = 6
 native_hostileness = 6
-set_variable = { 
-	which = gcj
-	value = 1
-}
 discovered_by = central_african
 discovered_by = east_african
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 90.000
-	}
 }
 450.1.1 = { 
-	set_province_flag = TN_Important
-	set_variable = { 
-		which = baf
-		value = 24
-	}
-	set_variable = { 
-		which = acp
-		value = 2
-	}
-	set_province_flag = mined_goods
-	set_province_flag = copper
 }
 1350.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 11.125
-	}
 }

@@ -3,10 +3,6 @@ trade_goods = cacao
 culture = olmec
 religion = nahuatl
 hre = no
-set_variable = { 
-	which = gck
-	value = 1
-}
 base_tax = 5
 base_production = 0
 base_manpower = 0
@@ -15,17 +11,4 @@ native_ferocity = 7
 native_hostileness = 5
 discovered_by = mesoamerican
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 2.000
-	}
-	set_variable = { 
-		which = acp
-		value = 5
-	}
-	set_province_flag = gold
-	set_province_flag = cacao
-	set_province_flag = TN_Estuary
-	set_province_flag = TN_Natural_Minor
-	set_province_flag = cotton
 }

@@ -10,14 +10,6 @@ base_tax = 53
 base_production = 0
 base_manpower = 5
 is_city = yes
-set_variable = { 
-	which = gcn
-	value = 1
-}
-set_variable = { 
-	which = gck
-	value = 2
-}
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -28,14 +20,6 @@ discovered_by = steppestech
 discovered_by = YUA
 discovered_by = ottoman
 450.1.1 = { 
-	set_variable = { 
-		which = baf
-		value = 72
-	}
-	set_variable = { 
-		which = acp
-		value = 6.5
-	}
 }
 1356.1.1 = { 
 	add_core = TRT

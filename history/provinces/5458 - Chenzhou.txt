@@ -16,11 +16,6 @@ discovered_by = southeast_asian
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_province_flag = coal
-	set_variable = { 
-		which = acp
-		value = 5
-	}
 }
 985.1.1 = { 
 	owner = SNG

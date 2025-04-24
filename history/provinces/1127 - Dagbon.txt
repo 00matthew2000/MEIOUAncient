@@ -8,27 +8,9 @@ base_manpower = 0
 native_size = 80
 native_ferocity = 4.5
 native_hostileness = 9
-set_variable = { 
-	which = gcj
-	value = 1
-}
 discovered_by = soudantech
 discovered_by = sub_saharan
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 80.000
-	}
 }
 450.1.1 = { 
-	set_province_flag = TN_Minor
-	set_variable = { 
-		which = acp
-		value = 2.5
-	}
-	set_variable = { 
-		which = ami
-		value = 8.000
-	}
-	set_province_flag = kola
 }

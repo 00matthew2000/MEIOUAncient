@@ -9,18 +9,9 @@ base_tax = 25
 base_production = 1
 base_manpower = 2
 is_city = yes
-set_variable = { 
-	which = gcj
-	value = 1
-}
 discovered_by = indian
 discovered_by = muslim
 450.1.1 = { 
-	set_province_flag = TN_Minor
-	set_variable = { 
-		which = acp
-		value = 5
-	}
 }
 1356.1.1 = { 
 	add_core = VIJ

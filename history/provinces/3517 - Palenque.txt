@@ -8,13 +8,4 @@ base_production = 0
 base_manpower = 0
 discovered_by = mesoamerican
 450.1.1 = { 
-	set_variable = { 
-		which = baf
-		value = 45
-	}
-	set_province_flag = cacao
-	set_variable = { 
-		which = amh
-		value = 30.000
-	}
 }

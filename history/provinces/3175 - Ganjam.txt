@@ -10,10 +10,6 @@ base_tax = 24
 base_production = 0
 base_manpower = 2
 is_city = yes
-set_variable = { 
-	which = gck
-	value = 2
-}
 discovered_by = indian
 discovered_by = chinese
 discovered_by = japanese
@@ -21,19 +17,6 @@ discovered_by = tibetan
 discovered_by = southeast_asian
 discovered_by = muslim
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 1.500
-	}
-	set_province_flag = TN_Minor
-	set_variable = { 
-		which = acp
-		value = 6
-	}
-	set_province_flag = supersalt
-	set_province_flag = iron
-	set_province_flag = fruits
 }
 1356.1.1 = { 
-	set_province_flag = add_local_autonomy_25
 }

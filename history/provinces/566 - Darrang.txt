@@ -9,35 +9,14 @@ base_tax = 37
 base_production = 0
 base_manpower = 3
 is_city = yes
-set_variable = { 
-	which = gck
-	value = 2
-}
 discovered_by = indian
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
 discovered_by = southeast_asian
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 20.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = baf
-		value = 68
-	}
-	set_variable = { 
-		which = acp
-		value = 5
-	}
-	set_province_flag = coal
-	set_province_flag = ginger
-	set_province_flag = wildtea
-	set_province_flag = TN_RiverJump
 }
 1356.1.1 = { 
-	set_province_flag = add_local_autonomy_25
 }

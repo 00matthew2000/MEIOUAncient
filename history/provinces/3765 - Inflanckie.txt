@@ -9,18 +9,10 @@ base_manpower = 0
 native_size = 55
 native_ferocity = 6
 native_hostileness = 6
-set_variable = { 
-	which = gcn
-	value = 1
-}
 discovered_by = western
 discovered_by = eastern
 discovered_by = byzantine
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 2.5
-	}
 }

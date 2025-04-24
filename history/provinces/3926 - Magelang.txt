@@ -10,10 +10,6 @@ base_tax = 14
 base_production = 0
 base_manpower = 1
 is_city = yes
-set_variable = { 
-	which = gck
-	value = 1
-}
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -21,9 +17,4 @@ discovered_by = southeast_asian
 discovered_by = indian
 discovered_by = austranesian
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 5
-	}
-	set_province_flag = fruits
 }

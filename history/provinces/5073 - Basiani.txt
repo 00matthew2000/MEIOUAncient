@@ -12,10 +12,6 @@ base_tax = 5
 base_production = 0
 base_manpower = 0
 is_city = yes
-set_variable = { 
-	which = gch
-	value = 1
-}
 discovered_by = steppestech
 discovered_by = YUA
 discovered_by = muslim
@@ -24,9 +20,4 @@ discovered_by = eastern
 discovered_by = byzantine
 discovered_by = western
 450.1.1 = { 
-	set_province_flag = TN_Silk
-	set_variable = { 
-		which = acp
-		value = 3
-	}
 }

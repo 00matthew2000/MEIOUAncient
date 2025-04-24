@@ -10,22 +10,6 @@ base_tax = 4
 base_production = 0
 base_manpower = 1
 is_city = yes
-set_variable = { 
-	which = gch
-	value = 2
-}
-set_variable = { 
-	which = gcj
-	value = 1
-}
-set_variable = { 
-	which = gcn
-	value = 2
-}
-set_variable = { 
-	which = gck
-	value = 2
-}
 fort_14th = yes
 discovered_by = western
 discovered_by = eastern
@@ -35,22 +19,7 @@ discovered_by = ottoman
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_province_flag = TN_Minor
-	set_variable = { 
-		which = acp
-		value = 4.5
-	}
-	set_variable = { 
-		which = ami
-		value = 3.612
-	}
-	set_province_flag = wine
-	set_variable = { 
-		which = baf
-		value = 134
-	}
 }
 1356.1.1 = { 
 	add_claim = BUL
-	set_province_flag = add_local_autonomy_15
 }

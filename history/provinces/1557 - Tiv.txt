@@ -12,19 +12,6 @@ native_hostileness = 8
 discovered_by = soudantech
 discovered_by = sub_saharan
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 40.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 3
-	}
-	set_province_flag = TN_Minor
-	set_variable = { 
-		which = ami
-		value = 3.000
-	}
 }

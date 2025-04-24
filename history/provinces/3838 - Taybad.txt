@@ -16,22 +16,6 @@ discovered_by = steppestech
 discovered_by = YUA
 discovered_by = ottoman
 200.1.1 = { 
-	set_variable = { 
-		which = abb
-		value = 20.000
-	}
-	set_variable = { 
-		which = atc
-		value = 40.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 2.5
-	}
-	set_province_flag = iron
-	set_province_flag = saffron
-	set_province_flag = TN_Silk
-	set_province_flag = qanat
 }

@@ -7,31 +7,8 @@ base_tax = 4
 base_production = 0
 base_manpower = 0
 200.1.1 = { 
-	set_variable = { 
-		which = abb
-		value = 20.000
-	}
-	set_variable = { 
-		which = atc
-		value = 50.000
-	}
 }
 450.1.1 = { 
-	set_province_flag = TN_Minor
-	set_province_flag = TN_Port
-	set_variable = { 
-		which = acp
-		value = 2
-	}
-	set_province_flag = coal
-	set_variable = { 
-		which = baf
-		value = 114
-	}
-	set_variable = { 
-		which = ami
-		value = 3.500
-	}
 }
 1356.1.1 = { 
 	add_core = KAZ

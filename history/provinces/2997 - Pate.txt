@@ -9,30 +9,7 @@ base_manpower = 0
 native_size = 55
 native_ferocity = 2
 native_hostileness = 2
-set_variable = { 
-	which = gci
-	value = 1
-}
 discovered_by = east_african
 discovered_by = muslim
 450.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 60.000
-	}
-	set_province_flag = TN_Island
-	set_province_flag = TN_Natural_Minor
-	set_variable = { 
-		which = acp
-		value = 5
-	}
-	set_variable = { 
-		which = ami
-		value = 1.500
-	}
-	set_province_flag = TN_Minor
-	add_permanent_province_modifier = { 
-		name = urban_goods_naval_supplies
-		duration = -1
-	}
 }

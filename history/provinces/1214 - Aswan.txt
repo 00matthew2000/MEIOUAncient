@@ -10,18 +10,6 @@ base_tax = 9
 base_production = 2
 base_manpower = 0
 is_city = yes
-set_variable = { 
-	which = gcj
-	value = 2
-}
-set_variable = { 
-	which = gcn
-	value = 1
-}
-set_variable = { 
-	which = gck
-	value = 2
-}
 discovered_by = east_african
 discovered_by = western
 discovered_by = muslim
@@ -29,22 +17,8 @@ discovered_by = eastern
 discovered_by = byzantine
 discovered_by = ottoman
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 40.000
-	}
 }
 450.1.1 = { 
-	set_province_flag = TN_Important
-	set_variable = { 
-		which = baf
-		value = 21
-	}
-	set_variable = { 
-		which = acp
-		value = 4.5
-	}
-	set_province_flag = sugar
 }
 1356.1.1 = { 
 	add_core = MKU

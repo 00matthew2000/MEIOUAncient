@@ -12,20 +12,6 @@ native_hostileness = 6
 discovered_by = central_african
 discovered_by = east_african
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 100.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = baf
-		value = 24
-	}
-	set_variable = { 
-		which = acp
-		value = 1.5
-	}
-	set_province_flag = mined_goods
-	set_province_flag = gold
 }

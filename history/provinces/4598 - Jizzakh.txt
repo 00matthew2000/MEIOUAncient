@@ -9,18 +9,6 @@ base_tax = 24
 base_production = 0
 base_manpower = 2
 is_city = yes
-set_variable = { 
-	which = gcn
-	value = 1
-}
-set_variable = { 
-	which = gch
-	value = 1
-}
-set_variable = { 
-	which = gck
-	value = 1
-}
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -30,28 +18,8 @@ discovered_by = YUA
 discovered_by = ottoman
 discovered_by = muslim
 200.1.1 = { 
-	set_variable = { 
-		which = abb
-		value = 15.000
-	}
-	set_variable = { 
-		which = atc
-		value = 40.000
-	}
 }
 450.1.1 = { 
-	set_province_flag = TN_Minor
-	set_province_flag = TN_Silk
-	set_variable = { 
-		which = acp
-		value = 3.5
-	}
-	set_province_flag = silk_road_town
-	set_variable = { 
-		which = ami
-		value = 25.000
-	}
-	set_province_flag = lead
 }
 1356.1.1 = { 
 	discovered_by = KSH

@@ -12,20 +12,6 @@ native_hostileness = 5
 discovered_by = east_african
 discovered_by = soudantech
 200.1.1 = { 
-	set_variable = { 
-		which = abb
-		value = 10.000
-	}
-	set_variable = { 
-		which = atc
-		value = 100.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 3.5
-	}
-	set_province_flag = gold
-	set_province_flag = no_mines
 }

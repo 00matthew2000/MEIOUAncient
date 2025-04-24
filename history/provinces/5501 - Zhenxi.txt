@@ -9,10 +9,6 @@ base_manpower = 0
 native_size = 40
 native_ferocity = 8
 native_hostileness = 8
-set_variable = { 
-	which = gch
-	value = 2
-}
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -21,21 +17,6 @@ discovered_by = indian
 discovered_by = steppestech
 discovered_by = YUA
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 100.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 1.500
-	}
-	set_province_flag = TN_Minor
-	set_variable = { 
-		which = acp
-		value = 3
-	}
-	set_province_flag = tea
-	set_province_flag = salt
 }

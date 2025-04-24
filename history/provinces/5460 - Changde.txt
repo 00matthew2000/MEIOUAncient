@@ -9,22 +9,6 @@ base_tax = 32
 base_production = 1
 base_manpower = 2
 is_city = yes
-set_variable = { 
-	which = gci
-	value = 1
-}
-set_variable = { 
-	which = gch
-	value = 2
-}
-set_variable = { 
-	which = gck
-	value = 3
-}
-set_variable = { 
-	which = gcj
-	value = 2
-}
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -32,24 +16,6 @@ discovered_by = southeast_asian
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_province_flag = TN_Important
-	set_variable = { 
-		which = baf
-		value = 87
-	}
-	set_province_flag = TN_RiverJoint
-	set_variable = { 
-		which = ami
-		value = 7.000
-	}
-	set_variable = { 
-		which = acp
-		value = 6
-	}
-	add_permanent_province_modifier = { 
-		name = urban_goods_metalwork
-		duration = -1
-	}
 }
 985.1.1 = { 
 	owner = SNG

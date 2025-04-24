@@ -10,22 +10,6 @@ base_tax = 7
 base_production = 1
 base_manpower = 0
 is_city = yes
-set_variable = { 
-	which = gcj
-	value = 1
-}
-set_variable = { 
-	which = gcn
-	value = 2
-}
-set_variable = { 
-	which = gch
-	value = 1
-}
-set_variable = { 
-	which = gci
-	value = 1
-}
 discovered_by = western
 discovered_by = eastern
 discovered_by = byzantine
@@ -34,21 +18,7 @@ discovered_by = ottoman
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_province_flag = TN_Minor
-	set_variable = { 
-		which = acp
-		value = 4
-	}
-	set_variable = { 
-		which = abb
-		value = 20.000
-	}
-	set_variable = { 
-		which = atc
-		value = 25.000
-	}
 }
 1356.1.1 = { 
 	add_core = BYZ
-	set_province_flag = turkish_name
 }

@@ -11,53 +11,14 @@ base_tax = 4
 base_production = 0
 base_manpower = 0
 is_city = yes
-set_variable = { 
-	which = gch
-	value = 2
-}
-set_variable = { 
-	which = gci
-	value = 2
-}
-set_variable = { 
-	which = gcn
-	value = 1
-}
-set_variable = { 
-	which = gcj
-	value = 1
-}
 discovered_by = muslim
 discovered_by = eastern
 discovered_by = byzantine
 discovered_by = western
 discovered_by = ottoman
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 30.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 3.500
-	}
-	set_province_flag = TN_Important
-	set_province_flag = TN_Port
-	set_province_flag = TN_Harbour_Important
-	set_province_flag = TN_Natural_Important
-	set_variable = { 
-		which = acp
-		value = 4
-	}
-	set_province_flag = olive
-	set_province_flag = smallsalt
-	add_permanent_province_modifier = { 
-		name = urban_goods_naval_supplies
-		duration = -1
-	}
-	set_province_flag = TN_Bay
 }
 1356.1.1 = { 
 	add_core = ALC
@@ -65,104 +26,4 @@ discovered_by = ottoman
 	add_claim = SER
 }
 100.1.1 = { 
-	set_variable = { 
-		which = amj
-		value = 43.445
-	}
-	set_variable = { 
-		which = amk
-		value = 0.000
-	}
-	set_variable = { 
-		which = amh
-		value = 43.445
-	}
-	set_variable = { 
-		which = ami
-		value = 0.000
-	}
-	set_variable = { 
-		which = amf
-		value = 36.205
-	}
-	set_variable = { 
-		which = amg
-		value = 0.000
-	}
-	set_variable = { 
-		which = amd
-		value = 28.964
-	}
-	set_variable = { 
-		which = ame
-		value = 0.000
-	}
-	set_variable = { 
-		which = amb
-		value = 28.964
-	}
-	set_variable = { 
-		which = amc
-		value = 0.000
-	}
-	set_variable = { 
-		which = alz
-		value = 28.964
-	}
-	set_variable = { 
-		which = ama
-		value = 0.000
-	}
-	set_variable = { 
-		which = alx
-		value = 28.964
-	}
-	set_variable = { 
-		which = aly
-		value = 0.000
-	}
-	set_variable = { 
-		which = alv
-		value = 36.205
-	}
-	set_variable = { 
-		which = alw
-		value = 0.000
-	}
-	set_variable = { 
-		which = alt
-		value = 43.445
-	}
-	set_variable = { 
-		which = alu
-		value = 0.000
-	}
-	set_variable = { 
-		which = alr
-		value = 50.686
-	}
-	set_variable = { 
-		which = als
-		value = 0.000
-	}
-	set_variable = { 
-		which = alp
-		value = 52.927
-	}
-	set_variable = { 
-		which = alq
-		value = 5.000
-	}
-	set_variable = { 
-		which = aho
-		value = 67.409
-	}
-	set_variable = { 
-		which = ahp
-		value = 5.000
-	}
-	set_variable = { 
-		which = ami
-		value = 1.500
-	}
 }

@@ -9,14 +9,6 @@ base_tax = 14
 base_production = 0
 base_manpower = 0
 is_city = yes
-set_variable = { 
-	which = gch
-	value = 2
-}
-set_variable = { 
-	which = gck
-	value = 1
-}
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -24,21 +16,8 @@ discovered_by = southeast_asian
 discovered_by = steppestech
 discovered_by = YUA
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 40.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = baf
-		value = 89
-	}
-	set_variable = { 
-		which = acp
-		value = 4.5
-	}
-	set_province_flag = tea
 }
 985.1.1 = { 
 	owner = SNG

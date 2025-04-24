@@ -16,14 +16,6 @@ discovered_by = steppestech
 discovered_by = YUA
 discovered_by = indian
 450.1.1 = { 
-	set_variable = { 
-		which = baf
-		value = 70
-	}
-	set_variable = { 
-		which = acp
-		value = 8
-	}
 }
 1356.1.1 = { 
 	owner = DLH

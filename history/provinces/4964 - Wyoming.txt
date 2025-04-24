@@ -7,22 +7,6 @@ base_tax = 1
 base_production = 0
 base_manpower = 0
 200.1.1 = { 
-	set_variable = { 
-		which = abb
-		value = 65.000
-	}
-	set_variable = { 
-		which = atc
-		value = 100.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 2
-	}
-	add_permanent_province_modifier = { 
-		name = fur_low
-		duration = -1
-	}
 }

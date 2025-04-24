@@ -10,33 +10,11 @@ base_tax = 10
 base_production = 0
 base_manpower = 1
 is_city = yes
-set_variable = { 
-	which = gcn
-	value = 1
-}
-set_variable = { 
-	which = gck
-	value = 2
-}
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
 discovered_by = southeast_asian
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 2.500
-	}
-	set_variable = { 
-		which = acp
-		value = 5
-	}
-	set_province_flag = TN_Harbour_Minor
-	set_province_flag = TN_Natural_Important
-	add_permanent_province_modifier = { 
-		name = urban_goods_chinaware
-		duration = -1
-	}
 }
 1334.1.1 = { 
 	remove_core = OUC

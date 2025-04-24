@@ -11,10 +11,4 @@ native_ferocity = 2
 native_hostileness = 9
 discovered_by = south_american
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 0.5
-	}
-	set_province_flag = TN_Harbour_Minor
-	set_province_flag = TN_Natural_Minor
 }

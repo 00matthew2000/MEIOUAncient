@@ -9,14 +9,6 @@ base_tax = 3
 base_production = 0
 base_manpower = 0
 is_city = yes
-set_variable = { 
-	which = gci
-	value = 1
-}
-set_variable = { 
-	which = gch
-	value = 2
-}
 fort_14th = yes
 discovered_by = western
 discovered_by = eastern
@@ -26,16 +18,6 @@ discovered_by = ottoman
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 4
-	}
-	set_variable = { 
-		which = ami
-		value = 1.615
-	}
-	set_province_flag = mined_goods
-	set_province_flag = salt
 }
 1350.1.1 = { 
 	add_claim = OTT
@@ -47,5 +29,4 @@ discovered_by = YUA
 	add_core = OTT
 	add_core = BYZ
 	capital = "Gelibolu"
-	set_province_flag = turkish_name
 }

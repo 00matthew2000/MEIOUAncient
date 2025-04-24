@@ -9,35 +9,6 @@ base_manpower = 0
 native_size = 55
 native_ferocity = 8
 native_hostileness = 7
-set_variable = { 
-	which = gcj
-	value = 2
-}
-set_variable = { 
-	which = gci
-	value = 1
-}
-set_variable = { 
-	which = gch
-	value = 1
-}
-set_variable = { 
-	which = gck
-	value = 1
-}
 discovered_by = mesoamerican
 450.1.1 = { 
-	set_province_flag = TN_Important
-	set_variable = { 
-		which = acp
-		value = 5
-	}
-	set_province_flag = mined_goods
-	set_province_flag = obsidian
-	set_province_flag = gems
-	set_province_flag = dyes
-	add_permanent_province_modifier = { 
-		name = urban_goods_luxury_cloth
-		duration = -1
-	}
 }

@@ -17,16 +17,6 @@ discovered_by = southeast_asian
 discovered_by = indian
 discovered_by = austranesian
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 5.000
-	}
-	set_province_flag = TN_Important
-	set_province_flag = TN_Port
-	set_variable = { 
-		which = acp
-		value = 3
-	}
 }
 1356.1.1 = { 
 	add_core = MKP

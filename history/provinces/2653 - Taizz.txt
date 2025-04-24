@@ -10,14 +10,6 @@ base_tax = 23
 base_production = 1
 base_manpower = 1
 is_city = yes
-set_variable = { 
-	which = gcj
-	value = 1
-}
-set_variable = { 
-	which = gcn
-	value = 1
-}
 discovered_by = western
 discovered_by = eastern
 discovered_by = byzantine
@@ -26,21 +18,6 @@ discovered_by = ottoman
 discovered_by = indian
 discovered_by = east_african
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 30.000
-	}
 }
 450.1.1 = { 
-	set_province_flag = TN_Important
-	set_variable = { 
-		which = acp
-		value = 5.5
-	}
-	set_province_flag = coffee
-	add_permanent_province_modifier = { 
-		name = urban_goods_metalwork
-		duration = -1
-	}
-	set_province_flag = qanat
 }

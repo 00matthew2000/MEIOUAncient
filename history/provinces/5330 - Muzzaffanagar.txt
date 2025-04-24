@@ -16,13 +16,4 @@ discovered_by = steppestech
 discovered_by = YUA
 discovered_by = ottoman
 450.1.1 = { 
-	set_variable = { 
-		which = baf
-		value = 70
-	}
-	set_variable = { 
-		which = acp
-		value = 7
-	}
-	set_province_flag = sugar
 }

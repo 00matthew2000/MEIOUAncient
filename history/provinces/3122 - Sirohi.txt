@@ -16,18 +16,8 @@ discovered_by = steppestech
 discovered_by = YUA
 discovered_by = ottoman
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 60.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 4.5
-	}
-	set_province_flag = cumin
 }
 1356.1.1 = { 
-	set_province_flag = add_local_autonomy_50
 }

@@ -9,18 +9,6 @@ base_manpower = 0
 native_size = 55
 native_ferocity = 7
 native_hostileness = 8
-set_variable = { 
-	which = gci
-	value = 1
-}
-set_variable = { 
-	which = gcj
-	value = 1
-}
-set_variable = { 
-	which = gck
-	value = 1
-}
 fort_14th = yes
 discovered_by = chinese
 discovered_by = japanese
@@ -29,16 +17,4 @@ discovered_by = southeast_asian
 discovered_by = indian
 discovered_by = austranesian
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 6.000
-	}
-	set_province_flag = TN_Minor
-	set_province_flag = TN_Port
-	set_variable = { 
-		which = acp
-		value = 4
-	}
-	set_province_flag = tin
-	set_province_flag = fruits
 }

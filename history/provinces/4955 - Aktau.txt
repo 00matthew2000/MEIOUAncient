@@ -15,20 +15,6 @@ discovered_by = YUA
 discovered_by = ottoman
 discovered_by = muslim
 200.1.1 = { 
-	set_variable = { 
-		which = abb
-		value = 60.000
-	}
-	set_variable = { 
-		which = atc
-		value = 90.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 2
-	}
-	set_province_flag = mined_goods
-	set_province_flag = salt
 }

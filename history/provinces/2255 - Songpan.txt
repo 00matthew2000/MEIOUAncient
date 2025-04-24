@@ -16,18 +16,8 @@ discovered_by = southeast_asian
 discovered_by = steppestech
 discovered_by = YUA
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 40.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 3.5
-	}
-	set_province_flag = tea
-	set_province_flag = game
 }
 1271.12.18 = { 
 	add_core = YUA

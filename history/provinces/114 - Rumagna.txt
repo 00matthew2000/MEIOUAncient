@@ -9,18 +9,6 @@ base_tax = 7
 base_production = 2
 base_manpower = 0
 is_city = yes
-set_variable = { 
-	which = gcn
-	value = 1
-}
-set_variable = { 
-	which = gcj
-	value = 2
-}
-set_variable = { 
-	which = gch
-	value = 2
-}
 if = { 
 	limit = { 
 		OR = { 
@@ -68,112 +56,6 @@ discovered_by = byzantine
 discovered_by = muslim
 discovered_by = ottoman
 500.1.1 = { 
-	set_province_flag = TN_Minor
-	add_permanent_province_modifier = { 
-		name = urban_goods_cloth
-		duration = -1
-	}
-	add_permanent_province_modifier = { 
-		name = Knights_Commandery_Low
-		duration = -1
-	}
-	set_province_flag = wine
 }
 100.1.1 = { 
-	set_variable = { 
-		which = amj
-		value = 69.024
-	}
-	set_variable = { 
-		which = amk
-		value = 26.000
-	}
-	set_variable = { 
-		which = amh
-		value = 74.022
-	}
-	set_variable = { 
-		which = ami
-		value = 20.000
-	}
-	set_variable = { 
-		which = amf
-		value = 43.076
-	}
-	set_variable = { 
-		which = amg
-		value = 22.000
-	}
-	set_variable = { 
-		which = amd
-		value = 61.696
-	}
-	set_variable = { 
-		which = ame
-		value = 16.500
-	}
-	set_variable = { 
-		which = amb
-		value = 74.014
-	}
-	set_variable = { 
-		which = amc
-		value = 17.000
-	}
-	set_variable = { 
-		which = alz
-		value = 79.085
-	}
-	set_variable = { 
-		which = ama
-		value = 20.000
-	}
-	set_variable = { 
-		which = alx
-		value = 79.155
-	}
-	set_variable = { 
-		which = aly
-		value = 26.000
-	}
-	set_variable = { 
-		which = alv
-		value = 73.976
-	}
-	set_variable = { 
-		which = alw
-		value = 23.000
-	}
-	set_variable = { 
-		which = alt
-		value = 97.819
-	}
-	set_variable = { 
-		which = alu
-		value = 23.000
-	}
-	set_variable = { 
-		which = alr
-		value = 96.930
-	}
-	set_variable = { 
-		which = als
-		value = 27.000
-	}
-	set_variable = { 
-		which = alp
-		value = 110.860
-	}
-	set_variable = { 
-		which = alq
-		value = 31.000
-	}
-	set_variable = { 
-		which = aho
-		value = 150.508
-	}
-	set_variable = { 
-		which = ahp
-		value = 35.000
-	}
 }

@@ -13,18 +13,8 @@ is_city = yes
 discovered_by = indian
 discovered_by = muslim
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 20.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 5.5
-	}
-	set_province_flag = mined_goods
-	set_province_flag = gems
 }
 1336.1.1 = { 
 	owner = VIJ
@@ -32,5 +22,4 @@ discovered_by = muslim
 }
 1356.1.1 = { 
 	add_core = VIJ
-	set_province_flag = add_local_autonomy_25
 }

@@ -13,3 +13,14 @@ Check SYS-Distribution both effects and triggers (also need to set the nomad per
 For terrain, use "guides" in gimp and you can move boxes around to fit terrains, may need to fit terrains from IU to MEIOU
 
 To help map terrain, make a version of provinces.bmp where you annex provs into their region-sized versions and then have that as a layer on top of the terrain map
+
+.*set_province_flag(.*\r?\n){1}      replace set_province_flag with whatever and the 1 with any number to match + remove number of lines after
+
+NOTE: Maybe change event modifiers to fit what you want (new great projects, non hagia sophia?)
+
+Replacements List:
+-Most Decisions
+-Missions?
+-Music/Sound
+-Cultures/Religions/regions
+-Common up to B + CB Types

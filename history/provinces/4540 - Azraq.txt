@@ -10,10 +10,6 @@ base_tax = 2
 base_production = 0
 base_manpower = 0
 is_city = yes
-set_variable = { 
-	which = gcn
-	value = 1
-}
 fort_14th = yes
 discovered_by = western
 discovered_by = muslim
@@ -22,26 +18,8 @@ discovered_by = byzantine
 discovered_by = ottoman
 discovered_by = indian
 200.1.1 = { 
-	set_variable = { 
-		which = abb
-		value = 70.000
-	}
-	set_variable = { 
-		which = atc
-		value = 80.000
-	}
 }
 450.1.1 = { 
-	set_province_flag = TN_Minor
-	set_variable = { 
-		which = ami
-		value = 3.000
-	}
-	set_variable = { 
-		which = acp
-		value = 2.5
-	}
-	set_province_flag = dates
 }
 1356.1.1 = { 
 	add_core = BHA

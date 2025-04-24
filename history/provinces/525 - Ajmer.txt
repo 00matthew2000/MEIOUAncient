@@ -10,10 +10,6 @@ base_tax = 11
 base_production = 1
 base_manpower = 1
 is_city = yes
-set_variable = { 
-	which = gcj
-	value = 1
-}
 fort_14th = yes
 discovered_by = indian
 discovered_by = muslim
@@ -21,21 +17,8 @@ discovered_by = steppestech
 discovered_by = YUA
 discovered_by = ottoman
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 60.000
-	}
 }
 450.1.1 = { 
-	set_province_flag = TN_Important
-	set_variable = { 
-		which = acp
-		value = 5
-	}
-	set_province_flag = mined_goods
-	set_province_flag = lead
-	set_province_flag = copper
-	set_province_flag = cumin
 }
 1356.1.1 = { 
 	add_core = MEW

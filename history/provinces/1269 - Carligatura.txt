@@ -10,18 +10,6 @@ base_tax = 6
 base_production = 1
 base_manpower = 0
 is_city = yes
-set_variable = { 
-	which = gcj
-	value = 1
-}
-set_variable = { 
-	which = gch
-	value = 2
-}
-set_variable = { 
-	which = gci
-	value = 1
-}
 discovered_by = western
 discovered_by = eastern
 discovered_by = byzantine
@@ -30,115 +18,9 @@ discovered_by = ottoman
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_province_flag = TN_Minor
-	set_variable = { 
-		which = baf
-		value = 42
-	}
-	set_variable = { 
-		which = acp
-		value = 3.5
-	}
-	set_province_flag = coal
 }
 1356.1.1 = { 
 	add_core = MOL
 }
 100.1.1 = { 
-	set_variable = { 
-		which = amj
-		value = 104.833
-	}
-	set_variable = { 
-		which = amk
-		value = 6.000
-	}
-	set_variable = { 
-		which = amh
-		value = 103.333
-	}
-	set_variable = { 
-		which = ami
-		value = 7.500
-	}
-	set_variable = { 
-		which = amf
-		value = 83.361
-	}
-	set_variable = { 
-		which = amg
-		value = 9.000
-	}
-	set_variable = { 
-		which = amd
-		value = 111.416
-	}
-	set_variable = { 
-		which = ame
-		value = 10.500
-	}
-	set_variable = { 
-		which = amb
-		value = 135.777
-	}
-	set_variable = { 
-		which = amc
-		value = 12.000
-	}
-	set_variable = { 
-		which = alz
-		value = 152.749
-	}
-	set_variable = { 
-		which = ama
-		value = 13.500
-	}
-	set_variable = { 
-		which = alx
-		value = 132.777
-	}
-	set_variable = { 
-		which = aly
-		value = 15.000
-	}
-	set_variable = { 
-		which = alv
-		value = 148.749
-	}
-	set_variable = { 
-		which = alw
-		value = 17.500
-	}
-	set_variable = { 
-		which = alt
-		value = 164.721
-	}
-	set_variable = { 
-		which = alu
-		value = 20.000
-	}
-	set_variable = { 
-		which = alr
-		value = 233.609
-	}
-	set_variable = { 
-		which = als
-		value = 25.000
-	}
-	set_variable = { 
-		which = alp
-		value = 383.386
-	}
-	set_variable = { 
-		which = alq
-		value = 23.000
-	}
-	set_variable = { 
-		which = aho
-		value = 531.107
-	}
-	set_variable = { 
-		which = ahp
-		value = 60.000
-	}
 }

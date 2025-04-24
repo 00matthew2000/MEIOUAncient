@@ -9,10 +9,6 @@ base_manpower = 0
 native_size = 70
 native_ferocity = 8
 native_hostileness = 8
-set_variable = { 
-	which = gck
-	value = 1
-}
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -21,17 +17,4 @@ discovered_by = indian
 discovered_by = muslim
 discovered_by = austranesian
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 5.000
-	}
-	set_variable = { 
-		which = baf
-		value = 85
-	}
-	set_province_flag = TN_RiverSea
-	set_variable = { 
-		which = acp
-		value = 4
-	}
 }

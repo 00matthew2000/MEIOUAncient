@@ -13,19 +13,9 @@ is_city = yes
 discovered_by = indian
 discovered_by = muslim
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 20.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 6
-	}
-	set_province_flag = pocket_province
 }
 1356.1.1 = { 
 	add_core = KLN
-	set_province_flag = add_local_autonomy_25
 }

@@ -9,14 +9,6 @@ base_tax = 41
 base_production = 0
 base_manpower = 2
 is_city = yes
-set_variable = { 
-	which = gch
-	value = 3
-}
-set_variable = { 
-	which = gck
-	value = 2
-}
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -24,20 +16,6 @@ discovered_by = southeast_asian
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 5.5
-	}
-	set_province_flag = seasalt
-	set_variable = { 
-		which = baf
-		value = 103
-	}
-	set_province_flag = fruits
-	add_permanent_province_modifier = { 
-		name = "lack_of_harbour"
-		duration = -1
-	}
 }
 1271.12.18 = { 
 	add_core = YUA

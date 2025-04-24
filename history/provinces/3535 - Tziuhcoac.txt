@@ -9,23 +9,6 @@ base_manpower = 0
 native_size = 35
 native_ferocity = 5
 native_hostileness = 5
-set_variable = { 
-	which = gck
-	value = 1
-}
 discovered_by = mesoamerican
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 2.500
-	}
-	set_variable = { 
-		which = baf
-		value = 44
-	}
-	set_variable = { 
-		which = acp
-		value = 5.5
-	}
-	set_province_flag = furs
 }

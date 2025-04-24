@@ -15,28 +15,6 @@ discovered_by = tibetan
 discovered_by = southeast_asian
 discovered_by = indian
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 40.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 7.000
-	}
-	set_province_flag = TN_Important
-	set_variable = { 
-		which = baf
-		value = 78
-	}
-	set_variable = { 
-		which = acp
-		value = 3
-	}
-	add_permanent_province_modifier = { 
-		name = urban_goods_metalwork
-		duration = -1
-	}
-	set_province_flag = copper
 }

@@ -10,15 +10,6 @@ base_tax = 20
 base_production = 1
 base_manpower = 2
 is_city = yes
-set_variable = { 
-	which = gck
-	value = 2
-}
 discovered_by = south_american
 450.1.1 = { 
-	set_province_flag = TN_Minor
-	set_variable = { 
-		which = acp
-		value = 3.5
-	}
 }

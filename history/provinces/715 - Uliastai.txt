@@ -19,18 +19,6 @@ discovered_by = southeast_asian
 discovered_by = YEN
 discovered_by = SAK
 200.1.1 = { 
-	set_variable = { 
-		which = abb
-		value = 90.000
-	}
-	set_variable = { 
-		which = atc
-		value = 100.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 1.5
-	}
 }

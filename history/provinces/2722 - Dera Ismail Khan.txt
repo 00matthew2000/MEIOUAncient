@@ -16,27 +16,8 @@ discovered_by = steppestech
 discovered_by = YUA
 discovered_by = ottoman
 200.1.1 = { 
-	set_variable = { 
-		which = abb
-		value = 8.000
-	}
-	set_variable = { 
-		which = atc
-		value = 90.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = baf
-		value = 75
-	}
-	set_variable = { 
-		which = acp
-		value = 4
-	}
-	set_province_flag = salt
-	set_province_flag = supersalt
-	set_province_flag = dates
 }
 1356.1.1 = { 
 	owner = DLH

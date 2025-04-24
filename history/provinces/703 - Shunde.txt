@@ -9,14 +9,6 @@ base_tax = 18
 base_production = 0
 base_manpower = 1
 is_city = yes
-set_variable = { 
-	which = gch
-	value = 2
-}
-set_variable = { 
-	which = gck
-	value = 2
-}
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -24,11 +16,6 @@ discovered_by = southeast_asian
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 6
-	}
-	set_province_flag = iron
 }
 1271.12.18 = { 
 	add_core = YUA

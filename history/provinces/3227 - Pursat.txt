@@ -9,10 +9,6 @@ base_manpower = 0
 native_size = 50
 native_ferocity = 8
 native_hostileness = 8
-set_variable = { 
-	which = gck
-	value = 1
-}
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -20,12 +16,4 @@ discovered_by = southeast_asian
 discovered_by = indian
 discovered_by = austranesian
 450.1.1 = { 
-	set_variable = { 
-		which = baf
-		value = 83
-	}
-	set_variable = { 
-		which = acp
-		value = 4
-	}
 }

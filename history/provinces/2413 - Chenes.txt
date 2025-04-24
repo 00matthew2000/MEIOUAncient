@@ -12,13 +12,4 @@ base_manpower = 0
 is_city = yes
 discovered_by = mesoamerican
 450.1.1 = { 
-	set_variable = { 
-		which = gch
-		value = 2
-	}
-	set_variable = { 
-		which = amh
-		value = 15.000
-	}
-	set_province_flag = cacao
 }

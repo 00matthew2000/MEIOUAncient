@@ -15,18 +15,6 @@ discovered_by = tibetan
 discovered_by = southeast_asian
 discovered_by = indian
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 80.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = baf
-		value = 82
-	}
-	set_variable = { 
-		which = acp
-		value = 2.5
-	}
 }

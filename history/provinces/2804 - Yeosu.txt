@@ -10,10 +10,6 @@ base_tax = 13
 base_production = 0
 base_manpower = 0
 is_city = yes
-set_variable = { 
-	which = gck
-	value = 2
-}
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -21,11 +17,4 @@ discovered_by = southeast_asian
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_province_flag = coal
-	set_variable = { 
-		which = acp
-		value = 3.5
-	}
-	set_province_flag = tea
-	set_province_flag = ginseng
 }

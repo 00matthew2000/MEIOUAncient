@@ -11,14 +11,6 @@ native_ferocity = 2
 native_hostileness = 5
 discovered_by = austranesian
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 90.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 2.5
-	}
 }

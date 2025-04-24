@@ -9,18 +9,6 @@ base_tax = 23
 base_production = 1
 base_manpower = 1
 is_city = yes
-set_variable = { 
-	which = gch
-	value = 2
-}
-set_variable = { 
-	which = gck
-	value = 3
-}
-set_variable = { 
-	which = gci
-	value = 1
-}
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -28,27 +16,6 @@ discovered_by = southeast_asian
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_province_flag = TN_Important
-	set_province_flag = TN_Natural_Minor
-	set_variable = { 
-		which = baf
-		value = 98
-	}
-	set_province_flag = TN_RiverJoint
-	set_province_flag = TN_RiverSea
-	set_variable = { 
-		which = acp
-		value = 6.5
-	}
-	set_province_flag = seasalt
-	add_permanent_province_modifier = { 
-		name = urban_goods_metalwork
-		duration = -1
-	}
-	add_permanent_province_modifier = { 
-		name = urban_goods_naval_supplies
-		duration = -1
-	}
 }
 1276.1.1 = { 
 	owner = YUA

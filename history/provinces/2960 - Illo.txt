@@ -12,22 +12,6 @@ native_hostileness = 9
 discovered_by = soudantech
 discovered_by = sub_saharan
 200.1.1 = { 
-	set_variable = { 
-		which = abb
-		value = 5.000
-	}
-	set_variable = { 
-		which = atc
-		value = 30.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = baf
-		value = 27
-	}
-	set_variable = { 
-		which = acp
-		value = 4
-	}
 }

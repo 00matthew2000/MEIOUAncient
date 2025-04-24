@@ -12,22 +12,4 @@ base_production = 0
 base_manpower = 0
 discovered_by = mesoamerican
 450.1.1 = { 
-	set_province_flag = TN_Important
-	set_province_flag = TN_Natural_Important
-	set_variable = { 
-		which = baf
-		value = 45
-	}
-	set_province_flag = TN_RiverSea
-	set_province_flag = cacao
-	set_province_flag = cotton
-	set_province_flag = seasalt
-	set_variable = { 
-		which = amh
-		value = 60.000
-	}
-	set_variable = { 
-		which = ami
-		value = 10.000
-	}
 }

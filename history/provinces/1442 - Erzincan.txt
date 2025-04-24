@@ -11,10 +11,6 @@ base_tax = 6
 base_production = 0
 base_manpower = 0
 is_city = yes
-set_variable = { 
-	which = gch
-	value = 2
-}
 discovered_by = western
 discovered_by = eastern
 discovered_by = byzantine
@@ -23,26 +19,6 @@ discovered_by = ottoman
 discovered_by = steppestech
 discovered_by = YUA
 200.1.1 = { 
-	set_variable = { 
-		which = abb
-		value = 5.000
-	}
-	set_variable = { 
-		which = atc
-		value = 5.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 2.500
-	}
-	set_province_flag = TN_Minor
-	set_province_flag = TN_Silk
-	set_variable = { 
-		which = acp
-		value = 3.5
-	}
-	set_province_flag = mined_goods
-	set_province_flag = silver
 }

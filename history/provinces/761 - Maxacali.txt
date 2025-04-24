@@ -10,10 +10,4 @@ native_size = 20
 native_ferocity = 1
 native_hostileness = 3
 450.1.1 = { 
-	set_province_flag = TN_Harbour_Important
-	set_province_flag = TN_Natural_Major
-	set_variable = { 
-		which = acp
-		value = 5
-	}
 }

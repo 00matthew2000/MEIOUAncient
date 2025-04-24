@@ -12,10 +12,4 @@ base_manpower = 1
 is_city = yes
 discovered_by = mesoamerican
 450.1.1 = { 
-	set_province_flag = cacao
-	set_province_flag = seasalt
-	set_variable = { 
-		which = amh
-		value = 20.000
-	}
 }

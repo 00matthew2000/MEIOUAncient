@@ -10,23 +10,7 @@ base_tax = 28
 base_production = 5
 base_manpower = 1
 is_city = yes
-set_variable = { 
-	which = gcj
-	value = 3
-}
-set_variable = { 
-	which = gcn
-	value = 1
-}
 fort_14th = yes
-set_variable = { 
-	which = gck
-	value = 4
-}
-set_variable = { 
-	which = gci
-	value = 2
-}
 discovered_by = indian
 discovered_by = east_african
 discovered_by = western
@@ -35,15 +19,4 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = byzantine
 450.1.1 = { 
-	set_province_flag = TN_Important
-	set_variable = { 
-		which = baf
-		value = 21
-	}
-	set_province_flag = TN_Natural_Minor
-	set_variable = { 
-		which = acp
-		value = 5.5
-	}
-	set_province_flag = sugar
 }

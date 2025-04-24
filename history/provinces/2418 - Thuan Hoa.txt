@@ -9,10 +9,6 @@ base_manpower = 0
 native_size = 75
 native_ferocity = 8
 native_hostileness = 8
-set_variable = { 
-	which = gci
-	value = 1
-}
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -21,21 +17,4 @@ discovered_by = indian
 discovered_by = muslim
 discovered_by = austranesian
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 4.500
-	}
-	set_province_flag = TN_Minor
-	set_province_flag = TN_Harbour_Minor
-	set_province_flag = TN_Natural_Minor
-	set_variable = { 
-		which = acp
-		value = 2
-	}
-	set_province_flag = coal
-	set_province_flag = spices
-	add_permanent_province_modifier = { 
-		name = urban_goods_naval_supplies
-		duration = -1
-	}
 }

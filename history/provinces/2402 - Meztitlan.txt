@@ -9,23 +9,6 @@ base_manpower = 0
 native_size = 35
 native_ferocity = 5
 native_hostileness = 6
-set_variable = { 
-	which = gck
-	value = 1
-}
 discovered_by = mesoamerican
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 3.500
-	}
-	set_variable = { 
-		which = acp
-		value = 5.5
-	}
-	set_province_flag = copper
-	add_permanent_province_modifier = { 
-		name = urban_goods_metalwork
-		duration = -1
-	}
 }

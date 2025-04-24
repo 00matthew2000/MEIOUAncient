@@ -15,15 +15,4 @@ discovered_by = tibetan
 discovered_by = southeast_asian
 discovered_by = indian
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 3.500
-	}
-	set_variable = { 
-		which = acp
-		value = 3.5
-	}
-	set_province_flag = mined_goods
-	set_province_flag = tin
-	set_province_flag = coal
 }

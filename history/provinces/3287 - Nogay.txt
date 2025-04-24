@@ -14,36 +14,7 @@ discovered_by = ottoman
 discovered_by = steppestech
 discovered_by = YUA
 discovered_by = muslim
-set_variable = { 
-	which = gci
-	value = 1
-}
 200.1.1 = { 
-	set_variable = { 
-		which = abb
-		value = 20.000
-	}
-	set_variable = { 
-		which = atc
-		value = 75.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = ami
-		value = 6.000
-	}
-	set_province_flag = TN_Major
-	set_variable = { 
-		which = baf
-		value = 109
-	}
-	set_province_flag = TN_NorthernSilk
-	set_province_flag = TN_Natural_Minor
-	set_variable = { 
-		which = acp
-		value = 2.5
-	}
-	set_province_flag = mined_goods
-	set_province_flag = salt
 }

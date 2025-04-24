@@ -16,21 +16,11 @@ discovered_by = ottoman
 discovered_by = soudantech
 discovered_by = MAL
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 20.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 3.5
-	}
-	set_province_flag = qanat
 }
 1356.1.1 = { 
 	owner = FEZ
 	controller = FEZ
 	add_core = FEZ
-	set_province_flag = add_local_autonomy_25
 }

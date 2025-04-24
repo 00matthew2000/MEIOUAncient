@@ -10,22 +10,6 @@ native_size = 10
 native_ferocity = 4
 native_hostileness = 9
 discovered_by = austranesian
-set_variable = { 
-	which = gcn
-	value = 1
-}
-set_variable = { 
-	which = gci
-	value = 1
-}
-set_variable = { 
-	which = gcj
-	value = 1
-}
-set_variable = { 
-	which = gck
-	value = 1
-}
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -33,26 +17,4 @@ discovered_by = southeast_asian
 discovered_by = indian
 discovered_by = austranesian
 450.1.1 = { 
-	set_variable = { 
-		which = baf
-		value = 118
-	}
-	set_province_flag = TN_RiverSea
-	set_variable = { 
-		which = ami
-		value = 3.000
-	}
-	set_province_flag = TN_Minor
-	set_variable = { 
-		which = acp
-		value = 2
-	}
-	set_province_flag = mined_goods
-	set_province_flag = gems
-	add_permanent_province_modifier = { 
-		name = urban_goods_naval_supplies
-		duration = -1
-	}
-	set_province_flag = TN_Natural_Minor
-	set_province_flag = fruits
 }

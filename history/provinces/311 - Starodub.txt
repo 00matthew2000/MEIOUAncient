@@ -13,10 +13,4 @@ is_city = yes
 discovered_by = steppestech
 discovered_by = YUA
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 3
-	}
-	set_province_flag = mined_goods
-	set_province_flag = iron
 }

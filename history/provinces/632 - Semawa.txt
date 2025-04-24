@@ -16,17 +16,8 @@ discovered_by = southeast_asian
 discovered_by = indian
 discovered_by = austranesian
 200.1.1 = { 
-	set_variable = { 
-		which = atc
-		value = 80.000
-	}
 }
 450.1.1 = { 
-	set_variable = { 
-		which = acp
-		value = 3
-	}
-	set_province_flag = fruits
 }
 1337.1.1 = { 
 	discovered_by = BIM
@@ -35,5 +26,4 @@ discovered_by = austranesian
 	add_core = BIM
 	is_city = yes
 	trade_goods = sandal
-	set_province_flag = trade_good_set
 }

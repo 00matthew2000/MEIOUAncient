@@ -10,18 +10,6 @@ base_tax = 3
 base_production = 1
 base_manpower = 0
 is_city = yes
-set_variable = { 
-	which = gcj
-	value = 2
-}
-set_variable = { 
-	which = gch
-	value = 2
-}
-set_variable = { 
-	which = gck
-	value = 1
-}
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan
@@ -29,22 +17,8 @@ discovered_by = southeast_asian
 discovered_by = steppestech
 discovered_by = YUA
 200.1.1 = { 
-	set_variable = { 
-		which = abb
-		value = 15.000
-	}
-	set_variable = { 
-		which = atc
-		value = 60.000
-	}
 }
 450.1.1 = { 
-	set_province_flag = TN_Minor
-	set_province_flag = TN_Silk
-	set_variable = { 
-		which = acp
-		value = 3
-	}
 }
 1356.1.1 = { 
 	owner = MGH
