@@ -1111,7 +1111,7 @@ categories = {
 			
 			#East Africa
 			#CENTRAL ASIA
-			3298 3300 458 3311 462 478 4955 2743 4551
+			3298 3300 458 3311 462 478 4955 2743 
 			#CHINA
 			1053 5418 715 1061
 			#JAPAN
@@ -1210,7 +1210,7 @@ categories = {
 			#NORTH AFRICA
 			349 
 			4115 1115 1548 2504 2657 1212 2497 1210 2661 2650 
-			1208 4589
+			1208 
 			#SOUTH AFRICA
 			1583
 			#IRAN
@@ -1607,7 +1607,7 @@ categories = {
  ###
 
 terrain = {
-	grass_flats			= { type = grass_flats			color = { 	0	 } }
+	grass_flats		= { type = grass_flats				color = { 	0	 } }
 	grass_hills			= { type = grass_hills			color = { 	1	 } }
 	desert_mountains	= { type = desert_mountains		color = { 	2	 } }
 	desert_flats		= { type = desert_flats			color = { 	3	 } }

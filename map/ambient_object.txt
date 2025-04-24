@@ -27735,12 +27735,6 @@ type={
 		rotation = { 0.000 0.000 0.000 }
 	}
 	object = {
-		name = "pin_4551"
-		hidden_on_start = yes
-		position = { 3722.000 2.000 1741.000 }
-		rotation = { 0.000 0.000 0.000 }
-	}
-	object = {
 		name = "pin_4562"
 		hidden_on_start = yes
 		position = { 3224.000 2.000 1457.000 }
@@ -27768,12 +27762,6 @@ type={
 		name = "pin_4584"
 		hidden_on_start = yes
 		position = { 3559.000 2.000 1412.000 }
-		rotation = { 0.000 0.000 0.000 }
-	}
-	object = {
-		name = "pin_4589"
-		hidden_on_start = yes
-		position = { 3168.000 2.000 1383.000 }
 		rotation = { 0.000 0.000 0.000 }
 	}
 	object = {
