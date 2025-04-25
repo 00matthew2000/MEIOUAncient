@@ -1,0 +1,39 @@
+
+allianceaction = {
+	condition = {
+		tooltip = ASTYAGESMADNESSTOOLTIP
+		potential = {
+			tag = MDI
+			start_date = 195.1.1
+			has_global_flag = astyages_madness_flag
+			has_ruler_modifier = astyages_madness_modifier
+		}
+		allow = {
+			FROM = { NOT = { tag = BAB } }
+		}
+	}
+	condition = {
+		tooltip = ZHOUBAZHUALLYONLY
+		potential = {
+			OR = {
+				AND = {
+					tag = ZHO
+					has_reform = free_city_zhou
+					FROM = {
+						is_emperor = no
+					}
+				}
+				AND = {
+					is_emperor = no
+					FROM = {
+						tag = ZHO
+						has_reform = free_city_zhou
+					}
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+}
