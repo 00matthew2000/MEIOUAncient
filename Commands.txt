@@ -19,7 +19,7 @@ To help map terrain, make a version of provinces.bmp where you annex provs into 
 NOTE: Maybe change event modifiers to fit what you want (new great projects, non hagia sophia?)
 
 Replacements List:
--Most Decisions
+-Decisions
 -Events
 -Map (but need new provs)
 -Missions?
@@ -30,5 +30,6 @@ Replacements List:
 	Religions
 	Regions
 -Customizable Loc
+-Most Localization
 -GFX: Loading Screens
 -Tutorial
