@@ -1,85 +1,144 @@
-succession_crisis = { 
-	potential = { 
-		always = no
+succession_crisis_disaster = {
+	potential = {
 		government = monarchy
-		OR = { 
-			has_reform = Pol_Succession1
-			has_reform = Pol_Succession3
-			has_reform = Pol_Succession4
-			has_reform = Pol_Succession5
-		}
-		is_lesser_in_union = no
-		NOT = { 
-			AND = { 
-				government = monarchy
-				culture_group = chinese_group
-				has_reform = Pol_Succession5
-			}
-		}
-		NOT = { 
-			has_country_modifier = suffered_succession_crisis
-		}
+		NOT = { has_reform = dual_monarchy_reform }
+		NOT = { months_of_ruling = 36 }
+		had_global_flag = { flag = game_start_flag days = 1095 }
 	}
-	can_start = { 
+
+	can_start = {
+		NOT = { months_of_ruling = 36 }
+		if = {
+			limit = {
+				ai = yes
+			}
+			NOT = { legitimacy = 50 }
+		}
+		else = {
+			NOT = { legitimacy = 80 }
+		}
 		has_any_disaster = no
-		capital_scope = { 
-			OR = { 
-				controlled_by = pretender_rebels
-				sieged_by = pretender_rebels
-			}
+	}
+
+	can_stop = {
+		OR = {
+			months_of_ruling = 36
+			NOT = { government = monarchy }
+			legitimacy = 80
 		}
 	}
-	can_stop = { 
-		OR = { 
-			has_any_disaster = yes
-			capital_scope = { 
-				controlled_by = owner
-				has_siege = no
-			}
+
+	progress = {
+		modifier = {
+			factor = 30
+			NOT = { stability = -2 }
 		}
-	}
-	progress = { 
-		modifier = { 
-			OR = { 
-				any_owned_province = { 
-					sieged_by = pretender_rebels
-				}
-				has_spawned_rebels = pretender_rebels
-			}
-			factor = 10
-		}
-		modifier = { 
-			factor = 10
-			num_of_rebel_controlled_provinces = 1
-		}
-		modifier = { 
+		modifier = {
 			factor = 20
-			capital_scope = { 
-				controlled_by = pretender_rebels
-			}
+			stability = -2
+			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 10
+			stability = -1
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = -5
+			stability = 1
+			NOT = { stability = 2 }
+		}
+		modifier = {
+			factor = -10
+			stability = 2
+			NOT = { stability = 3 }
+		}
+		modifier = {
+			factor = -15
+			stability = 3
+		}
+
+		modifier = {
+			factor = 40
+			NOT = { legitimacy = 10 }
+		}
+		modifier = {
+			factor = 35
+			legitimacy = 10
+			NOT = { legitimacy = 20 }
+		}
+		modifier = {
+			factor = 30
+			legitimacy = 20
+			NOT = { legitimacy = 30 }
+		}
+		modifier = {
+			factor = 25
+			legitimacy = 30
+			NOT = { legitimacy = 40 }
+		}
+		modifier = {
+			factor = 20
+			legitimacy = 40
+			NOT = { legitimacy = 50 }
+		}
+		modifier = {
+			factor = 15
+			legitimacy = 50
+			NOT = { legitimacy = 60 }
+		}
+		modifier = {
+			factor = 10
+			legitimacy = 60
+			NOT = { legitimacy = 70 }
+		}
+		modifier = {
+			factor = 5
+			legitimacy = 70
+			NOT = { legitimacy = 80 }
+		}
+
+		modifier = {
+			factor = 5
+			num_of_revolts = 1
+		}
+		modifier = {
+			factor = 5
+			NOT = { ruler_age = 15 }
+		}
+		modifier = {
+			factor = 5
+			NOT = { is_female = yes }
 		}
 	}
-	can_end = { 
-		NOT = { 
-			has_spawned_rebels = pretender_rebels
-		}
-		NOT = { 
-			any_owned_province = { 
-				sieged_by = pretender_rebels
+
+	can_end = {
+		OR = {
+			months_of_ruling = 60
+			AND = {
+				stability = 1
+				legitimacy = 80
 			}
-		}
-		NOT = { 
-			any_owned_province = { 
-				controlled_by = pretender_rebels
-			}
+			NOT = { government = monarchy }
 		}
 	}
-	modifier = { 
-		stability_cost_modifier = 0.2
-		land_forcelimit_modifier = -0.20
-		land_morale = -0.10
+
+	modifier = {
+		global_unrest = 5
+		stability_cost_modifier = 0.25
+		global_manpower_modifier = -0.5
+		fac_nobles_influence = 0.05
 	}
-	on_start = dg_succession.001
-	on_end = dg_succession.002
-	on_monthly = { }
+
+	on_start = succession_crisis_event.1
+	on_end = succession_crisis_event.2
+
+	on_monthly = {
+		events = {
+		}
+		random_events = {
+			1000 = 0
+			100 = succession_crisis_event.3
+		}
+	}
 }
