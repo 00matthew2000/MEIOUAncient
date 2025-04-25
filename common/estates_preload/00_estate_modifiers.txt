@@ -1,256 +1,213 @@
-estate_bu = { 
-	modifier_definition = { 
+#Define estate loyalty and influence modifiers here
+estate_nobility = {
+	modifier_definition = {
 		type = loyalty
-		key = estate_bu_loyalty_modifier
-		trigger = { 
-			has_estate = estate_bu
+		key = nobility_loyalty_modifier
+		trigger = {
+			has_estate = estate_nobility
 		}
 	}
-	modifier_definition = { 
+	modifier_definition = {
 		type = influence
-		key = estate_bu_influence_modifier
-		trigger = { 
-			has_estate = estate_bu
+		key = nobility_influence_modifier
+		trigger = {
+			has_estate = estate_nobility
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = nobility_privilege_slots
+		trigger = {
+			has_estate = estate_nobility
 		}
 	}
 }
-estate_bu_placeholder_1 = { 
-	modifier_definition = { 
+
+estate_merchants = {
+	modifier_definition = {
 		type = loyalty
-		key = estate_bu_placeholder_1_loyalty_modifier
-		trigger = { 
-			has_estate = estate_bu_placeholder_1
+		key = merchants_loyalty_modifier
+		trigger = {
+			has_estate = estate_merchants
 		}
 	}
-	modifier_definition = { 
+	modifier_definition = {
 		type = influence
-		key = estate_bu_placeholder_1_influence_modifier
-		trigger = { 
-			has_estate = estate_bu_placeholder_1
+		key = merchants_influence_modifier
+		trigger = {
+			has_estate = estate_merchants
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = merchants_privilege_slots
+		trigger = {
+			has_estate = estate_merchants
 		}
 	}
 }
-estate_bu_placeholder_2 = { 
-	modifier_definition = { 
+
+estate_priesthood = {
+	modifier_definition = {
 		type = loyalty
-		key = estate_bu_placeholder_2_loyalty_modifier
-		trigger = { 
-			has_estate = estate_bu_placeholder_2
+		key = priesthood_loyalty_modifier
+		trigger = {
+			has_estate = estate_priesthood
 		}
 	}
-	modifier_definition = { 
+	modifier_definition = {
 		type = influence
-		key = estate_bu_placeholder_2_influence_modifier
-		trigger = { 
-			has_estate = estate_bu_placeholder_2
+		key = priesthood_influence_modifier
+		trigger = {
+			has_estate = estate_priesthood
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = priesthood_privilege_slots
+		trigger = {
+			has_estate = estate_priesthood
 		}
 	}
 }
-estate_bu_placeholder_3 = { 
-	modifier_definition = { 
+
+estate_clans = {
+	modifier_definition = {
 		type = loyalty
-		key = estate_bu_placeholder_3_loyalty_modifier
-		trigger = { 
-			has_estate = estate_bu_placeholder_3
+		key = clans_loyalty_modifier
+		trigger = {
+			has_estate = estate_clans
 		}
 	}
-	modifier_definition = { 
+	modifier_definition = {
 		type = influence
-		key = estate_bu_placeholder_3_influence_modifier
-		trigger = { 
-			has_estate = estate_bu_placeholder_3
+		key = clans_influence_modifier
+		trigger = {
+			has_estate = estate_clans
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = clans_privilege_slots
+		trigger = {
+			has_estate = estate_clans
 		}
 	}
 }
-estate_ph1 = { 
-	modifier_definition = { 
+estate_slaves = {
+	modifier_definition = {
 		type = loyalty
-		key = estate_bg_placeholder_1_loyalty_modifier
-		trigger = { 
-			has_estate = estate_bg_placeholder_1
+		key = slaves_loyalty_modifier
+		trigger = {
+			has_estate = estate_slaves
 		}
 	}
-	modifier_definition = { 
+	modifier_definition = {
 		type = influence
-		key = estate_bg_placeholder_1_influence_modifier
-		trigger = { 
-			has_estate = estate_bg_placeholder_1
+		key = slaves_influence_modifier
+		trigger = {
+			has_estate = estate_slaves
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = slaves_privilege_slots
+		trigger = {
+			has_estate = estate_slaves
 		}
 	}
 }
-estate_ph2 = { 
-	modifier_definition = { 
+
+estate_socii = {
+	modifier_definition = {
 		type = loyalty
-		key = estate_bg_placeholder_1_loyalty_modifier
-		trigger = { 
-			has_estate = estate_bg_placeholder_1
+		key = socii_loyalty_modifier
+		trigger = {
+			has_estate = estate_socii
 		}
 	}
-	modifier_definition = { 
+	modifier_definition = {
 		type = influence
-		key = estate_bg_placeholder_1_influence_modifier
-		trigger = { 
-			has_estate = estate_bg_placeholder_1
+		key = socii_influence_modifier
+		trigger = {
+			has_estate = estate_socii
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = socii_privilige_slots
+		trigger = {
+			has_estate = estate_socii
 		}
 	}
 }
-estate_no = { 
-	modifier_definition = { 
+
+# "Extra" estates, used to create more modifiers for the Slaves mechanics
+estate_extra1 = {
+	modifier_definition = {
 		type = loyalty
-		key = estate_no_loyalty_modifier
-		trigger = { 
-			has_estate = estate_no
-		}
+		key = slavesmod_natality
+		trigger = { always = yes }
 	}
-	modifier_definition = { 
+	modifier_definition = {
 		type = influence
-		key = estate_no_influence_modifier
-		trigger = { 
-			has_estate = estate_no
-		}
+		key = slavesmod_mortality
+		trigger = { always = yes }
+	}
+	modifier_definition = {
+		type = privileges
+		key = estate_extra1_privilege_slots
+		trigger = { has_estate = estate_extra1 }
 	}
 }
-estate_bg = { 
-	modifier_definition = { 
+estate_extra2 = {
+	modifier_definition = {
 		type = loyalty
-		key = estate_bg_loyalty_modifier
-		trigger = { 
-			has_estate = estate_bg
-		}
+		key = slavesmod_liberated
+		trigger = { always = yes }
 	}
-	modifier_definition = { 
+	modifier_definition = {
 		type = influence
-		key = estate_bg_influence_modifier
-		trigger = { 
-			has_estate = estate_bg
-		}
+		key = slavesmod_productivity
+		trigger = { always = yes }
+	}
+	modifier_definition = {
+		type = privileges
+		key = estate_extra2_privilege_slots
+		trigger = { has_estate = estate_extra2 }
 	}
 }
-estate_no_placeholder_1 = { 
-	modifier_definition = { 
+estate_extra3 = {
+	modifier_definition = {
 		type = loyalty
-		key = estate_no_placeholder_1_loyalty_modifier
-		trigger = { 
-			has_estate = estate_no_placeholder_1
-		}
+		key = slavesmod_state_income
+		trigger = { always = yes }
 	}
-	modifier_definition = { 
+	modifier_definition = {
 		type = influence
-		key = estate_no_placeholder_1_influence_modifier
-		trigger = { 
-			has_estate = estate_no_placeholder_1
-		}
+		key = slavesmod_enslav_eff
+		trigger = { always = yes }
+	}
+	modifier_definition = {
+		type = privileges
+		key = estate_extra3_privilege_slots
+		trigger = { has_estate = estate_extra3 }
 	}
 }
-estate_bg_placeholder_1 = { 
-	modifier_definition = { 
+estate_extra4 = {
+	modifier_definition = {
 		type = loyalty
-		key = estate_bg_placeholder_1_loyalty_modifier
-		trigger = { 
-			has_estate = estate_bg_placeholder_1
-		}
+		key = siege_ferocity
+		trigger = { always = yes }
 	}
-	modifier_definition = { 
+	modifier_definition = {
 		type = influence
-		key = estate_bg_placeholder_1_influence_modifier
-		trigger = { 
-			has_estate = estate_bg_placeholder_1
-		}
+		key = enslavement_efficiency
+		trigger = { always = yes }
 	}
-}
-estate_ph3 = { 
-	modifier_definition = { 
-		type = loyalty
-		key = estate_bg_placeholder_1_loyalty_modifier
-		trigger = { 
-			has_estate = estate_bg_placeholder_1
-		}
-	}
-	modifier_definition = { 
-		type = influence
-		key = estate_bg_placeholder_1_influence_modifier
-		trigger = { 
-			has_estate = estate_bg_placeholder_1
-		}
-	}
-}
-estate_ph4 = { 
-	modifier_definition = { 
-		type = loyalty
-		key = estate_bg_placeholder_1_loyalty_modifier
-		trigger = { 
-			has_estate = estate_bg_placeholder_1
-		}
-	}
-	modifier_definition = { 
-		type = influence
-		key = estate_bg_placeholder_1_influence_modifier
-		trigger = { 
-			has_estate = estate_bg_placeholder_1
-		}
-	}
-}
-estate_tr = { 
-	modifier_definition = { 
-		type = loyalty
-		key = estate_tr_loyalty_modifier
-		trigger = { 
-			has_estate = estate_tr
-		}
-	}
-	modifier_definition = { 
-		type = influence
-		key = estate_tr_influence_modifier
-		trigger = { 
-			has_estate = estate_tr
-		}
-	}
-}
-estate_cl = { 
-	modifier_definition = { 
-		type = loyalty
-		key = estate_cl_loyalty_modifier
-		trigger = { 
-			has_estate = estate_cl
-		}
-	}
-	modifier_definition = { 
-		type = influence
-		key = estate_cl_influence_modifier
-		trigger = { 
-			has_estate = estate_cl
-		}
-	}
-}
-estate_tr_placeholder_1 = { 
-	modifier_definition = { 
-		type = loyalty
-		key = estate_tr_placeholder_1_loyalty_modifier
-		trigger = { 
-			has_estate = estate_tr_placeholder_1
-		}
-	}
-	modifier_definition = { 
-		type = influence
-		key = estate_tr_placeholder_1_influence_modifier
-		trigger = { 
-			has_estate = estate_tr_placeholder_1
-		}
-	}
-}
-estate_cl_placeholder_1 = { 
-	modifier_definition = { 
-		type = loyalty
-		key = estate_cl_placeholder_1_loyalty_modifier
-		trigger = { 
-			has_estate = estate_cl_placeholder_1
-		}
-	}
-	modifier_definition = { 
-		type = influence
-		key = estate_cl_placeholder_1_influence_modifier
-		trigger = { 
-			has_estate = estate_cl_placeholder_1
-		}
+	modifier_definition = {
+		type = privileges
+		key = estate_extra3_privilege_slots
+		trigger = { has_estate = estate_extra3 }
 	}
 }
