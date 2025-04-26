@@ -1,28 +1,39 @@
-default_ideas = { 
-	start = { }
-	bonus = { }
+# This file contains the default idea group in order to make sure it is loaded last.
+
+
+default_ideas = {
+	start = {
+		tolerance_heretic = 1
+		tolerance_heathen = 1
+	}
+
+	bonus = {
+		global_unrest = -3
+	}
+
 	free = yes
-	generic_trait = { }
-	generic_bonus_trait = { 
-		global_trade_goods_size_modifier = 0.015
+
+	default_1 = {
+		stability_cost_modifier = -0.15
 	}
-	increased_manpower = { 
-		global_regiment_recruit_speed = -0.10
+	default_2 = {
+		merchants = 1
+		reduced_liberty_desire = 10
 	}
-	increase_taxation = { 
-		yearly_corruption = -0.05
+	default_3 = {
+		state_maintenance_modifier = -0.2
 	}
-	cheaper_mercenaries = { 
-		mercenary_discipline = 0.025
-		mercenary_cost = -0.05
+	default_4 = {
+		global_tax_modifier = 0.15
 	}
-	increased_trade_power = { 
-		global_trade_power = 0.05
-		trade_efficiency = 0.05
+	default_5 = {
+		diplomatic_reputation = 1
 	}
-	increased_global_foreign_trade_power = { 
-		global_foreign_trade_power = 0.1
-		spy_offence = 0.05
-		global_spy_defence = 0.10
+	default_6 = {
+		global_missionary_strength = 0.01
+		missionary_maintenance_cost = -0.2
+	}
+	default_7 = {
+		governing_capacity_modifier = 0.15
 	}
 }
