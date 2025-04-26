@@ -1,305 +1,512 @@
-reichstag = { 
+emperor_reichsreform = { #兴灭继绝
 	empire = hre
-	potential = { 
+	potential = {
 		has_dlc = "Emperor"
 	}
-	province = { }
-	emperor_per_prince = { }
-	member = { 
-		prestige = 0.1
+	province = {
+
 	}
-	emperor = { 
-		prestige = 0.1
-	}
-	on_effect = { 
-		log = "FE-HRE:[GetYear]:[Root.GetName]:passed The Reichstag reform:00_hre"
+	on_effect = {
 		imperial_ban_allowed = yes
+		add_reform_desire = 0.1
+		add_country_modifier = { 
+			name = recently_passed_zhuxia_reform 
+			duration = 730
+		}
 	}
-	off_effect = { 
-		log = "FE-HRE:[GetYear]:[Root.GetName]:revoked The Reichstag reform:00_hre"
+	off_effect = {
 		imperial_ban_allowed = no
 	}
 	gui_container = mainline
 }
-son_voting_dynastic_inheritence = { 
+
+emperor_reichsregiment = { #征收贡赋
 	empire = hre
-	potential = { 
+	potential = {
 		has_dlc = "Emperor"
 	}
-	province = { }
-	emperor_per_prince = { }
-	member = { 
-		stability_cost_modifier = -0.05
+	province = {
+
 	}
-	emperor = { 
-		diplomatic_reputation = 0.1
+	on_effect = {
+		add_reform_desire = 0.2
+		add_country_modifier = { 
+			name = recently_passed_zhuxia_reform 
+			duration = 1460
+		}
 	}
-	on_effect = { 
-		log = "FE-HRE:[GetYear]:[Root.GetName]:passed Dynastic Inheritance reform:00_hre"
-		hidden_effect = { 
-			every_elector = { 
-				emperor = { 
-					reverse_add_opinion = { 
-						who = PREV
-						modifier = hre_dynastic_inheritance
+	emperor = {
+
+	}
+	required_reform = emperor_reichsreform
+	gui_container = mainline
+}
+
+emperor_reichsstabilitaet = { #以战行教
+	empire = hre
+	required_reform = emperor_reichsregiment
+	gui_container = mainline
+
+	potential = {
+		has_dlc = "Emperor"
+	}
+	province = {
+
+	}
+	on_effect = {
+		add_reform_desire = 0.4
+		add_country_modifier = { 
+			name = recently_passed_zhuxia_reform 
+			duration = 2190
+		}
+		custom_tooltip = "EXPAND_EMPIRE_CB"
+	}
+}
+
+emperor_perpetual_diet = { #盟约之城
+	empire = hre
+	required_reform = emperor_reichsstabilitaet
+	gui_container = mainline
+
+	potential = {
+		has_dlc = "Emperor"
+	}
+
+	emperor = {
+		free_city_imperial_authority = 0.5
+	}
+	on_effect = {
+		custom_tooltip = "PERPETUAL_DIET_ESTABLISHED"
+		add_reform_desire = 0.6
+		add_country_modifier = { 
+			name = recently_passed_zhuxia_reform 
+			duration = 2920
+		}
+		if = {
+			limit = {
+				hre_religion = chinese_religion
+			}
+			hidden_effect = {
+				4349 = {
+					province_event = {
+						id = hre_event.6
 					}
+					add_province_triggered_modifier = perpetual_diet
+				}
+			}
+		}
+		else = {
+			hidden_effect = {
+				random_province = {
+					limit = {
+						is_part_of_hre = yes
+						is_capital = yes
+						OR = {
+							owner = { is_emperor = yes }
+						}
+					}
+					province_event = {
+						id = hre_event.6
+					}
+					add_province_triggered_modifier = perpetual_diet
 				}
 			}
 		}
 	}
-	off_effect = { 
-		log = "FE-HRE:[GetYear]:[Root.GetName]:revoked Dynastic Inheritance reform:00_hre"
+	off_effect = {
+
 	}
-	gui_container = mainline
-	required_reform = reichstag
 }
-reichsreform = { 
+
+emperor_landfriede = { #永禁仇杀
 	empire = hre
-	potential = { 
+	potential = {
 		has_dlc = "Emperor"
 	}
-	province = { }
-	emperor_per_prince = { }
-	member = { 
-		build_cost = -0.02
-		technology_cost = -0.02
+	all = {
+		#amount_of_banners = 0.5
+		has_banners = yes
 	}
-	emperor = { 
-		build_cost = -0.02
-		technology_cost = -0.02
-		prestige = 0.2
+	province = {
+		local_has_banners = yes
+		local_amount_of_banners = 0.1	#当地可征召八旗数量
 	}
-	on_effect = { 
-		log = "FE-HRE:[GetYear]:[Root.GetName]:passed Call for Reichsreform reform:00_hre"
-		custom_tooltip = reichsreform_demand_unlawful_territory
-	}
-	off_effect = { 
-		log = "FE-HRE:[GetYear]:[Root.GetName]:revoked Call for Reichsreform reform:00_hre"
-	}
-	gui_container = mainline
-	required_reform = son_voting_dynastic_inheritence
-}
-reichsregiment = { 
-	empire = hre
-	potential = { 
-		has_dlc = "Emperor"
-	}
-	province = { }
-	emperor_per_prince = { }
-	member = { 
-		prestige = 0.25
-	}
-	emperor = { 
-		diplomatic_reputation = 0.5
-		diplomats = 1
-	}
-	on_effect = { 
-		log = "FE-HRE:[GetYear]:[Root.GetName]:passed Institute Reichsregiment reform:00_hre"
-	}
-	off_effect = { 
-		log = "FE-HRE:[GetYear]:[Root.GetName]:revoked Call for Reichsreform reform:00_hre"
-	}
-	gui_container = mainline
-	required_reform = reichstag
-}
-hofgericht = { 
-	empire = hre
-	potential = { 
-		has_dlc = "Emperor"
-	}
-	province = { }
-	emperor_per_prince = { }
-	member = { 
-		stability_cost_modifier = -0.1
-	}
-	emperor = { 
-		legitimacy = 0.25
-		core_creation = -0.10
-	}
-	on_effect = { 
-		log = "FE-HRE:[GetYear]:[Root.GetName]:passed Reform the Hofgericht reform:00_hre"
-	}
-	off_effect = { 
-		log = "FE-HRE:[GetYear]:[Root.GetName]:revoked Reform the Hofgericht reform:00_hre"
-	}
-	gui_container = mainline
-	required_reform = reichsreform
-}
-gemeinerpfennig = { 
-	empire = hre
-	potential = { 
-		has_dlc = "Emperor"
-	}
-	province = { }
-	emperor_per_prince = { }
-	member = { 
-		diplomatic_reputation = 1
-	}
-	emperor = { }
-	on_effect = { 
-		log = "FE-HRE:[GetYear]:[Root.GetName]:passed Enact the Gemeiner Pfennig reform:00_hre"
-		hidden_effect = { 
-			every_province = { 
-				limit = { 
-					is_part_of_hre = yes
-					owner = { 
-						is_emperor = no
-					}
-				}
-				add_province_modifier = { 
-					name = HRE_Gemeiner_Pfennig
-					duration = -1
-				}
-			}
-			emperor = { 
-				add_country_modifier = { 
-					name = Emperor_Gemeiner_Pfennig
-					duration = -1
-				}
-			}
+	on_effect = {
+		custom_tooltip = "ZHUXIAWUSHI"
+		add_reform_desire = 0.7
+		add_country_modifier = { 
+			name = recently_passed_zhuxia_reform 
+			duration = 3650
 		}
-		custom_tooltip = HRE_Gemeiner_Pfennig_Enact
+		#诸夏成员受到攻击时可请求所有成员的帮助
 	}
-	off_effect = { 
-		log = "FE-HRE:[GetYear]:[Root.GetName]:revoked Enact the Gemeiner Pfennig reform:00_hre"
-		hidden_effect = { 
-			every_province = { 
-				limit = { 
-					is_part_of_hre = yes
-					owner = { 
-						is_emperor = no
-					}
-				}
-				remove_province_modifier = HRE_Gemeiner_Pfennig
+	required_reform = emperor_perpetual_diet
+	gui_container = mainline
+}
+
+emperor_landsknechtswesen = { #诸夏武士
+	empire = hre
+	potential = {
+		has_dlc = "Emperor"
+	}
+	emperor = {
+
+	}
+	on_effect = {
+		if = {
+			limit = {
+				hre_religion_locked = no
+				hre_religion_treaty = no
 			}
-			emperor = { 
-				remove_country_modifier = Emperor_Gemeiner_Pfennig
-			}
+			set_hre_religion_treaty = yes
 		}
-	}
-	gui_container = mainline
-	required_reform = hofgericht
-}
-landfriede = { 
-	empire = hre
-	potential = { 
-		has_dlc = "Emperor"
-	}
-	province = { }
-	emperor_per_prince = { }
-	member = { 
-		stability_cost_modifier = -0.10
-	}
-	emperor = { 
-		stability_cost_modifier = -0.10
-	}
-	on_effect = { 
-		log = "FE-HRE:[GetYear]:[Root.GetName]:passed Ewiger Landfriede reform:00_hre"
-		internal_hre_cb = no
-	}
-	off_effect = { 
-		log = "FE-HRE:[GetYear]:[Root.GetName]:revoked Ewiger Landfriede reform:00_hre"
-		internal_hre_cb = yes
-	}
-	gui_container = mainline
-	required_reform = reichsreform
-	required_reform = hofgericht
-}
-erbkaisertum = { 
-	empire = hre
-	potential = { 
-		has_dlc = "Emperor"
-	}
-	province = { }
-	emperor_per_prince = { }
-	member = { 
-		legitimacy = 0.3
-	}
-	emperor = { 
-		imperial_authority = 0.25
-	}
-	on_effect = { 
-		log = "FE-HRE:[GetYear]:[Root.GetName]:passed Proclaim Erbkaisertum reform:00_hre"
 		hre_inheritable = yes
+		add_reform_desire = 0.8
 	}
-	off_effect = { 
-		log = "FE-HRE:[GetYear]:[Root.GetName]:revoked Proclaim Erbkaisertum reform:00_hre"
+	off_effect = {
 		hre_inheritable = no
 	}
+	required_reform = emperor_landfriede
 	gui_container = mainline
-	required_reform = gemeinerpfennig
-	required_reform = reichsreform
-	required_reform = hofgericht
 }
-privilegia_de_non_appelando = { 
+
+emperor_erbkaisertum = { #霸位永传
 	empire = hre
-	war = yes
-	potential = { 
+	required_reform = emperor_landsknechtswesen
+	gui_container = mainline
+	potential = {
 		has_dlc = "Emperor"
 	}
-	province = { }
-	emperor_per_prince = { }
-	member = { 
-		diplomatic_reputation = 1
+	all = {
+
 	}
-	emperor = { 
-		diplomatic_reputation = -1
+	emperor = {
+
 	}
-	on_effect = { 
-		log = "FE-HRE:[GetYear]:[Root.GetName]:passed Revoke the privilegia reform:00_hre"
-		emperor = { 
-			country_event = { 
-				id = holyromanempire.9073
-				tooltip = vassalize_empire2
+	province = {
+
+	}
+	on_effect = {
+		custom_tooltip = "NEW_ETERNAL_TOOLTIP"
+		custom_tooltip = "CHINA_BEGIN_TRENT"
+	}
+	off_effect = {
+		
+	}
+}
+
+emperor_reichstag_collegia = { #诸夏九军
+	empire = hre
+	required_reform = emperor_erbkaisertum
+	disabled_by = emperor_gemeinerpfennig
+	gui_container = left_branch
+	ai_acceptance_decentralize = yes
+
+	potential = {
+		has_dlc = "Emperor"
+	}
+	elector_per_prince = {
+
+	}
+	province = {
+
+	}
+	emperor_per_prince = {
+		imperial_authority = 0.01
+	}
+	emperor = {
+		max_free_cities = 999
+	}
+}
+
+emperor_expand_gemeiner_pfennig = { #诸夏互保
+	empire = hre
+	required_reform = emperor_reichstag_collegia
+	gui_container = left_branch
+	ai_acceptance_decentralize = yes
+
+	potential = {
+		has_dlc = "Emperor"
+	}
+	emperor_per_prince = {
+
+	}
+	elector_per_prince = {
+
+	}
+	province = {
+
+	}
+	on_effect = {
+		custom_tooltip = "ZHUXIAHUBAO_QIYONG"
+		#诸夏成员受到攻击时可请求所有成员的帮助
+	}
+}
+
+emperor_rechenschaft = { #播散声化
+	empire = hre
+	required_reform = emperor_expand_gemeiner_pfennig
+	gui_container = left_branch
+	ai_acceptance_decentralize = yes
+
+	potential = {
+		has_dlc = "Emperor"
+	}
+	emperor_per_prince = {
+
+	}
+	emperor = {
+
+	}
+	on_effect = {
+		custom_tooltip = "YAOQINGJIARUZHUXIA"#诸夏成员可邀请高关系国家加入诸夏
+	}
+}
+
+emperor_geteilte_macht = { #八方之伯
+	empire = hre
+	required_reform = emperor_rechenschaft
+	gui_container = left_branch
+	ai_acceptance_decentralize = yes
+
+	potential = {
+		has_dlc = "Emperor"
+	}
+	elector_per_prince = {
+
+	}
+	province = {
+
+	}
+	emperor_per_prince = {
+		imperial_authority = 0.01
+	}
+	emperor = {
+		max_electors = 1
+	}
+}
+
+emperor_hepingzhiyue = { #和平之约
+	empire = hre
+	required_reform = emperor_geteilte_macht
+	gui_container = left_branch
+	ai_acceptance_decentralize = yes
+
+	potential = {
+		has_dlc = "Emperor"
+	}
+	on_effect = {
+		#enable_imperial_realm_war = yes
+		custom_tooltip = REICHSKRIEG_DEFENSE_OF_REALM_MODIFIER
+		custom_tooltip = EXPANDED_INTEGRATE_ZHUXIA_CB_TOOLTIP
+	}
+
+	off_effect = {
+		#enable_imperial_realm_war = no
+	}
+}
+
+emperor_reichskrieg = { #肆伐九夷
+	empire = hre
+	required_reform = emperor_hepingzhiyue
+	gui_container = left_branch
+	ai_acceptance_decentralize = yes
+
+	potential = {
+		has_dlc = "Emperor"
+	}
+	on_effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						exists = ZHO
+					}
+				}
+				4349 = {
+					cede_province = ZHO
+					add_core = ZHO
+				}
+				4351 = {
+					cede_province = ZHO
+					add_core = ZHO
+				}
 			}
-		}
-		hidden_effect = { 
-			every_country = { 
-				limit = { 
+			4193 = {
+				cede_province = ZHO
+				add_core = ZHO
+			}
+			4189 = {
+				cede_province = ZHO
+				add_core = ZHO
+			}
+			4208 = {
+				cede_province = ZHO
+				add_core = ZHO
+			}
+			4195 = {
+				cede_province = ZHO
+				add_core = ZHO
+			}
+			every_country = {
+				limit = {
 					is_part_of_hre = yes
 					is_emperor = no
 					num_of_cities = 1
-					NOT = { 
-						is_subject_of = ROOT
-					}
+					NOT = { tag = ZHO }
 				}
-				country_event = { 
-					id = holyromanempire.9074
-				}
+				country_event = { id = china.89 }
 			}
+			internal_hre_cb = no
 		}
+		custom_tooltip = BAZHU_FINAL_DECENTRALIZE
 	}
-	off_effect = { 
-		log = "FE-HRE:[GetYear]:[Root.GetName]:revoked Revoke the privilegia reform:00_hre"
+
+	off_effect = {
+		internal_hre_cb = yes
 	}
-	gui_container = mainline
-	required_reform = gemeinerpfennig
-	required_reform = reichsreform
-	required_reform = hofgericht
-	required_reform = erbkaisertum
-	required_reform = landfriede
 }
-renovatio = { 
+
+emperor_gemeinerpfennig = { #定期贡赋
 	empire = hre
-	potential = { 
+	potential = {
 		has_dlc = "Emperor"
 	}
-	province = { }
-	emperor_per_prince = { }
-	member = { }
-	emperor = { }
-	on_effect = { 
-		log = "FE-HRE:[GetYear]:[Root.GetName]:passed Renovatio Imperii reform:00_hre"
-		emperor = { 
+	all = {
+
+	}
+	emperor_per_prince = {
+		global_tax_income = 0.5
+		global_manpower = 0.1
+	}
+
+	elector_per_prince = {
+		global_manpower = 0.05
+		global_manpower = 0.01
+	}
+
+	emperor = {
+
+	}
+
+	required_reform = emperor_erbkaisertum
+	disabled_by = emperor_reichstag_collegia
+	gui_container = right_branch
+}
+
+emperor_hofgericht = { #定期朝见
+	empire = hre
+	potential = {
+		has_dlc = "Emperor"
+	}
+	emperor = {
+
+	}
+
+	on_effect = {
+		#custom_tooltip = "Dingqi_Tribute"
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+				NOT = { religion = liyuebadao }
+				NOT = { tag = ROOT }
+			}
+			#country_event = { id = ShiJian.34 }
+			country_event = { id = china.97 }
+		}
+	}
+
+	required_reform = emperor_gemeinerpfennig
+	gui_container = right_branch
+}
+
+emperor_imperial_estates = { #遣送质子
+	empire = hre
+	required_reform = emperor_hofgericht
+	gui_container = right_branch
+	potential = {
+		has_dlc = "Emperor"
+	}
+	emperor = {
+
+	}
+	on_effect = {
+		#所有诸夏国家变为选王制
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+				NOT = { religion = liyuebadao }
+				NOT = { tag = ROOT }
+			}
+			country_event = { id = ShiJian.42 days = 2 }
+
+		}
+	}
+
+}
+
+emperor_privilegia_de_non_appelando = { #释兵权
+	empire = hre
+	war = yes			#this may cause a war, so special AI check needed, to not lose many.
+	potential = {
+		has_dlc = "Emperor"
+	}
+	member = {
+		land_forcelimit_modifier = -0.75
+	}
+
+	emperor = {
+
+	}
+	on_effect = {
+		
+	}
+	required_reform = emperor_imperial_estates
+	gui_container = right_branch
+}
+
+emperor_renovatio = { #主持封建
+	empire = hre
+	potential = {
+		has_dlc = "Emperor"
+	}
+	on_effect = {
+		custom_tooltip = ZHUCHIFENGJIAN#可改变诸侯统治家族为指定家族
+	}
+	required_reform = emperor_privilegia_de_non_appelando
+	gui_container = right_branch
+}
+
+emperor_natuguiyi = { #纳土归一
+	empire = hre
+	potential = {
+		has_dlc = "Emperor"
+	}
+	on_effect = {
+		emperor = {
+			country_event = { id = 9073 tooltip = natuguiyi_empire2 }
+			set_emperor_of_china = ROOT
+			hidden_effect = {
+				add_government_reform = celestial_empire
+				set_country_flag = celestial_empire
+			}
+			ZHO = { set_papacy_active = no }
 			country_event = { 
-				id = holyromanempire.9075
-				tooltip = renovatio_effect
+    				id = china.55
+    				days = 10
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = { id = 9074 } #所有诸夏国家选择投降、保留首都成为附庸或反抗
 			}
 		}
 	}
-	off_effect = { 
-		log = "FE-HRE:[GetYear]:[Root.GetName]:revoked Renovatio Imperii reform:00_hre"
-	}
-	gui_container = mainline
-	required_reform = privilegia_de_non_appelando
+	required_reform = emperor_renovatio
+	gui_container = right_branch
 }
