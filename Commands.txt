@@ -30,7 +30,7 @@ Replacements List:
 	Religions
 	Regions
 	SOME event modifiers
-	NOT Buildings, Great Projects, Natives, Mercs, On Actions, Subject Types, Trade Nodes (NOT READY), 
+	NOT Buildings, Great Projects, Natives, Mercs, On Actions, Subject Types, Trade Goods, Trade Nodes (NOT READY) 
 -Customizable Loc
 -Most Localization
 -GFX: Loading Screens
