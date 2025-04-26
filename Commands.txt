@@ -25,14 +25,15 @@ Replacements List:
 -Missions?
 -Music
 -Sound
--Common up to O
-	CB Types
+-Common up to R
 	Cultures
 	Religions
 	Regions
 	SOME event modifiers
-	NOT Great Projects, Natives, Mercs, On Actions
+	NOT Buildings, Great Projects, Natives, Mercs, On Actions, Subject Types, Trade Nodes (NOT READY), 
 -Customizable Loc
 -Most Localization
 -GFX: Loading Screens
 -Tutorial
+
+NOTE: Redo the tradegoods

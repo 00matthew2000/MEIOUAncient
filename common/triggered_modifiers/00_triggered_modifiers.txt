@@ -1,95 +1,155 @@
-submission_to_emperor = { 
-	potential = { 
+#Religion modifiers
+religion_syncretistic_modifier = {
+	potential = {
+		NOT = { has_reform = theocratic_kingdom }
+		NOT = { has_reform = puritanism_reform }
+		NOT = { religion_group = jewish_group }
+		NOT = {
+			tag = SX2
+			has_country_flag = ishkuza_missions_tabitis_people_flag
+		}
+	}
+
+	trigger = {
+		NOT = {
+			has_global_modifier_value = {
+				which = global_missionary_strength
+				value = 0.06
+			}
+		}
+	}
+
+	religious_unity	= 0.25
+	tolerance_heathen = 1
+	tolerance_heretic = 1
+	num_accepted_cultures = 1
+}
+
+religion_missionary_modifier = {
+	potential = {
+		OR = {
+			religion = christian
+			religion = ajivika
+			religion = buddhism
+			religion = hinduism
+			religion = jain
+		}
+	}
+
+	trigger = {
+		has_reform = proselytism_reform
+		has_global_modifier_value = {
+			which = global_missionary_strength
+			value = 0.06
+		}
+	}
+	missionaries = 1
+	missionary_maintenance_cost = -0.1
+	global_missionary_strength = 0.02
+}
+
+###########################################
+# reb
+###########################################
+
+rebel_buff = {
+	potential = {
+		tag = REB
+	}
+
+	trigger = {
+		tag = REB
+	}
+	cav_to_inf_ratio = 0.7
+	recover_army_morale_speed = 0.2
+}
+
+###########################################
+# Pagan Religion
+###########################################
+
+unorganized_religion = {
+	potential = {
+		unreformed_pagan_religious_group_trigger = yes
+		NOT = { has_reform = mleccha_desa_tribal_reform }
+		NOT = { has_reform = mleccha_desa_monarchy_reform }
+		NOT = { has_reform = mleccha_desa_republic_reform }
+		NOT = { has_reform = mleccha_desa_oligarchy_reform }
+		NOT = { religion = atenism }
+		NOT = { religion = dacian_religion }
+		NOT = {
+			tag = SX2
+			has_country_flag = ishkuza_missions_tabitis_people_flag
+		}
+	}
+
+	trigger = {
+		NOT = {
+			has_global_modifier_value = {
+				which = global_missionary_strength
+				value = 0.06
+			}
+		}
+	}
+
+	global_missionary_strength = -0.01
+	autonomy_change_time = 0.2
+	stability_cost_modifier = 0.33
+}
+
+######################################
+# Robot parts
+######################################
+
+synthetic_remnants = {
+	potential = {
+		has_global_flag = synthetics_defeated
+	}
+	trigger = {
+		has_global_flag = synthetics_defeated
+	}
+	technology_cost = -0.25
+}
+
+######################################
+# fuck you paradox
+######################################
+crusader_china = {
+	potential = {
+		religion = chinese_religion
+		crusade_target = {
+			exists = yes
+		}
+		
+	}
+
+	trigger = {
+		crusade_target = {
+			war_with = ROOT
+			#any_province = {
+			#	controlled_by = root
+			#}
+		}  
+		land_maintenance = 1.0
+	}
+
+	global_manpower_modifier = 0.2
+	global_tax_modifier = 0.1
+	land_morale = 0.1
+	prestige = 1
+	papal_influence = 1
+	legitimacy = 0.5
+	devotion = 0.5
+	#icon = 9
+}
+
+#DON'T FUCKING TOUCH, VITAL
+submission_to_emperor = {
+	potential = {
 		always = no
 	}
-	trigger = { }
-}
-no_cavalry = { 
-	potential = { 
-		has_country_flag = no_cavalry
+
+	trigger = {
+		always = no
 	}
-	trigger = { 
-		always = yes
-	}
-	shock_damage_received = 0.25
-}
-silkroad = { 
-	potential = { 
-		NOT = { 
-			dip_tech = 35
-		}
-		capital_scope = { 
-			OR = { 
-				province_group = steppes_group
-				region = zungaria_region
-			}
-		}
-	}
-	trigger = { 
-		always = yes
-	}
-	trade_range_modifier = 0.75
-}
-transsahara = { 
-	potential = { 
-		NOT = { 
-			dip_tech = 35
-		}
-		capital_scope = { 
-			OR = { 
-				region = west_sahara_region
-				region = east_sahara_region
-			}
-		}
-	}
-	trigger = { 
-		always = yes
-	}
-	trade_range_modifier = 1.0
-}
-africa_trade = { 
-	potential = { 
-		NOT = { 
-			dip_tech = 35
-		}
-		capital_scope = { 
-			OR = { 
-				continent = africa
-				region = west_sahara_region
-				region = east_sahara_region
-			}
-		}
-	}
-	trigger = { 
-		always = yes
-	}
-	trade_range_modifier = 0.75
-}
-colonialism = { 
-	potential = { 
-		any_subject_country = { 
-			is_colonial_nation = yes
-		}
-	}
-	trigger = { 
-		always = yes
-	}
-	global_tariffs = -0.5
-}
-excommunication = { 
-	potential = { 
-		OR = { 
-			religion = catholic
-			religion = avignonist
-		}
-	}
-	trigger = { 
-		is_excommunicated = yes
-	}
-	prestige = -2
-	tolerance_own = -3
-	devotion = -5
-	papal_influence = -10
-	diplomatic_reputation = -3
-	stability_cost_modifier = 0.3
 }
