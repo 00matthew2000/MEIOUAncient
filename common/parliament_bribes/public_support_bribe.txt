@@ -1,4 +1,4 @@
-administrative_support = {
+public_support_bribe = {
 	trigger = {
 		OR = {
 			has_reform = slavic_state_reform
@@ -8,11 +8,11 @@ administrative_support = {
 
 	effect = {
 		add_faction_influence = {
-			faction = gospodari_faction
+			faction = veche_faction
 			influence = 5
 		}
 		add_faction_influence = {
-			faction = zemtsy_faction
+			faction = druzhina_faction
 			influence = 5
 		}
 	}

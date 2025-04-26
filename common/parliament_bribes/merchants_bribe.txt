@@ -1,4 +1,4 @@
-administrative_support = {
+merchants_bribe = {
 	trigger = {
 		OR = {
 			has_reform = slavic_state_reform
@@ -8,7 +8,7 @@ administrative_support = {
 
 	effect = {
 		add_faction_influence = {
-			faction = gospodari_faction
+			faction = kupechestvo_faction
 			influence = 5
 		}
 		add_faction_influence = {

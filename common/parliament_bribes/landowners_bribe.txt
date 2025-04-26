@@ -1,4 +1,4 @@
-administrative_support = {
+landowners_bribe = {
 	trigger = {
 		OR = {
 			has_reform = slavic_state_reform

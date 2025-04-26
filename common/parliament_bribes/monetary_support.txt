@@ -1,11 +1,13 @@
-monetary_support = { 
-	trigger = { 
+pay_with_money = {
+	trigger = {
 		always = yes
 	}
-	effect = { 
-		add_years_of_income = -0.05
+
+	effect = {
+		add_treasury = -200
 	}
-	ai_will_do = { 
+
+	ai_will_do = {
 		factor = 1
 	}
 }

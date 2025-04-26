@@ -1,11 +1,23 @@
-military_support = { 
-	trigger = { 
-		always = yes
+military_support = {
+	trigger = {
+		OR = {
+			has_reform = slavic_state_reform
+			has_reform = veche_republic_reform
+		}
 	}
-	effect = { 
-		mil_power_cost = 20
+
+	effect = {
+		add_faction_influence = {
+			faction = voevodi_faction
+			influence = 5
+		}
+		add_faction_influence = {
+			faction = druzhina_faction
+			influence = 5
+		}
 	}
-	ai_will_do = { 
+
+	ai_will_do = {
 		factor = 1
 	}
 }

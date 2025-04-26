@@ -25,10 +25,13 @@ Replacements List:
 -Missions?
 -Music
 -Sound
--Common up to B + CB Types
+-Common up to O
+	CB Types
 	Cultures
 	Religions
 	Regions
+	SOME event modifiers
+	NOT Great Projects, Natives, Mercs, On Actions
 -Customizable Loc
 -Most Localization
 -GFX: Loading Screens
