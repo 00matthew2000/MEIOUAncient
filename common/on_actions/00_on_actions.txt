@@ -48,7 +48,6 @@ on_startup = {
 						province_id = 367
 					}
 				}
-				set_province_flag = ColonyBecomesOwner
 			}
 			every_province = { 
 				limit = { 
@@ -58,7 +57,6 @@ on_startup = {
 						area = hokkaido_area
 					}
 				}
-				set_province_flag = NoRandomSpread
 			}
 			if = { 
 				limit = { 
@@ -428,7 +426,6 @@ on_startup = {
 						is_wasteland = yes
 					}
 				}
-				clr_province_flag = Data
 			}
 		}
 	}
@@ -2981,7 +2978,6 @@ on_religion_change = {
 							}
 						}
 					}
-					set_province_flag = DG_Update
 				}
 				every_owned_province = { 
 					random = { 
@@ -4039,7 +4035,6 @@ on_religion_change = {
 								}
 							}
 						}
-						set_province_flag = DG_Update
 					}
 				}
 			}
@@ -5203,7 +5198,6 @@ on_religion_change = {
 							}
 						}
 					}
-					set_province_flag = DG_Update
 				}
 				every_owned_province = { 
 					random = { 
@@ -6261,7 +6255,6 @@ on_religion_change = {
 								}
 							}
 						}
-						set_province_flag = DG_Update
 					}
 				}
 			}
@@ -7407,7 +7400,6 @@ on_religion_change = {
 							}
 						}
 					}
-					set_province_flag = DG_Update
 				}
 				every_owned_province = { 
 					random = { 
@@ -8465,7 +8457,6 @@ on_religion_change = {
 								}
 							}
 						}
-						set_province_flag = DG_Update
 					}
 				}
 			}
@@ -9599,7 +9590,6 @@ on_religion_change = {
 							}
 						}
 					}
-					set_province_flag = DG_Update
 				}
 				every_owned_province = { 
 					random = { 
@@ -10657,7 +10647,6 @@ on_religion_change = {
 								}
 							}
 						}
-						set_province_flag = DG_Update
 					}
 				}
 			}
@@ -11791,7 +11780,6 @@ on_religion_change = {
 							}
 						}
 					}
-					set_province_flag = DG_Update
 				}
 				every_owned_province = { 
 					random = { 
@@ -12849,7 +12837,6 @@ on_religion_change = {
 								}
 							}
 						}
-						set_province_flag = DG_Update
 					}
 				}
 			}
@@ -12920,7 +12907,6 @@ on_religion_change = {
 						}
 					}
 				}
-				clr_province_flag = TradePost@PREV
 			}
 		}
 		log = "FE-FormingNewNations:[GetYear]:[Root.GetName]:formed [ROM.GetName]:on_religion_change"
@@ -13836,10 +13822,8 @@ on_monarch_death = {
 						}
 					}
 				}
-				set_province_flag = Unrest_Update
 			}
 		}
-		custom_tooltip = POP_TRLoyProv_-5
 	}
 	else_if = { 
 		limit = { 
@@ -13872,10 +13856,8 @@ on_monarch_death = {
 						}
 					}
 				}
-				set_province_flag = Unrest_Update
 			}
 		}
-		custom_tooltip = POP_TRLoyProv_-2.5
 	}
 	events = { Horde_Collapse.10 Horde_Collapse.14 japan.15 japan.24 japan.25 flavor_anj.1 kalmar.006 kalmar.016 DG_Hussites.010}
 	if = { 
@@ -13993,7 +13975,6 @@ on_monarch_death = {
 				}
 			}
 		}
-		custom_tooltip = POP_StabAdd25
 		if = { 
 			limit = { 
 				is_emperor_of_china = yes
@@ -15498,12 +15479,8 @@ on_dip_development = {
 		if = { 
 			limit = { 
 				OR = { 
-					has_province_flag = Pin_Show
-					has_province_flag = UI_Select
 				}
 			}
-			set_province_flag = Pin_Hide
-			clr_province_flag = UI_Select
 			if = { 
 				limit = { 
 					owner = { 
@@ -15511,15 +15488,11 @@ on_dip_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeRemove1
 				hidden_effect = { 
 					every_neighbor_province = { 
 						limit = { 
 							owned_by = PREV
-							has_province_flag = UI_Select
 						}
-						set_province_flag = Pin_Hide
-						clr_province_flag = UI_Select
 					}
 				}
 			}
@@ -15530,15 +15503,11 @@ on_dip_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeRemove2
 				hidden_effect = { 
 					area = { 
 						limit = { 
 							owned_by = PREV
-							has_province_flag = UI_Select
 						}
-						set_province_flag = Pin_Hide
-						clr_province_flag = UI_Select
 					}
 				}
 			}
@@ -15549,15 +15518,11 @@ on_dip_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeRemove3
 				hidden_effect = { 
 					region = { 
 						limit = { 
 							owned_by = PREV
-							has_province_flag = UI_Select
 						}
-						set_province_flag = Pin_Hide
-						clr_province_flag = UI_Select
 					}
 				}
 			}
@@ -15568,15 +15533,11 @@ on_dip_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeRemove4
 				hidden_effect = { 
 					owner = { 
 						every_owned_province = { 
 							limit = { 
-								has_province_flag = UI_Select
 							}
-							set_province_flag = Pin_Hide
-							clr_province_flag = UI_Select
 						}
 					}
 				}
@@ -15588,15 +15549,11 @@ on_dip_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeRemove5
 				hidden_effect = { 
 					owner = { 
 						every_owned_province = { 
 							limit = { 
-								has_province_flag = UI_Select
 							}
-							set_province_flag = Pin_Hide
-							clr_province_flag = UI_Select
 						}
 					}
 				}
@@ -15608,7 +15565,6 @@ on_dip_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeRemove6
 				hidden_effect = { 
 					every_trade_node_member_province = { 
 						if = { 
@@ -15622,11 +15578,8 @@ on_dip_development = {
 										province_id = 5154
 									}
 								}
-								has_province_flag = UI_Select
 								owned_by = PREV
 							}
-							set_province_flag = Pin_Hide
-							clr_province_flag = UI_Select
 						}
 					}
 				}
@@ -15638,8 +15591,6 @@ on_dip_development = {
 			}
 		}
 		else = { 
-			set_province_flag = Pin_Show
-			set_province_flag = UI_Select
 			if = { 
 				limit = { 
 					owner = { 
@@ -15647,17 +15598,13 @@ on_dip_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeSet1
 				hidden_effect = { 
 					every_neighbor_province = { 
 						limit = { 
 							owned_by = PREV
 							NOT = { 
-								has_province_flag = UI_Select
 							}
 						}
-						set_province_flag = UI_Select
-						set_province_flag = Pin_Show
 					}
 				}
 			}
@@ -15668,17 +15615,13 @@ on_dip_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeSet2
 				hidden_effect = { 
 					area = { 
 						limit = { 
 							owned_by = PREV
 							NOT = { 
-								has_province_flag = UI_Select
 							}
 						}
-						set_province_flag = UI_Select
-						set_province_flag = Pin_Show
 					}
 				}
 			}
@@ -15689,17 +15632,13 @@ on_dip_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeSet3
 				hidden_effect = { 
 					region = { 
 						limit = { 
 							owned_by = PREV
 							NOT = { 
-								has_province_flag = UI_Select
 							}
 						}
-						set_province_flag = UI_Select
-						set_province_flag = Pin_Show
 					}
 				}
 			}
@@ -15710,19 +15649,15 @@ on_dip_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeSet4
 				hidden_effect = { 
 					owner = { 
 						every_owned_province = { 
 							limit = { 
 								NOT = { 
-									has_province_flag = UI_Select
 								}
 								is_state = yes
 								is_state_core = owner
 							}
-							set_province_flag = UI_Select
-							set_province_flag = Pin_Show
 						}
 					}
 				}
@@ -15734,17 +15669,13 @@ on_dip_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeSet5
 				hidden_effect = { 
 					owner = { 
 						every_owned_province = { 
 							limit = { 
 								NOT = { 
-									has_province_flag = UI_Select
 								}
 							}
-							set_province_flag = UI_Select
-							set_province_flag = Pin_Show
 						}
 					}
 				}
@@ -15756,7 +15687,6 @@ on_dip_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeSet6
 				hidden_effect = { 
 					every_trade_node_member_province = { 
 						if = { 
@@ -15771,12 +15701,9 @@ on_dip_development = {
 									}
 								}
 								NOT = { 
-									has_province_flag = UI_Select
 								}
 								owned_by = PREV
 							}
-							set_province_flag = UI_Select
-							set_province_flag = Pin_Show
 						}
 					}
 				}
@@ -15807,12 +15734,8 @@ on_mil_development = {
 		if = { 
 			limit = { 
 				OR = { 
-					has_province_flag = Pin_Show
-					has_province_flag = UI_Select
 				}
 			}
-			set_province_flag = Pin_Hide
-			clr_province_flag = UI_Select
 			if = { 
 				limit = { 
 					owner = { 
@@ -15820,15 +15743,11 @@ on_mil_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeRemove1
 				hidden_effect = { 
 					every_neighbor_province = { 
 						limit = { 
 							owned_by = PREV
-							has_province_flag = UI_Select
 						}
-						set_province_flag = Pin_Hide
-						clr_province_flag = UI_Select
 					}
 				}
 			}
@@ -15839,15 +15758,11 @@ on_mil_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeRemove2
 				hidden_effect = { 
 					area = { 
 						limit = { 
 							owned_by = PREV
-							has_province_flag = UI_Select
 						}
-						set_province_flag = Pin_Hide
-						clr_province_flag = UI_Select
 					}
 				}
 			}
@@ -15858,15 +15773,11 @@ on_mil_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeRemove3
 				hidden_effect = { 
 					region = { 
 						limit = { 
 							owned_by = PREV
-							has_province_flag = UI_Select
 						}
-						set_province_flag = Pin_Hide
-						clr_province_flag = UI_Select
 					}
 				}
 			}
@@ -15877,15 +15788,11 @@ on_mil_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeRemove4
 				hidden_effect = { 
 					owner = { 
 						every_owned_province = { 
 							limit = { 
-								has_province_flag = UI_Select
 							}
-							set_province_flag = Pin_Hide
-							clr_province_flag = UI_Select
 						}
 					}
 				}
@@ -15897,15 +15804,11 @@ on_mil_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeRemove5
 				hidden_effect = { 
 					owner = { 
 						every_owned_province = { 
 							limit = { 
-								has_province_flag = UI_Select
 							}
-							set_province_flag = Pin_Hide
-							clr_province_flag = UI_Select
 						}
 					}
 				}
@@ -15917,7 +15820,6 @@ on_mil_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeRemove6
 				hidden_effect = { 
 					every_trade_node_member_province = { 
 						if = { 
@@ -15931,11 +15833,8 @@ on_mil_development = {
 										province_id = 5154
 									}
 								}
-								has_province_flag = UI_Select
 								owned_by = PREV
 							}
-							set_province_flag = Pin_Hide
-							clr_province_flag = UI_Select
 						}
 					}
 				}
@@ -15947,8 +15846,6 @@ on_mil_development = {
 			}
 		}
 		else = { 
-			set_province_flag = Pin_Show
-			set_province_flag = UI_Select
 			if = { 
 				limit = { 
 					owner = { 
@@ -15956,17 +15853,13 @@ on_mil_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeSet1
 				hidden_effect = { 
 					every_neighbor_province = { 
 						limit = { 
 							owned_by = PREV
 							NOT = { 
-								has_province_flag = UI_Select
 							}
 						}
-						set_province_flag = UI_Select
-						set_province_flag = Pin_Show
 					}
 				}
 			}
@@ -15977,17 +15870,13 @@ on_mil_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeSet2
 				hidden_effect = { 
 					area = { 
 						limit = { 
 							owned_by = PREV
 							NOT = { 
-								has_province_flag = UI_Select
 							}
 						}
-						set_province_flag = UI_Select
-						set_province_flag = Pin_Show
 					}
 				}
 			}
@@ -15998,17 +15887,13 @@ on_mil_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeSet3
 				hidden_effect = { 
 					region = { 
 						limit = { 
 							owned_by = PREV
 							NOT = { 
-								has_province_flag = UI_Select
 							}
 						}
-						set_province_flag = UI_Select
-						set_province_flag = Pin_Show
 					}
 				}
 			}
@@ -16019,19 +15904,15 @@ on_mil_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeSet4
 				hidden_effect = { 
 					owner = { 
 						every_owned_province = { 
 							limit = { 
 								NOT = { 
-									has_province_flag = UI_Select
 								}
 								is_state = yes
 								is_state_core = owner
 							}
-							set_province_flag = UI_Select
-							set_province_flag = Pin_Show
 						}
 					}
 				}
@@ -16043,17 +15924,13 @@ on_mil_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeSet5
 				hidden_effect = { 
 					owner = { 
 						every_owned_province = { 
 							limit = { 
 								NOT = { 
-									has_province_flag = UI_Select
 								}
 							}
-							set_province_flag = UI_Select
-							set_province_flag = Pin_Show
 						}
 					}
 				}
@@ -16065,7 +15942,6 @@ on_mil_development = {
 						}
 					}
 				}
-				custom_tooltip = UI_SelectScopeSet6
 				hidden_effect = { 
 					every_trade_node_member_province = { 
 						if = { 
@@ -16080,12 +15956,9 @@ on_mil_development = {
 									}
 								}
 								NOT = { 
-									has_province_flag = UI_Select
 								}
 								owned_by = PREV
 							}
-							set_province_flag = UI_Select
-							set_province_flag = Pin_Show
 						}
 					}
 				}
@@ -16099,804 +15972,31 @@ on_mil_development = {
 	}
 }
 on_overextension_pulse = { }
-on_colonial_pulse = { 
-	random_events = { 
-		10000 = 0
-		100 = colonial.12
-		100 = colonial.17
-	}
-}
+on_colonial_pulse = { }
 on_siberian_pulse = { }
 on_monthly_pulse = { }
-on_yearly_pulse = { 
-	events = { MEC_Post.001}
-	if = { 
-		limit = { 
-			had_global_flag = { 
-				flag = mec_diplomacy_alliance_negotiations
-				days = 365
-			}
-		}
-		clr_global_flag = mec_diplomacy_alliance_negotiations
-	}
-}
-on_yearly_pulse_2 = { 
-	events = { DG_Hussites.022 consort_events.301 consort_events.302}
-	if = { 
-		limit = { 
-			OR = { 
-				religion = catholic
-				religion = avignonist
-			}
-		}
-		random_owned_province = { 
-			random_list = { 
-				1 = { 
-					province_event = { 
-						id = DG_Catholics.503
-						days = 1
-					}
-				}
-				1 = { 
-					province_event = { 
-						id = DG_Catholics.512
-						days = 1
-					}
-				}
-				3 = { 
-					province_event = { 
-						id = DG_Papacy.908
-						days = 1
-					}
-				}
-				5 = { 
-					province_event = { 
-						id = DG_Catholics.505
-						days = 1
-					}
-				}
-				10 = { 
-					province_event = { 
-						id = DG_Papacy.906
-						days = 1
-					}
-				}
-				10 = { 
-					province_event = { 
-						id = DG_Papacy.907
-						days = 1
-					}
-				}
-				10 = { 
-					province_event = { 
-						id = DG_Catholics.402
-						days = 1
-					}
-				}
-				10 = { 
-					province_event = { 
-						id = DG_Catholics.403
-						days = 1
-					}
-				}
-				10 = { 
-					province_event = { 
-						id = DG_Catholics.404
-						days = 1
-					}
-				}
-				10 = { 
-					province_event = { 
-						id = DG_Catholics.405
-						days = 1
-					}
-				}
-				10 = { 
-					province_event = { 
-						id = DG_Catholics.406
-						days = 1
-					}
-				}
-				10 = { 
-					province_event = { 
-						id = DG_Catholics.504
-						days = 1
-					}
-				}
-			}
-		}
-	}
-}
-on_yearly_pulse_3 = { 
-	if = { 
-		limit = { 
-			NOT = { 
-				has_global_flag = DG_Second_League_War
-			}
-			NOT = { 
-				has_global_flag = DG_Third_League_War
-			}
-			had_global_flag = { 
-				flag = DG_Augsburg_Interim
-				days = 1095
-			}
-		}
-		clr_global_flag = DG_Augsburg_Interim
-		if = { 
-			limit = { 
-				emperor = { 
-					religion = catholic
-				}
-			}
-			emperor = { 
-				enable_hre_leagues = yes
-				set_hre_heretic_religion = protestant
-			}
-		}
-		if = { 
-			limit = { 
-				emperor = { 
-					NOT = { 
-						religion = catholic
-					}
-				}
-			}
-			emperor = { 
-				enable_hre_leagues = yes
-				set_hre_heretic_religion = catholic
-			}
-		}
-	}
-	if = { 
-		limit = { 
-			has_global_flag = DG_Second_League_War
-			NOT = { 
-				has_global_flag = DG_Third_League_War
-			}
-			had_global_flag = { 
-				flag = DG_Augsburg_Interim
-				days = 18250
-			}
-		}
-		clr_global_flag = DG_Augsburg_Interim
-		if = { 
-			limit = { 
-				emperor = { 
-					religion = catholic
-				}
-			}
-			emperor = { 
-				enable_hre_leagues = yes
-				set_hre_heretic_religion = protestant
-			}
-		}
-		if = { 
-			limit = { 
-				emperor = { 
-					NOT = { 
-						religion = catholic
-					}
-				}
-			}
-			emperor = { 
-				enable_hre_leagues = yes
-				set_hre_heretic_religion = catholic
-			}
-		}
-	}
-}
+on_yearly_pulse = { }
+on_yearly_pulse_2 = { }
+on_yearly_pulse_3 = { }
 on_yearly_pulse_4 = { }
 on_yearly_pulse_5 = { }
-on_bi_yearly_pulse = { 
-	events = { PTM_Politics.100 ostsiedlung.1001 Ottomans.028 red_turban.28 flavor_tre.1}
-	random_events = { 
-		100 = PTM_Politics.003
-		100 = PTM_Politics.004
-		100 = PTM_Politics.008
-		175 = mamluk_events.1
-		175 = mamluk_events.3
-		235 = mamluk_events.4
-		185 = mamluk_events.5
-		75 = culture_religion_events.1
-		75 = culture_religion_events.6
-		75 = culture_religion_events.7
-		75 = culture_religion_events.8
-		75 = culture_religion_events.9
-		75 = culture_religion_events.10
-		75 = culture_religion_events.11
-		75 = culture_religion_events.12
-		75 = culture_religion_events.13
-		75 = culture_religion_events.14
-		75 = culture_religion_events.15
-		75 = culture_religion_events.16
-		50 = culture_religion_events.17
-		75 = culture_religion_events.18
-		75 = culture_religion_events.19
-		75 = culture_religion_events.20
-		75 = culture_religion_events.22
-		75 = culture_religion_events.23
-		100 = DG_Papacy.901
-		100 = DG_Papacy.902
-		100 = DG_Papacy.903
-		100 = DG_Papacy.904
-		100 = DG_Papacy.905
-		200 = industrialization_events.1
-		200 = industrialization_events.2
-		200 = industrialization_events.3
-		200 = industrialization_events.4
-		200 = industrialization_events.5
-		200 = industrialization_events.6
-		100 = industrialization_events.8
-		100 = industrialization_events.13
-		100 = industrialization_events.14
-		100 = industrialization_events.15
-		100 = industrialization_events.16
-		100 = industrialization_events.17
-		100 = industrialization_events.18
-		100 = industrialization_events.19
-		100 = industrialization_events.20
-		100 = industrialization_events.21
-		2800 = 0
-	}
-}
-on_bi_yearly_pulse_2 = { 
-	events = { DG_Zoroastrian.001}
-}
-on_bi_yearly_pulse_3 = { 
-	if = { 
-		limit = { 
-			tag = AAA
-		}
-		if = { 
-			limit = { 
-				hre_reform_passed = son_voting_dynastic_inheritence
-			}
-			}
-		}
-	}
-	events = { red_turban.6 red_turban.8 red_turban.42 flavor_swe.4305}
-}
-on_bi_yearly_pulse_4 = { 
-	random_events = { 
-		100 = 5008
-		100 = 5014
-		100 = 5027
-		100 = 5032
-		100 = 5051
-		100 = 5052
-		100 = 5053
-		100 = 5063
-		100 = 5064
-		100 = 5065
-		100 = 5068
-		100 = 5071
-		50 = 5075
-		100 = 5076
-		50 = 5083
-		100 = 5086
-		100 = 5088
-		100 = 5089
-		100 = 5090
-		100 = 5093
-		100 = 5095
-		100 = 6012
-		100 = 6013
-		100 = 711
-		100 = 715
-		100 = 722
-		100 = 736
-		100 = 737
-		100 = 738
-		100 = 740
-		100 = 838
-		100 = 854
-		100 = 865
-		100 = 872
-		100 = 874
-		100 = 878
-		100 = 883
-		100 = random_event.3
-		100 = random_event.8
-		100 = random_event.12
-		100 = random_event.15
-		50 = random_event.27
-		2000 = 0
-	}
-}
+on_bi_yearly_pulse = { }
+on_bi_yearly_pulse_2 = { }
+on_bi_yearly_pulse_3 = { }
+on_bi_yearly_pulse_4 = { }
 on_bi_yearly_pulse_5 = { }
-on_thri_yearly_pulse = { 
-	events = { flavor_hyw.13 mec_coal_events.0}
-}
-on_thri_yearly_pulse_2 = { 
-	events = { DG_Catholics.010 DG_Catholics.413 DG_Catholics.415}
-	random_events = { 
-		50 = DG_Papacy.909
-		100 = DG_Catholics.407
-		100 = DG_Catholics.408
-		100 = DG_Catholics.409
-		100 = DG_Catholics.410
-		100 = DG_Catholics.411
-		100 = DG_Catholics.501
-		100 = DG_Catholics.513
-		100 = DG_Papacy.910
-		1000 = 0
-	}
-}
-on_thri_yearly_pulse_3 = { 
-	events = { AI_Invest.2}
-	random_events = { 
-		250 = consort_events.1
-		100 = consort_events.5
-		100 = consort_events.6
-		100 = consort_events.51
-		100 = consort_events.52
-		100 = consort_events.53
-		100 = consort_events.54
-		100 = consort_events.55
-		100 = consort_events.56
-		100 = consort_events.101
-		100 = consort_events.103
-		100 = consort_events.104
-		100 = consort_events.303
-		100 = consort_events.304
-		100 = consort_events.305
-		100 = consort_events.306
-		100 = consort_events.307
-		50 = consort_events.311
-		100 = consort_events.312
-		100 = consort_events.313
-		10 = consort_events.314
-		1000 = 0
-	}
-}
-on_thri_yearly_pulse_4 = { 
-	random_events = { 
-		100 = nobles_estate_events.1
-		100 = nobles_estate_events.2
-		100 = nobles_estate_events.3
-		100 = nobles_estate_events.4
-		100 = nobles_estate_events.5
-		100 = nobles_estate_events.6
-		100 = nobles_estate_events.7
-		100 = nobles_estate_events.8
-		100 = nobles_estate_events.9
-		100 = nobles_estate_events.10
-		100 = nobles_estate_events.11
-		50 = burghers_estate_events.1
-		100 = burghers_estate_events.2
-		50 = burghers_estate_events.3
-		100 = burghers_estate_events.4
-		100 = burghers_estate_events.6
-		100 = burghers_estate_events.7
-		100 = burghers_estate_events.10
-		100 = burghers_estate_events.11
-		100 = burghers_estate_events.12
-		100 = burghers_estate_events.13
-		100 = burghers_estate_events.14
-		100 = burghers_estate_events.15
-		2000 = 0
-	}
-}
-on_four_year_pulse = { 
-	random_events = { 
-		1000 = 0
-		25 = colonial_nation.4
-		25 = colonial_nation.10
-		25 = colonial_nation.12
-		25 = colonial_nation.14
-		25 = colonial_nation.77
-	}
-}
-on_four_year_pulse_2 = { 
-	if = { 
-		limit = { 
-			ai = yes
-			OR = { 
-				religion = catholic
-				religion = protestant
-				religion = reformed
-				religion = hussite
-				religion = waldensian
-				religion = lollard
-				religion = avignonist
-				religion = holyleague
-			}
-			NOT = { 
-			}
-		}
-	}
-	events = { }
-	random_events = { 
-		1000 = 0
-		25 = dynastic.9460
-		50 = dynastic.9459
-		25 = dynastic.9462
-		50 = dynastic.9468
-		25 = dynastic.9469
-		150 = dynastic.9481
-		100 = dynastic.9484
-		25 = dynastic.9488
-		25 = dynastic.9489
-		25 = dynastic.9490
-		25 = dynastic_events.2
-		25 = dynastic_events.3
-		25 = dynastic.9451
-		50 = dynastic.9453
-		25 = dynastic.9456
-		25 = dynastic.9457
-	}
-}
-on_four_year_pulse_3 = { 
-	events = { DG_Protestant.007 DG_Protestant.009 dg_humanism.001 dg_humanism.002 dg_humanism.011 dg_humanism.014 dg_humanism.026}
-}
-on_four_year_pulse_4 = { 
-	events = { AI_Invest.3}
-	if = { 
-		limit = { 
-			tag = AAA
-		}
-		if = { 
-			limit = { 
-				is_religion_enabled = hussite
-				OR = { 
-					NOT = { 
-						religion_years = { 
-							hussite = 30
-						}
-					}
-					AND = { 
-						NOT = { 
-							any_country = { 
-								religion = hussite
-							}
-						}
-						NOT = { 
-							religion_years = { 
-								hussite = 5
-							}
-						}
-					}
-				}
-				NOT = { 
-					has_global_flag = hus_schism_compromise
-				}
-				NOT = { 
-					has_global_flag = hus_schism_mended
-				}
-			}
-			}
-		}
-	}
-}
-on_five_year_pulse = { 
-	if = { 
-		limit = { 
-			tag = AAA
-		}
-		if = { 
-			limit = { 
-				is_religion_enabled = lollard
-				NOT = { 
-					religion_years = { 
-						lollard = 30
-					}
-				}
-				NOT = { 
-					has_global_flag = lol_schism_compromise
-				}
-				NOT = { 
-					has_global_flag = lol_schism_mended
-				}
-			}
-			}
-		}
-	}
-	events = { AI_Invest.4 Plague_Spawner.5 flavor_spa.8002 flavor_hyw.31 flavor_pol.601 flavor_pol.602 flavor_pol.603 flavor_pol.604 capital_city.002}
-	random_events = { 
-		50 = Plague_Spawner.1
-		50 = 0
-	}
-}
-on_five_year_pulse_2 = { 
-	random_events = { 
-		750 = counts_feud.003
-		1000 = 0
-		150 = haiti.4
-		75 = flavor_hab.3201
-		150 = flavor_hab.3203
-		300 = flavor_hab.3202
-		300 = flavor_hab.3208
-		550 = flavor_hab.3099
-		550 = flavor_hab.3328
-		550 = flavor_hab.3332
-		550 = flavor_hab.3333
-		550 = flavor_hab.1
-		550 = flavor_hab.2
-		550 = flavor_hab.4
-		250 = flavor_hab.6
-		1000 = flavor_hab.7
-		5000 = flavor_hab.5191
-		550 = flavor_hab.1007
-		4000 = hee_HAB.3
-		5000 = flavor_hab.5190
-		250 = colonial_nation.75
-	}
-}
-on_five_year_pulse_3 = { 
-	if = { 
-		limit = { 
-			tag = AAA
-		}
-	}
-	if = { 
-		limit = { 
-			ai = yes
-			NOT = { 
-				tag = PAP
-			}
-			OR = { 
-				religion = catholic
-				religion = protestant
-				religion = reformed
-				religion = hussite
-				religion = waldensian
-				religion = lollard
-				religion = avignonist
-				religion = holyleague
-			}
-			NOT = { 
-				dominant_religion = owner
-			}
-			NOT = { 
-				religion = overlord
-			}
-			is_force_converted = no
-		}
-	}
-	if = { 
-		limit = { 
-			tag = AAA
-		}
-		if = { 
-			limit = { 
-				is_religion_enabled = waldensian
-				NOT = { 
-					religion_years = { 
-						waldensian = 100
-					}
-				}
-				NOT = { 
-					has_global_flag = wal_schism_compromise
-				}
-				NOT = { 
-					has_global_flag = wal_schism_mended
-				}
-			}
-			}
-		}
-	}
-	if = { 
-		limit = { 
-			NOT = { 
-				is_religion_enabled = reformed
-			}
-			OR = { 
-				religion = catholic
-				religion = avignonist
-			}
-			OR = { 
-				tag = PAP
-				tag = AVI
-				is_emperor = yes
-				is_papal_controller = yes
-				AND = { 
-					owns = 183
-					OR = { 
-					}
-				}
-			}
-		}
-	}
-}
-on_five_year_pulse_4 = { 
-	if = { 
-		limit = { 
-			tag = AAA
-		}
-	}
-	events = { slots.1 colonial_nation.201 colonial_nation.202 colonial_nation.203 colonial_nation.204 colonial_nation.205 colonial_nation.206 colonial_nation.207 colonial_nation.208 colonial_nation.209 colonial_nation.210}
-	random_events = { 
-		50 = AI_Budget.11
-		50 = 0
-	}
-	if = { 
-		limit = { 
-			OR = { 
-				religion = catholic
-				religion = protestant
-				religion = reformed
-				religion = hussite
-				religion = waldensian
-				religion = lollard
-				religion = avignonist
-				religion = holyleague
-			}
-			NOT = { 
-			}
-			is_religion_enabled = protestant
-			NOT = { 
-				religion_years = { 
-					protestant = 25
-				}
-			}
-		}
-		if = { 
-			limit = { 
-				any_neighbor_country = { 
-					religion = protestant
-				}
-			}
-			random_list = { 
-				30 = { }
-				60 = { 
-				}
-			}
-		}
-		else_if = { 
-			limit = { 
-				capital_scope = { 
-					OR = { 
-						superregion = germany_superregion
-						superregion = scandinavian_superregion
-						AND = { 
-							superregion = british_isles_superregion
-							NOT = { 
-								region = ireland_region
-							}
-						}
-						AND = { 
-							superregion = commonwealth_superregion
-							owner = { 
-								government = theocracy
-							}
-						}
-					}
-				}
-				NOT = { 
-					has_global_flag = DG_First_Diet_of_Speyer
-				}
-			}
-			random_list = { 
-				50 = { }
-				50 = { 
-				}
-			}
-		}
-		else_if = { 
-			limit = { 
-				capital_scope = { 
-					OR = { 
-						superregion = germany_superregion
-						superregion = scandinavian_superregion
-						AND = { 
-							superregion = british_isles_superregion
-							NOT = { 
-								region = ireland_region
-							}
-						}
-						AND = { 
-							superregion = commonwealth_superregion
-							owner = { 
-								government = theocracy
-							}
-						}
-						owner = { 
-							religion = hussite
-						}
-						owner = { 
-							religion = lollard
-						}
-					}
-				}
-				has_global_flag = DG_First_Diet_of_Speyer
-			}
-			random_list = { 
-				10 = { }
-				90 = { 
-				}
-			}
-		}
-		else = { 
-			random_list = { 
-				60 = { }
-				30 = { 
-				}
-			}
-		}
-	}
-	else_if = { 
-		limit = { 
-			religion_years = { 
-				protestant = 100
-			}
-		}
-	}
-	if = { 
-		limit = { 
-			OR = { 
-				religion = catholic
-				religion = protestant
-				religion = reformed
-				religion = hussite
-				religion = waldensian
-				religion = lollard
-				religion = avignonist
-				religion = holyleague
-			}
-			NOT = { 
-			}
-			is_religion_enabled = reformed
-			NOT = { 
-				religion_years = { 
-					reformed = 5
-				}
-			}
-		}
-		if = { 
-			limit = { 
-				any_neighbor_country = { 
-					religion = reformed
-				}
-			}
-			random_list = { 
-				60 = { }
-				30 = { 
-				}
-			}
-		}
-		else_if = { 
-			limit = { 
-				capital_scope = { 
-					OR = { 
-						region = low_countries_region
-						superregion = france_superregion
-						AND = { 
-							superregion = british_isles_superregion
-							NOT = { 
-								region = ireland_region
-							}
-						}
-						owner = { 
-							religion = hussite
-						}
-						owner = { 
-							religion = lollard
-						}
-					}
-				}
-			}
-			random_list = { 
-				30 = { }
-				60 = { 
-				}
-			}
-		}
-		else = { 
-			random_list = { 
-				80 = { }
-				20 = { 
-				}
-			}
-		}
-	}
-	else_if = { 
-		limit = { 
-			religion_years = { 
-				reformed = 100
-			}
-		}
-	}
-}
+on_thri_yearly_pulse = { }
+on_thri_yearly_pulse_2 = { }
+on_thri_yearly_pulse_3 = { }
+on_thri_yearly_pulse_4 = { }
+on_four_year_pulse = { }
+on_four_year_pulse_2 = { }
+on_four_year_pulse_3 = { }
+on_four_year_pulse_4 = { }
+on_five_year_pulse = { }
+on_five_year_pulse_2 = { }
+on_five_year_pulse_3 = { }
+on_five_year_pulse_4 = { }
 on_explore_coast = { }
 on_conquistador_empty = { }
 on_conquistador_native = { }
@@ -17126,8 +16226,6 @@ on_province_owner_change = {
 				has_global_flag = POP_Sim
 			}
 		}
-		clr_province_flag = LandInt
-		clr_province_flag = PlayerTaxCost
 		owner = { 
 			set_country_flag = tf_recalculate_communication_efficiency
 		}
@@ -17140,10 +16238,8 @@ on_province_owner_change = {
 				}
 			}
 		}
-		set_province_flag = Unrest_Update
 		if = { 
 			limit = { 
-				has_province_flag = UI_Select
 			}
 			province_event = { 
 				id = SYS_Pin.001
@@ -17153,7 +16249,6 @@ on_province_owner_change = {
 			limit = { 
 				is_city = no
 			}
-			set_province_flag = Infra_Update
 		}
 		owner = { 
 		}
@@ -17430,7 +16525,6 @@ on_province_owner_change = {
 				owner = { 
 				}
 			}
-			has_province_flag = latin_med_coast
 		}
 		owner = { 
 			set_country_flag = ifrikiya_ambitions
@@ -17450,7 +16544,6 @@ on_province_owner_change = {
 				owner = { 
 				}
 			}
-			has_province_flag = maghreb_med_coast
 		}
 		owner = { 
 			set_country_flag = uwrubba_ambitions
