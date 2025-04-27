@@ -19,6 +19,7 @@ To help map terrain, make a version of provinces.bmp where you annex provs into 
 NOTE: Maybe change event modifiers to fit what you want (new great projects, non hagia sophia?)
 
 Replacements List:
+-Customizable Loc
 -Decisions
 -Events
 -Map (but need new provs)
@@ -30,8 +31,7 @@ Replacements List:
 	Religions
 	Regions
 	SOME event modifiers
-	NOT Buildings, Great Projects, Natives, Mercs, On Actions, Subject Types, Trade Goods, Trade Nodes (NOT READY) 
--Customizable Loc
+	NOT (Most) Buildings, Great Projects, Natives, Mercs, On Actions, Subject Types, Trade Goods, Trade Nodes (NOT READY) 
 -Most Localization
 -GFX: Loading Screens
 -Tutorial
