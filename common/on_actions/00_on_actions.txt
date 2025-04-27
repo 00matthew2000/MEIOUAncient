@@ -9,7 +9,6 @@ on_startup = {
 					has_global_flag = Global_Modi_Set
 				}
 			}
-			set_global_flag = Global_Modi_Set
 		}
 	}
 	emperor = { 
@@ -33,7 +32,6 @@ on_startup = {
 					OR = { 
 						continent = north_america
 						continent = south_america
-						has_province_modifier = trading_post_province
 						region = australia_region
 						area = maui_area
 						region = west_siberia_region
@@ -41,7 +39,6 @@ on_startup = {
 						region = east_manchuria_region
 						region = outer_mongolia_region
 						AND = { 
-							has_province_modifier = remote_island
 							NOT = { 
 								continent = oceania
 							}
@@ -69,7 +66,6 @@ on_startup = {
 						ai = yes
 					}
 				}
-				set_global_flag = China_Broken
 			}
 			else = { 
 				if = { 
@@ -84,10 +80,6 @@ on_startup = {
 				}
 			}
 		}
-		set_global_flag = not_samerica_smallpox
-		set_global_flag = not_namerica_smallpox
-		set_global_flag = not_camerica_smallpox
-		set_global_flag = POP_RanInit
 		east_manchuria_region = { 
 			limit = { 
 				owned_by = YUA
@@ -386,7 +378,6 @@ on_startup = {
 			tag = AAA
 		}
 		every_province = { 
-			remove_province_modifier = river_notify
 		}
 		tradenode_centers = { 
 			if = { 
@@ -452,28 +443,19 @@ on_startup = {
 		every_province = { 
 			limit = { 
 				OR = { 
-					has_province_modifier = Teuton_Commandery_High
-					has_province_modifier = Teuton_Commandery_Med
-					has_province_modifier = Teuton_Commandery_Low
 				}
 			}
 			if = { 
 				limit = { 
-					has_province_modifier = Teuton_Commandery_High
 				}
-				remove_province_modifier = Teuton_Commandery_High
 			}
 			else_if = { 
 				limit = { 
-					has_province_modifier = Teuton_Commandery_Med
 				}
-				remove_province_modifier = Teuton_Commandery_Med
 			}
 			else_if = { 
 				limit = { 
-					has_province_modifier = Teuton_Commandery_Low
 				}
-				remove_province_modifier = Teuton_Commandery_Low
 			}
 		}
 	}
@@ -485,28 +467,19 @@ on_startup = {
 		every_province = { 
 			limit = { 
 				OR = { 
-					has_province_modifier = Knights_Commandery_High
-					has_province_modifier = Knights_Commandery_Med
-					has_province_modifier = Knights_Commandery_Low
 				}
 			}
 			if = { 
 				limit = { 
-					has_province_modifier = Knights_Commandery_High
 				}
-				remove_province_modifier = Knights_Commandery_High
 			}
 			else_if = { 
 				limit = { 
-					has_province_modifier = Knights_Commandery_Med
 				}
-				remove_province_modifier = Knights_Commandery_Med
 			}
 			else_if = { 
 				limit = { 
-					has_province_modifier = Knights_Commandery_Low
 				}
-				remove_province_modifier = Knights_Commandery_Low
 			}
 		}
 	}
@@ -526,7 +499,6 @@ on_startup = {
 			limit = { 
 				always = no
 			}
-			set_global_flag = first_time_data_collection
 			}
 		}
 	}
@@ -12888,7 +12860,6 @@ on_religion_change = {
 			50 = { 
 				if = { 
 					limit = { 
-						has_province_modifier = religious_enthusiasm
 					}
 					extend_province_modifier = { 
 						name = religious_enthusiasm
@@ -12906,7 +12877,6 @@ on_religion_change = {
 			30 = { 
 				if = { 
 					limit = { 
-						has_province_modifier = heretic_centre
 					}
 					extend_province_modifier = { 
 						name = heretic_centre
@@ -14060,14 +14030,11 @@ on_new_monarch = {
 		limit = { 
 			has_consort_regency = no
 			any_owned_province = { 
-				has_province_modifier = NO_ConsortOrigin
 			}
 		}
 		random_owned_province = { 
 			limit = { 
-				has_province_modifier = NO_ConsortOrigin
 			}
-			remove_province_modifier = NO_ConsortOrigin
 		}
 	}
 	if = { 
@@ -14291,7 +14258,6 @@ on_new_monarch = {
 			}
 		}
 		emperor = { 
-				remove_province_modifier = HRE_Gemeiner_Pfennig
 			}
 		}
 	}
@@ -14587,14 +14553,11 @@ on_queen_death = {
 	if = { 
 		limit = { 
 			any_owned_province = { 
-				has_province_modifier = NO_ConsortOrigin
 			}
 		}
 		random_owned_province = { 
 			limit = { 
-				has_province_modifier = NO_ConsortOrigin
 			}
-			remove_province_modifier = NO_ConsortOrigin
 		}
 	}
 	if = { 
@@ -14621,9 +14584,7 @@ on_queen_death = {
 		}
 		random_owned_province = { 
 			limit = { 
-				has_province_modifier = home_of_consort
 			}
-			remove_province_modifier = home_of_consort
 		}
 	}
 	if = { 
@@ -14871,14 +14832,11 @@ on_government_change = {
 				government = monarchy
 			}
 			any_owned_province = { 
-				has_province_modifier = NO_ConsortOrigin
 			}
 		}
 		random_owned_province = { 
 			limit = { 
-				has_province_modifier = NO_ConsortOrigin
 			}
-			remove_province_modifier = NO_ConsortOrigin
 		}
 	}
 }
@@ -15682,7 +15640,6 @@ on_dip_development = {
 		else = { 
 			set_province_flag = Pin_Show
 			set_province_flag = UI_Select
-			set_global_flag = UI_Select
 			if = { 
 				limit = { 
 					owner = { 
@@ -15992,7 +15949,6 @@ on_mil_development = {
 		else = { 
 			set_province_flag = Pin_Show
 			set_province_flag = UI_Select
-			set_global_flag = UI_Select
 			if = { 
 				limit = { 
 					owner = { 
@@ -16266,7 +16222,6 @@ on_yearly_pulse_3 = {
 			}
 		}
 		clr_global_flag = DG_Augsburg_Interim
-		set_global_flag = DG_Leagues_Active
 		if = { 
 			limit = { 
 				emperor = { 
@@ -16304,7 +16259,6 @@ on_yearly_pulse_3 = {
 			}
 		}
 		clr_global_flag = DG_Augsburg_Interim
-		set_global_flag = DG_Leagues_Active
 		if = { 
 			limit = { 
 				emperor = { 
@@ -17180,20 +17134,6 @@ on_province_owner_change = {
 		FROM = { 
 			set_country_flag = tf_recalculate_communication_efficiency
 		}
-		remove_province_modifier = Timber_Disp
-		remove_province_modifier = Infra_disp
-		remove_province_modifier = Disp_Pop
-		remove_province_modifier = Disp_Prod
-		remove_province_modifier = Disp_Prod2
-		remove_province_modifier = Disp_Trade
-		remove_province_modifier = Disp_Trade_Cent
-		remove_province_modifier = Disp_Trade_Amount
-		remove_province_modifier = DG_RelGrp
-		remove_province_modifier = Tax_Mod
-		remove_province_modifier = Disp_Mil
-		remove_province_modifier = POP_Unrest
-		remove_province_modifier = Prov_Info_mod
-		remove_province_modifier = POP_NaturalFeature
 		if = { 
 			limit = { 
 				owner = { 
@@ -17329,48 +17269,33 @@ on_province_owner_change = {
 				}
 			}
 		}
-		remove_province_modifier = DiploAnnexMod_disp
 		if = { 
 			limit = { 
-				has_province_modifier = DiploAnnexMod_0.64
 			}
-			remove_province_modifier = DiploAnnexMod_0.64
 		}
 		if = { 
 			limit = { 
-				has_province_modifier = DiploAnnexMod_0.32
 			}
-			remove_province_modifier = DiploAnnexMod_0.32
 		}
 		if = { 
 			limit = { 
-				has_province_modifier = DiploAnnexMod_0.16
 			}
-			remove_province_modifier = DiploAnnexMod_0.16
 		}
 		if = { 
 			limit = { 
-				has_province_modifier = DiploAnnexMod_0.08
 			}
-			remove_province_modifier = DiploAnnexMod_0.08
 		}
 		if = { 
 			limit = { 
-				has_province_modifier = DiploAnnexMod_0.04
 			}
-			remove_province_modifier = DiploAnnexMod_0.04
 		}
 		if = { 
 			limit = { 
-				has_province_modifier = DiploAnnexMod_0.02
 			}
-			remove_province_modifier = DiploAnnexMod_0.02
 		}
 		if = { 
 			limit = { 
-				has_province_modifier = DiploAnnexMod_0.01
 			}
-			remove_province_modifier = DiploAnnexMod_0.01
 		}
 		if = { 
 			limit = { 
@@ -17435,7 +17360,6 @@ on_province_owner_change = {
 							}
 						}
 						PREV = { 
-							remove_province_modifier = no_maint
 						}
 						if = { 
 							limit = { 
@@ -17482,7 +17406,6 @@ on_province_owner_change = {
 			limit = { 
 				AND = { 
 					12 = { 
-						has_province_modifier = oresund_toll_tm
 					}
 					OR = { 
 						province_id = 12
@@ -17495,7 +17418,6 @@ on_province_owner_change = {
 				}
 			}
 			12 = { 
-				remove_province_modifier = oresund_toll_tm
 			}
 		}
 	}
@@ -19476,9 +19398,7 @@ on_capital_moved = {
 				}
 				every_owned_province = { 
 					limit = { 
-						has_province_modifier = HRE_Gemeiner_Pfennig
 					}
-					remove_province_modifier = HRE_Gemeiner_Pfennig
 				}
 			}
 			emperor = { 
