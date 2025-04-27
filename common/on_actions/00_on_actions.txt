@@ -210,7 +210,6 @@ on_startup = {
 	}
 }
 on_religion_change = { 
-	events = { DG_Zoroastrian.062}
 	if = { 
 		limit = { 
 			has_heir = yes
@@ -776,7 +775,6 @@ on_enforce_rebel_demands = {
 }
 on_colonial_liberation = { }
 on_colonial_reintegration = { 
-	events = { colonial_nation.91}
 }
 on_peace_actor = { 
 	if = { 
@@ -793,10 +791,8 @@ on_peace_actor = {
 		AAA = { 
 		}
 	}
-	events = { prisonner_of_war.101}
 }
 on_peace_recipient = { 
-	events = { prisonner_of_war.101}
 }
 on_war_won = { 
 	if = { 
@@ -928,7 +924,6 @@ on_war_won = {
 	}
 	else = { 
 	}
-	events = { japan.3 japan.4 japan.19 japan.28 flavor_chu.1 red_turban.9 red_turban.10 Plague_Spawner.3 prisonner_of_war.101 HRE_war_mechanics.004 dynastic.1001}
 	if = { 
 		limit = { 
 			OR = { 
@@ -1142,7 +1137,6 @@ on_war_lost = {
 	}
 	else = { 
 	}
-	events = { flavor_chu.7 flavor_chu.1 new_world.1 prisonner_of_war.101}
 	if = { 
 		limit = { 
 		}
@@ -1164,7 +1158,6 @@ on_battle_won_country = {
 }
 on_battle_lost_country = { 
 	add_horde_unity = -2
-	events = { timur.21 timur.23 timur.42 timur.56}
 	if = { 
 		limit = { 
 			NOT = { 
@@ -1183,7 +1176,6 @@ on_company_formed = { }
 on_company_disolved = { }
 on_battle_lost_province = { }
 on_siege_won_country = { 
-	events = { tianxia.136 timur.53 timur.54 Serbia.01 timur.57 DG_Catholics.081}
 	if = { 
 		limit = { 
 			NOT = { 
@@ -1237,10 +1229,8 @@ on_siege_won_country = {
 			cede_province = ROOT
 		}
 	}
-	events = { }
 }
 on_siege_lost_country = { 
-	events = { red_turban.14 timur.21 timur.23 timur.42 timur.56 Ottomans.018}
 }
 on_siege_won_province = { 
 	if = { 
@@ -1255,10 +1245,8 @@ on_siege_won_province = {
 			random = 3
 		}
 	}
-	events = { }
 }
 on_siege_lost_province = { 
-	events = { tianxia.150 canarias.10}
 }
 on_abandon_colony = { 
 	log = "[FROM.GetName] Abandonment of [ROOT.GetName]"
@@ -1520,7 +1508,6 @@ on_monarch_death = {
 			}
 		}
 	}
-	events = { Horde_Collapse.10 Horde_Collapse.14 japan.15 japan.24 japan.25 flavor_anj.1 kalmar.006 kalmar.016 DG_Hussites.010}
 	if = { 
 		limit = { 
 			is_year = 1420
@@ -1970,9 +1957,6 @@ on_new_monarch = {
 			}
 		}
 	}
-	random_events = { 
-		50 = dynastic_events.4
-		50 = dynastic_events.5
 	}
 	if = { 
 		limit = { 
@@ -2002,79 +1986,9 @@ on_new_consort = {
 		clr_heir_flag = son_of_consort
 	}
 }
-on_regent = { 
-	if = { 
-		limit = { 
-			tag = CRI
-		}
-		if = { 
-			limit = { 
-				exists = TUR
-				AND = { 
-					OR = { 
-						is_subject = no
-						is_subject_of_type = tributary_state
-						is_subject_of_type = close_tributary_state
-					}
-				}
-				TUR = { 
-					num_of_cities = ROOT
-					AND = { 
-						OR = { 
-							is_subject = no
-							is_subject_of_type = tributary_state
-							is_subject_of_type = close_tributary_state
-						}
-					}
-					num_of_ports = 1
-				}
-			}
-		}
-		if = { 
-			limit = { 
-				OR = { 
-					NOT = { 
-						exists = TUR
-					}
-					AND = { 
-						is_subject = yes
-						NOT = { 
-							is_subject_of_type = tributary_state
-						}
-						NOT = { 
-							is_subject_of_type = close_tributary_state
-						}
-					}
-					TUR = { 
-						NOT = { 
-							num_of_cities = ROOT
-						}
-					}
-					TUR = { 
-						AND = { 
-							is_subject = yes
-							NOT = { 
-								is_subject_of_type = tributary_state
-							}
-							NOT = { 
-								is_subject_of_type = close_tributary_state
-							}
-						}
-					}
-					TUR = { 
-						NOT = { 
-							num_of_ports = 1
-						}
-					}
-				}
-			}
-			log = "FE-CRI:[GetYear]:[Root.GetName]:death_of_haji_giray flag set:on_regent"
-		}
-	}
-}
+on_regent = { }
 on_extend_regency = { }
 on_new_term_election = { 
-	events = { elections.700 medici_system.4 medici_system.12 medici_system.48 elections.800}
 }
 on_death_election = { 
 	if = { 
@@ -2087,19 +2001,15 @@ on_death_election = {
 		}
 		}
 	}
-	events = { elections.701 elections.800 medici_system.1 medici_system.2 medici_system.3 medici_system.49}
 }
 on_death_foreign_slave_ruler = { 
-	events = { mamluk_events.0}
 }
 on_replace_governor = { 
-	events = { elections.707}
 }
 on_bankruptcy = { 
 	log = "OnAction:[GetYear]:[Root.GetName] bankrupted:on_bankruptcy"
 }
 on_diplomatic_annex = { 
-	events = { flavor_anj.3 flavor_orl.1}
 	log = "OnAction:[GetYear]:[Root.GetName] diplomatically annexed [From.GetName]:on_diplomatic_annex"
 }
 on_heir_death = { 
@@ -2372,19 +2282,16 @@ on_weak_heir_claim = {
 			}
 		}
 	}
-	events = { }
 }
 on_heir_needed_theocracy = { 
 	define_heir = { 
 		dynasty = ROOT
 	}
-	events = { }
 }
 on_successive_emperor = { 
 	emperor = { 
 		save_global_event_target_as = Emperor
 	}
-	events = { holyromanempire.900}
 }
 on_emperor_elected = { 
 	every_elector = { 
@@ -2408,42 +2315,29 @@ on_emperor_elected = {
 	}
 }
 on_released_hre_member = { 
-	events = { }
 }
 on_hre_member_false_religion = { 
-	events = { }
 }
 on_hre_member_true_religion = { 
-	events = { }
 }
 on_hre_wins_defensive_war = { 
-	events = { }
 }
 on_hre_member_annexed = { 
-	events = { }
 }
 on_hre_released_vassal = { 
-	events = { }
 }
 on_hre_transfered_vassal = { 
-	events = { }
 }
 on_hre_defense = { 
-	events = { HRE_war_mechanics.001}
 }
 on_hre_non_defense = { 
-	events = { }
 }
 on_hre_province_reconquest = { 
-	events = { }
 }
 on_lock_hre_religion = { 
-	events = { }
 }
-	events = { }
 }
 on_hre_religion_white_peace = { 
-	events = { }
 }
 on_government_change = { 
 	if = { 
@@ -2481,7 +2375,6 @@ on_integrate = {
 			}
 		}
 	}
-	events = { }
 }
 on_annexed = { 
 	if = { 
@@ -3014,7 +2907,6 @@ on_annexed = {
 		}
 		set_emperor_of_china = ROOT
 	}
-	events = { }
 }
 on_embrace_revolution = { 
 }
@@ -3030,7 +2922,6 @@ on_dismantle_revolution = {
 		}
 		exile_heir_as = revolution_target_heir
 	}
-	events = { }
 }
 on_adm_development = { 
 	if = { 
@@ -3634,11 +3525,9 @@ on_explore_coast = { }
 on_conquistador_empty = { }
 on_conquistador_native = { }
 on_buy_religious_reform = { 
-	events = { }
 }
 on_circumnavigation = { 
 	log = "FE:[GetYear]:[Root.GetName]:Circumnavigation achieved [From.GetName]"
-	events = { }
 }
 on_become_free_city = { 
 	if = { 
@@ -3683,7 +3572,6 @@ on_gain_great_power_status = {
 }
 on_lose_great_power_status = { }
 on_province_religion_converted = { 
-	events = { DG_Convert.005}
 }
 on_province_religion_changed = { }
 on_province_culture_converted = { 
@@ -4578,7 +4466,6 @@ on_dependency_gained = {
 			}
 		}
 	}
-	events = { }
 }
 on_dependency_lost = { 
 	overlord = { 
