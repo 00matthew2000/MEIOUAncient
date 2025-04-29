@@ -1,777 +1,1299 @@
 monarch_power = ADM
-ahead_of_time = { 
-	global_trade_goods_size_modifier = 0.01
-	production_efficiency = 0.01
-	yearly_corruption = -0.05
-}
-technology = { 
-	year = 1200
-	levy_draft_no = yes
-	levy_draft_low = yes
-	levy_draft_med = yes
-	levy_draft_high = yes
-	levy_volunt_no = yes
-	levy_volunt_low = yes
-	levy_volunt_med = yes
-	levy_volunt_high = yes
-	levy_feudal_no = yes
-	levy_feudal_low = yes
-	levy_feudal_med = yes
-	levy_feudal_high = yes
-	levy_noble_no = yes
-	levy_noble_low = yes
-	levy_noble_med = yes
-	levy_noble_high = yes
-	levy_urban_no = yes
-	levy_urban_low = yes
-	levy_urban_med = yes
-	levy_urban_high = yes
-	levy_horde_no = yes
-	levy_horde_low = yes
-	levy_horde_med = yes
-	levy_horde_high = yes
-	obli_feudal_no = yes
-	obli_feudal_low = yes
-	obli_feudal_med = yes
-	obli_feudal_high = yes
-	obli_noble_no = yes
-	obli_noble_low = yes
-	obli_noble_med = yes
-	obli_noble_high = yes
-	obli_charter_no = yes
-	obli_charter_low = yes
-	obli_charter_med = yes
-	obli_charter_high = yes
-	obli_tribute_no = yes
-	obli_tribute_low = yes
-	obli_tribute_med = yes
-	obli_tribute_high = yes
-	tax_land_no = yes
-	tax_land_low = yes
-	tax_land_med = yes
-	tax_land_high = yes
-	tax_prop_no = yes
-	tax_prop_low = yes
-	tax_prop_med = yes
-	tax_prop_high = yes
-	tax_poll_no = yes
-	tax_poll_low = yes
-	tax_poll_med = yes
-	tax_poll_high = yes
-	tax_toll_no = yes
-	tax_toll_low = yes
-	tax_toll_med = yes
-	tax_toll_high = yes
-	tax_chattels_no = yes
-	tax_chattels_low = yes
-	tax_chattels_med = yes
-	tax_chattels_high = yes
-	tax_inherit_no = yes
-	tax_inherit_low = yes
-	tax_inherit_med = yes
-	tax_inherit_high = yes
-	tax_salt_no = yes
-	tax_salt_low = yes
-	tax_salt_med = yes
-	tax_salt_high = yes
-	tax_alcohol_no = yes
-	tax_alcohol_low = yes
-	tax_alcohol_med = yes
-	tax_alcohol_high = yes
-	tax_timber_no = yes
-	tax_timber_low = yes
-	tax_timber_med = yes
-	tax_timber_high = yes
-	tax_subst_no = yes
-	tax_subst_low = yes
-	tax_subst_med = yes
-	tax_subst_high = yes
-	give_Agriculture_10 = yes
-	give_Agriculture_100 = yes
-	give_Agriculture_50 = yes
-	give_Forestry_10 = yes
-	give_Forestry_100 = yes
-	give_Forestry_50 = yes
-	give_Extraction_10 = yes
-	give_Extraction_100 = yes
-	give_Extraction_50 = yes
-	give_Fishery_10 = yes
-	give_Fishery_100 = yes
-	give_Fishery_50 = yes
-	give_Commercial_10 = yes
-	give_Commercial_100 = yes
-	give_Commercial_50 = yes
-	give_Academic_10 = yes
-	give_Academic_100 = yes
-	give_Academic_50 = yes
-	give_Industrial_10 = yes
-	give_Industrial_100 = yes
-	give_Industrial_50 = yes
-	maint_Agriculture_no = yes
-	maint_Agriculture_low = yes
-	maint_Agriculture_med = yes
-	maint_Agriculture_high = yes
-	maint_Forestry_no = yes
-	maint_Forestry_low = yes
-	maint_Forestry_med = yes
-	maint_Forestry_high = yes
-	maint_Extraction_no = yes
-	maint_Extraction_low = yes
-	maint_Extraction_med = yes
-	maint_Extraction_high = yes
-	maint_Fishery_no = yes
-	maint_Fishery_low = yes
-	maint_Fishery_med = yes
-	maint_Fishery_high = yes
-	maint_Commercial_no = yes
-	maint_Commercial_low = yes
-	maint_Commercial_med = yes
-	maint_Commercial_high = yes
-	maint_Industrial_no = yes
-	maint_Industrial_low = yes
-	maint_Industrial_med = yes
-	maint_Industrial_high = yes
-	maint_Academic_no = yes
-	maint_Academic_low = yes
-	maint_Academic_med = yes
-	maint_Academic_high = yes
-	select_building = yes
-	fastbuilder_1 = yes
-	fastbuilder_2 = yes
-	fastbuilder_3 = yes
-	fastbuilder_4 = yes
-	fastbuilder_5 = yes
-	fastbuilder_6 = yes
-	fastbuilder_7 = yes
-}
-technology = { 
-	year = 1210
-}
-technology = { 
-	year = 1220
-}
-technology = { 
-	year = 1230
-}
-technology = { 
-	year = 1240
-	allowed_idea_groups = 1
-}
-technology = { 
-	year = 1250
-}
-technology = { 
-	year = 1260
-	allowed_idea_groups = 2
-}
-technology = { 
-	year = 1270
-}
-technology = { 
-	year = 1280
-}
-technology = { 
-	year = 1290
-	production_efficiency = 0.005
-}
-technology = { 
-	year = 1300
-}
-technology = { 
-	year = 1310
-}
-technology = { 
-	year = 1320
-	production_efficiency = 0.005
-}
-technology = { 
-	year = 1330
-}
-technology = { 
-	year = 1340
-}
-technology = { 
-	year = 1350
-}
-technology = { 
-	year = 1360
-	expects_institution = { 
-		Banking = 0.05
-	}
-	administrative_efficiency = 0.05
-}
-technology = { 
-	year = 1370
-	expects_institution = { 
-		Banking = 0.10
-	}
-}
-technology = { 
-	year = 1380
-	expects_institution = { 
-		Banking = 0.15
-	}
-	allowed_idea_groups = 3
-}
-technology = { 
-	year = 1390
-	expects_institution = { 
-		Banking = 0.20
-	}
-	administrative_efficiency = 0.025
-}
-technology = { 
-	year = 1400
-	expects_institution = { 
-		Banking = 0.25
-	}
-	production_efficiency = 0.01
-	development_cost_modifier = 0.025
-}
-technology = { 
-	year = 1410
-	expects_institution = { 
-		Banking = 0.275
-	}
-	administrative_efficiency = 0.05
-}
-technology = { 
-	year = 1420
-	expects_institution = { 
-		Banking = 0.3
-	}
-	allowed_idea_groups = 4
-}
-technology = { 
-	year = 1430
-	expects_institution = { 
-		Banking = 0.3
-	}
-}
-technology = { 
-	year = 1440
-	expects_institution = { 
-		Banking = 0.3
-	}
-	production_efficiency = 0.02
-}
-technology = { 
-	year = 1450
-	expects_institution = { 
-		Banking = 0.3
-	}
-	development_cost_modifier = 0.025
-}
-technology = { 
-	year = 1460
-	expects_institution = { 
-		Banking = 0.3
-	}
-	allowed_idea_groups = 5
-}
-technology = { 
-	year = 1470
-	expects_institution = { 
-		Banking = 0.3
-	}
-	may_support_rebels = yes
-}
-technology = { 
-	year = 1480
-	expects_institution = { 
-		Banking = 0.3
-	}
-}
-technology = { 
-	year = 1490
-	expects_institution = { 
-		Banking = 0.3
-	}
-	may_force_march = yes
-}
-technology = { 
-	year = 1500
-	expects_institution = { 
-		Banking = 0.3
-	}
-	allowed_idea_groups = 6
-	development_cost_modifier = 0.025
-}
-technology = { 
-	year = 1510
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.025
-	}
-}
-technology = { 
-	year = 1520
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.05
-	}
-	administrative_efficiency = 0.025
-}
-technology = { 
-	year = 1530
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.075
-	}
-}
-technology = { 
-	year = 1540
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.10
-	}
-	allowed_idea_groups = 7
-}
-technology = { 
-	year = 1550
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.125
-		Columbian_Exchange = 0.05
-	}
-	development_cost_modifier = 0.025
-}
-technology = { 
-	year = 1560
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.15
-		Columbian_Exchange = 0.1
-	}
-}
-technology = { 
-	year = 1570
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.3
-		Columbian_Exchange = 0.125
-	}
-}
-technology = { 
-	year = 1580
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.175
-		Columbian_Exchange = 0.15
-	}
-	allowed_idea_groups = 8
-}
-technology = { 
-	year = 1590
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.20
-		Columbian_Exchange = 0.175
-	}
-	production_efficiency = 0.01
-}
-technology = { 
-	year = 1600
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.225
-		Columbian_Exchange = 0.2
-		Scientific_Method = 0.05
-	}
-	administrative_efficiency = 0.05
-	development_cost_modifier = 0.025
-}
-technology = { 
-	year = 1610
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.25
-		Columbian_Exchange = 0.275
-		Scientific_Method = 0.1
-		Global_Trade = 0.05
-	}
-}
-technology = { 
-	year = 1620
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.275
-		Columbian_Exchange = 0.3
-		Scientific_Method = 0.15
-		Global_Trade = 0.1
-	}
-	allowed_idea_groups = 9
-}
-technology = { 
-	year = 1630
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.30
-		Columbian_Exchange = 0.325
-		Scientific_Method = 0.2
-		Global_Trade = 0.15
-	}
-}
-technology = { 
-	year = 1640
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.325
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.25
-		Global_Trade = 0.2
-	}
-	production_efficiency = 0.01
-}
-technology = { 
-	year = 1650
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.35
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.3
-		Global_Trade = 0.25
-	}
-	development_cost_modifier = 0.025
-}
-technology = { 
-	year = 1660
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.375
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.35
-		Global_Trade = 0.3
-		Academia = 0.05
-	}
-	allowed_idea_groups = 10
-	development_cost_modifier = 0.05
-}
-technology = { 
-	year = 1670
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.4
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.4
-		Global_Trade = 0.35
-		Academia = 0.1
-	}
-}
-technology = { 
-	year = 1680
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.425
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.45
-		Global_Trade = 0.4
-		Academia = 0.15
-	}
-}
-technology = { 
-	year = 1690
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.45
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.5
-		Global_Trade = 0.45
-		Academia = 0.2
-	}
-	administrative_efficiency = 0.025
-}
-technology = { 
-	year = 1700
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.475
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.55
-		Global_Trade = 0.5
-		Academia = 0.25
-		Nationalism = 0.05
-	}
-	allowed_idea_groups = 11
-	development_cost_modifier = 0.025
-}
-technology = { 
-	year = 1710
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.6
-		Global_Trade = 0.5
-		Academia = 0.3
-		Nationalism = 0.1
-		Industrialisation = 0.1
-	}
-	production_efficiency = 0.02
-}
-technology = { 
-	year = 1720
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.65
-		Global_Trade = 0.5
-		Academia = 0.35
-		Nationalism = 0.2
-		Industrialisation = 0.2
-	}
-	administrative_efficiency = 0.05
-}
-technology = { 
-	year = 1730
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.7
-		Global_Trade = 0.5
-		Academia = 0.4
-		Nationalism = 0.3
-		Industrialisation = 0.3
-	}
-}
-technology = { 
-	year = 1740
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 0.45
-		Nationalism = 0.4
-		Industrialisation = 0.4
-	}
-	allowed_idea_groups = 12
-}
-technology = { 
-	year = 1750
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 0.5
-		Nationalism = 0.5
-		Industrialisation = 0.5
-	}
-	administrative_efficiency = 0.025
-	development_cost_modifier = 0.025
-}
-technology = { 
-	year = 1760
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 0.6
-		Nationalism = 0.6
-		Industrialisation = 0.6
-	}
-}
-technology = { 
-	year = 1770
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 0.7
-		Nationalism = 0.7
-		Industrialisation = 0.7
-	}
-	production_efficiency = 0.01
-}
-technology = { 
-	year = 1780
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 0.8
-		Nationalism = 0.75
-		Industrialisation = 0.8
-	}
-	allowed_idea_groups = 13
-}
-technology = { 
-	year = 1790
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 0.9
-		Nationalism = 0.75
-		Industrialisation = 0.9
-	}
-	administrative_efficiency = 0.025
-}
-technology = { 
-	year = 1800
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
-	}
-	development_cost_modifier = 0.025
-}
-technology = { 
-	year = 1810
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
-	}
-	administrative_efficiency = 0.05
-}
-technology = { 
-	year = 1820
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
-	}
+
+# applied when a country is ahead of time in this technology
+ahead_of_time = {
 	production_efficiency = 0.05
+	yearly_corruption = -0.025
 }
-technology = { 
-	year = 1830
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
-	}
+
+technology = {
+	# Tech 0 Bronze Age Production and Administration (0)
+	year = 125 # 629 BC
+	cattle_flock = yes
+	tribal_gathering = yes
+	warrior_tents = yes
+	supply_depots = yes
+	cleared_farmland = yes
+	foundry = yes
+	chiefs_tent = yes
+	religious_grounds = yes
+	trading_grounds = yes
+	burial_mounds = yes
+	taxes_infrastructure_building = yes
+	despotic_monarchy = yes
+	oriental_monarchy = yes
+	principate = yes
+	epirote_monarchy = yes
+	chinese_feudalism = yes
+	bureaucratic_monarchy = yes
+	diadochi_monarchy = yes
+	triumvirate_government = yes
+	greek_polis = yes
+	roman_senate = yes
+	classic_republic = yes
+	punic_republic = yes
+	league = yes
+	republican_dictatorship = yes
+	pastoral_tribe = yes
+	tribal_federation = yes
+	tribal_kingdom = yes
+	germanic_kingdom = yes
+	vedic_kingdom = yes
+	iberian_monarchy = yes
+	tribal_horde = yes
+	spartan_monarchy = yes
+	oligarchic_monarchy = yes
 }
-technology = { 
-	year = 1840
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
+
+technology = {
+	# Tech 1 Craftsmen Resettlement (I)
+	year = 130 # 624 BC
+	gravel_road = yes
+	farming_settlement = yes
+	shepherds = yes
+	craftsman = yes
+	manufactory_slave_up = yes
+	manufactory_slave_out = yes
+	expects_institution = {
+		writing_system = 0.05
+		iron_age = 0.05
 	}
+	effect = { add_country_modifier = { name = tech_mod_adm_1 duration = -1 } }
 }
-technology = { 
-	year = 1850
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
-	}
-	administrative_efficiency = 0.05
+
+technology = {
+	# Tech 2 Land Reclamation (II)
+	year = 135 # 619 BC
+	small_water_irrigation = yes
+	land_reclamation = yes
+	production_efficiency = 0.025
 	development_cost_modifier = 0.025
-}
-technology = { 
-	year = 1860
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
+	expects_institution = {
+		writing_system = 0.10
+		iron_age = 0.10
 	}
-	allowed_idea_groups = 14
-}
-technology = { 
-	year = 1870
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_2 duration = -1 }
 	}
+}
+
+technology = {
+	# Tech 3 Early Administrations (III)
+	year = 145 # 609 BC
+	tannery = yes
+	weavers = yes
+	governing_capacity = 50
+	administrative_efficiency = 0.025
+	expects_institution = {
+		writing_system = 0.15
+		iron_age = 0.15
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_3 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 4 Citizenship and Early Democracy (IV)
+	year = 160 # 594 BC
+	shrine = yes
+	pottery = yes
+	small_townhall = yes
+	allowed_idea_groups = 1
+	expects_institution = {
+		writing_system = 0.20
+		iron_age = 0.20
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_4 duration = -1 }
+	}
+}
+
+# Pre-era techs
+technology = {
+	# Tech 5 Coinage (V)
+	year = 175 # 579 BC
+	winery = yes
+	glassmaker = yes
+	expects_institution = {
+		writing_system = 0.25
+		iron_age = 0.25
+		coin_usage = 0.10
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_5 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 6 Tunnel Mining (VI)
+	year = 190 # 564 BC
+	production_efficiency = 0.025
+	quarry = yes
+	miners_camp = yes
+	salt_gatherers = yes
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.20
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_6 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 7 Cosmopolitan Empires (VII)
+	year = 205
+	herbalist = yes
+	allowed_idea_groups = 2
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.25
+		siege_engineering_institution = 0.10
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_7 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 8 Satrapies (VIII)
+	year = 220
+	small_temple = yes
+	tribute_gathering = yes
+	governing_capacity = 100
+	administrative_efficiency = 0.025
+	apiary = yes
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.20
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_8 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 9 Pythagorean Mathematics (IX)
+	year = 235
+	production_efficiency = 0.025
+	library = yes
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.25
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_9 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 10 Indirect Hostilities (X)
+	year = 250
+	# development_cost_modifier = 0.025
+	horse_breeder = yes
+	may_support_rebels = yes
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.10
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_10 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 11 Expanded Bureaucracy (XI)
+	year = 265
+	governing_capacity = 200 #Bureaucracy institution
+	allow_client_states = yes
 	administrative_efficiency = 0.05
-}
-technology = { 
-	year = 1880
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
+	allowed_idea_groups = 3
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.20
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_11 duration = -1 }
 	}
 }
-technology = { 
-	year = 1890
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
+
+technology = {
+	# Tech 12 Organized Tribute Gathering (XII)
+	year = 280
+	administrative_efficiency = 0.025
+	# development_cost_modifier = 0.025
+	taxman = yes
+	#goldsmith = yes
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.25
 	}
-	administrative_efficiency = 0.05
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_12 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 13 City Gridline (XIII)
+	year = 295
+	oracle = yes
+	palestra = yes
 	development_cost_modifier = 0.025
-}
-technology = { 
-	year = 1900
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.10
 	}
-	production_efficiency = 0.01
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_13 duration = -1 }
+	}
 }
+
+technology = {
+	# Tech 14 Cast Iron (XIV)
+	year = 310
+	blacksmith = yes
+	dyer = yes
+	production_efficiency = 0.05
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.20
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_14 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 15 Improved Road Systems (XV)
+	year = 325
+	governing_capacity = 100
+	paved_road = yes
+	allowed_idea_groups = 4
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.25
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_15 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 16 Crop Rotation and Terracing (XVI)
+	year = 340
+	development_cost_modifier = 0.05
+	big_water_irrigation = yes
+	small_mine = yes
+	small_workshop = yes
+	production_efficiency = 0.05
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.10
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_16 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 17 Historical Science (XVII)
+	year = 355
+	administrative_efficiency = 0.025
+	governing_capacity = 200
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.20
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_17 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 18 Early Medical Science (XVIII)
+	year = 370
+	medicus = yes
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.25
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_18 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 19 Hegemony (XIX)
+	year = 385
+	imperial_palace = yes
+	big_townhall = yes
+	allowed_idea_groups = 5
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_19 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 20 Hellenistic Science (XX)
+	year = 400
+	great_library = yes
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.10
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_20 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 21 Engineering Wonders (XXI)
+	year = 415
+	great_temple = yes
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.20
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_21 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 22 Empire Division (XXII)
+	year = 430
+	governing_capacity = 200
+	administrative_efficiency = 0.05
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.25
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_22 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 23 Gymnasiums and Palestras (XXIII)
+	year = 445
+	small_bath = yes
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_23 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 24 Euclidian Mathematics (XXIV)
+	year = 460
+	allowed_idea_groups = 6
+	mathematician_academy = yes
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.10
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_24 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 25 Advanced Mechanics (XXV)
+	year = 475
+	artisan_district = yes
+	big_mine = yes
+	production_efficiency = 0.05
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.20
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_25 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 26 Advanced Financial Legislation (XXVI)
+	year = 490
+	tax_collector = yes
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.25
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_26 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 27 Archimedean Science (XXVII)
+	year = 520
+	allowed_idea_groups = 7
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.10
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_27 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 28 Provincial System (XXVIII)
+	year = 535
+	government_palace = yes
+	administrative_efficiency = 0.025
+	governing_capacity = 400
+	# development_cost_modifier = 0.025
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.25
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_28 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 29 Roman Concrete (XXIX)
+	year = 550
+	hospital = yes
+	production_efficiency = 0.05
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.10
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_29 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 30 Aqueducts (XXX)
+	year = 565
+	big_estate = yes
+	aqueduct = yes
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.20
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_30 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 31 Advanced Political Thought (XXXI)
+	year = 580
+	allowed_idea_groups = 8
+	governing_capacity = 200
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.25
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_31 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 32 Pergament and Paper (XXXII)
+	year = 595
+	governing_capacity = 200
+	administrative_efficiency = 0.05
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.10
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_32 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 33 Arc in Architecture (XXXIII)
+	year = 610
+	production_efficiency = 0.05
+	# development_cost_modifier = 0.025
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.20
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_33 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 34 Public Baths (XXXIV
+	year = 625
+	big_bath = yes
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.25
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_34 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 35 Public Land Laws and Welfare (XXXV)
+	year = 640
+	government_district = yes
+	administrative_efficiency = 0.025
+	development_cost_modifier = 0.025
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_35 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 36 Milestone Road System (XXXVI)
+	year = 655
+	imperial_road = yes
+	may_force_march = yes
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.10
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_36 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 37 Water Clocks (XXXVII)
+	year = 670
+	production_efficiency = 0.05
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.20
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_37 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 38 Cranes (XXXVIII)
+	year = 685
+	production_efficiency = 0.05
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.25
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_38 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 39 Triumvitares (XXXIX)
+	year = 700
+	allowed_idea_groups = 9
+	governing_capacity = 100
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.30
+		tactics_strategy_institution = 0.10
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_39 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 40 Concrete Dome (XL)
+	year = 715
+	production_efficiency = 0.05
+	# development_cost_modifier = 0.05
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.30
+		tactics_strategy_institution = 0.20
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_40 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 41 Principate (XLI)
+	year = 730
+	governing_capacity = 200
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.30
+		tactics_strategy_institution = 0.25
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_41 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 42 Advanced Provincial System (XLII)
+	year = 745
+	administrative_efficiency = 0.05
+	governing_capacity = 300
+	allowed_idea_groups = 10
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.30
+		tactics_strategy_institution = 0.30
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_42 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 43 Medical Science (XLIII)
+	year = 760
+	development_cost_modifier = 0.05
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.30
+		tactics_strategy_institution = 0.30
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_43 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 44 Chain Pump (XLIV)
+	year = 775
+	production_efficiency = 0.05
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.30
+		tactics_strategy_institution = 0.30
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_44 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 45 Advanced Sewer System (XLV)
+	year = 790
+	administrative_efficiency = 0.025
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.30
+		tactics_strategy_institution = 0.30
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_45 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 46 Water-Powered Mills (XLVI)
+	year = 805
+	production_efficiency = 0.1
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.30
+		tactics_strategy_institution = 0.30
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_46 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 47 Chinese Ink (XLII)
+	year = 820
+	governing_capacity = 200
+	expects_institution = {
+		writing_system = 0.40
+		iron_age = 0.40
+		coin_usage = 0.40
+		siege_engineering_institution = 0.40
+		bureaucracy_institution = 0.40
+		cast_iron_institution = 0.40
+		classical_philosophy_institution = 0.40
+		civil_law_institution = 0.40
+		axiomatic_maths_institution = 0.40
+		blast_furnace_institution = 0.40
+		advanced_hydraulics_institution = 0.40
+		astronomy_institution = 0.40
+		engineering_architecture_institution = 0.40
+		tactics_strategy_institution = 0.40
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_47 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 48 Domed Buildings (XLIII)
+	year = 835
+	# development_cost_modifier = 0.025
+	administrative_efficiency = 0.025
+	expects_institution = {
+		writing_system = 0.40
+		iron_age = 0.40
+		coin_usage = 0.40
+		siege_engineering_institution = 0.40
+		bureaucracy_institution = 0.40
+		cast_iron_institution = 0.40
+		classical_philosophy_institution = 0.40
+		civil_law_institution = 0.40
+		axiomatic_maths_institution = 0.40
+		blast_furnace_institution = 0.40
+		advanced_hydraulics_institution = 0.40
+		astronomy_institution = 0.40
+		engineering_architecture_institution = 0.40
+		tactics_strategy_institution = 0.40
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_48 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 49 Improved Hushing Mining (XLIX)
+	year = 850
+	production_efficiency = 0.1
+	# development_cost_modifier = 0.025
+	expects_institution = {
+		writing_system = 0.50
+		iron_age = 0.50
+		coin_usage = 0.50
+		siege_engineering_institution = 0.50
+		bureaucracy_institution = 0.50
+		cast_iron_institution = 0.50
+		classical_philosophy_institution = 0.50
+		civil_law_institution = 0.50
+		axiomatic_maths_institution = 0.50
+		blast_furnace_institution = 0.50
+		advanced_hydraulics_institution = 0.50
+		astronomy_institution = 0.50
+		engineering_architecture_institution = 0.50
+		tactics_strategy_institution = 0.50
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_49 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 50 Codex (L)
+	year = 865
+	administrative_efficiency = 0.05
+	governing_capacity = 100
+	expects_institution = {
+		writing_system = 0.50
+		iron_age = 0.50
+		coin_usage = 0.50
+		siege_engineering_institution = 0.50
+		bureaucracy_institution = 0.50
+		cast_iron_institution = 0.50
+		classical_philosophy_institution = 0.50
+		civil_law_institution = 0.50
+		axiomatic_maths_institution = 0.50
+		blast_furnace_institution = 0.50
+		advanced_hydraulics_institution = 0.50
+		astronomy_institution = 0.50
+		engineering_architecture_institution = 0.50
+		tactics_strategy_institution = 0.50
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_50 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 51 Hospital System (LI)
+	year = 880
+	development_cost_modifier = 0.05
+	expects_institution = {
+		writing_system = 0.50
+		iron_age = 0.50
+		coin_usage = 0.50
+		siege_engineering_institution = 0.50
+		bureaucracy_institution = 0.50
+		cast_iron_institution = 0.50
+		classical_philosophy_institution = 0.50
+		civil_law_institution = 0.50
+		axiomatic_maths_institution = 0.50
+		blast_furnace_institution = 0.50
+		advanced_hydraulics_institution = 0.50
+		astronomy_institution = 0.50
+		engineering_architecture_institution = 0.50
+		tactics_strategy_institution = 0.50
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_51 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 52 Galenus Medicine / Advanced Medical Science (LII)
+	year = 895
+	development_cost_modifier = 0.05
+	expects_institution = {
+		writing_system = 0.50
+		iron_age = 0.50
+		coin_usage = 0.50
+		siege_engineering_institution = 0.50
+		bureaucracy_institution = 0.50
+		cast_iron_institution = 0.50
+		classical_philosophy_institution = 0.50
+		civil_law_institution = 0.50
+		axiomatic_maths_institution = 0.50
+		blast_furnace_institution = 0.50
+		advanced_hydraulics_institution = 0.50
+		astronomy_institution = 0.50
+		engineering_architecture_institution = 0.50
+		tactics_strategy_institution = 0.50
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_52 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 53 Advanced Glassblowing (LIII)
+	year = 910
+	production_efficiency = 0.05
+	expects_institution = {
+		writing_system = 0.50
+		iron_age = 0.50
+		coin_usage = 0.50
+		siege_engineering_institution = 0.50
+		bureaucracy_institution = 0.50
+		cast_iron_institution = 0.50
+		classical_philosophy_institution = 0.50
+		civil_law_institution = 0.50
+		axiomatic_maths_institution = 0.50
+		blast_furnace_institution = 0.50
+		advanced_hydraulics_institution = 0.50
+		astronomy_institution = 0.50
+		engineering_architecture_institution = 0.50
+		tactics_strategy_institution = 0.50
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_53 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 54 Wheelbarrow (LIV)
+	year = 925
+	# development_cost_modifier = 0.05
+	production_efficiency = 0.15
+	expects_institution = {
+		writing_system = 0.50
+		iron_age = 0.50
+		coin_usage = 0.50
+		siege_engineering_institution = 0.50
+		bureaucracy_institution = 0.50
+		cast_iron_institution = 0.50
+		classical_philosophy_institution = 0.50
+		civil_law_institution = 0.50
+		axiomatic_maths_institution = 0.50
+		blast_furnace_institution = 0.50
+		advanced_hydraulics_institution = 0.50
+		astronomy_institution = 0.50
+		engineering_architecture_institution = 0.50
+		tactics_strategy_institution = 0.50
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_54 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 55 Common Citizenship (LV)
+	year = 940
+	administrative_efficiency = 0.1
+	governing_capacity = 400
+	# development_cost_modifier = 0.0255
+	expects_institution = {
+		writing_system = 0.50
+		iron_age = 0.50
+		coin_usage = 0.50
+		siege_engineering_institution = 0.50
+		bureaucracy_institution = 0.50
+		cast_iron_institution = 0.50
+		classical_philosophy_institution = 0.50
+		civil_law_institution = 0.50
+		axiomatic_maths_institution = 0.50
+		blast_furnace_institution = 0.50
+		advanced_hydraulics_institution = 0.50
+		astronomy_institution = 0.50
+		engineering_architecture_institution = 0.50
+		tactics_strategy_institution = 0.50
+	}
+	effect = {
+		adm_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_adm_55 duration = -1 }
+	}
+}
+

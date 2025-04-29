@@ -1,1392 +1,2787 @@
 monarch_power = MIL
-ahead_of_time = { 
-	army_tradition = 1.0
+
+# applied when a country is ahead of time in this technology
+# no bonus for MIL currently
+ahead_of_time = {
+	discipline = 0.02
 }
-technology = { 
-	year = 1200
+technology = {
+	# Tech 0  First Iron Weapons (0)
+	year = 125 # 629 BC
 	sprite_level = 1
-	land_morale = 1.0
-	supply_limit = 0.05
-	military_tactics = 0.25
-	artillery_fire = 0.01
-	artillery_shock = 0.01
-	infantry_fire = 0.45
-	infantry_shock = 0.45
-	cavalry_shock = 0.5
-	enable = western_halberd_infantry
-	enable = unique_ARA_almogavar_infantry
-	enable = western_spearman_infantry
-	enable = unique_SCO_schiltron_infantry
-	enable = western_knight_cavalry
-	enable = unique_FRA_chevalier_cavalry
-	enable = western_raid_cavalry
-	enable = western_hobelar_cavalry
-	enable = eastern_toxotai_infantry
-	enable = eastern_mourtatoi_infantry
-	enable = eastern_hospite_infantry
-	enable = eastern_horse_archer_cavalry
-	enable = eastern_mountain_nomad_cavalry
-	enable = eastern_cuman_cavalry
-	enable = eastern_druzhina_cavalry
-	enable = muslim_mashain_walker_infantry
-	enable = muslim_arab_horseman
-	enable = muslim_armored_infantry
-	enable = muslim_faris_cavalry
-	enable = muslim_rajjala_infantry
-	enable = muslim_halqa_irregular_infantry
-	enable = muslim_amir_mamluk_cavalry
-	enable = unique_MAM_mamluk_cavalry
-	enable = ottoman_akinci_light_cavalry
-	enable = ottoman_ghazi_infantry
-	enable = asian_mixed_crossbow_infantry
-	enable = asian_warrior_monk_infantry
-	enable = asian_tribal_spear_infantry
-	enable = asian_archer_infantry
-	enable = asian_tobang_infantry
-	enable = asian_light_foot_infantry
-	enable = asian_crossbow_elephant_cavalry
-	enable = asian_heavy_elephant_cavalry
-	enable = asian_fire_lance_cavalry
-	enable = asian_horse_archer_cavalry
-	enable = asian_singi_cavalry
-	enable = asian_thousandball_artillery
-	enable = steppes_spear_infantry
-	enable = steppes_swarm_cavalry
-	enable = north_american_woodlands_warrior_infantry
-	enable = north_american_plains_warrior_infantry
-	enable = mesoamerican_archer_infantry
-	enable = mesoamerican_jungle_raider_infantry
-	enable = southamerican_club_infantry
-	enable = southamerican_spear_infantry
-	enable = indian_kashmir_slinger_infantry
-	enable = indian_spearmen_infantry
-	enable = indian_paik_infantry
-	enable = indian_arab_cavalry
-	enable = indian_war_elephant_cavalry
-	enable = sudanese_ton_tigi_light_cavalry
-	enable = sudanese_tuareg_camelry
-	enable = sudanese_free_skirmisher_infantry
-	enable = sudanese_archer_infantry
-	enable = polynesian_skirmish_infantry
-	enable = indonesian_simbalan_infantry
-	enable = indonesian_arab_horse
-	enable = indonesian_war_elephant_cavalry
-	enable = sub_saharan_mobata_infantry
-	enable = sub_saharan_impi_infantry
-	enable = sub_saharan_tuareg_cavalry
-	enable = sub_saharan_mandelaku
+	manpower_infrastructure_building = yes
+	manpower_infrastructure_horde_building = yes
+	fortified_mound = yes
+	# barbarian invasions
+	enable = 0_unarmed_migrants
+	enable = 1_conquered_tribes_warriors
+	enable = 1_cimmerian_raiders
+	enable = 1_ancient_steppe_skirmishers
+	enable = 1_tartassian_archers
+	enable = 1_tartassian_riders
+	enable = 1_tartassian_spearmen
+	enable = 1_sabean_horsemen
+	enable = 1_sabean_tribesmen
+	enable = 1_sabean_skirmishers
+	enable = 1_kushite_chariot
+	enable = 1_kushite_spearmen
+	enable = 1_taseti_archer
+	enable = 1_vedic_clansmen
+	enable = 1_dravidian_clansmen
+	enable = 1_northern_axemen
+	enable = 1_steppe_riders
+	enable = 1_northern_spearthrowers
+	enable = 1_jungle_clansmen
+	enable = 1_mounted_warriors
+	enable = 1_jungle_spearthrowers
+	enable = 1_vedic_chariots
+	enable = 1_vedic_archers
+	# 问鼎兵种/China New Added
+	enable = zhongyuan_infantry_18
+	enable = wuyue_infantry_15
+	enable = bashu_infantry_11
+	enable = rongdi_infantry_13
+	enable = rongdi_cavalry_20
+	enable = manyue_infantry_15
+	enable = dongyi_infantry_11
+	enable = dongyi_chariot_12
+	enable = zhongyuan_chariot_1
+	# Tibetan
+	enable = tibetan_clansmen
+	enable = tibetan_slinger
+	# Korea(original Chinese unit group)
+	enable = 1_bronze_spear_cavalry
+	enable = 1_bronze_spear_infantry
+	enable = 1_bronze_sword_infantry
+	enable = 1_chinese_levy_archers
+	# new_units
+	enable = rome_base_inf_0
+	enable = rome_base_art_0
+	enable = rome_base_cav_0
+	enable = italic_base_inf_0
+	enable = italic_base_art_0
+	enable = italic_base_art_1
+	enable = italic_base_cav_0
+	enable = etrurian_base_inf_0
+	enable = etrurian_base_inf_1
+	enable = etrurian_base_art_0
+	enable = etrurian_base_art_1
+	enable = etrurian_base_cav_0
+	enable = latin_base_inf_0
+	enable = latin_base_cav_0
+	enable = samnitic_base_inf_0
+	enable = samnitic_base_art_0
+	enable = samnitic_base_cav_0
+	enable = greek_base_inf_0
+	enable = greek_base_cav_0
+	enable = greek_base_art_0
+	enable = spartan_base_inf_0
+	enable = spartan_base_art_0
+	enable = spartan_base_art_1
+	enable = macedon_base_inf_0
+	enable = macedon_base_cav_0
+	enable = thracian_base_inf_0
+	enable = thracian_base_cav_0
+	enable = thracian_base_art_0
+	enable = thracian_base_art_1
+	enable = illyrian_base_inf_0
+	enable = illyrian_base_cav_0
+	enable = illyrian_base_art_0
+	enable = dacian_base_inf_0
+	enable = dacian_base_cav_0
+	enable = dacian_base_art_0
+	enable = iberian_base_inf_0
+	enable = iberian_base_cav_0
+	enable = iberian_base_art_0
+	enable = iberian_base_art_1
+	enable = celtiberian_base_inf_0
+	enable = celtiberian_base_cav_0
+	enable = celtiberian_base_art_0
+	enable = celtiberian_base_art_1
+	enable = punic_base_inf_0
+	enable = punic_base_cav_0
+	enable = punic_base_cav_1
+	enable = punic_base_art_0
+	enable = phoenician_base_inf_0
+	enable = phoenician_base_cav_0
+	enable = phoenician_base_art_0
+	enable = celt_base_inf_0
+	enable = celt_base_inf_1
+	enable = celt_base_inf_2
+	enable = celt_base_cav_0
+	enable = celt_base_art_0
+	enable = caucasian_base_inf_0
+	enable = caucasian_base_inf_1
+	enable = caucasian_base_cav_0
+	enable = caucasian_base_cav_1
+	enable = caucasian_base_art_0
+	enable = caucasian_base_art_1
+	enable = anatolian_base_inf_0
+	enable = anatolian_base_inf_1
+	enable = anatolian_base_cav_0
+	enable = anatolian_base_art_0
+	enable = anatolian_base_art_1
+	enable = iranian_base_inf_0
+	enable = iranian_base_cav_0
+	enable = iranian_base_art_0
+	enable = asian_base_inf_0
+	enable = asian_base_inf_1
+	enable = asian_base_cav_0
+	enable = asian_base_art_0
+	enable = asian_base_art_1
+	enable = egypt_uniq_inf_0
+	enable = egypt_uniq_cav_0
+	enable = egypt_uniq_art_0
+	enable = asian_hatrush_inf_0
+	enable = asian_hatrush_cav_0
+	enable = asian_hatrush_art_0
+	enable = elam_uniq_art_0
+	enable = brythonic_base_art_0
+	enable = brythonic_base_cav_0
+	enable = brythonic_base_inf_0
+	enable = brythonic_base_inf_1
+	enable = germanic_base_art_0
+	enable = germanic_base_cav_0
+	enable = germanic_base_inf_0
+	enable = northafrican_base_art_0
+	enable = northafrican_base_cav_0
+	enable = northafrican_base_inf_0
+	land_morale = 3.0
+	combat_width = 1.0
+	artillery_fire = 0.3
+	artillery_shock = 0.1
+	infantry_shock = 0.2
+	infantry_fire = 0.2
+	cavalry_shock = 0.1
+	cavalry_fire = 0.2
+	military_tactics = 0.1
+	building_ruins = yes
+	repairs_planned = yes
 }
-technology = { 
-	year = 1210
+
+technology = {
+	# Tech 1  Horse Riding (I)
+	year = 130 # 624 BC
+	border_garrison = yes
+	cavalry_shock = 0.1
+	supply_limit = 0.1
+	maneuver_value = 0.25
+	enable = spartan_temp_cav_0
+	enable = asian_base_cav_1
+	expects_institution = {
+		writing_system = 0.05
+		iron_age = 0.05
+	}
+	effect = { add_country_modifier = { name = tech_mod_mil_1 duration = -1 } }
 }
-technology = { 
-	year = 1220
+
+technology = {
+	# Tech 2  Horse Archery (II)
+	year = 135 # 619 BC
+	cavalry_fire = 0.2
+	maneuver_value = 0.25
+	small_city_walls = yes
+	# 问鼎兵种/China New Added
+	enable = bashu_infantry_21
+	enable = 1_steppe_raiders
+	enable = greek_base_art_1
+	enable = phoenician_base_art_1
+	enable = caucasian_base_cav_2
+	enable = anatolian_base_cav_1
+	enable = lydian_uniq_cav_1
+	enable = lydian_uniq_cav_2
+	enable = iranian_base_cav_1
+	enable = egypt_uniq_cav_1
+	enable = northafrican_base_cav_1
+	expects_institution = {
+		writing_system = 0.10
+		iron_age = 0.10
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_2 duration = -1 }
+	}
 }
-technology = { 
-	year = 1230
-}
-technology = { 
-	year = 1240
-}
-technology = { 
-	year = 1250
-}
-technology = { 
-	year = 1260
-}
-technology = { 
-	year = 1270
-}
-technology = { 
-	year = 1280
-}
-technology = { 
-	year = 1290
-}
-technology = { 
-	year = 1300
-}
-technology = { 
-	year = 1310
-	infantry_shock = 0.05
-	cavalry_shock = 0.05
-	land_morale = 0.05
-}
-technology = { 
-	year = 1320
-	infantry_shock = 0.1
-	land_morale = 0.05
-	fort_14th = yes
-}
-technology = { 
-	year = 1330
-	military_tactics = 0.05
-	cavalry_shock = 0.35
-	supply_limit = 0.15
+
+technology = {
+	# Tech 3  Hoplon (III)
+	year = 145 # 609 BC
 	may_drill = yes
+	infantry_shock = 0.2
+	# 问鼎兵种/China New Added
+	enable = rongdi_infantry_22
+	enable = manyue_infantry_22
+	enable = jingchu_infantry_22
+	enable = italic_base_inf_1
+	enable = samnitic_base_inf_1
+	enable = dacian_base_art_1
+	enable = punic_base_art_1
+	enable = phoenician_base_cav_1
+	enable = anatolian_base_cav_2
+	enable = iranian_base_inf_1
+	enable = egypt_uniq_art_1
+	expects_institution = {
+		writing_system = 0.15
+		iron_age = 0.15
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_3 duration = -1 }
+	}
 }
-technology = { 
-	year = 1340
-	infantry_fire = 0.04
+
+technology = {
+	# Tech 4  First Troops Separation (IV)
+	year = 160 # 594 BC
+	small_army_camp = yes
+	cavalry_shock = 0.05
 	cavalry_fire = 0.05
+	artillery_fire = 0.2
+	infantry_shock = 0.1
+	infantry_fire = 0.05
+	# 问鼎兵种/China New Added
+	enable = manyue_infantry_23
+	enable = 0_ancient_steppe_archers
+	enable = rome_base_inf_1
+	enable = thracian_base_inf_1
+	enable = illyrian_base_inf_1
+	enable = dacian_base_cav_1
+	enable = caucasian_base_cav_3
+	enable = anatolian_base_inf_2
+	enable = iranian_base_art_1
+	enable = asian_base_inf_2
+	enable = egypt_uniq_inf_1
+	enable = asian_hatrush_art_1
+	enable = elam_uniq_art_1
+	enable = germanic_base_inf_1
+	expects_institution = {
+		writing_system = 0.20
+		iron_age = 0.20
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_4 duration = -1 }
+	}
+}
+
+# Pre-era techs
+technology = {
+	# Tech 5 Military Tactics (V)
+	year = 175 # 579 BC
 	land_morale = 0.05
-	enable = ottoman_azap_infantry
-	enable = ottoman_musellem_cavalry
-	enable = ottoman_yaya_infantry
-	enable = sudanese_farima_heavy_cavalry
-	enable = sudanese_tribal_raider_light_cavalry
-	enable = asian_eruptor_artillery
-}
-technology = { 
-	year = 1350
-	cavalry_shock = 0.30
-	supply_limit = 0.10
-	enable = muslim_halqa_regular_infantry
-	enable = muslim_incendiary_infantry
-	enable = muslim_crossbow_infantry
-	enable = muslim_ghuzat_infantry
-	enable = asian_war_elephant_cavalry
-	enable = asian_lancer_bow_cavalry
-	enable = asian_elite_horse_cavalry
-	enable = asian_bushi_cavalry
-	enable = asian_phkap_infantry
-	enable = asian_fire_lance_infantry
-	enable = unique_VIE_huochong_infantry
-	enable = asian_halberdier_infantry
-	enable = asian_shashu_no_ashigaru_infantry
-	enable = asian_fire_arrow_rocket_infantry
-	enable = southamerican_central_sling_infantry
-	enable = southamerican_eastern_archer_infantry
-	enable = southamerican_southern_bolo_infantry
-}
-technology = { 
-	year = 1360
-	expects_institution = { 
-		Banking = 0.05
+	military_tactics = 0.15
+	# 问鼎兵种/China New Added
+	enable = zhongyuan_infantry_24
+	enable = wuyue_infantry_24
+	enable = 0_steppe_scouts
+	enable = italic_base_inf_2
+	enable = italic_base_inf_3
+	enable = italic_base_art_2
+	enable = etrurian_base_inf_2
+	enable = etrurian_base_inf_3
+	enable = samnitic_base_art_1
+	enable = greek_base_cav_1
+	enable = spartan_base_art_2
+	enable = macedon_base_inf_1
+	enable = macedon_base_cav_1
+	enable = thracian_base_cav_1
+	enable = iberian_base_inf_1
+	enable = celtiberian_base_inf_1
+	enable = punic_base_cav_2
+	enable = phoenician_base_inf_1
+	enable = caucasian_base_art_2
+	enable = anatolian_base_art_2
+	enable = asian_base_art_2
+	enable = egypt_uniq_cav_2
+	enable = germanic_base_inf_2
+	enable = germanic_base_cav_1
+	expects_institution = {
+		writing_system = 0.25
+		iron_age = 0.25
+		coin_usage = 0.10
 	}
-	land_morale = 0.05
-	enable = eastern_skoutatoi_infantry
-	enable = eastern_bandiera_infantry
-	enable = eastern_balkan_feudal_cavalry
-	enable = unique_SER_gusar_cavalry
-	enable = eastern_pronoia_cavalry
-	enable = steppes_sarbardar_militia_infantry
-	enable = steppes_archer_infantry
-	enable = steppes_heavy_swarm_cavalry
-	enable = unique_GKK_mangudai_cavalry
-	enable = polynesian_pike_infantry
-}
-technology = { 
-	year = 1370
-	expects_institution = { 
-		Banking = 0.10
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_5 duration = -1 }
 	}
-	cavalry_shock = 0.30
-	enable = western_mountedarcher_cavalry
-	enable = western_runner_cavalry
-	enable = western_condottieri_cavalry
-	enable = western_freecompany_infantry
-	enable = unique_GEN_crossbow_infantry
-	enable = western_longbow_infantry
-	enable = unique_ENG_yeoman_infantry
-	enable = western_manatarms_infantry
-	enable = unique_DAN_obudshaer_infantry
-	enable = asian_firearrow_artillery
-	enable = mesoamerican_jaguar_warrior_infantry
-	enable = unique_AZT_eagle_and_jaguar_infantry
-	enable = sub_saharan_soba_infantry
-	enable = sub_saharan_adargueiros_infantry
 }
-technology = { 
-	year = 1380
-	expects_institution = { 
-		Banking = 0.15
+
+technology = {
+	# Tech 6 Composite Steppe Bow (VI)
+	year = 190 # 564 BC
+	cavalry_fire = 0.1
+	artillery_fire = 0.1
+	# 问鼎兵种/China New Added
+	enable = dongyi_infantry_27
+	enable = 0_early_steppe_axemen
+	enable = rome_base_cav_1
+	enable = italic_base_cav_1
+	enable = etrurian_base_cav_1
+	enable = latin_base_inf_1
+	enable = latin_base_cav_1
+	enable = greek_base_inf_1
+	enable = greek_base_art_2
+	enable = macedon_base_cav_2
+	enable = thracian_base_inf_2
+	enable = illyrian_base_art_1
+	enable = dacian_base_inf_1
+	enable = dacian_base_art_2
+	enable = iberian_base_cav_1
+	enable = celtiberian_base_cav_1
+	enable = punic_base_art_2
+	enable = phoenician_base_art_2
+	enable = celt_base_art_1
+	enable = brythonic_base_art_1
+	enable = caucasian_base_inf_2
+	enable = anatolian_base_inf_3
+	enable = iranian_base_cav_2
+	enable = iranian_base_art_2
+	enable = asian_base_cav_2
+	enable = asian_base_art_3
+	enable = egypt_uniq_art_2
+	enable = asian_hatrush_cav_1
+	enable = germanic_base_art_1
+	enable = northafrican_base_art_1
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.20
 	}
-	supply_limit = 0.15
-	land_morale = 0.06
-	enable = muslim_jinete_cavalry
-	enable = muslim_royal_mamluk_cavalry
-	enable = muslim_mongol_cavalry
-	enable = ottoman_voyniq_heavy_infantry
-	enable = ottoman_bashi_bazouk_infantry
-	enable = ottoman_janissary_infantry
-	enable = unique_TUR_janissary_infantry
-	enable = ottoman_derbent_cavalry
-	enable = asian_tower_elephant_cavalry
-	enable = asian_light_cavalry
-	enable = asian_samurai_cavalry
-	enable = asian_yangban_armored_cavalry
-	enable = steppes_divani_swarm_cavalry
-	enable = southamerican_mixed_sling_infantry
-	enable = southamerican_mixed_bow_infantry
-	enable = sudanese_formation_infantry
-	enable = unique_MAL_jonow_infantry
-	enable = sudanese_sword_infantry
-	enable = sudanese_quilted_heavy_cavalry
-	enable = sudanese_war_raider_light_cavalry
-	enable = indonesian_stockade_infantry
-	enable = western_wheeled_ribaudekin_artillery
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_6 duration = -1 }
+	}
 }
-technology = { 
-	year = 1390
-	expects_institution = { 
-		Banking = 0.20
+
+technology = {
+	# Tech 7 Multiethnic Armies (VII)
+	year = 205
+	land_morale = 0.1
+	supply_limit = 0.1
+	small_grain_depot = yes
+	# 问鼎兵种/China New Added
+	enable = rongdi_cavalry_28
+	enable = jingchu_infantry_28
+	enable = 0_forest_steppe_hunters
+	enable = etrurian_base_art_2
+	enable = greek_base_art_3
+	enable = thracian_base_art_2
+	enable = illyrian_base_cav_1
+	enable = dacian_base_cav_2
+	enable = iberian_base_art_2
+	enable = celtiberian_base_art_2
+	enable = punic_base_inf_1
+	enable = punic_base_cav_3
+	enable = carthage_uniq_inf_0
+	enable = phoenician_base_cav_2
+	enable = celt_base_inf_3
+	enable = caucasian_base_cav_4
+	enable = anatolian_base_cav_3
+	enable = iranian_base_inf_2
+	enable = iranian_base_inf_3
+	enable = asian_base_inf_3
+	enable = northafrican_base_cav_2
+	enable = northafrican_base_inf_1
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.25
+		siege_engineering_institution = 0.10
 	}
-	military_tactics = 0.10
-	infantry_shock = 0.10
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_7 duration = -1 }
+	}
+}
+
+#
+technology = {
+	# Tech 8 Elite Regiments (VIII)
+	year = 220
+	land_morale = 0.1
+	infantry_shock = 0.1
+	enable = 0_beduin_slingers
+	enable = 0_beduin_tribesmen
+	enable = 0_elite_taseti_archers
+	enable = 0_daamat_warriors
+	enable = 0_daamat_light_cavalry
+	enable = 0_chariots
+	enable = 0_early_arabian_desert_warriors
+	enable = 0_early_archers
+	enable = 0_early_crossbowmen
+	enable = 0_early_desert_cavalry
+	enable = 0_early_desert_warriors
+	enable = 0_indian_levys
+	enable = 0_levy_skirmishers
+	enable = 0_light_tocharian_cavalry
+	enable = 0_steppe_spearmen
+	enable = 0_tocharian_hunters
+	enable = 0_tribal_arab_cavalry
+	enable = 0_tribal_cavalry
+	enable = 0_jungle_hunter
+	enable = 0_tribal_raiders
+	enable = 0_jungle_spearmen
+	# 问鼎兵种/China New Added
+	enable = zhongyuan_cavalry_29
+	enable = wuyue_infantry_29
+	enable = rongdi_infantry_29
+	# Tibetan
+	enable = tibetan_chariots
+	enable = tibetan_advanced_slinger
+	enable = tibetan_highlander
+	# Korea(original Chinese unit group)
+	enable = 0_early_chinese_chariots
+	enable = 0_early_chinese_horsearchers
+	enable = 0_early_chinese_spearmen
+	enable = 0_noble_swordsmen
+	enable = rome_base_art_1
+	enable = italic_base_inf_4
+	enable = italic_base_art_3
+	enable = etrurian_base_art_3
+	enable = samnitic_base_inf_2
+	enable = greek_base_cav_2
+	enable = spartan_base_inf_1
+	enable = campanian_base_cav_0
+	enable = thracian_base_art_3
+	enable = illyrian_base_inf_2
+	enable = phoenician_base_art_3
+	enable = celt_base_inf_4
+	enable = celt_base_cav_1
+	enable = brythonic_base_cav_1
+	enable = caucasian_base_art_3
+	enable = anatolian_base_art_3
+	enable = asian_base_inf_4
+	enable = asian_base_art_4
+	enable = egypt_uniq_inf_2
+	enable = asian_hatrush_inf_1
+	enable = brythonic_base_inf_2
+	enable = germanic_base_inf_3
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.20
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_8 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 9 Formation Attack (IX)
+	year = 235
+	# enable = art_1_2
+	military_tactics = 0.1
 	combat_width = 2
-}
-technology = { 
-	year = 1400
-	expects_institution = { 
-		Banking = 0.25
+	# 问鼎兵种/China New Added
+	enable = zhongyuan_infantry_30
+	enable = manyue_infantry_31
+	enable = samnitic_base_cav_1
+	enable = spartan_base_art_3
+	enable = thracian_base_inf_3
+	enable = illyrian_base_inf_3
+	enable = dacian_base_inf_2
+	enable = dacian_base_art_3
+	enable = iberian_base_inf_2
+	enable = celtiberian_base_inf_2
+	enable = punic_base_art_3
+	enable = phoenician_base_inf_2
+	enable = celt_base_art_2
+	enable = brythonic_base_art_2
+	enable = caucasian_base_inf_3
+	enable = anatolian_base_inf_4
+	enable = iranian_base_art_3
+	enable = egypt_uniq_inf_3
+	enable = egypt_uniq_art_3
+	enable = asian_hatrush_art_2
+	enable = germanic_base_art_2
+	enable = northafrican_base_art_2
+	enable = northafrican_base_inf_2
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.25
 	}
-	supply_limit = 0.10
-	infantry_fire = 0.10
-	cavalry_fire = 0.05
-	enable = north_american_raid_infantry
-	enable = indian_pike_infantry
-	enable = indian_bow_infantry
-	enable = indian_mounted_archers
-	enable = indian_heavy_elephant_cavalry
-	enable = indian_mamluk_cavalry
-	enable = indonesian_heavy_elephant_cavalry
-}
-technology = { 
-	year = 1410
-	expects_institution = { 
-		Banking = 0.275
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_9 duration = -1 }
 	}
-	infantry_shock = 0.15
-	supply_limit = 0.25
-	land_morale = 0.06
-	enable = western_bombard_artillery
 }
-technology = { 
-	year = 1420
-	expects_institution = { 
-		Banking = 0.3
+
+technology = {
+	# Tech 10 Noble Cavalry (X)
+	year = 250
+	small_conscription_center = yes
+	cavalry_shock = 0.1
+	cavalry_fire = 0.1
+	maneuver_value = 0.25
+	# 问鼎兵种/China New Added
+	enable = wuyue_cavalry_33
+	enable = bashu_infantry_32
+	enable = manyue_infantry_32
+	enable = jingchu_cavalry_33
+	enable = 0_settled_subjects_levies
+	enable = 5_forest_steppe_tribals
+	enable = rome_base_inf_2
+	enable = etrurian_base_inf_4
+	enable = samnitic_base_art_2
+	enable = greek_base_inf_2
+	enable = spartan_base_cav_0
+	enable = macedon_base_inf_2
+	enable = macedon_base_cav_3
+	enable = thracian_base_cav_2
+	enable = illyrian_base_art_2
+	enable = punic_base_inf_2
+	enable = punic_base_cav_4
+	enable = celt_base_cav_2
+	enable = anatolian_base_cav_4
+	enable = iranian_base_cav_3
+	enable = asian_base_cav_3
+	enable = egypt_uniq_cav_3
+	enable = germanic_base_cav_2
+	enable = northafrican_base_cav_3
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.10
 	}
-	infantry_fire = 0.10
-	land_morale = 0.06
-	combat_width = 1
-	enable = asian_handgunner_infantry
-	enable = unique_MNG_shenji_ying_infantry
-	enable = asian_repeating_crossbow_infantry
-	enable = asian_five_commands_infantry
-	enable = asian_samurai_infantry
-	enable = asian_firewagon_artillery
-	enable = muslim_ghulam_infantry
-	enable = steppes_heavy_infantry
-	enable = steppes_tumandar_cavalry
-	enable = sudanese_ranked_infantry
-	enable = unique_SON_marine_infantry
-	enable = sudanese_sofa_infantry
-	enable = sudanese_heavy_infantry
-	enable = polynesian_elite_infantry
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_10 duration = -1 }
+	}
 }
-technology = { 
-	year = 1430
-	expects_institution = { 
-		Banking = 0.3
-	}
-	cavalry_shock = 0.30
-	maneuver_value = 0.05
-	enable = eastern_hand_gunner
-	enable = unique_HUN_black_legion_infantry
-	enable = eastern_waggonberg_infantry
-	enable = unique_ALB_highlander_infantry
-	enable = eastern_latinikon_infantry
-	enable = eastern_balkan_light_cavalry
-	enable = eastern_hussar_horse_archer_cavalry
-	enable = eastern_deli_cavalry
-	enable = north_american_tomahawk_infantry
-	enable = sub_saharan_professional_infantry
-	enable = western_houfnice_artillery
-}
-technology = { 
-	year = 1440
-	expects_institution = { 
-		Banking = 0.3
-	}
-	infantry_fire = 0.10
-	cavalry_fire = 0.08
-	enable = western_gendarme_cavalry
-	enable = western_jinete_cavalry
-	enable = western_stradioti_cavalry
-	enable = western_lance_infantry
-	enable = western_pike_infantry
-	enable = unique_SWI_pikemen_infantry
-	enable = unique_BOH_tabor_infantry
-	enable = indonesian_armored_infantry
-}
-technology = { 
-	year = 1450
-	expects_institution = { 
-		Banking = 0.3
-	}
-	military_tactics = 0.10
-	artillery_fire = 0.09
-	land_morale = 0.07
-	fort_15th = yes
-	enable = steppes_handgunner_infantry
-	enable = indonesian_tumandar_cavalry
-	enable = indonesian_armored_elephant_cavalry
-	enable = western_pedrero_artillery
-}
-technology = { 
-	year = 1460
-	expects_institution = { 
-		Banking = 0.3
-	}
+
+technology = {
+	# Tech 11 Pelta (XI)
+	year = 265
+	artillery_fire = 0.1
+	artillery_shock = 0.15
 	infantry_fire = 0.15
-	artillery_fire = 0.10
-	enable = muslim_rammaha_lancer_cavalry
-	enable = muslim_qizilbash_cavalry
-	enable = unique_PER_qizilbash_cavalry
-	enable = ottoman_sipahi_cavalry
-	enable = ottoman_janissary_arquebusier_infantry
-	enable = unique_TUR_janissary_arquebusier_infantry
-	enable = ottoman_topchis_infantry
-	enable = steppes_yikitlar_cavalry
-	enable = north_american_rider_cavalry
-	enable = north_american_reformed_tomahawk_infantry
-	enable = mesoamerican_captured_cavalry
-	enable = mesoamerican_ranged_infantry
-	enable = mesoamerican_gunpowder_tactic_infantry
-	enable = southamerican_guerilla_infantry
-	enable = southamerican_captured_cavalry
-	enable = indian_nayaka_infantry
-	enable = indian_jagirdar_infantry
-	enable = unique_MUG_yigit_infantry
-	enable = indian_rajput_camelry
-	enable = indian_tumandar_cavalry
-	enable = indian_armored_elephant_cavalry
-	enable = sudanese_pony_archer_cavalry
-	enable = sudanese_armored_heavy_cavalry
-}
-technology = { 
-	year = 1470
-	expects_institution = { 
-		Banking = 0.3
+	supply_limit = 0.1
+	# combat_width = 1
+	horsebreeder = yes
+	# 问鼎兵种/China New Added
+	enable = dongyi_infantry_34
+	enable = rome_base_cav_2
+	enable = etrurian_base_inf_5
+	enable = greek_base_cav_3
+	enable = spartan_base_inf_2
+	enable = illyrian_base_cav_2
+	enable = dacian_base_cav_3
+	enable = iberian_base_cav_2
+	enable = celtiberian_base_cav_2
+	enable = phoenician_base_cav_3
+	enable = celt_base_art_3
+	enable = brythonic_base_art_3
+	enable = caucasian_base_cav_5
+	enable = anatolian_base_inf_5
+	enable = iranian_base_art_4
+	enable = egypt_uniq_art_4
+	enable = germanic_base_art_3
+	enable = northafrican_base_art_3
+	enable = jingchu_infantry_33
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.20
 	}
-	land_morale = 0.07
-	cavalry_shock = 0.20
-	enable = asian_swivel_artillery
-	enable = sub_saharan_gunze_infantry
-	enable = sub_saharan_pombo_infantry
-	enable = sub_saharan_foreign_infantry
-}
-technology = { 
-	year = 1480
-	expects_institution = { 
-		Banking = 0.3
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_11 duration = -1 }
 	}
-	land_morale = 0.07
-	infantry_shock = 0.15
-	artillery_shock = 0.03
-	combat_width = 2
-	enable = eastern_draby_infantry
-	enable = eastern_pischalniki_infantry
-	enable = eastern_medium_hussar_cavalry
-	enable = unique_HUN_husar_cavalry
-	enable = eastern_cossack_cavalry
-	enable = eastern_pomeste_cavalry
-	enable = muslim_elchee_infantry
-	enable = asian_chong_and_crossbow_infantry
-	enable = unique_AYU_royal_guard_infantry
-	enable = asian_rocketeer_infantry
-	enable = asian_yarigumi_infantry
-	enable = mesoamerican_guerilla_infantry
-	enable = mesoamerican_dragoon_cavalry
-	enable = southamerican_reformed_imperial_infantry
-	enable = southamerican_regular_cavalry
-	enable = north_american_scout_cavalry
-	enable = sudanese_sofa_musketeer_infantry
-	enable = unique_ADA_turkish_musketeer_infantry
-	enable = sudanese_elite_archer_infantry
-	enable = unique_MAN_sumba_infantry
-	enable = sub_saharan_dragoon
 }
-technology = { 
-	year = 1490
-	expects_institution = { 
-		Banking = 0.3
+
+technology = {
+	# Tech 12 Mercenary Warfare (XII)
+	year = 280
+	infantry_shock = 0.1
+	supply_limit = 0.2
+	land_morale = 0.1
+	# 问鼎兵种/China New Added
+	enable = wuyue_infantry_35
+	enable = rongdi_cavalry_36
+	enable = 14_steppe_raiders
+	enable = 5_early_steppe_skirmishers
+	enable = rome_base_art_2
+	enable = italic_base_inf_5
+	enable = italic_base_cav_2
+	enable = italic_base_art_4
+	enable = etrurian_base_cav_2
+	enable = latin_base_inf_2
+	enable = latin_base_cav_2
+	enable = greek_base_art_4
+	enable = spartan_base_art_4
+	enable = macedon_base_cav_4
+	enable = thracian_base_inf_4
+	enable = thracian_base_cav_3
+	enable = illyrian_base_inf_4
+	enable = iberian_base_inf_3
+	enable = celtiberian_base_inf_3
+	enable = punic_base_art_4
+	enable = phoenician_base_inf_3
+	enable = phoenician_base_art_4
+	enable = caucasian_base_art_4
+	enable = anatolian_base_art_4
+	enable = asian_base_art_5
+	enable = egypt_uniq_inf_4
+	enable = germanic_base_inf_4
+	enable = northafrican_base_cav_4
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.25
 	}
-	cavalry_shock = 0.20
-	military_tactics = 0.25
-	supply_limit = 0.25
-	enable = mongol_firearms
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_12 duration = -1 }
+	}
 }
-technology = { 
-	year = 1500
-	expects_institution = { 
-		Banking = 0.3
+
+technology = {
+	# Tech 13 Military Settlements (XIII)
+	year = 295
+	land_morale = 0.1
+	small_military_settlement = yes
+	large_city_walls = yes
+	supply_limit = 0.1
+	# 问鼎兵种/China New Added
+	enable = rongdi_infantry_37
+	enable = qiguo_infantry_37
+	enable = etrurian_base_art_4
+	enable = macedon_base_inf_3
+	enable = illyrian_base_inf_5
+	enable = illyrian_base_art_3
+	enable = dacian_base_inf_3
+	enable = dacian_base_art_4
+	enable = iberian_base_art_3
+	enable = celtiberian_base_art_3
+	enable = punic_base_inf_3
+	enable = punic_base_cav_5
+	enable = celt_base_inf_5
+	enable = celt_base_inf_6
+	enable = brythonic_base_inf_3
+	enable = anatolian_base_inf_6
+	enable = iranian_base_inf_4
+	enable = iranian_base_inf_5
+	enable = asian_base_inf_5
+	enable = egypt_uniq_inf_5
+	enable = germanic_base_inf_5
+	enable = northafrican_base_inf_3
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.10
 	}
-	infantry_fire = 0.10
-	cavalry_fire = 0.05
-	land_morale = 0.08
-	combat_width = 2
-	enable = western_pikeandshot_infantry
-	enable = unique_GER_landsknecht_infantry
-	enable = western_wheellock_infantry
-	enable = western_charge_infantry
-	enable = unique_SCO_galloglaigh_infantry
-	enable = ottoman_kapikulu_cavalry
-	enable = ottoman_tabur_infantry
-	enable = asian_armored_elephant_cavalry
-	enable = asian_northern_guard_cavalry
-	enable = asian_late_samurai_cavalry
-	enable = steppes_firelock_cavalry
-	enable = north_american_tradegun_infantry
-	enable = north_american_dog_soldier_infantry
-	enable = north_american_circle_cavalry
-	enable = indian_fauj_infantry
-	enable = unique_BEN_shah_infantry
-	enable = indian_dakhili_infantry
-	enable = indian_kshatriya_cavalry
-	enable = indian_tabinan_cavalry
-	enable = indonesian_lantaka_infantry
-	enable = indonesian_arquebusier_infantry
-	enable = indonesian_kshatriya_cavalry
-	enable = indonesian_tabinan_cavalry
-	enable = western_culverin_artillery
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_13 duration = -1 }
+	}
 }
-technology = { 
-	year = 1510
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.025
+
+technology = {
+	# Tech 14 Indian Bamboo Longbow (XIV)
+	year = 310
+	military_tactics = 0.05
+	artillery_fire = 0.2
+	infantry_fire = 0.05
+	# 问鼎兵种/China New Added
+	enable = zhongyuan_infantry_38
+	enable = jingchu_infantry_39
+	enable = dongyi_cavalry_38
+	enable = hanguo_infantry_39
+	enable = zhaoguo_infantry_39
+	enable = weiguo_infantry_39
+	enable = 5_early_steppe_warriors
+	enable = 10_early_steppe_archers
+	enable = italic_base_inf_6
+	enable = etrurian_base_inf_6
+	enable = samnitic_base_inf_3
+	enable = greek_base_cav_4
+	enable = spartan_base_inf_3
+	enable = macedon_base_cav_5
+	enable = thracian_base_art_4
+	enable = dacian_base_inf_4
+	enable = dacian_base_art_5
+	enable = iberian_base_inf_4
+	enable = celtiberian_base_inf_4
+	enable = punic_base_inf_4
+	enable = phoenician_base_art_5
+	enable = celt_base_art_4
+	enable = brythonic_base_art_4
+	enable = caucasian_base_art_5
+	enable = anatolian_base_cav_5
+	enable = thracian_base_inf_5
+	enable = iranian_base_art_5
+	enable = egypt_uniq_cav_4
+	enable = egypt_uniq_art_5
+	enable = germanic_base_art_4
+	enable = northafrican_base_art_4
+	enable = northafrican_base_cav_5
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.20
 	}
-	cavalry_shock = 0.30
-	land_morale = 0.08
-	enable = unique_SPA_tercio_infantry
-	enable = muslim_arquebusier
-	enable = muslim_qoorchilar_cavalry
-	enable = asian_chong_infantry
-	enable = unique_AYU_siamese_musketeer_infantry
-	enable = asian_mandarin_infantry
-	enable = unique_KOR_soko_reserve_infantry
-	enable = asian_fire_cart_infantry
-	enable = asian_arquebusier_infantry
-	enable = steppes_banner_infantry
-	enable = mongol_reformed_cavalry
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_14 duration = -1 }
+	}
 }
-technology = { 
-	year = 1520
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.05
-	}
-	infantry_fire = 0.10
-	artillery_fire = 0.30
-	enable = western_freeshooter_infantry
-	enable = western_earlytercio_infantry
-	enable = mesoamerican_western_infantry
-	enable = mesoamerican_western_cavalry
-	enable = southamerican_westernized_infantry
-}
-technology = { 
-	year = 1530
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.075
-	}
+
+technology = {
+	# Tech 15 Falx and Rhomphaia (XV)
 	sprite_level = 2
-	combat_width = 1
+	year = 325
+	land_morale = 0.15
+	supply_limit = 0.05
+	# combat_width = 1
 	infantry_shock = 0.15
-	artillery_shock = 0.04
-	land_morale = 0.09
-	enable = north_american_rifle_infantry
-	enable = north_american_ghost_dancer_infantry
-	enable = north_american_mounted_infantry
-	enable = north_american_wave_cavalry
-	enable = southamerican_freeshooter_infantry
-	enable = asian_general_artillery
-	enable = indian_banduqchi_infantry
-	enable = indian_mansabdar_cavalry
-	enable = indian_zamindar_cavalry
-	enable = indian_silhedar_cavalry
-	enable = indonesian_mansabdar_cavalry
-	enable = indonesian_silhedar_cavalry
-	enable = sub_saharan_native_infantry
-	enable = sub_saharan_raider_infantry
-	enable = western_saker_artillery
-}
-technology = { 
-	year = 1540
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.10
+	# 问鼎兵种/China New Added
+	enable = zhongyuan_cavalry_40
+	enable = wuyue_infantry_41
+	enable = wuyue_cavalry_40
+	enable = manyue_infantry_40
+	enable = qinguo_infantry_41
+	enable = 5_scythian_cavalry
+	enable = rome_base_cav_3
+	enable = italic_base_art_5
+	enable = etrurian_base_inf_7
+	enable = samnitic_base_cav_2
+	enable = samnitic_base_art_3
+	enable = greek_base_inf_3
+	enable = greek_base_art_5
+	enable = spartan_base_cav_1
+	enable = spartan_base_art_5
+	enable = thracian_base_inf_6
+	enable = thracian_base_cav_4
+	enable = thracian_base_art_5
+	enable = dacian_base_cav_4
+	enable = iberian_base_cav_3
+	enable = celtiberian_base_cav_3
+	enable = punic_base_art_5
+	enable = phoenician_base_inf_4
+	enable = celt_base_cav_3
+	enable = brythonic_base_cav_2
+	enable = caucasian_base_cav_6
+	enable = caucasian_base_inf_4
+	enable = anatolian_base_art_5
+	enable = iranian_base_cav_4
+	enable = egypt_uniq_inf_6
+	enable = germanic_base_inf_6
+	enable = northafrican_base_inf_4
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.25
 	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_15 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 16 Chinese Crossbow (XVI)
+	year = 340
+	artillery_fire = 0.1
+	supply_limit = 0.05
+	# 问鼎兵种/China New Added
+	enable = qiguo_infantry_42
+	enable = yanguo_infantry_42
+	enable = 10_steppe_light_spearmen
+	enable = 15_late_steppe_skirmishers
+	enable = italic_base_inf_7
+	enable = italic_base_inf_8
+	enable = italic_base_cav_3
+	enable = etrurian_base_art_5
+	enable = latin_base_inf_3
+	enable = samnitic_base_inf_4
+	enable = greek_base_art_6
+	enable = macedon_base_art_0
+	enable = thracian_base_inf_7
+	enable = illyrian_base_inf_6
+	enable = illyrian_base_cav_3
+	enable = iberian_base_art_4
+	enable = celtiberian_base_art_4
+	enable = punic_base_cav_6
+	enable = phoenician_base_cav_4
+	enable = anatolian_base_inf_7
+	enable = anatolian_base_art_6
+	enable = iranian_base_art_6
+	enable = asian_base_cav_4
+	enable = asian_base_art_6
+	enable = egypt_uniq_art_6
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.10
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_16 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 17 Un-even Forces Distribution (XVII)
+	year = 355
+	# enable = art_2_6
+	combat_width = 3
+	maneuver_value = 0.25
+	military_tactics = 0.1
+	cavalry_shock = 0.1
+	infantry_shock = 0.1
+	# 问鼎兵种/China New Added
+	enable = bashu_infantry_43
+	enable = rongdi_cavalry_43
+	enable = jingchu_cavalry_43
+	enable = dongyi_infantry_43
+	enable = yanguo_cavalry_43
+	enable = rome_base_art_3
+	enable = etrurian_base_inf_8
+	enable = etrurian_base_inf_9
+	enable = etrurian_base_cav_3
+	enable = samnitic_base_cav_3
+	enable = spartan_base_inf_4
+	enable = illyrian_base_inf_7
+	enable = dacian_base_cav_5
+	enable = iberian_base_inf_5
+	enable = celtiberian_base_inf_5
+	enable = punic_base_inf_5
+	enable = phoenician_base_art_6
+	enable = celt_base_art_5
+	enable = brythonic_base_art_5
+	enable = caucasian_base_inf_5
+	enable = anatolian_base_cav_6
+	enable = macedon_base_cav_7
+	enable = egypt_uniq_cav_5
+	enable = germanic_base_inf_7
+	enable = germanic_base_cav_3
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.20
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_17 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 18 Manipular Tactics (XVIII)
+	year = 370
+	big_military_settlement = yes
 	infantry_fire = 0.15
-	supply_limit = 0.25
-	enable = eastern_streltsy_infantry
-	enable = unique_RUS_oprichnik_infantry
-	enable = eastern_marauder_infantry
-	enable = unique_PLC_piechota_infantry
-	enable = eastern_drabant_infantry
-	enable = asian_hundred_son_infantry
-	enable = asian_wagon_infantry
-	enable = asian_samsubyong_infantry
-	enable = asian_banner_infantry
-	enable = asian_musketeer_infantry
-	enable = steppes_raid_cavalry
-	enable = sudanese_angola_gun_infantry
-	enable = sudanese_eso_heavy_cavalry
-	enable = indonesian_matchlockmen_infantry
-}
-technology = { 
-	year = 1550
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.125
-		Columbian_Exchange = 0.05
-	}
-	cavalry_fire = 0.10
-	maneuver_value = 0.10
-	military_tactics = 0.25
+	infantry_shock = 0.05
+	artillery_shock = 0.05
+	military_tactics = 0.1
 	combat_width = 1
-	enable = western_caracole_cavalry
-	enable = western_cuirassier_cavalry
-	enable = western_escopeteros_cavalry
-	enable = muslim_reformed_qizilbash_cavalry
-	enable = muslim_tofangchi_musketeer_infantry
-	enable = asian_war_elephant_artillery_cavalry
-	enable = asian_horse_guard_cavalry
-	enable = unique_BRM_cassay_horse_cavalry
-	enable = asian_dragoon_cavalry
-	enable = asian_forbidden_soldier_cavalry
-	enable = asian_culverin_artillery
-	enable = steppes_green_standard_infantry
-	enable = southamerican_cuirassier_cavalry
-}
-technology = { 
-	year = 1560
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.15
-		Columbian_Exchange = 0.1
+	enable = 5_saracen_guerrilla
+	enable = 5_saracen_tribal
+	enable = 5_saracen_cavalry
+	enable = 5_adv_steppe_warriors
+	enable = 5_armed_brahmins
+	enable = 5_axumite_skirmishers
+	enable = 5_early_indian_spearmen
+	enable = 5_early_nubian_warriors
+	enable = 5_early_tocharian_archers
+	enable = 5_indian_skirmishers
+	enable = 5_light_indian_cavalry
+	enable = 5_nubian_cavalry
+	enable = 5_nubian_spearmen
+	enable = 5_steppe_horsearchers
+	enable = 5_tocharian_cavalry
+	enable = 5_early_bamboo_archers
+	enable = 5_highland_hunters
+	enable = 5_highland_spearmen
+	enable = 5_funanese_raiders
+	# 问鼎兵种/China New Added
+	enable = zhongyuan_infantry_46
+	enable = qiguo_infantry_46
+	enable = qinguo_cavalry_45
+	enable = hanguo_infantry_46
+	enable = zhaoguo_infantry_46
+	enable = zhaoguo_cavalry_45
+	enable = weiguo_infantry_45
+	enable = weiguo_cavalry_46
+	# Tibetan
+	enable = tibetan_light_cavalry
+	enable = tibetan_archers
+	enable = tibetan_spearmen
+	# Korea(original Chinese unit group)
+	enable = 5_adv_chinese_spearmen
+	enable = 5_chinese_pikemen
+	enable = 5_chinese_scouts
+	enable = 5_early_chinese_cavalry
+	enable = 5_early_chinese_archers
+	enable = rome_base_inf_3
+	enable = rome_base_art_19
+	enable = latin_base_cav_3
+	enable = greek_base_inf_4
+	enable = greek_base_art_7
+	enable = spartan_base_art_6
+	enable = campanian_base_cav_1
+	enable = thracian_base_inf_8
+	enable = dacian_base_inf_5
+	enable = dacian_base_art_6
+	enable = punic_base_art_6
+	enable = phoenician_base_inf_5
+	enable = celt_base_inf_7
+	enable = brythonic_base_inf_4
+	enable = caucasian_base_art_6
+	enable = anatolian_base_art_7
+	enable = iranian_base_inf_6
+	enable = iranian_base_inf_7
+	enable = asian_base_inf_6
+	enable = egypt_uniq_inf_7
+	enable = germanic_base_inf_8
+	enable = northafrican_base_art_5
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.25
 	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_18 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 19 Sarissa Phalanx (XIX)
+	year = 385
+	land_morale = 0.1
+	# combat_width = 1
+	infantry_shock = 0.15
+	military_tactics = 0.1
+	# 问鼎兵种/China New Added
+	enable = zhongyuan_cavalry_48
+	enable = wuyue_cavalry_48
+	enable = bashu_cavalry_48
+	enable = rongdi_infantry_47
+	enable = manyue_infantry_48
+	enable = jingchu_infantry_47
+	enable = dongyi_cavalry_48
+	enable = qiguo_cavalry_47
+	enable = qinguo_infantry_48
+	enable = hanguo_cavalry_48
+	enable = yanguo_infantry_48
+	enable = 10_steppe_axemen
+	enable = 15_steppe_foot_archers
+	enable = rome_base_cav_4
+	enable = italic_base_inf_9
+	enable = etrurian_base_art_6
+	enable = samnitic_base_art_4
+	enable = greek_base_cav_5
+	enable = greek_base_art_8
+	enable = spartan_base_inf_5
+	enable = spartan_base_art_7
+	enable = macedon_base_inf_4
+	enable = macedon_base_cav_6
+	enable = thracian_base_cav_5
+	enable = illyrian_base_inf_8
+	enable = illyrian_base_art_4
+	enable = dacian_base_inf_6
+	enable = iberian_base_inf_6
+	enable = iberian_base_cav_4
+	enable = celtiberian_base_inf_6
+	enable = celtiberian_base_cav_4
+	enable = punic_base_cav_7
+	enable = phoenician_base_art_7
+	enable = celt_base_cav_4
+	enable = caucasian_base_cav_7
+	enable = anatolian_base_inf_8
+	enable = anatolian_base_art_8
+	enable = asian_base_art_7
+	enable = egypt_uniq_inf_8
+	enable = egypt_uniq_art_7
+	enable = germanic_base_art_5
+	enable = northafrican_base_inf_5
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_19 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 20 Slash Attack (XX)
+	year = 400
+	supply_limit = 0.2
+	combat_width = 1
+	maneuver_value = 0.25
+	military_tactics = 0.1
+	cavalry_shock = 0.1
+	infantry_shock = 0.1
+	# 问鼎兵种/China New Added
+	enable = wuyue_infantry_50
+	enable = rongdi_cavalry_49
+	enable = manyue_infantry_49
+	enable = qiguo_infantry_50
+	enable = hanguo_infantry_50
+	enable = weiguo_infantry_49
+	enable = yanguo_cavalry_49
+	enable = 20_steppe_lancers
+	enable = italic_base_cav_4
+	enable = italic_base_art_6
+	enable = greek_base_inf_5
+	enable = spartan_base_cav_2
+	enable = macedon_base_inf_5
+	enable = macedon_base_art_1
+	enable = thracian_base_inf_9
+	enable = thracian_base_art_6
+	enable = illyrian_base_inf_9
+	enable = dacian_base_art_7
+	enable = iberian_base_inf_7
+	enable = iberian_base_art_5
+	enable = celtiberian_base_inf_7
+	enable = celtiberian_base_art_5
+	enable = punic_base_art_7
+	enable = punic_base_inf_6
+	enable = phoenician_base_inf_6
+	enable = iranian_base_cav_5
+	enable = asian_base_cav_5
+	enable = egypt_uniq_cav_6
+	enable = germanic_base_inf_9
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.10
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_20 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 21 Shock Cavalry (XXI)
+	year = 415
+	military_academy = yes
+	cavalry_shock = 0.5
+	# combat_width = 1
+	# 问鼎兵种/China New Added
+	enable = zhongyuan_infantry_52
+	enable = jingchu_cavalry_52
+	enable = qiguo_cavalry_51
+	enable = qinguo_cavalry_51
+	enable = zhaoguo_infantry_51
+	enable = zhaoguo_cavalry_51
+	enable = rome_base_art_4
+	enable = etrurian_base_inf_10
+	enable = etrurian_base_cav_4
+	enable = samnitic_base_inf_5
+	enable = greek_base_art_9
+	enable = macedon_base_inf_6
+	enable = macedon_base_inf_7
+	enable = macedon_base_cav_8
+	enable = macedon_base_cav_9
+	enable = thracian_base_inf_10
+	enable = thracian_base_cav_6
+	enable = illyrian_base_cav_4
+	enable = dacian_base_cav_6
+	enable = punic_base_cav_8
+	enable = phoenician_base_cav_5
+	enable = caucasian_base_cav_8
+	enable = caucasian_base_inf_6
+	enable = caucasian_base_art_7
+	enable = anatolian_base_cav_7
+	enable = iranian_base_art_7
+	enable = asian_base_inf_7
+	enable = asian_base_inf_8
+	enable = diadochi_mac_inf_1
+	enable = diadochi_mac_cav_1
+	enable = germanic_base_cav_4
+	enable = northafrican_base_cav_6
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.20
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_21 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 22 Celtic Chainmail and Thureos (XXII)
+	year = 430
+	supply_limit = 0.1
+	fortress_building = yes
+	infantry_fire = 0.15
+	artillery_fire = 0.15
+	artillery_shock = 0.15
+	land_morale = 0.1
+	# combat_width = 1
+	# 问鼎兵种/China New Added
+	enable = bashu_infantry_53
+	enable = jingchu_infantry_53
+	enable = dongyi_infantry_54
+	enable = qiguo_infantry_54
+	enable = qiguo_chariot_54
+	enable = qinguo_infantry_53
+	enable = hanguo_infantry_54
+	enable = weiguo_infantry_53
+	enable = weiguo_cavalry_53
+	enable = rome_base_inf_4
+	enable = italic_base_inf_10
+	enable = greek_base_cav_6
+	enable = spartan_base_art_8
+	enable = illyrian_base_inf_10
+	enable = illyrian_base_art_5
+	enable = iberian_base_cav_5
+	enable = celtiberian_base_cav_5
+	enable = punic_base_art_8
+	enable = phoenician_base_art_8
+	enable = punic_base_inf_7
+	enable = celt_base_inf_8
+	enable = celt_base_art_6
+	enable = brythonic_base_art_6
+	enable = brythonic_base_inf_5
+	enable = anatolian_base_inf_9
+	enable = anatolian_base_art_9
+	enable = iranian_base_inf_8
+	enable = iranian_base_inf_9
+	enable = asian_base_art_8
+	enable = egypt_uniq_inf_9
+	enable = egypt_uniq_art_8
+	enable = spartan_base_inf_6
+	enable = germanic_base_inf_10
+	enable = germanic_base_art_6
+	enable = northafrican_base_art_6
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.25
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_22 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 23 Armored Cavalry (XXIII)
+	year = 445
+	supply_limit = 0.1
+	# combat_width = 1
+	cavalry_shock = 0.25
+	cavalry_fire = 0.15
+	maneuver_value = 0.25
+	military_tactics = 0.1
+	# 问鼎兵种/China New Added
+	enable = zhongyuan_cavalry_55
+	enable = rongdi_infantry_55
+	enable = manyue_infantry_56
+	enable = dongyi_cavalry_55
+	enable = qinguo_cavalry_57
+	enable = qiguo_cavalry_55
+	enable = zhaoguo_infantry_55
+	enable = zhaoguo_cavalry_56
+	enable = yanguo_infantry_56
+	enable = yanguo_cavalry_55
+	enable = 15_settled_tribes_warriors
+	enable = 20_stepe_raid_skirmishers
+	enable = samnitic_base_cav_4
+	enable = greek_base_inf_6
+	enable = greek_base_art_10
+	enable = macedon_base_inf_8
+	enable = macedon_base_inf_9
+	enable = macedon_base_cav_10
+	enable = thracian_base_cav_7
+	enable = iberian_base_art_6
+	enable = celtiberian_base_art_6
+	enable = punic_base_cav_9
+	enable = phoenician_base_inf_7
+	enable = celt_base_cav_5
+	enable = brythonic_base_cav_3
+	enable = anatolian_base_cav_8
+	enable = iranian_base_cav_6
+	enable = asian_base_cav_7
+	enable = asian_base_cav_6
+	enable = egypt_uniq_cav_7
+	enable = germanic_base_cav_5
+	enable = northafrican_base_cav_7
+	enable = rongdi_cavalry_56
+	enable = wuyue_cavalry_55
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_23 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 24 Scutum (XXIV)
+	year = 460
+	# enable = art_3_9
+	land_morale = 0.1
+	# combat_width = 1
+	infantry_shock = 0.1
+	infantry_fire = 0.1
+	# 问鼎兵种/China New Added
+	enable = manyue_infantry_57
+	enable = hanguo_cavalry_57
+	enable = rome_base_cav_5
+	enable = italic_base_inf_11
+	enable = samnitic_base_inf_6
+	enable = greek_base_inf_7
+	enable = spartan_base_art_9
+	enable = dacian_base_inf_7
+	enable = phoenician_base_cav_6
+	enable = caucasian_base_inf_7
+	enable = caucasian_base_inf_8
+	enable = caucasian_base_art_8
+	enable = anatolian_base_inf_10
+	enable = iranian_base_inf_10
+	enable = asian_base_art_9
+	enable = germanic_base_inf_11
+	enable = northafrican_base_inf_6
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.10
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_24 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 25 Polybolos (XXV)
+	sprite_level = 3
+	year = 474
+	# combat_width = 1
+	military_tactics = 0.05
+	artillery_shock = 0.05
+	artillery_fire = 0.2
+	enable = 10_gerrhan_archers
+	enable = 10_adv_archers
+	enable = 10_adv_indian_cavalry
+	enable = 10_adv_nubian_warriors
+	enable = 10_adv_skirmishers
+	enable = 10_adv_tocharian_archers
+	enable = 10_camel_archers
+	enable = 10_early_axumite_archers
+	enable = 10_heavy_tocharian_cavalry
+	enable = 10_indian_kshatriyas
+	enable = 10_late_arab_desert_warriors
+	enable = 10_late_desert_cavalry
+	enable = 10_late_steppe_warriors
+	enable = 10_mounted_huntsmen
+	enable = 10_steppe_cavalry
+	enable = 10_trained_levys
+	enable = 10_funanese_archers
+	enable = 10_funanese_nobles
+	enable = 10_funanese_noble_cavalry
+	# 问鼎兵种/China New Added
+	enable = wuyue_infantry_58
+	enable = manyue_cavalry_58
+	enable = jingchu_infantry_59
+	enable = qiguo_infantry_59
+	enable = qiguo_cavalry_59
+	enable = qinguo_infantry_58
+	enable = hanguo_infantry_58
+	enable = zhaoguo_infantry_59
+	enable = weiguo_infantry_58
+	# Tibetan
+	enable = tibetan_heavy_chariot
+	enable = tibetan_bamboo_archer
+	enable = tibetan_swordmen
+	# Korea(original Chinese unit group)
+	enable = 10_adv_chinese_cavalry
+	enable = 10_heavy_infantry
+	enable = 10_adv_crossbowmen
+	enable = italic_base_cav_5
+	enable = italic_base_art_7
+	enable = etrurian_base_inf_11
+	enable = samnitic_base_art_5
+	enable = greek_base_cav_7
+	enable = greek_base_art_11
+	enable = macedon_base_cav_11
+	enable = campanian_base_cav_2
+	enable = thracian_base_inf_11
+	enable = thracian_base_art_7
+	enable = illyrian_base_inf_11
+	enable = dacian_base_inf_8
+	enable = dacian_base_art_8
+	enable = iberian_base_inf_8
+	enable = iberian_base_cav_6
+	enable = celtiberian_base_inf_8
+	enable = celtiberian_base_cav_6
+	enable = punic_base_inf_8
+	enable = punic_base_art_9
+	enable = phoenician_base_art_9
+	enable = carthage_uniq_inf_1
+	enable = carthage_uniq_cav_0
+	enable = celt_base_inf_9
+	enable = celt_base_art_7
+	enable = brythonic_base_art_7
+	enable = brythonic_base_inf_6
+	enable = caucasian_base_cav_9
+	enable = anatolian_base_art_10
+	enable = iranian_base_art_8
+	enable = asian_base_art_10
+	enable = egypt_uniq_art_9
+	enable = northafrican_base_art_7
+	enable = northafrican_base_inf_7
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.20
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_25 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 26 War Elephants Training (XXVI)
+	year = 490
+	cavalry_shock = 0.1
+	military_tactics = 0.1
+	# 问鼎兵种/China New Added
+	enable = weiguo_cavalry_60
+	enable = yanguo_cavalry_60
+	enable = rome_base_art_5
+	enable = greek_base_inf_8
+	enable = spartan_base_art_10
+	enable = macedon_base_art_2
+	enable = thracian_base_cav_8
+	enable = illyrian_base_inf_12
+	enable = illyrian_base_art_6
+	enable = dacian_base_cav_7
+	enable = punic_base_cav_10
+	enable = phoenician_base_inf_8
+	enable = anatolian_base_inf_11
+	enable = anatolian_base_cav_9
+	enable = iranian_base_cav_7
+	enable = asian_base_inf_9
+	enable = egypt_uniq_inf_10
+	enable = egypt_uniq_inf_11
+	enable = germanic_base_inf_12
+	enable = germanic_base_art_7
+	enable = northafrican_base_cav_8
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.25
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_26 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 27 Cataphracts (XXVII)
+	year = 520
+	cavalry_fire = 0.25
+	cavalry_shock = 0.5
+	# 问鼎兵种/China New Added
+	enable = zhongyuan_infantry_61
+	enable = zhongyuan_cavalry_62
+	enable = wuyue_cavalry_62
+	enable = bashu_infantry_63
+	enable = bashu_cavalry_62
+	enable = rongdi_infantry_62
+	enable = jingchu_cavalry_61
+	enable = dongyi_cavalry_62
+	enable = qiguo_cavalry_63
+	enable = qinguo_infantry_63
+	enable = hanguo_infantry_62
+	enable = zhaoguo_infantry_63
+	enable = zhaoguo_cavalry_62
+	enable = weiguo_infantry_63
+	enable = yanguo_infantry_61
+	enable = greek_base_inf_9
+	enable = macedon_base_inf_10
+	enable = illyrian_base_cav_5
+	enable = iberian_base_art_7
+	enable = celtiberian_base_art_7
+	enable = phoenician_base_cav_7
+	enable = punic_base_inf_9
+	enable = celt_base_cav_6
+	enable = brythonic_base_cav_4
+	enable = caucasian_base_cav_10
+	enable = caucasian_base_art_9
+	enable = anatolian_base_cav_10
+	enable = iranian_base_cav_8
+	enable = asian_base_cav_8
+	enable = asian_base_cav_9
+	enable = egypt_uniq_cav_8
+	enable = germanic_base_cav_6
+	enable = northafrican_base_cav_9
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.10
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_27 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 28 Cohort System and Gladius (XXVIII)
+	year = 535
+	infantry_shock = 0.05
+	infantry_fire = 0.1
+	military_tactics = 0.1
+	artillery_fire = 0.1
+	artillery_shock = 0.1
+	combat_width = 2
+	# 问鼎兵种/China New Added
+	enable = wuyue_infantry_65
+	enable = rongdi_cavalry_64
+	enable = manyue_infantry_64
+	enable = manyue_infantry_65
+	enable = jingchu_infantry_64
+	enable = dongyi_infantry_64
+	enable = qiguo_infantry_64
+	enable = qinguo_cavalry_64
+	enable = 15_steppe_armored_spearmen
+	enable = 20_steppe_foot_bowmen
+	enable = rome_base_inf_5
+	enable = rome_base_cav_6
+	enable = etrurian_base_art_7
+	enable = greek_base_cav_8
+	enable = spartan_base_inf_7
+	enable = spartan_base_inf_8
+	enable = spartan_base_cav_3
+	enable = spartan_base_art_11
+	enable = spartan_base_art_12
+	enable = thracian_base_art_8
+	enable = illyrian_base_art_7
+	enable = dacian_base_inf_9
+	enable = dacian_base_art_9
+	enable = iberian_base_art_8
+	enable = celtiberian_base_art_8
+	enable = punic_base_art_10
+	enable = phoenician_base_inf_9
+	enable = celt_base_art_8
+	enable = brythonic_base_art_8
+	enable = caucasian_base_cav_11
+	enable = anatolian_base_inf_12
+	enable = iranian_base_inf_11
+	enable = asian_base_inf_10
+	enable = egypt_uniq_art_10
+	enable = germanic_base_inf_13
+	enable = northafrican_base_art_8
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.25
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_28 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 29 Widespread Iron Armor (XXIX)
+	year = 550
+	land_morale = 0.1
+	infantry_shock = 0.05
+	# 问鼎兵种/China New Added
+	enable = zhongyuan_cavalry_67
+	enable = wuyue_cavalry_67
+	enable = bashu_cavalry_67
+	enable = dongyi_cavalry_67
+	enable = rome_base_art_6
+	enable = italic_base_inf_12
+	enable = etrurian_base_cav_5
+	enable = greek_base_inf_10
+	enable = macedon_base_cav_12
+	enable = dacian_base_cav_8
+	enable = iberian_base_cav_7
+	enable = celtiberian_base_cav_7
+	enable = punic_base_cav_11
+	enable = phoenician_base_art_10
+	enable = celt_base_inf_10
+	enable = brythonic_base_inf_7
+	enable = caucasian_base_inf_9
+	enable = anatolian_base_cav_11
+	enable = anatolian_base_art_11
+	enable = iranian_base_art_9
+	enable = asian_base_art_11
+	enable = germanic_base_inf_14
+	enable = northafrican_base_inf_8
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.10
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_29 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 30 Expanded Recruiting (XXX)
+	year = 565
+	military_monument = yes
+	supply_limit = 0.15
+	# combat_width = 1
+	enable = 15_meroe_skirmishers
+	enable = 15_gerrhan_infantry
+	enable = 15_adv_beduin_slingers
+	enable = 15_adv_nubian_cavalry
+	enable = 15_adv_nubian_spearmen
+	enable = 15_adv_steppe_cavalry
+	enable = 15_adv_tocharian_cavalry
+	enable = 15_adv_tocharian_warriors
+	enable = 15_armored_skirmishers
+	enable = 15_beduin_horsearchers
+	enable = 15_heavy_mounted_huntsmen
+	enable = 15_indian_elephants
+	enable = 15_late_indian_spearmen
+	enable = 15_late_tocharian_archers
+	enable = 15_tocharian_spearmen
+	enable = 15_pyu_infantry
+	enable = 15_viet_infantry
+	enable = 15_pyu_archers
+	enable = 15_pyu_cavalry
+	# 问鼎兵种/China New Added
+	enable = zhongyuan_infantry_68
+	enable = yanguo_bubing_1
+	enable = weiguo_qibing_1
+	enable = weiguo_bubing_1
+	enable = jingchu_qibing_1
+	enable = jingchu_bubing_1
+	enable = hanguo_bubing_1
+	enable = qinguo_qibing_1
+	enable = qinguo_bubing_1
+	# Tibetan
+	enable = tibetan_archer_cavalry
+	enable = tibetan_noble_archer
+	enable = tibetan_armored_swordmen
+	# Korea(original Chinese unit group)
+	enable = 15_adv_chinese_horsearchers
+	enable = 15_late_chinese_chariots
+	enable = 15_late_chinese_spearmen
+	enable = 15_adv_chinese_archers
+	enable = italic_base_cav_6
+	enable = italic_base_art_8
+	enable = etrurian_base_inf_12
+	enable = samnitic_base_inf_7
+	enable = samnitic_base_cav_5
+	enable = samnitic_base_art_6
+	enable = greek_base_inf_11
+	enable = greek_base_cav_9
+	enable = greek_base_art_12
+	enable = spartan_base_cav_4
+	enable = macedon_base_inf_11
+	enable = thracian_base_inf_12
+	enable = illyrian_base_inf_13
+	enable = dacian_base_inf_10
+	enable = iberian_base_inf_9
+	enable = celtiberian_base_inf_9
+	enable = phoenician_base_cav_8
+	enable = celt_base_cav_7
+	enable = brythonic_base_cav_5
+	enable = anatolian_base_cav_12
+	enable = iranian_base_cav_9
+	enable = iranian_base_cav_10
+	enable = asian_base_inf_11
+	enable = asian_base_inf_12
+	enable = egypt_uniq_inf_12
+	enable = germanic_base_art_8
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.20
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_30 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 31 Guerilla Warfare (XXXI)
+	year = 580
+	enable = rome_base_art_7
+	enable = rome_base_cav_7
+	# combat_width = 1
+	cavalry_fire = 0.1
+	military_tactics = 0.05
+	artillery_fire = 0.15
+	artillery_shock = 0.15
+	enable = spartan_base_inf_9
+	enable = spartan_base_inf_10
+	enable = thracian_base_inf_13
+	enable = thracian_base_cav_9
+	enable = illyrian_base_inf_14
+	enable = dacian_base_inf_11
+	enable = iberian_base_inf_10
+	enable = celtiberian_base_inf_10
+	enable = punic_base_art_11
+	enable = punic_base_inf_10
+	enable = phoenician_base_inf_10
+	enable = phoenician_base_art_11
+	enable = celt_base_art_9
+	enable = brythonic_base_art_9
+	enable = caucasian_base_art_10
+	enable = anatolian_base_inf_13
+	enable = iranian_base_cav_15
+	enable = asian_base_cav_10
+	enable = egypt_uniq_inf_13
+	enable = germanic_base_cav_7
+	enable = northafrican_base_art_9
+	enable = northafrican_base_inf_9
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.25
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_31 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 32 Undermining (XXXII)
+	year = 595
+	enable = rome_base_art_8
+	# combat_width = 1
+	infantry_fire = 0.1
+	enable = 20_steppe_armored_swordsmen
+	enable = macedon_base_cav_13
+	enable = thracian_base_art_9
+	enable = dacian_base_art_10
+	enable = iberian_base_art_9
+	enable = celtiberian_base_art_9
+	enable = phoenician_base_cav_9
+	enable = caucasian_base_cav_12
+	enable = anatolian_base_art_12
+	enable = iranian_base_art_10
+	enable = asian_base_art_12
+	enable = germanic_base_art_9
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.10
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_32 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 33 Auxiliaries  (XXXIII)
+	year = 610
+	combat_width = 1
+	artillery_fire = 0.05
+	artillery_shock = 0.05
+	cavalry_fire = 0.15
+	cavalry_shock = 0.1
+	infantry_fire = 0.05
+	supply_limit = 0.1
+	enable = 25_steppe_heavy_skirmishers
+	enable = greek_base_inf_12
+	enable = greek_base_art_13
+	enable = spartan_base_inf_12
+	enable = illyrian_base_inf_15
+	enable = iberian_base_cav_8
+	enable = celtiberian_base_cav_8
+	enable = punic_base_cav_12
+	enable = celt_base_cav_8
+	enable = celt_base_cav_9
+	enable = celt_base_art_10
+	enable = brythonic_base_cav_6
+	enable = brythonic_base_cav_7
+	enable = brythonic_base_art_10
+	enable = anatolian_base_cav_13
+	enable = iranian_base_inf_12
+	enable = iranian_base_inf_13
+	enable = asian_base_inf_13
+	enable = asian_base_cav_11
+	enable = egypt_uniq_cav_9
+	enable = egypt_uniq_art_11
+	enable = germanic_base_inf_15
+	enable = northafrican_base_art_10
+	enable = northafrican_base_cav_10
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.20
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_33 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 34 Military Standarts and Insignias (XXXIV)
+	year = 625
+	land_morale = 0.15
+	supply_limit = 0.1
+	enable = etrurian_base_cav_6
+	enable = greek_base_cav_10
+	enable = spartan_base_cav_5
+	enable = macedon_base_art_3
+	enable = dacian_base_cav_9
+	enable = punic_base_art_12
+	enable = phoenician_base_inf_11
+	enable = punic_base_inf_11
+	enable = caucasian_base_inf_10
+	enable = caucasian_base_art_11
+	enable = anatolian_base_inf_14
+	enable = iranian_base_art_11
+	enable = egypt_uniq_inf_14
+	enable = germanic_base_inf_16
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.25
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_34 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 35 Rapid Force Marches (XXXV)
+	year = 640
+	supply_limit = 0.15
+	enable = 20_meroe_cavalry
+	enable = 20_habeshan_slingers
+	enable = 20_meroe_spearmen
+	enable = 20_adv_indian_kshatriyas
+	enable = 20_adv_steppe_horsearchers
+	enable = 20_arab_cavalry
+	enable = 20_arab_skirmishers
+	enable = 20_arab_warrior
+	enable = 20_armored_bowmen
+	enable = 20_heavy_indian_cavalry
+	enable = 20_late_archers
+	enable = 20_late_beduin_warriors
+	enable = 20_sarmatian_cavalry
+	enable = 20_tocharian_axemen
+	enable = 20_xiongnu_cavalry
+	# 问鼎兵种/China
+	enable = zhaoguo_qibing_2
+	enable = zhaoguo_bubing_2
+	enable = weiguo_qibing_2
+	enable = weiguo_bubing_2
+	enable = jingchu_bubing_2
+	enable = hanguo_qibing_2
+	enable = hanguo_bubing_2
+	enable = qinguo_qibing_2
+	enable = qinguo_bubing_2
+	# Tibetan
+	enable = tibetan_steppary_cavalry
+	enable = tibetan_highland_archer
+	enable = tibetan_heavy_spearmen
+	# Korea(original Chinese unit group)
+	enable = 20_adv_heavy_infantry
+	enable = 20_heavy_chinese_cavalry
+	enable = 20_late_crossbowmen
+	enable = rome_base_inf_6
+	enable = rome_base_art_9
+	enable = rome_base_cav_8
+	enable = italic_base_inf_13
+	enable = italic_base_cav_7
+	enable = italic_base_art_9
+	enable = etrurian_base_inf_13
+	enable = samnitic_base_inf_8
+	enable = samnitic_base_art_7
+	enable = greek_base_inf_13
+	enable = spartan_base_inf_11
+	enable = spartan_base_art_13
+	enable = spartan_base_art_14
+	enable = macedon_base_inf_12
+	enable = thracian_base_inf_14
+	enable = thracian_base_cav_10
+	enable = illyrian_base_art_8
+	enable = dacian_base_art_11
+	enable = iberian_base_inf_11
+	enable = iberian_base_art_10
+	enable = celtiberian_base_inf_11
+	enable = celtiberian_base_art_10
+	enable = phoenician_base_art_12
+	enable = celt_base_inf_11
+	enable = brythonic_base_inf_8
+	enable = caucasian_base_cav_13
+	enable = caucasian_base_cav_14
+	enable = anatolian_base_cav_14
+	enable = iranian_base_cav_11
+	enable = iranian_base_cav_12
+	enable = asian_base_inf_14
+	enable = asian_base_cav_12
+	enable = egypt_uniq_art_12
+	enable = germanic_base_cav_8
+	enable = northafrican_base_inf_10
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_35 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 36 Legio System (XXXVI)
+	year = 655
+	enable = rome_base_art_10
+	military_tactics = 0.2
+	infantry_shock = 0.2
+	infantry_fire = 0.2
+	combat_width = 2
+	enable = etrurian_base_art_8
+	enable = greek_base_art_14
+	enable = illyrian_base_cav_6
+	enable = dacian_base_inf_12
+	enable = iberian_base_inf_12
+	enable = celtiberian_base_inf_12
+	enable = punic_base_cav_13
+	enable = phoenician_base_cav_10
+	enable = anatolian_base_inf_15
+	enable = asian_base_art_13
+	enable = germanic_base_inf_17
+	enable = germanic_base_art_10
+	enable = northafrican_base_inf_11
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.10
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_36 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 37 Provisioning (XXXVII)
+	year = 670
 	land_morale = 0.1
 	supply_limit = 0.25
-	fort_16th = yes
-	enable = eastern_light_cossack_cavalry
-	enable = unique_RUS_boyar_cavalry
-	enable = unique_POL_lisowczycy_cavalry
-	enable = eastern_light_hussar
-	enable = ottoman_suvareleri_cavalry
-	enable = ottoman_sekban_infantry
-	enable = ottoman_janissary_musketeer_infantry
-	enable = ottoman_reformed_sipahi_cavalry
-}
-technology = { 
-	year = 1570
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.175
-		Columbian_Exchange = 0.125
+	big_grain_depot = yes
+	# combat_width = 1
+	enable = greek_base_cav_11
+	enable = thracian_base_art_10
+	enable = illyrian_base_inf_16
+	enable = dacian_base_inf_13
+	enable = dacian_base_cav_10
+	enable = iberian_base_cav_9
+	enable = celtiberian_base_cav_9
+	enable = punic_base_inf_12
+	enable = caucasian_base_art_12
+	enable = anatolian_base_art_13
+	enable = iranian_base_art_12
+	enable = egypt_uniq_art_13
+	enable = germanic_base_cav_9
+	enable = northafrican_base_art_11
+	enable = northafrican_base_cav_11
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.20
 	}
-	cavalry_fire = 0.10
-	infantry_shock = 0.15
-	combat_width = 2
-	enable = western_tercio_infantry
-	enable = unique_SPA_coselete_infantry
-	enable = unique_POR_tanger_infantry
-	enable = southamerican_tercio_infantry
-	enable = indonesian_bargir_cavalry
-	enable = asian_westernized_cannon
-}
-technology = { 
-	year = 1580
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.20
-		Columbian_Exchange = 0.15
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_37 duration = -1 }
 	}
-	maneuver_value = 0.10
-	cavalry_shock = 0.30
-	land_morale = 0.09
-	enable = asian_new_guard_infantry
-	enable = asian_matchlock_musketeer_infantry
-	enable = unique_KOR_new_five_corps_infantry
-	enable = asian_charge_infantry
-	enable = asian_green_standard_infantry
-	enable = steppes_shock_cavalry
-	enable = north_american_riflemen_infantry
-	enable = north_american_carbine_cavalry
-	enable = indian_sepoy_musketeer_infantry
-	enable = indian_mawle_infantry
-	enable = indian_qazaqi_cavalry
-	enable = indian_bargir_cavalry
-	enable = indian_musketeer_elephantry
-	enable = sudanese_spear_and_shot_infantry
-	enable = sudanese_musketeer_infantry
-	enable = sudanese_gold_coast_infantry
-	enable = western_demiculverin_artillery
 }
-technology = { 
-	year = 1590
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.225
-		Columbian_Exchange = 0.175
-	}
-	artillery_fire = 0.50
-	artillery_shock = 0.05
-	enable = muslim_jazayerchi_musketeer_infantry
-	enable = asian_flying_dragon_gun
-}
-technology = { 
-	year = 1600
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.25
-		Columbian_Exchange = 0.2
-		Scientific_Method = 0.05
-	}
-	combat_width = 2
-	infantry_fire = 0.25
-	land_morale = 0.09
-	enable = western_gallop_cavalry
-	enable = unique_SWE_hakkapeliitta_cavalry
-	enable = western_soldaty_infantry
-	enable = western_irregular_infantry
-	enable = unique_HES_jager_infantry
-	enable = western_dragoon_cavalry
-	enable = western_countermarch_infantry
-	enable = unique_NED_maurician_infantry
-	enable = western_musketeersquare_infantry
-	enable = mesoamerican_gallop_cavalry
-	enable = mesoamerican_soldaty_infantry
-	enable = mesoamerican_irregular_infantry
-	enable = southamerican_gallop_cavalry
-	enable = southamerican_irregular_infantry
-	enable = southamerican_countermarch_infantry
-	enable = southamerican_dragoon_cavalry
-	enable = polynesian_musket_infantry
-	enable = indonesian_native_musketeer_infantry
-	enable = indonesian_carabao_guard_infantry
-	enable = sub_saharan_musketeer_infantry
-	enable = sub_saharan_chest_infantry
-}
-technology = { 
-	year = 1610
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.275
-		Columbian_Exchange = 0.275
-		Scientific_Method = 0.1
-		Global_Trade = 0.05
-	}
-	artillery_fire = 0.20
-	artillery_shock = 0.09
-	infantry_fire = 0.10
-	land_morale = 0.10
-	enable = eastern_slavic_western_infantry
-	enable = eastern_grenadier_infantry
-	enable = eastern_pancerni_cavalry
-	enable = eastern_heavy_hussar
-	enable = unique_POL_winged_hussar_cavalry
-	enable = eastern_reiter_cavalry
-	enable = eastern_soldaty_infantry
-}
-technology = { 
-	year = 1620
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.30
-		Columbian_Exchange = 0.3
-		Scientific_Method = 0.15
-		Global_Trade = 0.1
-	}
-	infantry_fire = 0.15
-	cavalry_fire = 0.14
-	land_morale = 0.10
-	enable = ottoman_deli_light_cavalry
-	enable = ottoman_tufek_musketeer_infantry
-	enable = muslim_zanbourak_camel_cavalry
-	enable = north_american_regular_infantry
-	enable = north_american_regular_cavalry
-	enable = indonesian_ekanda_cavalry
-}
-technology = { 
-	year = 1630
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.325
-		Columbian_Exchange = 0.325
-		Scientific_Method = 0.2
-		Global_Trade = 0.15
-	}
-	maneuver_value = 0.15
-	cavalry_shock = 0.20
-	combat_width = 2
-	enable = western_volley_infantry
-	enable = unique_SWE_gustavian_infantry
-	enable = asian_volley_infantry
-	enable = unique_BRM_captive_gunner_infantry
-	enable = mesoamerican_volley_infantry
-	enable = southamerican_volley_infantry
-	enable = indian_matchlockmen_infantry
-	enable = indian_saranjam_infantry
-	enable = indian_ekanda_cavalry
-	enable = indian_heavy_cavalry
-	enable = indian_cannon_elephantry
-	enable = sudanese_dragoon_cavalry
-	enable = sudanese_slave_javelin_cavalry
-	enable = sudanese_carabiner_cavalry
-	enable = sudanese_countermarch_musketeer_infantry
-	enable = sudanese_savannah_musketeer_infantry
-	enable = sub_saharan_disciplined_infantry
-	enable = sub_saharan_carabiner_cavalry
-	enable = western_flying_battery_artillery
-}
-technology = { 
-	year = 1640
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.35
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.25
-		Global_Trade = 0.2
-	}
-	land_morale = 0.10
-	supply_limit = 0.25
-	military_tactics = 0.25
-	infantry_shock = 0.15
-}
-technology = { 
-	year = 1650
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.375
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.3
-		Global_Trade = 0.25
-	}
-	artillery_fire = 0.50
-	military_tactics = 0.25
-	fort_17th = yes
-	enable = western_leather_gun_artillery
-}
-technology = { 
-	year = 1660
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.4
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.35
-		Global_Trade = 0.3
-		Academia = 0.05
-	}
-	combat_width = 3
-	infantry_fire = 0.25
-	military_tactics = 0.25
-	enable = western_platoon_infantry
-	enable = unique_NED_blue_guard_infantry
-	enable = western_regular_infantry
-	enable = unique_FRA_musketeer_of_the_guard_infantry
-	enable = unique_GBR_redcoat_infantry
-	enable = eastern_platoon_infantry
-	enable = eastern_regular_infantry
-	enable = muslim_piyadegan_infantry
-	enable = muslim_gharachoorlooha_musketeer_infantry
-	enable = muslim_savaran_saltani_cavalry
-	enable = asian_platoon_infantry
-	enable = asian_regular_infantry
-	enable = mesoamerican_platoon_infantry
-	enable = mesoamerican_regular_infantry
-	enable = southamerican_platoon_infantry
-	enable = southamerican_regular_infantry
-	enable = indian_rocketeer_infantry
-	enable = unique_MYS_rocketeer_infantry
-	enable = indian_gardi_infantry
-	enable = indian_ganimi_kava_infantry
-	enable = indian_pindari_cavalry
-	enable = polynesian_regular_infantry
-	enable = polynesian_platoon_infantry
-	enable = indonesian_regular_infantry
-	enable = indonesian_platoon_infantry
-}
-technology = { 
-	year = 1670
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.425
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.4
-		Global_Trade = 0.35
-		Academia = 0.1
-	}
-	supply_limit = 0.25
-	artillery_fire = 2
-	military_tactics = 0.25
-}
-technology = { 
-	year = 1680
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.45
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.45
-		Global_Trade = 0.4
-		Academia = 0.15
-	}
-	land_morale = 0.20
-	infantry_shock = 0.05
-	artillery_shock = 0.09
-	enable = ottoman_panduk_sharpshooter_infantry
-	enable = muslim_two_horned_tofangchi_infantry
-	enable = muslim_taifat_al_rusa_infantry
-	enable = sudanese_sofa_rifle_infantry
-	enable = unique_DAH_amazon_infantry
-	enable = western_regimental_gun_artillery
-}
-technology = { 
-	year = 1690
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.475
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.5
-		Global_Trade = 0.45
-		Academia = 0.2
-	}
-	land_morale = 0.20
-	infantry_shock = 0.10
-	artillery_shock = 0.09
-	maneuver_value = 0.10
-}
-technology = { 
-	year = 1700
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.55
-		Global_Trade = 0.5
-		Academia = 0.25
-		Nationalism = 0.05
-	}
-	cavalry_fire = 0.12
-	cavalry_shock = 0.20
-	artillery_fire = 0.80
-	enable = western_carabinier_cavalry
-	enable = western_armeblanche_cavalry
-	enable = western_mediumhussar_cavalry
-	enable = western_bayonet_infantry
-	enable = unique_SWE_carolean_infantry
-	enable = western_line_infantry
-	enable = unique_PRU_frederickian_infantry
-	enable = western_skirmisher_infantry
-	enable = unique_AUS_grenzer_infantry
-	enable = unique_QUE_militia_infantry
-	enable = eastern_carabinier_cavalry
-	enable = eastern_armeblanche_cavalry
-	enable = eastern_bayonet_infantry
-	enable = eastern_line_infantry
-	enable = unique_RUS_imperial_guard_infantry
-	enable = eastern_skirmisher_infantry
-	enable = asian_carabinier_cavalry
-	enable = asian_armeblanche_cavalry
-	enable = asian_mediumhussar_cavalry
-	enable = asian_bayonet_infantry
-	enable = asian_line_infantry
-	enable = asian_skirmisher_infantry
-	enable = steppes_field_army_infantry
-	enable = steppes_carabinier_cavalry
-	enable = steppes_armeblanche_cavalry
-	enable = steppes_mediumhussar_cavalry
-	enable = north_american_carabinier_cavalry
-	enable = north_american_skirmisher_infantry
-	enable = mesoamerican_carabinier_cavalry
-	enable = mesoamerican_armeblanche_cavalry
-	enable = mesoamerican_bayonet_infantry
-	enable = mesoamerican_skirmisher_infantry
-	enable = southamerican_carabinier_cavalry
-	enable = southamerican_armeblanche_cavalry
-	enable = southamerican_mediumhussar_cavalry
-	enable = southamerican_bayonet_infantry
-	enable = southamerican_line_infantry
-	enable = southamerican_skirmisher_infantry
-	enable = indian_westernized_infantry
-	enable = unique_NEP_gurkha_infantry
-	enable = unique_LAH_faujiain_infantry
-	enable = polynesian_skirmisher_infantry
-	enable = polynesian_line_infantry
-	enable = polynesian_bayonet_infantry
-	enable = polynesian_carabinier_cavalry
-	enable = indonesian_skirmisher_infantry
-	enable = indonesian_bayonet_infantry
-	enable = indonesian_carabinier_cavalry
-	enable = sub_saharan_line_infantry
-	enable = sub_saharan_bayonet_infantry
-}
-technology = { 
-	year = 1710
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.6
-		Global_Trade = 0.5
-		Academia = 0.3
-		Nationalism = 0.1
-		Industrialisation = 0.1
-	}
-	sprite_level = 3
-	combat_width = 2
-	infantry_fire = 0.10
-	supply_limit = 0.25
-	artillery_shock = 0.10
-	fort_18th = yes
-}
-technology = { 
-	year = 1720
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.65
-		Global_Trade = 0.5
-		Academia = 0.35
-		Nationalism = 0.2
-		Industrialisation = 0.2
-	}
-	infantry_fire = 0.10
-	artillery_fire = 0.50
-	cavalry_fire = 0.10
-	enable = western_coehorn_mortar_artillery
-}
-technology = { 
-	year = 1730
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.7
-		Global_Trade = 0.5
-		Academia = 0.4
-		Nationalism = 0.3
-		Industrialisation = 0.3
-	}
-	land_morale = 0.30
-	military_tactics = 0.25
-	infantry_shock = 0.15
-}
-technology = { 
-	year = 1740
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 0.45
-		Nationalism = 0.4
-		Industrialisation = 0.4
-	}
-	combat_width = 2
-	land_morale = 0.30
-	military_tactics = 0.50
-	artillery_fire = 0.50
-}
-technology = { 
-	year = 1750
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 0.5
-		Nationalism = 0.5
-		Industrialisation = 0.5
-	}
-	maneuver_value = 0.15
-	infantry_fire = 0.15
-	cavalry_shock = 0.20
-	cavalry_fire = 0.05
-	enable = western_hunter_cavalry
-	enable = western_uhlan_cavalry
-	enable = western_lighthussar_cavalry
-	enable = western_drill_infantry
-	enable = unique_PRU_oblique_infantry
-	enable = unique_SCO_black_watch_infantry
-	enable = western_mass_infantry
-	enable = western_rifled_infantry
-	enable = unique_USA_minuteman_infantry
-	enable = eastern_hunter_cavalry
-	enable = eastern_uhlan_cavalry
-	enable = eastern_drill_infantry
-	enable = eastern_mass_infantry
-	enable = eastern_rifled_infantry
-	enable = muslim_uhlan_cavalry
-	enable = muslim_lighthussar_cavalry
-	enable = muslim_hunter_cavalry
-	enable = muslim_drill_infantry
-	enable = muslim_mass_infantry_tactics
-	enable = muslim_rifled_infantry
-	enable = asian_hunter_cavalry
-	enable = asian_uhlan_cavalry
-	enable = asian_lighthussar_cavalry
-	enable = asian_drill_infantry
-	enable = asian_rifled_infantry
-	enable = steppes_uhlan_cavalry
-	enable = steppes_lighthussar_cavalry
-	enable = steppes_hunter_cavalry
-	enable = steppes_drill_infantry
-	enable = steppes_mass_infantry
-	enable = steppes_rifled_infantry
-	enable = north_american_hunter_cavalry
-	enable = north_american_rifled_infantry
-	enable = mesoamerican_uhlan_cavalry
-	enable = mesoamerican_hunter_cavalry
-	enable = mesoamerican_mass_infantry
-	enable = mesoamerican_rifled_infantry
-	enable = southamerican_hunter_cavalry
-	enable = southamerican_uhlan_cavalry
-	enable = southamerican_lighthussar_cavalry
-	enable = southamerican_drill_infantry
-	enable = southamerican_mass_infantry
-	enable = southamerican_rifled_infantry
-	enable = indian_uhlan_cavalry
-	enable = indian_rifled_infantry
-	enable = indian_mass_infantry
-	enable = indian_lighthussar_cavalry
-	enable = indian_drill_infantry
-	enable = indian_hunter_cavalry
-	enable = sudanese_rifled_infantry
-	enable = sudanese_mass_infantry
-	enable = sudanese_drill_infantry
-	enable = sudanese_uhlan_cavalry
-	enable = sudanese_lighthussar_cavalry
-	enable = sudanese_hunter_cavalry
-	enable = polynesian_rifled_infantry
-	enable = polynesian_mass_infantry
-	enable = polynesian_drill_infantry
-	enable = polynesian_hunter_cavalry
-	enable = indonesian_rifled_infantry
-	enable = indonesian_drill_infantry
-	enable = indonesian_hunter_cavalry
-	enable = sub_saharan_mass_infantry
-	enable = sub_saharan_drill_infantry
-	enable = sub_saharan_hussar
-}
-technology = { 
-	year = 1760
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 0.6
-		Nationalism = 0.6
-		Industrialisation = 0.6
-	}
-	maneuver_value = 0.05
-	infantry_fire = 0.10
-	artillery_fire = 1
-	artillery_shock = 0.10
-	enable = ottoman_lancer_cavalry
-	enable = ottoman_toprakli_dragoon_infantry
-	enable = western_horse_artillery
-}
-technology = { 
-	year = 1770
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 0.7
-		Nationalism = 0.7
-		Industrialisation = 0.7
-	}
-	artillery_fire = 1
-	supply_limit = 0.25
-}
-technology = { 
-	year = 1780
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 0.8
-		Nationalism = 0.75
-		Industrialisation = 0.8
-	}
-	infantry_fire = 0.15
-	cavalry_fire = 0.20
-	artillery_fire = 0.5
-	maneuver_value = 0.05
-}
-technology = { 
-	year = 1790
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 0.9
-		Nationalism = 0.75
-		Industrialisation = 0.9
-	}
-	sprite_level = 4
-	combat_width = 3
-	infantry_shock = 0.15
-	land_morale = 0.30
-	enable = western_columnar_infantry
-	enable = unique_FRA_grognard_infantry
-	enable = western_impulse_infantry
-	enable = unique_CAN_fencible_infantry
-	enable = unique_POR_cacadore_infantry
-	enable = unique_USA_marine_infantry
-	enable = eastern_columnar_infantry
-	enable = eastern_impulse_infantry
-	enable = muslim_columnar_infantry
-	enable = muslim_impulse_infantry
-	enable = asian_columnar_infantry
-	enable = asian_impulse_infantry
-	enable = steppes_columnar_infantry
-	enable = steppes_impulse_infantry
-	enable = north_american_impulse_infantry
-	enable = mesoamerican_columnar_infantry
-	enable = mesoamerican_impulse_infantry
-	enable = southamerican_columnar_infantry
-	enable = southamerican_impulse_infantry
-	enable = indian_impulse_infantry
-	enable = indian_columnar_infantry
-	enable = sudanese_impulse_infantry
-	enable = sudanese_columnar_infantry
-	enable = polynesian_impulse_infantry
-	enable = polynesian_columnar_infantry
-	enable = indonesian_impulse_infantry
-	enable = sub_saharan_columnar_infantry
-	enable = western_field_howitzer_artillery
-}
-technology = { 
-	year = 1800
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
-	}
-	military_tactics = 0.75
-	land_morale = 0.30
-	cavalry_shock = 0.20
-	enable = western_lancer_cavalry
-	enable = eastern_lancer_cavalry
-	enable = muslim_lancer_cavalry
-	enable = asian_lancer_cavalry
-	enable = steppes_lancer_cavalry
-	enable = north_american_lancer_cavalry
-	enable = mesoamerican_lancer_cavalry
-	enable = southamerican_lancer_cavalry
-	enable = indian_lancer_cavalry
-	enable = indonesian_lancer_cavalry
-	enable = sudanese_lancer_cavalry
-	enable = polynesian_lancer_cavalry
-}
-technology = { 
-	year = 1810
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
-	}
-	infantry_fire = 0.10
-	cavalry_fire = 0.10
-	supply_limit = 0.25
-}
-technology = { 
-	year = 1820
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
-	}
-	military_tactics = 0.75
-	artillery_fire = 0.5
-	artillery_shock = 0.10
-}
-technology = { 
-	year = 1830
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
-	}
-	infantry_fire = 0.20
-	artillery_fire = 1
-	maneuver_value = 0.15
-}
-technology = { 
-	year = 1840
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
-	}
-	infantry_shock = 0.05
-	cavalry_shock = 0.20
-	land_morale = 0.60
-	combat_width = 3
-	enable = western_breech_infantry
-	enable = western_jominian_infantry
-	enable = eastern_breech_infantry
-	enable = eastern_jominian_infantry
-	enable = muslim_breech_infantry
-	enable = muslim_jominian_infantry
-	enable = ottoman_breech_infantry
-	enable = ottoman_jominian_infantry
-	enable = asian_breech_infantry
-	enable = asian_jominian_infantry
-	enable = steppes_breech_infantry
-	enable = steppes_jominian_infantry
-	enable = north_american_breech_infantry
-	enable = north_american_jominian_infantry
-	enable = mesoamerican_breech_infantry
-	enable = mesoamerican_jominian_infantry
-	enable = southamerican_breech_infantry
-	enable = southamerican_jominian_infantry
-	enable = indian_breech_infantry
-	enable = indian_jominian_infantry
-	enable = sudanese_breech_infantry
-	enable = sudanese_jominian_infantry
-	enable = polynesian_breech_infantry
-	enable = polynesian_jominian_infantry
-	enable = indonesian_breech_infantry
-	enable = sub_saharan_jominian_infantry
-}
-technology = { 
-	year = 1850
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
-	}
-	infantry_fire = 0.10
-	cavalry_fire = 0.10
-	artillery_fire = 1
-}
-technology = { 
-	year = 1860
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
-	}
+
+technology = {
+	# Tech 38 Legio Imitations (XXXVIII)
+	year = 685
+	land_morale = 0.1
+	supply_limit = 0.1
+	military_tactics = 0.1
 	infantry_fire = 0.05
-	military_tactics = 0.50
-	supply_limit = 0.25
-	maneuver_value = 0.10
-	enable = western_armstrong_gun_artillery
-}
-technology = { 
-	year = 1870
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
+	enable = 25_late_steppe_armored_swordsmen
+	enable = 25_late_steppe_archers
+	enable = thracian_base_art_11
+	enable = illyrian_base_inf_17
+	enable = dacian_base_art_12
+	enable = punic_base_art_13
+	enable = phoenician_base_art_13
+	enable = celt_base_cav_10
+	enable = brythonic_base_cav_8
+	enable = caucasian_base_inf_11
+	enable = anatolian_base_art_14
+	enable = iranian_base_art_13
+	enable = asian_base_inf_15
+	enable = egypt_uniq_inf_15
+	enable = germanic_base_inf_18
+	enable = northafrican_base_inf_12
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.25
 	}
-	infantry_fire = 0.12
-	cavalry_fire = 0.16
-	land_morale = 0.70
-}
-technology = { 
-	year = 1880
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_38 duration = -1 }
 	}
-	infantry_fire = 0.15
-	artillery_shock = 0.08
-	land_morale = 0.80
 }
-technology = { 
-	year = 1890
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
+
+technology = {
+	# Tech 39	Cantabrian Circle  (XXXIX)
+	year = 700
+	cavalry_fire = 0.25
+	cavalry_shock = 0.05
+	enable = rome_legio_inf_default
+	enable = rome_base_inf_7
+	enable = rome_base_art_11
+	enable = rome_base_art_12
+	enable = rome_base_cav_9
+	enable = etrurian_base_cav_7
+	enable = greek_base_art_15
+	enable = iberian_base_inf_13
+	enable = celtiberian_base_inf_13
+	enable = punic_base_cav_14
+	enable = phoenician_base_inf_12
+	enable = phoenician_base_cav_11
+	enable = celt_base_cav_11
+	enable = celt_base_cav_12
+	enable = celt_base_art_11
+	enable = brythonic_base_cav_9
+	enable = brythonic_base_cav_10
+	enable = brythonic_base_art_11
+	enable = anatolian_base_cav_15
+	enable = anatolian_base_cav_16
+	enable = iranian_base_cav_16
+	enable = asian_base_cav_13
+	enable = egypt_uniq_cav_10
+	enable = germanic_base_cav_10
+	enable = northafrican_base_cav_12
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.30
+		tactics_strategy_institution = 0.10
 	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_39 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 40 'Testudo' Formation (XL)
+	sprite_level = 4
+	year = 715
+	enable = rome_base_inf_8
+	enable = rome_base_cav_10
+	enable = rome_base_cav_11
 	infantry_shock = 0.05
-	military_tactics = 0.50
-	artillery_fire = 1
-}
-technology = { 
-	year = 1900
-	expects_institution = { 
-		Banking = 0.3
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Casual_Literacy = 0.5
-		Columbian_Exchange = 0.35
-		Scientific_Method = 0.75
-		Global_Trade = 0.5
-		Academia = 1.0
-		Nationalism = 0.75
-		Industrialisation = 1.0
+	infantry_fire = 0.05
+	cavalry_shock = 0.05
+	cavalry_fire = 0.05
+	military_tactics = 0.05
+	artillery_fire = 0.05
+	artillery_shock = 0.05
+	enable = italic_base_inf_14
+	enable = italic_base_art_10
+	enable = etrurian_base_inf_14
+	enable = greek_base_inf_14
+	enable = greek_base_cav_12
+	enable = spartan_base_inf_13
+	enable = spartan_base_cav_6
+	enable = spartan_base_cav_7
+	enable = spartan_base_art_15
+	enable = thracian_base_inf_15
+	enable = thracian_base_cav_11
+	enable = illyrian_base_inf_18
+	enable = dacian_base_inf_14
+	enable = iberian_base_inf_14
+	enable = iberian_base_art_11
+	enable = celtiberian_base_inf_14
+	enable = celtiberian_base_art_11
+	enable = punic_base_inf_13
+	enable = celt_base_inf_12
+	enable = celt_base_inf_13
+	enable = brythonic_base_inf_9
+	enable = brythonic_base_inf_10
+	enable = anatolian_base_inf_16
+	enable = iranian_base_inf_14
+	enable = iranian_base_inf_15
+	enable = asian_base_art_14
+	enable = egypt_uniq_art_14
+	enable = germanic_base_inf_19
+	enable = northafrican_base_inf_13
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.30
+		tactics_strategy_institution = 0.20
 	}
-	artillery_fire = 1
-	cavalry_shock = 0.20
-	land_morale = 0.90
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_40 duration = -1 }
+	}
 }
+
+technology = {
+	# Tech 41 Military Roads and Stone Bridges (XLI)
+	year = 730
+	enable = rome_base_art_13
+	supply_limit = 0.25
+	enable = italic_base_cav_8
+	enable = thracian_base_inf_16
+	enable = thracian_base_cav_12
+	enable = illyrian_base_art_9
+	enable = punic_base_cav_15
+	enable = phoenician_base_art_14
+	enable = caucasian_base_art_13
+	enable = anatolian_base_art_15
+	enable = iranian_base_cav_13
+	enable = iranian_base_cav_14
+	enable = germanic_base_art_11
+	enable = northafrican_base_art_12
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.30
+		tactics_strategy_institution = 0.25
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_41 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 42 Segmented Armor (XLII)
+	year = 745
+	infantry_shock = 0.05
+	cavalry_shock = 0.05
+	military_tactics = 0.05
+	combat_width = 2
+	enable = greek_base_art_16
+	enable = thracian_base_art_12
+	enable = dacian_base_art_13
+	enable = iberian_base_cav_10
+	enable = celtiberian_base_cav_10
+	enable = phoenician_base_cav_12
+	enable = asian_base_inf_16
+	enable = asian_base_art_15
+	enable = germanic_base_cav_11
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.30
+		tactics_strategy_institution = 0.30
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_42 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 43 Army Surgeons Corps (XLIII)
+	year = 760
+	land_morale = 0.1
+	enable = greek_base_cav_13
+	enable = spartan_base_art_16
+	enable = iberian_base_cav_11
+	enable = celtiberian_base_cav_11
+	enable = caucasian_base_cav_15
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.30
+		tactics_strategy_institution = 0.30
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_43 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 44 Standartisation of Payment (XLIV)
+	year = 775
+	land_morale = 0.05
+	enable = etrurian_base_cav_8
+	enable = dacian_base_cav_11
+	enable = dacian_base_art_14
+	enable = phoenician_base_inf_13
+	enable = phoenician_base_art_15
+	enable = punic_base_inf_14
+	enable = celt_base_cav_13
+	enable = brythonic_base_cav_11
+	enable = caucasian_base_inf_12
+	enable = anatolian_base_art_16
+	enable = asian_base_cav_14
+	enable = egypt_uniq_art_15
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.30
+		tactics_strategy_institution = 0.30
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_44 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 45  Fortified Borders (XLV)
+	year = 790
+	land_morale = 0.05
+	enable = 25_ethiopian_infantry
+	enable = 25_african_elephant
+	enable = 25_nabataean_skirmishers
+	enable = 25_arab_noble_cavalry
+	enable = 25_arab_noble_horsearchers
+	enable = 25_arab_swordsmen
+	enable = 25_elite_archers
+	enable = 25_heavy_xiongnu_cavalry
+	enable = 25_indian_footguard
+	enable = 25_indian_noble_archers
+	enable = 25_indian_pikemen
+	enable = 25_indian_war_elephants
+	enable = 25_late_arab_warriors
+	enable = 25_late_tocharian_axemen
+	enable = 25_late_steppe_foot_retinues
+	enable = 25_sarmatian_cataphracts
+	enable = 25_scythian_chariots
+	enable = 25_tocharian_horsearchers
+	enable = 25_veteran_african_bowmen
+	enable = 25_late_steppe_bowmen
+	enable = 25_veteran_steppe_hunters
+	enable = 25_khmer_archers
+	enable = 25_khmer_infantry
+	enable = 25_khmer_cavalry
+	# 问鼎/China
+	enable = zhaoguo_bubing_3
+	enable = yanguo_qibing_3
+	enable = weiguo_qibing_3
+	enable = weiguo_bubing_3
+	enable = qiguo_qibing_3
+	enable = qiguo_bubing_3
+	enable = qinguo_qibing_3
+	enable = qinguo_bubing_3
+	# Tibetan
+	enable = tibetan_cataphract
+	enable = tibetan_imported_crossbow
+	enable = tibetan_bannermen
+	# Korea(original Chinese unit group)
+	enable = 25_chinese_noble_cavalry
+	enable = 25_elite_guardsmen
+	enable = 25_late_chinese_horsearchers
+	enable = 25_late_chinese_archers
+	enable = rome_base_cav_12
+	enable = italic_base_inf_15
+	enable = italic_base_cav_9
+	enable = italic_base_art_11
+	enable = etrurian_base_inf_15
+	enable = greek_base_inf_15
+	enable = greek_base_cav_14
+	enable = greek_base_art_17
+	enable = spartan_base_inf_14
+	enable = spartan_base_cav_8
+	enable = spartan_base_art_17
+	enable = thracian_base_inf_17
+	enable = thracian_base_cav_13
+	enable = thracian_base_art_13
+	enable = illyrian_base_inf_19
+	enable = dacian_base_inf_15
+	enable = dacian_base_cav_12
+	enable = iberian_base_inf_15
+	enable = celtiberian_base_inf_15
+	enable = celtiberian_base_cav_12
+	enable = phoenician_base_cav_13
+	enable = celt_base_inf_14
+	enable = celt_base_inf_15
+	enable = brythonic_base_inf_11
+	enable = brythonic_base_inf_12
+	enable = caucasian_base_cav_16
+	enable = anatolian_base_inf_17
+	enable = iranian_base_inf_16
+	enable = asian_base_art_16
+	enable = germanic_base_inf_20
+	enable = northafrican_base_inf_14
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.30
+		tactics_strategy_institution = 0.30
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_45 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 46 Improved Campaign Planning (XLVI)
+	year = 805
+	military_tactics = 0.1
+	supply_limit = 0.15
+	enable = etrurian_base_art_9
+	enable = greek_base_art_18
+	enable = thracian_base_cav_14
+	enable = dacian_base_inf_16
+	expects_institution = {
+		writing_system = 0.30
+		iron_age = 0.30
+		coin_usage = 0.30
+		siege_engineering_institution = 0.30
+		bureaucracy_institution = 0.30
+		cast_iron_institution = 0.30
+		classical_philosophy_institution = 0.30
+		civil_law_institution = 0.30
+		axiomatic_maths_institution = 0.30
+		blast_furnace_institution = 0.30
+		advanced_hydraulics_institution = 0.30
+		astronomy_institution = 0.30
+		engineering_architecture_institution = 0.30
+		tactics_strategy_institution = 0.30
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_46 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 47 Lance Tactics (XLII)
+	year = 820
+	land_morale = 0.1
+	cavalry_shock = 0.2
+	enable = celt_base_cav_14
+	enable = brythonic_base_cav_12
+	enable = iberian_base_cav_12
+	enable = asian_base_art_17
+	enable = germanic_base_cav_12
+	enable = northafrican_base_cav_13
+	expects_institution = {
+		writing_system = 0.40
+		iron_age = 0.40
+		coin_usage = 0.40
+		siege_engineering_institution = 0.40
+		bureaucracy_institution = 0.40
+		cast_iron_institution = 0.40
+		classical_philosophy_institution = 0.40
+		civil_law_institution = 0.40
+		axiomatic_maths_institution = 0.40
+		blast_furnace_institution = 0.40
+		advanced_hydraulics_institution = 0.40
+		astronomy_institution = 0.40
+		engineering_architecture_institution = 0.40
+		tactics_strategy_institution = 0.40
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_47 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 48 Foederati Troops (XLIII)
+	year = 835
+	infantry_fire = 0.1
+	cavalry_fire = 0.1
+	artillery_shock = 0.1
+	land_morale = 0.1
+	supply_limit = 0.1
+	enable = celt_base_art_12
+	enable = brythonic_base_art_12
+	enable = germanic_base_inf_21
+	enable = germanic_base_art_12
+	expects_institution = {
+		writing_system = 0.40
+		iron_age = 0.40
+		coin_usage = 0.40
+		siege_engineering_institution = 0.40
+		bureaucracy_institution = 0.40
+		cast_iron_institution = 0.40
+		classical_philosophy_institution = 0.40
+		civil_law_institution = 0.40
+		axiomatic_maths_institution = 0.40
+		blast_furnace_institution = 0.40
+		advanced_hydraulics_institution = 0.40
+		astronomy_institution = 0.40
+		engineering_architecture_institution = 0.40
+		tactics_strategy_institution = 0.40
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_48 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 49 Forced Recruitment (XLIX)
+	year = 850
+	supply_limit = 0.05
+	enable = rome_base_inf_9
+	enable = rome_base_art_14
+	enable = rome_base_cav_13
+	enable = dacian_base_cav_13
+	enable = dacian_base_art_15
+	expects_institution = {
+		writing_system = 0.50
+		iron_age = 0.50
+		coin_usage = 0.50
+		siege_engineering_institution = 0.50
+		bureaucracy_institution = 0.50
+		cast_iron_institution = 0.50
+		classical_philosophy_institution = 0.50
+		civil_law_institution = 0.50
+		axiomatic_maths_institution = 0.50
+		blast_furnace_institution = 0.50
+		advanced_hydraulics_institution = 0.50
+		astronomy_institution = 0.50
+		engineering_architecture_institution = 0.50
+		tactics_strategy_institution = 0.50
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_49 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 50 Advanced German Shieldwall (L)
+	year = 865
+	infantry_shock = 0.1
+	military_tactics = 0.05
+	enable = greek_base_inf_16
+	enable = greek_base_cav_15
+	enable = dacian_base_cav_14
+	enable = dacian_base_art_16
+	enable = germanic_base_inf_22
+	enable = germanic_base_cav_13
+	expects_institution = {
+		writing_system = 0.50
+		iron_age = 0.50
+		coin_usage = 0.50
+		siege_engineering_institution = 0.50
+		bureaucracy_institution = 0.50
+		cast_iron_institution = 0.50
+		classical_philosophy_institution = 0.50
+		civil_law_institution = 0.50
+		axiomatic_maths_institution = 0.50
+		blast_furnace_institution = 0.50
+		advanced_hydraulics_institution = 0.50
+		astronomy_institution = 0.50
+		engineering_architecture_institution = 0.50
+		tactics_strategy_institution = 0.50
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_50 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 51 Improved Crossbows (LI)
+	year = 880
+	enable = rome_base_cav_14
+	artillery_fire = 0.15
+	expects_institution = {
+		writing_system = 0.50
+		iron_age = 0.50
+		coin_usage = 0.50
+		siege_engineering_institution = 0.50
+		bureaucracy_institution = 0.50
+		cast_iron_institution = 0.50
+		classical_philosophy_institution = 0.50
+		civil_law_institution = 0.50
+		axiomatic_maths_institution = 0.50
+		blast_furnace_institution = 0.50
+		advanced_hydraulics_institution = 0.50
+		astronomy_institution = 0.50
+		engineering_architecture_institution = 0.50
+		tactics_strategy_institution = 0.50
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_51 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 52 Late Torsion-Powered Siege Weapons (LII)
+	year = 895
+	artillery_fire = 0.1
+	artillery_shock = 0.1
+	expects_institution = {
+		writing_system = 0.50
+		iron_age = 0.50
+		coin_usage = 0.50
+		siege_engineering_institution = 0.50
+		bureaucracy_institution = 0.50
+		cast_iron_institution = 0.50
+		classical_philosophy_institution = 0.50
+		civil_law_institution = 0.50
+		axiomatic_maths_institution = 0.50
+		blast_furnace_institution = 0.50
+		advanced_hydraulics_institution = 0.50
+		astronomy_institution = 0.50
+		engineering_architecture_institution = 0.50
+		tactics_strategy_institution = 0.50
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_52 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 53 Germanic Pike Formations (LIII)
+	year = 910
+	land_morale = 0.1
+	infantry_shock = 0.1
+	enable = celt_base_inf_16
+	enable = brythonic_base_inf_13
+	enable = germanic_base_inf_23
+	expects_institution = {
+		writing_system = 0.50
+		iron_age = 0.50
+		coin_usage = 0.50
+		siege_engineering_institution = 0.50
+		bureaucracy_institution = 0.50
+		cast_iron_institution = 0.50
+		classical_philosophy_institution = 0.50
+		civil_law_institution = 0.50
+		axiomatic_maths_institution = 0.50
+		blast_furnace_institution = 0.50
+		advanced_hydraulics_institution = 0.50
+		astronomy_institution = 0.50
+		engineering_architecture_institution = 0.50
+		tactics_strategy_institution = 0.50
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_53 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 54 Stirrup (LIV)
+	year = 925
+	enable = rome_base_cav_15
+	cavalry_shock = 0.25
+	cavalry_fire = 0.15
+	maneuver_value = 0.25
+	military_tactics = 0.1
+	enable = celt_base_cav_15
+	enable = germanic_base_cav_14
+	expects_institution = {
+		writing_system = 0.50
+		iron_age = 0.50
+		coin_usage = 0.50
+		siege_engineering_institution = 0.50
+		bureaucracy_institution = 0.50
+		cast_iron_institution = 0.50
+		classical_philosophy_institution = 0.50
+		civil_law_institution = 0.50
+		axiomatic_maths_institution = 0.50
+		blast_furnace_institution = 0.50
+		advanced_hydraulics_institution = 0.50
+		astronomy_institution = 0.50
+		engineering_architecture_institution = 0.50
+		tactics_strategy_institution = 0.50
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_54 duration = -1 }
+	}
+}
+
+technology = {
+	# Tech 55 Late Antiquity Warfare (LV)
+	year = 940
+	military_tactics = 0.1
+	land_morale = 0.15
+	supply_limit = 0.15
+	expects_institution = {
+		writing_system = 0.50
+		iron_age = 0.50
+		coin_usage = 0.50
+		siege_engineering_institution = 0.50
+		bureaucracy_institution = 0.50
+		cast_iron_institution = 0.50
+		classical_philosophy_institution = 0.50
+		civil_law_institution = 0.50
+		axiomatic_maths_institution = 0.50
+		blast_furnace_institution = 0.50
+		advanced_hydraulics_institution = 0.50
+		astronomy_institution = 0.50
+		engineering_architecture_institution = 0.50
+		tactics_strategy_institution = 0.50
+	}
+	effect = {
+		mil_tech_modifier_remove_effect = yes
+		add_country_modifier = { name = tech_mod_mil_55 duration = -1 }
+	}
+}
+
