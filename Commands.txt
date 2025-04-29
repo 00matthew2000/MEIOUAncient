@@ -31,7 +31,7 @@ Replacements List:
 	Religions
 	Regions
 	SOME event modifiers
-	NOT (Most) Buildings, Great Projects, Natives, Mercs, On Actions (Wiped out but not replaced), Subject Types, Trade Goods, Trade Nodes (NOT READY) 
+	NOT (Most) Buildings, Great Projects, Natives, Mercs, On Actions (Wiped out but not replaced), Subject Types, Technologies, Trade Goods, Trade Nodes (NOT READY) 
 -Most Localization
 -GFX: Loading Screens
 -Tutorial
