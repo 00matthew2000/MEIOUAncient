@@ -37,3 +37,4 @@ Replacements List:
 -Tutorial
 
 NOTE: Redo the tradegoods
+NOTE: Diplomacy needs filling
