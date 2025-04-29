@@ -215,27 +215,13 @@ on_primary_culture_changed = { }
 on_company_chartered = { }
 on_dependency_gained = { }
 on_dependency_lost = { }
-on_create_vassal = { 
-	FROM = { 
-	}
-	if = { 
-		limit = { 
-			tag = PAP
-		}
-	}
-}
+on_create_vassal = { }
 on_holy_order_established = { }
 on_minority_expelled = { }
 on_raid_coast = { }
 on_flagship_captured = { }
 on_flagship_destroyed = { }
-on_country_released = { 
-	if = { 
-		limit = { 
-			tag = PAP
-		}
-	}
-}
+on_country_released = { }
 on_trade_good_changed = { }
 on_loan_repaid = { }
 on_rebels_break_country = { 
