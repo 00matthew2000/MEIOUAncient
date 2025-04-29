@@ -1,7 +1,0 @@
-dependency = { 
-	subject_type = "daimyo_vassal"
-	first = HUN
-	second = MOL
-	start_date = 1352.1.1
-	end_date = 1359.1.1
-}
