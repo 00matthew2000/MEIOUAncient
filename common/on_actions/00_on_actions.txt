@@ -175,47 +175,9 @@ on_parliament_seat_given = { }
 on_parliament_seat_lost = { }
 on_parliament_debate_failed = { }
 on_parliament_debate_succeeded = { }
-on_chinese_empire_dismantled = { 
-	clear_global_event_target = EmperorOfChina
-}
-on_mandate_of_heaven_gained = { 
-	save_global_event_target_as = EmperorOfChina
-	if = { 
-		limit = { 
-			OR = { 
-				NOT = { 
-					government = monarchy
-				}
-				government = tribal
-			}
-		}
-	}
-	set_meritocracy = 60
-	every_ally = { 
-		ROOT = { 
-			break_alliance = PREV
-		}
-	}
-}
-on_mandate_of_heaven_lost = { 
-	hidden_effect = { 
-		if = { 
-			limit = { 
-				NOT = { 
-					stability = -2
-				}
-			}
-		}
-	}
-	tooltip = { 
-	}
-	if = { 
-		limit = { 
-			is_emperor_of_china = yes
-		}
-		add_mandate = -10
-	}
-}
+on_chinese_empire_dismantled = { }
+on_mandate_of_heaven_gained = { }
+on_mandate_of_heaven_lost = { }
 on_harmonized_pagan = { }
 on_harmonized_christian = { }
 on_harmonized_muslim = { }
@@ -301,27 +263,9 @@ on_loan_repaid = { }
 on_rebels_break_country = { 
 	log = "OnAction:[GetYear]:[Root.GetName]:Rebels broke country:on_rebels_break_country"
 }
-on_pre_adm_advisor_fired = { 
-	if = { 
-		limit = { 
-		}
-		remove_advisor_by_category_no_action = ADM
-	}
-}
-on_pre_dip_advisor_fired = { 
-	if = { 
-		limit = { 
-		}
-		remove_advisor_by_category_no_action = DIP
-	}
-}
-on_pre_mil_advisor_fired = { 
-	if = { 
-		limit = { 
-		}
-		remove_advisor_by_category_no_action = MIL
-	}
-}
+on_pre_adm_advisor_fired = { }
+on_pre_dip_advisor_fired = { }
+on_pre_mil_advisor_fired = { }
 on_post_adm_advisor_fired = { }
 on_post_dip_advisor_fired = { }
 on_post_mil_advisor_fired = { }
