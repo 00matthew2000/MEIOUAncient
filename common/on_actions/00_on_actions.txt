@@ -144,25 +144,7 @@ on_gain_great_power_status = { }
 on_lose_great_power_status = { }
 on_province_religion_converted = { }
 on_province_religion_changed = { }
-on_province_culture_converted = { 
-	if = { 
-		limit = { 
-			always = yes
-		}
-		if = { 
-			limit = { 
-				NOT = { 
-					AND = { 
-					}
-				}
-			}
-		}
-		else = { 
-			hidden_effect = { 
-			}
-		}
-	}
-}
+on_province_culture_converted = { }
 on_province_culture_changed = { }
 on_convert_by_trade_policy = { }
 on_province_owner_change = { }
