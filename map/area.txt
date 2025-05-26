@@ -516,7 +516,7 @@ mogontiacum_area = {
 	78 2756 4005 4006
 }
 
-batavocappadocia_area = {
+batavorum_area = {
 	95 2370 96
 }
 
@@ -1091,7 +1091,7 @@ moenus_area = {
 	1366 58 3733 3734 2616 1373 3735 1365
 }
 
-treverocappadocia_area = {
+treverorum_area = {
 	1362 1363 1370 94 3854 
 }
 
@@ -4448,7 +4448,7 @@ sarmista_area = {
 }
 
 upper_saurashtra = {
-	2708 3142
+	2708
 }
 
 vindhya_area = {
@@ -5144,7 +5144,7 @@ barukaccha_area = {
 }
 
 heyaya_area = {
-	3125
+	2211 3142
 }
 
 upper_saraswata = {
@@ -5152,7 +5152,7 @@ upper_saraswata = {
 }
 
 saurashtra_area = {
-	516 515
+	516 515 3125
 }
 
 saraswata_area = {
@@ -5200,7 +5200,7 @@ sabara_north = {
 }
 
 malava_area = {
-	2211 2707
+	2707
 }
 
 heyaya_east = {

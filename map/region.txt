@@ -108,6 +108,7 @@ belgica_region = { #Belgium Check This
 		belgica_maritimae
 		ardennes_area
 		lingonum_area
+		treverorum_area
 	}
 }
 
@@ -234,10 +235,9 @@ high_countries_region = { #Germania Minora
 	areas = {
 		sequania_area
 		agri_decumates
-		treverocappadocia_area
 		helvetica_area
 		germania_inferior
-		batavocappadocia_area
+		batavorum_area
 		germania_superior_area
 		mogontiacum_area
 	}
