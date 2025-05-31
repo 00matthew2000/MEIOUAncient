@@ -868,7 +868,7 @@ gallia_cispadana = {
 }
 
 latium_area = {
-	2530 5641
+	2530
 }
 
 latium_novum_area = {
@@ -876,15 +876,15 @@ latium_novum_area = {
 }
 
 sabinia_area = {
-	1379 
+	1379 3701
 }
 
 etruria_east = {
-	118
+	118 5641
 }
 
 picenum_area = {
-	3702 105 3700 3701 2858
+	3702 105 3700 2858
 }
 
 umbria_area = {
