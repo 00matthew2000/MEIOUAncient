@@ -135,7 +135,6 @@ portugal_region = {
 		lusitania_west
 		scallabitanus_area
 		pacensis_area
-		macaronesia_area
 		emeritanus_area
 		vettonia_area
 	}
@@ -934,6 +933,7 @@ west_maghreb_region = { #Mauretania
 		tingitana_east
 		siga_area
 		deserta_mauretania_area
+		macaronesia_area
 		diur_mons
 		mauretania_ulterior
 		mauretania_superior
