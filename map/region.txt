@@ -2006,6 +2006,7 @@ shaangan_region = { #Si Zhou
 		west_pingyi_area_western
 		east_pingyi_area
 		henan_area
+		anding_area
 	}
 }
 
@@ -2169,7 +2170,6 @@ yunnan_region = { #Liang Zhou
 		tianshui_area_eastern
 		tianshui_area
 		anding_area_western
-		anding_area
 		longxi_area
 	}
 }

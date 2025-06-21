@@ -3469,7 +3469,7 @@ manneh_area = {
 }
 
 akan_area = {
-	2911 2874 2875 2892
+	2911 2874 2875
 }
 
 mima_area = {
@@ -3489,7 +3489,7 @@ senufo_area = {
 }
 
 gyaaman_area = {
-	2897
+	2892 2897
 }
 
 lobi_area = {
