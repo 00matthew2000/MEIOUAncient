@@ -702,6 +702,7 @@ sudan_region = { #Nubia
 		meroe_area
 		blemmyocappadocia_area
 		nubia_citerior
+		napata_area
 	}
 }
 
@@ -1866,7 +1867,6 @@ senegambia_region = { #Non-Provs Africa
 	areas = {
 		east_niger_area
 		sokoto_area
-		kano_area
 		daura_area
 		saharan_bend_area
 		east_mossi_area
