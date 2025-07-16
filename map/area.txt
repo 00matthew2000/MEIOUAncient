@@ -2722,7 +2722,7 @@ te_mefkat_area = {
 # North Africa #
 ########################################
 
-gharbia_area = {
+ament_area = {
 	358 2499
 }
 

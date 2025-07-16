@@ -660,7 +660,7 @@ upper_volta_region = { ##Elam or Haltamti
 
 egypt_region = {
 	areas = {
-		gharbia_area
+		ament_area
 		aneb_hetch
 		saracena_area
 		khent_abt
