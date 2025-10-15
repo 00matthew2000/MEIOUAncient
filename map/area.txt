@@ -2851,7 +2851,7 @@ deserta_numidia = {
 }
 
 emporia_area = {
-	4068 2867
+	4068 2867 2868
 }
 
 tripolitania_west = {
@@ -2863,7 +2863,7 @@ militiana_area = {
 }
 
 byzacium_area = {
-	2315 2868 353 
+	2315 353 
 }
 
 carthago_area = {
