@@ -57,7 +57,7 @@ black_sea_area = {
 }
 
 #caspian_sea_area = {
-#	1920 5509 5510
+#	1920 5509 5510 5523
 #}
 
 eastern_mediterranean_area = {
