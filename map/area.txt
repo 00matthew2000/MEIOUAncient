@@ -6225,7 +6225,7 @@ runan_area = { 5474 689 }
 runan_area_south = { 5475 }
 chenliu_area = { 701 }
 dang_area = { 2485 }
-nanyang_area = { 2605 }
+nanyang_area = { 1043 2605 }
 yingchuan_area_north = { 5473 }
 henei_area_east = { 5469 }
 henan_area = { 5472 }
@@ -6268,15 +6268,15 @@ changsha_area = { 5459 5464 }
 changsha_area_south = { 670 683 }
 guiyang_area_west = { 672 5457 }
 north_nan_area_west = { 5463 }
-nan_area_east = { 5462 }
+nan_area_east = { 5462 5439 }
 nan_area = { 684 }
 west_nanyang_area = { 688 }
 nan_area_south = { 5466 }
 jiangxia_area = { 5467 }
-jiangxia_area_south = { 1172 }
-north_nan_area = { 5465 }
+jiangxia_area_south = { 1172 2085 }
+north_nan_area = { 669 5465 }
 south_nanyang_area = { 5468 }
-guiyang_area = { 2250 5439 5458 }
+guiyang_area = { 2250 5458 }
 
 hanzhong_area = { 687 }
 hanzhong_area_north = { 2170 }
@@ -6314,7 +6314,7 @@ baxi_area = { 1143 2510 2797 5124 5505 }
 ba_area = { 685 5448 }
 zangke_area = { 667 668 5444 5445 5447 }
 
-wuling_area_south = { 669 2085 1043 5455 5456 }
+wuling_area_south = { 5455 5456 }
 
 guilin_area_west = { 671 2078 2082 5442 5443 }
 guilin_area = { 2086 5125 1760 710 }
