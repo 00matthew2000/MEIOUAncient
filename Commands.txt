@@ -41,5 +41,6 @@ NOTE: Diplomacy needs filling
 NOTE: Defines draft in folder in mods folder
 NOTE: GO BACK TO "THIS IS MEIOU ANCIENT MAP" to see redraws...
 NOTE: Fix all the province names + adjacencies through nudge
+NOTE: Fix the Indian mountain range near Pataliputra
 
 Pixels on the IU map are roughly 5-8x the pixels of the MEIOU map
