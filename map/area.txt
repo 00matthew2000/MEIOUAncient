@@ -4520,7 +4520,7 @@ sahyadri_area = {
 }
 
 surparaka_area = {
-	529 2569 3144 4056 
+	529 3144 4056
 }
 
 konkana_area = {
@@ -5136,7 +5136,7 @@ anupa_west = {
 }
 
 aparanta_area = {
-	3146
+	2569 3146
 }
 
 barukaccha_area = {
