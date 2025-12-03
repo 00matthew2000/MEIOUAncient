@@ -5156,11 +5156,11 @@ saurashtra_area = {
 }
 
 saraswata_area = {
-	2710
+	2710 5310
 }
 
 gurjara_area = {
-	3124 5310 3122
+	3124 3122
 }
 
 anarta_area = {
