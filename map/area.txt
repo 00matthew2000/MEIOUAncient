@@ -4284,7 +4284,7 @@ shorkot_area = {
 }
 
 sivi_area = {
-	5313
+	5313 2720
 }
 
 kekaya_lower = {
@@ -4316,11 +4316,11 @@ apritas_area = {
 }
 
 takshasila_area = {
-	4595 
+	2719 5314
 }
 
 gandhara_area = {
-	2114
+	2114 4595
 }
 
 kamboja_area = {
@@ -4373,10 +4373,6 @@ somakas_area = {		#Delhi
 
 kuru_west = {
 	3123 3115
-}
-
-bikaner_area = {
-	5314 2719 2720
 }
 
 amvastha_area = {

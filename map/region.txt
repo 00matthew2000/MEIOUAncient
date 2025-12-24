@@ -1288,7 +1288,6 @@ punjab_region = { #Gandhara
 		malloi_area
 		katocha_area
 		takshasila_area
-		bikaner_area
 		kamboja_area
 		gandhara_area
 		purushapura_area
